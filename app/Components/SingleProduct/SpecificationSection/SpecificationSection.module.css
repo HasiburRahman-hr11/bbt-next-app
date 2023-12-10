@@ -1,0 +1,44 @@
+.specTabList {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.specTabList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.specTabList {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.specTabItem {
+  border: 1px solid #000;
+}
+.specTabList li.active {
+  background-color: #000;
+}
+.specTabItem:hover span,
+.specTabItem.active span{
+  color: #fff;
+}
+.tabContentList {
+  border-bottom: 1px solid rgba(69, 69, 69, 0.3);
+}
+.tabContentList:last-child {
+  border: none;
+}
+.paidFeatureList li::before{
+  content: "";
+  width: 1.4rem;
+  height: 1rem;
+  background-image: url('/images/detail-page/detail-feature-checkmark.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

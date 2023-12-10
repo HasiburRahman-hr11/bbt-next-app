@@ -1,0 +1,6 @@
+.brandsList li{
+    border-left: 1px solid #D9D9D9;
+}
+.brandsList li:nth-child(4n){
+    border-right: 1px solid #D9D9D9;
+}

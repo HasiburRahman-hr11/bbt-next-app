@@ -1,0 +1,6 @@
+.categoryItem{
+    margin-right: 3.5%;
+}
+.categoryItem:nth-child(3n){
+    margin-right: 0;
+}

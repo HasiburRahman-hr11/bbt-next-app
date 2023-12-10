@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1024px) {
+  .sectionHeading::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    width: 70%;
+    height: 0.5px;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sectionHeading::before {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .sectionHeading::before {
+    width: 77%;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .ourShowroomSub {
+    font-size: 4.4rem;
+    letter-spacing: -1px;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 1920px){
+  .ourShowroomSub {
+    font-size: 5.5rem;
+    letter-spacing: -3px;
+  }
+}
