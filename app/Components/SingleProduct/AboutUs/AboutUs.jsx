@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import LocationCounter from "../../CommonComponents/CommonLocation/LocationCounter";
 import CommonLocationItem from "../../CommonComponents/CommonLocation/CommonLocationItem";
@@ -36,18 +36,20 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <LocationCounter />
+        <div className="lg:flex flex-row-reverse items-center lg:mt-24 3xl:mt-36">
+          <LocationCounter />
 
-        <ul
-          className="[&>*:last-child]:border-b border-gray-300 lg:w-60% lg:pr-10 xl:w-55% xl:mr-auto"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          {locations.map((location, index) => (
-            <CommonLocationItem key={index} location={location} />
-          ))}
-        </ul>
+          <ul
+            className="[&>*:last-child]:border-b border-gray-300 lg:w-60% lg:pr-10 xl:w-55% xl:mr-auto"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            {locations.map((location, index) => (
+              <CommonLocationItem key={index} location={location} />
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

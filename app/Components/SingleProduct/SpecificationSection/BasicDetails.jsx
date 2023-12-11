@@ -45,7 +45,7 @@ const BasicDetails = () => {
       <CommonInfoUsp />
       {/* ---- Common Components ---- */}
 
-      <div className="flex items-center justify-between callBtnGroup mt-12">
+      <div className="flex items-center justify-between callBtnGroup mt-12 overflow-hidden flex-wrap">
         <div className="callBtnLeft">
           <Link href="#" className="btn btnBlack btnSquare">
             Reserve The Car

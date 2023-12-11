@@ -1,14 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
 import styles from "./FinanceSection.module.css";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FinanceSection = () => {
   const [percent, setPercent] = useState([0, 40]);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className="bg-black py-24">
+    <section
+      className="bg-black py-24"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
+    >
       <div className="container">
         <div className="px-8">
           <div className="text-center">
@@ -35,7 +45,7 @@ const FinanceSection = () => {
               className="emiSlider"
               value={percent}
               onInput={setPercent}
-              step={10}
+              step={1}
               max={70}
             />
             <div className="relative overflow-x-hidden emiPercentBox">

@@ -52,6 +52,7 @@ module.exports = {
       },
       minHeight: {
         "hp-exp": "102rem",
+        "20": "20rem",
       },
       maxWidth: {
         "8xl": "83rem",
