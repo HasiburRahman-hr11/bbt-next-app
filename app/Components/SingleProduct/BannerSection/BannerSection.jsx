@@ -38,36 +38,56 @@ let settings = {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
   arrows: true,
-  centerMode: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  // centerMode: true,
+  // centerPadding: "15rem",
+  // autoplay: true,
+  // autoplaySpeed: 3000,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        centerMode: false,
+        centerPadding: "0",
+        slidesToShow: 1,
+      },
+    },
+  ],
 };
 
 const BannerSection = () => {
   return (
-    <section className="productPageBanner overflow-hidden">
+    <section className="productPageBanner overflow-hidden bg-white">
       <Slider {...settings}>
-        <div>
+        <div className="md:px-2">
           <Image
             src="/images/detail-page/detail-page-banner.webp"
             alt="Product Image"
-            className="w-full object-cover"
-            width="400"
-            height="310"
+            className="w-full object-cover block"
+            width="1025"
+            height="730"
           />
         </div>
-        <div>
+        <div className="md:px-2">
           <Image
             src="/images/detail-page/detail-page-banner.webp"
             alt="Product Image"
             className="w-full object-cover"
-            width="390"
-            height="375"
+            width="1025"
+            height="730"
+          />
+        </div>
+        <div className="md:px-2">
+          <Image
+            src="/images/detail-page/detail-page-banner.webp"
+            alt="Product Image"
+            className="w-full object-cover"
+            width="1025"
+            height="730"
           />
         </div>
       </Slider>

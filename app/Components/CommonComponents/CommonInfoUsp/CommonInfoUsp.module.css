@@ -12,6 +12,29 @@
 @media only screen and (min-width: 640px) {
   .newIncUsp li {
     padding-left: 1.2rem;
+  }
+  .detailInfoUsp li:last-child {
+    border-right: 1px solid #cfcfcf;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .detailInfoUsp li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .detailInfoUsp li img{
+    height: 1.6rem;
+  }
+  .detailInfoUsp li p{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    margin-top: 1.5rem;
+  }
+  .detailInfoUsp li h6{
+    font-size: 1.5rem;
+  }
+  .detailInfoUsp li:first-child {
     border-left: 1px solid #cfcfcf;
+    padding-left: 1.2rem;
   }
 }

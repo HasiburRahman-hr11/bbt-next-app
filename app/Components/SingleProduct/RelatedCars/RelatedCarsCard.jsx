@@ -7,7 +7,7 @@ const RelatedCarsCard = () => {
   return (
     <Link
       href="/products/114325"
-      className="mr-9 bg-white lg:mx-8 block transition-all ease-in-out hover:shadow-lg"
+      className="mr-9 bg-white lg:mx-4 block transition-all ease-in-out hover:shadow-lg"
     >
       <div
         className={`bg-white px-8 pt-12 pb-20 sm:px-8 sm:pt-8 sm:pb-16 lg:pb-10 3xl:px-20 3xl:pt-12 3xl:pb-16`}
@@ -30,7 +30,7 @@ const RelatedCarsCard = () => {
       </div>
       <div className=" overflow-hidden">
         <Image
-          src="/images/detail-page/detail-related-car.webp"
+          src="/images/detail-page/detail-related-car-1.webp"
           alt="Icon"
           width="390"
           height="285"

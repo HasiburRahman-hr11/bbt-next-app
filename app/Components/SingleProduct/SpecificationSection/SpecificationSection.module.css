@@ -20,7 +20,7 @@
   background-color: #000;
 }
 .specTabItem:hover span,
-.specTabItem.active span{
+.specTabItem.active span {
   color: #fff;
 }
 .tabContentList {
@@ -29,11 +29,11 @@
 .tabContentList:last-child {
   border: none;
 }
-.paidFeatureList li::before{
+.paidFeatureList li::before {
   content: "";
   width: 1.4rem;
   height: 1rem;
-  background-image: url('/images/detail-page/detail-feature-checkmark.webp');
+  background-image: url("/images/detail-page/detail-feature-checkmark.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -41,4 +41,24 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  filter: invert(1);
+}
+@media only screen and (min-width: 640px) {
+  .carSummeryItem {
+    border-left: 1px solid #d9d9d9;
+  }
+  .carSummeryItem:nth-child(3n) {
+    border-right: 1px solid #d9d9d9;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .carSummeryItem:nth-child(3n) {
+    border-right: 0;
+  }
+  .carSummeryItem:nth-child(4n) {
+    border-right: 1px solid #d9d9d9;
+  }
+  .paidFeatureList li::before{
+    filter: none;
+  }
 }

@@ -4,10 +4,10 @@ import styles from "./NewInclusion.module.css";
 import Link from "next/link";
 import CommonInfoUsp from "../../CommonComponents/CommonInfoUsp/CommonInfoUsp";
 
-const SliderItem = () => {
+const SliderItem = ({data}) => {
   return (
     <Link
-      href="/products/114325"
+      href={`/products/${data._id}`}
       className="sm:mx-3 sm:bg-white lg:mx-8 block transition-all ease-in-out hover:shadow-lg"
     >
       <div
@@ -16,23 +16,23 @@ const SliderItem = () => {
         <p
           className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 pt-2 py-1 leading-4 lg:text-sm lg:pt-1 3xl:text-lg 3xl:px-8`}
         >
-          Reg.Year : 2022
+          Reg.Year : {data.registrationYear}
         </p>
         <h4 className="mt-4 sm:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-tighter 3xl:text-4.2xl 3xl:mt-8">
-          Rolls-Royce Ghost Series II
+          {data.title}
         </h4>
         <p className={`${styles.incItemPrice} font-medium lg:mt-2 3xl:mt-4 mb-12 sm:mb-8 lg:mb-6`}>
-          ₹ 4,99,00,000
+          ₹ {data.price}
         </p>
 
         {/* ---- Common Components ---- */}
-        <CommonInfoUsp />
+        <CommonInfoUsp data={data} />
         {/* ---- Common Components ---- */}
         
       </div>
       <div className=" overflow-hidden">
         <Image
-          src="/images/inclusion-item-1.webp"
+          src={data.thumbnail}
           alt="Icon"
           width="390"
           height="285"

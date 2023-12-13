@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CommonInfoUsp from "../../CommonComponents/CommonInfoUsp/CommonInfoUsp";
 
 const CompareSection = () => {
   useEffect(() => {
@@ -10,70 +11,105 @@ const CompareSection = () => {
   }, []);
   return (
     <section
-      className="py-24"
+      className="py-24 lg:py-36"
       style={{
         background:
           "linear-gradient(180deg, #F4F4F1 -13.45%, rgba(244, 244, 241, 0.5) 137.55%)",
       }}
     >
       <div className="container">
-        <div
-          className="flex justify-between items-center mb-10"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <span className="h-px w-auto grow bg-black lg:hidden"></span>
-          <h2 className=" pl-8 lg:pl-0">Compare Cars</h2>
-        </div>
-        <div className="bg-white px-5 py-8 rounded-lg shadow-compare-card">
-          <ul>
-            <li
-              className="flex justify-between items-center"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
-            >
-              <Image
-                src="/images/detail-page/detail-compare-car-thumb.webp"
-                alt="Car Image"
-                width="141"
-                height="101"
-                className="w-56 object-contain inline-block rounded-lg"
-              />
-              <div className="w-3/6">
-                <h5 className="font-medium text-2xl">
-                  Rolls Royce Phantom Centenary Edition
-                </h5>
-                <div className="flex justify-between items-center mt-4">
-                  <p className="flex items-center font-medium text-lg">
-                    ₹ 4,99,00,000
-                  </p>
-                  <p className="text-zinc-500 text-base">
-                    R Year :{" "}
-                    <strong className="font-medium text-zinc-800">2022</strong>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-
+        <div className="sm:flex sm:justify-between sm:items-center">
           <div
-            className="mt-10"
+            className="flex justify-between items-center mb-10 sm:block sm:w-40% sm:pr-20 md:w-2/6 md:pr-10 xl:pr-28 lg:w-30% lg:pr-20"
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="500"
           >
-            <button className="addBtn">
-              <span className="uppercase font-medium">Add Cars</span>
-              <Image
-                src="/images/detail-page/detail-compare-plus-icon.webp"
-                width="13"
-                height="13"
-                alt="Plus Icon"
-                className="object-contain w-5 ml-8"
-              />
-            </button>
+            <Image
+              src="/images/down-circle-arrow-white.webp"
+              width="123"
+              height="123"
+              alt="Arrow Icon"
+              className="hidden invert sm:inline-block sm:w-24 mb-8 object-contain lg:w-32 xl:w-40 3xl:w-48"
+            />
+            <span className="h-px w-auto grow bg-black sm:hidden"></span>
+            <h2 className=" pl-8 sm:pl-0 sm:mb-3 md:tracking-tight lg:text-4.5xl">
+              Compare Cars
+            </h2>
+            <p className="hidden sm:block text-lg leading-8 lg:text-base lg:leading-8  3xl:text-3xl 3xl:leading-loose">
+              Get your dream luxury car in 4 easy steps at Big Boy Toyz, India's
+              trusted used car portal.
+            </p>
+          </div>
+          <div
+            className="bg-white px-5 py-8 rounded-lg shadow-compare-card w-full sm:w-60% md:w-4/6 md:px-0 md:py-0 md:rounded-none lg:w-70%"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <ul>
+              <li className="flex justify-between items-center">
+                <div className="w-56 md:w-2/5 h-full lg:w-49%">
+                  <Image
+                    src="/images/detail-page/detail-compare-car-thumb.webp"
+                    alt="Car Image"
+                    width="536"
+                    height="390"
+                    className=" object-contain inline-block rounded-lg md:min-h-16 md:rounded-none md:h-full md:object-cover lg:min-h-24"
+                  />
+                </div>
+
+                <div className="w-3/6 md:py-8 md:px-6 md:w-3/5 lg:w-51% lg:px-16 lg:py-10">
+                  <p
+                    className={`hidden lg:inline-block bg-black text-white text-center rounded-2xl text-base px-5 pt-2 py-1 leading-4 lg:text-sm lg:pt-1 3xl:text-lg 3xl:px-8`}
+                  >
+                    Reg.Year : 2022
+                  </p>
+                  <h5 className="font-medium text-2xl lg:mt-4">
+                    Rolls-Royce Ghost Series II
+                  </h5>
+                  <div className="flex justify-between items-center mt-4 lg:mt-2">
+                    <p className="flex items-center font-medium text-lg lg:text-2xl">
+                      ₹ 4,99,00,000
+                    </p>
+                    <p className="text-zinc-500 text-base lg:hidden">
+                      R Year :{" "}
+                      <strong className="font-medium text-zinc-800">
+                        2022
+                      </strong>
+                    </p>
+                  </div>
+                  <div className="hidden lg:block lg:mt-8">
+                    <CommonInfoUsp />
+                  </div>
+                  <div className="mt-10 hidden md:block lg:mt-6">
+                    <button className="addBtn lg:py-4 lg:justify-between">
+                      <span className="uppercase font-medium lg:text-sm">Add Cars</span>
+                      <Image
+                        src="/images/detail-page/detail-compare-plus-icon.webp"
+                        width="13"
+                        height="13"
+                        alt="Plus Icon"
+                        className="object-contain w-5 ml-8 lg:w-3"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div className="mt-10 md:hidden">
+              <button className="addBtn">
+                <span className="uppercase font-medium">Add Cars</span>
+                <Image
+                  src="/images/detail-page/detail-compare-plus-icon.webp"
+                  width="13"
+                  height="13"
+                  alt="Plus Icon"
+                  className="object-contain w-5 ml-8"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>

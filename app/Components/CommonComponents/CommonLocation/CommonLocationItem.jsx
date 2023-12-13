@@ -23,11 +23,11 @@ const CommonLocationItem = ({ location }) => {
           href="#"
           className="flex justify-between py-8 px-8 xl:py-10 2xl:py-12 3xl:py-16"
         >
-          <div className="w-9/12 xl:flex xl:items-center">
-            <h3 className="text-5xl font-semibold xl:w-5.5/12 3xl:text-6xl transition-all duration-300 ease-in">
+          <div className="w-9/12 lg:flex lg:items-center">
+            <h3 className="text-5xl font-semibold lg:w-5.5/12 3xl:text-6xl transition-all duration-300 ease-in">
               {location.city}
             </h3>
-            <p className="text-2xl font-light text-gray-500 mt-2 3xl:text-3xl transition-all duration-300 ease-in">
+            <p className="text-2xl font-light text-gray-500 mt-2 lg:mt-0 lg:text-xl 3xl:text-3xl transition-all duration-300 ease-in">
               {location.sector}
             </p>
           </div>

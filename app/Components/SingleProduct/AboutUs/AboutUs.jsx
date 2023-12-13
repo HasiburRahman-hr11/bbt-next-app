@@ -17,23 +17,32 @@ const AboutUs = () => {
     AOS.init();
   }, []);
   return (
-    <section className="py-24" style={{ background: "#F5F5F2" }}>
+    <section className="py-24 lg:py-36" style={{ background: "#F3F3F3" }}>
       <div className="container">
         <div
-          className="text-center mb-16"
+          className="text-center mb-16 lg:text-left"
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          <p>About Us</p>
-          <h2 className="font-normal tracking-tighter my-4">
-            {" "}
-            BigBoyToyz Is In Your City !
-          </h2>
-          <p className="font-light text-2xl text-stone-700">
-            Visit our super cars showroom and get a feel <br /> of the ride
-            awaiting your presence.
+          <p className="titleWithLine lg:text-4.5xl lg:font-medium lg:mb-10">
+            <span
+              className=" lg:pr-10 relative z-10"
+              style={{ background: "#F3F3F3" }}
+            >
+              About Us
+            </span>
           </p>
+          <div>
+            <h2 className="font-normal tracking-tighter my-4 lg:inline lg:text-5xl lg:font-medium lg:text-black lg:leading-normal">
+              {" "}
+              BigBoyToyz Is In Your City !
+            </h2>
+            <p className="font-light px-8 text-2xl text-stone-700 lg:inline lg:text-5xl lg:font-medium lg:text-black [&>br]:hidden lg:leading-normal lg:[&>br]:block lg:px-0">
+              Visit our super cars showroom <br /> and get a feel  of the ride
+              awaiting your presence.
+            </p>
+          </div>
         </div>
 
         <div className="lg:flex flex-row-reverse items-center lg:mt-24 3xl:mt-36">

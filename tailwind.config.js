@@ -12,6 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        'detail-space': 'rgba(17, 17, 26, 0.1) 0px 0px 16px',
+      },
       colors: {
         "inclusionBG": "#F3F3F3",
         "dark-800": "#161616",
@@ -29,6 +32,8 @@ module.exports = {
         "6.5xl": "4rem",
         "1.6xl": "1.6rem",
         "1.9xl": "1.9rem",
+        "5.5rem": "5.5rem",
+        "3.5rem": "3.5rem",
       },
       lineHeight: {
         0.8: "0.8",
@@ -40,7 +45,10 @@ module.exports = {
         "30%": "30%",
         "31%": "31%",
         "40%": "40%",
+        "45%": "45%",
+        "49%": "49%",
         "50%": "50%",
+        "51%": "51%",
         "55%": "55%",
         "60%": "60%",
         "70%": "70%",
@@ -52,7 +60,9 @@ module.exports = {
       },
       minHeight: {
         "hp-exp": "102rem",
+        "16": "16rem",
         "20": "20rem",
+        "24": "24rem",
       },
       maxWidth: {
         "8xl": "83rem",

@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Header from "../../Components/Header/Header";
 import BannerSection from "../../Components/SingleProduct/BannerSection/BannerSection";
@@ -14,7 +15,7 @@ import Footer from "../../Components/Footer/Footer";
 const SingleProductPage = () => {
   return (
     <main>
-      <Header isPageHeader={true} />
+      <Header isPageHeader={true}/>
       <BannerSection />
       <SpecificationSection />
       <PreviewSection />

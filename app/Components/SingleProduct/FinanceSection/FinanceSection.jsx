@@ -14,33 +14,39 @@ const FinanceSection = () => {
   }, []);
   return (
     <section
-      className="bg-black py-24"
+      className="bg-black py-24 lg:py-36"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="500"
     >
-      <div className="container">
-        <div className="px-8">
+      <div className="lg:flex lg:flex-row-reverse lg:items-center">
+        <div className="px-10 sm:px-16 md:px-20 lg:w-40% lg:px-36">
           <div className="text-center">
-            <h2 className=" text-white mb-10">Get Your Ride Financed Today!</h2>
-            <p className="text-zinc-500 text-1.6xl">
+            <h2 className=" text-white mb-10 lg:mb-5 lg:leading-tight">
+              {" "}
+              <span className="block font-light">Get Your Ride</span> Financed
+              Today!
+            </h2>
+            <p className="text-zinc-500 text-1.6xl lg:text-xl">
               Easy and hassle free Emi options available.
             </p>
           </div>
           <div
-            className={`relative text-white text-center mx-auto px-5 py-8 mt-16 ${styles.emiBox}`}
+            className={`relative text-white text-center mx-auto px-5 py-8 mt-16 lg:mt-10 lg:py-5 lg:px-8 ${styles.emiBox}`}
           >
-            <p className="absolute text-xl bg-black">Emi Starts @</p>
-            <h5>
+            <p className="absolute text-xl bg-black lg:text-base">
+              Emi Starts @
+            </p>
+            <h5 className="lg:text-1xl">
               ₹ 45,000/- <span className="font-extralight">Per Month</span>
             </h5>
           </div>
 
           <div className="flex justify-between flex-wrap items-center text-white mt-20">
-            <p className="text-xl">Down Payment</p>
-            <p className="text-xl">₹ 3,000,00,0</p>
+            <p className="text-xl lg:text-base">Down Payment</p>
+            <p className="text-xl lg:text-base">₹ 3,000,00,0</p>
           </div>
-          <div className="mt-10 mb-16">
+          <div className="mt-10 mb-16 lg:mb-0 lg:mt-5">
             <RangeSlider
               className="emiSlider"
               value={percent}
@@ -75,18 +81,26 @@ const FinanceSection = () => {
               </span>
             </div>
           </div>
+
+          <div className=" mt-10 hidden sm:text-center lg:block">
+            <a href="#" className="btn btnWhite roundedBtn">
+              Get More Details
+            </a>
+          </div>
         </div>
 
-        {/* <h2 className="text-white mt-16">{value[1] + 10}</h2> */}
+        <div className="block w-full lg:w-60% lg:pl-40">
+          <Image
+            src="/images/detail-page/detail-finance-thumb.webp"
+            width="965"
+            height="644"
+            className="w-full object-cover block"
+            alt="Car Image"
+          />
+        </div>
       </div>
-      <Image
-        src="/images/detail-page/detail-finance-thumb.webp"
-        width="390"
-        height="298"
-        className="w-full object-cover block"
-      />
 
-      <div className="px-8 mt-16">
+      <div className="px-8 mt-16 sm:text-center lg:hidden">
         <a href="#" className="btn btnWhite roundedBtn">
           Get More Details
         </a>

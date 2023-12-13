@@ -38,24 +38,33 @@ const ShopByCategory = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-24 lg:pb-36 ">
       <div className="container">
-        <h2 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-          Shop By Categories
+        <h2
+          className="titleWithLine"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
+          <span className="lg:bg-white lg:pr-10 relative z-10">
+            Shop By Categories
+          </span>
         </h2>
 
-        <ul className="flex items-center flex-wrap mt-8">
+        <ul
+          className="flex items-center flex-wrap mt-8"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           {categories.map((category, index) => (
             <li
               key={index}
               className={`w-31% three-column-item ${styles.categoryItem}`}
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
             >
               <Link
                 href={category.url}
-                className={`px-2 py-10 w-full h-full rounded-xl border border-neutral-300 mt-5 block text-center`}
+                className={`px-2 py-10 w-full h-full rounded-xl border border-neutral-300 mt-5 block text-center lg:py-20`}
               >
                 <Image
                   src={category.icon}

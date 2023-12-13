@@ -25,12 +25,14 @@ const OurShowrooms = () => {
     <section className="bg-white py-24 lg:py-40 2xl:py-52 3xl:py-72">
       <div className="container">
         <h2
-          className={`mb-16 text-black tracking-tighter relative ${styles.sectionHeading}`}
+          className={`mb-16 text-black tracking-tighter relative titleWithLine`}
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          Our Showrooms
+          <span className="lg:bg-white lg:pr-10 relative z-10">
+            Our Showrooms
+          </span>
         </h2>
         <p
           className={`hidden lg:block mt-5 text-6xl leading-snug tracking-tight font-normal 2xl:mt-8 3xl:mt-16 ${styles.ourShowroomSub}`}

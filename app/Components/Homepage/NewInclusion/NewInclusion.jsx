@@ -12,6 +12,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+// Dummy Data
+import {cars} from '../../../../public/data/dummyData';
+
 function NextArrow(props) {
   const { onClick, className } = props;
   return (
@@ -99,11 +102,8 @@ const NewInclusion = () => {
         data-aos-duration="500"
       >
         <Slider {...settings}>
-          <SliderItem />
-          <SliderItem />
-          <SliderItem />
-          <SliderItem />
-          <SliderItem />
+         {cars.map((car)=>( <SliderItem data={car} key={car._id} />))}
+          
         </Slider>
       </div>
     </section>

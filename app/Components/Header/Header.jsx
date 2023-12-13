@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Header = ({isPageHeader}) => {
+const Header = ({ isPageHeader }) => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -11,7 +11,11 @@ const Header = ({isPageHeader}) => {
     });
   }, []);
   return (
-    <header className={`header ${scroll ? 'sticky' : ''} ${isPageHeader ? 'page-header' : ''}`}>
+    <header
+      className={`header ${scroll ? "sticky" : ""} ${
+        isPageHeader ? "page-header" : ""
+      }`}
+    >
       <div className={`header-wrapper`}>
         <div className="flex justify-between items-center">
           <div
@@ -31,13 +35,15 @@ const Header = ({isPageHeader}) => {
             </div>
           </div>
           <div className="header-logo  lg:order-1 ">
-            <Image
-              src="/images/bbt-logo-header.webp"
-              width="105"
-              height="70"
-              alt="BBT Logo"
-              className="w-24 object-contain lg:w-32"
-            />
+            <Link href="/" className="block">
+              <Image
+                src="/images/bbt-logo-header.webp"
+                width="105"
+                height="70"
+                alt="BBT Logo"
+                className="w-24 object-contain lg:w-32"
+              />
+            </Link>
           </div>
           <div
             className={`lg:flex items-center justify-center header-phone-list hidden lg:order-2`}

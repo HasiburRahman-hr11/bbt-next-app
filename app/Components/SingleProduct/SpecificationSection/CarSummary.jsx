@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import styles from './SpecificationSection.module.css';
+
 
 const dummyData = [
   {
@@ -21,7 +23,32 @@ const dummyData = [
   {
     icon: "/images/detail-page/detail-summery-usp-3.webp",
     title: "Peak Torque",
-    description: `780Nm <br> @1500 RPM`,
+    description: "780Nm <br> @1500 RPM",
+  },
+  {
+    icon: "/images/detail-page/detail-summery-usp-4.webp",
+    title: "Peak Power",
+    description: "571PS / 563BHP <br> @ 5250 RPM",
+  },
+  {
+    icon: "/images/detail-page/detail-summery-usp-5.webp",
+    title: "Seating Capacity",
+    description: "Available <br> Seats (04) Persons",
+  },
+  {
+    icon: "/images/detail-page/detail-summery-usp-6.webp",
+    title: "Vehicle Type",
+    description: "Body Type <br> Luxury Sedan",
+  },
+  {
+    icon: "/images/detail-page/detail-summery-usp-7.webp",
+    title: "Drive ",
+    description: "(RWD) <br> Rear Wheel Drive",
+  },
+  {
+    icon: "/images/detail-page/detail-summery-usp-8.webp",
+    title: "Exterior Color",
+    description: `Blue With <br> Shades of Silver`,
   },
 ];
 
@@ -47,7 +74,7 @@ let settings = {
 
 const CarSummaryCard = ({ data }) => {
   return (
-    <div className="py-8 rounded-2xl border border-neutral-400 px-5 mr-7">
+    <div className="py-8 rounded-2xl border border-neutral-400 px-5 mr-7 sm:border-0 sm:mr-0">
       <Image
         src={data.icon}
         width="40"
@@ -55,9 +82,9 @@ const CarSummaryCard = ({ data }) => {
         alt="Icon"
         className="object-contain h-12"
       />
-      <p className="text-sm text-stone-500 my-5">{data.title}</p>
+      <p className="text-sm text-stone-500 my-5 sm:text-lg">{data.title}</p>
       <p
-        className="text-base font-medium"
+        className="text-base font-medium sm:text-lg"
         dangerouslySetInnerHTML={{ __html: data.description }}
       />
     </div>
@@ -69,17 +96,29 @@ const CarSummary = () => {
     AOS.init();
   }, []);
   return (
-    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" className="lg:pt-16 lg:pb-16">
       <div className="container">
-        <h6 className="font-medium pt-10 mt-16 border-t border-gray-300 mb-8">
-          Car Summary
+        <h6 className={`font-medium pt-10 mt-16 border-t border-gray-300 mb-8 lg:border-none lg:relative lg:mb-0 lg:pt-0 titleWithLine md:text-3.5rem`}>
+          <span className="lg:bg-white lg:pr-5 relative z-10">Car Summary</span>
         </h6>
       </div>
-      <Slider {...settings} className="details-summary-slider pl-8">
+
+      <div className="block sm:hidden">
+        <Slider {...settings} className="details-summary-slider pl-8">
+          {dummyData.map((data, index) => (
+            <CarSummaryCard data={data} key={index} />
+          ))}
+        </Slider>
+      </div>
+      <div className="container hidden sm:block lg:mt-20">
+      <ul className="sm:flex sm:flex-wrap">
         {dummyData.map((data, index) => (
-          <CarSummaryCard data={data} key={index} />
+          <li key={index} className={`w-1/3 px-8 mb-8 lg:mb-16 lg:w-1/4 ${styles.carSummeryItem}`}>
+            <CarSummaryCard data={data}  />
+          </li>
         ))}
-      </Slider>
+      </ul>
+      </div>
     </div>
   );
 };
