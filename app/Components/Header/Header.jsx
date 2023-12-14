@@ -41,7 +41,7 @@ const Header = ({ isPageHeader }) => {
                 width="105"
                 height="70"
                 alt="BBT Logo"
-                className="w-24 object-contain lg:w-32"
+                className="w-24 object-contain lg:w-32 2xl:w-32 3xl:w-44"
               />
             </Link>
           </div>

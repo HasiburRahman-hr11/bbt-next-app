@@ -13,3 +13,11 @@
         border-right: 1px solid #D9D9D9;
     }
 }
+@media only screen and (min-width: 1280px){
+    .brandsList li:nth-child(6n){
+        border-right: 0;
+    }
+    .brandsList li:nth-child(8n){
+        border-right: 1px solid #D9D9D9;
+    }
+}

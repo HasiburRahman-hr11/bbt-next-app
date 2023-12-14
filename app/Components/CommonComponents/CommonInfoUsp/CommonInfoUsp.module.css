@@ -38,3 +38,40 @@
     padding-left: 1.2rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .detailInfoUsp li,
+  .detailInfoUsp li:first-child{
+    padding: 1rem 1rem 1rem 3rem;
+  }
+}
+@media only screen and (min-width: 1440px){
+  .detailInfoUsp li,
+  .detailInfoUsp li:first-child{
+    padding: 1rem 1rem 1rem 4rem;
+  }
+  .detailInfoUsp li img{
+    height: 1.9rem;
+  }
+  .detailInfoUsp li p{
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+    margin-top: 2rem;
+  }
+  .detailInfoUsp li h6{
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 1920px){
+  .detailInfoUsp li img{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .detailInfoUsp li p{
+    font-size: 1.8rem;
+    margin-top: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .detailInfoUsp li h6{
+    font-size: 2rem;
+  }
+}

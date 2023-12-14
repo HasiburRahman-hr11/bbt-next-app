@@ -269,12 +269,12 @@ img {
   border-radius: 6px;
   transition: all 0.5s ease-in-out;
 }
-.addBtn:hover{
+.addBtn:hover {
   border-color: #000;
   background-color: #000;
   color: #fff;
 }
-.addBtn:hover img{
+.addBtn:hover img {
   filter: invert(1);
 }
 /* Header */
@@ -701,6 +701,13 @@ img {
   }
   .container-lg-full {
     width: 100%;
+    max-width: 100%;
+  }
+  .btnSquare,
+  .btn.btnSquare,
+  .smallCallBtn,
+  .smallCallBtn.btn {
+    border-radius: 0.3rem;
   }
   .titleWithLine {
     position: relative;
@@ -769,7 +776,7 @@ img {
   .emiPercentBox {
     height: 4rem;
   }
-  .emiPercent::before{
+  .emiPercent::before {
     height: 15px;
   }
 }
@@ -830,6 +837,18 @@ img {
   h2 {
     font-size: 3.6rem;
   }
+  .detailsCallBtnGroup .btnSquare,
+  .detailsCallBtnGroup .smallCallBtn {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.5rem;
+    height: 5rem;
+    min-width: 23rem;
+  }
+  /* Header */
+  .header.sticky .header-wrapper,
+  .header.page-header .header-wrapper {
+    padding: 3rem 4.5rem;
+  }
   /* Footer */
   .footerMenuCol {
     width: 16rem;
@@ -865,9 +884,19 @@ img {
   .curve-slider-arrow.slick-next {
     top: calc(50% - 2rem);
   }
+  .detailsCallBtnGroup .btnSquare,
+  .detailsCallBtnGroup .smallCallBtn {
+    font-size: 1.9rem;
+    height: 6.5rem;
+    min-width: 30rem;
+  }
   /* Header */
   .header-wrapper {
     padding: 4rem 5.5rem;
+  }
+  .header.sticky .header-wrapper,
+  .header.page-header .header-wrapper {
+    padding: 3.5rem 5.5rem;
   }
   .header-phone-list a {
     font-size: 1.4rem;
@@ -898,6 +927,10 @@ img {
   .hp-featured-slider .curve-slider-arrow.slick-next {
     left: -7rem;
     top: 32%;
+  }
+  /* Detail Page */
+  .emiPercent {
+    font-size: 1rem;
   }
 }
 

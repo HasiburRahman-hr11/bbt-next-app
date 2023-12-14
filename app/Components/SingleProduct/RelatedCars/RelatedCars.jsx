@@ -37,17 +37,17 @@ const RelatedCars = () => {
     AOS.init();
   }, []);
   return (
-    <section className="py-24 bg-inclusionBG lg:py-36">
+    <section className="py-24 bg-inclusionBG lg:py-36 xl:py-44 2xl:py-52 3xl:py-60">
       <div className="container">
         <div
-          className="flex justify-between items-center mb-10"
+          className="flex justify-between items-center mb-10 2xl:mb-16 3xl:mb-36"
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="500"
         >
           <span className="h-px w-auto grow bg-black lg:hidden"></span>
-          <h2 className=" pl-8 lg:pl-0 titleWithLine lg:w-full">
-            <span className="lg:bg-inclusionBG lg:pr-5 relative z-10">
+          <h2 className=" pl-8 lg:pl-0 titleWithLine lg:w-full 2xl:tracking-tighter">
+            <span className="lg:bg-inclusionBG lg:pr-5 relative z-10 2xl:pr-16">
               Related Cars
             </span>
           </h2>
@@ -55,7 +55,7 @@ const RelatedCars = () => {
       </div>
 
       <div
-        className="pl-8 lg:px-36 lg:mt-24"
+        className="pl-8 lg:px-36 lg:mt-24 xl:px-40 1xl:px-48 3xl:px-60"
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="500"

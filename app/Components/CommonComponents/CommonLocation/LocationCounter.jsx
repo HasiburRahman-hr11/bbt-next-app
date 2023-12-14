@@ -46,7 +46,7 @@ const LocationCounter = () => {
   }, []);
   return (
     <div
-      className="text-center flex justify-center items-center font-medium text-24xl mb-20 leading-0.8 lg:justify-end lg:mb-0 lg:w-40% lg:text-32xl lg:tracking-tight lg:text-right 2xl:text-36xl 3xl:text-46xl"
+      className="text-center flex justify-center items-center font-medium text-24xl mb-20 leading-0.8 lg:justify-end lg:mb-0 lg:w-40% lg:text-32xl lg:tracking-tight lg:text-right 1xl:text-36xl 3xl:text-46xl"
       data-aos="zoom-in-up"
       data-aos-easing="linear"
       data-aos-duration="500"
