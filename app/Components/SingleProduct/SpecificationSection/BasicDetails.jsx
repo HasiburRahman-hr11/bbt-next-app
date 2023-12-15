@@ -14,9 +14,9 @@ const BasicDetails = () => {
   return (
     <div
       className="container container-lg-full lg:px-12 lg:py-12 lg:shadow-detail-space xl:px-24 xl:py-20 2xl:py-24 2xl:px-28 3xl:px-32 3xl:py-28"
-      // data-aos="fade-up"
-      // data-aos-easing="linear"
-      // data-aos-duration="500"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
     >
       <div className="block lg:flex lg:flex-wrap lg:justify-between">
         <div className="flex items-center mb-20 lg:mb-0 lg:w-40% xl:w-2/6">

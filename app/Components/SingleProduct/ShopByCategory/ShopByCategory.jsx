@@ -64,7 +64,7 @@ const ShopByCategory = () => {
             >
               <Link
                 href={category.url}
-                className={`px-2 py-10 w-full h-full rounded-xl border border-neutral-300 mt-5 block text-center lg:py-20 xl:pb-16 xl:pt-20 3xl:pt-32 3xl:pb-24`}
+                className={`px-2 py-10 w-full h-full rounded-xl border border-neutral-300 mt-5 block text-center lg:py-20 xl:pb-16 xl:pt-20 3xl:pt-32 3xl:pb-24 hover:bg-black transition-all duration-500 group`}
               >
                 <Image
                   src={category.icon}
@@ -73,7 +73,7 @@ const ShopByCategory = () => {
                   alt={category.title}
                   className="object-contain block w-full max-h-11 xl:max-h-16 3xl:max-h-20"
                 />
-                <p className="text-black text-1xl mt-3 xl:text-1.6xl xl:mt-12 1xl:text-3xl">{category.title}</p>
+                <p className="text-black text-1xl mt-3 xl:text-1.6xl xl:mt-12 1xl:text-3xl group-hover:text-white  transition-all duration-500">{category.title}</p>
               </Link>
             </li>
           ))}

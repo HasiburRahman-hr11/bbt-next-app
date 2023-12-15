@@ -15,9 +15,9 @@ const FinanceSection = () => {
   return (
     <section
       className="bg-black py-24 lg:py-36 1xl:py-44 2xl:py-52 3xl:py-64"
-      // data-aos="fade-up"
-      // data-aos-easing="linear"
-      // data-aos-duration="500"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
     >
       <div className="lg:flex lg:flex-row-reverse lg:items-center">
         <div className="px-10 sm:px-16 md:px-20 lg:w-40% lg:px-36 1xl:pr-44">

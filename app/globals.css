@@ -251,10 +251,16 @@ img {
   width: 4.8rem;
   height: 4.8rem;
 }
-.smallCallBtn.whatsAppBtn {
+
+.smallCallBtn.whatsAppBtn,
+.smallCallBtn.whatsAppBtn:hover {
   background-color: #1bd741;
   box-shadow: 0px 8px 8px 0px #1bd74140;
   border: none;
+}
+.smallCallBtn.whatsAppBtn:hover img {
+  scale: 1.1;
+  filter: none;
 }
 .addBtn {
   width: 100%;
@@ -269,13 +275,30 @@ img {
   border-radius: 6px;
   transition: all 0.5s ease-in-out;
 }
-.addBtn:hover {
+.addBtn:hover,
+.smallCallBtn:hover {
   border-color: #000;
   background-color: #000;
   color: #fff;
 }
-.addBtn:hover img {
+.addBtn:hover img,
+.smallCallBtn:hover img {
   filter: invert(1);
+}
+.smallCallBtn img,
+.addBtn img {
+  transition: all 0.5s ease;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll-bar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 /* Header */
 .header {

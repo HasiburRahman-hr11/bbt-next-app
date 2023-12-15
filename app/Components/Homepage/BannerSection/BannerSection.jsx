@@ -1,13 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./BannerSection.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import FilterPopup from "../../FilterPopup/FilterPopup";
 
 const BannerSection = () => {
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  const togglePopup = () => {
+    setFilterOpen(!filterOpen);
+  };
   useEffect(() => {
     AOS.init();
   }, []);
@@ -63,7 +68,7 @@ const BannerSection = () => {
                         src="/images/banner-search-icon-white.webp"
                         width="17"
                         height="17"
-                        alt="Filter Button"
+                        alt="Search Icon"
                       />
                     </span>
                     <input
@@ -73,14 +78,15 @@ const BannerSection = () => {
                       placeholder="Search Your Dream Car Here... "
                     />
                     <div
-                      className={`${styles.filterBtn} absolute right-8 z-10 cursor-pointer 3xl:right-10`}
+                      className={`${styles.filterBtn} absolute right-8 z-10 cursor-pointer 3xl:right-10 p-3 rounded-50% hover:bg-gray-300 transition-all duration-500 group`}
+                      onClick={togglePopup}
                     >
                       <Image
                         src="/images/banner-filter-icon-white.webp"
                         width="23"
                         height="22"
                         alt="Filter Button"
-                        className="w-8"
+                        className="w-8 hover:scale-110 transition-all duration-500 group-hover:invert"
                       />
                     </div>
                   </div>
@@ -138,6 +144,7 @@ const BannerSection = () => {
           </span>
         </div>
       </div>
+      {filterOpen && <FilterPopup active={filterOpen} togglePopup={togglePopup} />}
     </section>
   );
 };

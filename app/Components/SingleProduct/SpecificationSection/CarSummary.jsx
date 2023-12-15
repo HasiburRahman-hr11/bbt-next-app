@@ -96,9 +96,9 @@ const CarSummary = () => {
   }, []);
   return (
     <div
-      // data-aos="fade-up"
-      // data-aos-easing="linear"
-      // data-aos-duration="500"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="500"
       className="lg:pt-16 lg:pb-16 xl:py-28 2xl:py-36 3xl:py-52"
     >
       <div className="container">

@@ -92,6 +92,9 @@ module.exports = {
         "1xl": "1440px",
         "3xl": "1920px",
       },
+      zIndex: {
+        '100': '100',
+      }
     },
   },
   plugins: [],
