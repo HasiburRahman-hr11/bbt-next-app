@@ -690,6 +690,11 @@ img {
   left: 50%;
   top: 50%;
 }
+.absolute-center-x{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .about-collection-header p {
   color: #ffffff;
   -webkit-text-fill-color: #161616; /* Will override color (regardless of order) */
