@@ -300,6 +300,26 @@ img {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.faq-toggle-icon span{
+  width: 16px;
+  height: 1.5px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transition: all 0.5s ease;
+}
+.faq-toggle-icon span:nth-child(1){
+  top: calc(50% + 0.5px);
+  transform: translateY(-50%);
+}
+.faq-toggle-icon span:nth-child(2){
+  right: 0.5px;
+  transform: rotate(90deg) translateY(-50%);
+}
+.active .faq-toggle-icon span:nth-child(2){
+  opacity: 0;
+}
 /* Header */
 .header {
   position: absolute;
@@ -346,7 +366,7 @@ img {
   width: 100%;
   border: none;
 }
-.footerMenuBox svg {
+.footerMenuBox span.ml-4 {
   display: none;
 }
 .footerAccordionIcon {
@@ -669,6 +689,44 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
+}
+.about-collection-header p {
+  color: #ffffff;
+  -webkit-text-fill-color: #161616; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #ffffff;
+}
+.about-collection-header p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    z-index: 2;
+    width: 100%;
+    height: 1px;
+}
+.about-collection-header p {
+  display: block;
+  position: relative;
+  margin: 0.5rem 0;
+}
+.about-collection-header p span{
+    z-index: 5;
+    background-color: #161616;
+    position: relative;
+    display: inline-block;
+}
+.about-collection-header p:nth-child(1) {
+  text-align: right;
+}
+
+.about-collection-header p:nth-child(1) span{
+    padding-left: 1.5rem;
+}
+.about-collection-header p:nth-child(2) span{
+    padding-right: 1.5rem;
 }
 @media only screen and (min-width: 640px) {
   .btn {

@@ -19,6 +19,7 @@ module.exports = {
         inclusionBG: "#F3F3F3",
         "dark-800": "#161616",
         "dark-600": "#212121",
+        f6: "#F6F6F6",
       },
       fontSize: {
         "1xl": "1.35rem",
@@ -36,6 +37,8 @@ module.exports = {
         "1.9xl": "1.9rem",
         "5.5rem": "5.5rem",
         "3.5rem": "3.5rem",
+        "3.3rem": "3.3rem",
+        "1.4rem": "1.4rem",
         "11xl": "11rem",
       },
       lineHeight: {
@@ -44,7 +47,7 @@ module.exports = {
         1.2: "1.2",
         1.3: "1.3",
         1.4: "1.4",
-        1.4: "1.4",
+        1.5: "1.5",
         1.6: "1.6",
         1.7: "1.7",
       },
@@ -93,8 +96,11 @@ module.exports = {
         "3xl": "1920px",
       },
       zIndex: {
-        '100': '100',
-      }
+        100: "100",
+      },
+      letterSpacing: {
+        tightest: "-.075em",
+      },
     },
   },
   plugins: [],

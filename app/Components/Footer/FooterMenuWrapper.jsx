@@ -34,7 +34,7 @@ const FooterMenuWrapper = () => {
             </div>
           </AccordionHeader>
           <AccordionBody>
-            <div className="footer-menu pt-5">
+            <div className="footer-menu mt-5">
               <ul>
                 <li>
                   <Link className="text-2xl py-1 mt-4 block" href="#">
@@ -74,7 +74,7 @@ const FooterMenuWrapper = () => {
             </div>
           </AccordionHeader>
           <AccordionBody>
-            <div className="footer-menu pt-5">
+            <div className="footer-menu mt-5">
               <ul>
                 <li>
                   <Link className="text-2xl py-1 mt-4 block" href="#">
@@ -115,7 +115,7 @@ const FooterMenuWrapper = () => {
             </div>
           </AccordionHeader>
           <AccordionBody>
-            <div className="footer-menu pt-5">
+            <div className="footer-menu mt-5">
               <ul>
                 <li>
                   <Link className="text-2xl py-1 mt-4 block" href="#">
@@ -156,7 +156,7 @@ const FooterMenuWrapper = () => {
             </div>
           </AccordionHeader>
           <AccordionBody>
-            <div className="footer-menu pt-5">
+            <div className="footer-menu mt-5">
               <ul>
                 <li>
                   <Link className="text-2xl py-1 mt-4 block" href="#">

@@ -49,7 +49,7 @@ const OurShowrooms = () => {
 
           <ul
             className="[&>*:last-child]:border-b border-gray-300 lg:w-60% lg:pr-10 xl:w-55% xl:mr-auto"
-            data-aos="zoom-in-up"
+            data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="500"
           >

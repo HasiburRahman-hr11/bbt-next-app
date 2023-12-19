@@ -23,9 +23,9 @@
   height: 7.7rem;
   min-width: 7.7rem;
 }
-.filterBrands li.active, .filterBrands li:hover,
-.budgetItem.active, .budgetItem:hover,
-.categoryItem.active , .categoryItem:hover {
+.filterBrands li.active,
+.budgetItem.active,
+.categoryItem.active{
   border-color: #000;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #fff;
@@ -46,9 +46,16 @@
   .filterPopupContent {
     width: 70%;
   }
-  .filterBrands li{
+  .filterBrands li {
     width: 10rem;
     height: 10rem;
+  }
+  .filterBrands li:hover,
+  .budgetItem:hover,
+  .categoryItem:hover {
+    border-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
   }
 }
 @media only screen and (min-width: 1536px) {

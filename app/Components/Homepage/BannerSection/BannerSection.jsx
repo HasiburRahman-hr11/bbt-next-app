@@ -30,9 +30,9 @@ const BannerSection = () => {
           <Image
             src="/images/hp-banner-mob.webp"
             alt="Banner Image"
-            width="1920"
-            height="1100"
-            className="block md:hidden"
+            width="390"
+            height="685"
+            className="block w-full md:hidden"
           />
         </div>
         <div

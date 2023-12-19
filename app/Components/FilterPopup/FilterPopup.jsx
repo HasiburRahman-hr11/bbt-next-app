@@ -236,7 +236,7 @@ const FilterPopup = ({ active, togglePopup }) => {
             <h3 className="3.5xl font-medium">Filters</h3>
             <div className="flex items-center">
               <div
-                className={`flex- items-center w-max border border-black cursor-pointer group hover:bg-black transition-all duration-300 ${styles.filterReset}`}
+                className={`flex- items-center w-max border border-black cursor-pointer group hover:bg-black transition-all duration-300 ${styles.filterReset} ${disableSubmit ? 'opacity-40 pointer-events-none':""}`}
                 onClick={handleResetFilter}
               >
                 <Image
