@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./ShopByCategory.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const categories = [
@@ -52,7 +51,7 @@ const ShopByCategory = () => {
         </h2>
 
         <ul
-          className="flex items-center flex-wrap mt-8 1xl:mt-24 3xl:mt-36"
+          className="flex items-center flex-wrap mt-8 1xl:mt-24 3xl:mt-36 [&>*:nth-child(3n)]:mr-0 lg:[&>*:nth-child(3n)]:mr-[2.5%] lg:[&>*:nth-child(5n)]:mr-0"
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="500"
@@ -60,7 +59,7 @@ const ShopByCategory = () => {
           {categories.map((category, index) => (
             <li
               key={index}
-              className={`w-31% three-column-item ${styles.categoryItem}`}
+              className={`w-31% three-column-item mr-[3.5%] lg:w-[18%] lg:mr-[2.5%] `}
             >
               <Link
                 href={category.url}
@@ -73,7 +72,9 @@ const ShopByCategory = () => {
                   alt={category.title}
                   className="object-contain block w-full max-h-11 xl:max-h-16 3xl:max-h-20"
                 />
-                <p className="text-black text-1xl mt-3 xl:text-1.6xl xl:mt-12 1xl:text-3xl group-hover:text-white  transition-all duration-500">{category.title}</p>
+                <p className="text-black text-1xl mt-3 xl:text-1.6xl xl:mt-12 1xl:text-3xl group-hover:text-white  transition-all duration-500">
+                  {category.title}
+                </p>
               </Link>
             </li>
           ))}

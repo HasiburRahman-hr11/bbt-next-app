@@ -16,8 +16,8 @@ const RelatedCars = () => {
     slidesToScroll: 1,
     arrows: false,
     centerMode: false,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 989,

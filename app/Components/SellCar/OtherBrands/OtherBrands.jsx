@@ -1,9 +1,7 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 const brands = [
   { title: "BMW", logo: "/images/detail-page/brand-icon-bmw.webp", url: "#" },
   { title: "AUDI", logo: "/images/detail-page/brand-icon-audi.webp", url: "#" },
@@ -79,32 +77,13 @@ const brands = [
   },
 ];
 
-const PopularBrands = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+const OtherBrands = () => {
   return (
-    <section className="pt-24 bg-white lg:pt-40 2xl:pt-52 3xl:pt-60">
+    <section className="bg-white py-24">
       <div className="container">
-        <div
-          className="relative lg:flex lg:justify-between"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <h2 className="titleWithLine flex-grow xl:tracking-tighter">
-            <span className="lg:bg-white lg:pr-10 relative z-10">
-              Popular Brands
-            </span>
-          </h2>
-          <div className="hidden lg:inline-block w-max bg-white pl-10">
-            <a href="#" className="btn btnBlack roundedBtn">
-              View All Brands
-            </a>
-          </div>
-        </div>
+        <h2 className="font-normal tracking-tight">Other Brands</h2>
         <ul
-          className={`flex flex-wrap mt-5 pb-20 border-b border-stone-300 lg:mt-20 lg:border-none lg:pb-0 3xl:mt-32 [&>*:nth-child(4n)]:border-r lg:[&>*:nth-child(4n)]:border-r-0 lg:[&>*:nth-child(6n)]:border-r xl:[&>*:nth-child(6n)]:border-r-0 xl:[&>*:nth-child(8n)]:border-r`}
+          className={`flex flex-wrap mt-5 lg:mt-20 3xl:mt-32 [&>*:nth-child(4n)]:border-r lg:[&>*:nth-child(4n)]:border-r-0 lg:[&>*:nth-child(6n)]:border-r xl:[&>*:nth-child(6n)]:border-r-0 xl:[&>*:nth-child(8n)]:border-r`}
         >
           {brands.map((brand, index) => (
             <li
@@ -130,9 +109,13 @@ const PopularBrands = () => {
             </li>
           ))}
         </ul>
+
+        <div className="mt-10">
+          <Link href="#" className="btn btnBlack btnSquare">View All Brands</Link>
+        </div>
       </div>
     </section>
   );
 };
 
-export default PopularBrands;
+export default OtherBrands;

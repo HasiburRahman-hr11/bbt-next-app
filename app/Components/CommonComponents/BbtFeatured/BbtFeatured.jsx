@@ -42,7 +42,7 @@ function NextArrow(props) {
   );
 }
 
-const FeaturedSection = () => {
+const BbtFeatured = () => {
   const [progressWidth, setProgressWidth] = useState(25);
   let settings = {
     dots: false,
@@ -131,4 +131,4 @@ const FeaturedSection = () => {
   );
 };
 
-export default FeaturedSection;
+export default BbtFeatured;

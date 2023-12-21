@@ -37,18 +37,42 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
-                    About Us
+                  <Link className="text-2xl py-1 mt-4 block" href="/collection">
+                    Collection
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
-                    Services
+                  <Link
+                    className="text-2xl py-1 mt-4 block"
+                    href="/suv-collection"
+                  >
+                    SUV Collection
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
-                    Contact Us
+                  <Link
+                    className="text-2xl py-1 mt-4 block"
+                    href="/aston-martin"
+                  >
+                    Aston Martin
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block"
+                    href="/search-results"
+                  >
+                    Search Page
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-2xl py-1 mt-4 block" href="/compare">
+                    Compare Page
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-2xl py-1 mt-4 block" href="/sell-car">
+                    Sell Car
                   </Link>
                 </li>
               </ul>

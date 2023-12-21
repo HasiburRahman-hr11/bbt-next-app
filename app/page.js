@@ -7,7 +7,7 @@ import OurShowrooms from "./Components/Homepage/OurShowrooms/OurShowrooms";
 import SellYourCar from "./Components/Homepage/SellYourCar/SellYourCar";
 import Footer from "./Components/Footer/Footer";
 import ExploreSection from "./Components/Homepage/ExploreSection/ExploreSection";
-import FeaturedSection from "./Components/Homepage/FeaturedSection/FeaturedSection";
+import BbtFeatured from "./Components/CommonComponents/BbtFeatured/BbtFeatured";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <OurShowrooms />
       <SellYourCar />
       <ExploreSection />
-      <FeaturedSection />
+      <BbtFeatured />
 
       <Footer />
     </main>

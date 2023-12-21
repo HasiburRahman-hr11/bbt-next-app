@@ -13,22 +13,22 @@ const FooterMenuDesktop = () => {
           <div className="footerMenu">
             <ul>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/collection">Collection</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/suv-collection">SUV Collection</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/aston-martin">Aston Martin</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/search-results">Search Page</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/compare">Compare Page</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/sell-car">Sell Car</Link>
               </li>
               <li>
                 <a href="#">Menu Item</a>

@@ -13,7 +13,7 @@ const FeaturedItem = ({ data }) => {
           src={
             data?.thumbnail ? data.thumbnail : "/images/bbt-world-item-1.webp"
           }
-          alt="{data?.title ? data.title : 'BBT World'}"
+          alt={data?.title ? data.title : 'BBT World'}
           width="450"
           height="587"
           className="block w-full h-full rounded-3rem"
