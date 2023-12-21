@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import PageHeader from "../Components/SearchResults/pageHeader/pageHeader";
+import PageHeader from "../Components/SearchResults/PageHeader/PageHeader";
 import CarList from "../Components/SearchResults/CarList/CarList";
 
 const SearchResults = () => {
