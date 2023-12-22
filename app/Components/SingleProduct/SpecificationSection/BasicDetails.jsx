@@ -31,7 +31,7 @@ const BasicDetails = () => {
           </div>
           <div className="w-auto pl-8 3xl:pl-12">
             <p
-              className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 mb-5 leading-4 lg:text-sm lg:pt-1 3xl:text-lg 3xl:px-8 xl:py-1 xl:px-7 2xl:mb-8 3xl:mb-10 3xl:tracking-wide`}
+              className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 mb-5 leading-4 lg:text-sm lg:py-1 3xl:text-lg 3xl:px-8 xl:py-1 xl:px-7 2xl:mb-8 3xl:mb-10 3xl:tracking-wide`}
             >
               Reg.Year : 2015 | EMI STARTS @ 6,20,270.04
             </p>

@@ -28,7 +28,7 @@ const CollectionItem = ({ data }) => {
           className="block px-6 pt-16 border-t border-neutral-400"
         >
           <p
-            className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 pt-2 py-1 leading-4 lg:text-sm lg:pt-1 3xl:text-lg 3xl:px-8`}
+            className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 leading-4 lg:text-sm lg:py-1 3xl:text-lg 3xl:px-8`}
           >
             Reg.Year : {data.registrationYear}
           </p>

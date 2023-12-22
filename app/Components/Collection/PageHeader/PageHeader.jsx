@@ -1,8 +1,16 @@
-import React from "react";
+"use client";
 import BreadCrumb from "../../CommonComponents/BreadCrumb/BreadCrumb";
 import Image from "next/image";
+import React, { useState } from "react";
+import FilterPopup from "../../FilterPopup/FilterPopup";
 
 const PageHeader = () => {
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  const togglePopup = () => {
+    setFilterOpen(!filterOpen);
+  };
+
   return (
     <section className="bg-white">
       <div className="container">
@@ -11,7 +19,7 @@ const PageHeader = () => {
           <div className="flex flex-wrap items-center justify-between mt-5">
             <h2 className="text-3xl">Total 1575 Results Found</h2>
             <div className="flex flex-wrap items-center">
-              <div className="w-max cursor-pointer">
+              <div className="w-max cursor-pointer" onClick={togglePopup}>
                 <Image
                   src="/images/collection-filter-icon.webp"
                   width="20"
@@ -32,6 +40,9 @@ const PageHeader = () => {
           </div>
         </div>
       </div>
+      {filterOpen && (
+        <FilterPopup active={filterOpen} togglePopup={togglePopup} />
+      )}
     </section>
   );
 };

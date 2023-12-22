@@ -62,7 +62,7 @@ const CompareSection = () => {
 
                   <div className="w-3/6 md:py-8 md:px-6 md:w-3/5 lg:w-51% lg:px-16 lg:py-10 1xl:px-24 3xl:px-32">
                     <p
-                      className={`hidden lg:inline-block bg-black text-white text-center rounded-2xl text-base px-5 pt-2 py-1 leading-4 lg:text-sm lg:pt-1 3xl:text-lg 3xl:px-8`}
+                      className={`hidden lg:inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 leading-4 lg:text-sm lg:py-1 3xl:text-lg 3xl:px-8`}
                     >
                       Reg.Year : 2022
                     </p>

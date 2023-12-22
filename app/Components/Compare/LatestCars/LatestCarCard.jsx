@@ -12,7 +12,7 @@ const LatestCarCard = () => {
         className={`bg-white px-8 pt-12 pb-20 sm:px-8 sm:pt-8 sm:pb-16 lg:pb-10 2xl:py-10 3xl:px-20 3xl:pt-12 3xl:pb-16 1xl:px-12 `}
       >
         <p
-          className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 pt-2 py-1 leading-4 lg:text-sm lg:pt-1 3xl:text-xl 3xl:px-8`}
+          className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 leading-4 lg:text-sm lg:py-1 3xl:text-xl 3xl:px-8`}
         >
           Reg.Year : 2022
         </p>
