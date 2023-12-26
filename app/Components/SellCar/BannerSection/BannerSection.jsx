@@ -20,7 +20,7 @@ const BannerSection = () => {
               3 Easy Steps.
             </h1>
             <ul className="flex flex-wrap mt-16">
-              <li className="w-2/6 px-5 py-2 text-center border-l border-zinc-600 last-of-type:border-r">
+              <li className="w-2/6 px-5 py-2 text-center border-l border-zinc-800 last-of-type:border-r">
                 <Image
                   src="/images/sell-car/sell-banner-icon-1.webp"
                   alt="USP Icon"
@@ -32,7 +32,7 @@ const BannerSection = () => {
                   <strong>151</strong> check <br /> point
                 </p>
               </li>
-              <li className="w-2/6 px-5 py-2 text-center border-l border-zinc-600 last-of-type:border-r">
+              <li className="w-2/6 px-5 py-2 text-center border-l border-zinc-800 last-of-type:border-r">
                 <Image
                   src="/images/sell-car/sell-banner-icon-2.webp"
                   alt="USP Icon"
@@ -44,7 +44,7 @@ const BannerSection = () => {
                   Get offer in <strong>29 minutes</strong>
                 </p>
               </li>
-              <li className="w-2/6 px-5 py-2 text-center border-l border-zinc-600 last-of-type:border-r">
+              <li className="w-2/6 px-5 py-2 text-center border-l border-zinc-800 last-of-type:border-r">
                 <Image
                   src="/images/sell-car/sell-banner-icon-3.webp"
                   alt="USP Icon"

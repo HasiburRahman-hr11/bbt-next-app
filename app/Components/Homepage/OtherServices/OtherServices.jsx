@@ -60,7 +60,7 @@ const OtherServices = () => {
   };
 
   return (
-    <section className="bg-black py-24 lg:py-40 xl:py-52 3xl:py-72">
+    <section className="bg-black py-24 lg:py-40 xl:py-52 3xl:py-72 -mt-5 md:-mt-0">
       <div className="lg:flex justify-between items-center lg:pl-40 xl:pl-48 1xl:pl-52 3xl:pl-72">
         <div
           className="container lg:w-30% lg:pr-20 xl:pr-28"

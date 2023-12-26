@@ -96,14 +96,14 @@ const OtherBrands = () => {
             >
               <Link
                 href={brand.url}
-                className="flex px-5 py-3 items-center justify-between w-full h-full lg:px-12 lg:py-10 xl:px-12 xl:py-8"
+                className="flex px-7 py-3 items-center justify-between w-full h-full lg:px-12 lg:py-10 xl:px-12 xl:py-8"
               >
                 <Image
                   src={brand.logo}
                   width="100"
                   height="100"
                   alt={brand.title}
-                  className="object-contain block w-full max-h-16 xl:max-h-18 1xl:max-h-20 1xl:max-w-7r 1xl:mx-auto 2xl:max-w-8r 2xl:max-h-24 3xl:max-h-32 hover:scale-110 transition-all duration-500 ease-in-out"
+                  className="object-contain block w-full max-h-12 hover:scale-110 transition-all duration-500 ease-in-out"
                 />
               </Link>
             </li>

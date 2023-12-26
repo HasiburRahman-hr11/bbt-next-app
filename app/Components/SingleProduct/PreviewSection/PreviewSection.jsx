@@ -118,7 +118,7 @@ const PreviewSection = () => {
               />
             </div>
 
-            <div className="lg:w-70% 3xl:w-72%">
+            <div className="lg:w-70% 3xl:w-72% mt-24 lg:mt-0">
               <div className="px-10 sm:px-16 md:px-20 lg:pl-0 lg:pr-44 1xl:pr-56 3xl:pr-72">
                 <a className="flex justify-between items-center my-16 lg:mt-0 1xl:mb-24">
                   <p className="1xl:text-3xl 3xl:text-4xl 3xl:tracking-wide">151 Check Points Completed</p>

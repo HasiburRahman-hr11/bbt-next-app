@@ -7,7 +7,7 @@ const RelatedCarsCard = () => {
   return (
     <Link
       href="/products/114325"
-      className="mr-9 bg-white lg:mx-4 block transition-all ease-in-out hover:shadow-lg 1xl:mx-6 2xl:mx-8"
+      className="mr-9 bg-white lg:mx-4 block transition-all ease-in-out hover:shadow-lg xl:mx-7 1xl:mx-6 2xl:mx-8"
     >
       <div
         className={`bg-white px-8 pt-12 pb-20 sm:px-8 sm:pt-8 sm:pb-16 lg:pb-10 2xl:py-10 3xl:px-20 3xl:pt-12 3xl:pb-16 1xl:px-12 `}

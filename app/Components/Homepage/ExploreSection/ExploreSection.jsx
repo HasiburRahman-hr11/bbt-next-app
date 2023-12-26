@@ -21,9 +21,9 @@ const ExploreSection = () => {
           <p className="uppercase text-lg mb-4 md:mb-8 lg:text-xl xl:mb-10 xl:text-2xl 2xl:mb-12 3xl:text-3xl 3xl:mb-14">
             LET'S KEEP IT SIMPLE.
           </p>
-          <h2 className="font-light leading-tight tracking-tight lg:text-6xl lg:tracking-tighter lg:leading-snug xl:text-6.5xl 2xl:text-7xl 3xl:text-8xl">
+          <h2 className="font-light leading-tight tracking-tight md:text-4xl lg:text-6xl lg:tracking-tighter lg:leading-snug xl:text-6.5xl 2xl:text-7xl 3xl:text-8xl sm:[&>br]:hidden xl:[&>br]:block [&>strong]:font-normal">
             We are the best when it <br /> comes{" "}
-            <span className="font-medium">to exotic cars.</span>
+            <strong>to exotic cars.</strong>
           </h2>
           <div className="hidden md:block mt-10 xl:mt-14 2xl:mt-20">
             <Link href="#" className="btn btnWhite roundedBtn">

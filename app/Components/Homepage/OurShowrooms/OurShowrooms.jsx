@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import styles from "./OurShowrooms.module.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,7 +34,7 @@ const OurShowrooms = () => {
           </span>
         </h2>
         <p
-          className={`hidden lg:block mt-5 text-6xl leading-snug tracking-tight font-normal 2xl:mt-8 3xl:mt-16 ${styles.ourShowroomSub}`}
+          className={`hidden lg:block mt-5 text-6xl leading-snug tracking-tight font-normal 2xl:tracking-[-3px] 2xl:text-[4.4rem] 2xl:leading-1.3 2xl:mt-8 3xl:mt-16 [&>br]:hidden xl:[&>br]:block 3xl:text-[5.5rem]`}
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="500"

@@ -22,7 +22,7 @@ const BannerSection = () => {
           />
         </div>
         <div className="absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-48 pb-24">
-          <div className="text-center px-20">
+          <div className="text-center px-12">
             <p className="text-lg font-light">Compare Cars</p>
             <h1 className="font-light text-3.3rem tracking-tighter leading-1.4 mt-5 [&>strong]:font-normal">
               <strong>Confused?</strong> Easy way to compare cars

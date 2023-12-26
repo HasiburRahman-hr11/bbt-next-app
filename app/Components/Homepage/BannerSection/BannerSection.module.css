@@ -30,7 +30,7 @@
 .bannerSearchBox {
   border: 1px solid rgba(128, 128, 128, 1);
   border-radius: 3rem;
-  width: 30rem;
+  width: 29rem;
   height: 4.5rem;
   margin-right: 1.5rem;
 }
@@ -39,7 +39,7 @@
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   padding: 1.5rem 4rem 1.2rem 5rem;
 }
@@ -90,17 +90,17 @@
   transform: translateX(-50%);
 }
 @media only screen and (min-width: 1440px) {
-  .filterBtn img {
-    width: 1.5rem;
-  }
   .bannerSearchBox,
   .bannerBtnBox a {
     height: 4.9rem;
   }
+  .bannerSearchBox{
+    width: 31rem;
+  }
 }
 @media only screen and (min-width: 1536px) {
   .bannerSearchBox {
-    width: 32rem;
+    width: 33rem;
     height: 5rem;
   }
   .bannerBtnBox a {

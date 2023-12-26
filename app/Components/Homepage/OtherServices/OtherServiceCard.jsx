@@ -15,7 +15,7 @@ const OtherServiceCard = () => {
             alt="Service Image"
           />
           <div className="py-16 px-10 flex justify-between 3xl:py-28 3xl:px-20">
-            <h3 className="font-medium text-4xl 3xl:text-6xl">Service Centre</h3>
+            <h3 className="font-medium text-4xl 2xl:text-[2.7rem] 3xl:text-6xl">Service Centre</h3>
             <Image
               src="/images/showroom-location-arrow.webp"
               width="12"

@@ -19,7 +19,7 @@ const SpecificationTabs = ({specifications}) => {
   return (
     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500" className="block lg:hidden">
       <ul
-        className={`${styles.specTabList} detailPageTabs flex items-center mt-20 pl-8 pr-8 mb-16 sm:pl-12`}
+        className={`${styles.specTabList} detailPageTabs no-scroll-bar flex items-center mt-20 pl-8 pr-8 mb-16 sm:pl-12`}
       >
         {specifications?.map((item, index) => (
           <li

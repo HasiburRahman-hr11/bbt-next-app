@@ -85,7 +85,7 @@ const CompareSection = () => {
                     </div>
                     <div className="mt-10 hidden md:block lg:mt-6 1xl:mt-9">
                       <button className="addBtn lg:py-4 lg:justify-between 3xl:py-6">
-                        <span className="uppercase font-medium lg:text-sm lg:capitalize 2xl:text-lg 3xl:text-1xl">
+                        <span className="uppercase font-medium lg:text-lg lg:capitalize 1xl:text-lg 3xl:text-1xl">
                           Add Cars
                         </span>
                         <Image
@@ -93,7 +93,7 @@ const CompareSection = () => {
                           width="13"
                           height="13"
                           alt="Plus Icon"
-                          className="object-contain w-5 ml-8 lg:w-3 2xl:w-5 3xl:w-7"
+                          className="object-contain w-5 ml-8 lg:w-4 1xl:w-5 3xl:w-7"
                         />
                       </button>
                     </div>

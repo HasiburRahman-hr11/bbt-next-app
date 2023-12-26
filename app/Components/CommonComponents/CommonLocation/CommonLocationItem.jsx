@@ -21,7 +21,7 @@ const CommonLocationItem = ({ location }) => {
         </div>
         <div
           href="#"
-          className="flex justify-between py-8 px-8 xl:py-10 2xl:py-12 3xl:py-16"
+          className="flex justify-between py-8 xl:px-8 xl:py-10 2xl:py-12 3xl:py-16"
         >
           <div className="w-9/12 lg:flex lg:items-center">
             <h3 className="text-5xl font-semibold lg:w-5.5/12 xl:text-4.5xl 2xl:text-5xl 3xl:text-6xl transition-all duration-300 ease-in">
@@ -33,7 +33,7 @@ const CommonLocationItem = ({ location }) => {
           </div>
           <Image
             src="/images/showroom-location-arrow.webp"
-            className="w-6 object-contain xl:w-8 1xl:w-9 2xl:w-10 3xl:w-12"
+            className="w-6 object-contain xl:w-8 1xl:w-9 2xl:w-10 3xl:w-12 rotate-45"
             width="15"
             height="15"
             alt="Arrow Icon"

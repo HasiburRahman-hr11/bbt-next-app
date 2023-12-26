@@ -21,7 +21,7 @@ const FormSection = () => {
           </h2>
           <form action="" className="block">
             <div className="flex flex-wrap items-center">
-              <div className="w-28 h-28 rounded-lg border border-neutral-400 flex items-center justify-center cursor-pointer relative my-10 p-3">
+              <div className="w-[6.3rem] h-[6.3rem] rounded-lg border border-neutral-400 flex items-center justify-center cursor-pointer relative my-10 p-3">
                 <input
                   accept="image/*"
                   type="file"
@@ -56,7 +56,7 @@ const FormSection = () => {
                 type="text"
                 placeholder="Your Name*"
                 required
-                className="w-full block text-2xl placeholder:text-2xl placeholder:text-neutral-300 text-white py-7 px-7 border border-neutral-500 rounded-lg outline-none bg-transparent"
+                className="w-full block text-2xl placeholder:text-2xl placeholder:text-neutral-300 text-white py-7 px-9 border border-neutral-500 rounded-lg outline-none bg-transparent"
               />
             </div>
             <div className="mb-10">
@@ -64,7 +64,7 @@ const FormSection = () => {
                 type="tel"
                 placeholder="Phone*"
                 required
-                className="w-full block text-2xl placeholder:text-2xl placeholder:text-neutral-300 text-white py-7 px-7 border border-neutral-500 rounded-lg outline-none bg-transparent"
+                className="w-full block text-2xl placeholder:text-2xl placeholder:text-neutral-300 text-white py-7 px-9 border border-neutral-500 rounded-lg outline-none bg-transparent"
               />
             </div>
             <button
@@ -79,7 +79,7 @@ const FormSection = () => {
               OR
             </span>
           </div>
-          <p className="text-white text-2xl">
+          <p className="text-white font-light text-[1.4rem]">
             For further enquiry, you can call or whatsapp
           </p>
 

@@ -17,7 +17,7 @@ const PageHeader = () => {
         <div className="py-16">
           <BreadCrumb pageTitle="Collection" />
           <div className="flex flex-wrap items-center justify-between mt-5">
-            <h2 className="text-[1.8rem]">Total 1575 Results Found</h2>
+            <h2 className="text-[1.8rem]">Total 5 Results Found</h2>
             <div className="flex flex-wrap items-center">
               <div className="w-max cursor-pointer" onClick={togglePopup}>
                 <Image

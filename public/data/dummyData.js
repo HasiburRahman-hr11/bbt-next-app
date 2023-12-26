@@ -126,7 +126,7 @@ export const cars = [
     },
     {
         _id:'006',
-        title:'Lamborghini Urus Masonry Edition',
+        title:'Lamborghini Urus',
         brand:'Lamborghini',
         model:'Urus',
         price:'3,79,00,000',

@@ -62,7 +62,15 @@ const FooterMenuWrapper = () => {
                     className="text-2xl py-1 mt-4 block"
                     href="/search-results"
                   >
-                    Search Page
+                    Search Results
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block"
+                    href="/filter-results"
+                  >
+                    Filter Results
                   </Link>
                 </li>
                 <li>

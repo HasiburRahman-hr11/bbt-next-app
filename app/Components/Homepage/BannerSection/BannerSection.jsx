@@ -55,10 +55,7 @@ const BannerSection = () => {
                     For Super Stars
                   </span>
                 </h1>
-                <p className="text-white lg:hidden mt-6">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos quam itaque eos!
-                </p>
+
                 <div className="banner-filter-desktop lg:flex flex-wrap items-center hidden justify-center mt-12 1xl:mt-14 3xl:mt-20">
                   <div
                     className={`${styles.bannerSearchBox} relative flex items-center`}
@@ -69,6 +66,7 @@ const BannerSection = () => {
                         width="17"
                         height="17"
                         alt="Search Icon"
+                        className="w-5 object-contain"
                       />
                     </span>
                     <input
@@ -86,7 +84,7 @@ const BannerSection = () => {
                         width="23"
                         height="22"
                         alt="Filter Button"
-                        className="w-8 hover:scale-110 transition-all duration-500 group-hover:invert"
+                        className="w-6 1xl:w-[1.5rem] 2xl:w-7 hover:scale-110 transition-all duration-500 group-hover:invert"
                       />
                     </div>
                   </div>
@@ -130,7 +128,7 @@ const BannerSection = () => {
         </div>
 
         <div
-          className={`absolute bottom-16 ${styles.bannerScrollBtn} text-center w-max lg:flex flex-col justify-center items-center hidden`}
+          className={`absolute bottom-16 ${styles.bannerScrollBtn} text-center w-max lg:flex flex-col justify-center items-center hidden 3xl:bottom-24`}
         >
           <Image
             src="/images/banner-scroll-icon-white.webp"
@@ -139,7 +137,7 @@ const BannerSection = () => {
             height="29"
             className="inline-block object-contain w-8 1xl:w-6"
           />
-          <span className="uppercase text-white mt-5 text-xs 1xl:leading-relaxed">
+          <span className="uppercase text-white mt-5 text-xs 1xl:leading-relaxed 2xl:text-lg">
             Scroll Down
           </span>
         </div>

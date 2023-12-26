@@ -73,7 +73,7 @@ let settings = {
 
 const CarSummaryCard = ({ data }) => {
   return (
-    <div className="py-8 rounded-2xl border border-neutral-400 px-5 mr-7 sm:border-0 sm:mr-0 xl:py-14">
+    <div className="py-8 rounded-2xl border border-neutral-400 px-5 mr-7 sm:border-0 sm:mr-0 xl:py-14 3xl:py-20">
       <Image
         src={data.icon}
         width="40"
@@ -116,12 +116,12 @@ const CarSummary = () => {
           ))}
         </Slider>
       </div>
-      <div className="container hidden sm:block lg:mt-20 xl:mt-32 3xl:mt-40">
+      <div className="container hidden sm:block lg:mt-20 xl:mt-32 3xl:mt-48">
         <ul className="sm:flex sm:flex-wrap">
           {dummyData.map((data, index) => (
             <li
               key={index}
-              className={`w-1/3 px-8 mb-8 lg:mb-16 lg:w-1/4 xl:px-12 xl:mb-20 1xl:px-16 3xl:px-24 ${styles.carSummeryItem}`}
+              className={`w-1/3 px-8 mb-8 lg:mb-16 lg:w-1/4 xl:px-12 xl:mb-20 1xl:px-16 3xl:px-24 3xl:mb-24 ${styles.carSummeryItem}`}
             >
               <CarSummaryCard data={data} />
             </li>

@@ -69,7 +69,7 @@ const StoreHouses = () => {
           />
         </div>
         <div className="[&>p]:text-justify [&>p]:text-xl [&>p]:font-light [&>p]:tracking-tight [&>p]:leading-1.6 [&>p>strong]:font-medium [&>h2]:tracking-tighter">
-          <h2>
+          <h2 className="leading-1.2">
             Storehouse of <br /> Pre-owned Aston Martin Cars.
           </h2>
           <br />

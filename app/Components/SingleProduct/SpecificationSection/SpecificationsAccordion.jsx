@@ -53,7 +53,7 @@ const SpecificationsAccordion = ({ specifications }) => {
                     height="20"
                     className="object-contain w-7 h-7 inline-block mr-3 xl:w-9 xl:h-9 xl:mr-4 1xl:w-10 1xl:h-10 1xl:mr-5 3xl:w-12 3xl:h-12 3xl:mr-8"
                   />
-                  <p className="font-medium text-3xl 1xl:text-3.5xl 1xl:tracking-tight 2xl:text-4xl 3xl:text-4.5xl">
+                  <p className="font-normal text-3xl 1xl:text-3.5xl 1xl:tracking-tight 2xl:text-4xl 3xl:text-4.5xl">
                     {item.title}
                   </p>
                 </div>

@@ -25,6 +25,9 @@ const FooterMenuDesktop = () => {
                 <Link href="/search-results">Search Page</Link>
               </li>
               <li>
+                <Link href="/filter-results">Filter Page</Link>
+              </li>
+              <li>
                 <Link href="/compare">Compare Page</Link>
               </li>
               <li>

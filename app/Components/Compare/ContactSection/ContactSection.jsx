@@ -32,7 +32,7 @@ const ContactSection = () => {
             className="object-contain w-72"
           />
         </div>
-        <div>
+        <div className="px-10">
             <Link href="#" className="btn btnWhite roundedBtn">Contact Us</Link>
         </div>
       </div>
