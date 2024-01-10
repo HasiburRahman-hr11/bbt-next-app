@@ -40,6 +40,7 @@ const OtherServices = () => {
     nextArrow: <NextArrow />,
     autoplay: true,
     autoplaySpeed: 3000,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -50,7 +51,7 @@ const OtherServices = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1
         },
       },
     ],

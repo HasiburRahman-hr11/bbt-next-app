@@ -9,6 +9,7 @@ import FilterPopup from "../../FilterPopup/FilterPopup";
 
 const BannerSection = () => {
   const [filterOpen, setFilterOpen] = useState(false);
+  const [searchActive, setSearchActive] = useState(false);
 
   const togglePopup = () => {
     setFilterOpen(!filterOpen);
@@ -19,24 +20,24 @@ const BannerSection = () => {
   return (
     <section className="bg-black">
       <div className={`relative`}>
-        <div className={`${styles.hpBannerImage}`}>
+        <div>
           <Image
             src="/images/hp-banner-desk.webp"
             alt="Banner Image"
             width="1920"
             height="1100"
-            className="hidden md:block"
+            className="hidden md:block object-cover"
           />
           <Image
             src="/images/hp-banner-mob.webp"
             alt="Banner Image"
             width="390"
             height="685"
-            className="block w-full md:hidden"
+            className="block w-full md:hidden object-cover max-h-[685px]"
           />
         </div>
         <div
-          className={`${styles.bannerContent} absolute top-0 left-0 text-center w-full h-full`}
+          className={`${styles.bannerContent} absolute top-0 left-0 text-center w-full h-full pt-[10.5rem] pb-[5rem]`}
         >
           <div className="container h-full">
             <div
@@ -58,7 +59,11 @@ const BannerSection = () => {
 
                 <div className="banner-filter-desktop lg:flex flex-wrap items-center hidden justify-center mt-12 1xl:mt-14 3xl:mt-20">
                   <div
-                    className={`${styles.bannerSearchBox} relative flex items-center`}
+                    className={`${
+                      styles.bannerSearchBox
+                    } relative flex items-center w-[29rem] h-[4.5rem] rounded-[3rem] mr-[1.5rem] border border-[#808080] ${
+                      searchActive ? styles.searchActive : ""
+                    }`}
                   >
                     <span className={`absolute left-8 ${styles.searchIcon}`}>
                       <Image
@@ -74,6 +79,8 @@ const BannerSection = () => {
                       name=""
                       id=""
                       placeholder="Search Your Dream Car Here... "
+                      onFocus={() => setSearchActive(true)}
+                      onBlur={() => setSearchActive(false)}
                     />
                     <div
                       className={`${styles.filterBtn} absolute right-8 z-10 cursor-pointer 3xl:right-10 p-3 rounded-50% hover:bg-gray-300 transition-all duration-500 group`}
@@ -110,16 +117,16 @@ const BannerSection = () => {
 
               <Link
                 href="#"
-                className={`${styles.hpBannerBtnMob} text-white relative w-full text-left text-xl lg:hidden`}
+                className={`${styles.hpBannerBtnMob} text-white relative w-full text-left text-xl lg:hidden max-w-[29rem] mx-auto py-[1.5rem] px-[4rem] rounded-[4rem]`}
               >
                 Let’s Explore Luxury <br /> Cars Collection
-                <span className="flex items-center justify-center bg-white absolute">
+                <span className="flex items-center justify-center bg-white absolute w-[6.6rem] h-[5.3rem] rounded-[3rem] top-[-1rem] right-[3rem] ">
                   <Image
                     src="/images/banner-btn-arrow-mob.webp"
                     alt="Button Arrow"
                     width="25"
                     height="21"
-                    className="object-contain"
+                    className="object-contain max-w-[2.5rem]"
                   />
                 </span>
               </Link>
@@ -142,7 +149,9 @@ const BannerSection = () => {
           </span>
         </div>
       </div>
-      {filterOpen && <FilterPopup active={filterOpen} togglePopup={togglePopup} />}
+      {filterOpen && (
+        <FilterPopup active={filterOpen} togglePopup={togglePopup} />
+      )}
     </section>
   );
 };

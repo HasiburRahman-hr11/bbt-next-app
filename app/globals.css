@@ -229,7 +229,7 @@ img {
 .btn.btnSquare.h-extra {
   height: 4.8rem;
 }
-.callBtnGroup .callBtnLeft{
+.callBtnGroup .callBtnLeft {
   flex-grow: 1;
 }
 
@@ -345,20 +345,37 @@ img {
 .header-wrapper {
   width: 100%;
   padding: 3rem 3rem;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .header.sticky {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #000;
+  -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+  backdrop-filter: blur(8px); /* Chrome and Opera */
+  box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+  background-color: rgb(228 228 228 / 15%);
   animation: smoothScroll 1s forwards;
   height: auto;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .header.sticky .header-wrapper,
 .header.page-header .header-wrapper {
   padding: 2rem 3rem;
+}
+.header.sticky .header-phone-list a{
+  color: #000;
+  border-color: #000;
+}
+.header.sticky span{
+  color: #000;
+}
+.header.sticky .menu-bar span{
+  background-color: #000;
+}
+.header.sticky .header-phone-list a:hover{
+  color: #ef3024;
 }
 @keyframes smoothScroll {
   0% {
@@ -545,7 +562,10 @@ img {
   max-width: 4.2rem;
   height: auto;
 }
-
+.hp-services-slider .slick-slide {
+  width: calc(100% / 2.5);
+  /* Adjust other styles as needed */
+}
 .hp-services-slider .slick-list {
   padding: 0 10% 0 0 !important;
 }

@@ -24,14 +24,10 @@ const Header = ({ isPageHeader }) => {
             <span className="text-white uppercase mr-5 hidden lg:inline-block text-base xl:text-lg 3xl:text-2xl 3xl:mr-6">
               Menu
             </span>
-            <div className="menu-bar">
-              <Image
-                src="/images/menu-toggle.webp"
-                width="39"
-                height="24"
-                alt="Menu Bar"
-                className="object-contain w-12 lg:w-10 xl:w-12 3xl:w-16"
-              />
+            <div className="menu-bar w-12 lg:w-10 xl:w-12 3xl:w-16 [&>span]:h-[1.5px] [&>span]:bg-white [&>span]:block [&>span]:rounded-[5px] group">
+              <span className="w-[85%] mb-[6px]"></span>
+              <span className="w-[85%] mb-[6px] group-hover:ml-[5px] transition-all duration-500 ease-in-out"></span>
+              <span className="w-[85%]"></span>
             </div>
           </div>
           <div className="header-logo  lg:order-1 ">
