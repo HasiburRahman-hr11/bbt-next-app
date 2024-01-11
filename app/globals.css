@@ -175,8 +175,6 @@ a {
   color: inherit;
 }
 main {
-  max-width: 1920px;
-  margin: 0 auto;
   position: relative;
 }
 img {
@@ -185,6 +183,10 @@ img {
 .container {
   width: 91%;
   max-width: 1600px;
+  margin: 0 auto;
+}
+.max-1920 {
+  max-width: 1920px;
   margin: 0 auto;
 }
 .btn {
@@ -364,17 +366,17 @@ img {
 .header.page-header .header-wrapper {
   padding: 2rem 3rem;
 }
-.header.sticky .header-phone-list a{
+.header.sticky .header-phone-list a {
   color: #000;
   border-color: #000;
 }
-.header.sticky span{
+.header.sticky span {
   color: #000;
 }
-.header.sticky .menu-bar span{
+.header.sticky .menu-bar span {
   background-color: #000;
 }
-.header.sticky .header-phone-list a:hover{
+.header.sticky .header-phone-list a:hover {
   color: #ef3024;
 }
 @keyframes smoothScroll {
@@ -816,6 +818,9 @@ img {
 @media only screen and (min-width: 768px) {
   .inclusionSlider .slick-slider {
     padding: 0 7rem;
+  }
+  .details-banner-slider .slick-list {
+    padding: 0 27% !important;
   }
 }
 @media only screen and (min-width: 1024px) {

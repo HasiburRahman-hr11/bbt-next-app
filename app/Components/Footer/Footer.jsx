@@ -10,15 +10,17 @@ const Footer = () => {
     <>
       <FloatingButtons />
       <footer className="bg-black pb-20 sm:pb-0">
-        <div className="container">
-          <div className="lg:hidden">
-            <FooterMenuWrapper />
+        <div className="max-1920">
+          <div className="container">
+            <div className="lg:hidden">
+              <FooterMenuWrapper />
+            </div>
+            <div className="hidden lg:block">
+              <FooterMenuDesktop />
+            </div>
+            <FooterAppLinks />
+            <FooterCopyRight />
           </div>
-          <div className="hidden lg:block">
-            <FooterMenuDesktop />
-          </div>
-          <FooterAppLinks />
-          <FooterCopyRight />
         </div>
       </footer>
     </>

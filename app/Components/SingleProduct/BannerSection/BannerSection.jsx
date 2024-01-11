@@ -41,8 +41,7 @@ let settings = {
   slidesToShow: 2,
   slidesToScroll: 1,
   arrows: true,
-  // centerMode: true,
-  // centerPadding: "15rem",
+  centerMode: true,
   // autoplay: true,
   // autoplaySpeed: 3000,
   nextArrow: <NextArrow />,
@@ -62,35 +61,37 @@ let settings = {
 const BannerSection = () => {
   return (
     <section className="productPageBanner overflow-hidden bg-white">
-      <Slider {...settings}>
-        <div className="md:px-2">
-          <Image
-            src="/images/detail-page/detail-page-banner.webp"
-            alt="Product Image"
-            className="w-full object-cover block"
-            width="1025"
-            height="730"
-          />
-        </div>
-        <div className="md:px-2">
-          <Image
-            src="/images/detail-page/detail-page-banner.webp"
-            alt="Product Image"
-            className="w-full object-cover"
-            width="1025"
-            height="730"
-          />
-        </div>
-        <div className="md:px-2">
-          <Image
-            src="/images/detail-page/detail-page-banner.webp"
-            alt="Product Image"
-            className="w-full object-cover"
-            width="1025"
-            height="730"
-          />
-        </div>
-      </Slider>
+      <div className="max-1920">
+        <Slider {...settings} className="details-banner-slider">
+          <div className="md:px-2">
+            <Image
+              src="/images/detail-page/detail-page-banner.webp"
+              alt="Product Image"
+              className="w-full object-cover block"
+              width="1025"
+              height="730"
+            />
+          </div>
+          <div className="md:px-2">
+            <Image
+              src="/images/detail-page/detail-page-banner.webp"
+              alt="Product Image"
+              className="w-full object-cover"
+              width="1025"
+              height="730"
+            />
+          </div>
+          <div className="md:px-2">
+            <Image
+              src="/images/detail-page/detail-page-banner.webp"
+              alt="Product Image"
+              className="w-full object-cover"
+              width="1025"
+              height="730"
+            />
+          </div>
+        </Slider>
+      </div>
     </section>
   );
 };

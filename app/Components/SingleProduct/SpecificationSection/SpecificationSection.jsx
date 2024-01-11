@@ -208,15 +208,17 @@ const specifications = [
 const SpecificationSection = () => {
   return (
     <section className="relative z-10 py-12 rounded-t-3xl bg-white -mt-10 md:mt-0 md:rounded-none lg:py-0 lg:-mt-4">
-      <BasicDetails />
+      <div className="max-1920">
+        <BasicDetails />
 
-      <CarSummary />
+        <CarSummary />
 
-      <PaidFeatures />
+        <PaidFeatures />
 
-      <SpecificationTabs specifications={specifications} />
+        <SpecificationTabs specifications={specifications} />
 
-      <SpecificationsAccordion specifications={specifications} />
+        <SpecificationsAccordion specifications={specifications} />
+      </div>
     </section>
   );
 };

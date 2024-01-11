@@ -75,55 +75,57 @@ const BbtFeatured = () => {
 
   return (
     <section className="bg-white py-20 lg:py-40 xl:py-48 2xl:py-56 3xl:py-72">
-      <div className="pl-8 md:pl-20 lg:flex lg:justify-between items-center lg:pl-40 xl:pl-48 1xl:pl-52 2xl:pl-56 3xl:pl-64">
-        <div
-          className="section-heading md:pl-8 lg:w-30% lg:pl-0"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <Image
-            src="/images/down-circle-arrow-white.webp"
-            width="123"
-            height="123"
-            alt="Arrow Icon"
-            className="hidden lg:inline-block mb-14 object-contain lg:w-32 invert 3xl:w-44"
-          />
-          <h2 className="mb-16 text-black tracking-tighter leading-tight 2xl:mb-7">
-            From The <br className="hidden lg:block" /> BBT World
-          </h2>
-          <p className="hidden lg:block text-black leading-10 text-lg 1xl:leading-8 1xl:text-xl 2xl:text-1xl 2xl:tracking-normal 2xl:leading-relaxed 3xl:text-1.6xl 3xl:leading-loose">
-            Get your dream luxury car in 4 easy steps at <br /> Big Boy Toyz,
-            India's trusted used car portal.
-          </p>
-        </div>
-        <div
-          className="hp-featured-slider lg:w-70%"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <Slider {...settings}>
-            {data.map((item, index) => (
-              <FeaturedItem data={item} key={index} />
-            ))}
-          </Slider>
-          <div className="container lg:w-full lg:p-0 xl:pr-28">
-            <div
-              className="progress mt-16 2xl:mt-32 3xl:mt-40"
-              style={{
-                backgroundColor: "rgb(0 0 0 / 10%)",
-                height: "2px",
-              }}
-            >
+      <div className="max-1920">
+        <div className="pl-8 md:pl-20 lg:flex lg:justify-between items-center lg:pl-40 xl:pl-48 1xl:pl-52 2xl:pl-56 3xl:pl-64">
+          <div
+            className="section-heading md:pl-8 lg:w-30% lg:pl-0"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <Image
+              src="/images/down-circle-arrow-white.webp"
+              width="123"
+              height="123"
+              alt="Arrow Icon"
+              className="hidden lg:inline-block mb-14 object-contain lg:w-32 invert 3xl:w-44"
+            />
+            <h2 className="mb-16 text-black tracking-tighter leading-tight 2xl:mb-7">
+              From The <br className="hidden lg:block" /> BBT World
+            </h2>
+            <p className="hidden lg:block text-black leading-10 text-lg 1xl:leading-8 1xl:text-xl 2xl:text-1xl 2xl:tracking-normal 2xl:leading-relaxed 3xl:text-1.6xl 3xl:leading-loose">
+              Get your dream luxury car in 4 easy steps at <br /> Big Boy Toyz,
+              India's trusted used car portal.
+            </p>
+          </div>
+          <div
+            className="hp-featured-slider lg:w-70%"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <Slider {...settings}>
+              {data.map((item, index) => (
+                <FeaturedItem data={item} key={index} />
+              ))}
+            </Slider>
+            <div className="container lg:w-full lg:p-0 xl:pr-28">
               <div
+                className="progress mt-16 2xl:mt-32 3xl:mt-40"
                 style={{
-                  width: `${progressWidth}%`,
-                  backgroundColor: "rgba(0, 0, 0, 1)",
-                  height: "100%",
+                  backgroundColor: "rgb(0 0 0 / 10%)",
+                  height: "2px",
                 }}
-                className="progressFill"
-              ></div>
+              >
+                <div
+                  style={{
+                    width: `${progressWidth}%`,
+                    backgroundColor: "rgba(0, 0, 0, 1)",
+                    height: "100%",
+                  }}
+                  className="progressFill"
+                ></div>
+              </div>
             </div>
           </div>
         </div>

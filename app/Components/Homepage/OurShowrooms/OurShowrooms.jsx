@@ -22,40 +22,42 @@ const OurShowrooms = () => {
 
   return (
     <section className="bg-white py-24 lg:py-40 2xl:py-52 3xl:py-72">
-      <div className="container">
-        <h2
-          className={`mb-16 text-black tracking-tighter relative titleWithLine`}
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <span className="lg:bg-white lg:pr-10 relative z-10">
-            Our Showrooms
-          </span>
-        </h2>
-        <p
-          className={`hidden lg:block mt-5 text-6xl leading-snug tracking-tight font-normal 2xl:tracking-[-3px] 2xl:text-[4.4rem] 2xl:leading-1.3 2xl:mt-8 3xl:mt-16 [&>br]:hidden xl:[&>br]:block 3xl:text-[5.5rem]`}
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          The mission was simple, direct and drove effect - delivering <br /> a
-          new dimension of luxury while standardising & raising <br /> platforms
-          for the used car market in India.
-        </p>
-        <div className="lg:flex flex-row-reverse items-center lg:mt-24 3xl:mt-36">
-          <LocationCounter />
-
-          <ul
-            className="[&>*:last-child]:border-b border-gray-300 lg:w-60% lg:pr-10 xl:w-55% xl:mr-auto"
+      <div className="max-1920">
+        <div className="container">
+          <h2
+            className={`mb-16 text-black tracking-tighter relative titleWithLine`}
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="500"
           >
-            {locations.map((location, index) => (
-              <CommonLocationItem key={index} location={location} />
-            ))}
-          </ul>
+            <span className="lg:bg-white lg:pr-10 relative z-10">
+              Our Showrooms
+            </span>
+          </h2>
+          <p
+            className={`hidden lg:block mt-5 text-6xl leading-snug tracking-tight font-normal 2xl:tracking-[-3px] 2xl:text-[4.4rem] 2xl:leading-1.3 2xl:mt-8 3xl:mt-16 [&>br]:hidden xl:[&>br]:block 3xl:text-[5.5rem]`}
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            The mission was simple, direct and drove effect - delivering <br />{" "}
+            a new dimension of luxury while standardising & raising <br />{" "}
+            platforms for the used car market in India.
+          </p>
+          <div className="lg:flex flex-row-reverse items-center lg:mt-24 3xl:mt-36">
+            <LocationCounter />
+
+            <ul
+              className="[&>*:last-child]:border-b border-gray-300 lg:w-60% lg:pr-10 xl:w-55% xl:mr-auto"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
+              {locations.map((location, index) => (
+                <CommonLocationItem key={index} location={location} />
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
