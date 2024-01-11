@@ -604,7 +604,8 @@ img {
 .tabContainer.active {
   display: block;
 }
-.details-summary-slider .slick-list {
+.details-summary-slider .slick-list,
+.details-preview-slider .slick-list {
   padding: 0 10% 0 0 !important;
 }
 .slick-track {

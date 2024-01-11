@@ -53,8 +53,8 @@ const PreviewSlider = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true,
-    centerMode: false,
+    arrows: false,
+    centerMode: true,
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
@@ -84,7 +84,7 @@ const PreviewSlider = () => {
   return (
     <>
       <div className="pl-5 sm:pl-12 md:pl-16 lg:pl-0">
-        <Slider {...settings} className="hp-services-slider">
+        <Slider {...settings} className="details-preview-slider">
           {sliderData.map((data, index) => (
             <PreviewSliderItem key={index} data={data} index={index} />
           ))}
