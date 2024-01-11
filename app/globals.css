@@ -913,7 +913,7 @@ img {
     top: 41%;
   }
   .curve-slider-arrow.slick-next {
-    top: calc(50% - 7rem);
+    top: calc(50% - 14.5rem);
   }
   .hp-services-slider .curve-slider-arrow.slick-next,
   .hp-featured-slider .curve-slider-arrow.slick-next {
