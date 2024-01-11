@@ -6,7 +6,7 @@ import styles from "./CommonLocationItem.module.css";
 
 const CommonLocationItem = ({ location }) => {
   return (
-    <li className={`border-t border-gray-300 ${styles.listItem}`}>
+    <li className={`border-t border-gray-300 ${styles.listItem} mx-[-15px] sm:mx-[0] px-[15px] sm:px-[0]`}>
       <a href={location?.url ? location.url : '#'} className="transition-all duration-500 ease-in relative block">
         <div
           className={`${styles.mapImageBox} hidden lg:block absolute z-10`}
@@ -33,9 +33,9 @@ const CommonLocationItem = ({ location }) => {
           </div>
           <Image
             src="/images/showroom-location-arrow.webp"
-            className="w-6 object-contain xl:w-8 1xl:w-9 2xl:w-10 3xl:w-12 rotate-45"
-            width="15"
-            height="15"
+            className="w-6 object-contain xl:w-8 1xl:w-9 2xl:w-10 2xl:max-h-[2.7rem] "
+            width="27"
+            height="27"
             alt="Arrow Icon"
           />
         </div>

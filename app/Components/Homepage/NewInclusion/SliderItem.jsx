@@ -8,7 +8,7 @@ const SliderItem = ({data}) => {
   return (
     <Link
       href={`/products/${data._id}`}
-      className="sm:mx-3 sm:bg-white lg:mx-8 block transition-all ease-in-out hover:shadow-lg"
+      className="sm:mx-3 sm:bg-white lg:mx-8 block transition-all ease-in-out common-car-item duration-500"
     >
       <div
         className={`px-14 pt-12 pb-20 sm:px-8 sm:pt-8 sm:pb-16 lg:pb-10 3xl:px-20 3xl:pt-12 3xl:pb-16`}
@@ -36,7 +36,7 @@ const SliderItem = ({data}) => {
           alt="Icon"
           width="390"
           height="285"
-          className="object-cover w-full block h-full transition-all ease-in-out duration-500 hover:scale-150"
+          className="object-cover w-full block h-full"
         />
       </div>
     </Link>

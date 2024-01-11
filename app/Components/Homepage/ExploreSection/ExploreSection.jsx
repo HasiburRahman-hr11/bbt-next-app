@@ -32,14 +32,16 @@ const ExploreSection = () => {
               </Link>
             </div>
           </div>
-          <div className="absolute right-0 top-1/4 md:top-2/4">
-            <Image
-              src="/images/360-deg-badge.webp"
-              width="197"
-              height="301"
-              className="object-contain w-40 lg:w-52 1xl:w-60 3xl:w-80"
-              alt="Interactive Virtual Tour"
-            />
+          <div className="absolute right-0 top-1/4 md:top-2/4 explore-interactive-badge z-10">
+            <a href="https://www.bigboytoyz.com/" target="_blank" className="block">
+              <img
+                src="/images/360-deg-badge.webp"
+                width="197"
+                height="301"
+                className="object-contain w-40 lg:w-52 1xl:w-60 3xl:w-80"
+                alt="Interactive Virtual Tour"
+              />
+            </a>
           </div>
           <div className="absolute bottom-20 w-full left-0 text-center px-10 md:hidden">
             <Link href="#" className="btn btnWhite roundedBtn">
@@ -48,14 +50,20 @@ const ExploreSection = () => {
           </div>
           <div className="video-box">
             <video
-              src=""
+              src="https://www.shutterstock.com/shutterstock/videos/1077602141/preview/stock-footage-the-black-car-gradually-emerges-from-the-darkness-due-to-the-illumination-and-disappears-again-in.webm"
               poster="/images/360-deg-vid-thumb-mob.webp"
-              className="w-full block object-cover md:hidden"
+              className="w-full block object-cover md:hidden min-h-[700px]"
+              autoPlay
+              loop
+              muted
             ></video>
             <video
-              src=""
+              src="https://www.shutterstock.com/shutterstock/videos/1077602141/preview/stock-footage-the-black-car-gradually-emerges-from-the-darkness-due-to-the-illumination-and-disappears-again-in.webm"
               poster="/images/360-deg-vid-thumb-desk.webp"
               className="w-full md:block object-cover hidden"
+              autoPlay
+              loop
+              muted
             ></video>
           </div>
         </div>

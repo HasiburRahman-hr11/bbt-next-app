@@ -8,7 +8,7 @@ import Image from "next/image";
 import styles from "./SellYourCar.module.css";
 
 let settings = {
-  speed: 5000,
+  speed: 1000,
   autoplay: true,
   autoplaySpeed: 0,
   centerMode: true,

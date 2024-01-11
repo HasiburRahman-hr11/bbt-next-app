@@ -22,10 +22,10 @@ const SellYourCar = () => {
 
   useEffect(() => {
     gsap.to(count1.current, {
-      duration: 2,
+      duration: 1,
       innerHTML: 2,
       roundProps: "innerHTML",
-      ease: "power1.out",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: count1.current,
         // markers: true,
@@ -36,10 +36,10 @@ const SellYourCar = () => {
     });
 
     gsap.to(count1.current, {
-      duration: 2,
+      duration: 1,
       innerHTML: 2,
       roundProps: "innerHTML",
-      ease: "power1.out",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: count1.current,
         // markers: true,
@@ -50,10 +50,10 @@ const SellYourCar = () => {
     });
 
     gsap.to(count2.current, {
-      duration: 6,
+      duration: 2,
       innerHTML: 9,
       roundProps: "innerHTML",
-      ease: "power1.out",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: count2.current,
         // markers: true,
@@ -64,10 +64,10 @@ const SellYourCar = () => {
     });
 
     gsap.to(count2.current, {
-      duration: 6,
+      duration: 2,
       innerHTML: 9,
       roundProps: "innerHTML",
-      ease: "power1.out",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: count2.current,
         // markers: true,

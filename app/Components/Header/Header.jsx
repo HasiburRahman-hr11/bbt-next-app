@@ -31,7 +31,7 @@ const Header = ({ isPageHeader }) => {
                 <span className="w-[85%]"></span>
               </div>
             </div>
-            <div className="header-logo  lg:order-1 ">
+            <div className="header-logo  lg:order-1 hidden lg:block">
               <Link href="/" className="block">
                 <Image
                   src="/images/bbt-logo-header.webp"

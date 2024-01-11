@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const FooterAppLinks = () => {
@@ -14,27 +13,27 @@ const FooterAppLinks = () => {
         </p>
       </div>
       <div className="flex items-center sm:justify-center">
-        <Link href="#">
+        <a href="#" target="_blank" className="group transition-all duration-500 ease-in-out hover:bg-[#222] inline-block">
           <Image
             src="/images/play-store-footer.webp"
             width="138"
             height="40"
             alt="Google Play"
-            className=" 3xl:w-64 object-contain"
+            className=" 3xl:w-64 object-contain transition-all duration-500 ease-in-out"
           />
-        </Link>
+        </a>
         <span className="w-7 h-7 footerAppDivider flex items-center justify-center text-xs p-2 mx-5 opacity-50 3xl:w-9 3xl:h-9">
           OR
         </span>
-        <Link href="#">
+        <a href="#" target="_blank" className="group transition-all duration-500 ease-in-out hover:bg-[#222] inline-block">
           <Image
             src="/images/app-store-footer.webp"
             width="138"
             height="40"
             alt="App Store"
-            className=" 3xl:w-64 object-contain"
+            className=" 3xl:w-64 object-contain transition-all duration-500 ease-in-out"
           />
-        </Link>
+        </a>
       </div>
     </div>
   );

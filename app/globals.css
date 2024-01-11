@@ -373,6 +373,9 @@ img {
 .header.sticky span {
   color: #000;
 }
+.header.sticky .mobile-search-bar img{
+  filter: invert(1);
+}
 .header.sticky .menu-bar span {
   background-color: #000;
 }
@@ -534,9 +537,23 @@ img {
 }
 
 /* Homepage */
+.scroll-animation {
+  animation: scrollDown 2s ease infinite;
+}
+@keyframes scrollDown {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .curve-slider-arrow.slick-arrow {
-  width: 5rem;
-  height: 13.6rem;
+  width: 7rem;
+  height: 18.6rem;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -552,7 +569,7 @@ img {
 .curve-slider-arrow.slick-next {
   right: -2px;
   transform: rotate(180deg);
-  top: calc(50% - 9.5rem);
+  top: calc(50% - 12.5rem);
 }
 .curve-slider-arrow.slick-arrow:hover img {
   filter: invert(1);
@@ -561,8 +578,17 @@ img {
   width: 100%;
   object-fit: contain;
   transition: all 0.5s ease;
-  max-width: 4.2rem;
+  max-width: 6.2rem;
   height: auto;
+}
+.explore-interactive-badge img,
+.curve-slider-arrow img {
+  -webkit-filter: contrast(1.5);
+  filter: contrast(1.5);
+  mix-blend-mode: luminosity;
+}
+.common-car-item:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .hp-services-slider .slick-slide {
   width: calc(100% / 2.5);
@@ -580,7 +606,13 @@ img {
 .hp-services-slider .slick-arrow {
   display: none !important;
 }
-
+.hp-services-slider .curve-slider-arrow:hover img,
+.hp-featured-slider .curve-slider-arrow:hover img{
+  opacity: 0.7;
+}
+.hp-featured-slider .curve-slider-arrow img{
+  filter: invert(1);
+}
 /* Details Page */
 .detailPageTabs li {
   transition: all 0.5s ease;
@@ -1003,7 +1035,9 @@ img {
   .btnWhite {
     padding: 2.1rem 3rem;
   }
-
+  .footerMenuCol li a::before{
+    left: -1.5rem;
+  }
   .curve-slider-arrow.slick-arrow {
     width: 11rem;
     top: 37%;
@@ -1063,7 +1097,12 @@ img {
     font-size: 1rem;
   }
 }
-
+@media only screen and (max-width: 640px) {
+  .container{
+    width: 100%;
+    padding: 0 15px;
+  }
+}
 @media only screen and (max-width: 389px) {
   html {
     font-size: 2.45vw;

@@ -37,7 +37,7 @@ const BannerSection = () => {
               className="block w-full md:hidden object-cover max-h-[685px]"
             />
           </div>
-          <div className="absolute top-0 left-0 text-center w-full h-full pt-[10.5rem] pb-[5rem]">
+          <div className="absolute top-0 left-0 text-center w-full h-full pt-[12.5rem] pb-[7.5rem] lg:pt-[10.5rem] lg:pb-[5rem]">
             <div className="container h-full">
               <div
                 className="flex flex-col justify-between h-full"
@@ -134,7 +134,7 @@ const BannerSection = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-16 left-[50%] translate-x-[-50%] text-center w-max lg:flex flex-col justify-center items-center hidden 3xl:bottom-24">
+          <div className="absolute bottom-16 left-[50%] translate-x-[-50%] text-center w-max lg:flex flex-col justify-center items-center hidden 3xl:bottom-24 scroll-animation">
             <Image
               src="/images/banner-scroll-icon-white.webp"
               alt="Scroll Down"

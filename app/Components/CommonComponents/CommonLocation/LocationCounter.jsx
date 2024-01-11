@@ -17,10 +17,10 @@ const LocationCounter = () => {
 
   useEffect(() => {
     gsap.to(showroomCount.current, {
-      duration: 3,
+      duration: 1.5,
       innerHTML: 5,
       roundProps: "innerHTML",
-      ease: "power1.out",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: showroomCount.current,
         // markers: true,
@@ -31,10 +31,10 @@ const LocationCounter = () => {
     });
 
     gsap.to(showroomCount.current, {
-      duration: 3,
+      duration: 1.5,
       innerHTML: 5,
       roundProps: "innerHTML",
-      ease: "power1.out",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: showroomCount.current,
         // markers: true,

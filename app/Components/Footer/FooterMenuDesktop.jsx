@@ -307,7 +307,7 @@ const FooterMenuDesktop = () => {
           Our Showrooms
         </h5>
         <div className="footerShowroomCol">
-          <a href="#" className="block">
+          <a href="#" className="block group">
             <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Delhi/NCR</h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               Plot No. 134, Sector 37, Pace City 1, Gurgaon Haryana, 122001,
@@ -318,12 +318,12 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12"
+              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
         <div className="footerShowroomCol">
-          <a href="#" className="block">
+          <a href="#" className="block group">
             <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Mumbai</h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               7, Hubtown Sunmist, Opposite Hubtown Solaris, Telli Galli, Andheri
@@ -334,12 +334,12 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12"
+              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
         <div className="footerShowroomCol">
-          <a href="#" className="block">
+          <a href="#" className="block group">
             <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Hydrebad</h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               Road no 2, Banjara Hills, Shangrila Plaza, Opp.KBR Park,
@@ -350,12 +350,12 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12"
+              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
         <div className="footerShowroomCol">
-          <a href="#" className="block">
+          <a href="#" className="block group">
             <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Ahmedabad</h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               Cama Motors, Rustom Cama Marg, Old City, Lal Darwaja, Ahmedabad,
@@ -366,12 +366,12 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12"
+              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
         <div className="footerShowroomCol">
-          <a href="#" className="block">
+          <a href="#" className="block group">
             <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Bangalore</h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               140, Residency Rd, Shanthala Nagar, Richmond Town, Bengaluru,
@@ -382,7 +382,7 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12"
+              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-ou"
             />
           </a>
         </div>

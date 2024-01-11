@@ -36,7 +36,6 @@ const OtherServices = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
-    centerMode: false,
     nextArrow: <NextArrow />,
     autoplay: true,
     autoplaySpeed: 3000,
