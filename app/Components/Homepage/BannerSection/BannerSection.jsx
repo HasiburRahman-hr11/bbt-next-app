@@ -37,7 +37,7 @@ const BannerSection = () => {
           />
         </div>
         <div
-          className={`${styles.bannerContent} absolute top-0 left-0 text-center w-full h-full pt-[10.5rem] pb-[5rem]`}
+          className="absolute top-0 left-0 text-center w-full h-full pt-[10.5rem] pb-[5rem]"
         >
           <div className="container h-full">
             <div
@@ -61,11 +61,11 @@ const BannerSection = () => {
                   <div
                     className={`${
                       styles.bannerSearchBox
-                    } relative flex items-center w-[29rem] h-[4.5rem] rounded-[3rem] mr-[1.5rem] border border-[#808080] ${
+                    } relative flex items-center w-[29rem] h-[4.5rem] rounded-[3rem] mr-[1.5rem] border border-[#808080] 1xl:w-[31rem] 1xl:h-[4.9rem] 2xl:w-[33rem] 2xl:h-[5rem] 3xl:w-[40rem] 3xl:h-[6.7rem] 3xl:rounded-[4rem] ${
                       searchActive ? styles.searchActive : ""
                     }`}
                   >
-                    <span className={`absolute left-8 ${styles.searchIcon}`}>
+                    <span className="absolute left-8 top-[50%] translate-y-[-50%]">
                       <Image
                         src="/images/banner-search-icon-white.webp"
                         width="17"
@@ -81,9 +81,10 @@ const BannerSection = () => {
                       placeholder="Search Your Dream Car Here... "
                       onFocus={() => setSearchActive(true)}
                       onBlur={() => setSearchActive(false)}
+                      className="w-full border-0 outline-none bg-transparent text-base text-white 2xl:text-[1.5rem] pt-[1.5rem] pr-[4rem] pb-[1.2rem] pl-[5rem] "
                     />
                     <div
-                      className={`${styles.filterBtn} absolute right-8 z-10 cursor-pointer 3xl:right-10 p-3 rounded-50% hover:bg-gray-300 transition-all duration-500 group`}
+                      className="top-[50%] translate-y-[-50%] absolute right-8 z-10 cursor-pointer 3xl:right-10 p-3 rounded-50% hover:bg-gray-300 transition-all duration-500 group"
                       onClick={togglePopup}
                     >
                       <Image
@@ -91,23 +92,23 @@ const BannerSection = () => {
                         width="23"
                         height="22"
                         alt="Filter Button"
-                        className="w-6 1xl:w-[1.5rem] 2xl:w-7 hover:scale-110 transition-all duration-500 group-hover:invert"
+                        className="w-6 1xl:w-[1.5rem] 2xl:w-7 hover:scale-110 transition-all duration-500 group-hover:invert 3xl:w-[2.2rem]"
                       />
                     </div>
                   </div>
-                  <div className={styles.bannerBtnBox}>
+                  <div>
                     <Link
                       href="#"
-                      className="bg-white text-black relative text-xl flex items-center font-medium 3xl:text-2xl"
+                      className="bg-white text-black relative text-xl flex items-center font-medium h-[4.5rem] rounded-[3rem] border border-white py-[1.5rem] pr-[8rem] pl-[2rem] tracking-[-1px] transition-all duration-500 ease-in 1xl:h-[4.9rem] 2xl:py-[1.5rem] 2xl:pr-[9rem] 2xl:pl-[2rem] 3xl:text-2xl 3xl:py-[1.5rem] 3xl:pr-[12rem] 3xl:h-[6.7rem] 3xl:rounded-[4rem] group hover:bg-transparent hover:text-white hover:border-[#808080] "
                     >
                       Discover Collection
-                      <span className="bg-black absolute flex justify-center items-center">
+                      <span className="bg-black absolute flex justify-center items-center w-[4.2rem] h-[2.7rem] rounded-[3rem] top-[50%] translate-y-[-50%] right-[1rem] p-[1rem] transition-all duration-500 ease-in 3xl:w-[5.2rem] 3xl:h-[3.5rem] 3xl:right-[1.5rem] 3xl:p-[0.5rem] group-hover:bg-white ">
                         <Image
                           src="/images/banner-arrow-icon-white.webp"
                           alt="Arrow Icon"
                           width="20"
                           height="20"
-                          className="w-full object-contain"
+                          className="w-full object-contain 3xl:max-w-[1.8rem] max-w-[1.5rem] transition-all duration-500 ease-in group-hover:invert"
                         />
                       </span>
                     </Link>
@@ -135,7 +136,7 @@ const BannerSection = () => {
         </div>
 
         <div
-          className={`absolute bottom-16 ${styles.bannerScrollBtn} text-center w-max lg:flex flex-col justify-center items-center hidden 3xl:bottom-24`}
+          className="absolute bottom-16 left-[50%] translate-x-[-50%] text-center w-max lg:flex flex-col justify-center items-center hidden 3xl:bottom-24"
         >
           <Image
             src="/images/banner-scroll-icon-white.webp"
