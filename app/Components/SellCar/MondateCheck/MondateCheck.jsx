@@ -84,10 +84,10 @@ const MondateCheck = () => {
             <Link href="#" className="btn btnBlack btnSquare text-xl">
               <Image
                 src="/images/square-btn-call-icon.webp"
-                width="16"
-                height="16"
+                width="19"
+                height="19"
                 alt="Call Icon"
-                className="object-contain w-7 mr-6"
+                className="object-contain w-7 mr-6 h-auto"
               />
               CALL NOW: 9999 9999 15
             </Link>

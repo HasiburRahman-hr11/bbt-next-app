@@ -5,11 +5,11 @@ import React from "react";
 const BreadCrumb = ({ pageTitle }) => {
   return (
     <p className="flex flex-wrap items-center">
-      <Link href="/" className="text-lg">
+      <Link href="/" className="text-lg md:text-xl xl:text-[1.8rem]">
         Home
       </Link>
-      <Image src="/images/breadcumb-arrow.webp" className="object-contain w-2 inline-block mx-2" width="5" height="5" alt="Arrow Icon" />
-      <span className="text-lg">{pageTitle}</span>
+      <Image src="/images/breadcumb-arrow.webp" className="object-contain w-2 inline-block mx-2 h-auto" width="6" height="11" alt="Arrow Icon" />
+      <span className="text-lg md:text-xl xl:text-[1.8rem]">{pageTitle}</span>
     </p>
   );
 };

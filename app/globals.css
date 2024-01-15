@@ -255,8 +255,7 @@ img {
   height: 4.8rem;
 }
 
-.smallCallBtn.whatsAppBtn,
-.smallCallBtn.whatsAppBtn:hover {
+.whatsAppBtn {
   background-color: #1bd741;
   box-shadow: 0px 8px 8px 0px #1bd74140;
   border: none;
@@ -826,6 +825,10 @@ img {
     min-width: 20rem;
     font-size: 1.2rem;
   }
+  .callBtnGroup .btn.btnSquare{
+    min-width: auto;
+    width: 100%;
+  }
   .curve-slider-arrow.slick-arrow {
     width: 7rem;
   }
@@ -909,10 +912,10 @@ img {
   .inclusionSlider .slick-slider {
     padding: 0 8rem;
   }
-  .curve-slider-arrow.slick-arrow {
+  .inclusionSlider .curve-slider-arrow.slick-arrow {
     top: 41%;
   }
-  .curve-slider-arrow.slick-next {
+  .inclusionSlider .curve-slider-arrow.slick-next {
     top: calc(50% - 14.5rem);
   }
   .hp-services-slider .curve-slider-arrow.slick-next,

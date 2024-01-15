@@ -7,7 +7,7 @@ const Header = ({ isPageHeader }) => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 100);
+      setScroll(window.scrollY > 400);
     });
   }, []);
   return (
@@ -39,6 +39,7 @@ const Header = ({ isPageHeader }) => {
                   height="70"
                   alt="BBT Logo"
                   className="w-24 object-contain lg:w-32 2xl:w-32 3xl:w-44"
+                  priority="high"
                 />
               </Link>
             </div>

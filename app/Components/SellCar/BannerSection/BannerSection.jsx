@@ -66,10 +66,10 @@ const BannerSection = () => {
                 <Link href="#" className="btn btnWhite btnSquare">
                   <Image
                     src="/images/square-btn-call-icon.webp"
-                    width="16"
-                    height="16"
+                    width="19"
+                    height="19"
                     alt="Call Icon"
-                    className="object-contain w-7 mr-6 invert"
+                    className="object-contain w-7 mr-6 invert h-auto"
                   />
                   CALL NOW: 9999 9999 15
                 </Link>

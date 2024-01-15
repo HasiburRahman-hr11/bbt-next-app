@@ -8,9 +8,13 @@ const CollectionListBottom = () => {
   const newCars = cars.slice(0, 3);
   return (
     <section className="bg-white">
-      {newCars.map((item) => (
-        <CollectionItem data={item} key={item._id} />
-      ))}
+      <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto">
+        {newCars.map((item) => (
+          <div key={item._id} className="w-full md:w-[49%]">
+            <CollectionItem data={item} />
+          </div>
+        ))}
+      </div>
       <div className="container">
         <div className="px-3 pb-20">
           <button className="bg-transparent font-medium text-black flex justify-center items-center border border-black rounded-lg py-7 text-2xl text-center w-full hover:bg-black hover:text-white transition-all duration-300 ease-in">

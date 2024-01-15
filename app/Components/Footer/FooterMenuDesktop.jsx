@@ -318,7 +318,7 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
+              className="object-contain w-5 mt-10 h-auto 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
@@ -334,7 +334,7 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
+              className="object-contain w-5 mt-10 h-auto 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
@@ -350,7 +350,7 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
+              className="object-contain w-5 mt-10 h-auto 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
@@ -366,7 +366,7 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
+              className="object-contain w-5 mt-10 h-auto 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-out"
             />
           </a>
         </div>
@@ -382,7 +382,7 @@ const FooterMenuDesktop = () => {
               alt="Arrow icon"
               width="16"
               height="16"
-              className="object-contain w-5 mt-10 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-ou"
+              className="object-contain w-5 mt-10 h-auto 2xl:w-6 3xl:w-7 3xl:mt-12 group-hover:rotate-45 transition-all duration-500 ease-in-ou"
             />
           </a>
         </div>
