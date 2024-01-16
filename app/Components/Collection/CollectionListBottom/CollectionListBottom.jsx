@@ -8,9 +8,9 @@ const CollectionListBottom = () => {
   const newCars = cars.slice(0, 3);
   return (
     <section className="bg-white">
-      <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto">
+      <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] md:pb-20 mx-auto">
         {newCars.map((item) => (
-          <div key={item._id} className="w-full md:w-[49%]">
+          <div key={item._id} className="w-full md:w-[49%] xl:w-[31%]">
             <CollectionItem data={item} />
           </div>
         ))}

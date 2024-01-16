@@ -6,12 +6,14 @@ import CarList from "../Components/SuvCollection/CarList/CarList";
 import AboutSection from '../Components/SuvCollection/AboutSection/AboutSection';
 import UspSection from '../Components/SuvCollection/UspSection/UspSection';
 import DescriptionSection from '../Components/SuvCollection/DescriptionSection/DescriptionSection';
+import PageHeader from "../Components/SuvCollection/PageHeader/PageHeader";
 
 const SuvCollection = () => {
   return (
     <main>
-      <Header isPageHeader={true} />
+      <Header />
       <BannerSection />
+      <PageHeader />
       <CarList />
       <DescriptionSection />
       <UspSection />
