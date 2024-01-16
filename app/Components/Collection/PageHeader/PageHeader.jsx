@@ -26,7 +26,7 @@ const PageHeader = () => {
   };
 
   return (
-    <section className="bg-white md:bg-[#f3f3f3]">
+    <section className="bg-white md:bg-[#f3f3f3] lg:pt-12">
       <div className="container">
         <div className="py-16 md:border-b md:border-neutral-400">
           <BreadCrumb pageTitle="Collection" />
