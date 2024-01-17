@@ -37,13 +37,13 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="/collection">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="/collection">
                     Collection
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="text-2xl py-1 mt-4 block"
+                    className="text-2xl py-1 mt-4 block text-white"
                     href="/suv-collection"
                   >
                     SUV Collection
@@ -51,7 +51,7 @@ const FooterMenuWrapper = () => {
                 </li>
                 <li>
                   <Link
-                    className="text-2xl py-1 mt-4 block"
+                    className="text-2xl py-1 mt-4 block text-white"
                     href="/aston-martin"
                   >
                     Aston Martin
@@ -59,7 +59,7 @@ const FooterMenuWrapper = () => {
                 </li>
                 <li>
                   <Link
-                    className="text-2xl py-1 mt-4 block"
+                    className="text-2xl py-1 mt-4 block text-white"
                     href="/search-results"
                   >
                     Search Results
@@ -67,19 +67,19 @@ const FooterMenuWrapper = () => {
                 </li>
                 <li>
                   <Link
-                    className="text-2xl py-1 mt-4 block"
+                    className="text-2xl py-1 mt-4 block text-white"
                     href="/filter-results"
                   >
                     Filter Results
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="/compare">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="/compare">
                     Compare Page
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="/sell-car">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="/sell-car">
                     Sell Car
                   </Link>
                 </li>
@@ -109,17 +109,17 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     Contact Us
                   </Link>
                 </li>
@@ -150,17 +150,17 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     Contact Us
                   </Link>
                 </li>
@@ -191,17 +191,17 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block" href="#">
+                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
                     Contact Us
                   </Link>
                 </li>
