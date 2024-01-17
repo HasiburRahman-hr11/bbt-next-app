@@ -27,7 +27,7 @@ const FaqAccordion = ({ data , index }) => {
               : "flex items-center justify-between w-full "
           }`}
         >
-          <h3 className="text-2xl pr-24">{data?.question}</h3>
+          <h3 className="text-2xl pr-24 1xl:text-[1.8rem] 3xl:text-[2rem]">{data?.question}</h3>
           <div className="w-6 h-full faq-toggle-icon relative">
             <span ></span>
             <span ></span>
@@ -36,7 +36,7 @@ const FaqAccordion = ({ data , index }) => {
       </AccordionHeader>
       <AccordionBody>
         <div className="pb-8">
-            <p className="text-1xl font-normal">{data?.answer}</p>
+            <p className="text-1xl font-normal 1xl:text-[1.3rem] 3xl:text-[1.6rem]">{data?.answer}</p>
         </div>
       </AccordionBody>
     </Accordion>

@@ -589,10 +589,6 @@ img {
 .common-car-item:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.hp-services-slider .slick-slide {
-  width: calc(100% / 2.5);
-  /* Adjust other styles as needed */
-}
 .hp-services-slider .slick-list {
   padding: 0 10% 0 0 !important;
 }
@@ -1095,6 +1091,9 @@ img {
     left: -7rem;
     top: 32%;
   }
+  .hp-services-slider.brand-model-slider .curve-slider-arrow.slick-next{
+    top: 26%;
+  }
   /* Detail Page */
   .emiPercent {
     font-size: 1rem;
@@ -1103,7 +1102,7 @@ img {
 @media only screen and (max-width: 640px) {
   .container{
     width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 }
 @media only screen and (max-width: 389px) {

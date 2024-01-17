@@ -25,14 +25,14 @@ const CollectionItem = ({ data }) => {
       <div className="item-divider max-w-[90%] mx-auto h-[1px] border-t border-neutral-400 md:hidden"></div>
       <Link
         href={`/products/${data._id}`}
-        className="block px-16 pt-16 md:px-10"
+        className="block px-14 pt-16 md:px-10"
       >
         <p
           className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 leading-4 lg:text-sm lg:py-1 3xl:text-lg 3xl:px-8`}
         >
           Reg.Year : {data.registrationYear}
         </p>
-        <h4 className="mt-4 sm:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-tighter 3xl:text-4.2xl 3xl:mt-8">
+        <h4 className="mt-4 sm:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-tighter 3xl:text-4.2xl 3xl:mt-8 line-clamp-1">
           {data.title}
         </h4>
         <p
@@ -76,7 +76,7 @@ const CollectionItem = ({ data }) => {
         </Slider>
       </Link>
 
-      <div className="px-16 pt-8 md:px-10">
+      <div className="px-14 pt-8 md:px-10">
         <Link href={`/products/${data._id}`} className="block">
           <CommonInfoUsp data={data} />
         </Link>

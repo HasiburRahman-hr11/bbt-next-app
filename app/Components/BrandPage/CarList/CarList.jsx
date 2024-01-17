@@ -164,7 +164,7 @@ const cars = [
 
 const CarList = () => {
   return (
-    <section className="bg-white md:bg-[#f3f3f3]">
+    <section className="bg-white md:bg-[#f3f3f3] pb-10">
       <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto md:pb-20 lg:w-[83%] xl:pb-[12rem]">
         {cars.map((item) => (
           <div
