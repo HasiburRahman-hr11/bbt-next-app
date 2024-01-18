@@ -204,7 +204,7 @@ const locations = [
 ];
 const MostSearched = () => {
   return (
-    <section className="py-20 bg-f6 xl:py-36 3xl:py-40">
+    <section className="py-20 bg-[#f6f6f6] xl:py-36 3xl:py-40">
       <div className="max-1920">
         <div className="container">
           <ul>

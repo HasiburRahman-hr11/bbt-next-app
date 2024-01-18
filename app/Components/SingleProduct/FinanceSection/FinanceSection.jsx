@@ -1,14 +1,30 @@
 "use client";
 import { useEffect, useState } from "react";
-import RangeSlider from "react-range-slider-input";
-import "react-range-slider-input/dist/style.css";
 import styles from "./FinanceSection.module.css";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const FinanceSection = () => {
-  const [percent, setPercent] = useState([0, 40]);
+  const [carPrice, setCarPrice] = useState(49900000);
+  const [downPaymentAmount, setDownPaymentAmount] = useState(
+    Math.round((50 / 100) * 49900000)
+  );
+  const [downPaymentPercent, setDownPaymentPercent] = useState(50);
+  const [annualInterest, setAnnualInterest] = useState(10);
+  const [termPeriod, setTermPeriod] = useState(12);
+
+  const downPaymentPercentChange = (e) => {
+    setDownPaymentPercent(e.target.value);
+    setDownPaymentAmount(Math.round((e.target.value / 100) * carPrice));
+  };
+  const annualInterestRateChange = (e) => {
+    setAnnualInterest(e.target.value);
+  };
+  const termPeriodChange = (e) => {
+    setTermPeriod(e.target.value);
+  };
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -33,9 +49,9 @@ const FinanceSection = () => {
               </p>
             </div>
             <div
-              className={`relative text-white text-center mx-auto px-5 py-8 mt-16 lg:mt-10 lg:py-5 lg:px-8 xl:mt-12 3xl:mt-24 3xl:px-16 3xl:py-9 ${styles.emiBox}`}
+              className={`relative text-white text-center mx-auto px-5 py-8 mt-16 border border-[#ffffff80] rounded-[1rem] max-w-[24rem] lg:w-max lg:rounded-[0.6rem] lg:mt-10 lg:py-5 lg:px-8 xl:mt-12 3xl:mt-24 3xl:px-16 3xl:py-9 3xl:max-w-[40rem] ${styles.emiBox}`}
             >
-              <p className="absolute text-xl bg-black lg:text-base 3xl:text-1xl">
+              <p className="absolute w-max px-[1.5rem] left-[50%] top-[-1rem] translate-x-[-50%] text-xl bg-black lg:top-[-0.8rem] lg:text-base 3xl:text-1xl">
                 Emi Starts @
               </p>
               <h5 className="lg:text-1xl xl:text-xl 1xl:text-2xl 3xl:text-3.5xl">
@@ -43,47 +59,111 @@ const FinanceSection = () => {
               </h5>
             </div>
 
-            <div className="flex justify-between flex-wrap items-center text-white mt-20 3xl:mt-28">
-              <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
-                Down Payment
-              </p>
-              <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
-                ₹ 3,000,00,0
-              </p>
+            {/* Down Payment Slider */}
+            <div>
+              <div className="flex justify-between flex-wrap items-center text-white mt-20 3xl:mt-28">
+                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                  Down Payment
+                </p>
+                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                  ₹ {downPaymentAmount}
+                </p>
+              </div>
+              <div className="mt-8">
+                {/* <RangeSlider
+                  className="emiSlider"
+                  value={downPaymentPercent}
+                  onInput={setDownPaymentPercent}
+                  step={1}
+                  max={70}
+                /> */}
+                <input
+                  type="range"
+                  name=""
+                  id=""
+                  min="20"
+                  max="80"
+                  step="1"
+                  className="w-full h-[3px] block emiSlider"
+                  value={downPaymentPercent}
+                  onChange={downPaymentPercentChange}
+                />
+                <div className="relative overflow-x-hidden emiPercentBox h-[3rem] [&>span]:top-[1rem] [&>span]:text-[0.9rem] lg:[&>span]:text-[0.7rem] lg:[&>span]:pt-[0.7rem] 3xl:[&>span]:text-[1rem]">
+                  <span className="absolute text-white font-light emiPercent leftOne left-0 lg:h-[4rem]">
+                    10%
+                  </span>
+                  <span className="absolute text-white font-light emiPercent leftTwo left-[14%]">
+                    20%
+                  </span>
+                  <span className="absolute text-white font-light emiPercent leftThree left-[28%]">
+                    30%
+                  </span>
+                  <span className="absolute text-white font-light emiPercent leftFour left-[41.5%]">
+                    40%
+                  </span>
+                  <span className="absolute text-white font-light emiPercent leftFive left-[55%] sm:left-[55.7%]">
+                    50%
+                  </span>
+                  <span className="absolute text-white font-light emiPercent leftSix left-[68.5%] sm:left-[69.5%]">
+                    60%
+                  </span>
+                  <span className="absolute text-white font-light emiPercent leftSeven left-[82%] sm:left-[83%]">
+                    70%
+                  </span>
+                  <span className="absolute text-white font-light emiPercent leftEight left-[unset] right-0">
+                    80%
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="mt-10 mb-16 lg:mb-0 lg:mt-5">
-              <RangeSlider
-                className="emiSlider"
-                value={percent}
-                onInput={setPercent}
-                step={1}
-                max={70}
-              />
-              <div className="relative overflow-x-hidden emiPercentBox">
-                <span className="absolute text-white font-light emiPercent leftOne">
-                  10%
-                </span>
-                <span className="absolute text-white font-light emiPercent leftTwo">
-                  20%
-                </span>
-                <span className="absolute text-white font-light emiPercent leftThree">
-                  30%
-                </span>
-                <span className="absolute text-white font-light emiPercent leftFour">
-                  40%
-                </span>
-                <span className="absolute text-white font-light emiPercent leftFive">
-                  50%
-                </span>
-                <span className="absolute text-white font-light emiPercent leftSix">
-                  60%
-                </span>
-                <span className="absolute text-white font-light emiPercent leftSeven">
-                  70%
-                </span>
-                <span className="absolute text-white font-light emiPercent leftEight">
-                  80%
-                </span>
+
+            {/* Interest Rate Slider */}
+            <div className="mt-10">
+              <div className="flex justify-between flex-wrap items-center text-white ">
+                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                  Annual Interest Rate (%)
+                </p>
+                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                  {annualInterest}
+                </p>
+              </div>
+              <div className="mt-8 mb-16 lg:mb-0 lg:mt-5">
+                <input
+                  type="range"
+                  name=""
+                  id=""
+                  min="7"
+                  max="15"
+                  step="0.1"
+                  className="w-full h-[3px] block emiSlider"
+                  value={annualInterest}
+                  onChange={annualInterestRateChange}
+                />
+              </div>
+            </div>
+
+            {/* Term Period Slider */}
+            <div className="mt-10">
+              <div className="flex justify-between flex-wrap items-center text-white ">
+                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                  Term/Period (Month)
+                </p>
+                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                  {termPeriod}
+                </p>
+              </div>
+              <div className="mt-8 mb-16 lg:mb-0 lg:mt-5">
+                <input
+                  type="range"
+                  name=""
+                  id=""
+                  min="1"
+                  max="84"
+                  step="1"
+                  className="w-full h-[3px] block emiSlider"
+                  value={termPeriod}
+                  onChange={termPeriodChange}
+                />
               </div>
             </div>
 

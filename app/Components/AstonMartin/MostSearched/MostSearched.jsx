@@ -164,7 +164,7 @@ const locations = [
 ];
 const MostSearched = () => {
   return (
-    <section className="py-20 bg-f6">
+    <section className="py-20 bg-[#f6f6f6]">
       <div className="container">
         <ul>
           {searchedList.map((item, ind) => (

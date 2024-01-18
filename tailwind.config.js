@@ -16,10 +16,8 @@ module.exports = {
         "detail-space": "rgba(17, 17, 26, 0.1) 0px 0px 16px",
       },
       colors: {
-        inclusionBG: "#f5f5f5",
         "dark-800": "#161616",
         "dark-600": "#212121",
-        f6: "#F6F6F6",
       },
       fontSize: {
         "1xl": "1.35rem",

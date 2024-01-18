@@ -372,7 +372,7 @@ img {
 .header.sticky span {
   color: #000;
 }
-.header.sticky .mobile-search-bar img{
+.header.sticky .mobile-search-bar img {
   filter: invert(1);
 }
 .header.sticky .menu-bar span {
@@ -602,10 +602,10 @@ img {
   display: none !important;
 }
 .hp-services-slider .curve-slider-arrow:hover img,
-.hp-featured-slider .curve-slider-arrow:hover img{
+.hp-featured-slider .curve-slider-arrow:hover img {
   opacity: 0.7;
 }
-.hp-featured-slider .curve-slider-arrow img{
+.hp-featured-slider .curve-slider-arrow img {
   filter: invert(1);
 }
 /* Details Page */
@@ -638,56 +638,15 @@ img {
 .slick-track {
   padding-bottom: 2px;
 }
-.emiSlider .range-slider__thumb:first-of-type {
-  display: none;
-}
-.emiSlider .range-slider__range {
-  left: 0 !important;
-}
-.emiSlider.range-slider .range-slider__thumb {
+
+.emiSlider::-webkit-slider-thumb {
   background-color: #ef3024;
-  width: 2rem;
-  height: 2rem;
-  border: 4px solid #fff;
+  border: 2px solid #fff;
 }
-.emiSlider.range-slider {
-  height: 2px;
-}
-.emiSlider.range-slider .range-slider__range {
-  background-color: #ef3024;
-}
-.emiPercentBox {
-  height: 3rem;
-}
-.emiPercent {
-  top: 1rem;
-  font-size: 0.9rem;
-}
-.emiPercent.leftOne {
-  left: 0;
-}
-.emiPercent.leftTwo {
-  left: 14%;
-}
-.emiPercent.leftThree {
-  left: 28%;
-}
-.emiPercent.leftFour {
-  left: 41.5%;
-}
-.emiPercent.leftFive {
-  left: 55%;
-}
-.emiPercent.leftSix {
-  left: 68.5%;
-}
-.emiPercent.leftSeven {
-  left: 82%;
-}
-.emiPercent.leftEight {
-  left: unset;
-  right: 0;
-}
+
+/*Chrome*/
+
+
 .emiPercent::before {
   width: 0.5px;
   height: 8px;
@@ -821,7 +780,7 @@ img {
     min-width: 20rem;
     font-size: 1.2rem;
   }
-  .callBtnGroup .btn.btnSquare{
+  .callBtnGroup .btn.btnSquare {
     min-width: auto;
     width: 100%;
   }
@@ -832,15 +791,6 @@ img {
     top: calc(50% - 10.5rem);
   }
   /* Detail Page */
-  .emiPercent.leftFive {
-    left: 55.7%;
-  }
-  .emiPercent.leftSix {
-    left: 69.5%;
-  }
-  .emiPercent.leftSeven {
-    left: 83%;
-  }
   .detailsCallBtnGroup .btnSquare,
   .detailsCallBtnGroup .smallCallBtn {
     justify-content: start;
@@ -925,18 +875,7 @@ img {
     filter: none;
   }
   /* Details Page */
-  .emiSlider.range-slider .range-slider__thumb {
-    width: 1.4rem;
-    height: 1.4rem;
-    border-width: 3px;
-  }
-  .emiPercent {
-    padding-top: 0.7rem;
-    font-size: 0.7rem;
-  }
-  .emiPercentBox {
-    height: 4rem;
-  }
+
   .emiPercent::before {
     height: 15px;
   }
@@ -1034,7 +973,7 @@ img {
   .btnWhite {
     padding: 2.1rem 3rem;
   }
-  .footerMenuCol li a::before{
+  .footerMenuCol li a::before {
     left: -1.5rem;
   }
   .curve-slider-arrow.slick-arrow {
@@ -1047,6 +986,13 @@ img {
   .curve-slider-arrow.slick-next {
     top: calc(50% - 2rem);
   }
+  .details-banner-slider .curve-slider-arrow.slick-arrow {
+    top: 41%;
+  }
+  .details-banner-slider .curve-slider-arrow.slick-next {
+    top: calc(50% - 7rem);
+  }
+
   .detailsCallBtnGroup .btnSquare,
   .detailsCallBtnGroup .smallCallBtn {
     font-size: 1.9rem;
@@ -1091,16 +1037,12 @@ img {
     left: -7rem;
     top: 32%;
   }
-  .hp-services-slider.brand-model-slider .curve-slider-arrow.slick-next{
+  .hp-services-slider.brand-model-slider .curve-slider-arrow.slick-next {
     top: 26%;
-  }
-  /* Detail Page */
-  .emiPercent {
-    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 640px) {
-  .container{
+  .container {
     width: 100%;
     padding: 0 20px;
   }

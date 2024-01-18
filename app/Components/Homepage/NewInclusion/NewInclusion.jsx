@@ -78,7 +78,7 @@ const NewInclusion = () => {
 
   return (
     <section
-      className={`overflow-x-hidden bg-inclusionBG pt-20 sm:pb-20 lg:py-40 xl:py-48 3xl:py-72`}
+      className={`overflow-x-hidden bg-[#F3F3F3] pt-20 sm:pb-20 lg:py-40 xl:py-48 3xl:py-72`}
     >
       <div className="max-1920">
         <div

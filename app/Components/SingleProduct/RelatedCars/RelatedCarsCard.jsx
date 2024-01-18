@@ -25,7 +25,9 @@ const RelatedCarsCard = () => {
         </p>
 
         {/* ---- Common Components ---- */}
-        <CommonInfoUsp />
+        <div className="[&_li:nth-child(3n)]:hidden [&_li]:w-[45%] sm:[&_li:nth-child(3n)]:block sm:[&_li]:w-[33%]">
+          <CommonInfoUsp />
+        </div>
         {/* ---- Common Components ---- */}
       </div>
       <div className=" overflow-hidden">
