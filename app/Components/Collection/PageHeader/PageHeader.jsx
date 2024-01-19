@@ -54,7 +54,7 @@ const PageHeader = () => {
                 <p className="hidden md:inline-block md:mr-4">Sort by:</p>
                 <Menu as="div" className="relative inline-block text-left">
                   <div>
-                    <Menu.Button className="w-32 inline-flex justify-between items-center gap-x-1.5 outline-none border border-neutral-400 px-4 py-3 text-lg rounded-md md:border md:border-[#E0E0E0] md:h-[4rem] md:min-w-[12rem] md:rounded-[5px] md:bg-transparent md:text-xl xl:text-[1.6rem] xl:min-w-[15rem]">
+                    <Menu.Button className=" w-32 min-w-[9rem] whitespace-nowrap  inline-flex justify-between items-center gap-x-1.5 outline-none border border-neutral-400 px-4 py-3 text-lg rounded-md md:border md:border-[#E0E0E0] md:h-[4rem] md:min-w-[12rem] md:rounded-[5px] md:bg-transparent md:text-xl xl:text-[1.6rem] xl:min-w-[15rem]">
                       {sortTitle}
                       <ChevronDownIcon
                         className="h-8 w-8 text-gray-400"

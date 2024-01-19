@@ -115,7 +115,7 @@ const FinanceSection = () => {
             </div>
 
             {/* Interest Rate Slider */}
-            <div className="mt-10 3xl:mt-12">
+            <div className="mt-8 3xl:mt-12">
               <div className="flex justify-between flex-wrap items-center text-white">
                 <p className="text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   Annual Interest Rate (%)

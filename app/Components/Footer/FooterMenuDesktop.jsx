@@ -19,7 +19,7 @@ const FooterMenuDesktop = () => {
                 <Link href="/suv-collection">SUV Collection</Link>
               </li>
               <li>
-                <Link href="/aston-martin">Aston Martin</Link>
+                <Link href="/brand/bmw">BMW Collection</Link>
               </li>
               <li>
                 <Link href="/search-results">Search Page</Link>

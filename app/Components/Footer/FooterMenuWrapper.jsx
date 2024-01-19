@@ -37,7 +37,10 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="/collection">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/collection"
+                  >
                     Collection
                   </Link>
                 </li>
@@ -52,9 +55,9 @@ const FooterMenuWrapper = () => {
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="/aston-martin"
+                    href="/brand/bmw"
                   >
-                    Aston Martin
+                    BMW Collection
                   </Link>
                 </li>
                 <li>
@@ -74,12 +77,18 @@ const FooterMenuWrapper = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="/compare">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/compare"
+                  >
                     Compare Page
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="/sell-car">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/sell-car"
+                  >
                     Sell Car
                   </Link>
                 </li>
@@ -109,17 +118,26 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     Contact Us
                   </Link>
                 </li>
@@ -150,17 +168,26 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     Contact Us
                   </Link>
                 </li>
@@ -191,17 +218,26 @@ const FooterMenuWrapper = () => {
             <div className="footer-menu mt-5">
               <ul>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-2xl py-1 mt-4 block text-white" href="#">
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="#"
+                  >
                     Contact Us
                   </Link>
                 </li>

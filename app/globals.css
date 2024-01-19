@@ -654,6 +654,52 @@ img {
   padding-bottom: 2px;
 }
 
+.emiSlider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  outline: none;
+  color: #ef3024;
+}
+.emiSlider::-webkit-progress-value {
+  background-color: #ef3024;
+  -webkit-appearance: none;
+}
+.emiSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #fff;
+  background-color: #ef3024;
+  cursor: pointer;
+  border-radius: 50%;
+  cursor: ew-resize;
+}
+.emiSlider::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid #fff;
+  background-color: #ef3024;
+  cursor: pointer;
+  border-radius: 50%;
+  cursor: ew-resize;
+}
+
+.emiSlider::-moz-range-track {
+  background-color: #fff;
+}
+.emiSlider::-moz-range-progress {
+  background-color: #ef3024;
+  height: 4px;
+}
+.emiSlider::-ms-fill-upper {
+  background-color: #fff;
+}
+.emiSlider::-ms-fill-lower {
+  background-color: #ef3024;
+}
 
 .emiPercent::before {
   width: 0.5px;
