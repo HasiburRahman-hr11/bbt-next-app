@@ -99,7 +99,7 @@ const NewInclusion = () => {
         >
           <Slider
             {...settings}
-            className="related-car-slider pl-8 lg:px-36 lg:mt-24 xl:px-40 1xl:px-48 3xl:px-60"
+            className="related-car-slider pl-0 sm:pl-12 lg:px-36 lg:mt-24 xl:px-40 1xl:px-48 3xl:px-60"
           >
             <RelatedCarsCard />
             <RelatedCarsCard />

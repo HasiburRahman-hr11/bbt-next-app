@@ -39,7 +39,7 @@ const FinanceSection = () => {
         <div className="lg:flex lg:flex-row-reverse lg:items-center">
           <div className="px-10 sm:px-16 md:px-20 lg:w-40% lg:px-36 1xl:pr-44">
             <div className="text-center">
-              <h2 className=" lg:font-normal text-white mb-10 lg:mb-5 lg:leading-tight xl:text-6xl 1xl:leading-1.3 1xl:text-7xl 1xl:tracking-tighter 3xl:text-8xl 3xl:mb-10">
+              <h2 className=" lg:font-normal text-white mb-10 lg:mb-5 lg:leading-tight xl:text-6xl 1xl:leading-1.3 1xl:text-7xl 1xl:tracking-tighter 3xl:text-[5.8rem] 3xl:mb-10">
                 {" "}
                 <span className="block font-light">Get Your Ride</span> Financed
                 Today!
@@ -49,7 +49,7 @@ const FinanceSection = () => {
               </p>
             </div>
             <div
-              className={`relative text-white text-center mx-auto px-5 py-8 mt-16 border border-[#ffffff80] rounded-[1rem] max-w-[24rem] lg:w-max lg:rounded-[0.6rem] lg:mt-10 lg:py-5 lg:px-8 xl:mt-12 3xl:mt-24 3xl:px-16 3xl:py-9 3xl:max-w-[40rem] ${styles.emiBox}`}
+              className={`relative text-white text-center mx-auto px-5 py-8 mt-16 border border-[#ffffff80] rounded-[1rem] max-w-[24rem] lg:w-max lg:rounded-[0.6rem] lg:mt-10 lg:py-5 lg:px-8 xl:mt-12 3xl:mt-20 3xl:px-16 3xl:py-9 3xl:max-w-[40rem] ${styles.emiBox}`}
             >
               <p className="absolute w-max px-[1.5rem] left-[50%] top-[-1rem] translate-x-[-50%] text-xl bg-black lg:top-[-0.8rem] lg:text-base 3xl:text-1xl">
                 Emi Starts @
@@ -61,11 +61,11 @@ const FinanceSection = () => {
 
             {/* Down Payment Slider */}
             <div>
-              <div className="flex justify-between flex-wrap items-center text-white mt-20 3xl:mt-28">
-                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+              <div className="flex justify-between flex-wrap items-center text-white mt-20 3xl:mt-24">
+                <p className="text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   Down Payment
                 </p>
-                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                <p className="text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   ₹ {downPaymentAmount}
                 </p>
               </div>
@@ -84,11 +84,11 @@ const FinanceSection = () => {
                   min="20"
                   max="80"
                   step="1"
-                  className="w-full h-[3px] block emiSlider"
+                  className="w-full h-[3px] block emiSlider cursor-pointer"
                   value={downPaymentPercent}
                   onChange={downPaymentPercentChange}
                 />
-                <div className="relative overflow-x-hidden emiPercentBox h-[3rem] [&>span]:top-[1rem] [&>span]:text-[0.9rem] lg:[&>span]:text-[0.7rem] lg:[&>span]:pt-[0.7rem] 3xl:[&>span]:text-[1rem]">
+                <div className="relative overflow-hidden emiPercentBox h-[3rem] [&>span]:top-[1rem] [&>span]:text-[0.9rem] lg:[&>span]:text-[0.7rem] lg:[&>span]:pt-[0.7rem] 3xl:[&>span]:text-[1rem]">
                   <span className="absolute text-white font-light emiPercent leftOne left-0 lg:h-[4rem]">
                     10%
                   </span>
@@ -118,12 +118,12 @@ const FinanceSection = () => {
             </div>
 
             {/* Interest Rate Slider */}
-            <div className="mt-10">
-              <div className="flex justify-between flex-wrap items-center text-white ">
-                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+            <div className="mt-10 3xl:mt-12">
+              <div className="flex justify-between flex-wrap items-center text-white">
+                <p className="text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   Annual Interest Rate (%)
                 </p>
-                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                <p className="text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   {annualInterest}
                 </p>
               </div>
@@ -135,7 +135,7 @@ const FinanceSection = () => {
                   min="7"
                   max="15"
                   step="0.1"
-                  className="w-full h-[3px] block emiSlider"
+                  className="w-full h-[3px] block emiSlider cursor-pointer"
                   value={annualInterest}
                   onChange={annualInterestRateChange}
                 />
@@ -143,12 +143,12 @@ const FinanceSection = () => {
             </div>
 
             {/* Term Period Slider */}
-            <div className="mt-10">
+            <div className="mt-10 3xl:mt-12">
               <div className="flex justify-between flex-wrap items-center text-white ">
-                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                <p className="text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   Term/Period (Month)
                 </p>
-                <p className="text-xl lg:text-base 2xl:text-lg 3xl:text-2xl">
+                <p className="text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   {termPeriod}
                 </p>
               </div>
@@ -160,7 +160,7 @@ const FinanceSection = () => {
                   min="1"
                   max="84"
                   step="1"
-                  className="w-full h-[3px] block emiSlider"
+                  className="w-full h-[3px] block emiSlider cursor-pointer"
                   value={termPeriod}
                   onChange={termPeriodChange}
                 />

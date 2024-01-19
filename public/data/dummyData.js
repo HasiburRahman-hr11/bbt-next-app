@@ -22,7 +22,8 @@ export const cars = [
             '/images/inclusion-item-3.webp'
         ],
         isBooked:true,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: false
     },
     {
         _id:'002',
@@ -47,7 +48,8 @@ export const cars = [
             '/images/inclusion-item-1.webp'
         ],
         isBooked:false,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: false
     },
     {
         _id:'003',
@@ -72,7 +74,8 @@ export const cars = [
             '/images/inclusion-item-1.webp'
         ],
         isBooked:false,
-        isSoldOut: true
+        isSoldOut: true,
+        isCertified: false
     },
     {
         _id:'004',
@@ -97,7 +100,8 @@ export const cars = [
             '/images/lamborghini-urus-masonry-Edition.webp'
         ],
         isBooked:false,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: false
     },
     {
         _id:'005',
@@ -122,7 +126,8 @@ export const cars = [
             '/images/mercedes-benz-AMG-G-63.webp'
         ],
         isBooked:false,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: true
     },
     {
         _id:'006',
@@ -147,7 +152,8 @@ export const cars = [
             '/images/lamborghini-urus-masonry-Edition.webp'
         ],
         isBooked:true,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: false
     },
     {
         _id:'007',
@@ -172,7 +178,8 @@ export const cars = [
             '/images/bentley-bentayga-V8-Facelift.webp'
         ],
         isBooked:false,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: false
     },
     {
         _id:'008',
@@ -197,7 +204,8 @@ export const cars = [
             '/images/mercedes-benz-Gle-43-AMG Coupe.webp'
         ],
         isBooked:false,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: false
     },
     {
         _id:'009',
@@ -222,7 +230,8 @@ export const cars = [
             '/images/lexus-LX570.webp'
         ],
         isBooked:false,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: false
     },
     {
         _id:'0010',
@@ -247,6 +256,7 @@ export const cars = [
             '/images/range-rover-sports-hse.webp'
         ],
         isBooked:false,
-        isSoldOut: false
+        isSoldOut: false,
+        isCertified: true
     }
 ]

@@ -1,5 +1,7 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
+import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 
 const cars = [
   {
@@ -155,14 +157,27 @@ const cars = [
 ];
 
 const CarList = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setPopupOpen(!popupOpen);
+  };
   return (
     <section className="bg-white">
+      {popupOpen && (
+        <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
+      )}
       <div className="container">
-        <h3 className="text-3xl py-8 border-t border-neutral-400 tracking-tight">Total 7 Results Found</h3>
+        <h3 className="text-3xl py-8 border-t border-neutral-400 tracking-tight">
+          Total 7 Results Found
+        </h3>
       </div>
       <div>
         {cars.map((item) => (
-          <CollectionItem data={item} key={item._id} />
+          <CollectionItem
+            data={item}
+            key={item._id}
+            popupToggler={togglePopup}
+          />
         ))}
       </div>
     </section>

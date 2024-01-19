@@ -1,17 +1,26 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 // Dummy Data
 import { cars } from "../../../../public/data/dummyData";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
+import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 
 const CollectionListBottom = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setPopupOpen(!popupOpen);
+  };
   const newCars = cars.slice(0, 3);
   return (
     <section className="bg-white md:bg-[#f3f3f3] lg:pt-24 lg:pb-36">
+      {popupOpen && (
+        <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
+      )}
       <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] md:pb-20 mx-auto lg:w-[83%] lg:mb-20">
         {newCars.map((item) => (
           <div key={item._id} className="w-full md:w-[49%] xl:w-[31%]">
-            <CollectionItem data={item} />
+            <CollectionItem data={item} popupToggler={togglePopup} />
           </div>
         ))}
       </div>

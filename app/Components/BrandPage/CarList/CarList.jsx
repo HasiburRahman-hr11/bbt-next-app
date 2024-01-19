@@ -1,5 +1,7 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
+import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 
 import Image from "next/image";
 
@@ -163,15 +165,22 @@ const cars = [
 ];
 
 const CarList = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setPopupOpen(!popupOpen);
+  };
   return (
     <section className="bg-white md:bg-[#f3f3f3] pb-10">
+      {popupOpen && (
+        <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
+      )}
       <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto md:pb-20 lg:w-[83%] xl:pb-[12rem]">
         {cars.map((item) => (
           <div
             key={item._id}
             className="w-full md:w-[48%] xl:w-[31%] [&_.item-divider]:hidden"
           >
-            <CollectionItem data={item} />
+            <CollectionItem data={item} popupToggler={togglePopup} />
           </div>
         ))}
       </div>

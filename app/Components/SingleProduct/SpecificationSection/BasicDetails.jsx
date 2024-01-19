@@ -3,12 +3,17 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import CommonInfoUsp from "../../CommonComponents/CommonInfoUsp/CommonInfoUsp";
+import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const BasicDetails = () => {
   const [isSold, setIsSold] = useState(false);
+  const [popupOpen, setPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setPopupOpen(!popupOpen);
+  };
   useEffect(() => {
     AOS.init();
   }, []);
@@ -19,6 +24,9 @@ const BasicDetails = () => {
       data-aos-easing="linear"
       data-aos-duration="500"
     >
+       {popupOpen && (
+        <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
+      )}
       <div className="block lg:flex lg:flex-wrap lg:justify-between">
         <div className="flex items-center mb-20 lg:mb-0 lg:w-40% xl:w-2/6">
           <div className="w-36 pr-8 border-r border-stone-400 lg:border-none lg:pr-4 xl:w-32 2xl:w-36 3xl:w-44">
@@ -56,9 +64,9 @@ const BasicDetails = () => {
                 <p className="font-light [&_strong]:font-medium mb-4 text-center xl:text-left xl:mb-6 1xl:text-[2rem] 3xl:text-[2.2rem]">
                   Sorry This Car is Sold !! <br /> <strong>Still want to know more ?</strong>
                 </p>
-                <Link
-                  href="#"
-                  className="bg-black w-full flex justify-center items-center py-7 px-10 rounded-[5px] xl:rounded-[1rem] transition-all duration-500 ease-in-out group hover:bg-white hover:border hover:border-black"
+                <div
+                  className="bg-black w-full flex justify-center cursor-pointer items-center py-7 px-10 rounded-[5px] xl:rounded-[1rem] transition-all duration-500 ease-in-out group hover:bg-white hover:border hover:border-black"
+                  onClick={togglePopup}
                 >
                   <Image
                     src="/images/square-btn-call-icon.webp"
@@ -70,7 +78,7 @@ const BasicDetails = () => {
                   <span className="text-[1.3rem] text-white font-medium text-center 1xl:text-[1.5rem] 3xl:text-[1.7rem] group-hover:text-black transition-all duration-500 ease-in-out">
                     Request a Call Back
                   </span>
-                </Link>
+                </div>
               </div>
             ) : (
               <div className="flex flex-wrap justify-between md:pl-5 1xl:pl-10 3xl:pl-14">

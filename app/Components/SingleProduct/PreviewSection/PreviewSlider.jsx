@@ -27,7 +27,7 @@ const sliderData = [
 
 const PreviewSliderItem = ({ data, index }) => {
   return (
-    <div className="mr-8">
+    <div className="mr-8 h-full">
       <div
         className="text-white relative pt-8 pb-16 px-8 overflow-hidden rounded-2xl min-h-20 sm:min-h-24 lg:min-h-20 1xl:min-h-24 3xl:min-h-33"
         style={{ backgroundColor: "#131313" }}
@@ -74,6 +74,7 @@ const PreviewSlider = () => {
         breakpoint: 640,
         settings: {
           slidesToShow: 2,
+          centerPadding:"30px"
         },
       },
     ],
@@ -84,7 +85,7 @@ const PreviewSlider = () => {
   return (
     <>
       <div className="pl-5 sm:pl-12 md:pl-16 lg:pl-0">
-        <Slider {...settings} className="details-preview-slider">
+        <Slider {...settings} className="details-preview-slider [&_.slick-tack]:flex [&_.slick-slide]:h-[inherit]">
           {sliderData.map((data, index) => (
             <PreviewSliderItem key={index} data={data} index={index} />
           ))}

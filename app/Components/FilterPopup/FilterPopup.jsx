@@ -99,7 +99,7 @@ const brands = [
     title: "HYUNDAI",
     logo: "/images/detail-page/brand-icon-hyundai.webp",
     url: "#",
-  }
+  },
 ];
 
 const categories = [
@@ -223,20 +223,18 @@ const FilterPopup = ({ active, togglePopup }) => {
       } fixed w-full h-full left-0 top-0 min-h-screen items-center justify-center opacity-0 transition-all duration-500 z-100`}
     >
       <div
-        className={`${styles.popupOverlay} w-full h-full fixed left-0 top-0 z-10 block opacity-100 transition-all duration-500`}
+        className={` bg-[#00000099] w-full h-full fixed left-0 top-0 z-10 block opacity-100 transition-all duration-500`}
         onClick={togglePopup}
       ></div>
-      <div
-        className={`${styles.filterPopupContent} w-full bg-white h-screen z-20 mx-auto relative overflow-x-hidden`}
-      >
-        <div
-          className={`${styles.filterContentWrapper} overflow-y-auto h-full px-8 pb-10 xl:px-12`}
-        >
+      <div className="w-full bg-white h-screen z-20 mx-auto relative overflow-x-hidden lg:w-[80%] lg:rounded-[1.5rem] lg:max-h-[90vh] xl:w-[70%] 2xl:max-w-[1400px]">
+        <div className="popupScrollbar overflow-y-auto h-full px-8 pb-10 xl:px-12">
           <div className="flex justify-between py-6 border-b border-neutral-200 xl:pt-9">
             <h3 className="3.5xl font-medium">Filters</h3>
             <div className="flex items-center">
               <div
-                className={`flex- items-center w-max border border-black cursor-pointer group hover:bg-black transition-all duration-300 ${styles.filterReset} ${disableSubmit ? 'opacity-40 pointer-events-none':""}`}
+                className={`flex py-[0.7rem] px-[2rem] rounded-[1.5rem] items-center w-max border border-black cursor-pointer group hover:bg-black transition-all duration-300 ${
+                  disableSubmit ? "opacity-40 pointer-events-none" : ""
+                }`}
                 onClick={handleResetFilter}
               >
                 <Image
@@ -269,15 +267,17 @@ const FilterPopup = ({ active, togglePopup }) => {
           <div className="pt-10 pb-12">
             {brandsRowOne.length > 0 && (
               <>
-                <p className="font-medium text-1xl mb-4 xl:text-3xl">Popular Brands</p>
+                <p className="font-medium text-1xl mb-4 xl:text-3xl">
+                  Popular Brands
+                </p>
                 <ul
-                  className={`${styles.filterBrands} flex flex-nowrap overflow-x-auto no-scroll-bar pb-3 pt-4`}
+                  className={`${styles.filterBrands}  flex flex-nowrap overflow-x-auto no-scroll-bar pb-3 pt-4 `}
                 >
                   {brandsRowOne?.map((brand) => (
                     <li
                       key={brand._id}
                       title={brand.title}
-                      className={`py-7 px-6 border border-neutral-200 rounded-md mr-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                      className={`py-7 px-6 border border-neutral-200 rounded-md mr-4 flex items-center justify-center cursor-pointer transition-all duration-300 w-[7.7rem] h-[7.7rem] min-w-[7.7rem] xl:w-[10rem] xl:h-[10rem] ${
                         selectedBrands.some((item) => item._id === brand._id)
                           ? styles.active
                           : ""
@@ -305,7 +305,7 @@ const FilterPopup = ({ active, togglePopup }) => {
                   <li
                     key={brand._id}
                     title={brand.title}
-                    className={`py-7 px-6 border border-neutral-200 rounded-md mr-4 flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                    className={`py-7 px-6 border border-neutral-200 rounded-md mr-4 flex items-center justify-center cursor-pointer transition-all duration-300 w-[7.7rem] h-[7.7rem] min-w-[7.7rem] xl:w-[10rem] xl:h-[10rem]${
                       selectedBrands.some((item) => item._id === brand._id)
                         ? styles.active
                         : ""
@@ -330,7 +330,7 @@ const FilterPopup = ({ active, togglePopup }) => {
             <p className="font-medium text-1xl xl:text-3xl">Budget</p>
             <ul className="no-scroll-bar overflow-auto flex py-7">
               <li
-                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg ${
+                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg py-[0.5rem] flex justify-center items-center ${
                   styles.budgetItem
                 } ${selectedBudget === "500000" ? styles.active : ""}`}
                 onClick={() => handleSelectBudget("500000")}
@@ -338,7 +338,7 @@ const FilterPopup = ({ active, togglePopup }) => {
                 Less Than 50L
               </li>
               <li
-                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg ${
+                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg py-[0.5rem] flex justify-center items-center ${
                   styles.budgetItem
                 } ${
                   selectedBudget === "5000000-10000000" ? styles.active : ""
@@ -348,7 +348,7 @@ const FilterPopup = ({ active, togglePopup }) => {
                 50L to 1Cr
               </li>
               <li
-                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg ${
+                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg py-[0.5rem] flex justify-center items-center ${
                   styles.budgetItem
                 } ${
                   selectedBudget === "10000000-15000000" ? styles.active : ""
@@ -358,7 +358,7 @@ const FilterPopup = ({ active, togglePopup }) => {
                 1Cr to 1.5Cr
               </li>
               <li
-                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg ${
+                className={`text-base tracking-tight px-5 border border-neutral-200 rounded-3xl mr-3 whitespace-nowrap cursor-pointer transition-all duration-300 xl:text-lg py-[0.5rem] flex justify-center items-center ${
                   styles.budgetItem
                 } ${
                   selectedBudget === "15000000-50000000" ? styles.active : ""
@@ -372,7 +372,9 @@ const FilterPopup = ({ active, togglePopup }) => {
 
           {/* Vehicle Type */}
           <div className="py-12">
-            <p className="font-medium text-1xl mb-7 xl:text-3xl">Vehicle type</p>
+            <p className="font-medium text-1xl mb-7 xl:text-3xl">
+              Vehicle type
+            </p>
             <ul className="flex items-center flex-wrap mt-8">
               {categories.map((category) => (
                 <li
@@ -393,7 +395,9 @@ const FilterPopup = ({ active, togglePopup }) => {
                     alt={category.title}
                     className="object-contain h-8"
                   />
-                  <p className="text-black text-base mt-3  xl:text-lg">{category.title}</p>
+                  <p className="text-black text-base mt-3  xl:text-lg">
+                    {category.title}
+                  </p>
                 </li>
               ))}
             </ul>

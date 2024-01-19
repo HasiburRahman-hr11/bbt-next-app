@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -10,7 +10,6 @@ import Link from "next/link";
 import styles from "./NewInclusion.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 // Dummy Data
 import { cars } from "../../../../public/data/dummyData";
@@ -42,44 +41,45 @@ function PrevArrow(props) {
     </div>
   );
 }
+let settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  centerMode: false,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
 
 const NewInclusion = () => {
+
   useEffect(() => {
     AOS.init();
   }, []);
-
-  let settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    centerMode: false,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <section
       className={`overflow-x-hidden bg-[#F3F3F3] pt-20 sm:pb-20 lg:py-40 xl:py-48 3xl:py-72`}
     >
+      
       <div className="max-1920">
         <div
           className={`px-8 sm:mb-16 md:px-28 lg:px-40 flex justify-between items-center relative lg:mb-24 xl:px-48 1xl:px-52 3xl:px-72 3xl:mb-36 ${styles.incSecHead}`}
