@@ -658,14 +658,13 @@ img {
   -webkit-appearance: none;
   width: 100%;
   height: 3px;
-  background: #fff;
+  background-color: #fff;
   outline: none;
-  color: #ef3024;
+  color: #fff;
+  position: relative;
+  z-index: 10;
 }
-.emiSlider::-webkit-progress-value {
-  background-color: #ef3024;
-  -webkit-appearance: none;
-}
+
 .emiSlider::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 1.6rem;
@@ -675,6 +674,12 @@ img {
   cursor: pointer;
   border-radius: 50%;
   cursor: ew-resize;
+}
+.emiSlider::-webkit-slider-runnable-track {
+  webkit-appearance: none;
+  transition: all ease 100ms;
+  background: linear-gradient(#ef3024 0 0) scroll no-repeat center / 100% 3px;
+  position: relative;
 }
 .emiSlider::-moz-range-thumb {
   -webkit-appearance: none;
@@ -686,7 +691,6 @@ img {
   border-radius: 50%;
   cursor: ew-resize;
 }
-
 .emiSlider::-moz-range-track {
   background-color: #fff;
 }
