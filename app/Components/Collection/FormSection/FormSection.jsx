@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FormSection = () => {
   const [imageOne, setImageOne] = useState("");
@@ -40,10 +42,20 @@ const FormSection = () => {
       alert("Please fill the form correctly.");
     }
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="bg-black text-white py-20 lg:py-36 xl:py-44">
       <div className="container">
-        <div className="px-3 md:flex md:flex-wrap md:justify-between md:items-center xl:items-stretch">
+        <div
+          className="px-3 md:flex md:flex-wrap md:justify-between md:items-center xl:items-stretch"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="md:w-[40%] xl:w-[35%] xl:flex xl:flex-col xl:justify-center">
             <Image
               src="/images/down-circle-arrow-white.webp"

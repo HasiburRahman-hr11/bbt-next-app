@@ -5,77 +5,85 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const brands = [
-  { title: "BMW", logo: "/images/detail-page/brand-icon-bmw.webp", url: "#" },
-  { title: "AUDI", logo: "/images/detail-page/brand-icon-audi.webp", url: "#" },
+  {
+    title: "BMW",
+    logo: "/images/detail-page/brand-icon-bmw.webp",
+    url: "/brand/bmw",
+  },
+  {
+    title: "AUDI",
+    logo: "/images/detail-page/brand-icon-audi.webp",
+    url: "/brand/audi",
+  },
   {
     title: "MERCEDES",
     logo: "/images/detail-page/brand-icon-mercedes.webp",
-    url: "#",
+    url: "/brand/mercedes",
   },
   {
     title: "JAGUAR",
     logo: "/images/detail-page/brand-icon-jaguar.webp",
-    url: "#",
+    url: "/brand/jaguar",
   },
   {
     title: "LAND ROVER",
     logo: "/images/detail-page/brand-icon-land-rover.webp",
-    url: "#",
+    url: "/brand/land-rover",
   },
   {
     title: "BENTLEY",
     logo: "/images/detail-page/brand-icon-bentley.webp",
-    url: "#",
+    url: "/brand/bently",
   },
   {
     title: "PORSCHE",
     logo: "/images/detail-page/brand-icon-porsche.webp",
-    url: "#",
+    url: "/brand/porche",
   },
   {
     title: "LAMBORGHINI",
     logo: "/images/detail-page/brand-icon-lambo.webp",
-    url: "#",
+    url: "/brand/lamborghini",
   },
   {
     title: "JEEP",
     logo: "/images/detail-page/brand-icon-jeep.webp",
-    url: "#",
+    url: "/brand/jeep",
   },
   {
     title: "FERRARI",
     logo: "/images/detail-page/brand-icon-ferrari.webp",
-    url: "#",
+    url: "/brand/ferrari",
   },
   {
     title: "ROLLS ROYCE",
     logo: "/images/detail-page/brand-icon-rolls-royace.webp",
-    url: "#",
+    url: "/brand/rolls-royce",
   },
   {
     title: "Honda",
     logo: "/images/detail-page/brand-icon-honda.webp",
-    url: "#",
+    url: "/brand/honda",
   },
   {
     title: "SKODA",
     logo: "/images/detail-page/brand-icon-skoda.webp",
-    url: "#",
+    url: "/brand/skoda",
   },
   {
     title: "TOYOTA",
     logo: "/images/detail-page/brand-icon-toyota.webp",
-    url: "#",
+    url: "/brand/toyota",
   },
   {
     title: "VOLVO",
     logo: "/images/detail-page/brand-icon-volvo.webp",
-    url: "#",
+    url: "/brand/volvo",
   },
   {
     title: "HYUNDAI",
     logo: "/images/detail-page/brand-icon-hyundai.webp",
-    url: "#",
+    url: "/brand/hyundai",
   },
 ];
 

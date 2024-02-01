@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Dummy Data
 import { cars } from "../../../../public/data/dummyData";
@@ -11,7 +13,13 @@ const CollectionListBottom = () => {
   const togglePopup = () => {
     setPopupOpen(!popupOpen);
   };
+
   const newCars = cars.slice(0, 3);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="bg-white md:bg-[#f3f3f3] lg:pt-24 lg:pb-36">
       {popupOpen && (
@@ -19,7 +27,13 @@ const CollectionListBottom = () => {
       )}
       <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] md:pb-20 mx-auto lg:w-[83%] lg:mb-20">
         {newCars.map((item) => (
-          <div key={item._id} className="w-full md:w-[49%] xl:w-[31%]">
+          <div
+            key={item._id}
+            className="w-full md:w-[49%] xl:w-[31%]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <CollectionItem data={item} popupToggler={togglePopup} />
           </div>
         ))}
