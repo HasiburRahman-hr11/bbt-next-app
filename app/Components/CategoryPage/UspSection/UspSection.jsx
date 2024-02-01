@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const uspList = [
   {
@@ -29,10 +32,18 @@ const uspList = [
 ];
 
 const UspSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white py-20 md:py-28 md:bg-[#F3F3F3] xl:py-40">
       <div className="container">
-        <div className="lg:flex lg:flex-wrap lg:justify-between">
+        <div
+          className="lg:flex lg:flex-wrap lg:justify-between"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="w-full lg:w-[50%] 3xl:w-[58%]">
             <h2 className="mb-7 tracking-tighter leading-1.2 md:mb-14 lg:leading-[1.4]">
               Keep Pre-owned Luxury <br /> SUV as an Option
@@ -93,7 +104,9 @@ const UspSection = () => {
                     />
                   </div>
                   <div className="pl-6 flex-1 md:pl-0 md:mt-12">
-                    <h6 className="text-1.4rem 2xl:text-[1.7rem]">{usp.title}</h6>
+                    <h6 className="text-1.4rem 2xl:text-[1.7rem]">
+                      {usp.title}
+                    </h6>
                     <p className="text-xl mt-3 tracking-tight font-light 2xl:text-[1.4rem] 3xl:text-[1.5rem] 3xl:leading-[1.5]">
                       {usp.description}
                     </p>

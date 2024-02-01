@@ -16,7 +16,7 @@ const FooterMenuDesktop = () => {
                 <Link href="/collection">Collection</Link>
               </li>
               <li>
-                <Link href="/suv-collection">SUV Collection</Link>
+                <Link href="/category/suv-collection">SUV Collection</Link>
               </li>
               <li>
                 <Link href="/brand/bmw">BMW Collection</Link>

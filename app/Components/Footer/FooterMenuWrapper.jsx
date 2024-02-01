@@ -47,7 +47,7 @@ const FooterMenuWrapper = () => {
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="/suv-collection"
+                    href="/category/suv-collection"
                   >
                     SUV Collection
                   </Link>

@@ -1,11 +1,22 @@
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DescriptionSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-black py-24 xl:py-36 3xl:py-44">
       <div className="container">
-        <div className="relative pb-[10rem] sm:pb-[26rem] md:pb-[14rem] xl:pb-[10rem] 3xl:pb-[5rem]">
+        <div
+          className="relative pb-[10rem] sm:pb-[26rem] md:pb-[14rem] xl:pb-[10rem] 3xl:pb-[5rem]"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="flex flex-wrap justify-between">
             <div className=" w-50% md:w-[25%] lg:w-[30%] xl:w-[28%] 1xl:w-[30%]">
               <Image
@@ -38,13 +49,13 @@ const DescriptionSection = () => {
             </div>
           </div>
           <div className="absolute right-0 bottom-0 w-[10rem] sm:w-[20rem] md:w-[14rem] xl:w-[15rem] 3xl:w-[16rem]">
-          <Image
-                  src="/images/suv/suv-description-img-2.webp"
-                  width="162"
-                  height="214"
-                  alt="Description Image"
-                  className="w-full inline-block object-contain h-auto"
-                />
+            <Image
+              src="/images/suv/suv-description-img-2.webp"
+              width="162"
+              height="214"
+              alt="Description Image"
+              className="w-full inline-block object-contain h-auto"
+            />
           </div>
         </div>
       </div>

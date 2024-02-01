@@ -1,11 +1,22 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-dark-800 py-28 text-white xl:py-40 2xl:py-48">
       <div className="container">
-        <div className="lg:flex lg:justify-between lg:items-center">
+        <div
+          className="lg:flex lg:justify-between lg:items-center"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="mb-16 lg:w-[25%] lg:mb-0 xl:w-[20%] 1xl:w-[23%]">
             <Image
               src="/images/bbt-logo-2.webp"
@@ -17,7 +28,10 @@ const AboutSection = () => {
           </div>
           <div className="font-light [&>p]:text-xl [&>p]:leading-1.6 lg:w-[70%] xl:w-[75%] 1xl:w-[70%] 2xl:[&>p]:text-[1.6rem]">
             <h2 className="font-light mb-8 tracking-tighter [&>strong]:font-normal leading-1.3 lg:leading-[1.4]">
-              Second Hand <strong>Exotic <br /> SUVs are in Trend Now!</strong>
+              Second Hand{" "}
+              <strong>
+                Exotic <br /> SUVs are in Trend Now!
+              </strong>
             </h2>
             <p>
               Indeed, you read it right! The field of recycled extravagant SUVs
