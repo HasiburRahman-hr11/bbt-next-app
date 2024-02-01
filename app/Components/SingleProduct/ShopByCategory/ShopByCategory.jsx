@@ -8,27 +8,27 @@ const categories = [
   {
     title: "SUVs",
     icon: "/images/detail-page/category-icon-suv.webp",
-    url: "#",
+    url: "/category/suv",
   },
   {
     title: "Sedan",
     icon: "/images/detail-page/category-icon-sedan.webp",
-    url: "#",
+    url: "/category/sedan",
   },
   {
     title: "Convertible",
     icon: "/images/detail-page/category-icon-convertable.webp",
-    url: "#",
+    url: "/category/convertible",
   },
   {
     title: "Coupe",
     icon: "/images/detail-page/category-icon-coupe.webp",
-    url: "#",
+    url: "/category/coupe",
   },
   {
     title: "Sports",
     icon: "/images/detail-page/category-icon-sports.webp",
-    url: "#",
+    url: "/category/sports",
   },
 ];
 

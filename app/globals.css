@@ -863,9 +863,6 @@ img {
   .inclusionSlider .slick-slider {
     padding: 0 7rem;
   }
-  .details-banner-slider .slick-list {
-    padding: 0 27% !important;
-  }
 }
 @media only screen and (min-width: 1024px) {
   h1 {

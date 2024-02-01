@@ -120,7 +120,7 @@ const CollectionItem = ({ data, popupToggler }) => {
                   alt="Call Icon"
                   className="object-contain w-7 mr-6 h-auto"
                 />
-                Request A Call Back
+                Call Big Boy Toyz
               </div>
             </div>
             <div className="callBtnRight ml-4">

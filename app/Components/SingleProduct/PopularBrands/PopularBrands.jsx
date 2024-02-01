@@ -107,7 +107,7 @@ const PopularBrands = () => {
               </span>
             </h2>
             <div className="hidden lg:inline-block w-max bg-white pl-10">
-              <a href="#" className="btn btnBlack roundedBtn">
+              <a href="#" className="btn btnBlack roundedBtn 3xl:px-[7rem]">
                 View All Brands
               </a>
             </div>

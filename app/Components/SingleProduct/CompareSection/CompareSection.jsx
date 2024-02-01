@@ -34,11 +34,11 @@ const CompareSection = () => {
                 className="hidden invert sm:inline-block sm:w-24 mb-8 object-contain lg:w-32 1xl:w-36 3xl:w-44 3xl:mb-10"
               />
               <span className="h-px w-auto grow bg-black sm:hidden"></span>
-              <h2 className=" pl-8 sm:pl-0 sm:mb-3 md:tracking-tight lg:text-4.5xl 1xl:text-5.5xl 3xl:text-7xl 3xl:mb-8">
+              <h2 className=" pl-8 sm:pl-0 sm:mb-3 md:tracking-tight lg:text-4.5xl 1xl:text-5.5xl 3xl:text-7xl 3xl:mb-10">
                 Compare Cars
               </h2>
-              <p className="hidden sm:block text-lg leading-8 lg:text-base lg:leading-8 1xl:text-xl  3xl:text-3xl 3xl:leading-loose 1xl:mt-5">
-                Get your dream luxury car in 4 easy steps at Big Boy Toyz,
+              <p className="hidden sm:block text-lg leading-8 lg:text-base lg:leading-8 1xl:text-xl  3xl:text-[1.6rem] 3xl:leading-[1.7] 1xl:mt-5 [&>br]:hidden lg:[&>br]:block">
+                Get your dream luxury car in 4 easy steps at Big <br /> Boy Toyz,
                 India's trusted used car portal.
               </p>
             </div>
@@ -85,7 +85,7 @@ const CompareSection = () => {
                         <CommonInfoUsp />
                       </div>
                       <div className="mt-10 hidden md:block lg:mt-6 1xl:mt-9">
-                        <button className="addBtn lg:py-4 lg:justify-between 3xl:py-6">
+                        <button className="addBtn lg:py-4 lg:justify-between 3xl:py-6 3xl:px-[3rem]">
                           <span className="uppercase font-medium lg:text-lg lg:capitalize 1xl:text-lg 3xl:text-1xl">
                             Add Cars
                           </span>
@@ -94,7 +94,7 @@ const CompareSection = () => {
                             width="13"
                             height="13"
                             alt="Plus Icon"
-                            className="object-contain w-5 ml-8 lg:w-4 1xl:w-5 3xl:w-7"
+                            className="object-contain w-5 ml-8 lg:w-4 1xl:w-5 3xl:w-[1.3rem]"
                           />
                         </button>
                       </div>

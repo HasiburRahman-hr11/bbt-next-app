@@ -51,9 +51,9 @@ const SpecificationsAccordion = ({ specifications }) => {
                     alt=""
                     width="20"
                     height="20"
-                    className="object-contain w-7 h-7 inline-block mr-3 xl:w-9 xl:h-9 xl:mr-4 1xl:w-10 1xl:h-10 1xl:mr-5 3xl:w-12 3xl:h-12 3xl:mr-8"
+                    className="object-contain w-7 h-auto inline-block mr-3 xl:w-9  xl:mr-4 1xl:w-10 1xl:mr-5 3xl:w-[3.2rem] 3xl:h-[3.9rem] 3xl:mr-8"
                   />
-                  <p className="font-normal text-3xl 1xl:text-3.5xl 1xl:tracking-tight 2xl:text-4xl 3xl:text-4.5xl">
+                  <p className="font-medium text-3xl 1xl:text-3.5xl 1xl:tracking-tight 2xl:text-4xl 3xl:text-[2.8rem]">
                     {item.title}
                   </p>
                 </div>
@@ -75,7 +75,7 @@ const SpecificationsAccordion = ({ specifications }) => {
                     <p className="text-lg font-medium sm:text-xl 1xl:text-1xl 3xl:text-3xl">
                       {listItem.title}
                     </p>
-                    <p className="text-lg font-light text-gray-500 sm:text-xl 1xl:text-1xl 3xl:text-3xl">
+                    <p className="text-lg font-normal text-gray-500 sm:text-xl 1xl:text-1xl 3xl:text-3xl">
                       {listItem.description}
                     </p>
                   </li>

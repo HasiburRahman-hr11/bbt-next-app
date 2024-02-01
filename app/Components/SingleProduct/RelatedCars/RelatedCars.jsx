@@ -75,8 +75,8 @@ const NewInclusion = () => {
   };
 
   return (
-    <section className="py-24 bg-[#F3F3F3] lg:py-36 xl:py-44 2xl:py-52 3xl:py-60">
-      <div className="max-1920">
+    <section className=" bg-white ">
+      <div className="max-1920 bg-[#F3F3F3] py-24 lg:py-36 xl:py-44 2xl:py-52 3xl:py-60">
         <div
           className="container"
           data-aos="fade-up"

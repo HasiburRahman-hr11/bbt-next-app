@@ -40,20 +40,20 @@ const PreviewSection = () => {
                 <p className="uppercase hidden lg:block text-lg mb-8 xl:text-xl 1xl:text-1xl tracking-wide 2xl:text-2xl 2xl:mb-10 3xl:text-3xl 3xl:mb-16">
                   highly maintained
                 </p>
-                <h2 className=" text-25px tracking-tighter xl:text-5xl lg:font-normal xl:leading-relaxed 1xl:leading-1.4 1xl:text-5.5xl 3xl:text-7xl 3xl:leading-1.6">
+                <h2 className=" text-25px tracking-tighter xl:text-5xl lg:font-normal xl:leading-relaxed 1xl:leading-1.4 1xl:text-5.5xl 3xl:text-[4.5rem]">
                   <span className="lg:font-light block">Previewing The</span>{" "}
                   Exciting Ride Ahead.
                 </h2>
               </div>
-              <div className=" text-center py-5 px-5 border rounded-xl border-neutral-600 cursor-pointer lg:px-8 lg:py-8 xl:py-12 3xl:py-20 3xl:px-10">
+              <div className=" text-center py-5 px-5 border rounded-xl border-[#333] cursor-pointer lg:px-8 lg:py-8 xl:py-12 3xl:py-20 3xl:px-10 group transition-all ease-in-out duration-300 hover:bg-white">
                 <Image
                   src="/images/detail-page/detail-engine-sound-icon.webp"
                   width="17"
                   height="17"
-                  className="w-7 object-contain inline-block mx-auto 2xl:w-9 3xl:w-11"
+                  className="w-7 object-contain inline-block mx-auto 2xl:w-9 3xl:w-11 transition-all ease-in-out duration-300 group-hover:invert"
                   alt="Speaker Icon"
                 />
-                <p className="text-base mt-5 xl:text-xl 2xl:text-1xl 2xl:mt-7 3xl:text-3xl">
+                <p className="text-base mt-5 xl:text-xl 2xl:text-1xl 2xl:mt-7 3xl:text-3xl group-hover:text-black transition-all ease-in-out duration-300">
                   Engine Sound
                 </p>
               </div>
@@ -89,42 +89,35 @@ const PreviewSection = () => {
             <div className="lg:flex lg:flex-wrap lg:pl-20 lg:pt-32 xl:pt-44 xl:pl-28 overflow-x-hidden 1xl:pt-48 2xl:pl-36 3xl:pt-64 3xl:pl-48">
               <div className="flex flex-wrap items-center px-8 sm:px-16 md:px-20 lg:w-30% lg:block lg:pr-0 3xl:w-28%">
                 <div className="divider w-full h-1 border-t border-gray-300 mt-20 pt-20 lg:hidden"></div>
-                <div className="w-1/4 pr-8 border-r border-gray-300 lg:w-40 lg:border-none lg:pr-0 lg:mb-6 xl:w-full xl:mb-10 3xl:mb-16">
+                <div className="w-1/4 sm:w-max pr-8 border-r border-gray-300 lg:w-40 lg:border-none lg:pr-0 lg:mb-6 xl:w-full xl:mb-10">
                   <Image
-                    src="/images/detail-page/detail-bbt-certified.webp"
+                    src="/images/detail-page/detail-bbt-certified-white.webp"
                     alt="BBT Certified"
-                    width="53"
-                    height="72"
-                    className="w-24 object-contain invert sm:hidden"
-                  />
-                  <Image
-                    src="/images/detail-page/bbt-certified-horizontal.webp"
-                    alt="BBT Certified"
-                    width="170"
-                    height="124"
-                    className="w-52 object-contain hidden sm:block xl:w-44 1xl:w-52 3xl:w-72"
+                    width="110"
+                    height="150"
+                    className="w-[5.4rem] object-contain xl:w-[6rem] 1xl:w-[9.5rem] 3xl:w-[10.9rem]"
                   />
                 </div>
-                <div className="w-70% pl-10 lg:w-full lg:pl-0">
-                  <h2 className="text-25px tracking-tight lg:font-normal xl:text-5xl xl:leading-relaxed 1xl:text-5.5xl 3xl:text-7xl 3xl:leading-1.6">
+                <div className="w-70% sm:flex-grow pl-10 lg:w-full lg:pl-0">
+                  <h2 className="text-25px tracking-tight lg:font-normal xl:text-5xl xl:leading-relaxed 1xl:text-5.5xl 3xl:text-7xl 3xl:leading-1.4">
                     <span className="lg:font-light lg:block">
                       Hurray! This Car Is
                     </span>{" "}
                     BBT Certified.
                   </h2>
                 </div>
-                <Image
+                <img
                   src="/images/down-circle-arrow-white.webp"
-                  width="123"
-                  height="123"
+                  width="94"
+                  height="94"
                   alt="Arrow Icon"
-                  className="hidden lg:inline-block mt-20 object-contain lg:w-24 2xl:w-28 2xl:mt-28 3xl:w-36"
+                  className="hidden lg:inline-block mt-20 object-contain lg:w-24 2xl:w-28 2xl:mt-28 3xl:w-[9.3rem]"
                 />
               </div>
 
               <div className="lg:w-70% 3xl:w-72% mt-24 lg:mt-0">
                 <div className="px-10 sm:px-16 md:px-20 lg:pl-0 lg:pr-44 1xl:pr-56 3xl:pr-72">
-                  <a className="flex justify-between items-center my-16 lg:mt-0 1xl:mb-24">
+                  <a href="#" className="flex justify-between items-center my-16 lg:mt-0 1xl:mb-24 group cursor-pointer">
                     <p className="1xl:text-3xl 3xl:text-4xl 3xl:tracking-wide">
                       151 Check Points Completed
                     </p>
@@ -133,7 +126,7 @@ const PreviewSection = () => {
                       alt="BBT Certified"
                       width="12"
                       height="12"
-                      className="w-5 object-contain invert 1xl:w-7 3xl:w-9"
+                      className="w-5 object-contain invert 1xl:w-7 3xl:w-9 transition-all duration-300 ease-in-out group-hover:rotate-[45deg]"
                     />
                   </a>
                 </div>

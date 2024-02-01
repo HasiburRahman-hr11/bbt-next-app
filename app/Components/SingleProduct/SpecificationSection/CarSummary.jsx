@@ -81,9 +81,9 @@ const CarSummaryCard = ({ data }) => {
         alt="Icon"
         className="object-contain h-12 xl:h-13 1xl:w-20 3xl:w-28 3xl:h-16"
       />
-      <p className="text-sm text-stone-500 my-5 sm:text-lg xl:mt-14 1xl:mt-20 1xl:text-xl 1xl:mb-7 2xl:text-1xl 3xl:text-3xl">{data.title}</p>
+      <p className="text-sm text-[#989898] my-5 sm:text-lg xl:mt-14 1xl:mt-20 1xl:text-xl 1xl:mb-7 2xl:text-1xl 3xl:text-3xl">{data.title}</p>
       <p
-        className="text-base font-medium sm:text-lg xl:text-1.6xl xl:leading-normal 1xl:text-2xl 2xl:text-3xl 2xl:leading-1.4 3xl:text-4xl 3xl:leading-1.6"
+        className="text-base font-normal sm:text-lg xl:text-1.6xl xl:leading-normal 1xl:text-2xl 2xl:text-3xl 2xl:leading-1.4 3xl:text-4xl 3xl:leading-1.6"
         dangerouslySetInnerHTML={{ __html: data.description }}
       />
     </div>
