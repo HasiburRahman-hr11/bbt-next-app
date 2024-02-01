@@ -257,7 +257,7 @@ const FormSection = () => {
                     </div>
                     <div className="pl-5 [&>p]:text-[1.2rem] 3xl:[&>p]:text-[1.6rem] 3xl:pl-8">
                       <p className="font-light">WhatsApp </p>
-                      <p className="font-normal">(+91) 9999 9999 83</p>
+                      <p className="font-normal">(+91) 9999 9999 15</p>
                     </div>
                   </a>
                 </li>

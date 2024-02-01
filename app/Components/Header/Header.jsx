@@ -4,11 +4,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Header = ({ isPageHeader }) => {
-
   return (
-    <header className={`header ${isPageHeader ? "page-header" : ""}`}>
+    <header
+      className={`header w-full h-auto z-[99] ${
+        isPageHeader
+          ? "page-header relative bg-[#000]"
+          : "absolute bg-transparent"
+      }`}
+    >
       <div className="max-1920">
-        <div className="header-wrapper w-full p-[3rem] mx-auto lg:py-[2rem] lg:px-[4rem] 1xl:py-[2.5rem] 3xl:py-[3rem] 3xl:px-[5.5rem]">
+        <div
+          className={`header-wrapper w-full p-[3rem] mx-auto lg:py-[2rem] lg:px-[4rem] 1xl:py-[2.5rem] 3xl:py-[3rem] 3xl:px-[5.5rem] ${
+            isPageHeader ? "py-[2rem] px-[3rem] 2xl:py-[3rem] 2xl:px-[4.5rem] 3xl:py-[3.5rem] 3xl:px-[5.5rem]" : ""
+          }`}
+        >
           <div className="flex justify-between items-center">
             <div
               className={`flex items-center menu-toggler cursor-pointer lg:order-3`}
@@ -35,35 +44,35 @@ const Header = ({ isPageHeader }) => {
               </Link>
             </div>
             <div
-              className={`lg:flex items-center justify-center header-phone-list hidden lg:order-2`}
+              className={`lg:flex items-center justify-center header-phone-list hidden lg:order-2 [&>a:last-of-type]:border-r [&>a:last-of-type]:border-r-[#fff] group`}
             >
               <Link
                 href="#"
-                className={`text-white relative px-7 uppercase text-sm`}
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 BUY - 9999 9999 83{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-7 uppercase text-sm`}
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 SELL - 9999 9999 15{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-7 uppercase text-sm`}
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 Car Detailing - 89999 99627{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-7 uppercase text-sm`}
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 Servicing - 89999 99264{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-7 uppercase text-sm`}
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 Modification & Upgrade - 89999 99627{" "}
               </Link>

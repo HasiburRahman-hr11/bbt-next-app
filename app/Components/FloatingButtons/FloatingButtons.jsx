@@ -15,7 +15,7 @@ const FloatingButtons = () => {
       {filterOpen && (
         <FilterPopup active={filterOpen} togglePopup={togglePopup} />
       )}
-      <div className="floatingBtnWrapper fixed left-0 bottom-0 w-full z-20 sm:hidden">
+      <div className="floatingBtnWrapper fixed left-0 bottom-[-2px] w-full z-20 sm:hidden">
         <div className="flex">
           <div className="w-3/6 bg-white py-11 px-2" onClick={togglePopup}>
             <div className="flex items-center justify-center">

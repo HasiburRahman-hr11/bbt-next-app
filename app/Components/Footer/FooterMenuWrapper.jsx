@@ -15,8 +15,8 @@ const FooterMenuWrapper = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div className="text-white FooterMenuWrapper pt-20">
-      <div className="footerMenuBox py-7">
+    <div className="text-white FooterMenuWrapper pt-20 [&>div]:border-t [&>div]:border-t-[#ebebf01a] [&>div:last-of-type]:border-b [&>div:last-of-type]:border-b-[#ebebf01a]">
+      <div className="footerMenuBox py-7 [&_button]:block [&_button]:w-full [&_button]:border-0 [&_span.ml-4]:hidden ">
         <Accordion open={open === 1}>
           <AccordionHeader onClick={() => handleOpen(1)}>
             <div
@@ -27,7 +27,7 @@ const FooterMenuWrapper = () => {
               }`}
             >
               <h3 className="font-normal text-3xl">BBT World</h3>
-              <div className="footerAccordionIcon relative">
+              <div className="footerAccordionIcon relative w-[1.5rem] h-[1.5rem] [&>span]:w-[14px] [&>span]:h-[2px] [&>span]:bg-[#fff] [&>span]:absolute [&>span]:left-0 [&>span]:top-[6px]">
                 <span></span>
                 <span></span>
               </div>
@@ -97,7 +97,7 @@ const FooterMenuWrapper = () => {
           </AccordionBody>
         </Accordion>
       </div>
-      <div className="footerMenuBox py-7">
+      <div className="footerMenuBox py-7 [&_button]:block [&_button]:w-full [&_button]:border-0 [&_span.ml-4]:hidden">
         <Accordion open={open === 2}>
           <AccordionHeader onClick={() => handleOpen(2)}>
             <div
@@ -108,7 +108,7 @@ const FooterMenuWrapper = () => {
               }`}
             >
               <h3 className="font-normal text-3xl">General</h3>
-              <div className="footerAccordionIcon relative">
+              <div className="footerAccordionIcon relative w-[1.5rem] h-[1.5rem] [&>span]:w-[14px] [&>span]:h-[2px] [&>span]:bg-[#fff] [&>span]:absolute [&>span]:left-0 [&>span]:top-[6px]">
                 <span></span>
                 <span></span>
               </div>
@@ -147,7 +147,7 @@ const FooterMenuWrapper = () => {
         </Accordion>
       </div>
 
-      <div className="footerMenuBox py-7">
+      <div className="footerMenuBox py-7 [&_button]:block [&_button]:w-full [&_button]:border-0 [&_span.ml-4]:hidden">
         <Accordion open={open === 3}>
           <AccordionHeader onClick={() => handleOpen(3)}>
             <div
@@ -158,7 +158,7 @@ const FooterMenuWrapper = () => {
               }`}
             >
               <h3 className="font-normal text-3xl">Styles</h3>
-              <div className="footerAccordionIcon relative">
+              <div className="footerAccordionIcon relative w-[1.5rem] h-[1.5rem] [&>span]:w-[14px] [&>span]:h-[2px] [&>span]:bg-[#fff] [&>span]:absolute [&>span]:left-0 [&>span]:top-[6px]">
                 <span></span>
                 <span></span>
               </div>
@@ -197,7 +197,7 @@ const FooterMenuWrapper = () => {
         </Accordion>
       </div>
 
-      <div className="footerMenuBox py-7">
+      <div className="footerMenuBox py-7 [&_button]:block [&_button]:w-full [&_button]:border-0 [&_span.ml-4]:hidden">
         <Accordion open={open === 4}>
           <AccordionHeader onClick={() => handleOpen(4)}>
             <div
@@ -208,7 +208,7 @@ const FooterMenuWrapper = () => {
               }`}
             >
               <h3 className="font-normal text-3xl">Brands</h3>
-              <div className="footerAccordionIcon relative">
+              <div className="footerAccordionIcon relative w-[1.5rem] h-[1.5rem] [&>span]:w-[14px] [&>span]:h-[2px] [&>span]:bg-[#fff] [&>span]:absolute [&>span]:left-0 [&>span]:top-[6px]">
                 <span></span>
                 <span></span>
               </div>

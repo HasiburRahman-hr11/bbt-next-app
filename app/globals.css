@@ -331,24 +331,6 @@ img {
   padding-top: 100%;
 }
 /* ------------------- Header ------------------ */
-.header {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-  z-index: 99;
-}
-.header.page-header {
-  position: relative;
-  background-color: #000;
-}
-
-
-
-.header.page-header .header-wrapper {
-  padding: 2rem 3rem;
-}
-
 
 @keyframes smoothScroll {
   0% {
@@ -360,47 +342,17 @@ img {
 }
 
 /* Footer */
-.footerMenuBox button {
-  display: block;
-  width: 100%;
-  border: none;
-}
-.footerMenuBox span.ml-4 {
-  display: none;
-}
-.footerAccordionIcon {
-  width: 15px;
-  height: 15px;
-}
-.footerAccordionIcon span {
-  width: 14px;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  top: 6px;
-  left: 0;
-}
+
+
 .footerAccordionIcon span:first-of-type {
   transform: rotate(90deg);
 }
 .active-menu .footerAccordionIcon span:first-of-type {
   opacity: 0;
 }
-.footerAppDivider {
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 1);
-  line-height: 1;
-}
-.footerMenuBox {
-  border-top: 1px solid rgba(235, 235, 240, 0.1);
-}
-.footerMenuBox:last-of-type,
-.footer-app-links {
-  border-bottom: 1px solid rgba(235, 235, 240, 0.1);
-}
-.floatingBtnWrapper {
-  bottom: -2px;
-}
+
+
+
 
 /* Footer - Desktop */
 .footerMenuCol {
@@ -870,18 +822,6 @@ img {
     display: block;
   }
 
-  /* Header */
-
-  .header-phone-list a {
-    border-left: 1px solid #fff;
-    transition: all 0.5s ease;
-  }
-  .header-phone-list a:last-of-type {
-    border-right: 1px solid #fff;
-  }
-  .header-phone-list a:hover {
-    color: #ddd;
-  }
   /* Homepage */
   .curve-slider-arrow img {
     max-width: 7.2rem;
@@ -919,10 +859,7 @@ img {
   h2 {
     font-size: 3.2rem;
   }
-  /* Header */
-  .header-phone-list a {
-    font-size: 0.95rem;
-  }
+
   /* Footer */
   .footerMenuCol {
     width: 14rem;
@@ -949,9 +886,7 @@ img {
   .btnWhite {
     padding: 1.4rem 3rem;
   }
-  .header-phone-list a {
-    font-size: 1.05rem;
-  }
+
   /* Homepage */
   .inclusionSlider .slick-slider {
     padding: 0 11rem;
@@ -972,11 +907,7 @@ img {
     height: 5rem;
     min-width: 23rem;
   }
-  /* Header */
  
-  .header.page-header .header-wrapper {
-    padding: 3rem 4.5rem;
-  }
   /* Footer */
   .footerMenuCol {
     width: 16rem;
@@ -1027,13 +958,7 @@ img {
     height: 6.5rem;
     min-width: 30rem;
   }
-  /* Header */
-  .header.page-header .header-wrapper {
-    padding: 3.5rem 5.5rem;
-  }
-  .header-phone-list a {
-    font-size: 1.4rem;
-  }
+
   /* Footer */
   .footerMenuCol li a {
     font-size: 1.4rem;
