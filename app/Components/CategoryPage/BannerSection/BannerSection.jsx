@@ -10,7 +10,7 @@ const BannerSection = () => {
     AOS.init();
   }, []);
   return (
-    <section className="text-white bg-black pt-20 md:pt-0">
+    <section className="text-white bg-black">
       <div className="max-1920">
         <div className="relative">
           <div>
@@ -29,7 +29,7 @@ const BannerSection = () => {
               className="block w-full md:hidden"
             />
           </div>
-          <div className="absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-16 pb-16 md:pt-[17rem] xl:pt-[25rem] 3xl:pt-[30rem]">
+          <div className="absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[10rem] pb-16 md:pt-[17rem] xl:pt-[25rem] 3xl:pt-[30rem]">
             <div
               className="text-center px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[83%] lg:mx-auto"
               data-aos="fade-up"
