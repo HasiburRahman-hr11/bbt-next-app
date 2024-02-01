@@ -86,7 +86,12 @@ const CarModels = () => {
   return (
     <section className="bg-black py-24 lg:py-40 xl:py-52 3xl:py-72 -mt-5 md:-mt-0">
       <div className="max-1920">
-        <div className="lg:flex justify-between items-center lg:pl-40 xl:pl-48 1xl:pl-52 3xl:pl-72">
+        <div
+          className="lg:flex justify-between items-center lg:pl-40 xl:pl-48 1xl:pl-52 3xl:pl-72"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="container lg:w-30% lg:pr-20 xl:pr-28">
             <Image
               src="/images/down-circle-arrow-white.webp"
@@ -99,8 +104,8 @@ const CarModels = () => {
               Bmw <br /> Car Models
             </h2>
             <p className="text-xl text-white text-[1.4rem] leading-[1.5] 1xl:text-[1.4rem] 3xl:text-[1.6rem] mb-10 1xl:mb-[3rem] 2xl:mb-[4rem] 3xl:mb-[5rem]">
-              Get your dream luxury car in 4 easy steps at Big  Boy Toyz,
-              India's trusted used car portal.
+              Get your dream luxury car in 4 easy steps at Big Boy Toyz, India's
+              trusted used car portal.
             </p>
             <Link
               href="#"
@@ -112,7 +117,10 @@ const CarModels = () => {
 
           <div className="w-full lg:w-70% mt-24 lg:mt-0">
             <div className="pl-[2rem]">
-              <Slider {...settings} className="hp-services-slider brand-model-slider">
+              <Slider
+                {...settings}
+                className="hp-services-slider brand-model-slider"
+              >
                 {carModels.map((item, index) => (
                   <CarModelItem key={index} data={item} />
                 ))}

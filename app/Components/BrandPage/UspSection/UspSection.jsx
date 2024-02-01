@@ -1,6 +1,9 @@
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const uspList = [
   {
@@ -42,11 +45,19 @@ const uspList = [
 ];
 
 const UspSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-[#F6F6F6] py-24 1xl:py-36 3xl:py-44">
       <div className="max-1920">
         <div className="container">
-          <div className="pb-16">
+          <div
+            className="pb-16"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem]">
               Searching to buy used bmw car? Have a look....
             </h2>
@@ -63,7 +74,12 @@ const UspSection = () => {
             </p>
           </div>
 
-          <div className="py-16 border-t border-b border-[#D9D9D9]">
+          <div
+            className="py-16 border-t border-b border-[#D9D9D9]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem]">
               The most reliable used bmw cars at big boy toyz
             </h2>
@@ -76,7 +92,12 @@ const UspSection = () => {
             </p>
           </div>
 
-          <div className="pt-16 mb-16">
+          <div
+            className="pt-16 mb-16"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem]">
               Check out wide-ranging pre-owned bmw cars
             </h2>
@@ -95,6 +116,9 @@ const UspSection = () => {
               <li
                 key={index}
                 className=" mt-10 common-car-item transition-all duration-500 ease-in-out sm:w-[48%] xl:flex 1xl:mt-14"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="500"
               >
                 <Link
                   href={usp.link}

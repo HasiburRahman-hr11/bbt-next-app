@@ -1,11 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const GiftYourself = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-[#F6F6F6] py-24 xl:py-36 3xl:py-40">
       <div className="max-1920">
         <div className="container">
-          <div>
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem]  md:[&_br]:hidden">
               Gift Yourself <br />
               The Best Used Bmw!

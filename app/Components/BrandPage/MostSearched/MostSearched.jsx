@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const searchedList = [
   {
@@ -203,6 +206,9 @@ const locations = [
   },
 ];
 const MostSearched = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="py-20 bg-[#f6f6f6] xl:py-36 3xl:py-40">
       <div className="max-1920">
@@ -212,6 +218,9 @@ const MostSearched = () => {
               <li
                 key={ind}
                 className="py-10 border-t border-neutral-300 first-of-type:border-none first-of-type:pt-0 xl:py-14 2xl:py-16"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="500"
               >
                 <h2 className="tracking-tightest mb-8 pr-8 leading-[1.2] xl:mb-12 2xl:mb-16">
                   {item.title}
@@ -234,7 +243,10 @@ const MostSearched = () => {
           {/* Locations */}
           <ul className="flex flex-wrap justify-between lg:justify-center">
             {locations.map((location, index) => (
-              <li key={index} className="bg-white w-[47%] mt-8 rounded-[1rem] shadow-sm common-car-item transition-all duration-500 ease-in-out sm:w-[32%] lg:w-[23%] mx-[1%] xl:w-[14%] xl:mx-[1.33%] my-4" >
+              <li
+                key={index}
+                className="bg-white w-[47%] mt-8 rounded-[1rem] shadow-sm common-car-item transition-all duration-500 ease-in-out sm:w-[32%] lg:w-[23%] mx-[1%] xl:w-[14%] xl:mx-[1.33%] my-4"
+              >
                 <div className="pt-20 pb-12 px-5 text-center 3xl:pt-28 3xl:pb-20">
                   <Image
                     src={location.icon}
@@ -243,7 +255,9 @@ const MostSearched = () => {
                     height="95"
                     alt={location.city}
                   />
-                  <h6 className="text-[1.6rem] text-[#161616] mt-6 xl:text-[1.8rem] xl:mt-10 1xl:text-[2rem] 1xl:mt-12 3xl:text-[2.2rem]">{location.city}</h6>
+                  <h6 className="text-[1.6rem] text-[#161616] mt-6 xl:text-[1.8rem] xl:mt-10 1xl:text-[2rem] 1xl:mt-12 3xl:text-[2.2rem]">
+                    {location.city}
+                  </h6>
                 </div>
               </li>
             ))}

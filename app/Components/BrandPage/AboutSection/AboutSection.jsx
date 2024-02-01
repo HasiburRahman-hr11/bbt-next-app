@@ -1,11 +1,23 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="bg-dark-800 py-28 text-white xl:py-40 2xl:py-48">
       <div className="container">
-        <div className="lg:flex lg:justify-between lg:items-center">
+        <div
+          className="lg:flex lg:justify-between lg:items-center"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="mb-16 lg:w-[25%] lg:mb-0 xl:w-[20%] 1xl:w-[23%]">
             <Image
               src="/images/bbt-logo-2.webp"

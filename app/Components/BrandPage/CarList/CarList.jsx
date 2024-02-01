@@ -1,7 +1,9 @@
-"use client"
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
 import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Image from "next/image";
 
@@ -169,6 +171,9 @@ const CarList = () => {
   const togglePopup = () => {
     setPopupOpen(!popupOpen);
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white md:bg-[#f3f3f3] pb-10">
       {popupOpen && (
@@ -179,6 +184,9 @@ const CarList = () => {
           <div
             key={item._id}
             className="w-full md:w-[48%] xl:w-[31%] [&_.item-divider]:hidden"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
           >
             <CollectionItem data={item} popupToggler={togglePopup} />
           </div>

@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import FaqAccordion from "../../CommonComponents/FaqAccordion/FaqAccordion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const faqList = [
   {
@@ -29,11 +32,19 @@ const faqList = [
   },
 ];
 const FaqSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white py-20 xl:py-36">
       <div className="max-1920">
         <div className="container">
-          <div className="xl:flex xl:justify-between">
+          <div
+            className="xl:flex xl:justify-between"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h2 className="text-center mb-10 tracking-tightest xl:w-[40%]">
               Frequently Asked Questions
             </h2>
