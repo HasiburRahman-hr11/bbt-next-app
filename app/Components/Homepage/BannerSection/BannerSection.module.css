@@ -11,13 +11,3 @@
   border-color: #fff;
   box-shadow: 0 0 9px 1px #949494;
 }
-.bannerSearchBox input::placeholder {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-@media only screen and (min-width: 1920px) {
-  .bannerSearchBox input::placeholder {
-    font-size: 1.8rem;
-  }
-
-}

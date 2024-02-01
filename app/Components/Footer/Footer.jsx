@@ -3,12 +3,11 @@ import FooterMenuWrapper from "./FooterMenuWrapper";
 import FooterMenuDesktop from "./FooterMenuDesktop";
 import FooterAppLinks from "./FooterAppLinks";
 import FooterCopyRight from "./FooterCopyRight";
-import FloatingButtons from "../FloatingButtons/FloatingButtons";
 
 const Footer = () => {
   return (
     <>
-      <FloatingButtons />
+      
       <footer className="bg-black pb-20 sm:pb-0">
         <div className="max-1920">
           <div className="container">

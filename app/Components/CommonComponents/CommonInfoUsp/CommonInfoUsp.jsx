@@ -13,7 +13,7 @@ const CommonInfoUsp = ({data , isDetailPage}) => {
           height="25"
           className={`object-contain h-5 3xl:h-6 3xl:w-6 ${!isDetailPage && '1xl:w-4'}`}
         />
-        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 1xl:mt-3 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#76777]">
+        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 1xl:mt-3 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#888888]">
           Kilometers Driven
         </p>
         <h6 className="text-lg 3xl:text-1xl"> {data?.kmDriven ? data.kmDriven : '3500'} km</h6>
@@ -26,7 +26,7 @@ const CommonInfoUsp = ({data , isDetailPage}) => {
           height="25"
           className={`object-contain h-5 3xl:h-6 3xl:w-6 ${!isDetailPage && '1xl:w-4'}`}
         />
-        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#76777]">
+        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#888888]">
           Fuel / Gas Type
         </p>
         <h6 className="text-lg 3xl:text-1xl">{data?.fuelType ? data.fuelType : 'Petrol'}</h6>
@@ -39,7 +39,7 @@ const CommonInfoUsp = ({data , isDetailPage}) => {
           height="25"
           className={`object-contain h-5 3xl:h-6 3xl:w-6 ${!isDetailPage && '1xl:w-4'}`}
         />
-        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#76777]">
+        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#888888]">
           Registration State
         </p>
         <h6 className="text-lg 3xl:text-1xl">{data?.registrationState ? data.registrationState : 'Delhi'}</h6>

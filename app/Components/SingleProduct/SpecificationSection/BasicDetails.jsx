@@ -58,7 +58,18 @@ const BasicDetails = () => {
             <CommonInfoUsp isDetailPage={true} />
           </div>
 
-          <div className=" mt-12 overflow-hidden  sm:w-40% sm:mt-0 xl:w-[37%]">
+          {/* Call Buttons For Mobile */}
+          <div className="lg:hidden flex flex-wrap justify-center items-center py-[1.5rem] px-[3rem] bg-white fixed bottom-0 left-0 w-full z-10">
+            <div className="h-[4.5rem] bg-black flex-grow text-white rounded-[7px] flex justify-center items-center mr-[1rem]">
+                Reserve The Car
+            </div>
+            <div className="w-[4.5rem] h-[4.5rem] border border-[#333] rounded-[7px] flex justify-center items-center bg-white">
+              <Image src="/images/square-btn-call-icon.webp" className="object-contain w-[2.3rem] h-auto invert" alt="Call Icon" width="25" height="25" />
+            </div>
+          </div>
+
+          {/* Call Button For Desktop */}
+          <div className=" mt-12 overflow-hidden  sm:w-40% sm:mt-0 xl:w-[37%] hidden lg:block">
             {isSold ? (
               <div className="sm:pl-5 1xl:pl-10 3xl:pl-24">
                 <p className="font-light [&_strong]:font-medium mb-4 text-center xl:text-left xl:mb-6 1xl:text-[2rem] 3xl:text-[2.2rem]">

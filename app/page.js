@@ -1,4 +1,4 @@
-
+import FloatingButtons from "./Components/FloatingButtons/FloatingButtons"
 import Header from "./Components/Header/Header";
 import BannerSection from "./Components/Homepage/BannerSection/BannerSection";
 import NewInclusion from "./Components/Homepage/NewInclusion/NewInclusion";
@@ -12,6 +12,7 @@ import BbtFeatured from "./Components/CommonComponents/BbtFeatured/BbtFeatured";
 export default function Home() {
   return (
     <main>
+      <FloatingButtons />
       <Header />
       <BannerSection />
       <NewInclusion />

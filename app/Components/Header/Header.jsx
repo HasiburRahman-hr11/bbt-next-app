@@ -1,23 +1,14 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = ({ isPageHeader }) => {
-  const [scroll, setScroll] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 400);
-    });
-  }, []);
+
   return (
-    <header
-      className={`header ${scroll ? "sticky" : ""} ${
-        isPageHeader ? "page-header" : ""
-      }`}
-    >
+    <header className={`header ${isPageHeader ? "page-header" : ""}`}>
       <div className="max-1920">
-        <div className={`header-wrapper`}>
+        <div className="header-wrapper w-full p-[3rem] mx-auto lg:py-[2rem] lg:px-[4rem] 1xl:py-[2.5rem] 3xl:py-[3rem] 3xl:px-[5.5rem]">
           <div className="flex justify-between items-center">
             <div
               className={`flex items-center menu-toggler cursor-pointer lg:order-3`}
@@ -25,10 +16,10 @@ const Header = ({ isPageHeader }) => {
               <span className="text-white uppercase mr-5 hidden lg:inline-block text-base xl:text-lg 3xl:text-2xl 3xl:mr-6">
                 Menu
               </span>
-              <div className="menu-bar w-12 lg:w-10 xl:w-12 3xl:w-16 [&>span]:h-[1.5px] [&>span]:bg-white [&>span]:block [&>span]:rounded-[5px] group">
-                <span className="w-[85%] mb-[6px]"></span>
-                <span className="w-[85%] mb-[6px] group-hover:ml-[5px] transition-all duration-500 ease-in-out"></span>
-                <span className="w-[85%]"></span>
+              <div className="menu-bar w-12 lg:w-10 xl:w-[3rem] 3xl:w-[3.9rem] [&>span]:h-[1.5px] [&>span]:bg-white [&>span]:block [&>span]:rounded-[5px] group">
+                <span className="w-[80%] mb-[7px] 3xl:mb-[8px]"></span>
+                <span className="w-[100%] mb-[7px] 3xl:mb-[8px] group-hover:ml-[5px] transition-all duration-500 ease-in-out"></span>
+                <span className="w-[65%]"></span>
               </div>
             </div>
             <div className="header-logo  lg:order-1 hidden lg:block">
@@ -48,31 +39,31 @@ const Header = ({ isPageHeader }) => {
             >
               <Link
                 href="#"
-                className={`text-white relative px-6 uppercase text-sm`}
+                className={`text-white relative px-7 uppercase text-sm`}
               >
                 BUY - 9999 9999 83{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-6 uppercase text-sm`}
+                className={`text-white relative px-7 uppercase text-sm`}
               >
                 SELL - 9999 9999 15{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-6 uppercase text-sm`}
+                className={`text-white relative px-7 uppercase text-sm`}
               >
                 Car Detailing - 89999 99627{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-6 uppercase text-sm`}
+                className={`text-white relative px-7 uppercase text-sm`}
               >
                 Servicing - 89999 99264{" "}
               </Link>
               <Link
                 href="#"
-                className={`text-white relative px-6 uppercase text-sm`}
+                className={`text-white relative px-7 uppercase text-sm`}
               >
                 Modification & Upgrade - 89999 99627{" "}
               </Link>

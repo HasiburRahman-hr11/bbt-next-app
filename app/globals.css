@@ -343,12 +343,7 @@ img {
   background-color: #000;
 }
 
-.header-wrapper {
-  width: 100%;
-  padding: 3rem 3rem;
-  max-width: 1920px;
-  margin: 0 auto;
-}
+
 .header.sticky {
   position: fixed;
   top: 0;
@@ -640,6 +635,15 @@ img {
 .detailPageTabs li:hover img {
   filter: invert(1);
 }
+.details-summary-slider .slick-track{
+  display: flex !important;
+}
+.details-summary-slider .slick-slide{
+  height: inherit;
+}
+.details-summary-slider .slick-slide > div{
+  height: 100%;
+}
 .tabContainer {
   display: none;
 }
@@ -662,7 +666,7 @@ img {
   outline: none;
   color: #fff;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .emiSlider::-webkit-slider-thumb {
@@ -896,9 +900,7 @@ img {
   }
 
   /* Header */
-  .header-wrapper {
-    padding: 2rem 4rem;
-  }
+
   .header-phone-list a {
     border-left: 1px solid #fff;
     transition: all 0.5s ease;
@@ -975,9 +977,6 @@ img {
   }
   .btnWhite {
     padding: 1.4rem 3rem;
-  }
-  .header-wrapper {
-    padding: 2.5rem 4rem;
   }
   .header-phone-list a {
     font-size: 1.05rem;
@@ -1058,9 +1057,6 @@ img {
     min-width: 30rem;
   }
   /* Header */
-  .header-wrapper {
-    padding: 4rem 5.5rem;
-  }
   .header.sticky .header-wrapper,
   .header.page-header .header-wrapper {
     padding: 3.5rem 5.5rem;

@@ -10,11 +10,11 @@ const ExploreSection = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-black">
+    <section className="bg-black py-[8rem] lg:py-[10rem]">
       <div className="max-1920">
         <div className="relative">
           <div
-            className="text-box text-white absolute z-10 px-10 w-full right-0 top-0 pt-20 text-center md:w-5/12 md:text-left md:pt-32 lg:pt-52 lg:right-10 lg:max-w-3xl xl:max-w-4xl xl:right-0 2xl:pt-56 2xl:right-16 3xl:max-w-6xl 3xl:pt-72"
+            className="text-box text-white lg:absolute z-10 px-10 w-full right-0 top-0 text-center lg:w-5/12 lg:text-left lg:pt-[7rem] lg:right-10 lg:max-w-3xl xl:max-w-4xl xl:right-0 2xl:right-16 3xl:max-w-6xl 3xl:pt-[9rem]"
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="500"
@@ -43,16 +43,16 @@ const ExploreSection = () => {
               />
             </a>
           </div>
-          <div className="absolute bottom-20 w-full left-0 text-center px-10 md:hidden">
+          <div className="absolute bottom-0 w-full left-0 text-center px-10 md:hidden">
             <Link href="#" className="btn btnWhite roundedBtn">
               Explore More
             </Link>
           </div>
-          <div className="video-box">
+          <div className="video-box w-full xl:w-[75%]">
             <video
               src="https://www.shutterstock.com/shutterstock/videos/1077602141/preview/stock-footage-the-black-car-gradually-emerges-from-the-darkness-due-to-the-illumination-and-disappears-again-in.webm"
               poster="/images/360-deg-vid-thumb-mob.webp"
-              className="w-full block object-cover md:hidden min-h-[700px]"
+              className="w-full block object-cover md:hidden min-h-[500px]"
               autoPlay
               loop
               muted
