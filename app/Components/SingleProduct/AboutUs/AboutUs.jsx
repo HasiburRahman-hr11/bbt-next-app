@@ -42,7 +42,7 @@ const AboutUs = () => {
                 {" "}
                 BigBoyToyz Is In Your City !
               </h2>
-              <p className="font-light px-8 text-2xl text-stone-700 lg:inline lg:text-5xl lg:font-normal lg:text-black [&>br]:hidden lg:leading-normal lg:[&>br]:block lg:px-0 xl:text-6xl xl:leading-relaxed 1xl:tracking-tighter 2xl:text-7xl 2xl:leading-1.3 3xl:text-8xl 3xl:leading-1.4 3xl:tracking-tightest">
+              <p className="font-light px-8 text-2xl text-stone-700 lg:inline lg:text-5xl lg:font-normal lg:text-black [&>br]:hidden lg:leading-normal lg:[&>br]:block lg:px-0 xl:text-6xl xl:leading-relaxed 1xl:tracking-tighter 2xl:text-7xl 2xl:leading-1.3 3xl:text-[5.5rem] 3xl:leading-1.4 3xl:tracking-[-3px]">
                 Visit our super cars showroom <br /> and get a feel of the ride
                 awaiting your presence.
               </p>

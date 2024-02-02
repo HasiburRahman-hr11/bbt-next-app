@@ -31,7 +31,7 @@ const CompareSection = () => {
                 width="123"
                 height="123"
                 alt="Arrow Icon"
-                className="hidden invert sm:inline-block sm:w-24 mb-8 object-contain lg:w-32 1xl:w-36 3xl:w-44 3xl:mb-10"
+                className="hidden invert sm:inline-block h-auto sm:w-24 mb-8 object-contain lg:w-32 1xl:w-36 3xl:w-[12.3rem] 3xl:mb-12"
               />
               <span className="h-px w-auto grow bg-black sm:hidden"></span>
               <h2 className=" pl-8 sm:pl-0 sm:mb-3 md:tracking-tight lg:text-4.5xl 1xl:text-5.5xl 3xl:text-7xl 3xl:mb-10">

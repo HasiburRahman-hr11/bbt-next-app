@@ -18,9 +18,6 @@
     margin: 1rem 0;
     margin-top: 1.5rem;
   }
-  .detailInfoUsp li h6{
-    font-size: 1.5rem;
-  }
   .detailInfoUsp li:first-child {
     border-left: 1px solid #cfcfcf;
     padding-left: 1.2rem;
@@ -45,9 +42,6 @@
     margin: 1.2rem 0;
     margin-top: 2rem;
   }
-  .detailInfoUsp li h6{
-    font-size: 1.7rem;
-  }
 }
 @media only screen and (min-width: 1920px){
   .detailInfoUsp li img{
@@ -59,7 +53,5 @@
     margin-top: 2.4rem;
     margin-bottom: 2rem;
   }
-  .detailInfoUsp li h6{
-    font-size: 2rem;
-  }
+
 }

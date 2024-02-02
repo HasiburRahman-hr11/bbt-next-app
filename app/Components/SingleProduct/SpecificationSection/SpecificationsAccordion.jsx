@@ -49,8 +49,8 @@ const SpecificationsAccordion = ({ specifications }) => {
                   <Image
                     src={item.icon}
                     alt=""
-                    width="20"
-                    height="20"
+                    width="35"
+                    height="35"
                     className="object-contain w-7 h-auto inline-block mr-3 xl:w-9  xl:mr-4 1xl:w-10 1xl:mr-5 3xl:w-[3.2rem] 3xl:h-[3.9rem] 3xl:mr-8"
                   />
                   <p className="font-medium text-3xl 1xl:text-3.5xl 1xl:tracking-tight 2xl:text-4xl 3xl:text-[2.8rem]">

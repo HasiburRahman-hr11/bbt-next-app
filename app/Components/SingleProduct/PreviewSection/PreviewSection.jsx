@@ -107,11 +107,11 @@ const PreviewSection = () => {
                   </h2>
                 </div>
                 <img
-                  src="/images/down-circle-arrow-white.webp"
+                  src="/images/down-circle-arrow-white.png"
                   width="94"
                   height="94"
                   alt="Arrow Icon"
-                  className="hidden lg:inline-block mt-20 object-contain lg:w-24 2xl:w-28 2xl:mt-28 3xl:w-[9.3rem]"
+                  className="hidden lg:inline-block mt-20 object-contain lg:w-24 h-auto 2xl:w-28 2xl:mt-28 3xl:w-[9.3rem]"
                 />
               </div>
 

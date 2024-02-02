@@ -74,10 +74,10 @@ let settings = {
 const CarSummaryCard = ({ data }) => {
   return (
     <div className="py-8 rounded-2xl border border-neutral-400 px-5 mr-7 sm:border-0 sm:mr-0 xl:py-14 3xl:py-20 h-full">
-      <Image
+      <img
         src={data.icon}
-        width="40"
-        height="30"
+        width="61"
+        height="50"
         alt="Icon"
         className="object-contain h-12 xl:h-13 1xl:w-20 3xl:w-28 3xl:h-16"
       />

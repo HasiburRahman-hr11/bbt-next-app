@@ -35,10 +35,10 @@ const CollectionItem = ({ data, popupToggler }) => {
         <div className="item-divider max-w-[90%] mx-auto h-[1px] border-t border-neutral-400 md:hidden"></div>
         <Link
           href={`/products/${data._id}`}
-          className="block px-14 pt-16 md:px-10"
+          className="block px-14 pt-16 md:px-10 1xl:pl-[4rem]"
         >
           <p
-            className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 leading-4 lg:text-sm lg:py-1 3xl:text-lg 3xl:px-8`}
+            className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 leading-4 lg:text-sm lg:py-1 3xl:text-[1.2rem] 3xl:px-10 1xl:py-2`}
           >
             Reg.Year : {data.registrationYear}
           </p>
@@ -46,7 +46,7 @@ const CollectionItem = ({ data, popupToggler }) => {
             {data.title}
           </h4>
           <p
-            className={`text-3xl mt-2 font-medium lg:mt-3 3xl:mt-4 mb-12 sm:mb-8 lg:mb-6`}
+            className={`text-3xl mt-2 font-medium lg:mt-3 1xl:mt-6 mb-12 sm:mb-8 1xl:text-[2.2rem]`}
           >
             ₹ {data.price}
           </p>
@@ -102,23 +102,23 @@ const CollectionItem = ({ data, popupToggler }) => {
           </Link>
         </div>
 
-        <div className="px-14 pt-8 md:px-10">
+        <div className="px-14 pt-8 md:px-10 1xl:px-[4rem] 1xl:pt-[3rem]">
           <Link href={`/products/${data._id}`} className="block">
             <CommonInfoUsp data={data} />
           </Link>
 
           <div className="flex items-center justify-between callBtnGroup mt-12 overflow-hidden flex-wrap">
-            <div className="callBtnLeft">
+            <div className="flex-grow">
               <div
-                className="btn btnBlack btnSquare cursor-pointer"
+                className="bg-black text-white text-[1.2rem] font-medium flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 1xl:h-[5.8rem] 3xl:text-[1.7rem]"
                 onClick={popupToggler}
               >
                 <Image
                   src="/images/square-btn-call-icon.webp"
-                  width="19"
-                  height="19"
+                  width="20"
+                  height="20"
                   alt="Call Icon"
-                  className="object-contain w-7 mr-6 h-auto"
+                  className="object-contain w-[1.57rem] mr-6 h-auto 3xl:w-[2rem] 3xl:mr-[4rem]"
                 />
                 Call Big Boy Toyz
               </div>
@@ -126,14 +126,14 @@ const CollectionItem = ({ data, popupToggler }) => {
             <div className="callBtnRight ml-4">
               <a
                 href="#"
-                className="whatsAppBtn w-[4.5rem] h-[4.5rem] flex justify-center items-center rounded-[5px]"
+                className="whatsAppBtn w-[4.5rem] h-[4.5rem] flex justify-center items-center rounded-[5px] 1xl:w-[5.8rem] 1xl:h-[5.8rem]  "
               >
                 <Image
                   src="/images/whatsapp-btn-icon.webp"
                   width="18"
                   height="18"
                   alt="Call Icon"
-                  className="object-contain w-9"
+                  className="object-contain w-9 h-auto 1xl:w-[2.6rem]"
                 />
               </a>
             </div>

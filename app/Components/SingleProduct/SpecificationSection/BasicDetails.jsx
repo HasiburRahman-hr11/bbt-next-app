@@ -104,7 +104,7 @@ const BasicDetails = () => {
                           height="26"
                           className=" object-contain mr-8 w-[2rem] h-auto hidden lg:inline-block xl:w-[1.8rem] xl:mr-3 2xl:w-[2.2rem] 3xl:w-[2.7rem] group-hover:invert"
                         />
-                        <span className="text-[1.3rem] font-medium 1xl:text-[1.5rem] 3xl:text-[1.7rem] group-hover:text-white">
+                        <span className="text-[1.3rem] font-[600] 1xl:text-[1.5rem] 3xl:text-[1.8rem] group-hover:text-white tracking-[-1.1px]">
                           Emi Calculator
                         </span>
                       </div>
@@ -116,7 +116,7 @@ const BasicDetails = () => {
                           height="26"
                           className=" object-contain mr-8 w-[2rem] h-auto hidden lg:inline-block xl:w-[1.8rem] xl:mr-3 2xl:w-[2.2rem] 3xl:w-[2.7rem] group-hover:invert"
                         />
-                        <span className="text-[1.3rem] font-medium 1xl:text-[1.5rem] 3xl:text-[1.7rem] group-hover:text-white">
+                        <span className="text-[1.3rem] font-[600] 1xl:text-[1.5rem] 3xl:text-[1.8rem] group-hover:text-white tracking-[-1.1px]">
                           Compare Car
                         </span>
                       </div>
