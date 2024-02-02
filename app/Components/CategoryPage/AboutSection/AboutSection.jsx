@@ -9,7 +9,7 @@ const AboutSection = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-dark-800 py-28 text-white xl:py-40 2xl:py-48">
+    <section className="bg-dark-800 py-28 text-white xl:py-40 2xl:py-48 3xl:py-[20rem]">
       <div className="container">
         <div
           className="lg:flex lg:justify-between lg:items-center"
@@ -33,7 +33,7 @@ const AboutSection = () => {
                 Exotic <br /> SUVs are in Trend Now!
               </strong>
             </h2>
-            <p>
+            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem]">
               Indeed, you read it right! The field of recycled extravagant SUVs
               or pre-adored extravagant SUVs is immense to cater to your
               preferred need and finding the vehicle is not any more tedious or
@@ -43,7 +43,7 @@ const AboutSection = () => {
               and to address every single inquiry without much ado.
             </p>
             <br />
-            <p>
+            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem]">
               Probably the most blazing colourful SUVs that you can take your
               hands on at the Big Boy Toyz showroom incorporate the 2013
               utilized Porsche Cayenne Turbo and Diesel, 2011 utilized

@@ -9,7 +9,7 @@ const DescriptionSection = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-black py-24 xl:py-36 3xl:py-44">
+    <section className="bg-black py-24 xl:py-36 3xl:py-[15rem]">
       <div className="container">
         <div
           className="relative pb-[10rem] sm:pb-[26rem] md:pb-[14rem] xl:pb-[10rem] 3xl:pb-[5rem]"
@@ -27,7 +27,7 @@ const DescriptionSection = () => {
                 className="w-full object-contain h-auto"
               />
             </div>
-            <div className="w-full mt-14 md:w-[70%] md:pr-[14rem] lg:w-[65%] xl:w-[68%] 1xl:w-[65%] 3xl:pr-[20rem]">
+            <div className="w-full mt-14 md:w-[70%] md:pr-[14rem] lg:w-[65%] xl:w-[68%] 1xl:w-[65%] 3xl:pr-[20rem] 3xl:pl-[3rem]">
               <p className="text-neutral-300 text-center text-xl leading-1.6 font-light md:text-left lg:text-2xl lg:leading-[1.7] xl:text-[2rem] 3xl:text-[2.8rem]">
                 If you've lived by the 'Work sincerely and Play Harder' theory
                 of life and it cuts across all aspects of your life including
@@ -37,7 +37,7 @@ const DescriptionSection = () => {
                 weekends, the top notch extravagant SUVs offer something to
                 satisfy both the necessities.
               </p>
-              <div className="max-w-[3rem] mx-auto mt-8 md:mr-auto md:ml-0 xl:max-w-[5rem] xl:mt-16 3xl:max-w-[8rem]">
+              <div className="max-w-[3rem] mx-auto mt-8 md:mr-auto md:ml-0 xl:max-w-[5rem] xl:mt-16 3xl:max-w-[8rem] 3xl:mt-[7rem]">
                 <Image
                   src="/images/suv-down-arrow.webp"
                   width="80"

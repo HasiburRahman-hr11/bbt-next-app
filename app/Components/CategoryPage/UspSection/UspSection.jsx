@@ -36,7 +36,7 @@ const UspSection = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-white py-20 md:py-28 md:bg-[#F3F3F3] xl:py-40">
+    <section className="bg-white py-20 md:py-28 md:bg-[#F3F3F3] xl:py-40 3xl:py-[15rem]">
       <div className="container">
         <div
           className="lg:flex lg:flex-wrap lg:justify-between"
@@ -48,7 +48,7 @@ const UspSection = () => {
             <h2 className="mb-7 tracking-tighter leading-1.2 md:mb-14 lg:leading-[1.4]">
               Keep Pre-owned Luxury <br /> SUV as an Option
             </h2>
-            <div className="[&>p]:text-xl text-justify [&>p]:leading-1.6 [&>p]:font-light 1xl:[&>p]:text-1xl 2xl:[&>p]:text-[1.6rem]">
+            <div className="[&>p]:text-xl text-justify [&>p]:leading-1.6 1xl:[&>p]:text-1xl 2xl:[&>p]:text-[1.6rem] 3xl:[&>p]:text-[1.65rem]">
               <p>
                 The SUV puts romping capacities before style, execution or
                 mileage. The engineering of SUVs is done to perfection and they
@@ -76,7 +76,7 @@ const UspSection = () => {
                 give to yourself:
               </p>
 
-              <div className="hidden md:block max-w-[8rem] md:mt-16">
+              <div className="hidden md:block max-w-[8rem] md:mt-16 3xl:max-w-[12.3rem] 3xl:mt-[6rem]">
                 <Image
                   src="/images/circle-arrow-black.webp"
                   width="124"
@@ -107,7 +107,7 @@ const UspSection = () => {
                     <h6 className="text-1.4rem 2xl:text-[1.7rem]">
                       {usp.title}
                     </h6>
-                    <p className="text-xl mt-3 tracking-tight font-light 2xl:text-[1.4rem] 3xl:text-[1.5rem] 3xl:leading-[1.5]">
+                    <p className="text-xl mt-3 tracking-tight 2xl:text-[1.4rem] 3xl:text-[1.5rem] 3xl:leading-[1.5]">
                       {usp.description}
                     </p>
                   </div>
