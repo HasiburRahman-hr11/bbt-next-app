@@ -67,7 +67,7 @@ const CompareSection = () => {
                       >
                         Reg.Year : 2022
                       </p>
-                      <h5 className="font-medium text-2xl lg:mt-4 1xl:text-3xl 3xl:text-4.5xl 3xl:mt-7">
+                      <h5 className="font-medium text-2xl lg:mt-4 1xl:mt-5 1xl:text-3xl 3xl:text-4.5xl 3xl:mt-7">
                         Rolls-Royce Ghost Series II
                       </h5>
                       <div className="flex justify-between items-center mt-4 lg:mt-2 1xl:mt-3 3xl:mt-7">

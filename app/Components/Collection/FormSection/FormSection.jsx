@@ -48,7 +48,7 @@ const FormSection = () => {
   }, []);
 
   return (
-    <section className="bg-black text-white py-20 lg:py-36 xl:py-44">
+    <section className="bg-black text-white py-20 lg:py-36 xl:py-44 3xl:py-[15rem]">
       <div className="container">
         <div
           className="px-3 md:flex md:flex-wrap md:justify-between md:items-center xl:items-stretch"
@@ -56,7 +56,7 @@ const FormSection = () => {
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          <div className="md:w-[40%] xl:w-[35%] xl:flex xl:flex-col xl:justify-center">
+          <div className="md:w-[40%] xl:w-[35%] xl:flex xl:flex-col xl:justify-center 3xl:w-[38%]">
             <Image
               src="/images/down-circle-arrow-white.webp"
               width="123"
@@ -231,7 +231,7 @@ const FormSection = () => {
             </div>
           </div>
 
-          <div className="hidden xl:block xl:w-[27%] xl:pl-16 h-[inherit] 3xl:pl-28">
+          <div className="hidden xl:block xl:w-[27%] xl:pl-16 h-[inherit] 3xl:pl-28 3xl:w-[23%]">
             <div className="bg-[#111111] px-10 py-12 rounded-2xl h-full 3xl:py-16 3xl:px-14">
               <p className="text-white mb-10 3xl:text-[1.8rem]">
                 For further enquiry, <br /> you can call or whatsapp
