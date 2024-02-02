@@ -18,10 +18,10 @@ const SliderItem = ({data}) => {
         >
           Reg.Year : {data.registrationYear}
         </p>
-        <h4 className="mt-4 sm:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-tighter 3xl:text-4.2xl 3xl:mt-8">
+        <h4 className="mt-4 sm:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-tighter 3xl:text-[2.8rem] 3xl:mt-8">
           {data.title}
         </h4>
-        <p className={`${styles.incItemPrice} font-medium lg:mt-2 3xl:mt-4 mb-12 sm:mb-8 lg:mb-6`}>
+        <p className={`${styles.incItemPrice} font-medium lg:mt-2 3xl:mt-4 mb-12 sm:mb-8 lg:mb-6 3xl:text-[2.6rem] 3xl:mb-10`}>
           ₹ {data.price}
         </p>
 

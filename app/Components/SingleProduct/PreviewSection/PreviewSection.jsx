@@ -74,9 +74,9 @@ const PreviewSection = () => {
               >
                 <Image
                   src="/images/detail-page/detail-engine-sound-play.webp"
-                  width="54"
-                  height="54"
-                  className="w-24 object-contain inline-block mx-auto xl:w-40 3xl:w-48"
+                  width="130"
+                  height="130"
+                  className="w-24 object-contain inline-block mx-auto h-auto xl:w-40 3xl:w-[13rem]"
                   alt="Play Icon"
                 />
               </div>
