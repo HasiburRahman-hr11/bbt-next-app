@@ -35,18 +35,18 @@ const CollectionItem = ({ data, popupToggler }) => {
         <div className="item-divider max-w-[90%] mx-auto h-[1px] border-t border-neutral-400 md:hidden"></div>
         <Link
           href={`/products/${data._id}`}
-          className="block px-14 pt-16 md:px-10 1xl:pl-[4rem]"
+          className="block px-14 pt-16 md:px-10 1xl:pl-[3rem] 3xl:pl-[4rem]"
         >
           <p
             className={`inline-block bg-black text-white text-center rounded-2xl text-base px-5 py-2 leading-4 lg:text-sm lg:py-1 3xl:text-[1.2rem] 3xl:px-10 1xl:py-2`}
           >
             Reg.Year : {data.registrationYear}
           </p>
-          <h4 className="mt-4 sm:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-tighter 3xl:text-4.2xl 3xl:mt-8 line-clamp-1">
+          <h4 className="mt-4 sm:text-3xl lg:text-2xl xl:text-3xl 2xl:text-[2rem] 2xl:tracking-tighter 3xl:text-[2.5rem] 1xl:mt-6 3xl:mt-8 line-clamp-1">
             {data.title}
           </h4>
           <p
-            className={`text-3xl mt-2 font-medium lg:mt-3 1xl:mt-6 mb-12 sm:mb-8 1xl:text-[2.2rem]`}
+            className={`text-3xl mt-2 font-medium lg:mt-3 1xl:mt-6 mb-12 sm:mb-8 1xl:text-[1.8rem] 3xl:text-[2.2rem]`}
           >
             ₹ {data.price}
           </p>
@@ -102,7 +102,7 @@ const CollectionItem = ({ data, popupToggler }) => {
           </Link>
         </div>
 
-        <div className="px-14 pt-8 md:px-10 1xl:px-[4rem] 1xl:pt-[3rem]">
+        <div className="px-14 pt-8 md:px-10 1xl:px-[3rem] 3xl:px-[4rem] 1xl:pt-[2.5rem] 3xl:pt-[3rem] ">
           <Link href={`/products/${data._id}`} className="block">
             <CommonInfoUsp data={data} />
           </Link>
@@ -110,7 +110,7 @@ const CollectionItem = ({ data, popupToggler }) => {
           <div className="flex items-center justify-between callBtnGroup mt-12 overflow-hidden flex-wrap">
             <div className="flex-grow">
               <div
-                className="bg-black text-white text-[1.2rem] font-medium flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 1xl:h-[5.8rem] 3xl:text-[1.7rem]"
+                className="bg-black text-white text-[1.2rem] font-medium flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem]"
                 onClick={popupToggler}
               >
                 <Image
@@ -126,7 +126,7 @@ const CollectionItem = ({ data, popupToggler }) => {
             <div className="callBtnRight ml-4">
               <a
                 href="#"
-                className="whatsAppBtn w-[4.5rem] h-[4.5rem] flex justify-center items-center rounded-[5px] 1xl:w-[5.8rem] 1xl:h-[5.8rem]  "
+                className="whatsAppBtn w-[4.5rem] h-[4.5rem] flex justify-center items-center rounded-[5px] 3xl:w-[5.8rem] 3xl:h-[5.8rem]  "
               >
                 <Image
                   src="/images/whatsapp-btn-icon.webp"
