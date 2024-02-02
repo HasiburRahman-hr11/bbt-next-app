@@ -10,7 +10,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="bg-dark-800 py-28 text-white xl:py-40 2xl:py-48">
+    <section className="bg-dark-800 py-28 text-white xl:py-40 2xl:py-48 3xl:py-[20rem]">
       <div className="container">
         <div
           className="lg:flex lg:justify-between lg:items-center"
@@ -35,7 +35,7 @@ const AboutSection = () => {
               </strong>{" "}
               Cars From Big Boy Toyz?
             </h2>
-            <p>
+            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem]">
               What if we say that your second-hand BMW car is still a new one?
               Yes! You read it right, we offer you used BMW cars that are still
               new in look (polished) and resemble all the features that a luxury

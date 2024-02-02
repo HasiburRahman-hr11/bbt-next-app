@@ -36,7 +36,7 @@ const FaqAccordion = ({ data , index }) => {
       </AccordionHeader>
       <AccordionBody>
         <div className="pb-8">
-            <p className="text-1xl font-normal 1xl:text-[1.3rem] 3xl:text-[1.6rem]">{data?.answer}</p>
+            <p className="text-1xl font-normal 1xl:text-[1.3rem] 3xl:text-[1.65rem]">{data?.answer}</p>
         </div>
       </AccordionBody>
     </Accordion>

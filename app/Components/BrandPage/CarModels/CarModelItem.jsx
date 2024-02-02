@@ -14,7 +14,7 @@ const CarModelItem = ({data}) => {
             className="w-full object-cover block"
             alt="Service Image"
           />
-          <div className="py-10 px-10 flex justify-between 1xl:py-14 2xl:py-20 2xl:px-16 3xl:px-20">
+          <div className="py-10 px-10 flex justify-between 1xl:py-14 2xl:py-20 2xl:px-16 3xl:px-[5rem] 3xl:py-[6rem]">
             <h3 className="font-medium text-[2.1rem] 2xl:text-[2.7rem] 3xl:text-6xl">
               {data?.title}
             </h3>

@@ -58,7 +58,7 @@ const UspSection = () => {
             data-aos-easing="linear"
             data-aos-duration="500"
           >
-            <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem]">
+            <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem] capitalize">
               Searching to buy used bmw car? Have a look....
             </h2>
             <p className="text-[1.3rem] font-light [&>strong]:font-medium [&>b]:font-medium xl:text-[1.8rem] xl:leading-[1.6] 1xl:text-[2.2rem] 3xl:text-[2.8rem]">
@@ -80,7 +80,7 @@ const UspSection = () => {
             data-aos-easing="linear"
             data-aos-duration="500"
           >
-            <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem]">
+            <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem] capitalize">
               The most reliable used bmw cars at big boy toyz
             </h2>
             <p className="text-[1.3rem] font-light [&>strong]:font-medium [&>b]:font-medium xl:text-[1.8rem] xl:leading-[1.6] 1xl:text-[2.2rem] 3xl:text-[2.8rem]">
@@ -98,7 +98,7 @@ const UspSection = () => {
             data-aos-easing="linear"
             data-aos-duration="500"
           >
-            <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem]">
+            <h2 className="text-[2.9rem] font-normal leading-[1.1] mb-8 xl:text-[3.4rem] 1xl:text-[4rem] 1xl:mb-14 3xl:text-[4.5rem] capitalize">
               Check out wide-ranging pre-owned bmw cars
             </h2>
             <p className="text-[1.3rem] font-light [&>strong]:font-medium [&>b]:font-medium xl:text-[1.8rem] xl:leading-[1.6] 1xl:text-[2.2rem] 3xl:text-[2.8rem]">
@@ -115,7 +115,7 @@ const UspSection = () => {
             {uspList.map((usp, index) => (
               <li
                 key={index}
-                className=" mt-10 common-car-item transition-all duration-500 ease-in-out sm:w-[48%] xl:flex 1xl:mt-14"
+                className=" mt-10 common-car-item transition-all duration-500 ease-in-out sm:w-[48%] xl:flex 1xl:mt-14 3xl:mt-[5rem]"
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-duration="500"
@@ -127,11 +127,11 @@ const UspSection = () => {
                   <h6 className="font-medium text-[1.4rem] xl:text-[1.8rem] 1xl:text-[2rem] 3xl:text-[2.2rem]">
                     {usp.title}
                   </h6>
-                  <p className="text-[1.2rem] mt-5 font-light xl:text-[1.3rem] xl:leading-[1.7] 1xl:text-[1.5rem] 3xl:text-[1.7rem]">
+                  <p className="text-[1.2rem] mt-5 font-normal xl:text-[1.3rem] xl:leading-[1.7] 1xl:text-[1.5rem] 3xl:text-[1.7rem]">
                     {usp.description}
                   </p>
                   <p className="mt-8 inline-flex items-center group transition-all duration-500 ease-in-out xl:absolute xl:left-[3rem] xl:bottom-[4rem]">
-                    <span className="text-[1.2rem] transition-all duration-500 ease-in-out xl:text-[1.3rem] 1xl:text-[1.5rem] 3xl:text-[1.7rem]">
+                    <span className="text-[1.2rem] transition-all duration-500 ease-in-out xl:text-[1.3rem] 1xl:text-[1.5rem] 3xl:text-[1.7rem] font-medium">
                       Explore More
                     </span>
                     <Image

@@ -92,7 +92,7 @@ const CarModels = () => {
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          <div className="container lg:w-30% lg:pr-20 xl:pr-28">
+          <div className="container lg:w-30% lg:pr-20 xl:pr-28 3xl:w-[25%]">
             <Image
               src="/images/down-circle-arrow-white.webp"
               width="123"
@@ -115,7 +115,7 @@ const CarModels = () => {
             </Link>
           </div>
 
-          <div className="w-full lg:w-70% mt-24 lg:mt-0">
+          <div className="w-full lg:w-70% mt-24 lg:mt-0 3xl:w-[75%]">
             <div className="pl-[2rem]">
               <Slider
                 {...settings}

@@ -932,11 +932,11 @@ img {
     left: -1.5rem;
   }
   .curve-slider-arrow.slick-arrow {
-    width: 11rem;
+    width: 12rem;
     top: 37%;
   }
   .curve-slider-arrow.slick-arrow img {
-    max-width: 10rem;
+    max-width: 12rem;
   }
   .curve-slider-arrow.slick-next {
     top: calc(50% - 2rem);
@@ -985,7 +985,7 @@ img {
   }
   .hp-services-slider .curve-slider-arrow.slick-next,
   .hp-featured-slider .curve-slider-arrow.slick-next {
-    left: -7rem;
+    left: -8.3rem;
     top: 32%;
   }
   .hp-services-slider.brand-model-slider .curve-slider-arrow.slick-next {

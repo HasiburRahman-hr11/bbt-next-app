@@ -225,12 +225,12 @@ const MostSearched = () => {
                 <h2 className="tracking-tightest mb-8 pr-8 leading-[1.2] xl:mb-12 2xl:mb-16">
                   {item.title}
                 </h2>
-                <p className=" text-xl leading-1.7 font-light ">
+                <p className=" text-xl leading-1.7 font-normal ">
                   {item.tags.map((tag, ind) => (
                     <Link
                       href={tag.url}
                       key={ind}
-                      className="relative collection-search-tag text-black tracking-wide leading-0 px-2 border-l border-neutral-600 first-of-type:border-none first-of-type:pl-0 xl:text-[2rem] 1xl:text-[2.2rem] 2xl:text-[2.5rem] 3xl:text-[2.8rem]"
+                      className="relative collection-search-tag text-black tracking-wide leading-0 px-2 border-l border-neutral-800 first-of-type:border-none first-of-type:pl-0 xl:text-[2rem] 1xl:text-[2.2rem] 2xl:text-[2.5rem] 3xl:text-[2.8rem] 3xl:px-4"
                     >
                       {tag.tagName}
                     </Link>
@@ -245,7 +245,7 @@ const MostSearched = () => {
             {locations.map((location, index) => (
               <li
                 key={index}
-                className="bg-white w-[47%] mt-8 rounded-[1rem] shadow-sm common-car-item transition-all duration-500 ease-in-out sm:w-[32%] lg:w-[23%] mx-[1%] xl:w-[14%] xl:mx-[1.33%] my-4"
+                className="bg-white w-[47%] mt-8 rounded-[1rem] shadow-sm common-car-item transition-all duration-500 ease-in-out sm:w-[32%] lg:w-[23%] mx-[1%] xl:w-[14%] xl:mx-[1.33%] my-4 3xl:shadow-lg 3xl:mt-14"
               >
                 <div className="pt-20 pb-12 px-5 text-center 3xl:pt-28 3xl:pb-20">
                   <Image
@@ -255,7 +255,7 @@ const MostSearched = () => {
                     height="95"
                     alt={location.city}
                   />
-                  <h6 className="text-[1.6rem] text-[#161616] mt-6 xl:text-[1.8rem] xl:mt-10 1xl:text-[2rem] 1xl:mt-12 3xl:text-[2.2rem]">
+                  <h6 className="text-[1.6rem] text-[#161616] mt-6 xl:text-[1.8rem] xl:mt-10 1xl:text-[2rem] 1xl:mt-12 3xl:text-[2.2rem] font-medium">
                     {location.city}
                   </h6>
                 </div>
