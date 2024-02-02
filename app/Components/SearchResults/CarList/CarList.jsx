@@ -23,7 +23,7 @@ const CarList = () => {
         <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
       )}
       <div className="max-1920">
-        <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto md:pb-20 lg:w-[83%] xl:pb-[12rem] 1xl:mt-[4rem]">
+        <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto md:pb-20 lg:w-[83%] xl:pb-[12rem] 1xl:mt-[2rem] 3xl:mt-[4rem]">
           {cars.map((item) => (
             <div
               key={item._id}
