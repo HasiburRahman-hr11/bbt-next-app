@@ -3,6 +3,7 @@ import FooterMenuWrapper from "./FooterMenuWrapper";
 import FooterMenuDesktop from "./FooterMenuDesktop";
 import FooterAppLinks from "./FooterAppLinks";
 import FooterCopyRight from "./FooterCopyRight";
+import BackToTop from '../CommonComponents/BackToTop/BackToTop'
 
 const Footer = () => {
   return (
@@ -21,6 +22,7 @@ const Footer = () => {
             <FooterCopyRight />
           </div>
         </div>
+        <BackToTop />
       </footer>
     </>
   );

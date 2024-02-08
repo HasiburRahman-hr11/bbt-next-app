@@ -22,14 +22,14 @@ const BannerSection = () => {
       <div className="max-1920">
         <div className={`relative`}>
           <div>
-            <Image
+            <img
               src="/images/hp-banner-desk.webp"
               alt="Banner Image"
               width="1920"
               height="1100"
               className="hidden md:block object-cover"
             />
-            <Image
+            <img
               src="/images/hp-banner-mob.webp"
               alt="Banner Image"
               width="390"
