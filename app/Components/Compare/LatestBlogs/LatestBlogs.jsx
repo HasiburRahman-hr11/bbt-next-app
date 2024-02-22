@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -15,7 +15,8 @@ const LatestBlogs = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
-    centerMode: false,
+    centerMode: true,
+    centerPadding: '10%',
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
@@ -40,8 +41,8 @@ const LatestBlogs = () => {
           </span>
         </h2>
       </div>
-      <div className="mt-20 pl-8">
-        <Slider {...settings}>
+      <div className="mt-20 pl-8 compare-blog-slider">
+        <Slider {...settings} >
           <BlogCard />
           <BlogCard />
           <BlogCard />

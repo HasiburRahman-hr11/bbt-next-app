@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const LatestCarCard = () => {
+const CollectionItem = () => {
   return (
     <Link
       href="/products/114325"
@@ -32,7 +32,7 @@ const LatestCarCard = () => {
               height="25"
               className={`object-contain h-5 3xl:h-6 3xl:w-6 `}
             />
-           <p className="text-[1.1rem] tracking-[-0.5px] mt-4 mb-2">Kilometers Driven</p>
+            <p className="text-[1.1rem] tracking-[-0.5px] mt-4 mb-2">Kilometers Driven</p>
             <h6 className="text-[1.3rem]">3500 km</h6>
           </li>
           <li className="w-3/6 px-7 border-l border-[#CFCFCF] last-of-type:border-r">
@@ -61,4 +61,4 @@ const LatestCarCard = () => {
   );
 };
 
-export default LatestCarCard;
+export default CollectionItem;

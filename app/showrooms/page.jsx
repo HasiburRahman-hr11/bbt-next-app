@@ -1,0 +1,26 @@
+import React from 'react';
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
+import BannerSection from '../Components/ShowroomsPage/BannerSection/BannerSection';
+import UspSection from '../Components/ShowroomsPage/UspSection/UspSection';
+import ShowroomsSection from '../Components/ShowroomsPage/ShowroomsSection/ShowroomsSection';
+import VisitSection from '../Components/ShowroomsPage/VisitSection/VisitSection';
+import RecentUploads from '../Components/ShowroomsPage/RecentUploads/RecentUploads';
+
+const Showrooms = () => {
+  return (
+    <main>
+        <div className='white-header bg-white pt-[2rem]'>
+        <Header isPageHeader={true} />
+        </div>
+        <BannerSection />
+        <UspSection />
+        <ShowroomsSection />
+        <VisitSection />
+        <RecentUploads />
+        <Footer />
+    </main>
+  )
+}
+
+export default Showrooms;

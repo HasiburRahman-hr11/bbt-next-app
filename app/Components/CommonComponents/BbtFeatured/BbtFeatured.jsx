@@ -56,6 +56,7 @@ const BbtFeatured = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
+    centerPadding: '10%',
     afterChange: (index) => {
       setProgressWidth((100 / 4) * (index + 1));
     },

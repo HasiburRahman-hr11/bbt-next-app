@@ -1,11 +1,11 @@
 "use client";
-import BreadCrumb from "../../CommonComponents/BreadCrumb/BreadCrumb";
 import Image from "next/image";
 import React, { useState } from "react";
 import FilterPopup from "../../FilterPopup/FilterPopup";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -29,7 +29,24 @@ const PageHeader = () => {
     <section className="bg-white md:bg-[#f3f3f3]">
       <div className="container">
         <div className="py-16 md:border-b md:border-neutral-400">
-          <BreadCrumb pageTitle="Collection" />
+          <p className="flex flex-wrap items-center font-normal">
+            <Link
+              href="/"
+              className="text-lg md:text-xl xl:text-[1.2rem] 1xl:text-[1.4rem] 3xl:text-[1.8rem]"
+            >
+              Home
+            </Link>
+            <Image
+              src="/images/breadcrumb-arrow.webp"
+              className="object-contain w-2 xl:w-[0.6rem] inline-block mx-2 h-auto 1xl:mx-3 3xl:mx-4 3xl:w-[0.8rem]"
+              width="6"
+              height="11"
+              alt="Arrow Icon"
+            />
+            <span className="text-lg md:text-xl xl:text-[1.2rem] 1xl:text-[1.4rem] 3xl:text-[1.8rem]">
+              Filter
+            </span>
+          </p>
           <div className="flex flex-wrap items-center justify-between mt-5">
             <h2 className="text-[1.8rem] md:text-[2.2rem] xl:text-[4.5rem]">
               Total 1575 Results Found
