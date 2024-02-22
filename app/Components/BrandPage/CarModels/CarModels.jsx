@@ -103,7 +103,7 @@ const CarModels = () => {
             <h2 className=" text-white mb-3 lg:mb-6 [&>br]:hidden lg:[&>br]:block text-[2.9rem] xl:text-[3.2rem] 1xl:text-[3.5rem] 2xl:text-[4rem] 3xl:text-[4.5rem]">
               Bmw <br /> Car Models
             </h2>
-            <p className="text-xl text-white text-[1.4rem] leading-[1.5] 1xl:text-[1.4rem] 3xl:text-[1.6rem] mb-10 1xl:mb-[3rem] 2xl:mb-[4rem] 3xl:mb-[5rem]">
+            <p className="text-xl text-white text-[1.4rem] leading-[1.5] 1xl:text-[1.4rem] 3xl:text-[1.6rem] mb-10 1xl:mb-[3rem] 2xl:mb-[4rem] 3xl:mb-[5rem] font-[300]">
               Get your dream luxury car in 4 easy steps at Big Boy Toyz, India's
               trusted used car portal.
             </p>

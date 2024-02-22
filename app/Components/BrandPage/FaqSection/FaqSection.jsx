@@ -45,7 +45,7 @@ const FaqSection = () => {
             data-aos-easing="linear"
             data-aos-duration="500"
           >
-            <h2 className="text-center mb-10 tracking-tightest xl:w-[40%] xl:text-left">
+            <h2 className="text-center font-normal mb-10 tracking-tightest xl:w-[40%] xl:text-left">
               Frequently Asked Questions
             </h2>
             <div className="xl:w-[55%]">

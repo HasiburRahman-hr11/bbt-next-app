@@ -127,11 +127,11 @@ const UspSection = () => {
                   <h6 className="font-medium text-[1.4rem] xl:text-[1.8rem] 1xl:text-[2rem] 3xl:text-[2.2rem]">
                     {usp.title}
                   </h6>
-                  <p className="text-[1.2rem] mt-5 font-normal xl:text-[1.3rem] xl:leading-[1.7] 1xl:text-[1.5rem] 3xl:text-[1.7rem]">
+                  <p className="text-[1.2rem] mt-5 font-light xl:text-[1.3rem] xl:leading-[1.7] 1xl:text-[1.5rem] 3xl:text-[1.7rem]">
                     {usp.description}
                   </p>
                   <p className="mt-8 inline-flex items-center group transition-all duration-500 ease-in-out xl:absolute xl:left-[3rem] xl:bottom-[4rem]">
-                    <span className="text-[1.2rem] transition-all duration-500 ease-in-out xl:text-[1.3rem] 1xl:text-[1.5rem] 3xl:text-[1.7rem] font-medium">
+                    <span className="text-[1.2rem] transition-all duration-500 ease-in-out xl:text-[1.3rem] 1xl:text-[1.5rem] 3xl:text-[1.7rem] font-normal">
                       Explore More
                     </span>
                     <Image

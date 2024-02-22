@@ -35,7 +35,7 @@ const AboutSection = () => {
               </strong>{" "}
               Cars From Big Boy Toyz?
             </h2>
-            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem]">
+            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem] font-light">
               What if we say that your second-hand BMW car is still a new one?
               Yes! You read it right, we offer you used BMW cars that are still
               new in look (polished) and resemble all the features that a luxury

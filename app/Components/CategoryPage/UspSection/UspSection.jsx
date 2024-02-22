@@ -48,7 +48,7 @@ const UspSection = () => {
             <h2 className="mb-7 tracking-tighter leading-1.2 md:mb-14 lg:leading-[1.4]">
               Keep Pre-owned Luxury <br /> SUV as an Option
             </h2>
-            <div className="[&>p]:text-xl text-justify [&>p]:leading-1.6 1xl:[&>p]:text-1xl 2xl:[&>p]:text-[1.6rem] 3xl:[&>p]:text-[1.65rem]">
+            <div className="[&>p]:text-xl [&>p]:font-[300] text-justify [&>p]:leading-1.6 1xl:[&>p]:text-1xl 2xl:[&>p]:text-[1.6rem] 3xl:[&>p]:text-[1.65rem]">
               <p>
                 The SUV puts romping capacities before style, execution or
                 mileage. The engineering of SUVs is done to perfection and they
@@ -104,10 +104,10 @@ const UspSection = () => {
                     />
                   </div>
                   <div className="pl-6 flex-1 md:pl-0 md:mt-12">
-                    <h6 className="text-1.4rem 2xl:text-[1.7rem]">
+                    <h6 className="text-1.4rem 2xl:text-[1.7rem] font-[600] tracking-[-0.5px]">
                       {usp.title}
                     </h6>
-                    <p className="text-xl mt-3 tracking-tight 2xl:text-[1.4rem] 3xl:text-[1.5rem] 3xl:leading-[1.5]">
+                    <p className="text-xl mt-3 tracking-tight 2xl:text-[1.4rem] 3xl:text-[1.5rem] 3xl:leading-[1.5] font-[300]">
                       {usp.description}
                     </p>
                   </div>

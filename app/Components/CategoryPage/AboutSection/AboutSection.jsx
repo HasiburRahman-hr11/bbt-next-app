@@ -27,13 +27,13 @@ const AboutSection = () => {
             />
           </div>
           <div className="font-light [&>p]:text-xl [&>p]:leading-1.6 lg:w-[70%] xl:w-[75%] 1xl:w-[70%] 2xl:[&>p]:text-[1.6rem]">
-            <h2 className="font-light mb-8 tracking-tighter [&>strong]:font-normal leading-1.3 lg:leading-[1.4]">
+            <h2 className="font-extralight mb-8 tracking-tighter [&>strong]:font-normal leading-1.3 lg:leading-[1.4]">
               Second Hand{" "}
               <strong>
                 Exotic <br /> SUVs are in Trend Now!
               </strong>
             </h2>
-            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem]">
+            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem] font-[300]">
               Indeed, you read it right! The field of recycled extravagant SUVs
               or pre-adored extravagant SUVs is immense to cater to your
               preferred need and finding the vehicle is not any more tedious or

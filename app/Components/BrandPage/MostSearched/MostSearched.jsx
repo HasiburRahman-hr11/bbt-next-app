@@ -222,10 +222,10 @@ const MostSearched = () => {
                 data-aos-easing="linear"
                 data-aos-duration="500"
               >
-                <h2 className="tracking-tightest mb-8 pr-8 leading-[1.2] xl:mb-12 2xl:mb-16">
+                <h2 className="tracking-tightest font-normal mb-8 pr-8 leading-[1.2] xl:mb-12 2xl:mb-16">
                   {item.title}
                 </h2>
-                <p className=" text-xl leading-1.7 font-normal ">
+                <p className=" text-xl leading-1.7 font-light ">
                   {item.tags.map((tag, ind) => (
                     <Link
                       href={tag.url}
@@ -247,7 +247,7 @@ const MostSearched = () => {
                 key={index}
                 className="bg-white w-[47%] mt-8 rounded-[1rem] shadow-sm common-car-item transition-all duration-500 ease-in-out sm:w-[32%] lg:w-[23%] mx-[1%] xl:w-[14%] xl:mx-[1.33%] my-4 3xl:shadow-lg 3xl:mt-14"
               >
-                <div className="pt-20 pb-12 px-5 text-center 3xl:pt-28 3xl:pb-20">
+                <Link href="#" className="pt-20 pb-12 px-5 text-center 3xl:pt-28 3xl:pb-20 block">
                   <Image
                     src={location.icon}
                     className=" object-contain h-[6.5rem] w-auto inline-block mx-auto xl:h-[8rem] 1xl:h-[8.5rem] 2xl:h-[9rem] 3xl:h-[9.5rem]"
@@ -258,7 +258,7 @@ const MostSearched = () => {
                   <h6 className="text-[1.6rem] text-[#161616] mt-6 xl:text-[1.8rem] xl:mt-10 1xl:text-[2rem] 1xl:mt-12 3xl:text-[2.2rem] font-medium">
                     {location.city}
                   </h6>
-                </div>
+                </Link>
               </li>
             ))}
           </ul>

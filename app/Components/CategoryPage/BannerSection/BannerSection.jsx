@@ -29,7 +29,7 @@ const BannerSection = () => {
               className="block w-full md:hidden"
             />
           </div>
-          <div className="absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[10rem] pb-16 md:pt-[17rem] xl:pt-[25rem] 3xl:pt-[30rem]">
+          <div className="absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 md:pt-[17rem] xl:pt-[25rem] 3xl:pt-[30rem]">
             <div
               className="text-center px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[83%] lg:mx-auto"
               data-aos="fade-up"
@@ -39,7 +39,7 @@ const BannerSection = () => {
               <div className="flex justify-center md:block [&_img]:invert">
                 <BreadCrumb pageTitle="SUVs" />
               </div>
-              <h1 className="font-light text-3.3rem tracking-tighter leading-1.4 mt-5 [&>strong]:font-normal lg:mt-10 lg:text-[4.5rem] 2xl:text-[6rem] 2xl:leading-[1.2] 3xl:text-[7.5rem]">
+              <h1 className="font-extralight text-3.3rem tracking-tighter leading-1.3 mt-5 [&>strong]:font-normal lg:mt-10 lg:text-[4.5rem] 2xl:text-[6rem] 2xl:leading-[1.2] 3xl:text-[7.5rem]">
                 Planning to buy a <br /> used <strong>luxury Suv car ?</strong>{" "}
                 <br /> Take a look.
               </h1>
