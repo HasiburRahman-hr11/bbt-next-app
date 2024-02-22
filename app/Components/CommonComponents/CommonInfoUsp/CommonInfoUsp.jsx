@@ -15,15 +15,15 @@ const CommonInfoUsp = ({ data, isDetailPage }) => {
           alt="Icon"
           width="24"
           height="25"
-          className={`object-contain h-5 3xl:h-6 3xl:w-6 ${
-            !isDetailPage && "1xl:w-4"
+          className={`object-contain h-[1.2rem] lg:h-[1rem] 3xl:h-[1.3rem] ${
+            !isDetailPage && "xl:w-[1.3rem]"
           }`}
         />
-        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 1xl:mt-3 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#888888]">
+        <p className="text-base mt-4 mb-2 lg:mt-3 lg:mb-1 lg:text-sm 2xl:text-base 1xl:mt-4 3xl:text-xl 3xl:mt-6 3xl:mb-3 text-[#767778] tracking-[-0.5px]">
           Kilometers Driven
         </p>
         <h6
-          className={`text-lg 3xl:text-[1.4rem] font-[600] ${
+          className={`text-lg 3xl:text-[1.4rem] font-[600] tracking-[-0.5px] ${
             isDetailPage
               ? " text-[1.5rem] 1xl:text-[1.7rem] 3xl:text-[2.2rem]"
               : ""
@@ -39,15 +39,15 @@ const CommonInfoUsp = ({ data, isDetailPage }) => {
           alt="Icon"
           width="24"
           height="25"
-          className={`object-contain h-5 3xl:h-6 3xl:w-6 ${
-            !isDetailPage && "1xl:w-4"
+          className={`object-contain h-[1.2rem] lg:h-[1rem] 3xl:h-[1.3rem] ${
+            !isDetailPage && "xl:w-[1.3rem]"
           }`}
         />
-        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#888888]">
+        <p className="text-base mt-4 mb-2 lg:mt-3 lg:mb-1 lg:text-sm 2xl:text-base 1xl:mt-4 3xl:text-xl 3xl:mt-6 3xl:mb-3 text-[#767778] tracking-[-0.5px]">
           Fuel / Gas Type
         </p>
         <h6
-          className={`text-lg 3xl:text-[1.4rem] font-[600] ${
+          className={`text-lg 3xl:text-[1.4rem] font-[600] tracking-[-0.5px] ${
             isDetailPage
               ? " text-[1.5rem] 1xl:text-[1.7rem] 3xl:text-[2.2rem]"
               : ""
@@ -62,15 +62,15 @@ const CommonInfoUsp = ({ data, isDetailPage }) => {
           alt="Icon"
           width="24"
           height="25"
-          className={`object-contain h-5 3xl:h-6 3xl:w-6 ${
-            !isDetailPage && "1xl:w-4"
+          className={`object-contain h-[1.2rem] lg:h-[1rem] 3xl:h-[1.3rem] ${
+            !isDetailPage && "xl:w-[1.3]"
           }`}
         />
-        <p className="text-base mt-4 mb-2 lg:mt-2 lg:mb-1 lg:text-sm 2xl:text-base 3xl:text-xl 3xl:mt-4 3xl:mb-3 text-[#888888]">
+        <p className="text-base mt-4 mb-2 lg:mt-3 lg:mb-1 lg:text-sm 2xl:text-base 1xl:mt-4 3xl:text-xl 3xl:mt-6 3xl:mb-3 text-[#767778] tracking-[-0.5px]">
           Registration State
         </p>
         <h6
-          className={`text-lg 3xl:text-[1.4rem] font-[600] ${
+          className={`text-lg 3xl:text-[1.4rem] font-[600] tracking-[-0.5px] ${
             isDetailPage
               ? " text-[1.5rem] 1xl:text-[1.7rem] 3xl:text-[2.2rem]"
               : ""

@@ -4,7 +4,7 @@ import React from "react";
 
 const BreadCrumb = ({ pageTitle }) => {
   return (
-    <p className="flex flex-wrap items-center">
+    <p className="flex flex-wrap items-center font-extralight">
       <Link href="/" className="text-lg md:text-xl xl:text-[1.2rem] 1xl:text-[1.4rem] 3xl:text-[1.8rem]">
         Home
       </Link>

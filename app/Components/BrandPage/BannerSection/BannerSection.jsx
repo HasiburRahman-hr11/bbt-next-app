@@ -30,7 +30,7 @@ const BannerSection = () => {
             />
           </div>
           <div
-            className="absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-24 pb-16 md:pt-[10rem] lg:pt-[13rem] 3xl:pt-[18rem]"
+            className="absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-24 pb-[5rem] md:pt-[10rem] lg:pt-[13rem] 3xl:pt-[18rem]"
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="500"
@@ -39,12 +39,12 @@ const BannerSection = () => {
               <div className="flex justify-center [&_img]:invert">
                 <BreadCrumb pageTitle="BMW" />
               </div>
-              <h1 className="font-light text-3.3rem tracking-tighter leading-1.4 mt-5 [&>strong]:font-normal lg:mt-10 lg:text-[4.5rem] 2xl:text-[6rem] 2xl:leading-[1.2] 3xl:text-[7.5rem] [&_br]:hidden md:[&_br]:block">
+              <h1 className="font-extralight text-3.3rem tracking-tighter leading-1.4 mt-5 [&>strong]:font-normal lg:mt-10 lg:text-[4.5rem] 2xl:text-[6rem] 2xl:leading-[1.2] 3xl:text-[7.5rem] [&_br]:hidden md:[&_br]:block">
                 Looking to buy a{" "}
                 <strong>
-                  used BMW <br /> car ?
+                  used Bmw <br /> car?
                 </strong>{" "}
-                Take a look.
+                take a look.
               </h1>
             </div>
             <div
@@ -57,7 +57,7 @@ const BannerSection = () => {
                 height="29"
                 className="inline-block object-contain w-8 1xl:w-6"
               />
-              <span className="uppercase mt-5 text-base">Scroll Down</span>
+              <span className="uppercase mt-5 text-[0.9rem] font-extralight">Scroll Down</span>
             </div>
           </div>
         </div>

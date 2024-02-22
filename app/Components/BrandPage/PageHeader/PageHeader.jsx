@@ -44,25 +44,25 @@ const PageHeader = () => {
                   Filters:
                 </p>
                 <div
-                  className="w-max md:border md:border-[#E0E0E0] md:w-[4rem] md:h-[4rem] md:p-[1rem] md:rounded-[5px] xl:w-[4rem] xl:h-[4rem] 3xl:w-[5.6rem] 3xl:h-[5.6rem] flex justify-center items-center"
+                  className="w-max md:border md:border-[#C6C6C6] md:w-[4rem] md:h-[4rem] md:p-[1rem] md:rounded-[5px] xl:w-[4rem] xl:h-[4rem] 3xl:w-[5.9rem] 3xl:h-[6rem] flex justify-center items-center"
                   onClick={togglePopup}
                 >
                   <Image
                     src="/images/collection-filter-icon.webp"
-                    width="20"
-                    height="20"
+                    width="29"
+                    height="29"
                     className="w-[2rem] md:w-full object-contain h-auto xl:w-[2.8rem]"
                     alt="Filter Icon"
                   />
                 </div>
               </div>
-              <div className="ml-5 md:flex cursor-pointer md:items-center md:ml-8">
+              <div className="ml-5 md:flex cursor-pointer md:items-center md:ml-8 1xl:ml-10">
                 <p className="hidden md:inline-block md:mr-4 xl:text-[1.7rem] 3xl:text-[2rem]">
                   Sort by:
                 </p>
                 <Menu as="div" className="relative inline-block text-left">
                   <div>
-                    <Menu.Button className=" w-32 min-w-[9rem] whitespace-nowrap  inline-flex justify-between items-center gap-x-1.5 outline-none border border-neutral-400 px-4 py-3 text-lg rounded-md md:border md:border-[#E0E0E0] md:h-[4rem] md:min-w-[12rem] md:rounded-[5px] md:bg-transparent md:text-xl xl:text-[1.6rem] 1xl:min-w-[15rem] 3xl:min-w-[19rem] 1xl:text-[1.7rem] 1xl:py-6 xl:h-[4rem] 3xl:h-[5.7rem] 3xl:text-[2rem]">
+                    <Menu.Button className=" w-[6.5rem] whitespace-nowrap  inline-flex justify-between items-center gap-x-1.5 outline-none border border-neutral-400 pl-4 pr-3 py-1 overflow-hidden text-lg rounded-md md:border md:border-[#C6C6C6] md:h-[4rem] md:min-w-[12rem] md:rounded-[5px] md:bg-transparent md:text-xl xl:text-[1.6rem] 1xl:min-w-[15rem] 3xl:min-w-[19rem] 1xl:text-[1.7rem] 1xl:py-6 xl:h-[4rem] 3xl:h-[6rem] 3xl:text-[2rem] 3xl:pl-6">
                       {sortTitle}
                       <ChevronDownIcon
                         className="h-8 w-8 object-contain  1xl:w-[2.8rem] 1xl:h-[2.8rem] 3xl:w-[3.5rem] 3xl:h-[3.5rem] text-[#333] font-light"
