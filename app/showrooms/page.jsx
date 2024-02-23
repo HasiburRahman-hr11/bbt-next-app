@@ -11,7 +11,7 @@ import MeetTheTeam from '../Components/ShowroomsPage/MeetTheTeam/MeetTheTeam';
 const Showrooms = () => {
   return (
     <main>
-        <div className='white-header bg-white pt-[2rem]'>
+        <div className='white-header bg-white pt-[2rem] lg:pt-0'>
         <Header isPageHeader={true} />
         </div>
         <BannerSection />

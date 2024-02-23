@@ -14,6 +14,7 @@ module.exports = {
       },
       boxShadow: {
         "detail-space": "rgba(17, 17, 26, 0.1) 0px 0px 16px",
+        "showroom-tab": "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px"
       },
       colors: {
         "dark-800": "#161616",
