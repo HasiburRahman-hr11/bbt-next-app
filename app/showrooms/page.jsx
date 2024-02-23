@@ -6,6 +6,7 @@ import UspSection from '../Components/ShowroomsPage/UspSection/UspSection';
 import ShowroomsSection from '../Components/ShowroomsPage/ShowroomsSection/ShowroomsSection';
 import VisitSection from '../Components/ShowroomsPage/VisitSection/VisitSection';
 import RecentUploads from '../Components/ShowroomsPage/RecentUploads/RecentUploads';
+import MeetTheTeam from '../Components/ShowroomsPage/MeetTheTeam/MeetTheTeam';
 
 const Showrooms = () => {
   return (
@@ -18,6 +19,7 @@ const Showrooms = () => {
         <ShowroomsSection />
         <VisitSection />
         <RecentUploads />
+        <MeetTheTeam />
         <Footer />
     </main>
   )
