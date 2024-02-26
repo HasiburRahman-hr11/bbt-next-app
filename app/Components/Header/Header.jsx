@@ -48,31 +48,31 @@ const Header = ({ isPageHeader }) => {
             >
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 BUY - 9999 9999 83{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 SELL - 9999 9999 15{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 Car Detailing - 89999 99627{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 Servicing - 89999 99264{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] group-hover:text-[#ddd] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
               >
                 Modification & Upgrade - 89999 99627{" "}
               </Link>
