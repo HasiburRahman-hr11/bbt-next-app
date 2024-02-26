@@ -535,6 +535,12 @@ img {
 .recent-uploads-slider .slick-list {
   padding: 0 7% 0 0 !important;
 }
+.squad-requirements-slider .slick-list{
+  padding: 0 17% 0 0 !important;
+}
+.squad-requirements-slider .slick-slide > div{
+  height: 100%;
+}
 .hp-services-slider .slick-arrow,
 .recent-uploads-slider .slick-arrow {
   display: none !important;
