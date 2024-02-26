@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
-import Image from "next/image";
 import BreadCrumb from "../../CommonComponents/BreadCrumb/BreadCrumb";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const BannerSection = () => {
   useEffect(() => {
@@ -14,47 +14,66 @@ const BannerSection = () => {
       <div className="max-1920">
         <div className="relative">
           <div>
-            <Image
+            <img
               src="/images/bbt-squad/squad-banner-desktop.webp"
               alt="Banner Image"
               width="1920"
               height="1100"
-              className="hidden sm:block"
+              className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
             />
-            <Image
+            <img
               src="/images/bbt-squad/squad-banner-mobile.webp"
               alt="Banner Image"
               width="391"
               height="686"
-              className="block w-full sm:hidden"
+              className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 sm:text-left md:pt-[17rem] xl:pt-[25rem] 3xl:pt-[30rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[83%] lg:mx-auto"
               //   data-aos="fade-up"
               //   data-aos-easing="linear"
               //   data-aos-duration="500"
             >
-              <div className="hidden sm:block [&_img]:invert">
-                <BreadCrumb pageTitle="BBT Squad" />
-              </div>
-              <h1 className="font-extralight text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] 2xl:text-[6rem] 2xl:leading-[1.2] 3xl:text-[7.5rem]">
+              <p className="hidden sm:block [&_img]:invert text-white text-left font-light">
+                <Link
+                  href="/"
+                  className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]"
+                >
+                  Home
+                </Link>
+                <img
+                  src="/images/breadcrumb-arrow.webp"
+                  className="object-contain w-2 xl:w-[0.6rem] inline-block mx-2 h-auto 1xl:mx-3 3xl:mx-4 3xl:w-[0.8rem]"
+                  width="6"
+                  height="11"
+                  alt="Arrow Icon"
+                />
+                <span className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]">
+                  BBT Squad
+                </span>
+              </p>
+              <h1 className="font-extralight text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 2xl:text-[6rem] 3xl:text-[7.5rem]">
                 The <b>BBT Squad</b> <br /> - Join Us
               </h1>
-              <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block">BBT Squad is a new platform inviting car enthusiasts to pursue their passion <br /> for automobiles without compromising on their existing work areas.</p>
+              <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem]">
+                BBT Squad is a new platform inviting car enthusiasts to pursue
+                their passion <br /> for automobiles without compromising on
+                their existing work areas.
+              </p>
             </div>
             <div
               className={`text-center flex flex-col justify-center items-center scroll-animation`}
             >
-              <Image
+              <img
                 src="/images/banner-scroll-icon-white.webp"
                 alt="Scroll Down"
                 width="19"
                 height="29"
-                className="inline-block object-contain w-8 1xl:w-6"
+                className="inline-block object-contain w-8 xl:w-[1.5rem] 1xl:w-6"
               />
-              <span className="uppercase mt-5 text-base">Scroll Down</span>
+              <span className="uppercase mt-5 text-base xl:text-[0.8rem]  1xl:text-[0.9rem]">Scroll Down</span>
             </div>
           </div>
         </div>

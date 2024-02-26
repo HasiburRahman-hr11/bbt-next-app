@@ -3,6 +3,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const styles = {
+  menuItem:'text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.9rem] xl:px-[1.5rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]'
+}
+
 const Header = ({ isPageHeader }) => {
   return (
     <header
@@ -38,7 +42,7 @@ const Header = ({ isPageHeader }) => {
                   width="105"
                   height="70"
                   alt="BBT Logo"
-                  className="w-24 object-contain lg:w-32 2xl:w-32 3xl:w-44"
+                  className="w-24 object-contain lg:w-32 xl:w-[7rem] 2xl:w-32 3xl:w-[10.5rem]"
                   priority="high"
                 />
               </Link>
@@ -48,31 +52,31 @@ const Header = ({ isPageHeader }) => {
             >
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className={styles.menuItem}
               >
                 BUY - 9999 9999 83{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className={styles.menuItem}
               >
                 SELL - 9999 9999 15{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className={styles.menuItem}
               >
                 Car Detailing - 89999 99627{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className={styles.menuItem}
               >
                 Servicing - 89999 99264{" "}
               </Link>
               <Link
                 href="#"
-                className="text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.95rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]"
+                className={styles.menuItem}
               >
                 Modification & Upgrade - 89999 99627{" "}
               </Link>

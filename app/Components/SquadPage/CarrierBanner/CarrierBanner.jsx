@@ -16,22 +16,22 @@ const CarrierBanner = () => {
           <img
             src="/images/bbt-squad/squad-carrier-banner-desktop.webp"
             alt="Background Image"
-            className="w-full object-cover h-auto block min-h-[400px]"
+            className="w-full object-cover h-auto block min-h-[600px]"
           />
         </div>
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="container w-full h-full">
-            <div className="flex h-full w-full flex-col justify-between py-[8rem] sm:justify-center">
+            <div className="flex h-full w-full flex-col justify-between py-[8rem] sm:justify-center sm:max-w-[400px] sm:w-[50%] sm:ml-auto lg:justify-start lg:pt-[8rem] lg:mr-[8rem] xl:pt-[10rem]">
               <div className="text-center text-white sm:text-left">
-                <h2 className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-1px]">
+                <h2 className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-1px] xl:text-[3.7rem]">
                 Looking For <b>A Full Time Carrier At BBT</b>
                 </h2>
-                <p className="font-light text-[1.2rem] mt-[1.5rem] max-w-[29.5rem] mx-auto">
+                <p className="font-light text-[1.2rem] mt-[1.5rem] max-w-[29.5rem] mx-auto sm:max-w-none xl:text-[1.1rem]">
                 BBT Squad is a new platform inviting car enthusiasts to pursue their passion for automobiles without compromising on their existing work areas. You can exploit the opportunity of earning by procuring cars for us.
                 </p>
               </div>
               <div className="text-center sm:text-left sm:mt-[3rem] 3xl:mt-[5rem]">
-                <Link href="/bbt-squad" className="w-full max-w-[31rem] h-[5rem] flex justify-center items-center text-[1.4rem] bg-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium">View Openings</Link>
+                <Link href="/bbt-squad" className="w-full max-w-[31rem] h-[5rem] flex justify-center items-center text-[1.4rem] bg-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium sm:max-w-[25rem] sm:ml-0 xl:text-[1.2rem] xl:h-[4rem] xl:max-w-[20rem]">View Openings</Link>
               </div>
             </div>
           </div>

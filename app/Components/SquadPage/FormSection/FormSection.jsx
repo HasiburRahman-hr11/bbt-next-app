@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const styles = {
   inputStyles:
-    "w-full border border-[#B3B3B3] rounded-[0.5rem] py-[1.7rem] px-[2rem] font-light text-[1.3rem] mt-[1rem] placeholder:text-black",
+    "w-full border border-[#B3B3B3] rounded-[0.5rem] py-[1.7rem] px-[2rem] font-light text-[1.3rem] mt-[1rem] placeholder:text-black sm:mt-[1.5rem] xl:py-[1.4rem]",
 };
 
 const FormSection = () => {
@@ -39,19 +39,19 @@ const FormSection = () => {
         setFileItem('');
     }
   return (
-    <section className="bg-white py-[6rem]">
+    <section className="bg-white py-[6rem] md:py-[10rem]">
       <div className="max-1920">
         <div className="container">
-          <div>
-            <div>
-              <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem]">
+          <div className="lg:flex lg:justify-between">
+            <div className="lg:w-[39%]">
+              <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] xl:text-[3.7rem]">
                 Join The{" "}
                 <b>
                   {" "}
                   BBT <br /> Squad Today!{" "}
                 </b>
               </h2>
-              <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem]">
+              <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem] md:max-w-[577px] xl:text-[1.1rem] xl:leading-[1.6] xl:mt-[2rem]">
                 BBT Squad is a new platform inviting car enthusiasts to pursue
                 their passion for automobiles without compromising on their
                 existing work areas.
@@ -95,10 +95,10 @@ const FormSection = () => {
                 </li>
               </ul>
             </div>
-            <div className="pt-[3rem]">
+            <div className="pt-[3rem] lg:w-[53%] lg:pt-0">
               <form className="w-full block" onSubmit={handleFormSubmit}>
-                <div className="md:flex md:justify-between">
-                  <div className="input-box w-full md:w-[48%]">
+                <div className="sm:flex sm:justify-between">
+                  <div className="input-box w-full sm:w-[49%]">
                     <input
                       type="text"
                       placeholder="Your Name*"
@@ -108,7 +108,7 @@ const FormSection = () => {
                       onChange={(e)=>setName(e.target.value)}
                     />
                   </div>
-                  <div className="input-box w-full md:w-[48%]">
+                  <div className="input-box w-full sm:w-[49%]">
                     <input
                       type="text"
                       placeholder="State*"
@@ -119,8 +119,8 @@ const FormSection = () => {
                     />
                   </div>
                 </div>
-                <div className="md:flex md:justify-between">
-                  <div className="input-box w-full md:w-[48%]">
+                <div className="sm:flex sm:justify-between">
+                  <div className="input-box w-full sm:w-[49%]">
                     <input
                       type="tel"
                       placeholder="Phone*"
@@ -130,7 +130,7 @@ const FormSection = () => {
                       onChange={(e)=>setPhone(e.target.value)}
                     />
                   </div>
-                  <div className="input-box w-full md:w-[48%]">
+                  <div className="input-box w-full sm:w-[49%]">
                     <input
                       type="text"
                       placeholder="Current Work Profile*"
@@ -141,8 +141,8 @@ const FormSection = () => {
                     />
                   </div>
                 </div>
-                <div className="md:flex md:justify-between">
-                  <div className="input-box select-box w-full md:w-[48%] relative">
+                <div className="sm:flex sm:justify-between">
+                  <div className="input-box select-box w-full sm:w-[49%] relative">
                     <select className={styles.inputStyles} value={dropdownItem} onChange={(e)=>setDropdownItem(e.target.value)}>
                       <option value="Automobile Enthusiast">
                         Automobile Enthusiast
@@ -156,7 +156,7 @@ const FormSection = () => {
                     </select>
                     <img src="/images/bbt-squad/squad-dropdown-arrow.webp" alt="Arrow" className="absolute inline-block w-[1.2rem] h-auto object-contain top-[3.5rem] right-[2.5rem]" />
                   </div>
-                  <div className="input-box w-full md:w-[48%]">
+                  <div className="input-box w-full sm:w-[49%]">
                     <input
                       type="text"
                       placeholder="Instagram Handle"
@@ -193,7 +193,7 @@ const FormSection = () => {
                 </div>
                 <div className="submit-box mt-[2rem]">
                   <button
-                    className="bg-black w-full h-[5.5rem] flex justify-center items-center text-white text-[1.5rem] rounded-[0.7rem] cursor-pointer"
+                    className="bg-black w-full h-[5.5rem] flex justify-center items-center text-white text-[1.5rem] rounded-[0.7rem] cursor-pointer xl:h-[5rem]"
                     type="submit"
                   >
                     Submit

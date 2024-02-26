@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -34,14 +34,14 @@ const reqList = [
 
 const UspItem = ({ usp, count }) => {
   return (
-    <div className="pr-[2rem] h-full">
-      <div className="bg-[#131313] text-white py-[2.2rem] px-[1.8rem] h-full">
-        <div className="count text-[5.5rem] font-medium text-[#343434] text-right leading-[1]">
+    <div className="pr-[2rem] h-full sm:pr-0">
+      <div className="bg-[#131313] text-white py-[2.2rem] px-[1.8rem] h-full xl:bg-[#212121] xl:rounded-[1rem] xl:pb-[4rem] xl:px-[3rem]">
+        <div className="count text-[5.5rem] font-medium text-[#343434] text-right leading-[1] xl:mr-[-1rem] xl:text-[6rem]">
           {count && count < 10 ? `0${count}` : count}
         </div>
-        <div >
-          <h4 className="text-[1.6rem] mt-[4rem] mb-[1.5rem]">{usp.title}</h4>
-          <p className="text-[1rem] leading-[1.6] font-light">
+        <div>
+          <h4 className="text-[1.6rem] mt-[4rem] mb-[1.5rem] xl:mt-[2.1rem] xl:mb-[1.2rem]">{usp.title}</h4>
+          <p className="text-[1rem] leading-[1.6] font-light md:text-[1.3rem] xl:text-[1.1rem]">
             {usp.description}
           </p>
         </div>
@@ -103,30 +103,44 @@ const Requirements = () => {
     },
   };
   return (
-    <section className="bg-black pt-[7rem] pb-[6rem] mt-[-1px]">
+    <section className="bg-black pt-[7rem] pb-[6rem] mt-[-1px] sm:py-[8rem] xl:py-[12rem]">
       <div className="max-1920">
-        <div>
-          <div className="text-white px-[2rem]">
-            <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem]">
+        <div className="sm:w-[91%] sm:mx-auto xl:w-[83%]">
+          <div className="text-white px-[2rem] sm:px-0 lg:pr-[3rem] lg:w-[42%]">
+            <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] xl:text-[3.5rem]">
               What It Takes To <br /> Be <b>At BBT</b>
             </h2>
-            <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem] max-w-[29.1rem]">
+            <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem] max-w-[29.1rem] md:max-w-[30rem] xl:max-w-[36rem] xl:text-[1.1rem] xl:leading-[1.8]">
               BBT believes that its future depends on its people who are capable
               enough to generate new ideas & plans that will help in taking the
               business to a new height altogether.
             </p>
+            <div className="hidden lg:block mt-[4rem]">
+              <img src="/images/bbt-squad/down-arrow-white.webp" alt="Arrow" className="object-contain h-auto w-[3rem] xl:w-[4rem]" width="53" height="84" />
+            </div>
+          </div>
+          <div className="hidden sm:block mt-[4rem] lg:mt-[-26rem] lg:w-[90%] lg:ml-auto xl:w-[82%]">
+            <div className="grid grid-cols-3 gap-[2rem] xl:gap-[3.5rem]">
+              <div className="hidden lg:block"></div>
+              {reqList.map((usp, index) => (
+                <UspItem key={index} usp={usp} count={index + 1} />
+              ))}
+            </div>
           </div>
 
           {/* Slider */}
-          <div className="pl-[2rem] mt-[5rem]">
-            <Slider {...settings} className="squad-requirements-slider [&_.slick-track]:flex [&_.slick-slide]:h-[inherit]">
+          <div className="pl-[2rem] mt-[5rem] sm:hidden">
+            <Slider
+              {...settings}
+              className="squad-requirements-slider [&_.slick-track]:flex [&_.slick-slide]:h-[inherit]"
+            >
               {reqList.map((usp, index) => (
                 <UspItem key={index} usp={usp} count={index + 1} />
               ))}
             </Slider>
           </div>
 
-          <div className="container">
+          <div className="container sm:hidden">
             <div className="flex flex-wrap items-center justify-between mt-[7rem]">
               <div className="flex-1">
                 <div
