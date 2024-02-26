@@ -552,6 +552,9 @@ img {
 .hp-featured-slider .curve-slider-arrow img {
   filter: invert(1);
 }
+.select-box select{
+  -webkit-appearance: none;
+}
 
 /* Popup Scrollbar */
 

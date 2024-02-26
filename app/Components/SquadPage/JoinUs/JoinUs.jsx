@@ -61,7 +61,7 @@ const JoinUs = () => {
               </ul>
             </div>
             <div className="join-us-text text-center mt-[3rem]">
-                <p className="font-light text-[1.2rem] px-[1.2rem] mb-[3rem]">At BBT, we strive to provide the quickest and most hassle free car selling service available. Getting a great deal on the client’s vehicle can often be tricky to do by themselves, here the BBT Squad comes into picture and connects us to value their vehicle based on its condition and current market value.</p>
+                <p className="font-light text-[1.2rem] px-[1.2rem] mb-[2rem]">At BBT, we strive to provide the quickest and most hassle free car selling service available. Getting a great deal on the client’s vehicle can often be tricky to do by themselves, here the BBT Squad comes into picture and connects us to value their vehicle based on its condition and current market value.</p>
                 <Link href="#" className="w-full flex text-center justify-center items-center bg-black text-white rounded-[3rem] font-normal text-[1.4rem] py-[1.5rem] px-[2rem]">Join Us Now</Link>
             </div>
           </div>
