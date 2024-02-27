@@ -33,12 +33,7 @@ const FooterMenuDesktop = () => {
               <li>
                 <Link href="/sell-car">Sell Car</Link>
               </li>
-              <li>
-                <Link href="/bbt-squad">BBT Squad</Link>
-              </li>
-              <li>
-                <Link href="/showrooms">Showrooms</Link>
-              </li>
+             
             </ul>
           </div>
         </div>
