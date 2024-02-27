@@ -92,6 +92,22 @@ const FooterMenuWrapper = () => {
                     Sell Car
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/bbt-squad"
+                  >
+                    BBT Squad
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/showrooms"
+                  >
+                    Showrooms
+                  </Link>
+                </li>
               </ul>
             </div>
           </AccordionBody>
