@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const styles = {
   inputStyles:
-    "w-full border border-[#B3B3B3] rounded-[0.5rem] py-[1.7rem] px-[2rem] font-light text-[1.3rem] mt-[1rem] placeholder:text-black sm:mt-[1.5rem] xl:py-[1.4rem]",
+    "w-full border border-[#B3B3B3] rounded-[0.5rem] py-[1.7rem] px-[2rem] font-light text-[1.3rem] mb-[1rem] placeholder:text-black sm:mb-[1.5rem] xl:py-[1.4rem] 2xl:text-[1.4rem] 3xl:text-[1.7rem] 3xl:py-[1.8rem] 3xl:mb-[1.9rem] 3xl:px-[3rem]",
 };
 
 const FormSection = () => {
@@ -39,53 +39,53 @@ const FormSection = () => {
         setFileItem('');
     }
   return (
-    <section className="bg-white py-[6rem] md:py-[10rem]">
+    <section className="bg-white py-[6rem] md:py-[10rem] 1xl:py-[14rem] 3xl:py-[16rem]">
       <div className="max-1920">
         <div className="container">
           <div className="lg:flex lg:justify-between">
             <div className="lg:w-[39%]">
-              <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] xl:text-[3.7rem]">
+              <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] xl:text-[3.7rem] 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] ">
                 Join The{" "}
                 <b>
                   {" "}
                   BBT <br /> Squad Today!{" "}
                 </b>
               </h2>
-              <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem] md:max-w-[577px] xl:text-[1.1rem] xl:leading-[1.6] xl:mt-[2rem]">
+              <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem] md:max-w-[577px] xl:text-[1.1rem] xl:leading-[1.6] xl:mt-[2rem] 1xl:text-[1.2rem] 1xl:pr-[2rem] 1xl:mt-[2.5rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem] 3xl:max-w-[600px] 3xl:mt-[3.5rem]">
                 BBT Squad is a new platform inviting car enthusiasts to pursue
                 their passion for automobiles without compromising on their
                 existing work areas.
               </p>
-              <ul className="pt-[0.5rem]">
+              <ul className="pt-[0.5rem] 1xl:pt-[1rem] 2xl:pt-[1.5rem] 3xl:pt-[2.5rem]">
                 <li className="flex flex-wrap items-center mt-[2rem]">
-                  <div className="flex flex-wrap justify-center items-center p-[0.5rem] w-[3.7rem] h-[3.7rem] border border-[#C9C9C9] rounded-[0.5rem]">
+                  <div className="flex flex-wrap justify-center items-center p-[0.5rem] w-[3.7rem] h-[3.7rem] border border-[#C9C9C9] rounded-[0.5rem] 2xl:w-[4rem] 2xl:h-[4rem] 3xl:w-[5rem] 3xl:h-[5rem]">
                     <img
                       src="/images/bbt-squad/squad-phone-icon.webp"
                       alt="Phone Icon"
-                      className="object-contain h-auto w-[1.73rem]"
+                      className="object-contain h-auto w-[1.73rem] 2xl:w-[2rem] 3xl:w-[2.3rem]"
                       width="25"
                       height="25"
                     />
                   </div>
-                  <div className="flex-1 pl-[1rem]">
-                    <p className="font-light text-[1.1rem] text-black  [&>a]:font-normal [&>a]:block [&>a]:text-[1.4rem]">
+                  <div className="flex-1 pl-[1rem] 3xl:pl-[2rem]">
+                    <p className="font-light text-[1.1rem] text-black  [&>a]:font-normal [&>a]:block [&>a]:text-[1.4rem] 2xl:text-[1.2rem] 3xl:text-[1.5rem] 2xl:[&>a]:text-[1.6rem] 3xl:[&>a]:text-[1.9rem]">
                       We are always happy to help{" "}
                       <a href="tel:+919999999915">(+91) 9999 9999 15</a>{" "}
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-wrap items-center mt-[2rem]">
-                  <div className="flex flex-wrap justify-center items-center p-[0.5rem] w-[3.7rem] h-[3.7rem] border border-[#C9C9C9] rounded-[0.5rem]">
+                <li className="flex flex-wrap items-center mt-[2rem] 1xl:mt-[2.5rem] 3xl:xl:mt-[3rem]">
+                  <div className="flex flex-wrap justify-center items-center p-[0.5rem] w-[3.7rem] h-[3.7rem] border border-[#C9C9C9] rounded-[0.5rem] 2xl:w-[4rem] 2xl:h-[4rem] 3xl:w-[5rem] 3xl:h-[5rem]">
                     <img
                       src="/images/bbt-squad/squad-mail-icon.webp"
                       alt="Phone Icon"
-                      className="object-contain h-auto w-[1.73rem]"
+                      className="object-contain h-auto w-[1.73rem] 2xl:w-[2rem] 3xl:w-[2.3rem]"
                       width="25"
                       height="25"
                     />
                   </div>
-                  <div className="flex-1 pl-[1rem]">
-                    <p className="font-light text-[1.1rem] text-black  [&>a]:font-normal [&>a]:block [&>a]:text-[1.4rem]">
+                  <div className="flex-1 pl-[1rem] 3xl:pl-[2rem]">
+                    <p className="font-light text-[1.1rem] text-black  [&>a]:font-normal [&>a]:block [&>a]:text-[1.4rem] 2xl:text-[1.2rem] 3xl:text-[1.5rem] 2xl:[&>a]:text-[1.6rem] 3xl:[&>a]:text-[1.9rem]">
                       The best way to get answer faster.{" "}
                       <a href="mailto:squad@bigboytoyz.com">
                         squad@bigboytoyz.com
@@ -176,24 +176,24 @@ const FormSection = () => {
                       className="opacity-0 absolute w-full h-full"
                       onChange={(e)=>setFileItem(e.target.files[0])}
                     />
-                    <span className="font-light text-[1.3rem] ">
+                    <span className="font-light text-[1.3rem] 3xl:text-[1.7rem]">
                     {fileItem ? fileItem.name : 'No File Chosen'}
                     </span>
                     <p className="flex items-center">
                       <img
                         src="/images/bbt-squad/squad-file-upload.webp"
                         alt=""
-                        className="object-contain h-auto w-[0.75rem]"
+                        className="object-contain h-auto w-[0.75rem] 3xl:w-[1rem]"
                       />
-                      <span className=" inline-block ml-3 font-medium text-[1.3rem] tracking-tight">
+                      <span className=" inline-block ml-3 font-medium text-[1.3rem] tracking-tight 3xl:text-[1.5rem]">
                         Upload File
                       </span>
                     </p>
                   </div>
                 </div>
-                <div className="submit-box mt-[2rem]">
+                <div className="submit-box mt-[2rem] 3xl:mt-[3rem]">
                   <button
-                    className="bg-black w-full h-[5.5rem] flex justify-center items-center text-white text-[1.5rem] rounded-[0.7rem] cursor-pointer xl:h-[5rem]"
+                    className="bg-black w-full h-[5.5rem] flex justify-center items-center text-white text-[1.5rem] rounded-[0.7rem] cursor-pointer xl:h-[5rem] 3xl:h-[6.5rem] 3xl:text-[1.89rem]"
                     type="submit"
                   >
                     Submit

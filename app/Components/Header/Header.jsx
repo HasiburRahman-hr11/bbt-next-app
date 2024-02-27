@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const styles = {
-  menuItem:'text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.9rem] xl:px-[1.5rem] 1xl:text-[1.05rem] 3xl:text-[1.4rem]'
+  menuItem:'text-white relative px-7 uppercase text-sm transition-all ease-in-out duration-300 lg:border-l lg:border-l-[#fff] hover:text-[#CE1921] xl:text-[0.9rem] xl:px-[1.5rem] 1xl:text-[1.05rem] 3xl:text-[1.35rem] 2xl:tracking-[0.4px] 3xl:tracking-[0.3px] 3xl:px-[1.9rem]'
 }
 
 const Header = ({ isPageHeader }) => {

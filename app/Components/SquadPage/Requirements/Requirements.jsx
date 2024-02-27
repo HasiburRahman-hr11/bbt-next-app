@@ -35,13 +35,13 @@ const reqList = [
 const UspItem = ({ usp, count }) => {
   return (
     <div className="pr-[2rem] h-full sm:pr-0">
-      <div className="bg-[#131313] text-white py-[2.2rem] px-[1.8rem] h-full xl:bg-[#212121] xl:rounded-[1rem] xl:pb-[4rem] xl:px-[3rem]">
-        <div className="count text-[5.5rem] font-medium text-[#343434] text-right leading-[1] xl:mr-[-1rem] xl:text-[6rem]">
+      <div className="bg-[#131313] text-white py-[2.2rem] px-[1.8rem] h-full xl:bg-[#212121] xl:rounded-[1rem] xl:pb-[4rem] xl:px-[3rem] 1xl:pb-[6rem] 2xl:px-[3.3rem] 3xl:pt-[3.5rem] 3xl:pr-[3.5rem] 3xl:rounded-[2rem] 3xl:pl-[4.3rem]">
+        <div className="count text-[5.5rem] font-medium text-[#343434] text-right leading-[1] xl:mr-[-1rem] xl:text-[6rem] 1xl:text-[7rem] 3xl:text-[9rem]">
           {count && count < 10 ? `0${count}` : count}
         </div>
         <div>
-          <h4 className="text-[1.6rem] mt-[4rem] mb-[1.5rem] xl:mt-[2.1rem] xl:mb-[1.2rem]">{usp.title}</h4>
-          <p className="text-[1rem] leading-[1.6] font-light md:text-[1.3rem] xl:text-[1.1rem]">
+          <h4 className="text-[1.6rem] mt-[4rem] mb-[1.5rem] xl:mt-[2.1rem] xl:mb-[1.2rem] 1xl:text-[1.75rem] 2xl:text-[1.85rem] 3xl:text-[2.4rem] 3xl:mt-[2.5rem]">{usp.title}</h4>
+          <p className="text-[1rem] leading-[1.6] font-light md:text-[1.3rem] xl:text-[1.1rem] 1xl:text-[1.2rem] 1xl:pr-[1.2rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem] 2xl:pr-[0.5rem] 2xl:leading-[1.4]">
             {usp.description}
           </p>
         </div>
@@ -103,24 +103,24 @@ const Requirements = () => {
     },
   };
   return (
-    <section className="bg-black pt-[7rem] pb-[6rem] mt-[-1px] sm:py-[8rem] xl:py-[12rem]">
+    <section className="bg-black pt-[7rem] pb-[6rem] mt-[-1px] sm:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[17rem]">
       <div className="max-1920">
-        <div className="sm:w-[91%] sm:mx-auto xl:w-[83%]">
+        <div className="sm:w-[91%] sm:mx-auto xl:w-[82%]">
           <div className="text-white px-[2rem] sm:px-0 lg:pr-[3rem] lg:w-[42%]">
-            <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] xl:text-[3.5rem]">
-              What It Takes To <br /> Be <b>At BBT</b>
+            <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] xl:text-[3.5rem] 1xl:text-[4.2rem] 1xl:tracking-[-0.1rem] 3xl:text-[5.8rem]">
+              What it takes to <br /> be <b>at BBT</b>
             </h2>
-            <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem] max-w-[29.1rem] md:max-w-[30rem] xl:max-w-[36rem] xl:text-[1.1rem] xl:leading-[1.8]">
+            <p className="font-light text-[1.2rem] mt-[1.2rem] pr-[1rem] max-w-[29.1rem] md:max-w-[30rem] xl:max-w-[36rem] xl:text-[1.1rem] xl:leading-[1.8] 1xl:text-[1.2rem] 1xl:max-w-[41rem] 1xl:mt-[2.5rem] 2xl:max-w-[44rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem] 3xl:max-w-[53rem] 3xl:mt-[3rem]">
               BBT believes that its future depends on its people who are capable
               enough to generate new ideas & plans that will help in taking the
               business to a new height altogether.
             </p>
-            <div className="hidden lg:block mt-[4rem]">
-              <img src="/images/bbt-squad/down-arrow-white.webp" alt="Arrow" className="object-contain h-auto w-[3rem] xl:w-[4rem]" width="53" height="84" />
+            <div className="hidden lg:block mt-[4rem] 2xl:mt-[4.5rem] 3xl:mt-[6rem]">
+              <img src="/images/bbt-squad/down-arrow-white.webp" alt="Arrow" className="object-contain h-auto w-[3rem] xl:w-[4rem] 2xl:w-[4.5rem] 3xl:w-[5.29rem]" width="53" height="84" />
             </div>
           </div>
-          <div className="hidden sm:block mt-[4rem] lg:mt-[-26rem] lg:w-[90%] lg:ml-auto xl:w-[82%]">
-            <div className="grid grid-cols-3 gap-[2rem] xl:gap-[3.5rem]">
+          <div className="hidden sm:block mt-[4rem] lg:mt-[-26rem] lg:w-[90%] lg:ml-auto xl:w-[82%] 1xl:mt-[-29rem] 3xl:mt-[-38rem]">
+            <div className="grid grid-cols-3 auto-rows-fr gap-[2rem] xl:gap-[3.5rem] 3xl:gap-[4.5rem]">
               <div className="hidden lg:block"></div>
               {reqList.map((usp, index) => (
                 <UspItem key={index} usp={usp} count={index + 1} />

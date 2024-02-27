@@ -535,10 +535,10 @@ img {
 .recent-uploads-slider .slick-list {
   padding: 0 7% 0 0 !important;
 }
-.squad-requirements-slider .slick-list{
+.squad-requirements-slider .slick-list {
   padding: 0 17% 0 0 !important;
 }
-.squad-requirements-slider .slick-slide > div{
+.squad-requirements-slider .slick-slide > div {
   height: 100%;
 }
 .hp-services-slider .slick-arrow,
@@ -552,7 +552,7 @@ img {
 .hp-featured-slider .curve-slider-arrow img {
   filter: invert(1);
 }
-.select-box select{
+.select-box select {
   -webkit-appearance: none;
 }
 
@@ -974,6 +974,10 @@ img {
   h2 {
     font-size: 4.5rem;
   }
+  .container {
+    width: 82%;
+  }
+
   .btn {
     min-width: 26rem;
     font-size: 1.8rem;

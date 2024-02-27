@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import BreadCrumb from "../../CommonComponents/BreadCrumb/BreadCrumb";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
@@ -29,9 +28,9 @@ const BannerSection = () => {
               className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
             <div
-              className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[83%] lg:mx-auto"
+              className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               //   data-aos="fade-up"
               //   data-aos-easing="linear"
               //   data-aos-duration="500"
@@ -54,10 +53,10 @@ const BannerSection = () => {
                   BBT Squad
                 </span>
               </p>
-              <h1 className="font-extralight text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 2xl:text-[6rem] 3xl:text-[7.5rem]">
+              <h1 className="font-extralight text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem]">
                 The <b>BBT Squad</b> <br /> - Join Us
               </h1>
-              <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem]">
+              <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
                 BBT Squad is a new platform inviting car enthusiasts to pursue
                 their passion <br /> for automobiles without compromising on
                 their existing work areas.
@@ -71,9 +70,9 @@ const BannerSection = () => {
                 alt="Scroll Down"
                 width="19"
                 height="29"
-                className="inline-block object-contain w-8 xl:w-[1.5rem] 1xl:w-6"
+                className="inline-block object-contain w-8 xl:w-[1.5rem] 1xl:w-6 3xl:w-[1.9rem]"
               />
-              <span className="uppercase mt-5 text-base xl:text-[0.8rem]  1xl:text-[0.9rem]">Scroll Down</span>
+              <span className="uppercase mt-5 text-base xl:text-[0.8rem] 3xl:text-[0.9rem]">Scroll Down</span>
             </div>
           </div>
         </div>
