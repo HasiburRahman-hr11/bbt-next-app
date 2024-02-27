@@ -96,7 +96,7 @@ const VisitSection = () => {
                 </div>
                 <a
                   href="#"
-                  className="flex flex-wrap justify-between items-center w-full h-[4.8rem] bg-white text-black px-[3rem] rounded-[0.6rem] xl:h-[4rem] xl:px-[2rem] 1xl:h-[4.4rem] 2xl:h-[4.8rem] 3xl:h-[6rem]"
+                  className="flex flex-wrap justify-between items-center w-full h-[4.8rem] bg-white text-black px-[3rem] rounded-[0.6rem] xl:h-[4rem] xl:px-[2rem] 1xl:h-[4.4rem] 2xl:h-[4.8rem] 3xl:h-[6rem] hover:bg-[#f1f1f1] transition-all duration-500 ease-in-out"
                 >
                   <span className="text-[1.4rem] xl:text-[1.3rem] 1xl:text-[1.5rem] 2xl:text-[1.65rem] 3xl:text-[1.8rem]">
                     Talk to Us

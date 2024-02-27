@@ -13,7 +13,7 @@ const LifeStyle = () => {
             <div className="md:block">
               <Link
                 href="#"
-                className="w-full h-[5rem] flex justify-center items-center text-[1.4rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto sm:max-w-[300px] xl:max-w-none xl:px-[8rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:max-w-none 1xl:px-[9rem] 1xl:text-[1.3rem] 2xl:h-[6rem] 3xl:h-[7.37rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:min-w-[31rem]"
+                className="w-full h-[5rem] flex justify-center items-center text-[1.4rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto sm:max-w-[300px] xl:max-w-none xl:px-[8rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:max-w-none 1xl:px-[9rem] 1xl:text-[1.3rem] 2xl:h-[6rem] 3xl:h-[7.37rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:min-w-[31rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
               >
                 Join Now
               </Link>

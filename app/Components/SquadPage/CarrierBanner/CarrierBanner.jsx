@@ -31,7 +31,7 @@ const CarrierBanner = () => {
                 </p>
               </div>
               <div className="text-center sm:text-left sm:mt-[3rem] 3xl:mt-[4rem]">
-                <Link href="/bbt-squad" className="w-full max-w-[31rem] h-[5rem] flex justify-center items-center text-[1.4rem] bg-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium sm:max-w-[25rem] sm:ml-0 xl:text-[1.2rem] xl:h-[4rem] xl:max-w-[20rem] 1xl:max-w-[24rem] 3xl:max-w-[31rem] 3xl:h-[5rem] 3xl:text-[1.4rem]">View Openings</Link>
+                <Link href="/bbt-squad" className="w-full max-w-[31rem] h-[5rem] flex justify-center items-center text-[1.4rem] bg-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium sm:max-w-[25rem] sm:ml-0 xl:text-[1.2rem] xl:h-[4rem] xl:max-w-[20rem] 1xl:max-w-[24rem] 3xl:max-w-[31rem] 3xl:h-[5rem] 3xl:text-[1.4rem] hover:bg-[#f1f1f1] transition-all duration-500 ease-in-out">View Openings</Link>
               </div>
             </div>
           </div>

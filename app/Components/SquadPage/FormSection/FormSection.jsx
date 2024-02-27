@@ -193,7 +193,7 @@ const FormSection = () => {
                 </div>
                 <div className="submit-box mt-[2rem] 3xl:mt-[3rem]">
                   <button
-                    className="bg-black w-full h-[5.5rem] flex justify-center items-center text-white text-[1.5rem] rounded-[0.7rem] cursor-pointer xl:h-[5rem] 3xl:h-[6.5rem] 3xl:text-[1.89rem]"
+                    className="bg-black w-full h-[5.5rem] flex justify-center items-center text-white text-[1.5rem] rounded-[0.7rem] cursor-pointer xl:h-[5rem] 3xl:h-[6.5rem] 3xl:text-[1.89rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
                     type="submit"
                   >
                     Submit
