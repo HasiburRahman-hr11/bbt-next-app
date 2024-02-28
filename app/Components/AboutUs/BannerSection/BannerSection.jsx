@@ -1,6 +1,19 @@
-import React from "react";
+"use client";
+import React, { useRef, useState } from "react";
 
 const BannerSection = () => {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef(null);
+
+  const handlePlayVideo = () => {
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setPlaying(false);
+    }
+  };
   return (
     <section className="bg-white pt-[3rem]">
       <div className="max-1920">
@@ -17,15 +30,19 @@ const BannerSection = () => {
               market in India.
             </p>
           </div>
-          <div className="relative mt-[2.5rem] mb-[4rem]">
-            <div>
-              <video
-                src=""
-                className="w-full block h-auto min-h-[43.3rem]"
-                poster="/images/about-us/about-video-thumb.webp"
-              ></video>
-            </div>
-            <div className="play-btn absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[7.5rem] h-[7.5rem] cursor-pointer">
+          <div className="relative mt-[2.5rem] mb-[4rem] ">
+            <video
+              src="https://cdn.bigboytoyz.com/new-version/assets/images/newluxurycars.mp4"
+              className="w-full block h-full object-cover min-h-[432px]"
+              poster="/images/about-us/about-video-thumb.webp"
+              ref={videoRef}
+            ></video>
+            <div
+              className={`play-btn absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[7.5rem] h-[7.5rem] cursor-pointer ${
+                playing ? "opacity-[0]" : "opacity-[1]"
+              }`}
+              onClick={handlePlayVideo}
+            >
               <img
                 src="/images/about-us/about-play-btn.webp"
                 alt="Play button"
