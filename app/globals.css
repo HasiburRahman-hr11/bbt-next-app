@@ -517,30 +517,35 @@ img {
 .common-car-item:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.hp-services-slider .slick-list {
-  padding: 0 10% 0 0 !important;
-}
+
 .hp-featured-slider .slick-arrow {
   display: none;
 }
-.hp-featured-slider .slick-list {
-  padding: 0 10% 0 0 !important;
-}
+.hp-services-slider .slick-lis,
+.hp-featured-slider .slick-list,
 .compare-blog-slider .slick-list {
   padding: 0 10% 0 0 !important;
 }
 .showroom-image-slider .slick-list {
   padding: 0 3% 0 0 !important;
 }
-.recent-uploads-slider .slick-list {
+.recent-uploads-slider .slick-list,
+.team-founder-slider .slick-list {
   padding: 0 7% 0 0 !important;
 }
 .squad-requirements-slider .slick-list {
   padding: 0 17% 0 0 !important;
 }
-.squad-requirements-slider .slick-slide > div {
+.celebration-slider .slick-list{
+  padding: 0 15% 0 0 !important;
+}
+
+
+.team-founder-slider .slick-slide > div,
+.squad-requirements-slider .slick-slide > div{
   height: 100%;
 }
+
 .hp-services-slider .slick-arrow,
 .recent-uploads-slider .slick-arrow {
   display: none !important;
