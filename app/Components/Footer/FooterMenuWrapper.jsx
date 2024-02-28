@@ -7,7 +7,6 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import Link from "next/link";
-import Image from "next/image";
 
 const FooterMenuWrapper = () => {
   const [open, setOpen] = React.useState(0);
