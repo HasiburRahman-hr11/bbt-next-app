@@ -6,7 +6,7 @@ import OtherBrands from "../Components/SellCar/OtherBrands/OtherBrands";
 import MondateCheck from "../Components/SellCar/MondateCheck/MondateCheck";
 import Testimonial from "../Components/SellCar/Testimonial/Testimonial";
 import SellProcess from "../Components/SellCar/SellProcess/SellProcess";
-import BbtFeatured from "../Components/CommonComponents/BbtFeatured/BbtFeatured";
+import BbtFeatured from "../Components/SellCar/BbtFeatured/BbtFeatured";
 import Header from '../Components/Header/Header';
 import Footer from '../Components/Footer/Footer';
 

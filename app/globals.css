@@ -521,8 +521,10 @@ img {
 .hp-featured-slider .slick-arrow {
   display: none;
 }
-.hp-services-slider .slick-lis,
-.hp-featured-slider .slick-list,
+.hp-featured-slider .slick-list{
+  padding: 0 16% 0 0 !important;
+}
+.hp-services-slider .slick-list,
 .compare-blog-slider .slick-list {
   padding: 0 10% 0 0 !important;
 }
@@ -542,7 +544,8 @@ img {
 
 
 .team-founder-slider .slick-slide > div,
-.squad-requirements-slider .slick-slide > div{
+.squad-requirements-slider .slick-slide > div,
+.hp-featured-slider .slick-slide > div{
   height: 100%;
 }
 
@@ -925,6 +928,9 @@ img {
   /* Homepage */
   .inclusionSlider .slick-slider {
     padding: 0 10rem;
+  }
+  .hp-featured-slider .slick-list{
+    padding: 0 10% 0 0 !important;
   }
 }
 @media only screen and (min-width: 1440px) {
