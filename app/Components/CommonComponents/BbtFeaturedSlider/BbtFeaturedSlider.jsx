@@ -25,7 +25,7 @@ const FeaturedItem = ({ data }) => {
   return (
     <Link
       href={data?.url ? data.url : "#"}
-      className="relative block w-full h-full group pr-7 md:mx-10 lg:ml-0 lg:pr-16 xl:pr-20 3xl:pr-28 common-car-item rounded-[3rem] xl:my-5 1xl:rounded-[4rem] 2xl:rounded-[5rem] overflow-hidden"
+      className="relative block group mr-7 md:mx-10 lg:ml-0 lg:mr-16 xl:mr-20 3xl:mr-28 common-car-item rounded-[3rem] xl:my-5 1xl:rounded-[4rem] 2xl:rounded-[5rem] overflow-hidden"
     >
       <div className="h-full">
         <img
@@ -35,7 +35,7 @@ const FeaturedItem = ({ data }) => {
           alt={data?.title ? data.title : "BBT World"}
           width="450"
           height="587"
-          className="block w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
+          className="block w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out rounded-[3rem] 1xl:rounded-[4rem] 2xl:rounded-[5rem]"
         />
       </div>
       <h5 className="text-white absolute bottom-14 left-14 2xl:text-4.5xl 3xl:text-6xl 3xl:bottom-24 3xl:left-24">
@@ -93,7 +93,7 @@ const BbtFeaturedSlider = ({ sliderList }) => {
             <FeaturedItem data={item} key={index} />
           ))}
         </Slider>
-        <div className="container lg:w-full lg:p-0 xl:pr-28">
+        <div className="lg:w-full lg:p-0 xl:pr-28 pr-[2rem]">
           <div
             className="progress mt-16 2xl:mt-32 3xl:mt-40"
             style={{
