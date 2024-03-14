@@ -1,5 +1,8 @@
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
-import React from "react";
 
 const teamMembers = [
   { image: "/images/about-us/about-team-member-1.webp" },
@@ -17,10 +20,18 @@ const teamMembers = [
 ];
 
 const TeamSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white py-[5rem] lg:py-[8rem] xl:py-[12rem] 3xl:py-[14rem]">
       <div className="max-1920">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <h2 className="font-light [&>b]:font-normal leading-[1.1] tracking-[-1.5px] lg:hidden">
             Motivated <b>Team</b>
           </h2>

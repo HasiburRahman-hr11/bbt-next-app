@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const styles = {
   tabMenu:
@@ -94,24 +96,33 @@ const MissionSection = () => {
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white py-[5rem] lg:py-[8rem] xl:py-[10rem] 2xl:py-[12rem]">
       <div className="max-1920">
         <div className="container">
-          <h3 className="titleWithLine mobileLine">
-            <span className="bg-[#fff] pr-[3rem] inline-block relative z-10 text-[2.5rem] tracking-[-2px] xl:text-[3rem] xl:pr-[4rem] 1xl:text-[3.7rem] 3xl:text-[4.5rem]">
-              Mission
-            </span>
-          </h3>
-          <h2 className="font-normal tracking-[-2px] leading-[1.1] mt-[3rem] mb-[2rem] [&>br]:hidden lg:[&>br]:block xl:text-[3.9rem] xl:leading-[1.3] xl:mb-[3rem] 1xl:text-[4.3rem] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px] 3xl:mt-[4.5rem]">
-            The journey began in 2009 when BBT <br /> was founded in new delhi,
-            India.
-          </h2>
-          <p className="font-light text-[1.2rem] leading-[1.3] text-justify md:text-[1.4rem] xl:text-[1.13rem] xl:tracking-tighter xl:font-normal 1xl:text-[1.35rem] 2xl:text-[1.4rem]  3xl:text-[1.7rem] 3xl:tracking-tight">
-            Since then our mission has been to provide quality exotic cars with
-            highly personalized care at a competitive price. Creating a new
-            benchmark for excellence in every aspect of our business.
-          </p>
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <h3 className="titleWithLine mobileLine">
+              <span className="bg-[#fff] pr-[3rem] inline-block relative z-10 text-[2.5rem] tracking-[-2px] xl:text-[3rem] xl:pr-[4rem] 1xl:text-[3.7rem] 3xl:text-[4.5rem]">
+                Mission
+              </span>
+            </h3>
+            <h2 className="font-normal tracking-[-2px] leading-[1.1] mt-[3rem] mb-[2rem] [&>br]:hidden lg:[&>br]:block xl:text-[3.9rem] xl:leading-[1.3] xl:mb-[3rem] 1xl:text-[4.3rem] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px] 3xl:mt-[4.5rem]">
+              The journey began in 2009 when BBT <br /> was founded in new
+              delhi, India.
+            </h2>
+            <p className="font-light text-[1.2rem] leading-[1.3] text-justify md:text-[1.4rem] xl:text-[1.13rem] xl:tracking-tighter xl:font-normal 1xl:text-[1.35rem] 2xl:text-[1.4rem]  3xl:text-[1.7rem] 3xl:tracking-tight">
+              Since then our mission has been to provide quality exotic cars
+              with highly personalized care at a competitive price. Creating a
+              new benchmark for excellence in every aspect of our business.
+            </p>
+          </div>
 
           {/* For Mobile */}
           <div className="block xl:hidden">
@@ -185,7 +196,12 @@ const MissionSection = () => {
           </div>
 
           {/* FOR DESKTOP */}
-          <div className="hidden xl:block mt-[6rem] relative 2xl:mt-[9rem]">
+          <div
+            className="hidden xl:block mt-[6rem] relative 2xl:mt-[9rem]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <div className="flex flex-wrap justify-between">
               {missionList.slice(0, 3).map((item, index) => (
                 <div
@@ -227,8 +243,11 @@ const MissionSection = () => {
 
             <div className="flex flex-wrap justify-evenly mx-auto mt-[-5.3rem] 3xl:mt-[-6.8rem]">
               {missionList.slice(3, 5).map((item, index) => (
-                <div className="w-[23.5%] pt-[8rem] relative 3xl:pt-[11rem]" key={index}>
-                 <div className="bg-[#FAFAFA] py-[3rem] px-[2.5rem] rounded-[1rem] xl:px-[1.5rem] xl:pt-[1.7rem] xl:pb-[1.4rem]">
+                <div
+                  className="w-[23.5%] pt-[8rem] relative 3xl:pt-[11rem]"
+                  key={index}
+                >
+                  <div className="bg-[#FAFAFA] py-[3rem] px-[2.5rem] rounded-[1rem] xl:px-[1.5rem] xl:pt-[1.7rem] xl:pb-[1.4rem]">
                     <div>
                       <div className="flex justify-between">
                         <h3 className=" font-normal leading-[1.1] w-[70%] text-[1.6rem] xl:font-medium 2xl:text-[1.8rem] 3xl:text-[2.2rem]">

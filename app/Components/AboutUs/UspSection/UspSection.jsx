@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const uspList = [
   {
@@ -38,11 +40,20 @@ const UspSection = () => {
   const [open, setOpen] = React.useState(1);
 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-black py-[5rem] text-white lg:py-[8rem] xl:py-[14rem] 1xl:pb-[17rem] 3xl:pt-[17rem] 3xl:pb-[20rem]">
       <div className="max-1920">
         <div className="container">
-          <div className="w-[84%] mx-auto lg:w-full">
+          <div
+            className="w-[84%] mx-auto lg:w-full"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <div className="text-center xl:text-left xl:w-[39%]">
               <h2 className="font-normal xl:text-[4.2rem] 3xl:text-[5.8rem]">
                 Our Usps{" "}
