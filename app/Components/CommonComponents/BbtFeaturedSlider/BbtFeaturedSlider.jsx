@@ -38,7 +38,7 @@ const FeaturedItem = ({ data }) => {
           className="block w-full h-full object-cover group-hover:scale-[1.1] transition-all duration-500 ease-in-out rounded-[3rem] 1xl:rounded-[4rem] 2xl:rounded-[5rem]"
         />
       </div>
-      <h5 className="text-white absolute bottom-14 left-14 2xl:text-4.5xl 3xl:text-6xl 3xl:bottom-24 3xl:left-24">
+      <h5 className="text-white absolute bottom-14 left-14 xl:text-[2.5rem] xl:left-[4.5rem] 2xl:text-4.5xl 3xl:text-[3.5rem] 3xl:bottom-24 3xl:left-24">
         {data?.title ? data.title : "BBT World"}
       </h5>
       <span className="w-14 h-14 rounded-50% bg-white flex items-center justify-center p-1 absolute top-12 right-12 2xl:w-20 2xl:h-20 3xl:w-24 3xl:h-24 3xl:top-16 3xl:right-16 group-hover:bg-black transition-all duration-500 ease-in">

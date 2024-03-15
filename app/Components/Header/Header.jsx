@@ -18,7 +18,7 @@ const Header = ({ isPageHeader }) => {
     >
       <div className="max-1920">
         <div
-          className={`header-wrapper w-full p-[3rem] mx-auto lg:py-[2rem] lg:px-[4rem] 1xl:py-[2.5rem] 3xl:py-[3rem] 3xl:px-[5.5rem] ${
+          className={`header-wrapper w-full p-[3rem] mx-auto lg:py-[2rem] lg:px-[4rem] 1xl:py-[2.5rem] 2xl:px-[4.3rem] 3xl:py-[3rem] 3xl:px-[5.5rem] ${
             isPageHeader ? "py-[2rem] px-[2rem] 2xl:py-[3rem] 2xl:px-[4.5rem] 3xl:py-[3.5rem] 3xl:px-[5.5rem]" : ""
           }`}
         >
@@ -37,12 +37,12 @@ const Header = ({ isPageHeader }) => {
             </div>
             <div className="header-logo  lg:order-1 hidden lg:block">
               <Link href="/" className="block">
-                <Image
+                <img
                   src="/images/bbt-logo-header.webp"
                   width="105"
                   height="70"
                   alt="BBT Logo"
-                  className="w-24 object-contain lg:w-32 xl:w-[7rem] 2xl:w-32 3xl:w-[10.5rem]"
+                  className="w-24 object-contain lg:w-32 xl:w-[7rem] 2xl:w-[8.7rem] 3xl:w-[10.5rem]"
                   priority="high"
                 />
               </Link>
