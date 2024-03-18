@@ -45,13 +45,13 @@ const BannerSection = () => {
                   The Team
                 </span>
               </p>
-              <h1 className="font-extralight [&>b]:font-normal text-[3.6rem] tracking-[-2px] leading-[1.15] md:max-w-[40rem] lg:text-[4rem] xl:text-[5rem] xl:max-w-[56rem] 1xl:text-[5.45rem] 1xl:leading-[1.25] 2xl:text-[5.8rem] 3xl:max-w-[88rem] 3xl:text-[7.5rem]">
+              <h1 className="font-extralight [&>b]:font-normal text-[3.6rem] tracking-[-2px] leading-[1.15] md:max-w-[40rem] lg:text-[4rem] xl:text-[5rem] xl:max-w-[56rem] 1xl:text-[5.45rem] 1xl:leading-[1.25] 2xl:text-[5.8rem] 3xl:max-w-[88rem] 3xl:text-[7.5rem] 3xl:leading-[1.15]">
                 Discover our team of luxury{" "}
                 <b>car enthusiasts ready to assist</b>
               </h1>
             </div>
             <div className="container">
-              <div className="flex justify-between px-[1.5rem] sm:max-w-[39rem] sm:mt-[5rem] sm:px-0 md:max-w-[32rem] lg:justify-start xl:max-w-none xl:mt-[7rem] 1xl:mt-[7.5rem]">
+              <div className="flex justify-between px-[1.5rem] sm:max-w-[39rem] sm:mt-[5rem] sm:px-0 md:max-w-[32rem] lg:justify-start xl:max-w-none xl:mt-[7rem] 1xl:mt-[7.5rem] 3xl:mt-[9rem]">
                 <div className="w-[47.2%] bg-white py-[3rem] rounded-[1rem] h-[inherit] text-center lg:w-[11rem] lg:pt-[1.5rem] lg:pb-[1rem] lg:px-[1.5rem] xl:w-[12.5rem] xl:pt-[2.2rem] 1xl:w-[14rem] 2xl:w-[15rem] 2xl:pt-[2.8rem] 2xl:pb-[1.5rem] 3xl:w-[18rem] 3xl:h-[18.6rem]">
                   <img
                     src="/images/team-page/team-banner-icon-1.webp"

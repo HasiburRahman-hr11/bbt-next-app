@@ -6,7 +6,9 @@ import Slider from "react-slick";
 
 const styles = {
   tabMenu:
-    "text-center text-[1.2rem] border border-[#D2D2D2] rounded-[3rem] leading-[1] px-[1.6rem] py-[0.7rem] block mr-[0.6rem] mt-[0.8rem] xl:text-[1.4rem] xl:px-[2rem] xl:py-[1rem] xl:mx-[0.7rem] 1xl:text-[1.6rem] 2xl:text-[1.8rem] 2xl:px-[2.3rem] 2xl:py-[1.2rem] 3xl:text-[2.19rem]",
+    "text-center text-[1.2rem] border border-[#D2D2D2] rounded-[3rem] leading-[1] px-[1.6rem] py-[0.7rem] block mr-[0.6rem] mt-[0.8rem] xl:text-[1.4rem] xl:px-[2rem] xl:py-[1rem] xl:mx-[0.7rem] 1xl:text-[1.6rem] 2xl:text-[1.8rem] 2xl:px-[2.3rem] 2xl:py-[1.2rem] 3xl:text-[2.19rem] 3xl:px-[2.8rem] 3xl:py-[1.7rem] 3xl:mx-[0.8rem]",
+  teamMemberItem:
+    "grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4 xl:gap-[3.5rem] 3xl:xl:gap-[5.5rem] 3xl:[&_img]:max-h-[39.5rem]",
   teamMemberTitle:
     "text-[1.5rem] tracking-[-0.5px] font-medium xl:text-[2rem] xl:tracking-[-1px] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem]",
   teamMemberSub:
@@ -41,7 +43,7 @@ const TeamSection = () => {
     setActiveTab(tab);
   };
   return (
-    <section className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] md:pb-[12rem] lg:pb-[15rem]  1xl:pb-[18rem]">
+    <section className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] md:pb-[12rem] lg:pb-[15rem]  1xl:pb-[18rem] 3xl:pt-[12rem]">
       <div className="max-1920">
         <div className="container">
           <h3 className="titleWithLine mobileLine hidden md:block">
@@ -52,13 +54,13 @@ const TeamSection = () => {
           <h2 className="font-light [&>b]:font-normal leading-[1.1] tracking-[-1.2px] md:hidden">
             The <b>Team</b>
           </h2>
-          <div className="md:mt-[2rem] xl:mt-[4rem] 2xl:mt-[6rem]">
-            <p className="font-light text-[1.2rem] leading-[1.4] mt-[1rem] [&>br]:hidden md:text-center md:text-[2rem] md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1] 2xl:text-[4.6rem] 2xl:text-[5rem]3xl:text-[5.8rem]">
+          <div className="md:mt-[2rem] xl:mt-[4rem] 2xl:mt-[6rem] 3xl:mt-[7rem]">
+            <p className="font-light text-[1.2rem] leading-[1.4] mt-[1rem] [&>br]:hidden md:text-center md:text-[2rem] md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1] 2xl:text-[4.6rem] 3xl:text-[5.9rem] 3xl:leading-[1.1]">
               We believe that without the key <br /> value of <b>our people.</b>
             </p>
 
             <div>
-              <ul className="flex flex-wrap mt-[1.5rem] md:justify-center 1xl:mt-[3rem]">
+              <ul className="flex flex-wrap mt-[1.5rem] md:justify-center 1xl:mt-[3rem] 3xl:mt-[5rem]">
                 <li onClick={() => handleTabChange(`tab-1`)}>
                   <a
                     href="#loanFinance"
@@ -128,7 +130,7 @@ const TeamSection = () => {
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               Loans & Finance Team
             </h3>
-            <div className="grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4 xl:gap-[3.5rem]">
+            <div className={styles.teamMemberItem}>
               <div>
                 <img
                   src="/images/team-page/lf-img-1.webp"
@@ -158,11 +160,14 @@ const TeamSection = () => {
           </div>
 
           {/* Accounts Team */}
-          <div id="accountsTeam" className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem]">
+          <div
+            id="accountsTeam"
+            className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]"
+          >
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               Accounts Team
             </h3>
-            <div className="grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4">
+            <div className={styles.teamMemberItem}>
               <div>
                 <img
                   src="/images/team-page/accounts-img-1.webp"
@@ -190,11 +195,14 @@ const TeamSection = () => {
           </div>
 
           {/* After Sales */}
-          <div id="afterSales" className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem]">
+          <div
+            id="afterSales"
+            className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]" 
+          >
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               After Sales
             </h3>
-            <div className="grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4">
+            <div className={styles.teamMemberItem}>
               <div>
                 <img
                   src="/images/team-page/after-sales-1.webp"
@@ -224,11 +232,14 @@ const TeamSection = () => {
           </div>
 
           {/* Marketing */}
-          <div id="marketingTeam" className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem]">
+          <div
+            id="marketingTeam"
+            className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]"
+          >
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               Marketing Team
             </h3>
-            <div className="grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4">
+            <div className={styles.teamMemberItem}>
               <div>
                 <img
                   src="/images/team-page/marketing-img-1.webp"
@@ -244,14 +255,17 @@ const TeamSection = () => {
           </div>
         </div>
         {/* Sales Team */}
-        <div id="salesTeam" className=" mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem]">
+        <div
+          id="salesTeam"
+          className=" mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]"
+        >
           <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem] pl-[2rem] md:pl-[4.5%] lg:pl-[8.5%]">
             Sales Team
           </h3>
 
           {/* For Desktop */}
           <div className="hidden md:block container">
-            <div className="grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4">
+            <div className={styles.teamMemberItem}>
               <div>
                 <img
                   src="/images/team-page/sales-img-1.webp"

@@ -37,7 +37,7 @@ function NextArrow(props) {
 
 const SliderItem = ({ data }) => {
   return (
-    <div className="pr-[2rem] xl:pr-[4rem] 2xl:pr-[5.5rem]">
+    <div className="pr-[2rem] xl:pr-[4rem] 2xl:pr-[5.5rem] 3xl:pr-[7.5rem]">
       <div className="relative rounded-[3rem] overflow-hidden xl:rounded-[4rem]">
         <img
           src={
@@ -90,7 +90,7 @@ const Celebration = () => {
   };
 
   return (
-    <section className="bg-white py-[5rem] sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem]">
+    <section className="bg-white py-[5rem] sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="block lg:flex lg:flex-wrap lg:justify-between lg:pl-[8.5%] items-center">
           <div className="w-full lg:w-[30%] xl:w-[23.5%]">
@@ -102,7 +102,7 @@ const Celebration = () => {
                 <img
                   src="/images/team-page/celebration-icon.webp"
                   alt="Icon"
-                  className=" object-contain h-[6rem] w-auto xl:h-[8.3rem] 1xl:h-[10rem]"
+                  className=" object-contain h-[6rem] w-auto xl:h-[8.3rem] 1xl:h-[10rem] 3xl:h-[12.5rem]"
                 />
               </div>
               <p className="font-light text-[1.2rem] leading-[1.4] mt-[2rem] w-[90%] xl:w-full xl:tracking-tight xl:text-[1.13rem] xl:leading-[1.4] 1xl:text-[1.2rem] 1xl:text-justify 2xl:text-[1.4rem] 3xl:text-[1.6rem]">

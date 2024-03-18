@@ -58,15 +58,15 @@ const awards = [
 const SliderItem = ({ data }) => {
   return (
     <div className="pr-[1.5rem] h-full sm:pr-0 sm:w-[23%] sm:h-[inherit] sm:mt-[1.5rem] 1xl:w-[22%]">
-      <div className="bg-[#191919] pt-[1.5rem] h-full text-center px-[1rem] min-h-[18.8rem] sm:min-h-[unset] md:pt-[1rem] md:px-[0.5rem] md:min-h-[15rem] md:flex md:flex-col md:justify-around lg:min-h-[16rem] xl:min-h-none xl:block xl:pt-[1.5rem] xl:px-[0.7rem] 1xl:px-[1.3rem]">
-        <div className="px-[1.7rem] sm:px-[0] lg:px-[0.5rem] xl:px-[0.8rem]">
+      <div className="bg-[#191919] pt-[1.5rem] h-full text-center px-[1rem] min-h-[18.8rem] sm:min-h-[unset] md:pt-[1rem] md:px-[0.5rem] md:min-h-[15rem] md:flex md:flex-col md:justify-around lg:min-h-[16rem] xl:min-h-none xl:block xl:pt-[1.5rem] xl:px-[0.7rem] 1xl:px-[1.3rem] 3xl:pt-[2rem]">
+        <div className="px-[1.7rem] sm:px-[0] lg:px-[0.5rem] xl:px-[0.8rem] 3xl:px-[1.2rem]">
           <img
             src={data.thumbnail}
             alt="Slider Image"
             className="w-full h-auto object-cover"
           />
         </div>
-        <p className="text-[1.5rem] w-full tracking-[-1px] font-light mt-[1.5rem] pb-[1.5rem] sm:text-[1.2rem] md:pb-[0.7rem] md:text-[1rem] md:mt-[0.7rem] xl:text-[1.2rem] xl:min-h-[4.2rem] xl:pb-[0] xl:flex xl:items-center xl:justify-center 1xl:text-[1.25rem] 1xl:tracking-[-0.5px] 1xl:min-h-[5.5rem] 1xl:py-[1rem]">
+        <p className="text-[1.5rem] w-full tracking-[-1px] font-light mt-[1.5rem] pb-[1.5rem] sm:text-[1.2rem] md:pb-[0.7rem] md:text-[1rem] md:mt-[0.7rem] xl:text-[1.2rem] xl:min-h-[4.2rem] xl:pb-[0] xl:flex xl:items-center xl:justify-center 1xl:text-[1.25rem] 1xl:tracking-[-0.5px] 1xl:min-h-[5.5rem] 1xl:py-[1rem] 3xl:text-[1.8rem] 3xl:tracking-[-1px] 3xl:min-h-[7.5rem]">
           {data.title}
         </p>
       </div>
@@ -76,7 +76,7 @@ const SliderItem = ({ data }) => {
 
 const Founder = () => {
   return (
-    <section className="bg-black py-[5rem] text-white sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem]">
+    <section className="bg-black py-[5rem] text-white sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="container">
           <h3 className="titleWithLine titleWhiteLine mobileLine">
@@ -84,7 +84,7 @@ const Founder = () => {
               The Founder
             </span>
           </h3>
-          <div className="mt-[2rem] sm:mt-[3rem] lg:mt-[5rem] xl:mt-[7rem] 1xl:mt-[8rem]">
+          <div className="mt-[2rem] sm:mt-[3rem] lg:mt-[5rem] xl:mt-[7rem] 1xl:mt-[8rem] 3xl:mt-[11rem]">
             <div className="sm:hidden">
               <h2 className="text-[2.2rem] tracking-[-1.5px]">Jatin Ahuja</h2>
               <p className="text-[1.2rem] font-light">
@@ -101,7 +101,7 @@ const Founder = () => {
               </div>
               <div className="sm:w-[50%] lg:w-[43.5%]">
                 <div className="hidden sm:block">
-                  <h2 className="text-[2.2rem] tracking-[-1.5px] lg:text-[3rem] lg:font-[400] 1xl:text-[3.3rem] 2xl:text-[3.5rem] 3xl:text-[4.5rem]">
+                  <h2 className="text-[2.2rem] tracking-[-1.5px] lg:text-[3rem] lg:font-[400] 1xl:text-[3.3rem] 2xl:text-[3.5rem] 3xl:text-[4.5rem] 3xl:tracking-[-3px]">
                     Jatin Ahuja
                   </h2>
                   <p className="text-[1.2rem] font-light lg:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.2rem]">
@@ -115,11 +115,11 @@ const Founder = () => {
                       alt="Quote Icon"
                       className="h-auto object-contain w-[2.19rem] mt-[0.5rem] xl:w-[3rem] 3xl:w-[4.3rem]"
                     />
-                    <p className="flex-1 ml-[1rem] underline text-[1.5rem] leading-[1.4] xl:text-[2rem] 1xl:text-[2.2rem] 3xl:text-[2.8rem]">
+                    <p className="flex-1 ml-[1rem] underline text-[1.5rem] leading-[1.4] xl:text-[2rem] 1xl:text-[2.2rem] 3xl:text-[2.8rem] 3xl:ml-[2rem]">
                       Great entrepreneurs are more <br /> born than made.
                     </p>
                   </div>
-                  <p className="font-light text-[1.2rem] leading-[1.5] mt-[2rem] sm:mt-[1rem] sm:mb-[1.5rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] xl:mb-[3rem] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 2xl:mb-[4.5rem] 3xl:text-[1.6rem]">
+                  <p className="font-light text-[1.2rem] leading-[1.5] mt-[2rem] sm:mt-[1rem] sm:mb-[1.5rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] xl:mb-[3rem] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 2xl:mb-[4.5rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0]">
                     Mr Jatin Ahuja is an entrepreneur in the true sense of the
                     word. His passion for the industry saw him initiating his
                     career at the young age of 17. With his dedication,
@@ -134,7 +134,7 @@ const Founder = () => {
           </div>
 
           {/* For Desktop */}
-          <div className="hidden sm:block md:flex md:flex-wrap md:justify-between md:mt-[5rem] lg:mt-[8rem]">
+          <div className="hidden sm:block md:flex md:flex-wrap md:justify-between md:mt-[5rem] lg:mt-[8rem] 3xl:mt-[11rem]">
             <div className="my-[5rem] w-full md:w-[48.5%] md:my-0">
               <h4 className="mb-[1rem] text-[1.8rem] tracking-[-1.5px] xl:font-normal xl:tracking-[-0.5px] xl:text-[2.1rem] 3xl:text-[3.2rem]">
                 Featured In

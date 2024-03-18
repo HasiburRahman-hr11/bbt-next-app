@@ -1035,6 +1035,7 @@ img {
     top: calc(50% - 7rem);
   }
 
+
   .detailsCallBtnGroup .btnSquare,
   .detailsCallBtnGroup .smallCallBtn {
     font-size: 1.9rem;
@@ -1068,8 +1069,9 @@ img {
   .hp-featured-slider .curve-slider-arrow.slick-next,
   .celebration-slider .curve-slider-arrow.slick-next {
     left: -8.3rem;
-    top: 32%;
+    top: 29%;
   }
+
   .hp-services-slider.brand-model-slider .curve-slider-arrow.slick-next {
     top: 26%;
   }
