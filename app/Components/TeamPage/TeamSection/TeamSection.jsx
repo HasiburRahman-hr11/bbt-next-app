@@ -1,8 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const styles = {
   tabMenu:
@@ -42,91 +44,108 @@ const TeamSection = () => {
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] md:pb-[12rem] lg:pb-[15rem]  1xl:pb-[18rem] 3xl:pt-[12rem]">
       <div className="max-1920">
         <div className="container">
-          <h3 className="titleWithLine mobileLine hidden md:block">
-            <span className="bg-[#F4F4F1] pr-[3rem] inline-block relative z-10 text-[2.5rem] tracking-[-2px] xl:text-[3rem] xl:pr-[4rem] 1xl:text-[3.7rem] 3xl:text-[4.5rem]">
-              Meet The Team
-            </span>
-          </h3>
-          <h2 className="font-light [&>b]:font-normal leading-[1.1] tracking-[-1.2px] md:hidden">
-            The <b>Team</b>
-          </h2>
-          <div className="md:mt-[2rem] xl:mt-[4rem] 2xl:mt-[6rem] 3xl:mt-[7rem]">
-            <p className="font-light text-[1.2rem] leading-[1.4] mt-[1rem] [&>br]:hidden md:text-center md:text-[2rem] md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1] 2xl:text-[4.6rem] 3xl:text-[5.9rem] 3xl:leading-[1.1]">
-              We believe that without the key <br /> value of <b>our people.</b>
-            </p>
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <h3 className="titleWithLine mobileLine hidden md:block">
+              <span className="bg-[#F4F4F1] pr-[3rem] inline-block relative z-10 text-[2.5rem] tracking-[-2px] xl:text-[3rem] xl:pr-[4rem] 1xl:text-[3.7rem] 3xl:text-[4.5rem]">
+                Meet The Team
+              </span>
+            </h3>
+            <h2 className="font-light [&>b]:font-normal leading-[1.1] tracking-[-1.2px] md:hidden">
+              The <b>Team</b>
+            </h2>
+            <div className="md:mt-[2rem] xl:mt-[4rem] 2xl:mt-[6rem] 3xl:mt-[7rem]">
+              <p className="font-light text-[1.2rem] leading-[1.4] mt-[1rem] [&>br]:hidden md:text-center md:text-[2rem] md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1] 2xl:text-[4.6rem] 3xl:text-[5.9rem] 3xl:leading-[1.1]">
+                We believe that without the key <br /> value of{" "}
+                <b>our people.</b>
+              </p>
 
-            <div>
-              <ul className="flex flex-wrap mt-[1.5rem] md:justify-center 1xl:mt-[3rem] 3xl:mt-[5rem]">
-                <li onClick={() => handleTabChange(`tab-1`)}>
-                  <a
-                    href="#loanFinance"
-                    className={`${styles.tabMenu} ${
-                      activeTab === `tab-1`
-                        ? " bg-black text-white"
-                        : " text-black"
-                    }`}
-                  >
-                    Loan & Finance
-                  </a>
-                </li>
-                <li onClick={() => handleTabChange(`tab-2`)}>
-                  <a
-                    href="#accountsTeam"
-                    className={`${styles.tabMenu} ${
-                      activeTab === `tab-2`
-                        ? " bg-black text-white"
-                        : " text-black"
-                    }`}
-                  >
-                    Accounts
-                  </a>
-                </li>
-                <li onClick={() => handleTabChange(`tab-3`)}>
-                  <a
-                    href="#afterSales"
-                    className={`${styles.tabMenu} ${
-                      activeTab === `tab-3`
-                        ? " bg-black text-white"
-                        : " text-black"
-                    }`}
-                  >
-                    After Sales
-                  </a>
-                </li>
-                <li onClick={() => handleTabChange(`tab-4`)}>
-                  <a
-                    href="#marketingTeam"
-                    className={`${styles.tabMenu} ${
-                      activeTab === `tab-4`
-                        ? " bg-black text-white"
-                        : " text-black"
-                    }`}
-                  >
-                    Marketing
-                  </a>
-                </li>
-                <li onClick={() => handleTabChange(`tab-5`)}>
-                  <a
-                    href="#salesTeam"
-                    className={`${styles.tabMenu} ${
-                      activeTab === `tab-5`
-                        ? " bg-black text-white"
-                        : " text-black"
-                    }`}
-                  >
-                    Sales
-                  </a>
-                </li>
-              </ul>
+              <div>
+                <ul className="flex flex-wrap mt-[1.5rem] md:justify-center 1xl:mt-[3rem] 3xl:mt-[5rem]">
+                  <li onClick={() => handleTabChange(`tab-1`)}>
+                    <a
+                      href="#loanFinance"
+                      className={`${styles.tabMenu} ${
+                        activeTab === `tab-1`
+                          ? " bg-black text-white"
+                          : " text-black"
+                      }`}
+                    >
+                      Loan & Finance
+                    </a>
+                  </li>
+                  <li onClick={() => handleTabChange(`tab-2`)}>
+                    <a
+                      href="#accountsTeam"
+                      className={`${styles.tabMenu} ${
+                        activeTab === `tab-2`
+                          ? " bg-black text-white"
+                          : " text-black"
+                      }`}
+                    >
+                      Accounts
+                    </a>
+                  </li>
+                  <li onClick={() => handleTabChange(`tab-3`)}>
+                    <a
+                      href="#afterSales"
+                      className={`${styles.tabMenu} ${
+                        activeTab === `tab-3`
+                          ? " bg-black text-white"
+                          : " text-black"
+                      }`}
+                    >
+                      After Sales
+                    </a>
+                  </li>
+                  <li onClick={() => handleTabChange(`tab-4`)}>
+                    <a
+                      href="#marketingTeam"
+                      className={`${styles.tabMenu} ${
+                        activeTab === `tab-4`
+                          ? " bg-black text-white"
+                          : " text-black"
+                      }`}
+                    >
+                      Marketing
+                    </a>
+                  </li>
+                  <li onClick={() => handleTabChange(`tab-5`)}>
+                    <a
+                      href="#salesTeam"
+                      className={`${styles.tabMenu} ${
+                        activeTab === `tab-5`
+                          ? " bg-black text-white"
+                          : " text-black"
+                      }`}
+                    >
+                      Sales
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
           {/* Loan & Finance */}
-          <div id="loanFinance" className="mt-[5rem] 1xl:mt-[7rem]">
+          <div
+            id="loanFinance"
+            className="mt-[5rem] 1xl:mt-[7rem]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               Loans & Finance Team
             </h3>
@@ -163,6 +182,9 @@ const TeamSection = () => {
           <div
             id="accountsTeam"
             className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
           >
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               Accounts Team
@@ -197,7 +219,10 @@ const TeamSection = () => {
           {/* After Sales */}
           <div
             id="afterSales"
-            className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]" 
+            className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
           >
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               After Sales
@@ -235,6 +260,9 @@ const TeamSection = () => {
           <div
             id="marketingTeam"
             className="mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
           >
             <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem]">
               Marketing Team
@@ -258,6 +286,9 @@ const TeamSection = () => {
         <div
           id="salesTeam"
           className=" mt-[10rem] xl:mt-[12rem] 1xl:mt-[14rem] 3xl:mt-[10rem]"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
         >
           <h3 className="text-[1.8rem] tracking-[-1.5px] mb-[1.5rem] xl:text-[2.8rem] 1xl:text-[3.05rem] 2xl:text-[3.4rem] 3xl:text-[4.2rem] xl:mb-[4rem] pl-[2rem] md:pl-[4.5%] lg:pl-[8.5%]">
             Sales Team

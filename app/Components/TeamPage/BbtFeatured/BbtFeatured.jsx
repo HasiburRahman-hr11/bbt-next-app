@@ -35,9 +35,9 @@ const BbtFeatured = () => {
         <div className="pl-8 md:pl-[2rem] lg:flex lg:justify-between items-center lg:pl-40 xl:pl-48 1xl:pl-52 2xl:pl-56 3xl:pl-64">
           <div
             className="section-heading md:pl-8 lg:w-30% lg:pl-0"
-            // data-aos="fade-up"
-            // data-aos-easing="linear"
-            // data-aos-duration="500"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
           >
             <img
               src="/images/down-circle-arrow-white.webp"

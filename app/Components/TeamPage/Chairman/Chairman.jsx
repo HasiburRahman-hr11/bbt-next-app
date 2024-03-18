@@ -1,10 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Chairman = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="sm:hidden">
             <h2 className="text-[2.8rem] tracking-[-1.5px]">S.L. Ahuja</h2>
             <p className="text-[1.2rem]">Chairman</p>
@@ -38,8 +49,12 @@ const Chairman = () => {
 
             <div className="sm:w-[48%] lg:w-[39.5%]">
               <div className="hidden sm:block">
-                <h2 className="text-[2.8rem] tracking-[-1.5px] lg:text-[3rem] lg:font-[400] 1xl:text-[3.3rem] 2xl:text-[3.5rem] 3xl:text-[4.5rem] 3xl:tracking-[-3px]">S.L. Ahuja</h2>
-                <p className="text-[1.2rem] lg:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.2rem]">Chairman</p>
+                <h2 className="text-[2.8rem] tracking-[-1.5px] lg:text-[3rem] lg:font-[400] 1xl:text-[3.3rem] 2xl:text-[3.5rem] 3xl:text-[4.5rem] 3xl:tracking-[-3px]">
+                  S.L. Ahuja
+                </h2>
+                <p className="text-[1.2rem] lg:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.2rem]">
+                  Chairman
+                </p>
               </div>
               <p className="font-light text-[1.2rem] leading-[1.4] mt-[3rem] [&>b]:font-normal sm:mt-[1rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.4] xl:mt-[2rem] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0]">
                 <b>Mr. S. L. Ahuja</b>, B.Com, FCA, LL.B, is the driving force

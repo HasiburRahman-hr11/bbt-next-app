@@ -1,10 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const CooSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white py-[4rem] sm:py-[8rem] 2xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="sm:hidden">
             <h2 className="text-[2.8rem] tracking-[-1.5px]">
               Mrs. Ritika Jatin Ahuja

@@ -1,9 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const sliderItems = [
   {
@@ -36,6 +38,9 @@ function NextArrow(props) {
 }
 
 const SliderItem = ({ data }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="pr-[2rem] xl:pr-[4rem] 2xl:pr-[5.5rem] 3xl:pr-[7.5rem]">
       <div className="relative rounded-[3rem] overflow-hidden xl:rounded-[4rem]">
@@ -92,7 +97,12 @@ const Celebration = () => {
   return (
     <section className="bg-white py-[5rem] sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
-        <div className="block lg:flex lg:flex-wrap lg:justify-between lg:pl-[8.5%] items-center">
+        <div
+          className="block lg:flex lg:flex-wrap lg:justify-between lg:pl-[8.5%] items-center"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="w-full lg:w-[30%] xl:w-[23.5%]">
             <div className="w-[91%] mx-auto lg:w-full">
               <div className="flex justify-between items-center lg:flex-col-reverse lg:items-start">
