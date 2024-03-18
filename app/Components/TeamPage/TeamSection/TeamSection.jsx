@@ -10,7 +10,7 @@ const styles = {
   tabMenu:
     "text-center text-[1.2rem] border border-[#D2D2D2] rounded-[3rem] leading-[1] px-[1.6rem] py-[0.7rem] block mr-[0.6rem] mt-[0.8rem] xl:text-[1.4rem] xl:px-[2rem] xl:py-[1rem] xl:mx-[0.7rem] 1xl:text-[1.6rem] 2xl:text-[1.8rem] 2xl:px-[2.3rem] 2xl:py-[1.2rem] 3xl:text-[2.19rem] 3xl:px-[2.8rem] 3xl:py-[1.7rem] 3xl:mx-[0.8rem]",
   teamMemberItem:
-    "grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4 xl:gap-[3.5rem] 3xl:xl:gap-[5.5rem] 3xl:[&_img]:max-h-[39.5rem]",
+    "grid grid-cols-2 auto-rows-fr gap-[2rem] md:grid-cols-3 lg:grid-cols-4 xl:gap-[3.5rem] xl:[&_img]:max-h-[26rem] 1xl:[&_img]:max-h-[30rem] 2xl:[&_img]:max-h-[32rem] 3xl:xl:gap-[5.5rem] 3xl:[&_img]:max-h-[39.5rem]",
   teamMemberTitle:
     "text-[1.5rem] tracking-[-0.5px] font-medium xl:text-[2rem] xl:tracking-[-1px] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem]",
   teamMemberSub:
