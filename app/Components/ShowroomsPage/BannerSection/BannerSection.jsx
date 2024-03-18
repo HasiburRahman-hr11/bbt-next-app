@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import BreadCrumb from "../../CommonComponents/BreadCrumb/BreadCrumb";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -34,10 +35,19 @@ const BannerSection = () => {
     ],
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="bg-white pt-[3rem] pb-[5rem] md:pt-[5rem] md:pb-[7rem] lg:pt-[7rem] lg:pb-[9rem] 1xl:pt-[8rem] 1xl:pb-[10rem] 2xl:pt-[9rem] 2xl:pb-[12rem] 3xl:pt-[11rem] 3xl:pb-[13rem]">
       <div className="max-1920 overflow-hidden">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="text-center mb-[3rem] lg:mb-[4rem]">
             <div className="hidden md:block text-center mb-[2rem] lg:mb-[1.7rem]">
               <p className="flex flex-wrap justify-center items-center font-light">

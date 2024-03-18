@@ -18,7 +18,7 @@ const BasicDetails = () => {
       className="lg:sticky top-0 bg-white z-[20] lg:shadow-detail-space"
     >
       <div className="max-1920">
-        <div className="container container-lg-full lg:px-12 lg:py-12  xl:px-24 xl:py-20 2xl:py-24 2xl:px-28 3xl:px-32 3xl:py-28 ">
+        <div className="px-[2rem] lg:px-12 lg:py-12  xl:px-0 xl:w-[92%] xl:mx-auto xl:py-20 2xl:py-[6rem]  3xl:py-28">
           {popupOpen && (
             <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
           )}

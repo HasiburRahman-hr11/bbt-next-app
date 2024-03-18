@@ -6,7 +6,7 @@ const PageHeader = () => {
   return (
     <section className="bg-white md:bg-[#f3f3f3]">
       <div className="container">
-        <div className="py-12 xl:py-24 md:border-b md:border-[#D9D9D9]">
+        <div className="py-12 xl:pt-[5rem] xl:pb-[3rem] md:border-b md:border-[#D9D9D9] 3xl:pt-[7rem] 3xl:pb-[5rem]">
           <p className="flex flex-wrap items-center font-normal">
             <Link
               href="/"
@@ -25,8 +25,8 @@ const PageHeader = () => {
               Search
             </span>
           </p>
-          <div className="flex flex-wrap justify-between items-center mt-5 xl:mt-16 1xl:mt-[3.5rem] 3xl:mt-[5rem]">
-            <h2 className="text-3xl leading-0 1xl:text-[4rem]  3xl:text-[4.5rem] 1xl:tracking-tightest">
+          <div className="flex flex-wrap justify-between items-center mt-5 xl:mt-[1.8rem] 1xl:mt-[2rem] 3xl:mt-[3rem]">
+            <h2 className="text-[1.8rem] md:text-[2.2rem] xl:text-[3.2rem] xl:tracking-[-2px] 1xl:text-[3.5rem] 2xl:text-[3.8rem] 2xl:tracking-[-2.5px] 3xl:text-[4.5rem]">
               Search By “ Audi ”
             </h2>
             <p className="text-lg leading-0 1xl:text-[2rem] 3xl:text-[2.5rem]">

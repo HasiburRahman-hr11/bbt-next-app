@@ -17,7 +17,7 @@ const AboutSection = () => {
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          <div className="mb-16 lg:w-[25%] lg:mb-0 xl:w-[20%] 1xl:w-[23%]">
+          <div className="mb-16 lg:w-[25%] lg:mb-0 xl:w-[24%]">
             <Image
               src="/images/bbt-logo-2.webp"
               alt="BBT Logo"
@@ -26,14 +26,14 @@ const AboutSection = () => {
               className=" object-contain w-44 lg:w-full"
             />
           </div>
-          <div className="font-light [&>p]:text-xl [&>p]:leading-1.6 lg:w-[70%] xl:w-[75%] 1xl:w-[70%] 2xl:[&>p]:text-[1.6rem]">
+          <div className="font-light lg:w-[70%] xl:w-[69%] [&>p]:text-xl [&>p]:font-[300] text-justify [&>p]:leading-1.6 xl:[&>p]:text-[1.1rem] xl:[&>p]:tracking-[-0.1px] 1xl:[&>p]:text-[1.22rem] 2xl:[&>p]:text-[1.33rem] 2xl:[&>p]:leading-[1.5] 3xl:[&>p]:text-[1.6rem]">
             <h2 className="font-extralight mb-8 tracking-tighter [&>strong]:font-normal leading-1.3 lg:leading-[1.4]">
               Second Hand{" "}
               <strong>
                 Exotic <br /> SUVs are in Trend Now!
               </strong>
             </h2>
-            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem] font-[300]">
+            <p >
               Indeed, you read it right! The field of recycled extravagant SUVs
               or pre-adored extravagant SUVs is immense to cater to your
               preferred need and finding the vehicle is not any more tedious or
@@ -43,7 +43,7 @@ const AboutSection = () => {
               and to address every single inquiry without much ado.
             </p>
             <br />
-            <p className="1xl:text-[1.55rem] 3xl:text-[1.65rem]">
+            <p >
               Probably the most blazing colourful SUVs that you can take your
               hands on at the Big Boy Toyz showroom incorporate the 2013
               utilized Porsche Cayenne Turbo and Diesel, 2011 utilized

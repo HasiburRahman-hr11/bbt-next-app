@@ -19,7 +19,7 @@ const Header = ({ isPageHeader }) => {
       <div className="max-1920">
         <div
           className={`header-wrapper w-full p-[3rem] mx-auto lg:py-[2rem] lg:px-[4rem] 1xl:py-[2.5rem] 2xl:px-[4.3rem] 3xl:py-[3rem] 3xl:px-[5.5rem] ${
-            isPageHeader ? "py-[2rem] px-[2rem] 2xl:py-[3rem] 2xl:px-[4.5rem] 3xl:py-[3.5rem] 3xl:px-[5.5rem]" : ""
+            isPageHeader ? "py-[2rem] px-[2rem] 2xl:pt-[2.5rem] 2xl:pb-[3rem] 2xl:pr-[4rem] 2xl:pl-[3.5rem] 3xl:py-[3.5rem] 3xl:px-[5.5rem]" : ""
           }`}
         >
           <div className="flex justify-between items-center">

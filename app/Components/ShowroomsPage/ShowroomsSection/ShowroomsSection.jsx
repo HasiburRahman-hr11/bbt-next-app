@@ -1,8 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 let settings = {
   dots: false,
@@ -127,6 +129,9 @@ const ShowroomsSection = () => {
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white py-[6rem] xl:py-[10rem] 3xl:py-[13rem]">
       <div className="max-1920">
@@ -168,6 +173,9 @@ const ShowroomsSection = () => {
               className="showroom-item pt-[2.5rem] xl:pt-[6rem] 1xl:pt-[7rem] 3xl:pt-[9rem]"
               key={index}
               id={`showroomList${index + 1}`}
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="500"
             >
               <div className="container">
                 <div className="flex flex-wrap">

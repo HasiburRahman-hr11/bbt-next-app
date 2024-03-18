@@ -1,10 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const VisitSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-black py-[6rem] text-white relative lg:pt-[8rem] lg:pb-[0] xl:pt-[10rem] 1xl:pt-[12rem] 3xl:pt-[16rem]">
       <div className="max-1920 relative overflow-hidden lg:pb-[15rem] 1xl:pb-[22rem]">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="visit-wrapper sm:max-w-[450px] sm:mx-auto lg:max-w-[100%] lg:flex lg:flex-wrap lg:justify-between relative z-10">
             <div className="lg:w-[50%]">
               <h2 className="font-normal [&>b]:font-normal tracking-[-1px] leading-[1.2] lg:font-light lg:[&>b]:font-medium">
@@ -41,7 +52,7 @@ const VisitSection = () => {
                     className="w-[1.3rem] h-auto object-contain 1xl:w-[1.8rem] 2xl:w-[2.1rem] 3xl:w-[2.35rem]"
                   />
                   <p className="flex-1 font-light text-[1.2rem] pl-[1rem] xl:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.9rem] 3xl:text-[2.2rem]">
-                  Rear Theatre Configuration.
+                    Rear Theatre Configuration.
                   </p>
                 </li>
                 <li className="flex mb-[0.6rem] xl:mb-[0.8rem]">
@@ -113,14 +124,21 @@ const VisitSection = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex absolute left-0 bottom-0 w-full flex-wrap justify-center">
-          <img
-            src="/images/showroom-page/visit-thumb.webp"
-            alt="Thumbnail"
-            className="w-full object-contain h-auto lg:w-[57%] lg:ml-[-8rem]"
-            width="1088"
-            height="596"
-          />
+        <div className="hidden lg:block absolute left-0 bottom-0 w-full ">
+          <div
+            className="w-full flex flex-wrap justify-center"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <img
+              src="/images/showroom-page/visit-thumb.webp"
+              alt="Thumbnail"
+              className="w-full object-contain h-auto lg:w-[57%] lg:ml-[-8rem]"
+              width="1088"
+              height="596"
+            />
+          </div>
         </div>
       </div>
     </section>

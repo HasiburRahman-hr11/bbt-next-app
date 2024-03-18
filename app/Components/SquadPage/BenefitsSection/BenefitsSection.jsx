@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const uspList1 = [
   {
@@ -43,10 +46,18 @@ const uspList2 = [
 ];
 
 const BenefitsSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="pt-[6rem] bg-white md:py-[10rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
-        <div className="md:w-[91%] md:mx-auto xl:w-[82%]">
+        <div
+          className="md:w-[91%] md:mx-auto xl:w-[82%]"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="md:flex md:flex-wrap md:justify-between">
             <div className="px-[2.2rem] mb-[3.5rem] sm:max-w-[410px] sm:mx-auto md:max-w-none md:ml-0 md:w-[52%] md:px-0 lg:w-[50%]">
               <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] 1xl:text-[4.2rem] 3xl:text-[5.8rem]">
@@ -76,12 +87,10 @@ const BenefitsSection = () => {
                         height="57"
                       />
                     </div>
-                    <p 
-                    className="text-[1.1rem] mt-[1.2rem] leading-[1.2] md:text-[1.2rem] md:mt-[1.8rem] lg:text-[1.5rem] xl:text-[1.75rem] xl:font-light 1xl:text-[1.85rem] 1xl:mt-[2rem] 2xl:text-[1.9rem] 3xl:text-[2.4rem] 3xl:mt-[2.5rem]"
-                    dangerouslySetInnerHTML={{ __html: usp.title }}
-                    >
-                    
-                    </p>
+                    <p
+                      className="text-[1.1rem] mt-[1.2rem] leading-[1.2] md:text-[1.2rem] md:mt-[1.8rem] lg:text-[1.5rem] xl:text-[1.75rem] xl:font-light 1xl:text-[1.85rem] 1xl:mt-[2rem] 2xl:text-[1.9rem] 3xl:text-[2.4rem] 3xl:mt-[2.5rem]"
+                      dangerouslySetInnerHTML={{ __html: usp.title }}
+                    ></p>
                   </li>
                 ))}
               </ul>
@@ -120,11 +129,10 @@ const BenefitsSection = () => {
                         height="57"
                       />
                     </div>
-                    <p 
-                    className="text-[1.1rem] mt-[1.2rem] leading-[1.2] md:text-[1.2rem] md:mt-[1.8rem] lg:text-[1.5rem] xl:text-[1.75rem] xl:font-light 1xl:text-[1.85rem] 1xl:mt-[2rem] 2xl:text-[1.9rem] 3xl:text-[2.4rem]"
-                    dangerouslySetInnerHTML={{ __html: usp.title }}
-                    >
-                    </p>
+                    <p
+                      className="text-[1.1rem] mt-[1.2rem] leading-[1.2] md:text-[1.2rem] md:mt-[1.8rem] lg:text-[1.5rem] xl:text-[1.75rem] xl:font-light 1xl:text-[1.85rem] 1xl:mt-[2rem] 2xl:text-[1.9rem] 3xl:text-[2.4rem]"
+                      dangerouslySetInnerHTML={{ __html: usp.title }}
+                    ></p>
                   </li>
                 ))}
               </ul>

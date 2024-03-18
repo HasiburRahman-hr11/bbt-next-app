@@ -31,9 +31,9 @@ const BannerSection = () => {
           <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
-              //   data-aos="fade-up"
-              //   data-aos-easing="linear"
-              //   data-aos-duration="500"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="500"
             >
               <p className="hidden sm:block [&_img]:invert text-white text-left font-light">
                 <Link

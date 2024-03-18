@@ -1,5 +1,7 @@
-"use client"
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const styles = {
   inputStyles:
@@ -7,41 +9,49 @@ const styles = {
 };
 
 const FormSection = () => {
+  const [name, setName] = useState("");
+  const [stateName, setStateName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [currentProfile, setCurrentProfile] = useState("");
+  const [dropdownItem, setDropdownItem] = useState("Automobile Enthusiast");
+  const [instaHandle, setInstaHandle] = useState("");
+  const [fileItem, setFileItem] = useState("");
 
-    const [name, setName] = useState('');
-    const [stateName, setStateName] = useState('');
-    const [phone, setPhone] = useState('');
-    const [currentProfile, setCurrentProfile] = useState('');
-    const [dropdownItem, setDropdownItem] = useState('Automobile Enthusiast');
-    const [instaHandle, setInstaHandle] = useState('');
-    const [fileItem, setFileItem] = useState('');
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
 
-    const handleFormSubmit = (e) =>{
-        e.preventDefault();
+    let formData = {
+      name,
+      stateName,
+      phone,
+      currentProfile,
+      dropdownItem,
+      instaHandle,
+      fileItem,
+    };
+    console.log(formData);
+    // After Successful Submission
+    setName("");
+    setStateName("");
+    setPhone("");
+    setCurrentProfile("");
+    setDropdownItem("");
+    setInstaHandle("");
+    setFileItem("");
+  };
 
-        let formData = {
-            name,
-            stateName,
-            phone,
-            currentProfile,
-            dropdownItem,
-            instaHandle,
-            fileItem
-        }
-        console.log(formData);
-        // After Successful Submission
-        setName('');
-        setStateName('');
-        setPhone('');
-        setCurrentProfile('');
-        setDropdownItem('');
-        setInstaHandle('');
-        setFileItem('');
-    }
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-white py-[6rem] md:py-[10rem] 1xl:py-[14rem] 3xl:py-[16rem]">
       <div className="max-1920">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="lg:flex lg:justify-between">
             <div className="lg:w-[39%]">
               <h2 className="font-light [&>b]:font-normal leading-[1.2] tracking-[-0.2rem] xl:text-[3.7rem] 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] ">
@@ -105,7 +115,7 @@ const FormSection = () => {
                       className={styles.inputStyles}
                       required
                       value={name}
-                      onChange={(e)=>setName(e.target.value)}
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className="input-box w-full sm:w-[49%]">
@@ -115,7 +125,7 @@ const FormSection = () => {
                       className={styles.inputStyles}
                       required
                       value={stateName}
-                      onChange={(e)=>setStateName(e.target.value)}
+                      onChange={(e) => setStateName(e.target.value)}
                     />
                   </div>
                 </div>
@@ -127,7 +137,7 @@ const FormSection = () => {
                       className={styles.inputStyles}
                       required
                       value={phone}
-                      onChange={(e)=>setPhone(e.target.value)}
+                      onChange={(e) => setPhone(e.target.value)}
                     />
                   </div>
                   <div className="input-box w-full sm:w-[49%]">
@@ -137,13 +147,17 @@ const FormSection = () => {
                       className={styles.inputStyles}
                       required
                       value={currentProfile}
-                      onChange={(e)=>setCurrentProfile(e.target.value)}
+                      onChange={(e) => setCurrentProfile(e.target.value)}
                     />
                   </div>
                 </div>
                 <div className="sm:flex sm:justify-between">
                   <div className="input-box select-box w-full sm:w-[49%] relative">
-                    <select className={styles.inputStyles} value={dropdownItem} onChange={(e)=>setDropdownItem(e.target.value)}>
+                    <select
+                      className={styles.inputStyles}
+                      value={dropdownItem}
+                      onChange={(e) => setDropdownItem(e.target.value)}
+                    >
                       <option value="Automobile Enthusiast">
                         Automobile Enthusiast
                       </option>
@@ -154,7 +168,11 @@ const FormSection = () => {
                         Automobile Enthusiast 3
                       </option>
                     </select>
-                    <img src="/images/bbt-squad/squad-dropdown-arrow.webp" alt="Arrow" className="absolute inline-block w-[1.2rem] h-auto object-contain top-[3.5rem] right-[2.5rem]" />
+                    <img
+                      src="/images/bbt-squad/squad-dropdown-arrow.webp"
+                      alt="Arrow"
+                      className="absolute inline-block w-[1.2rem] h-auto object-contain top-[3.5rem] right-[2.5rem]"
+                    />
                   </div>
                   <div className="input-box w-full sm:w-[49%]">
                     <input
@@ -162,7 +180,7 @@ const FormSection = () => {
                       placeholder="Instagram Handle"
                       className={styles.inputStyles}
                       value={instaHandle}
-                      onChange={(e)=>setInstaHandle(e.target.value)}
+                      onChange={(e) => setInstaHandle(e.target.value)}
                     />
                   </div>
                 </div>
@@ -174,10 +192,10 @@ const FormSection = () => {
                       type="file"
                       placeholder="Current Work Profile*"
                       className="opacity-0 absolute w-full h-full"
-                      onChange={(e)=>setFileItem(e.target.files[0])}
+                      onChange={(e) => setFileItem(e.target.files[0])}
                     />
                     <span className="font-light text-[1.3rem] 3xl:text-[1.7rem]">
-                    {fileItem ? fileItem.name : 'No File Chosen'}
+                      {fileItem ? fileItem.name : "No File Chosen"}
                     </span>
                     <p className="flex items-center">
                       <img

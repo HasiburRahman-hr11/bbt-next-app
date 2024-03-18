@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const uspList = [
   {
@@ -20,13 +23,27 @@ const uspList = [
 ];
 
 const UspSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-[#F3F3F3] py-[6rem] lg:py-[10rem] 1xl:py-[14rem] 2xl:py-[15rem] 3xl:py-[18rem]">
       <div className="max-1920">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="lg:flex flex-wrap justify-between items-center xl:items-start">
             <div className="hidden lg:block w-50% xl:w-[58%]">
-              <img src="/images/showroom-page/showroom-usp-thumb.webp" alt="BBT Showroom" className="w-full h-auto object-contain" width="917" height="757" />
+              <img
+                src="/images/showroom-page/showroom-usp-thumb.webp"
+                alt="BBT Showroom"
+                className="w-full h-auto object-contain"
+                width="917"
+                height="757"
+              />
             </div>
             <div className="px-[2rem] sm:px-0 sm:max-w-[450px] sm:mx-auto lg:max-w-[100%] lg:w-[40%] xl:w-[35%] lg:mr-0">
               <div className="text-center lg:text-left">

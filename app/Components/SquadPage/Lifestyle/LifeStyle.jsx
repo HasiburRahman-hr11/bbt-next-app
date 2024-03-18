@@ -1,11 +1,22 @@
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
-import React from "react";
 
 const LifeStyle = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-[#F3F3F3] py-[6rem] md:py-[10rem] xl:py-[12rem] 3xl:py-[16rem]">
       <div className="max-1920">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <div className="md:flex md:justify-between md:items-center">
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] text-center tracking-[-0.1rem] mb-[2rem] md:text-left xl:text-[3.7rem] xl:[&>br]:hidden xl:max-w-[45rem] 1xl:text-[4.2rem] 1xl:max-w-[49rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] 2xl:max-w-[54rem] 3xl:max-w-[70rem]">
               Be a Part of The <br /> <b>BBT Fun, Work & Lifestyle</b>

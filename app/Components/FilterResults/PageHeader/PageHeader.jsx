@@ -48,7 +48,7 @@ const PageHeader = () => {
             </span>
           </p>
           <div className="flex flex-wrap items-center justify-between mt-5">
-            <h2 className="text-[1.8rem] md:text-[2.2rem] xl:text-[4.5rem]">
+            <h2 className="text-[1.8rem] md:text-[2.2rem] xl:text-[3.2rem] xl:tracking-[-2px] 1xl:text-[3.5rem] 2xl:text-[3.8rem] 2xl:tracking-[-2.5px] 3xl:text-[4.5rem]">
               Total 1575 Results Found
             </h2>
             <div className="flex flex-wrap items-center">

@@ -92,7 +92,7 @@ const CarModels = () => {
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          <div className="container lg:w-30% lg:pr-20 xl:pr-28 3xl:w-[25%]">
+          <div className="container lg:w-30% lg:pr-20 xl:pr-[4rem] 3xl:w-[25%]">
             <Image
               src="/images/down-circle-arrow-white.webp"
               width="123"
@@ -100,7 +100,7 @@ const CarModels = () => {
               alt="Arrow Icon"
               className="hidden lg:inline-block mb-14 object-contain lg:w-32 xl:w-40 3xl:w-48"
             />
-            <h2 className=" text-white mb-3 lg:mb-6 [&>br]:hidden lg:[&>br]:block text-[2.9rem] xl:text-[3.2rem] 1xl:text-[3.5rem] 2xl:text-[4rem] 3xl:text-[4.5rem]">
+            <h2 className=" text-white mb-3 lg:mb-6 [&>br]:hidden lg:[&>br]:block text-[2.9rem] xl:text-[3.2rem] xl:leading-[1.12] 1xl:text-[3.5rem] 2xl:text-[4rem] 3xl:text-[4.5rem]">
               Bmw <br /> Car Models
             </h2>
             <p className="text-xl text-white text-[1.4rem] leading-[1.5] 1xl:text-[1.4rem] 3xl:text-[1.6rem] mb-10 1xl:mb-[3rem] 2xl:mb-[4rem] 3xl:mb-[5rem] font-[300]">
@@ -115,7 +115,7 @@ const CarModels = () => {
             </Link>
           </div>
 
-          <div className="w-full lg:w-70% mt-24 lg:mt-0 3xl:w-[75%]">
+          <div className="w-full lg:w-70% xl:w-[75%] mt-24 lg:mt-0 3xl:w-[75%]">
             <div className="pl-[2rem]">
               <Slider
                 {...settings}

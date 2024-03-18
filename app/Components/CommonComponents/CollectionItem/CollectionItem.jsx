@@ -110,7 +110,7 @@ const CollectionItem = ({ data, popupToggler }) => {
           <div className="flex items-center justify-between callBtnGroup mt-12 overflow-hidden flex-wrap">
             <div className="flex-grow">
               <div
-                className="bg-black text-white text-[1.2rem] font-medium xl:font-normal flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem]"
+                className="bg-black text-white text-[1.2rem] font-medium xl:font-normal flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem] cursor-pointer"
                 onClick={popupToggler}
               >
                 <Image

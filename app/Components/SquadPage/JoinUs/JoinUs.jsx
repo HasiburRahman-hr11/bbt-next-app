@@ -1,5 +1,8 @@
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
-import React from "react";
 
 const styles = {
   listStyle:
@@ -11,10 +14,18 @@ const styles = {
 };
 
 const JoinUs = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="bg-[#F3F3F3] py-[6rem] md:py-[10rem] 1xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[16rem]">
       <div className="max-1920">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="500"
+        >
           <p className="uppercase text-center text-[1.12rem] mb-[1.5rem] md:hidden">
             Join us Now
           </p>

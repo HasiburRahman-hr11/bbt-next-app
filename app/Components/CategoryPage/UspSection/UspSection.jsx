@@ -44,11 +44,11 @@ const UspSection = () => {
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          <div className="w-full lg:w-[50%] 3xl:w-[58%]">
-            <h2 className="mb-7 tracking-tighter leading-1.2 md:mb-14 lg:leading-[1.4]">
+          <div className="w-full lg:w-[50%] xl:w-[56%]">
+            <h2 className="mb-7 tracking-tighter leading-1.2 md:mb-14 lg:leading-[1.4] xl:leading-[1.2]">
               Keep Pre-owned Luxury <br /> SUV as an Option
             </h2>
-            <div className="[&>p]:text-xl [&>p]:font-[300] text-justify [&>p]:leading-1.6 1xl:[&>p]:text-1xl 2xl:[&>p]:text-[1.6rem] 3xl:[&>p]:text-[1.65rem]">
+            <div className="[&>p]:text-xl [&>p]:font-[300] text-justify [&>p]:leading-1.6 xl:[&>p]:text-[1.1rem] xl:[&>p]:tracking-[-0.1px] 1xl:[&>p]:text-[1.22rem] 2xl:[&>p]:text-[1.3rem] 2xl:[&>p]:leading-[1.5] 3xl:[&>p]:text-[1.6rem]">
               <p>
                 The SUV puts romping capacities before style, execution or
                 mileage. The engineering of SUVs is done to perfection and they
@@ -87,12 +87,12 @@ const UspSection = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[45%] 2xl:w-[42%] 3xl:w-[35%]">
+          <div className="lg:w-[45%] xl:w-[36%]">
             <ul className="mt-6 md:mt-8 md:flex md:flex-wrap md:justify-between lg:pb-[5rem] lg:mt-0 lg:[&>*:nth-child(even)]:translate-y-[5rem]">
               {uspList.map((usp, ind) => (
                 <li
                   key={ind}
-                  className="flex flex-wrap items-center justify-between py-7 md:w-[48%] md:bg-white md:mt-8 md:flex-col md:items-start md:py-20 md:px-10 transition-all duration-500 ease-in-out hover:shadow-xl cursor-pointer"
+                  className="flex flex-wrap items-center justify-between py-7 md:w-[48%] md:bg-white md:mt-8 md:flex-col md:items-start md:py-20 md:px-10 xl:py-[3rem] 2xl:py-[4.5rem] 2xl:pl-[3rem] 2xl:pr-[5rem] 1xl:w-[46.5%] 1xl:mt-[3rem] 3xl:mt-[4rem] transition-all duration-500 ease-in-out hover:shadow-xl cursor-pointer"
                 >
                   <div className="w-20">
                     <Image
@@ -100,14 +100,14 @@ const UspSection = () => {
                       alt="Icon"
                       width="44"
                       height="44"
-                      className="object-contain max-h-16"
+                      className="object-contain max-h-16 xl:max-h-[3.5rem] 3xl:max-h-[4.5rem]"
                     />
                   </div>
-                  <div className="pl-6 flex-1 md:pl-0 md:mt-12">
-                    <h6 className="text-1.4rem 2xl:text-[1.7rem] font-[600] tracking-[-0.5px]">
+                  <div className="pl-6 flex-1 md:pl-0 md:mt-12 xl:mt-[2rem]">
+                    <h6 className="text-1.4rem xl:text-[1.2rem] 1xl:text-[1.3rem] 2xl:text-[1.4rem] font-[600] tracking-[-0.5px] 3xl:text-[1.7rem]">
                       {usp.title}
                     </h6>
-                    <p className="text-xl mt-3 tracking-tight 2xl:text-[1.4rem] 3xl:text-[1.5rem] 3xl:leading-[1.5] font-[300]">
+                    <p className="text-xl mt-3 tracking-tight xl:text-[1.05rem] xl:leading-[1.2] 1xl:text-[1.15rem] 2xl:text-[1.2rem] 3xl:text-[1.4rem] 3xl:leading-[1.5] font-[300]">
                       {usp.description}
                     </p>
                   </div>
