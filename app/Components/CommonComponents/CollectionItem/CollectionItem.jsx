@@ -32,7 +32,7 @@ const CollectionItem = ({ data, popupToggler }) => {
         <CertifiedPopup active={certifiedPopup} togglePopup={togglePopup} />
       )}
       <div className=" pb-16 md:bg-[#fff] md:mt-[4rem] common-car-item transition-all duration-500 ease-in-out">
-        <div className="item-divider max-w-[90%] mx-auto h-[1px] border-t border-neutral-400 md:hidden"></div>
+        <div className="item-divider max-w-[90%] mx-auto h-[1px] border-t border-[#D9D9D9] md:hidden"></div>
         <Link
           href={`/products/${data._id}`}
           className="block px-14 pt-16 md:px-10 1xl:pl-[3rem] 3xl:pl-[4rem]"
@@ -108,22 +108,40 @@ const CollectionItem = ({ data, popupToggler }) => {
           </Link>
 
           <div className="flex items-center justify-between callBtnGroup mt-12 overflow-hidden flex-wrap">
-            <div className="flex-grow">
-              <div
-                className="bg-black text-white text-[1.2rem] font-medium xl:font-normal flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem] cursor-pointer"
-                onClick={popupToggler}
-              >
-                <Image
-                  src="/images/square-btn-call-icon.webp"
-                  width="20"
-                  height="20"
-                  alt="Call Icon"
-                  className="object-contain w-[1.57rem] mr-6 h-auto 3xl:w-[2rem] 3xl:mr-[4rem]"
-                />
-                {data.isBooked || data.isSoldOut ? 'Request A Call Back' : 'Call Big Boy Toyz'}
-                
+            {data.isBooked || data.isSoldOut ? (
+              <div className="flex-grow">
+                <div
+                  className="bg-black text-white text-[1.2rem] font-medium xl:font-normal flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem] cursor-pointer"
+                  onClick={popupToggler}
+                >
+                  <Image
+                    src="/images/square-btn-call-icon.webp"
+                    width="20"
+                    height="20"
+                    alt="Call Icon"
+                    className="object-contain w-[1.57rem] mr-6 h-auto 3xl:w-[2rem] 3xl:mr-[4rem]"
+                  />
+                  Request A Call Back
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="flex-grow">
+                <a
+                  href="tel:+919999999983"
+                  className="bg-black text-white text-[1.2rem] font-medium xl:font-normal flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem] cursor-pointer"
+                >
+                  <Image
+                    src="/images/square-btn-call-icon.webp"
+                    width="20"
+                    height="20"
+                    alt="Call Icon"
+                    className="object-contain w-[1.57rem] mr-6 h-auto 3xl:w-[2rem] 3xl:mr-[4rem]"
+                  />
+                  Call Big Boy Toyz
+                </a>
+              </div>
+            )}
+
             <div className="callBtnRight ml-4">
               <a
                 href="#"
