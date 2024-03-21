@@ -8,7 +8,7 @@ import NoResults from "../Components/FilterResults/NoResults/NoResults";
 import OurShowrooms from "../Components/FilterResults/OurShowrooms/OurShowrooms";
 
 const FilterResults = () => {
-  const [totalResults , setTotalResults] = useState(0);
+  const [totalResults , setTotalResults] = useState(1);
   return (
     <main>
       <Header isPageHeader={true} />
