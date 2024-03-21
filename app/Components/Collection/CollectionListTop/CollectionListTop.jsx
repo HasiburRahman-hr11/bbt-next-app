@@ -19,7 +19,7 @@ const CollectionListTop = () => {
   }, []);
 
   return (
-    <section className="bg-white md:bg-[#f3f3f3] lg:pb-14">
+    <section className="bg-white md:bg-[#f3f3f3] lg:pb-14 xl:pb-[5rem] 1xl:pb-[6rem] 2xl:pb-[8rem] 3xl:pb-[10rem]">
       {popupOpen && (
         <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
       )}

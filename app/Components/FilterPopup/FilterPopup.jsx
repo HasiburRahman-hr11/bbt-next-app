@@ -305,7 +305,7 @@ const FilterPopup = ({ active, togglePopup }) => {
                   <li
                     key={brand._id}
                     title={brand.title}
-                    className={`py-7 px-6 border border-neutral-200 rounded-md mr-4 flex items-center justify-center cursor-pointer transition-all duration-300 w-[7.7rem] h-[7.7rem] min-w-[7.7rem] xl:w-[10rem] xl:h-[10rem]${
+                    className={`py-7 px-6 border border-neutral-200 rounded-md mr-4 flex items-center justify-center cursor-pointer transition-all duration-300 w-[7.7rem] h-[7.7rem] min-w-[7.7rem] xl:w-[10rem] xl:h-[10rem] ${
                       selectedBrands.some((item) => item._id === brand._id)
                         ? styles.active
                         : ""
