@@ -9,15 +9,15 @@ import "aos/dist/aos.css";
 
 const sliderItems = [
   {
-    thumbnail: "/images/team/celebration-slide-1.webp",
+    thumbnail: "/images/team-page/celebration-slide-1.webp",
     title: "We share <br> <b>a common goal</b>",
   },
   {
-    thumbnail: "/images/team/celebration-slide-2.webp",
+    thumbnail: "/images/team-page/celebration-slide-2.webp",
     title: "We are <b>passionate about cars</b>",
   },
   {
-    thumbnail: "/images/team/celebration-slide-3.webp",
+    thumbnail: "/images/team-page/celebration-slide-1.webp",
     title: "We share <br> <b>a common goal</b>",
   },
 ];
@@ -95,7 +95,7 @@ const Celebration = () => {
   };
 
   return (
-    <section className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[18rem]">
+    <section className="bg-white py-[5rem] sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div
           className="block lg:flex lg:flex-wrap lg:justify-between lg:pl-[8.5%] items-center"
@@ -110,7 +110,7 @@ const Celebration = () => {
                   Celebration <b>40 years of bond</b>
                 </h2>
                 <img
-                  src="/images/team/celebration-icon.webp"
+                  src="/images/team-page/celebration-icon.webp"
                   alt="Icon"
                   className=" object-contain h-[6rem] w-auto xl:h-[8.3rem] 1xl:h-[10rem] 3xl:h-[12.5rem]"
                 />
@@ -125,7 +125,7 @@ const Celebration = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-[65%] xl:w-[70.5%] xl:hidden">
+          <div className="w-full lg:w-[65%] xl:w-[70.5%]">
             <div className="celebration-slider pl-[2rem] mt-[4rem] lg:mt-0">
               <Slider {...settings}>
                 {sliderItems.map((item, index) => (

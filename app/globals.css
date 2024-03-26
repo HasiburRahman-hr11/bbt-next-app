@@ -28,14 +28,6 @@
 
   @font-face {
     font-family: "Celias";
-    src: url("/fonts/Celias-HairlineItalic.woff2") format("woff2"),
-      url("/fonts/Celias-HairlineItalic.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: "Celias";
     src: url("/fonts/Celias-LightItalic.woff2") format("woff2"),
       url("/fonts/Celias-LightItalic.woff") format("woff");
     font-weight: 300;

@@ -49,7 +49,7 @@ const TeamSection = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-[#ffffff] py-[5rem] sm:py-[8rem] md:pb-[12rem] lg:pb-[15rem]  1xl:pb-[18rem] 3xl:pt-[12rem]">
+    <section className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] md:pb-[12rem] lg:pb-[15rem]  1xl:pb-[18rem] 3xl:pt-[12rem]">
       <div className="max-1920">
         <div className="container">
           <div
@@ -58,7 +58,7 @@ const TeamSection = () => {
             data-aos-duration="500"
           >
             <h3 className="titleWithLine mobileLine hidden md:block">
-              <span className="bg-[#ffffff] pr-[3rem] inline-block relative z-10 text-[2.5rem] tracking-[-2px] xl:text-[3rem] xl:pr-[4rem] 1xl:text-[3.7rem] 3xl:text-[4.5rem]">
+              <span className="bg-[#F4F4F1] pr-[3rem] inline-block relative z-10 text-[2.5rem] tracking-[-2px] xl:text-[3rem] xl:pr-[4rem] 1xl:text-[3.7rem] 3xl:text-[4.5rem]">
                 Meet The Team
               </span>
             </h3>
@@ -152,7 +152,7 @@ const TeamSection = () => {
             <div className={styles.teamMemberItem}>
               <div>
                 <img
-                  src="/images/team/lf-img-1.webp"
+                  src="/images/team-page/lf-img-1.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -166,7 +166,7 @@ const TeamSection = () => {
 
               <div>
                 <img
-                  src="/images/team/lf-img-2.webp"
+                  src="/images/team-page/lf-img-2.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -192,7 +192,7 @@ const TeamSection = () => {
             <div className={styles.teamMemberItem}>
               <div>
                 <img
-                  src="/images/team/accounts-img-1.webp"
+                  src="/images/team-page/accounts-img-1.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -204,7 +204,7 @@ const TeamSection = () => {
 
               <div>
                 <img
-                  src="/images/team/accounts-img-2.webp"
+                  src="/images/team-page/accounts-img-2.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -230,7 +230,7 @@ const TeamSection = () => {
             <div className={styles.teamMemberItem}>
               <div>
                 <img
-                  src="/images/team/after-sales-1.webp"
+                  src="/images/team-page/after-sales-1.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -242,7 +242,7 @@ const TeamSection = () => {
 
               <div>
                 <img
-                  src="/images/team/after-sales-2.webp"
+                  src="/images/team-page/after-sales-2.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -270,7 +270,7 @@ const TeamSection = () => {
             <div className={styles.teamMemberItem}>
               <div>
                 <img
-                  src="/images/team/marketing-img-1.webp"
+                  src="/images/team-page/marketing-img-1.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -299,7 +299,7 @@ const TeamSection = () => {
             <div className={styles.teamMemberItem}>
               <div>
                 <img
-                  src="/images/team/sales-img-1.webp"
+                  src="/images/team-page/sales-img-1.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -310,7 +310,7 @@ const TeamSection = () => {
               </div>
               <div>
                 <img
-                  src="/images/team/sales-img-2.webp"
+                  src="/images/team-page/sales-img-2.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -321,7 +321,7 @@ const TeamSection = () => {
               </div>
               <div>
                 <img
-                  src="/images/team/sales-img-3.webp"
+                  src="/images/team-page/sales-img-3.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -338,7 +338,7 @@ const TeamSection = () => {
             <Slider {...settings}>
               <div className="pr-[2rem]">
                 <img
-                  src="/images/team/sales-img-1.webp"
+                  src="/images/team-page/sales-img-1.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -353,7 +353,7 @@ const TeamSection = () => {
               </div>
               <div className="pr-[2rem]">
                 <img
-                  src="/images/team/sales-img-2.webp"
+                  src="/images/team-page/sales-img-2.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
@@ -368,7 +368,7 @@ const TeamSection = () => {
               </div>
               <div className="pr-[2rem]">
                 <img
-                  src="/images/team/sales-img-3.webp"
+                  src="/images/team-page/sales-img-3.webp"
                   alt="Team member"
                   className="w-full object-cover h-full block"
                 />
