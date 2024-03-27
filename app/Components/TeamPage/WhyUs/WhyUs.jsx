@@ -27,12 +27,17 @@ const WhyUs = () => {
         </div>
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="container w-full h-full">
-            <div className="flex h-full w-full flex-col justify-between py-[6rem] sm:justify-start sm:max-w-[60%] lg:pt-[8rem] 2xl:pt-[9rem] 3xl:pt-[12rem]">
+            <div
+              className="flex h-full w-full flex-col justify-between py-[6rem] sm:justify-start sm:max-w-[60%] lg:pt-[8rem] xl:max-w-[43%] xl:pt-[12rem] 2xl:pt-[14rem] 3xl:pt-[22rem] 3xl:max-w-[44%]"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
               <div className="text-center text-white sm:text-[#111111] sm:text-left">
                 <p className="text-[1.4rem] uppercase font-light xl:text-[1.37rem] 1xl:text-[1.6rem] 3xl:text-[2.2rem]">
                   Why Us ?
                 </p>
-                <h2 className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-2px] text-[2.9rem] xl:text-[3.75rem] 1xl:text-[4.2rem] 1xl:mt-[2rem] 2xl:text-[4.3rem] 3xl:text-[5.8rem]">
+                <h2 className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-2px] text-[2.9rem] xl:text-[3.75rem] 1xl:text-[4.2rem] 1xl:mt-[2rem] 2xl:text-[4.3rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px]">
                   <b>151 Inspection checkpoints -</b> BBT guarantee of premium
                   quality assurance.
                 </h2>

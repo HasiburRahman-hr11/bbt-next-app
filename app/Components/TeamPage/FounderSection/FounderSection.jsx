@@ -56,7 +56,7 @@ const SliderItem = ({ data }) => {
             className="w-full h-auto object-cover"
           />
         </div>
-        <p className="text-[1.5rem] w-full tracking-[-1px] font-light mt-[1.5rem] pb-[1.5rem] sm:text-[1.2rem] md:pb-[0.7rem] md:text-[1rem] md:mt-[0.7rem] xl:text-[1.2rem] xl:min-h-[4.2rem] xl:pb-[0] xl:flex xl:items-center xl:justify-center 1xl:text-[1.25rem] 1xl:tracking-[-0.5px] 1xl:min-h-[5.5rem] 1xl:py-[1rem] 3xl:text-[1.8rem] 3xl:tracking-[-1px] 3xl:min-h-[7.5rem]">
+        <p className="text-[1.5rem] w-full tracking-[-1px] font-light mt-[1.5rem] pb-[1.5rem] sm:text-[1.2rem] md:pb-[0.7rem] md:text-[1rem] md:mt-[0.7rem] xl:text-[1.2rem] xl:min-h-[4.2rem] xl:pb-[0] xl:flex xl:items-center xl:justify-center 1xl:text-[1.25rem] 1xl:tracking-[-0.5px] 1xl:min-h-[4.5rem] 3xl:text-[1.8rem] 3xl:tracking-[-1px] 3xl:min-h-[7.5rem]">
           {data.title}
         </p>
       </div>
@@ -65,12 +65,20 @@ const SliderItem = ({ data }) => {
 };
 
 const FounderSection = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <section className="bg-white py-[6rem]">
+    <section className="bg-white py-[6rem] xl:py-[12rem] 1xl:py-[14rem] 2xl:py-[16rem] 3xl:py-[19rem]">
       <div className="max-1920">
         <div className="container">
           <div className="sm:flex sm:flex-wrap sm:justify-between">
-            <div className="sm:w-[40%] sm:mx-auto">
+            <div
+              className="sm:w-[40%] sm:mx-auto md:ml-0"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
               <div className="md:hidden">
                 <h2 className="text-[2.2rem] tracking-[-1.5px]">Jatin Ahuja</h2>
                 <p className="text-[1.2rem] font-light">
@@ -85,7 +93,12 @@ const FounderSection = () => {
                 />
               </div>
             </div>
-            <div className="md:w-[50%]">
+            <div
+              className="md:w-[51%]"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
               <div className="hidden md:block">
                 <h2 className="text-[2.2rem] tracking-[-1.5px] lg:text-[3rem] lg:font-[400] 1xl:text-[3.3rem] 2xl:text-[3.5rem] 3xl:text-[4.5rem] 3xl:tracking-[-3px]">
                   Jatin Ahuja
@@ -116,17 +129,17 @@ const FounderSection = () => {
                     length & breadth of the country.
                   </p>
                 </div>
-                <div className="w-max ml-auto mt-[-1rem] lg:mt-[-4rem]">
+                <div className="w-max ml-auto mt-[-1rem] lg:mt-[-4rem] 1xl:mt-[-6rem]">
                   <img
                     src="/images/team/jatin-ahuja-signature.png"
                     alt="Signature"
-                    className="h-auto w-[12rem] object-contain"
+                    className="h-auto w-[12rem] object-contain 1xl:w-[14.5rem]"
                   />
                 </div>
               </div>
               {/* AWARDS SECTION */}
-              <div className="border border-[#DEDEDE] rounded-[2rem] px-[2rem] pb-[2rem] mt-[2rem]">
-                <h5 className="font-normal border border-[#DEDEDE] rounded-[3rem] text-[1.1rem] 3xl:text-[1.3rem] w-max mx-auto px-[1.5rem] mt-[-0.9rem] bg-white">
+              <div className="border border-[#DEDEDE] rounded-[2rem] px-[2rem] pb-[2rem] mt-[2rem] 1xl:mt-[3rem] 2xl:mt-[5rem]">
+                <h5 className="font-normal border border-[#DEDEDE] rounded-[3rem] text-[1.1rem] 2xl:text-[1.2rem] 3xl:text-[1.3rem] w-max mx-auto px-[1.5rem] mt-[-0.9rem] bg-white uppercase">
                   Awards Won
                 </h5>
                 <div className="flex flex-wrap justify-between items-center">
@@ -146,7 +159,7 @@ const FounderSection = () => {
               </div>
 
               {/* FOR Desktop */}
-              <div className=" w-full hidden sm:block mt-[2rem]">
+              <div className=" w-full hidden sm:block mt-[2rem] 2xl:mt-[3rem]">
                 <div className="flex flex-wrap justify-between">
                   {featured.map((data, index) => (
                     <SliderItem data={data} key={index} />

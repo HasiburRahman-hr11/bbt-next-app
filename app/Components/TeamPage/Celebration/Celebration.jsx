@@ -4,10 +4,22 @@ import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import gsap from "gsap";
 
 const sliderItems = [
+  {
+    thumbnail: "/images/team/celebration-slide-1.webp",
+    title: "We share <br> <b>a common goal</b>",
+  },
+  {
+    thumbnail: "/images/team/celebration-slide-2.webp",
+    title: "We are <b>passionate about cars</b>",
+  },
+  {
+    thumbnail: "/images/team/celebration-slide-3.webp",
+    title: "We share <br> <b>a common goal</b>",
+  },
   {
     thumbnail: "/images/team/celebration-slide-1.webp",
     title: "We share <br> <b>a common goal</b>",
@@ -38,18 +50,16 @@ function NextArrow(props) {
 }
 
 const SliderItem = ({ data }) => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
   return (
-    <div className="pr-[2rem] xl:pr-[4rem] 2xl:pr-[5.5rem] 3xl:pr-[7.5rem]">
+    <div className="pr-[2rem] xl:pr-0 xl:my-[30px]">
       <div className="relative rounded-[3rem] overflow-hidden xl:rounded-[4rem]">
         <img
           src={
             data?.thumbnail ? data.thumbnail : "/images/bbt-world-item-1.webp"
           }
           alt="Slider Image"
-          className="w-full block object-cover"
+          className="w-full block object-cover h-auto 3xl:max-h-[53rem]"
         />
         <div className="absolute bottom-0 left-0 pb-[4rem] pt-[8rem] px-[3rem] w-full h-auto linear-bottom bg-gradient-to-t from-black to-[#00000000]">
           <h5
@@ -63,6 +73,8 @@ const SliderItem = ({ data }) => {
     </div>
   );
 };
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Celebration = () => {
   const [progressWidth, setProgressWidth] = useState(25);
@@ -94,18 +106,103 @@ const Celebration = () => {
     ],
   };
 
+  useEffect(() => {
+    const animateAtSmallScreen = () => {
+      let rightTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#celebrationSection",
+          start: "top 0%",
+          end: "bottom 90%",
+          scrub: 1,
+          // markers: true,
+          ease: "power1.inOut",
+        },
+      });
+      let leftTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#celebrationSection",
+          start: "top 0%",
+          end: "bottom 90%",
+          scrub: 1,
+          // markers: true,
+          ease: "power1.inOut",
+        },
+      });
+      rightTimeline.to("#rightImgCol", {
+        y: -2900,
+      });
+      leftTimeline.to("#leftImgCol", {
+        y: 2900,
+      });
+    };
+
+    const animateAtLargeScreen = () => {
+      let rightTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#celebrationSection",
+          start: "top 0%",
+          end: "bottom 90%",
+          scrub: 1,
+          // markers: true,
+          ease: "power1.inOut",
+        },
+      });
+      let leftTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#celebrationSection",
+          start: "top 0%",
+          end: "bottom 90%",
+          scrub: 1,
+          // markers: true,
+          ease: "power1.inOut",
+        },
+      });
+      rightTimeline.to("#rightImgCol", {
+        y: -3900,
+      });
+      leftTimeline.to("#leftImgCol", {
+        y: 3900,
+      });
+    };
+
+    const handleResize = () => {
+      if (window.innerWidth >= 1920) {
+        animateAtLargeScreen();
+      } else {
+        animateAtSmallScreen();
+      }
+    };
+
+    handleResize(); // Initial check
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <section className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] xl:py-[12rem] 2xl:py-[14rem] 3xl:py-[18rem]">
-      <div className="max-1920">
-        <div
-          className="block lg:flex lg:flex-wrap lg:justify-between lg:pl-[8.5%] items-center"
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="500"
-        >
-          <div className="w-full lg:w-[30%] xl:w-[23.5%]">
-            <div className="w-[91%] mx-auto lg:w-full">
-              <div className="flex justify-between items-center lg:flex-col-reverse lg:items-start">
+    <section
+      className="bg-[#F4F4F1] py-[5rem] sm:py-[8rem] xl:py-0 xl:h-[2100px] xl:relative"
+      id="celebrationSection"
+    >
+      <div className="max-1920 xl:sticky xl:top-0 xl:h-[65rem] xl:overflow-hidden 1xl:h-[67rem] 2xl:h-[72rem] 3xl:h-[110rem] 3xl:min-h-[100vh]">
+        <div className="block lg:flex lg:flex-wrap lg:justify-between lg:pl-[8.5%] items-center xl:pl-0 xl:w-[82%] xl:mx-auto xl:items-start">
+          <div
+            className="hidden xl:block w-[27%] mt-[-1830px] 1xl:mt-[-2050px] 2xl:mt-[-2180px] 3xl:mt-[-2500px]"
+            id="leftImgCol"
+          >
+            {sliderItems.map((item, index) => (
+              <SliderItem data={item} key={index} />
+            ))}
+          </div>
+          <div
+            className="w-full lg:w-[30%] xl:w-[35%] xl:pt-[130px] 3xl:pt-[220px]"
+     
+          >
+            <div className="w-[91%] mx-auto lg:w-full xl:text-center">
+              <div className="flex justify-between items-center lg:flex-col-reverse lg:items-start xl:items-center">
                 <h2 className="flex-1 font-light [&>b]:font-normal [&>b]:block leading-[1.1] pr-[2rem] tracking-[-1.2px] lg:mt-[2.5rem] lg:tracking-[-2px]">
                   Celebration <b>40 years of bond</b>
                 </h2>
@@ -115,14 +212,29 @@ const Celebration = () => {
                   className=" object-contain h-[6rem] w-auto xl:h-[8.3rem] 1xl:h-[10rem] 3xl:h-[12.5rem]"
                 />
               </div>
-              <p className="font-light text-[1.2rem] leading-[1.4] mt-[2rem] w-[90%] xl:w-full xl:tracking-tight xl:text-[1.13rem] xl:leading-[1.4] 1xl:text-[1.2rem] 1xl:text-justify 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
+              <p className="font-light text-[1.2rem] leading-[1.4] mt-[2rem] w-[90%] xl:w-full xl:tracking-tight xl:text-[1.13rem] xl:leading-[1.4] 1xl:text-[1.2rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                 At each progression without a doubt Directly from the time you
                 enter the paradise of extravagance vehicles, rubberneck at the
                 most loved pick of the parcel, steer away the difficulty runs
                 and choke your pre cherished or new first light adored
                 outlandish home
               </p>
+              <img
+                src="/images/down-circle-arrow-white.webp"
+                width="123"
+                height="123"
+                alt="Arrow Icon"
+                className="hidden xl:inline-block object-contain  invert xl:mt-[4.5rem] xl:w-[8.5rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem] 3xl:mt-[6.5rem]"
+              />
             </div>
+          </div>
+          <div
+            className="hidden xl:block w-[27%] mt-[70px] 1xl:mt-[100px] 3xl:mt-[210px]"
+            id="rightImgCol"
+          >
+            {sliderItems.map((item, index) => (
+              <SliderItem data={item} key={index} />
+            ))}
           </div>
 
           <div className="w-full lg:w-[65%] xl:w-[70.5%] xl:hidden">
