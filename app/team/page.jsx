@@ -9,6 +9,7 @@ import TeamSection from "../Components/TeamPage/TeamSection/TeamSection";
 import WhyUs from "../Components/TeamPage/WhyUs/WhyUs";
 import Chairman from "../Components/TeamPage/Chairman/Chairman";
 import CooSection from "../Components/TeamPage/CooSection/CooSection";
+import TestimonialSection from "../Components/TeamPage/TestimonialSection/TestimonialSection";
 
 
 const Team = () => {
@@ -22,6 +23,7 @@ const Team = () => {
       <FounderSection />
       <CooSection />
       <TeamSection />
+      <TestimonialSection />
       <WhyUs />
       
       <Footer />
