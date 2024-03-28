@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const PageHeader = () => {
+const PageHeader = ({ totalResults }) => {
   return (
     <section className="bg-white md:bg-[#f3f3f3]">
       <div className="container">
-        <div className="py-12 xl:pt-[5rem] xl:pb-[3rem] md:border-b md:border-[#D9D9D9] 3xl:pt-[7rem] 3xl:pb-[5rem]">
+        <div className="pt-[3rem] pb-[2rem] xl:pt-[5rem] md:border-b md:border-[#D9D9D9] xl:border-0 xl:pb-0 1xl:pt-[9rem] 3xl:pt-[11rem]">
           <p className="flex flex-wrap items-center font-normal">
             <Link
               href="/"
@@ -25,13 +25,15 @@ const PageHeader = () => {
               Search
             </span>
           </p>
-          <div className="flex flex-wrap justify-between items-center mt-5 xl:mt-[1.8rem] 1xl:mt-[2rem] 3xl:mt-[3rem]">
-            <h2 className="text-[1.8rem] md:text-[2.2rem] xl:text-[3.2rem] xl:tracking-[-2px] 1xl:text-[3.5rem] 2xl:text-[3.8rem] 2xl:tracking-[-2.5px] 3xl:text-[4.5rem]">
-              Search By “ Audi ”
+          <div className="mt-5 xl:mt-[1.8rem] 1xl:mt-[2rem] 3xl:mt-[3rem]">
+            <h2 className="font-[200] [&>b]:font-[400] text-[4.5rem] leading-[1.1] tracking-[-2px] xl:text-[5rem] xl:tracking-[-3px] 1xl:text-[5.5rem] 2xl:text-[5.8rem] 3xl:text-[7.5rem] 3xl:tracking-[-5px]">
+              Search By <b>“ Audi ”</b>
             </h2>
-            <p className="text-lg leading-0 1xl:text-[2rem] 3xl:text-[2.5rem]">
-              Total 136 Results Found
-            </p>
+            {totalResults > 0 && (
+              <p className="text-[1.5rem] leading-0 xl:text-[1.7rem] 1xl:text-[1.8rem] 2xl:text-[1.9rem] 3xl:text-[2rem] font-medium xl:font-normal pt-[2rem] border-t border-[#D9D9D9] mt-[2rem] xl:mt-[5rem] 1xl:mt-[8rem] 3xl:pt-[4rem]">
+                Total 136 Results Found
+              </p>
+            )}
           </div>
         </div>
       </div>

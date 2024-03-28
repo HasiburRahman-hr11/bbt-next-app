@@ -18,12 +18,12 @@ const CarList = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-white md:bg-[#f3f3f3]">
+    <section className="bg-white md:bg-[#f3f3f3] pb-[5rem] lg:pb-[8rem] 2xl:pb-[10rem]">
       {popupOpen && (
         <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
       )}
       <div className="max-1920">
-        <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto md:pb-20 lg:w-[83%] xl:pb-[12rem] 1xl:pt-[2rem] 3xl:pt-[4rem]">
+        <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] mx-auto md:pb-20 lg:w-[83%] lg:pb-[6rem] 1xl:pt-[2rem] 2xl:pb-[8rem] 3xl:pt-[4rem]">
           {cars.map((item) => (
             <div
               key={item._id}
@@ -37,7 +37,7 @@ const CarList = () => {
           ))}
         </div>
         <div className="container">
-          <div className="pagination py-12 border-t border-[#D9D9D9] lg:pt-0 lg:mb-[6rem]">
+          <div className="pagination pt-[3rem] border-t border-[#D9D9D9] lg:pt-0">
             <ul className="flex fle-wrap items-center justify-center [&>li]:mx-[4px] [&>li]:my-3 w-max px-10 lg:max-w-[43rem] mx-auto lg:bg-[#f3f3f3] lg:mt-[-3rem] [&>li]:bg-white">
               <li className="">
                 <a

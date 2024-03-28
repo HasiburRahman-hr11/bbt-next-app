@@ -5,18 +5,22 @@ import Footer from "../Components/Footer/Footer";
 import PageHeader from "../Components/SearchResults/PageHeader/PageHeader";
 import CarList from "../Components/SearchResults/CarList/CarList";
 import NoResults from "../Components/SearchResults/NoResults/NoResults";
+import TopChoices from "../Components/SearchResults/TopChoices/TopChoices";
+import RecentlyAdded from "../Components/SearchResults/RecentlyAdded/RecentlyAdded";
 
 const SearchResults = () => {
-  const [totalResults , setTotalResults] = useState(1);
+  const [totalResults , setTotalResults] = useState(10);
   return (
     <main>
       <Header isPageHeader={true} />
-      <PageHeader />
+      <PageHeader totalResults={totalResults} />
       {totalResults > 0 ? (
         <CarList />
       ) : (
         <NoResults />
       )}
+      <TopChoices />
+      <RecentlyAdded />
       <Footer />
     </main>
   );
