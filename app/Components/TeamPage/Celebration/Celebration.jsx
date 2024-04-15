@@ -50,7 +50,6 @@ function NextArrow(props) {
 }
 
 const SliderItem = ({ data }) => {
-
   return (
     <div className="pr-[2rem] xl:pr-0 xl:my-[30px]">
       <div className="relative rounded-[3rem] overflow-hidden xl:rounded-[4rem]">
@@ -197,10 +196,7 @@ const Celebration = () => {
               <SliderItem data={item} key={index} />
             ))}
           </div>
-          <div
-            className="w-full lg:w-[30%] xl:w-[35%] xl:pt-[130px] 3xl:pt-[220px]"
-     
-          >
+          <div className="w-full lg:w-[30%] xl:w-[35%] xl:pt-[130px] 3xl:pt-[220px]">
             <div className="w-[91%] mx-auto lg:w-full xl:text-center">
               <div className="flex justify-between items-center lg:flex-col-reverse lg:items-start xl:items-center">
                 <h2 className="flex-1 font-light [&>b]:font-normal [&>b]:block leading-[1.1] pr-[2rem] tracking-[-1.2px] lg:mt-[2.5rem] lg:tracking-[-2px]">

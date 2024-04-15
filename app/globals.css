@@ -1078,6 +1078,13 @@ img {
     top: 26%;
   }
 }
+@media only screen and (max-width: 767px) {
+
+  .brand-page-filter .filter-icon-box{
+    padding: 0;
+    border: none;
+  }
+}
 @media only screen and (max-width: 640px) {
   .container {
     width: 100%;

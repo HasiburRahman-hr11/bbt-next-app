@@ -28,10 +28,19 @@ const FooterMenuDesktop = () => {
                 <Link href="/filter-results">Filter Page</Link>
               </li>
               <li>
-                <Link href="/compare">Compare Page</Link>
+                <Link href="/showrooms">Showrooms</Link>
               </li>
               <li>
-                <Link href="/sell-car">Sell Car</Link>
+                <Link href="/bbt-squad">BBT Squad</Link>
+              </li>
+              <li>
+                <Link href="/about-us">About Us</Link>
+              </li>
+              <li>
+                <Link href="/team">Team</Link>
+              </li>
+              <li>
+                <Link href="/workshop">Workshop</Link>
               </li>
              
             </ul>
