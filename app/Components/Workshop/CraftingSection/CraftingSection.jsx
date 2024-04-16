@@ -30,14 +30,14 @@ const uspList = [
 const CraftingSection = () => {
   return (
     <section className="bg-[#161616] text-white">
-      <div className="max-1920 relative overflow-hidden py-[6rem] lg:py-[10rem] 1xl:py-[13rem] 3xl:py-[18rem]">
+      <div className="max-1920 relative overflow-hidden py-[6rem] lg:py-[10rem] xl:py-[13rem] 2xl:py-[15rem] 3xl:py-[18rem]">
         <img
           src="/images/workshop/crafting-before.png"
           alt=""
           className="hidden xl:inline-block object-contain absolute top-[-9rem] left-0 w-[40%] max-w-[64rem] 1xl:max-w-[69rem] 2xl:max-w-[72rem]"
         />
-        <div className="mx-auto px-[30px] 3xl:w-[71.5%] relative z-20">
-          <h2 className="font-light [&>b]:font-[400] leading-[1.3] mb-[3rem] tracking-[-1.2px] lg:tracking-[-2px] capitalize text-center 3xl:mb-[6rem]">
+        <div className="mx-auto px-[30px] xl:w-[72.5%] 3xl:w-[71.5%] relative z-20">
+          <h2 className="font-light [&>b]:font-[400] leading-[1.3] mb-[3rem] tracking-[-1.2px] lg:tracking-[-2px] capitalize text-center xl:mb-[4rem] 1xl:mb-[5rem] 3xl:mb-[6rem]">
             <b> Crafting Exceptional Luxury: </b>
             Our Workshop <br /> Ensures a Premium Experience
           </h2>
@@ -50,11 +50,11 @@ const CraftingSection = () => {
               hight="642"
             />
           </div>
-          <div className="grid grid-cols-4 gap-[4rem]">
+          <div className="grid grid-cols-4 xl:gap-[2.5rem] 3xl:gap-[4rem]">
             {uspList.map((item, index) => (
               <div
                 key={index}
-                className={`bg-[#212121] mt-[3rem] pt-[3rem] pb-[2rem] pl-[2rem] pr-[1rem] rounded-[1rem] xl:pt-[4.5rem] xl:pb-[3rem] 2xl:pt-[5.2rem] 2xl:pb-[4rem] 3xl:px-[4.5rem] 3xl:py-[4.5rem] 3xl:rounded-[1.3rem] 3xl:mt-[4rem] group transition-all duration-500 ease-in-out cursor-pointer`}
+                className={`bg-[#212121] mt-[3rem] pt-[3rem] pb-[2rem] pl-[2rem] pr-[1rem] rounded-[1rem] xl:py-[4rem] xl:px-[3rem] 3xl:px-[4.5rem] 3xl:py-[4.5rem] 3xl:rounded-[1.3rem] 3xl:mt-[4rem] group transition-all duration-500 ease-in-out cursor-pointer`}
               >
                 <div className="h-[2.8rem] xl:h-[3.2rem] 1xl:h-[4rem]">
                   <img
@@ -67,9 +67,9 @@ const CraftingSection = () => {
                 </div>
                 <p
                   dangerouslySetInnerHTML={{ __html: item.title }}
-                  className="text-[1.5rem] font-[200] [&>b]:font-[500] mt-[1.5rem] [&>b]:block leading-[1.4] lg:text-[1.8rem] xl:text-[1.6rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] 3xl:mt-[4rem] 3xl:leading-[1.6]"
+                  className="text-[1.5rem] font-[200] [&>b]:font-[500] mt-[1.5rem] [&>b]:block leading-[1.4] lg:text-[1.8rem] xl:text-[1.6rem] xl:mt-[2rem] 1xl:text-[1.8rem] 1xl:mt-[3rem] 2xl:text-[2rem] 3xl:text-[2.4rem] 3xl:mt-[4rem] 3xl:leading-[1.6]"
                 ></p>
-                <p className="font-light text-[1rem] tracking-tight leading-[1.5] 1xl:text-[1.15rem] 2xl:text-[1.25rem] 3xl:text-[1.45rem] mt-[1rem] 3xl:mt-[2rem]">
+                <p className="font-light text-[1rem] tracking-tight leading-[1.5] 1xl:text-[1.15rem] 2xl:text-[1.25rem] 3xl:text-[1.45rem] mt-[1rem] 1xl:mt-[1.5rem] 3xl:mt-[2rem]">
                   {item.description}
                 </p>
               </div>

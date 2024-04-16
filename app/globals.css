@@ -554,10 +554,10 @@ img {
 .celebration-slider .curve-slider-arrow img {
   filter: invert(1);
 }
-.recently-added-cars>div>.slick-list{
+.recently-added-cars > div > .slick-list {
   padding: 0 5% !important;
 }
-.recently-added-cars .rac-item .common-car-item{
+.recently-added-cars .rac-item .common-car-item {
   background-color: #fff;
 }
 
@@ -784,7 +784,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #0A0909;
+  background-color: #0a0909;
   width: 100%;
   height: 0.5px;
   right: 0;
@@ -911,7 +911,7 @@ img {
   .recent-uploads-slider .slick-arrow {
     display: inline-block !important;
   }
-  .recently-added-cars>div>.slick-list{
+  .recently-added-cars > div > .slick-list {
     padding: 0 !important;
   }
 }
@@ -944,6 +944,17 @@ img {
   .hp-featured-slider .curve-slider-arrow.slick-next {
     top: calc(50% - 7.5rem);
   }
+
+  /* Workshop Page */
+  .workshop-testimonial-slider .curve-slider-arrow.slick-arrow {
+    top: 11%;
+  }
+  .workshop-testimonial-slider .curve-slider-arrow.slick-arrow.slick-next {
+    top: -35%;
+  }
+  .workshop-testimonial-slider .curve-slider-arrow.slick-prev {
+    left: -12rem;
+  }
 }
 @media only screen and (min-width: 1440px) {
   h1 {
@@ -963,6 +974,17 @@ img {
   /* Homepage */
   .inclusionSlider .slick-slider {
     padding: 0 11rem;
+  }
+
+  /* Workshop Page */
+  .workshop-testimonial-slider .curve-slider-arrow.slick-prev {
+    left: -13.5rem;
+  }
+  .workshop-testimonial-slider .curve-slider-arrow.slick-arrow {
+    top: 22%;
+  }
+  .workshop-testimonial-slider .curve-slider-arrow.slick-arrow.slick-next {
+    top: -22%;
   }
 }
 
@@ -1037,7 +1059,6 @@ img {
     top: calc(50% - 7rem);
   }
 
-
   .detailsCallBtnGroup .btnSquare,
   .detailsCallBtnGroup .smallCallBtn {
     font-size: 1.9rem;
@@ -1077,10 +1098,20 @@ img {
   .hp-services-slider.brand-model-slider .curve-slider-arrow.slick-next {
     top: 26%;
   }
+
+  /* Workshop Page */
+  .workshop-testimonial-slider .curve-slider-arrow.slick-arrow {
+    top: 11%;
+  }
+  .workshop-testimonial-slider .curve-slider-arrow.slick-arrow.slick-next {
+    top: 19%;
+  }
+  .workshop-testimonial-slider .curve-slider-arrow.slick-prev {
+    left: -18rem;
+  }
 }
 @media only screen and (max-width: 767px) {
-
-  .brand-page-filter .filter-icon-box{
+  .brand-page-filter .filter-icon-box {
     padding: 0;
     border: none;
   }
