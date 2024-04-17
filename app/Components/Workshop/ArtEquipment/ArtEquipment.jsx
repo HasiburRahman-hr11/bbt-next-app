@@ -14,34 +14,34 @@ const ArtEquipment = () => {
           </h2>
           <div className="flex flex-wrap justify-between md:grid md:grid-cols-3 gap-[2rem] 3xl:gap-[3rem] mt-[1rem] 3xl:mt-[2rem]">
             <div className="w-[47%] md:w-[unset]">
-              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem]">
+              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem] group cursor-pointer">
                 <img
                   src="/images/workshop/art-equipment-1.webp"
                   alt="Gallery Image"
-                  className="w-full object-cover h-auto"
+                  className="w-full object-cover h-auto group-hover:scale-110 transition-all duration-500"
                 />
               </div>
-              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem]">
+              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem] group cursor-pointer">
                 <img
                   src="/images/workshop/art-equipment-2.webp"
                   alt="Gallery Image"
-                  className="w-full object-cover h-auto"
+                  className="w-full object-cover h-auto group-hover:scale-110 transition-all duration-500"
                 />
               </div>
             </div>
             <div className="md:pt-[2.5rem] w-full md:w-[unset] 3xl:pt-[5rem] order-3 md:order-2">
-              <div className="rounded-[1rem] overflow-hidden md:my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem]">
+              <div className="rounded-[1rem] overflow-hidden md:my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem] group cursor-pointer">
                 <img
                   src="/images/workshop/art-equipment-3.webp"
                   alt="Gallery Image"
-                  className="w-full object-cover h-auto"
+                  className="w-full object-cover h-auto group-hover:scale-110 transition-all duration-500"
                 />
               </div>
-              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem]">
+              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem] group cursor-pointer">
                 <img
                   src="/images/workshop/art-equipment-4.webp"
                   alt="Gallery Image"
-                  className="w-full object-cover h-auto"
+                  className="w-full object-cover h-auto group-hover:scale-110 transition-all duration-500"
                 />
               </div>
               <div className="xl:px-[2.5rem] 3xl:px-[4rem] text-center">
@@ -63,18 +63,18 @@ const ArtEquipment = () => {
               </div>
             </div>
             <div className="order-2 w-[47%] md:w-[unset] md:order-3">
-              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem]">
+              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem] group cursor-pointer">
                 <img
                   src="/images/workshop/art-equipment-5.webp"
                   alt="Gallery Image"
-                  className="w-full object-cover h-auto"
+                  className="w-full object-cover h-auto group-hover:scale-110 transition-all duration-500"
                 />
               </div>
-              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem]">
+              <div className="rounded-[1rem] overflow-hidden my-[2rem] 3xl:rounded-[1.5rem] 3xl:my-[3rem] group cursor-pointer">
                 <img
                   src="/images/workshop/art-equipment-6.webp"
                   alt="Gallery Image"
-                  className="w-full object-cover h-auto"
+                  className="w-full object-cover h-auto group-hover:scale-110 transition-all duration-500"
                 />
               </div>
             </div>
