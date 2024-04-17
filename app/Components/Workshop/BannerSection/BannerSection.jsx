@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BannerSection = () => {
   return (
-    <section className="bg-white pt-[3rem] pb-[5rem] md:pt-[5rem] md:pb-[7rem] lg:pt-[7rem] lg:pb-[9rem] 1xl:pt-[8rem] 1xl:pb-[10rem] 2xl:pt-[9rem] 2xl:pb-[12rem] 3xl:pt-[11rem] 3xl:pb-[13rem]">
+    <section className="bg-white py-[5rem] md:py-[7rem] lg:py-[9rem] 1xl:pt-[8rem] 1xl:pb-[10rem] 2xl:pt-[9rem] 2xl:pb-[12rem] 3xl:pt-[11rem] 3xl:pb-[13rem]">
       <div className="max-1920 overflow-hidden">
         <div className="container">
           <div className="text-center mb-[3rem] lg:mb-[4rem] 3xl:mb-[6rem]">

@@ -16,7 +16,7 @@ const FeaturedItem = ({ data }) => {
   return (
     <Link
       href={data?.url ? data.url : "#"}
-      className="relative block group common-car-item rounded-[3rem] xl:my-5 1xl:rounded-[4rem] 2xl:rounded-[5rem] overflow-hidden"
+      className="relative block group common-car-item rounded-[2rem] lg:rounded-[3rem] xl:my-5 1xl:rounded-[4rem] 2xl:rounded-[5rem] overflow-hidden"
     >
       <div>
         <img
@@ -29,10 +29,10 @@ const FeaturedItem = ({ data }) => {
           className="block w-full h-full group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
         />
       </div>
-      <h5 className="text-white absolute bottom-14 left-14 xl:text-[2.2rem] 1xl:text-[2.5rem] 2xl:text-4.5xl 3xl:text-6xl 3xl:bottom-24 3xl:left-24">
+      <h5 className="text-white w-full absolute bottom-[2rem] left-0 text-center md:text-left md:bottom-14 md:left-14 xl:text-[2.2rem] 1xl:text-[2.5rem] 2xl:text-4.5xl 3xl:text-6xl 3xl:bottom-24 3xl:left-24">
         {data?.title ? data.title : "BBT World"}
       </h5>
-      <span className="w-14 h-14 rounded-50% bg-white flex items-center justify-center p-1 absolute top-12 right-12 xl:w-[4.3rem] xl:h-[4.3rem] 1xl:w-[5rem] 1xl:h-[5rem] 3xl:w-[6.7rem] 3xl:h-[6.7rem] 3xl:top-16 3xl:right-16 group-hover:bg-black transition-all duration-500 ease-in">
+      <span className="w-14 h-14 rounded-50% bg-white flex items-center justify-center p-1 absolute top-[1.5rem] right-[1.5rem] md:top-12 md:right-12 xl:w-[4.3rem] xl:h-[4.3rem] 1xl:w-[5rem] 1xl:h-[5rem] 3xl:w-[6.7rem] 3xl:h-[6.7rem] 3xl:top-16 3xl:right-16 group-hover:bg-black transition-all duration-500 ease-in">
         <img
           src="/images/showroom-location-arrow.webp"
           className="object-contain w-4 xl:w-[1.5rem] 2xl:w-6 3xl:w-[2rem] group-hover:invert transition-all duration-500 ease-in"
@@ -51,11 +51,11 @@ const AboutUs = () => {
       <div className="max-1920">
         <div className="container">
           <div className="flex flex-wrap justify-between items-center">
-            <div className="w-[28.5%]">
+            <div className="w-[48%] md:w-[28.5%] order-2 md:order-1">
               <FeaturedItem data={ourShowroom} />
             </div>
-            <div className="w-[32%] text-center">
-              <div className="xl:max-w-[13rem] 1xl:max-w-[15rem] 2xl:max-w-[16rem] 3xl:max-w-[20rem] mx-auto">
+            <div className="w-full md:w-[32%] text-center order-1 md:order-2">
+              <div className="max-w-[10rem] xl:max-w-[13rem] 1xl:max-w-[15rem] 2xl:max-w-[16rem] 3xl:max-w-[20rem] mx-auto">
                 <img
                   src="/images/workshop/15-years-bond.webp"
                   alt="Icon"
@@ -80,7 +80,7 @@ const AboutUs = () => {
                 className="hidden xl:inline-block object-contain  invert xl:w-[8.5rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
               />
             </div>
-            <div className="w-[28.5%]">
+            <div className="w-[48%] md:w-[28.5%] order-3">
               <FeaturedItem data={ourTeam} />
             </div>
           </div>

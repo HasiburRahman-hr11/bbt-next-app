@@ -36,8 +36,8 @@ const CraftingSection = () => {
           alt=""
           className="hidden xl:inline-block object-contain absolute top-[-9rem] left-0 w-[40%] max-w-[64rem] 1xl:max-w-[69rem] 2xl:max-w-[72rem]"
         />
-        <div className="mx-auto px-[30px] xl:w-[72.5%] 3xl:w-[71.5%] relative z-20">
-          <h2 className="font-light [&>b]:font-[400] leading-[1.3] mb-[3rem] tracking-[-1.2px] lg:tracking-[-2px] capitalize text-center xl:mb-[4rem] 1xl:mb-[5rem] 3xl:mb-[6rem]">
+        <div className="mx-auto w-full px-[15px] lg:w-[90%] xl:w-[72.5%] 3xl:w-[71.5%] relative z-20">
+          <h2 className="font-light [&>b]:font-[400] leading-[1.3] mb-[3rem] tracking-[-1.2px] lg:tracking-[-2px] capitalize text-center xl:mb-[4rem] 1xl:mb-[5rem] 3xl:mb-[6rem] [&>br]:hidden lg:[&>br]:block">
             <b> Crafting Exceptional Luxury: </b>
             Our Workshop <br /> Ensures a Premium Experience
           </h2>
@@ -50,11 +50,11 @@ const CraftingSection = () => {
               hight="642"
             />
           </div>
-          <div className="grid grid-cols-4 xl:gap-[2.5rem] 3xl:gap-[4rem]">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-[3rem] xl:gap-[2.5rem] 3xl:gap-[4rem] 3xl:mt-[4rem]">
             {uspList.map((item, index) => (
               <div
                 key={index}
-                className={`bg-[#212121] mt-[3rem] pt-[3rem] pb-[2rem] pl-[2rem] pr-[1rem] rounded-[1rem] xl:py-[4rem] xl:px-[3rem] 3xl:px-[4.5rem] 3xl:py-[4.5rem] 3xl:rounded-[1.3rem] 3xl:mt-[4rem] group transition-all duration-500 ease-in-out cursor-pointer`}
+                className={`bg-[#212121] pt-[3rem] pb-[2rem] px-[1rem] lg:pl-[2rem] rounded-[1rem]  xl:py-[4rem] xl:px-[3rem] 3xl:px-[4.5rem] 3xl:py-[4.5rem] 3xl:rounded-[1.3rem]  group transition-all duration-500 ease-in-out cursor-pointer`}
               >
                 <div className="h-[2.8rem] xl:h-[3.2rem] 1xl:h-[4rem]">
                   <img
