@@ -78,20 +78,19 @@ const FooterMenuWrapper = () => {
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="/compare"
+                    href="/about-us"
                   >
-                    Compare Page
+                    About Us
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="/sell-car"
+                    href="/team"
                   >
-                    Sell Car
+                    Team
                   </Link>
                 </li>
-                
               </ul>
             </div>
           </AccordionBody>
@@ -120,25 +119,33 @@ const FooterMenuWrapper = () => {
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="#"
+                    href="/showrooms"
                   >
-                    About Us
+                    Showrooms
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="#"
+                    href="/bbt-squad"
                   >
-                    Services
+                    BBT Squad
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="#"
+                    href="/workshop"
                   >
-                    Contact Us
+                    Workshop
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/blogs"
+                  >
+                    Blogs
                   </Link>
                 </li>
               </ul>

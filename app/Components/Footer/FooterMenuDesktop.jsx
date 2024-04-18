@@ -27,22 +27,13 @@ const FooterMenuDesktop = () => {
               <li>
                 <Link href="/filter-results">Filter Page</Link>
               </li>
-              <li>
-                <Link href="/showrooms">Showrooms</Link>
-              </li>
-              <li>
-                <Link href="/bbt-squad">BBT Squad</Link>
-              </li>
+
               <li>
                 <Link href="/about-us">About Us</Link>
               </li>
               <li>
                 <Link href="/team">Team</Link>
               </li>
-              <li>
-                <Link href="/workshop">Workshop</Link>
-              </li>
-             
             </ul>
           </div>
         </div>
@@ -53,28 +44,16 @@ const FooterMenuDesktop = () => {
           <div className="footerMenu">
             <ul>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/showrooms">Showrooms</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/bbt-squad">BBT Squad</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
+                <Link href="/workshop">Workshop</Link>
               </li>
               <li>
-                <a href="#">Menu Item</a>
-              </li>
-              <li>
-                <a href="#">Menu Item</a>
-              </li>
-              <li>
-                <a href="#">Menu Item</a>
-              </li>
-              <li>
-                <a href="#">Menu Item</a>
-              </li>
-              <li>
-                <a href="#">Menu Item</a>
+                <Link href="/blogs">Blogs</Link>
               </li>
             </ul>
           </div>
@@ -234,7 +213,10 @@ const FooterMenuDesktop = () => {
           <h6 className="text-white text-lg 3xl:text-2xl 3xl:tracking-wider">
             Buy Car
           </h6>
-          <a href="tel:+919999999983" className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center">
+          <a
+            href="tel:+919999999983"
+            className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center"
+          >
             <Image
               src="/images/footer-phone-icon.webp"
               width="14"
@@ -249,7 +231,10 @@ const FooterMenuDesktop = () => {
           <h6 className="text-white text-lg 3xl:text-2xl 3xl:tracking-wider">
             Sell Your Car
           </h6>
-          <a href="tel:+919999999983" className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center">
+          <a
+            href="tel:+919999999983"
+            className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center"
+          >
             <Image
               src="/images/footer-phone-icon.webp"
               width="14"
@@ -264,7 +249,10 @@ const FooterMenuDesktop = () => {
           <h6 className="text-white text-lg 3xl:text-2xl 3xl:tracking-wider">
             Car Detailing
           </h6>
-          <a href="tel:+919999999983" className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center">
+          <a
+            href="tel:+919999999983"
+            className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center"
+          >
             <Image
               src="/images/footer-phone-icon.webp"
               width="14"
@@ -279,7 +267,10 @@ const FooterMenuDesktop = () => {
           <h6 className="text-white text-lg 3xl:text-2xl 3xl:tracking-wider">
             Servicing
           </h6>
-          <a href="tel:+919999999983" className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center">
+          <a
+            href="tel:+919999999983"
+            className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center"
+          >
             <Image
               src="/images/footer-phone-icon.webp"
               width="14"
@@ -294,7 +285,10 @@ const FooterMenuDesktop = () => {
           <h6 className="text-white text-lg 3xl:text-2xl 3xl:tracking-wider">
             Modification & Upgrade
           </h6>
-          <a href="tel:+919999999983" className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center">
+          <a
+            href="tel:+919999999983"
+            className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center"
+          >
             <Image
               src="/images/footer-phone-icon.webp"
               width="14"
@@ -312,7 +306,9 @@ const FooterMenuDesktop = () => {
         </h5>
         <div className="footerShowroomCol">
           <a href="#" className="block group">
-            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Delhi/NCR</h6>
+            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">
+              Delhi/NCR
+            </h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               Plot No. 134, Sector 37, Pace City 1, Gurgaon Haryana, 122001,
               India. Sales@bigboytoyz.com
@@ -328,7 +324,9 @@ const FooterMenuDesktop = () => {
         </div>
         <div className="footerShowroomCol">
           <a href="#" className="block group">
-            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Mumbai</h6>
+            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">
+              Mumbai
+            </h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               7, Hubtown Sunmist, Opposite Hubtown Solaris, Telli Galli, Andheri
               East, N S Phadke Marg, Mumbai - 400053
@@ -344,7 +342,9 @@ const FooterMenuDesktop = () => {
         </div>
         <div className="footerShowroomCol">
           <a href="#" className="block group">
-            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Hydrebad</h6>
+            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">
+              Hydrebad
+            </h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               Road no 2, Banjara Hills, Shangrila Plaza, Opp.KBR Park,
               Hyderabad, Telangana - 500034
@@ -360,7 +360,9 @@ const FooterMenuDesktop = () => {
         </div>
         <div className="footerShowroomCol">
           <a href="#" className="block group">
-            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Ahmedabad</h6>
+            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">
+              Ahmedabad
+            </h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               Cama Motors, Rustom Cama Marg, Old City, Lal Darwaja, Ahmedabad,
               Gujarat 380001
@@ -376,7 +378,9 @@ const FooterMenuDesktop = () => {
         </div>
         <div className="footerShowroomCol">
           <a href="#" className="block group">
-            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">Bangalore</h6>
+            <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">
+              Bangalore
+            </h6>
             <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
               140, Residency Rd, Shanthala Nagar, Richmond Town, Bengaluru,
               Karnataka 560025
