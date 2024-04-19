@@ -5,7 +5,7 @@ import BannerSection from '../Components/ShowroomsPage/BannerSection/BannerSecti
 import UspSection from '../Components/ShowroomsPage/UspSection/UspSection';
 import ShowroomsSection from '../Components/ShowroomsPage/ShowroomsSection/ShowroomsSection';
 import VisitSection from '../Components/ShowroomsPage/VisitSection/VisitSection';
-import RecentUploads from '../Components/ShowroomsPage/RecentUploads/RecentUploads';
+import RecentUploads from '../Components/CommonComponents/RecentUploads/RecentUploads'
 import MeetTheTeam from '../Components/ShowroomsPage/MeetTheTeam/MeetTheTeam';
 
 const Showrooms = () => {

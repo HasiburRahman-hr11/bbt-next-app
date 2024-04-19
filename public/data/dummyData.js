@@ -311,3 +311,79 @@ export const blogs = [
     banner: "/images/blogs/blog-banner.webp",
   },
 ];
+
+export const guides = [
+  {
+    _id: "001",
+    title: "How to Take Care of Your Car in Monsoon, Tips and Tricks",
+    thumbnail: "/images/guides/ag-1.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "002",
+    title: "Instructions to maintain your Headlights",
+    thumbnail: "/images/guides/ag-2.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "003",
+    title: "Do You Know What Torque Vectoring Is?",
+    thumbnail: "/images/guides/ag-3.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "004",
+    title: "How to Keep Your Luxury Drive Safe for Pets",
+    thumbnail: "/images/guides/ag-4.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "005",
+    title: "Driving Guidelines To Make Your Daily Journey Safe",
+    thumbnail: "/images/guides/ag-5.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "006",
+    title: "Time to Say Goodbye to these Myths About Car Batteries",
+    thumbnail: "/images/guides/ag-6.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "007",
+    title: "How to Keep the Warranty of Your Car Unaffected?",
+    thumbnail: "/images/guides/ag-7.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "008",
+    title: "Which One Should You Buy? Automatic or Manual",
+    thumbnail: "/images/guides/ag-8.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+  {
+    _id: "009",
+    title: "Get Your Car Ready for the Upcoming Spring",
+    thumbnail: "/images/guides/ag-9.webp",
+    description:
+      "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
+      publishedDate:"Nov 30, 2017"
+  },
+
+];

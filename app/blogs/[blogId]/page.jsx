@@ -4,7 +4,7 @@ import Footer from '../../Components/Footer/Footer';
 import BannerSection from '../../Components/BlogDetail/BannerSection/BannerSection';
 import BlogContent from '../../Components/BlogDetail/BlogContent/BlogContent';
 import NewsLetterSection from '../../Components/BlogDetail/NewsLetterSection/NewsLetterSection';
-import RecentUploads from '../../Components/BlogDetail/RecentUploads/RecentUploads';
+import RecentUploads from '../../Components/CommonComponents/RecentUploads/RecentUploads';
 import ExploreSection from '../../Components/BlogDetail/ExploreSection/ExploreSection';
 import RelatedBlogs from '../../Components/BlogDetail/RelatedBlogs/RelatedBlogs';
 

@@ -55,6 +55,9 @@ const FooterMenuDesktop = () => {
               <li>
                 <Link href="/blogs">Blogs</Link>
               </li>
+              <li>
+                <Link href="/guides">Guides</Link>
+              </li>
             </ul>
           </div>
         </div>
