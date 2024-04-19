@@ -3,13 +3,13 @@ import React from 'react'
 
 const BlogCard = ({data}) => {
   return (
-    <Link href={`/blogs/${data._id}`} className='block transition-all duration-500 group rounded-[1.5rem] overflow-hidden bg-[#F4F4F1]'>
-      <div>
+    <Link href={`/blogs/${data._id}`} className='block transition-all duration-500 group rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden bg-[#F4F4F1] 3xl:rounded-[5rem]'>
+      <div className='rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden 3xl:rounded-[5rem]'>
         <img src={data.thumbnail} alt="Blog Thumbnail" className='block object-cover h-auto w-full' width="735" height="682" />
       </div>
-      <div className='px-[2rem] pt-[2rem] pb-[3rem]'>
-        <h4 className='text-[1.8rem] leading-[1.3] mb-[2rem] line-clamp-2 3xl:text-[3.8rem]'>{data.title}</h4>
-        <p className='text-[1.2rem] font-light 3xl:text-[1.9rem]'>{data.description.substring(0,122)}</p>
+      <div className='px-[2rem] pt-[2rem] pb-[3rem] xl:px-[3.5rem] xl:pt-[3rem] xl:pb-[4.5rem] 3xl:px-[6rem] 3xl:pt-[4rem] 3xl:pb-[6rem]'>
+        <h4 className='text-[1.8rem] leading-[1.3] mb-[2rem] line-clamp-2 xl:text-[2.5rem] xl:tracking-[-1px] 3xl:text-[3.8rem] 1xl:text-[2.8rem] 2xl:text-[3.2rem]'>{data.title}</h4>
+        <p className='text-[1.2rem] font-light 3xl:text-[1.9rem] xl:text-[1.3rem] 1xl:text-[1.4rem] 2xl:text-[1.6rem]'>{data.description.substring(0,122)}</p>
       </div>
     </Link>
   )

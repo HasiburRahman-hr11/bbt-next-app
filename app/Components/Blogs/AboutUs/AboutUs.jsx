@@ -9,7 +9,7 @@ const AboutUs = () => {
     AOS.init();
   }, []);
   return (
-    <section>
+    <section className="bg-black">
       <div className="max-1920 relative">
         <div className="sm:hidden">
           <img
