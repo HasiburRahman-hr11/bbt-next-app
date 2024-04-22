@@ -68,7 +68,7 @@ const WallpaperItem = ({ wallpaper }) => {
 
 const styles = {
   downloadIcon:
-    "w-[3.5rem] h-[3.5rem] flex justify-center items-center cursor-pointer ml-auto mb-[0.5rem]",
+    "w-[3rem] h-[3rem] flex justify-center items-center cursor-pointer ml-auto mb-[0.5rem]",
   overlay:
     "absolute left-0 top-0 w-full h-full flex flex-col justify-end bg-[rgba(0,0,0,0.3)] px-[2.5rem] pb-[3rem]",
   title:
