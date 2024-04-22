@@ -1,5 +1,9 @@
 import React from "react";
 
+const DownloadPopup = ({ downloadOptions }) => {
+  return <div></div>;
+};
+
 function Avatar({ name }) {
   const getAvatarLetters = (name) => {
     const words = name.trim().split(" ");
