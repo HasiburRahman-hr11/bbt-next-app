@@ -156,6 +156,14 @@ const FooterMenuWrapper = () => {
                     Guides
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/wallpapers"
+                  >
+                    BBT Wallpapers
+                  </Link>
+                </li>
               </ul>
             </div>
           </AccordionBody>

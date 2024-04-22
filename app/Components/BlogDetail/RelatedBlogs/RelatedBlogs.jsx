@@ -1,10 +1,9 @@
 import React from "react";
 import RelatedBlogCard from "./RelatedBlogCard";
 
-import { blogs } from "../../../../public/data/dummyData";
+const RelatedBlogs = ({ sectionBg, sectionTitle, cardBg, data }) => {
+  const relatedBlogs = data ? data.slice(2, 5) : [];
 
-const RelatedBlogs = ({ sectionBg, sectionTitle, cardBg }) => {
-  const relatedBlogs = blogs.slice(2, 5);
   return (
     <section
       className={`${
@@ -22,7 +21,7 @@ const RelatedBlogs = ({ sectionBg, sectionTitle, cardBg }) => {
             }}
           ></h2>
 
-          {blogs.length > 0 ? (
+          {data && data.length > 0 ? (
             <>
               <ul className="flex flex-wrap justify-between">
                 {relatedBlogs.map((blog, index) => (

@@ -319,7 +319,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-1.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "002",
@@ -327,7 +327,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-2.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "003",
@@ -335,7 +335,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-3.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "004",
@@ -343,7 +343,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-4.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "005",
@@ -351,7 +351,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-5.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "006",
@@ -359,7 +359,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-6.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "007",
@@ -367,7 +367,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-7.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "008",
@@ -375,7 +375,7 @@ export const guides = [
     thumbnail: "/images/guides/ag-8.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
   {
     _id: "009",
@@ -383,7 +383,414 @@ export const guides = [
     thumbnail: "/images/guides/ag-9.webp",
     description:
       "Among the many technical jargons that you keep on hearing about the  automobile, the one that comes up repeatedly in the conversation is  about torque vectoring. Today we will like to demystify this term and  tell you what it means and why it is so important.",
-      publishedDate:"Nov 30, 2017"
+    publishedDate: "Nov 30, 2017",
   },
+];
 
+export const wallpapers = [
+  {
+    _id: "001",
+    title: "Ground Shaker",
+    instagramName: "Big Boy Toyz",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-1.webp",
+    totalDownloads: 15271,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "002",
+    title: "Ominous",
+    instagramName: "Big Boy Toyz",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-2.webp",
+    totalDownloads: 10271,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "003",
+    title: "The B Wings",
+    instagramName: "Big Boy Toyz",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-3.webp",
+    totalDownloads: 9980,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "004",
+    title: "Never Trade Respect for Attention",
+    instagramName: "Clinton Pereira",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-4.webp",
+    totalDownloads: 17899,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "005",
+    title: "big dreams start with small steps",
+    instagramName: "Drivewithkr88888",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-5.webp",
+    totalDownloads: 6456,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "006",
+    title: "Never Underestimate Yourself",
+    instagramName: "Harshil Majmudar",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-6.webp",
+    totalDownloads: 8768,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "007",
+    title: "Aim Above The Mark, To Hit The Mark",
+    instagramName: "Majid Hadi",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-7.webp",
+    totalDownloads: 2343,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "008",
+    title: "I Will Succeed Because I Believe I Can",
+    instagramName: "Drivewithkr88888",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-8.webp",
+    totalDownloads: 11678,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "009",
+    title: "You Deserve Every Toy You Want",
+    instagramName: "Drivewithkr88888",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-9.webp",
+    totalDownloads: 10271,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
 ];
