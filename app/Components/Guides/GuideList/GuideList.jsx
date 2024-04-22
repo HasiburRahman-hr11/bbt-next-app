@@ -14,12 +14,12 @@ const styles = {
 
 const GuideList = () => {
   return (
-    <section className="bg-white py-[6rem] xl:py-[9rem] 2xl:py-[12rem] 3xl:py-[15rem]">
+    <section className="bg-white py-[6rem] lg:py-[8rem] xl:py-[10rem] 1xl:py-[12rem] 3xl:py-[15rem]">
       <div className="max-1920">
         <div className="container">
           {guides.length > 0 ? (
             <>
-              <ul className="flex flex-wrap justify-between md:[&>*:nth-child(even)]:translate-y-[9rem] md:mt-[-4rem] xl:[&>*:nth-child(even)]:translate-y-[12rem] 1xl:mt-[-5rem] 3xl:[&>*:nth-child(even)]:translate-y-[17rem] 3xl:mt-[-7rem]">
+              <ul className="flex flex-wrap justify-between">
                 {guides.map((guide) => (
                   <li
                     key={guide._id}
@@ -29,7 +29,7 @@ const GuideList = () => {
                   </li>
                 ))}
               </ul>
-              <div className="md:mt-[10rem] xl:mt-[15rem] 3xl:mt-[20rem]">
+              <div className="xl:mt-[1rem]">
                 <ul className="flex justify-center">
                   <li className={styles.paginationList}>
                     <button className={styles.paginationBtn}>

@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 
-const RelatedBlogCard = ({data}) => {
+const RelatedBlogCard = ({data , cardBg}) => {
   return (
-    <Link href={`/blogs/${data._id}`} className='block transition-all h-full duration-500 group rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden bg-[#F4F4F1] 3xl:rounded-[5rem]'>
+    <Link href={`/blogs/${data._id}`} className={`bg-[${cardBg}] block transition-all h-full duration-500 group rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden  3xl:rounded-[5rem]`}>
       <div className='rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden 3xl:rounded-[5rem]'>
         <img src={data.thumbnail} alt="Blog Thumbnail" className='block object-cover h-auto w-full' width="735" height="682" />
       </div>
