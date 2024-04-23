@@ -394,6 +394,7 @@ export const wallpapers = [
     instagramName: "Big Boy Toyz",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-1.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 15271,
     downloadOptions: [
       {
@@ -439,6 +440,7 @@ export const wallpapers = [
     instagramName: "Big Boy Toyz",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-2.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 10271,
     downloadOptions: [
       {
@@ -484,6 +486,7 @@ export const wallpapers = [
     instagramName: "Big Boy Toyz",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-3.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 9980,
     downloadOptions: [
       {
@@ -529,6 +532,7 @@ export const wallpapers = [
     instagramName: "Clinton Pereira",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-4.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 17899,
     downloadOptions: [
       {
@@ -574,6 +578,7 @@ export const wallpapers = [
     instagramName: "Drivewithkr88888",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-5.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 6456,
     downloadOptions: [
       {
@@ -619,6 +624,7 @@ export const wallpapers = [
     instagramName: "Harshil Majmudar",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-6.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 8768,
     downloadOptions: [
       {
@@ -664,6 +670,7 @@ export const wallpapers = [
     instagramName: "Majid Hadi",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-7.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 2343,
     downloadOptions: [
       {
@@ -709,6 +716,7 @@ export const wallpapers = [
     instagramName: "Drivewithkr88888",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-8.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 11678,
     downloadOptions: [
       {
@@ -754,6 +762,7 @@ export const wallpapers = [
     instagramName: "Drivewithkr88888",
     instagramLink: "#",
     thumbnail: "/images/wallpapers/wallpaper-9.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
     totalDownloads: 10271,
     downloadOptions: [
       {
