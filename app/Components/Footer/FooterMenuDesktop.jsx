@@ -34,6 +34,9 @@ const FooterMenuDesktop = () => {
               <li>
                 <Link href="/team">Team</Link>
               </li>
+              <li>
+                <Link href="/faq">Faq</Link>
+              </li>
             </ul>
           </div>
         </div>

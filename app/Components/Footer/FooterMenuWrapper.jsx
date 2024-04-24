@@ -91,6 +91,14 @@ const FooterMenuWrapper = () => {
                     Team
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/faq"
+                  >
+                    FAQ
+                  </Link>
+                </li>
               </ul>
             </div>
           </AccordionBody>

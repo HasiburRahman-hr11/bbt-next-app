@@ -811,6 +811,20 @@ img {
 .workshop-testimonial-slider .slick-dots li {
   margin: 0;
 }
+.faq-body ul li{
+  position: relative;
+  padding-left: 15px;
+}
+.faq-body ul li::before{
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 1px;
+  content: "";
+  background-color: #000;
+  position: absolute;
+}
 
 @media only screen and (min-width: 640px) {
   .btn {
@@ -927,6 +941,11 @@ img {
   }
   .recently-added-cars > div > .slick-list {
     padding: 0 !important;
+  }
+  /* FAQ Page */
+  .faq-item:first-of-type{
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
