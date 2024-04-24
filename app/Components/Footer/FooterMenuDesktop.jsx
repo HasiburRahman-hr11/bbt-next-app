@@ -77,30 +77,27 @@ const FooterMenuDesktop = () => {
           <div className="footerMenu">
             <div className="flex flex-wrap justify-between">
               <ul>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
-                <li>
-                  <a href="#">Menu Item</a>
-                </li>
+              <li>
+                <Link href="/insurances/car-insurance">Car Insurance</Link>
+              </li>
+              <li>
+                <Link href="/bbt-squad">BBT Squad</Link>
+              </li>
+              <li>
+                <Link href="/workshop">Workshop</Link>
+              </li>
+              <li>
+                <Link href="/blogs">Blogs</Link>
+              </li>
+              <li>
+                <Link href="/guides">Guides</Link>
+              </li>
+              <li>
+                <Link href="/car-news">Car News</Link>
+              </li>
+              <li>
+                <Link href="/wallpapers">BBT Wallpapers</Link>
+              </li>
               </ul>
 
               <ul>

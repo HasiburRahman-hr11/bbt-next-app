@@ -13,7 +13,7 @@ const WorkshopSection = () => {
       <div className="max-1920 relative">
         <div className="sm:hidden">
           <img
-            src="/images/team/why-us-bg-mob.webp"
+            src="/images/guide-detail/gd-workshop-bg-mob.webp"
             alt="Background Image"
             className="w-full object-cover h-full"
           />

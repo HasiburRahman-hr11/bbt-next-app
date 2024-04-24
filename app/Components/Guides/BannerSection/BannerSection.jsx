@@ -21,7 +21,7 @@ const BannerSection = () => {
               className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
             />
             <img
-              src="/images/bbt-squad/squad-banner-mobile.webp"
+              src="/images/guides/guide-banner-mob.webp"
               alt="Banner Image"
               width="391"
               height="686"
