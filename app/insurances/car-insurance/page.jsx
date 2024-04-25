@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import BannerSection from "../../Components/Insurances/BannerSection/BannerSection";
@@ -6,6 +8,7 @@ import AboutSection from "../../Components/Insurances/AboutSection/AboutSection"
 import InsuranceDetails from "../../Components/Insurances/InsuranceDetails/InsuranceDetails";
 import PopularBrands from "../../Components/SingleProduct/PopularBrands/PopularBrands";
 import ShopByCategory from "../../Components/SingleProduct/ShopByCategory/ShopByCategory";
+import FloatingForm from "../../Components/Insurances/FloatingForm/FloatingForm";
 
 const bannerData = {
   desktopBanner: "/images/insurance/car-ins-banner.webp",
@@ -60,6 +63,19 @@ const insuranceDetail = {
 }
 
 const CarInsurance = () => {
+  const [showForm , setShowForm] = useState(false);
+
+  const handleCloseForm = () =>{
+    setShowForm(false)
+  }
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowForm(true);
+    }, 3000); // Show popup after 5 seconds
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <main>
       <Header />
@@ -69,6 +85,8 @@ const CarInsurance = () => {
       <PopularBrands />
       <ShopByCategory />
       <Footer />
+      {showForm && <FloatingForm handleClose={handleCloseForm} />}
+    
     </main>
   );
 };
