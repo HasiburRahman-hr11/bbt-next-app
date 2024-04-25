@@ -11,7 +11,7 @@ const bannerData = {
   desktopBanner: "/images/insurance/car-ins-banner.webp",
   mobileBanner: "/images/insurance/car-ins-banner.webp",
   pageTitle: "Car Insurance",
-  title: "More than <br/> <b>just a car insurance</b>",
+  title: "More Than <br/> <b>Just A Car Insurance</b>",
   description: "Solutions for everything that you car needs",
 };
 const insuranceDetail = {
