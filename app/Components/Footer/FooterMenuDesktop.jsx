@@ -81,7 +81,7 @@ const FooterMenuDesktop = () => {
                 <Link href="/insurances/car-insurance">Car Insurance</Link>
               </li>
               <li>
-                <Link href="/bbt-squad">BBT Squad</Link>
+                <Link href="/associates">Associates</Link>
               </li>
               <li>
                 <Link href="/workshop">Workshop</Link>

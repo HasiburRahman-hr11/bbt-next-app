@@ -1063,3 +1063,56 @@ export const faqs = [
     ],
   },
 ];
+
+export const esteems = [
+  {
+    title:"Autocar",
+    category:"Automiles",
+    thumbnail:"/images/associates/esteem-1.webp"
+  },
+  {
+    title:"What Car?",
+    category:"Car Buyer's Guide",
+    thumbnail:"/images/associates/esteem-2.webp"
+  },
+  {
+    title:"Zig Wheels",
+    category:"Automiles",
+    thumbnail:"/images/associates/esteem-3.webp"
+  },
+  {
+    title:"Top Gear",
+    category:"Automotive Entertainment",
+    thumbnail:"/images/associates/esteem-4.webp"
+  },
+  {
+    title:"Motoring",
+    category:"Automiles",
+    thumbnail:"/images/associates/esteem-5.webp"
+  },
+  {
+    title:"Autocar",
+    category:"Automiles",
+    thumbnail:"/images/associates/esteem-6.webp"
+  },
+  {
+    title:"What Car?",
+    category:"Car Buyer's Guide",
+    thumbnail:"/images/associates/esteem-7.webp"
+  },
+  {
+    title:"The Indian Luxury Expo",
+    category:"Event Management",
+    thumbnail:"/images/associates/esteem-8.webp"
+  },
+  {
+    title:"Carwale",
+    category:"Automiles",
+    thumbnail:"/images/associates/esteem-9.webp"
+  },
+  {
+    title:"International Premier Tennis League",
+    category:"Sport",
+    thumbnail:"/images/associates/esteem-10.webp"
+  }
+]

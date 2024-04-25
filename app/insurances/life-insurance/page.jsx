@@ -12,7 +12,7 @@ import FloatingForm from "../../Components/Insurances/FloatingForm/FloatingForm"
 
 const bannerData = {
   desktopBanner: "/images/insurance/life-ins-banner.webp",
-  mobileBanner: "/images/insurance/life-ins-banner.webp",
+  mobileBanner: "/images/insurance/life-ins-banner-mob.webp",
   pageTitle: "Life Insurance",
   title: "With us,<br/> <b>you’re safe</b>",
   description: "A brighter future for the one’s you love",

@@ -14,28 +14,28 @@ const BannerSection = () => {
         <div className="relative">
           <div>
             <img
-              src="/images/faq/faq-banner.webp"
+              src="/images/associates/associates-banner-desktop.webp"
               alt="Banner Image"
               width="1920"
-              height="650"
-              className="hidden w-full h-auto sm:block sm:min-h-[400px] object-cover"
+              height="1100"
+              className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
             />
             <img
-              src="/images/faq/faq-banner-mobile.webp"
+              src="/images/associates/associates-banner-mobile.webp"
               alt="Banner Image"
               width="391"
               height="686"
               className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-start pt-[12rem] pb-[5rem] sm:justify-center">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
-              //   data-aos="fade-down"
-              //   data-aos-easing="linear"
-              //   data-aos-duration="500"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="500"
             >
-              <p className="text-center md:text-left [&_img]:invert text-white font-light">
+              <p className="text-center sm:block [&_img]:invert text-white sm:text-left font-light">
                 <Link
                   href="/"
                   className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]"
@@ -50,15 +50,31 @@ const BannerSection = () => {
                   alt="Arrow Icon"
                 />
                 <span className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]">
-                  FAQ
+                  Our Associates
                 </span>
               </p>
               <h1 className="font-extralight text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem]">
-                Frequently <br /> <b>Asked questions</b>
+                Our <b> Associates</b>
               </h1>
               <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
-                Hello, How we can help
+                BBT believes that its future depends on its people who are
+                capable enough to generate new ideas & plans that altogether
+                will help in talking the business to a new height.
               </p>
+            </div>
+            <div
+              className={`text-center flex flex-col justify-center items-center scroll-animation`}
+            >
+              <img
+                src="/images/banner-scroll-icon-white.webp"
+                alt="Scroll Down"
+                width="19"
+                height="29"
+                className="inline-block object-contain w-8 xl:w-[1.5rem] 1xl:w-6 3xl:w-[1.9rem]"
+              />
+              <span className="uppercase mt-5 text-base xl:text-[0.8rem] 3xl:text-[0.9rem]">
+                Scroll Down
+              </span>
             </div>
           </div>
         </div>
