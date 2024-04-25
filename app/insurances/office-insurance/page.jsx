@@ -11,14 +11,14 @@ import ShopByCategory from "../../Components/SingleProduct/ShopByCategory/ShopBy
 import FloatingForm from "../../Components/Insurances/FloatingForm/FloatingForm";
 
 const bannerData = {
-  desktopBanner: "/images/insurance/car-ins-banner.webp",
-  mobileBanner: "/images/insurance/car-ins-banner.webp",
+  desktopBanner: "/images/insurance/office-ins-banner.webp",
+  mobileBanner: "/images/insurance/office-ins-banner.webp",
   pageTitle: "Car Insurance",
-  title: "More Than <br/> <b>Just A Car Insurance</b>",
-  description: "Solutions for everything that you car needs",
+  title: "Insure your office<br/> <b> against all perils</b>",
+  description: "Guard your business against any risks with BBT.",
 };
 const insuranceDetail = {
-  title: `Get cashless services <b>at 3500+ network garages</b>`,
+  title: `A safe and secured A <b> safe and secured </b> place of work is never a bad thing.`,
   usp: [
     {
       title: "Renewal Discounts",
@@ -67,7 +67,7 @@ const insuranceDetail = {
   ],
 };
 
-const CarInsurance = () => {
+const OfficeInsurance = () => {
   const [showForm, setShowForm] = useState(false);
 
   useEffect(() => {
@@ -121,4 +121,4 @@ const CarInsurance = () => {
   );
 };
 
-export default CarInsurance;
+export default OfficeInsurance;

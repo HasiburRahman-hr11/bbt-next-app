@@ -18,7 +18,6 @@ const InsuranceDetails = ({ data }) => {
     // Update state with the last part
     setLastParam(lastPart);
   }, []); // Run only once on component mount
-  console.log(lastParam);
   return (
     <section className="bg-white py-[5rem] sm:py-[8rem] md:py-[12rem] lg:py-[15rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
@@ -26,7 +25,7 @@ const InsuranceDetails = ({ data }) => {
           <div className="flex flex-col flex-wrap w-full md:flex-row md:justify-between">
             <div className="w-full md:w-[50%] lg:w-[40%] lg:order-2 xl:w-[46%]">
               <h2
-                className="font-light leading-[1.4] mt-[1rem] [&>br]:hidden text-center md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] xl:text-left 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize"
+                className="font-light leading-[1.4] mt-[1rem] [&>br]:hidden text-center md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] xl:text-left 1xl:text-[4.5rem] 1xl:tracking-[-3px] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize"
                 dangerouslySetInnerHTML={{ __html: data?.title }}
               ></h2>
               {data?.usp && data?.usp.length > 0 && (

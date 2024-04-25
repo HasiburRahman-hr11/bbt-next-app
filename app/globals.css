@@ -331,13 +331,31 @@ img {
   padding-top: 100%;
 }
 /* ------------------- Header ------------------ */
-
-@keyframes smoothScroll {
+.show-from-bottom {
+  animation: showFromBottom 1s ease-in-out;
+}
+.show-from-top {
+  animation: showFromTop 1s ease-in-out;
+}
+@keyframes showFromBottom {
   0% {
-    transform: translateY(-7rem);
+    transform: translateY(15rem);
+    opacity: 0;
   }
   100% {
     transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes showFromTop {
+  0% {
+    transform: translateY(-15rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
   }
 }
 .white-header header {
@@ -811,11 +829,11 @@ img {
 .workshop-testimonial-slider .slick-dots li {
   margin: 0;
 }
-.faq-body ul li{
+.faq-body ul li {
   position: relative;
   padding-left: 15px;
 }
-.faq-body ul li::before{
+.faq-body ul li::before {
   position: absolute;
   left: 0;
   top: 8px;
@@ -943,7 +961,7 @@ img {
     padding: 0 !important;
   }
   /* FAQ Page */
-  .faq-item:first-of-type{
+  .faq-item:first-of-type {
     margin-top: 0;
     padding-top: 0;
   }
