@@ -58,8 +58,8 @@ const BannerSection = () => {
               </h1>
               <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
                 BBT believes that its future depends on its people who are
-                capable enough to generate new ideas & plans that altogether
-                will help in talking the business to a new height.
+                capable <br /> enough to generate new ideas & plans that altogether
+                will help in <br /> talking the business to a new height.
               </p>
             </div>
             <div
