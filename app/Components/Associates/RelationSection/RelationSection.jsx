@@ -7,12 +7,12 @@ const RelationSection = () => {
   const [phone, setPhone] = useState("");
   const [relationShip, setRelationShip] = useState("");
   return (
-    <section className="bg-[#161616] py-[6rem] lg:py-[10rem] xl:py-[12rem] 1xl:py-[14rem]">
+    <section className="bg-[#161616] py-[6rem] lg:py-[10rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="container">
           <div className="flex justify-between items-start flex-col sm:max-w-[500px] sm:mx-auto lg:max-w-none lg:flex-row lg:flex-wrap">
             <div className="text-white lg:w-[55%]">
-              <h2 className="font-light leading-[1.2] tracking-tighter mt-[1rem] [&>br]:hidden text-center lg:text-left md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
+              <h2 className="font-light leading-[1.2] tracking-tighter mt-[1rem] [&>br]:hidden text-center lg:text-left md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1.2] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
                 how can we build <br /> <b>relationship together</b>
               </h2>
               <p className="font-light text-[1.2rem] leading-[1.5] text-center lg:text-left mt-[2rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0]">
@@ -29,7 +29,7 @@ const RelationSection = () => {
                   height="84"
                 />
               </div>
-              <ul className="grid grid-cols-2 gap-x-[1.5rem] gap-y-[1rem] mt-[3rem] xl:gap-y-[2.3rem] xl:gap-x-[3rem] 1xl:mt-[4rem]">
+              <ul className="grid grid-cols-2 gap-x-[1.5rem] gap-y-[1rem] mt-[3rem] xl:gap-y-[2.3rem] xl:gap-x-[3rem] 1xl:mt-[4rem] 3xl:gap-x-[4.5rem] 3xl:gap-y-[3.5rem]">
                 <li className={styles.uspListItem}>
                   <div className="flex items-center">
                     <div className={styles.uspIconContainer}>
@@ -99,12 +99,12 @@ const RelationSection = () => {
               </ul>
             </div>
             <div className="mt-[5rem] lg:w-[39%] lg:mt-0">
-              <div className="bg-[#2D2D2D] py-[3rem] px-[2rem] rounded-[1rem] xl:px-[4.5rem] xl:pb-[5rem] xl:py-[4rem] 1xl:pb-[6rem] 1xl:pt-[6rem] 1xl:px-[5.5rem]">
+              <div className="bg-[#2D2D2D] py-[3rem] px-[2rem] rounded-[1rem] xl:px-[4.5rem] xl:pb-[5rem] xl:py-[4rem] 1xl:pb-[6rem] 1xl:pt-[6rem] 1xl:px-[5.5rem] 3xl:px-[7rem] 3xl:pb-[8rem] 3xl:pt-[6rem] 3xl:rounded-[1.5rem]">
                 <h2 className="font-light leading-[1.4] mt-[1rem] [&>br]:hidden text-white md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
                   Drop Us <b>A Line</b>
                 </h2>
-                <div className="mt-[3rem]">
-                  <div className="mb-[1.5rem]">
+                <div className="mt-[3rem] 3xl:mt-[5rem]">
+                  <div className="mb-[1.5rem] 3xl:mb-[2rem]">
                     <input
                       type="text"
                       placeholder="Your Name*"
@@ -114,7 +114,7 @@ const RelationSection = () => {
                       onChange={(e) => setName(e.target.value)}
                     />
                   </div>
-                  <div className="mb-[1.5rem]">
+                  <div className="mb-[1.5rem] 3xl:mb-[2rem]">
                     <input
                       type="tel"
                       placeholder="Phone No*"
@@ -124,7 +124,7 @@ const RelationSection = () => {
                       onChange={(e) => setPhone(e.target.value)}
                     />
                   </div>
-                  <div className="mb-[1.5rem]">
+                  <div className="mb-[1.5rem] 3xl:mb-[2rem]">
                     <input
                       type="email"
                       placeholder="Email ID*"
@@ -134,7 +134,7 @@ const RelationSection = () => {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
-                  <div className="mb-[1.5rem]">
+                  <div className="mb-[1.5rem] 3xl:mb-[2rem]">
                     <select
                       name=""
                       id=""
@@ -165,10 +165,10 @@ const RelationSection = () => {
 export default RelationSection;
 
 const styles = {
-  uspListItem: "bg-[#2D2D2D] px-[1.5rem] py-[1.5rem] rounded-[0.7rem] xl:py-[2.5rem] xl:px-[3rem] xl:rounded-[1.5rem] 1xl:pl-[4rem] 1xl:py-[3rem]",
-  uspTitle: "text-[1.1rem] font-light capitalize [&>b]:font-medium [&>b]:block sm:text-[1.3rem] xl:text-[1.5rem] 1xl:text-[1.6rem] 3xl:text-[2.4rem]",
-  uspIconContainer: "w-[2.5rem] sm:w-[3rem] 1xl:w-[3.5rem]",
+  uspListItem: "bg-[#2D2D2D] px-[1.5rem] py-[1.5rem] rounded-[0.7rem] xl:py-[2.5rem] xl:px-[3rem] xl:rounded-[1.5rem] 1xl:pl-[4rem] 1xl:py-[3rem] 3xl:py-[4rem] 3xl:px-[4rem]",
+  uspTitle: "text-[1.1rem] font-light capitalize [&>b]:font-medium [&>b]:block sm:text-[1.3rem] xl:text-[1.5rem] 1xl:text-[1.7rem] 3xl:text-[2.4rem]",
+  uspIconContainer: "w-[2.5rem] sm:w-[3rem] 1xl:w-[3.5rem] 3xl:w-[4.5rem]",
   inputStyle:
-    "border border-[#525252] rounded-[6px] text-[1.3rem] text-white py-[1rem] pl-[1rem] outline-none bg-[#525252] w-full h-[45px] xl:h-[53px] xl:pl-[2rem] 1xl:h-[58px] 2xl:h-[62px] 3xl:h-[70px]",
-    buttonStyle:"bg-white h-[45px] outline-none rounded-[6px] text-black transition-all duration-500 w-full text-[1.3rem] font-medium xl:h-[53px] 1xl:h-[58px] 2xl:h-[62px] 3xl:h-[70px]"
+    "border border-[#525252] rounded-[6px] text-[1.3rem] text-white py-[1rem] pl-[1rem] outline-none bg-[#525252] w-full h-[45px] xl:h-[53px] xl:pl-[2rem] 1xl:h-[58px] 2xl:h-[62px] 3xl:h-[75px] 3xl:text-[1.65rem] 3xl:rounded-[8px]",
+    buttonStyle:"bg-white h-[45px] outline-none rounded-[6px] text-black transition-all duration-500 w-full text-[1.3rem] font-medium xl:h-[53px] 1xl:h-[58px] 2xl:h-[62px] 3xl:h-[75px] 3xl:text-[1.65rem] 3xl:rounded-[8px]"
 };
