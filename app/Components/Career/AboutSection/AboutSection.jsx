@@ -17,7 +17,7 @@ const usps = [
 
 const AboutSection = () => {
   return (
-    <section className="py-[6rem] bg-[#F4F4F1] md:py-[8rem] lg:py-[10rem] xl:py-[14rem]">
+    <section className="py-[6rem] bg-[#F6F6F6] md:py-[8rem] lg:py-[10rem] xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="container">
           <h2 className="font-light leading-[1.2] tracking-tighter mt-[1rem] text-center md:text-left [&>br]:hidden text-black md:[&>br]:block xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1.2] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
@@ -25,8 +25,8 @@ const AboutSection = () => {
             <b>interesting career?</b>
           </h2>
           <div className="flex flex-col justify-center items-center md:justify-between md:flex-row md:flex-wrap md:items-start md:mt-[4rem]">
-            <div className="md:w-[42%] mt-[2rem] md:mt-0">
-              <p className="text-[1.2rem] text-center md:text-left xl:text-[1.3rem] 1xl:text-[1.4rem] 3xl:text-[1.9rem] font-light">
+            <div className="md:w-[42%] mt-[2rem] md:mt-0 1xl:w-[41%] 3xl:w-[42%]">
+              <p className="text-[1.2rem] text-center md:text-left xl:text-[1.3rem] 1xl:text-[1.4rem] 2xl:text-[1.48rem] 3xl:text-[1.9rem] font-light">
                 Among the many technical jargons that you keep on hearing about
                 the automobile, the one that comes up repeatedly in the
                 conversation is about torque vectoring. Today we will like to
@@ -35,8 +35,8 @@ const AboutSection = () => {
                 Number one luxury car dealers in India
               </p>
             </div>
-            <div className="md:w-[41%] mt-[2rem] md:mt-0">
-              <p className="text-[1.2rem] text-center md:text-left xl:text-[1.3rem] 1xl:text-[1.4rem] 3xl:text-[1.9rem] font-light">
+            <div className="md:w-[41%] mt-[2rem] md:mt-0 1xl:w-[39.5%] 3xl:w-[40.5%]">
+              <p className="text-[1.2rem] text-center md:text-left xl:text-[1.3rem] 1xl:text-[1.4rem] 2xl:text-[1.48rem] 3xl:text-[1.9rem] font-light">
                 Among the many technical jargons that you keep on hearing about
                 the automobile, the one that comes up repeatedly in the
                 conversation is about torque vectoring. Today we will like to
@@ -54,7 +54,7 @@ const AboutSection = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col mt-[5rem] lg:flex-wrap lg:flex-row-reverse lg:justify-between">
+          <div className="flex flex-col mt-[5rem] lg:flex-wrap lg:flex-row-reverse lg:justify-between 1xl:mt-[7rem] 3xl:mt-[9rem]">
             <div className="lg:w-[53%]">
               <ul className="grid grid-cols-2 gap-x-[2rem] gap-y-[1rem] sm:grid-cols-3">
                 {usps.map((usp, index) => (
@@ -70,7 +70,7 @@ const AboutSection = () => {
                 ))}
               </ul>
             </div>
-            <div className="mt-[4rem] lg:mt-0 lg:w-[34%]">
+            <div className="mt-[4rem] lg:mt-0 lg:w-[34%] 2xl:w-[33%]">
               <div className="flex items-start md:mt-[2rem] xl:mt-0">
                 <img
                   src="/images/team/team-quote-icon-black.png"

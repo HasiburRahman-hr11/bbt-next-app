@@ -63,7 +63,7 @@ const MoreInfo = () => {
             </div>
             <div className="w-full md:w-[28.5%] text-center order-1 md:order-2">
               <div className="xl:px-[2rem] 3xl:px-[4rem]">
-              <h2 className="font-light [&>b]:font-medium md:text-[2.5rem] xl:text-[3rem] xl:leading-[1.2] xl:mb-[1rem] 2xl:text-[3.7rem] 3xl:text-[4.5rem] tracking-tighter capitalize my-[2rem]">
+              <h2 className="font-light [&>b]:font-medium md:text-[2.5rem] xl:text-[3rem] xl:leading-[1.2] xl:mb-[1rem] 1xl:text-[3.4rem] 2xl:text-[3.7rem] 3xl:text-[4.5rem] tracking-tighter capitalize my-[2rem]">
                 Looking for <b>Some <br /> More Info</b>
               </h2>
               <p className="font-[300] text-[1.2rem] leading-[1.5] mb-[3rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>b]:font-[500] 3xl:mb-[4rem]">

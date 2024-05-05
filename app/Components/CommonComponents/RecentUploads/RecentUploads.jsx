@@ -74,7 +74,7 @@ const RecentUploads = () => {
     AOS.init();
   }, []);
   return (
-    <section className="py-[6rem] bg-[#F3F3F3] lg:py-[8rem] 3xl:py-[15rem]">
+    <section className="py-[6rem] bg-[#F3F3F3] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div
         className="max-1920 overflow-hidden"
         data-aos="fade-up"
