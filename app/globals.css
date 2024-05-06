@@ -869,6 +869,9 @@ img {
   background-color: #000;
   position: absolute;
 }
+.mod-banner-card{
+  background: linear-gradient(180.25deg, rgba(255, 255, 255, 0.1) -14.18%, rgba(255, 255, 255, 0.05) 115.09%);
+}
 
 @media only screen and (min-width: 640px) {
   .btn {

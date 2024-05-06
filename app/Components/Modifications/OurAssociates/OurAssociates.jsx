@@ -68,19 +68,19 @@ const OurAssociates = () => {
     <section className="bg-[#F4F4F1] py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="container">
-          <div className="text-center">
+          <div className="text-center xl:text-left">
             <h2 className="font-light leading-[1.2] tracking-tighter mt-[1rem] xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1.2] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
               We Work Only With The <b>Best Of The Industry</b>
             </h2>
-            <p className="text-[1.5rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden sm:[&>br]:block">
-              Our list of Associates share a common vision for Automotive
+            <p className="text-[1.5rem] xl:text-[1.9rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden sm:[&>br]:block">
+              Our list of Associates share a common vision for Automotive <br />
               Excellence and a deep passion for Exotic cars.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-x-[1.5rem] gap-y-[2rem] mt-[4rem] items-stretch">
+          <div className="grid grid-cols-3 gap-x-[1.5rem] gap-y-[2rem] mt-[4rem] items-stretch md:grid-cols-4 xl:grid-cols-5 xl:gap-x-[3rem]">
             {associates.map((item , index)=> (
-              <div className="bg-white px-[2rem] py-[3rem] rounded-[1rem] flex justify-center items-center h-[inherit] min-h-[11rem]" key={index}>
-                <img src={item.icon} alt="Logo" className="w-full h-auto object-contain inline-block max-h-[5rem]" />
+              <div className="bg-white px-[2rem] py-[3rem] rounded-[1rem] flex justify-center items-center h-[inherit] min-h-[11rem] md:min-h-[15rem] lg:min-h-[17rem] xl:min-h-[18rem] xl:px-[2.5rem]" key={index}>
+                <img src={item.icon} alt="Logo" className="w-full h-auto object-contain inline-block max-h-[5rem] xl:max-h-[7.5rem]" />
               </div>
             ))}
           </div>

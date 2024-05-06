@@ -18,7 +18,7 @@ const BannerSection = () => {
               alt="Banner Image"
               width="1920"
               height="1100"
-              className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
+              className="hidden w-full h-auto sm:block sm:min-h-[800px] object-cover"
             />
             <img
               src="/images/associates/associates-banner-mobile.webp"
@@ -28,7 +28,7 @@ const BannerSection = () => {
               className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[15rem] lg:pt-[16rem]  1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               data-aos="fade-down"
@@ -61,32 +61,38 @@ const BannerSection = () => {
                 crafting <br /> automotive transformations that redefine the art
                 of car customizations.
               </p>
-              <div className="mt-[5rem]">
-                <p className="font-medium sm:text-left mb-[2rem] text-[1.3rem]">Modification Available For</p>
-                <ul className="grid grid-cols-3 gap-x-[1rem] justify-between text-white">
-                  <li className="px-[1.5rem] py-[2rem] rounded-[8px] bg-gradient-to-t from-neutral-900 to-neutral-700 flex flex-col items-center">
+              <div className="mt-[5rem] xl:mt-[9rem]">
+                <p className="font-medium sm:text-left mb-[2rem] text-[1.3rem] xl:tracking-wide">
+                  Modification Available For
+                </p>
+                <ul className="grid grid-cols-3 gap-x-[1rem] justify-between text-white max-w-[400px] xl:gap-x-[1.5rem]">
+                  <li className={styles.uspItem}>
                     <img
                       src="/images/modifications/banner-icon-1.webp"
                       alt=""
-                      className="w-[80%] h-auto max-h-[4rem] block"
+                      className={styles.uspIcon}
                     />
-                    <p className="font-medium text-[1.2rem] mt-[1rem]">Luxury Cars</p>
+                    <p className={styles.uspTitle}>
+                      Luxury Cars
+                    </p>
                   </li>
-                  <li className="px-[1.5rem] py-[2rem] rounded-[8px] bg-gradient-to-t from-neutral-900 to-neutral-700 flex flex-col items-center">
+                  <li className={styles.uspItem}>
                     <img
                       src="/images/modifications/banner-icon-2.webp"
                       alt=""
-                      className="w-[80%] h-auto max-h-[4rem] block"
+                      className={styles.uspIcon}
                     />
-                    <p className="font-medium text-[1.2rem] mt-[1rem]">Bikes</p>
+                    <p className={styles.uspTitle}>Bikes</p>
                   </li>
-                  <li className="px-[1.5rem] py-[2rem] rounded-[8px] bg-gradient-to-t from-neutral-900 to-neutral-700 flex flex-col items-center">
+                  <li className={styles.uspItem}>
                     <img
                       src="/images/modifications/banner-icon-3.webp"
                       alt=""
-                      className="w-[80%] h-auto max-h-[4rem] block"
+                      className={styles.uspIcon}
                     />
-                    <p className="font-medium text-[1.2rem] mt-[1rem]">Aircrafts</p>
+                    <p className={styles.uspTitle}>
+                      Aircrafts
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -113,3 +119,9 @@ const BannerSection = () => {
 };
 
 export default BannerSection;
+
+const styles = {
+  uspItem:"px-[1.5rem] py-[2rem] rounded-[8px] mod-banner-card flex flex-col items-center min-h-[12rem] justify-center",
+  uspIcon:"w-[80%] h-auto max-h-[3rem] block object-contain xl:w-[70%]",
+  uspTitle:"font-medium text-[1.2rem] mt-[1rem] xl:mt-[2rem] xl:text-[1.25rem]"
+}

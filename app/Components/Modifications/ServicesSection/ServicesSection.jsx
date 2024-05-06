@@ -22,15 +22,15 @@ const ServicesSection = () => {
         <div className="container">
           <div className="text-center">
             <h2 className="font-extralight text-[4rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem] [&>br]:hidden sm:[&>br]:block">
-              Glam Up Your Ride <br /> <b>To Savage Level</b>
+            Services Curated & Mastered <br /> <b>For Blink looking Ride</b>
             </h2>
-            <p className="text-[1.5rem] text-[#3C3C3C] 3xl:text-[2.8rem] mt-[3rem]">
-              BBT Modifiers stands as the foremost destination for customizing
+            <p className="text-[1.5rem] text-[#3C3C3C] xl:text-[1.9rem] 3xl:text-[2.8rem] mt-[3rem]">
+              BBT Modifiers stands as the foremost destination for <br /> customizing
               your vehicle.
             </p>
           </div>
           {modificationServices && modificationServices.length > 0 ? (
-            <div className="grid grid-cols-2 gap-x-[1.5rem] mt-[3rem]">
+            <div className="grid grid-cols-2 gap-x-[1.5rem] mt-[3rem] md:grid-cols-3 xl:grid-cols-4 xl:gap-x-[2rem]">
               {modificationServices.map((service, index) => (
                 <ServiceItem data={service} key={service._id} toggleModal={toggleModal} />
               ))}
