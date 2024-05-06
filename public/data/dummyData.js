@@ -1116,3 +1116,55 @@ export const esteems = [
     thumbnail:"/images/associates/esteem-10.webp"
   }
 ]
+
+export const modificationServices = [
+  {
+    _id:"001",
+    title: "Body Kit",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-1.webp",
+  },
+  {
+    _id:"002",
+    title: "PPF",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-2.webp",
+  },
+  {
+    _id:"003",
+    title: "Colored PPF",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-3.webp",
+  },
+  {
+    _id:"004",
+    title: "ceramic coating",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-4.webp",
+  },
+  {
+    _id:"005",
+    title: "Paint",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-5.webp",
+  },
+  {
+    _id:"006",
+    title: "exhaust system",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-6.webp",
+  },
+  {
+    _id:"007",
+    title: "interior upgrade",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-7.webp",
+  },
+];

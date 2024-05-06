@@ -13,7 +13,7 @@ import RecentUploads from "../Components/CommonComponents/RecentUploads/RecentUp
 import InfoWithTwoCard from "../Components/CommonComponents/InfoWithTwoCard/InfoWithTwoCard";
 
 const secondaryBanner = {
-  mobileBanner: "/images/modifications/services-banner-desktop.webp",
+  mobileBanner: "/images/associates/about-bg-mobile.webp",
   desktopBanner: "/images/modifications/services-banner-desktop.webp",
   subtitle: "premium services",
   title:

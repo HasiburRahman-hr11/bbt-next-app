@@ -43,9 +43,6 @@ const DownloadPopup = ({ wallpaperId, toggleModal }) => {
             </div>
             <div
               className="block  text-left transform transition-all  max-h-[95vh] overflow-y-auto no-scrollbar w-full"
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby="modal-headline"
             >
               <div className="block md:flex md:justify-between">
                 <div className="md:w-[30%] lg:w-[40%] xl:h-[inherit] 1xl:w-[45%]">
