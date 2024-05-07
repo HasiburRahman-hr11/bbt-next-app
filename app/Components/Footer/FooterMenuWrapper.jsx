@@ -225,9 +225,17 @@ const FooterMenuWrapper = () => {
                 <li>
                   <Link
                     className="text-2xl py-1 mt-4 block text-white"
-                    href="#"
+                    href="/career"
                   >
-                    Contact Us
+                    Career
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/modifications"
+                  >
+                    Modifications
                   </Link>
                 </li>
               </ul>

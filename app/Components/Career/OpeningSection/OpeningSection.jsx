@@ -80,7 +80,7 @@ const OpeningSection = () => {
                         {item.type}
                       </span>
                     </div>
-                    <div className="absolute right-[2rem] bottom-[2rem] w-[3rem] h-[3rem] border border-[#000] rounded-[5px] flex justify-center items-center p-[1rem] xl:w-[3.4rem] xl:h-[3.4rem] xl:p-[1.1rem] 2xl:w-[4rem] 2xl:h-[4rem] 2xl:p-[1.3rem] 2xl:right-[3rem] 2xl:bottom-[3rem] 3xl:w-[5rem] 3xl:h-[5rem] 3xl:p-[1.6rem] 3xl:right-[4rem] 3xl:bottom-[4rem]">
+                    <div className="absolute right-[2rem] bottom-[2rem] w-[3rem] h-[3rem] border border-[#000] rounded-[5px] flex justify-center items-center p-[1rem] xl:w-[3.4rem] xl:h-[3.4rem] xl:p-[1.1rem] 2xl:w-[4rem] 2xl:h-[4rem] 2xl:p-[1.3rem] 2xl:right-[3rem] 2xl:bottom-[3rem] 3xl:w-[5rem] 3xl:h-[5rem] 3xl:p-[1.6rem] 3xl:right-[4rem] 3xl:bottom-[4rem] cursor-pointer">
                       <img
                         src="/images/career/opening-plus-icon.webp"
                         alt="Plus Icon"

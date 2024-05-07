@@ -1136,7 +1136,7 @@ export const modificationServices = [
     _id:"003",
     title: "Colored PPF",
     description:
-      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing ",
     image: "/images/modifications/service-img-3.webp",
   },
   {

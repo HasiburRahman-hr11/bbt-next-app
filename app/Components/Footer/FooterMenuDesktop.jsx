@@ -84,10 +84,10 @@ const FooterMenuDesktop = () => {
                 <Link href="/associates">Associates</Link>
               </li>
               <li>
-                <Link href="/workshop">Workshop</Link>
+                <Link href="/career">Career</Link>
               </li>
               <li>
-                <Link href="/blogs">Blogs</Link>
+                <Link href="/modifications">Modifications</Link>
               </li>
               <li>
                 <Link href="/guides">Guides</Link>

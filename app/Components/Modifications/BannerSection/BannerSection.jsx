@@ -28,7 +28,7 @@ const BannerSection = () => {
               className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[15rem] lg:pt-[16rem]  1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[12rem] lg:pt-[13rem] 1xl:pt-[16rem] 2xl:pt-[18rem] 3xl:pt-[21rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               data-aos="fade-down"
@@ -61,11 +61,11 @@ const BannerSection = () => {
                 crafting <br /> automotive transformations that redefine the art
                 of car customizations.
               </p>
-              <div className="mt-[5rem] xl:mt-[9rem]">
-                <p className="font-medium sm:text-left mb-[2rem] text-[1.3rem] xl:tracking-wide">
+              <div className="mt-[5rem] xl:mt-[8rem] 1xl:mt-[9.5rem] 2xl:mt-[11rem] 3xl:mt-[13rem]">
+                <p className="font-medium sm:text-left mb-[2rem] text-[1.3rem] xl:tracking-wide 1xl:text-[1.4rem] 2xl:text-[1.6rem] 3xl:text-[2rem] 2xl:mb-[3rem]">
                   Modification Available For
                 </p>
-                <ul className="grid grid-cols-3 gap-x-[1rem] justify-between text-white max-w-[400px] xl:gap-x-[1.5rem]">
+                <ul className="grid grid-cols-3 gap-x-[1rem] justify-between text-white max-w-[400px] xl:gap-x-[1.5rem] 1xl:max-w-[470px] 1xl:gap-x-[2.5rem] 2xl:max-w-[490px] 3xl:max-w-[627px]">
                   <li className={styles.uspItem}>
                     <img
                       src="/images/modifications/banner-icon-1.webp"
@@ -121,7 +121,7 @@ const BannerSection = () => {
 export default BannerSection;
 
 const styles = {
-  uspItem:"px-[1.5rem] py-[2rem] rounded-[8px] mod-banner-card flex flex-col items-center min-h-[12rem] justify-center",
-  uspIcon:"w-[80%] h-auto max-h-[3rem] block object-contain xl:w-[70%]",
-  uspTitle:"font-medium text-[1.2rem] mt-[1rem] xl:mt-[2rem] xl:text-[1.25rem]"
+  uspItem:"px-[1.5rem] py-[2rem] rounded-[8px] mod-banner-card flex flex-col items-center min-h-[12rem] justify-center 1xl:py-[3rem] 2xl:py-[3.5rem] 3xl:py-[4rem] 3xl:pt-[4.5rem] 3xl:rounded-[15px]",
+  uspIcon:"w-[80%] h-auto max-h-[3rem] block object-contain xl:w-[70%] 1xl:max-h-[3.5rem] 2xl:max-h-[3.8rem] 3xl:max-h-[5rem]",
+  uspTitle:"font-medium text-[1.2rem] mt-[1rem] xl:mt-[2rem] xl:text-[1.25rem] 1xl:text-[1.4rem] 1xl:mt-[2.5rem] 2xl:text-[1.6rem] 3xl:text-[2rem] 3xl:mt-[3rem]"
 }

@@ -72,15 +72,15 @@ const OurAssociates = () => {
             <h2 className="font-light leading-[1.2] tracking-tighter mt-[1rem] xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1.2] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
               We Work Only With The <b>Best Of The Industry</b>
             </h2>
-            <p className="text-[1.5rem] xl:text-[1.9rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden sm:[&>br]:block">
+            <p className="text-[1.5rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden sm:[&>br]:block">
               Our list of Associates share a common vision for Automotive <br />
               Excellence and a deep passion for Exotic cars.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-x-[1.5rem] gap-y-[2rem] mt-[4rem] items-stretch md:grid-cols-4 xl:grid-cols-5 xl:gap-x-[3rem]">
+          <div className="grid grid-cols-3 gap-x-[1.5rem] gap-y-[2rem] mt-[4rem] items-stretch md:grid-cols-4 xl:grid-cols-5 xl:gap-x-[3rem] 1xl:gap-x-[3.5rem] 1xl:gap-y-[4rem] 1xl:mt-[6rem] 3xl:gap-x-[5rem] 3xl:gap-y-[6rem]">
             {associates.map((item , index)=> (
-              <div className="bg-white px-[2rem] py-[3rem] rounded-[1rem] flex justify-center items-center h-[inherit] min-h-[11rem] md:min-h-[15rem] lg:min-h-[17rem] xl:min-h-[18rem] xl:px-[2.5rem]" key={index}>
-                <img src={item.icon} alt="Logo" className="w-full h-auto object-contain inline-block max-h-[5rem] xl:max-h-[7.5rem]" />
+              <div className="bg-white px-[2rem] py-[3rem] rounded-[1rem] flex justify-center items-center h-[inherit] min-h-[11rem] md:min-h-[15rem] lg:min-h-[17rem] xl:min-h-[18rem] xl:px-[2.5rem] 1xl:min-h-[22rem] 1xl:rounded-[1.5rem] 2xl:px-[4rem] 3xl:h-[30rem] 3xl:rounded-[2rem]" key={index}>
+                <img src={item.icon} alt="Logo" className="w-full h-auto object-contain inline-block max-h-[5rem] xl:max-h-[7.5rem] 2xl:max-h-[10rem] 3xl:max-h-none 3xl:w-auto 3xl:h-auto" />
               </div>
             ))}
           </div>

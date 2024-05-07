@@ -37,14 +37,14 @@ const FormSection = () => {
             <h2 className="font-light leading-[1.2] tracking-tighter mt-[1rem] xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1.2] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
               Get your ride <b>Pumped Up</b>
             </h2>
-            <p className="text-[1.5rem] xl:text-[1.9rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden sm:[&>br]:block">
+            <p className="text-[1.5rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden sm:[&>br]:block">
               BBT Squad is a new platform inviting car enthusiasts to pursue
               their passion for <br /> automobiles without compromising on their
               existing work areas.
             </p>
           </div>
           <div className="xl:w-[90%] xl:mx-auto">
-            <form action="" className="w-full block mt-[3rem]" onSubmit={handleSubmit}>
+            <form action="" className="w-full block mt-[3rem] 3xl:mt-[5rem]" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-[2rem]">
                 <div className="mt-[2rem]">
                   <input
@@ -102,7 +102,7 @@ const FormSection = () => {
                   type="text"
                   name=""
                   id=""
-                  placeholder="model and year*"
+                  placeholder="Model And Year*"
                   required
                   className={styles.inputStyle}
                   value={model}
@@ -112,7 +112,7 @@ const FormSection = () => {
               <div className="mt-[2rem]">
                 <button
                   type="submit"
-                  className="w-full block border border-[#333333] rounded-[5px] py-[1.2rem] bg-black text-white text-[1.4rem] outline-none xl:py-[1.5rem] xl:text-[1.4rem] 3xl:text-[1.89rem]"
+                  className="w-full block border border-[#333333] rounded-[5px] py-[1.2rem] bg-black text-white text-[1.4rem] outline-none xl:py-[1.5rem] 1xl:py-[1.7rem] xl:text-[1.4rem] 1xl:rounded-[7px] 2xl:text-[1.5rem] 2xl:py-[1.8rem] 3xl:text-[1.89rem] hover:bg-[#333] transition-all duration-500 3xl:h-[8.5rem]"
                 >
                   Submit
                 </button>
@@ -129,5 +129,5 @@ export default FormSection;
 
 const styles = {
   inputStyle:
-    "w-full block border border-[#333333] rounded-[5px] py-[1.2rem] pl-[1.5rem] text-[1.4rem] outline-none xl:text-[1.3rem] xl:py-[1.5rem] 3xl:text-[1.64rem]",
+    "w-full block border border-[#666666] rounded-[5px] py-[1.2rem] pl-[1.5rem] text-[1.4rem] outline-none xl:text-[1.3rem] xl:py-[1.5rem] 1xl:py-[1.7rem] 1xl:rounded-[7px] 2xl:text-[1.45rem] 2xl:pl-[2.5rem] 3xl:text-[1.64rem] 3xl:h-[7.5rem] 3xl:pl-[3rem]",
 };
