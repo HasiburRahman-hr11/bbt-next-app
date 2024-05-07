@@ -38,7 +38,7 @@ const OurPhilosophy = () => {
                 onMouseOver={() => {
                   setBantTitle("Authority");
                   setBantDescription(
-                    "The automobile industry in India has come a long way and cars today look and perform far better than they did about 25 years ago."
+                    "Authority criteria evaluates the degree to which the prospect influences the purchase decision."
                   );
                 }}
                 onMouseOut={() => {
@@ -53,7 +53,7 @@ const OurPhilosophy = () => {
                 onMouseOver={() => {
                   setBantTitle("Need");
                   setBantDescription(
-                    "The automobile industry in India has come a long way and cars today look and perform far better than they did about 25 years ago."
+                    "Need criteria evaluates whether the prospect's organization has an active or ongoing need that the company's product can address or solve"
                   );
                 }}
                 onMouseOut={() => {
@@ -68,7 +68,7 @@ const OurPhilosophy = () => {
                 onMouseOver={() => {
                   setBantTitle("Timing");
                   setBantDescription(
-                    "The automobile industry in India has come a long way and cars today look and perform far better than they did about 25 years ago."
+                    "Timing criteria evaluates the period in which the prospect's organization will make a final purchase decision."
                   );
                 }}
                 onMouseOut={() => {
