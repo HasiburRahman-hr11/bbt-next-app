@@ -1167,4 +1167,32 @@ export const modificationServices = [
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-7.webp",
   },
+  {
+    _id:"008",
+    title: "alloy wheels",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-8.webp",
+  },
+  {
+    _id:"009",
+    title: "music system upgrades",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-9.webp",
+  },
+  {
+    _id:"010",
+    title: "car facelift kit ",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-10.webp",
+  },
+  {
+    _id:"011",
+    title: "engine upgrade",
+    description:
+      "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
+    image: "/images/modifications/service-img-11.webp",
+  },
 ];

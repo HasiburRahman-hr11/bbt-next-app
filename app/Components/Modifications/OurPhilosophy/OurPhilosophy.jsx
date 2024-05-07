@@ -1,6 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const OurPhilosophy = () => {
+  const [bantTitle, setBantTitle] = useState("");
+  const [bantDescription, setBantDescription] = useState("");
   return (
     <section className="bg-[#F3F3F3] ">
       <div className="max-1920 py-[7rem] lg:py-[10rem] xl:py-[18rem] 2xl:py-[21rem] 3xl:py-[25rem] 3xl:pb-[30rem] relative overflow-hidden">
@@ -14,21 +17,76 @@ const OurPhilosophy = () => {
             Our <b>Philosophy</b>
           </h2>
           <div className="flex flex-col mt-[4rem] sm:flex-row sm:justify-between">
-            <div className="text-center w-[90%] mx-auto sm:w-[50%] sm:ml-0 xl:w-[59%] 1xl:w-[62%] 2xl:w-[60%]">
-              <img
-                src="/images/modifications/bant-text.webp"
-                alt=""
-                className="w-full object-contain h-auto"
-              />
+            <div className="text-center sm:w-[50%] sm:ml-0 xl:w-[59%] 1xl:w-[62%] 2xl:w-[60%] flex justify-center items-center sm:justify-start">
+              <div
+                className="text-[9rem] bant-text font-[700] black-stroke cursor-pointer md:text-[10rem] leading-[1] lg:text-[12rem] xl:text-[19rem] xl:tracking-tighter 1xl:text-[21rem] 1xl:tracking-[-1rem] 2xl:text-[23rem] 3xl:text-[28rem] transition-all duration-500"
+                onMouseOver={() => {
+                  setBantTitle("Budget");
+                  setBantDescription(
+                    "The automobile industry in India has come a long way and cars today look and perform far better than they did about 25 years ago."
+                  );
+                }}
+                onMouseOut={() => {
+                  setBantTitle("");
+                  setBantDescription("");
+                }}
+              >
+                B.
+              </div>
+              <div
+                className="text-[9rem] bant-text font-[700] black-stroke cursor-pointer md:text-[10rem] leading-[1] lg:text-[12rem] xl:text-[19rem] xl:tracking-tighter 1xl:text-[21rem] 1xl:tracking-[-1rem] 2xl:text-[23rem] 3xl:text-[28rem] transition-all duration-500"
+                onMouseOver={() => {
+                  setBantTitle("Authority");
+                  setBantDescription(
+                    "The automobile industry in India has come a long way and cars today look and perform far better than they did about 25 years ago."
+                  );
+                }}
+                onMouseOut={() => {
+                  setBantTitle("");
+                  setBantDescription("");
+                }}
+              >
+                A.
+              </div>
+              <div
+                className="text-[9rem] bant-text font-[700] black-stroke cursor-pointer md:text-[10rem] leading-[1] lg:text-[12rem] xl:text-[19rem] xl:tracking-tighter 1xl:text-[21rem] 1xl:tracking-[-1rem] 2xl:text-[23rem] 3xl:text-[28rem] transition-all duration-500"
+                onMouseOver={() => {
+                  setBantTitle("Need");
+                  setBantDescription(
+                    "The automobile industry in India has come a long way and cars today look and perform far better than they did about 25 years ago."
+                  );
+                }}
+                onMouseOut={() => {
+                  setBantTitle("");
+                  setBantDescription("");
+                }}
+              >
+                N.
+              </div>
+              <div
+                className="text-[9rem] bant-text font-[700] black-stroke cursor-pointer md:text-[10rem] leading-[1] lg:text-[12rem] xl:text-[19rem] xl:tracking-tighter 1xl:text-[21rem] 1xl:tracking-[-1rem] 2xl:text-[23rem] 3xl:text-[28rem] transition-all duration-500"
+                onMouseOver={() => {
+                  setBantTitle("Timing");
+                  setBantDescription(
+                    "The automobile industry in India has come a long way and cars today look and perform far better than they did about 25 years ago."
+                  );
+                }}
+                onMouseOut={() => {
+                  setBantTitle("");
+                  setBantDescription("");
+                }}
+              >
+                T
+              </div>
             </div>
             <div className="mt-[4rem] sm:mt-0 sm:w-[40%] xl:w-[31%] 2xl:w-[32%]">
               <h2 className="leading-[1.2] font-normal tracking-tighter text-left xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1.2] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize">
-                Budget
+                {bantTitle ? bantTitle : "Quote"}
               </h2>
               <p className="text-[1.5rem] xl:text-[1.8rem] 1xl:text-[2rem] 2xl:text-[2.2rem] 3xl:text-[2.8rem] mt-[1rem] font-light 2xl:mt-[2rem]">
-                The automobile industry in India has come a long way and cars
-                today look and perform far better than they did about 25 years
-                ago.
+                {bantDescription
+                  ? bantDescription
+                  : "We believe in the philosophy of B.A.N.T. Hover on letters to know more."}
               </p>
             </div>
           </div>

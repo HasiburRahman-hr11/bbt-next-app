@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { modificationServices } from "../../../../public/data/dummyData";
 
-
 const ServicePopup = ({ serviceId, toggleModal }) => {
   const [service, setService] = useState(
     modificationServices.find((item) => item._id == "001")
@@ -48,9 +47,21 @@ const ServicePopup = ({ serviceId, toggleModal }) => {
                 </div>
 
                 <div className="md:w-[60%] lg:w-[55%] 1xl:w-[50%]">
-                  <div className="mt-[3rem] md:mt-0">
-                    <h3 className="capitalize text-[2.5rem] 1xl:text-[2.8rem] 2xl:text-[3rem] 3xl:text-[3.2rem]">{service?.title}</h3>
-                    <div className="text-[1.2rem] font-light mt-[1rem] 1xl:text-[1.4rem] 2xl:text-[1.6rem] 3xl:text-[1.9rem]">{service?.description}</div>
+                  <div className="mt-[3rem] h-full md:mt-0 flex flex-col justify-between item">
+                    <div>
+                      <h3 className="capitalize text-[2.5rem] 1xl:text-[2.8rem] 2xl:text-[3rem] 3xl:text-[3.2rem]">
+                        {service?.title}
+                      </h3>
+                      <div className="text-[1.2rem] font-light mt-[1rem] 1xl:text-[1.4rem] 2xl:text-[1.6rem] 3xl:text-[1.9rem]">
+                        {service?.description}
+                      </div>
+                    </div>
+
+                    <div className="w-max mt-[3rem] xl:min-w-[150px] 2xl:min-w-[160px] 3xl:min-w-[240px] 3xl:mt-[6rem]">
+                      <button className="bg-black w-full text-white text-center text-[1.4rem] flex justify-center items-center rounded-[3rem] px-[3rem] h-[4rem] xl:text-[1.2rem] 1xl:h-[4.5rem] 1xl:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 2xl:h-[5rem] 2xl:rounded-[4rem] 3xl:h-[5.5rem] transition-all duration-500 hover:bg-[#333]">
+                        Get a Quote
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
