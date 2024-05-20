@@ -14,21 +14,21 @@ const BannerSection = () => {
         <div className="relative">
           <div>
             <img
-              src="/images/associates/associates-banner-desktop.webp"
+              src="/images/car-detailing/banner-desktop.webp"
               alt="Banner Image"
               width="1920"
               height="1100"
               className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
             />
             <img
-              src="/images/associates/associates-banner-mobile.webp"
+              src="/images/guides/guide-banner-mob.webp"
               alt="Banner Image"
               width="391"
               height="686"
               className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[30rem] 2xl:pt-[31.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               data-aos="fade-down"
@@ -50,16 +50,19 @@ const BannerSection = () => {
                   alt="Arrow Icon"
                 />
                 <span className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]">
-                  Our Associates
+                  Car Detailing
                 </span>
               </p>
               <h1 className="font-extralight [&>br]:hidden sm:[&>br]:block text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem]">
-                Our <b> Associates</b>
+                We're as crazy{" "}
+                <b>
+                  about <br /> cars as you are!
+                </b>
               </h1>
               <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
-                BBT believes that its future depends on its people who are
-                capable <br /> enough to generate new ideas & plans that altogether
-                will help in <br /> talking the business to a new height.
+                If your heart races at the sight of a sleek chassis or the purr
+                of a finely-tuned <br /> engine, then buckle up, because you're
+                in for a wild ride!
               </p>
             </div>
             <div

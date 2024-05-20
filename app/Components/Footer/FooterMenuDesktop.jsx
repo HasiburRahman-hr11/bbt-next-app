@@ -90,7 +90,7 @@ const FooterMenuDesktop = () => {
                 <Link href="/modifications">Modifications</Link>
               </li>
               <li>
-                <Link href="/guides">Guides</Link>
+                <Link href="/car-detailing">Car Detailing</Link>
               </li>
               <li>
                 <Link href="/car-news">Car News</Link>

@@ -1066,133 +1066,226 @@ export const faqs = [
 
 export const esteems = [
   {
-    title:"Autocar",
-    category:"Automiles",
-    thumbnail:"/images/associates/esteem-1.webp"
+    title: "Autocar",
+    category: "Automiles",
+    thumbnail: "/images/associates/esteem-1.webp",
   },
   {
-    title:"What Car?",
-    category:"Car Buyer's Guide",
-    thumbnail:"/images/associates/esteem-2.webp"
+    title: "What Car?",
+    category: "Car Buyer's Guide",
+    thumbnail: "/images/associates/esteem-2.webp",
   },
   {
-    title:"Zig Wheels",
-    category:"Automiles",
-    thumbnail:"/images/associates/esteem-3.webp"
+    title: "Zig Wheels",
+    category: "Automiles",
+    thumbnail: "/images/associates/esteem-3.webp",
   },
   {
-    title:"Top Gear",
-    category:"Automotive Entertainment",
-    thumbnail:"/images/associates/esteem-4.webp"
+    title: "Top Gear",
+    category: "Automotive Entertainment",
+    thumbnail: "/images/associates/esteem-4.webp",
   },
   {
-    title:"Motoring",
-    category:"Automiles",
-    thumbnail:"/images/associates/esteem-5.webp"
+    title: "Motoring",
+    category: "Automiles",
+    thumbnail: "/images/associates/esteem-5.webp",
   },
   {
-    title:"Autocar",
-    category:"Automiles",
-    thumbnail:"/images/associates/esteem-6.webp"
+    title: "Autocar",
+    category: "Automiles",
+    thumbnail: "/images/associates/esteem-6.webp",
   },
   {
-    title:"What Car?",
-    category:"Car Buyer's Guide",
-    thumbnail:"/images/associates/esteem-7.webp"
+    title: "What Car?",
+    category: "Car Buyer's Guide",
+    thumbnail: "/images/associates/esteem-7.webp",
   },
   {
-    title:"The Indian Luxury Expo",
-    category:"Event Management",
-    thumbnail:"/images/associates/esteem-8.webp"
+    title: "The Indian Luxury Expo",
+    category: "Event Management",
+    thumbnail: "/images/associates/esteem-8.webp",
   },
   {
-    title:"Carwale",
-    category:"Automiles",
-    thumbnail:"/images/associates/esteem-9.webp"
+    title: "Carwale",
+    category: "Automiles",
+    thumbnail: "/images/associates/esteem-9.webp",
   },
   {
-    title:"International Premier Tennis League",
-    category:"Sport",
-    thumbnail:"/images/associates/esteem-10.webp"
-  }
-]
+    title: "International Premier Tennis League",
+    category: "Sport",
+    thumbnail: "/images/associates/esteem-10.webp",
+  },
+];
 
 export const modificationServices = [
   {
-    _id:"001",
+    _id: "001",
     title: "Body Kit",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-1.webp",
   },
   {
-    _id:"002",
+    _id: "002",
     title: "PPF",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-2.webp",
   },
   {
-    _id:"003",
+    _id: "003",
     title: "Colored PPF",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing ",
     image: "/images/modifications/service-img-3.webp",
   },
   {
-    _id:"004",
+    _id: "004",
     title: "ceramic coating",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-4.webp",
   },
   {
-    _id:"005",
+    _id: "005",
     title: "Paint",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-5.webp",
   },
   {
-    _id:"006",
+    _id: "006",
     title: "exhaust system",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-6.webp",
   },
   {
-    _id:"007",
+    _id: "007",
     title: "interior upgrade",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-7.webp",
   },
   {
-    _id:"008",
+    _id: "008",
     title: "alloy wheels",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-8.webp",
   },
   {
-    _id:"009",
+    _id: "009",
     title: "music system upgrades",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-9.webp",
   },
   {
-    _id:"010",
+    _id: "010",
     title: "car facelift kit ",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-10.webp",
   },
   {
-    _id:"011",
+    _id: "011",
     title: "engine upgrade",
     description:
       "Car paint protection film cost varies depending on your vehicle make and  model, style options, and installer pricing. ",
     image: "/images/modifications/service-img-11.webp",
+  },
+];
+
+export const comparisonList = [
+  {
+    serviceName: "Restores Shine",
+    paintCorrection: true,
+    teflonCoating: true,
+    ceramicCoating: true,
+    ppf: true,
+    coloredPpf: true,
+    wraps: true,
+    grapheneCoating: true,
+  },
+  {
+    serviceName: "Provides Protection ",
+    paintCorrection: true,
+    teflonCoating: true,
+    ceramicCoating: true,
+    ppf: true,
+    coloredPpf: true,
+    wraps: true,
+    grapheneCoating: true,
+  },
+  {
+    serviceName: "Resists Scratches  ",
+    paintCorrection: false,
+    teflonCoating: false,
+    ceramicCoating: false,
+    ppf: false,
+    coloredPpf: false,
+    wraps: false,
+    grapheneCoating: false,
+  },
+  {
+    serviceName: "UV Protection",
+    paintCorrection: true,
+    teflonCoating: true,
+    ceramicCoating: true,
+    ppf: true,
+    coloredPpf: true,
+    wraps: true,
+    grapheneCoating: true,
+  },
+  {
+    serviceName: "Hydrophobic ",
+    paintCorrection: false,
+    teflonCoating: false,
+    ceramicCoating: false,
+    ppf: false,
+    coloredPpf: false,
+    wraps: false,
+    grapheneCoating: false,
+  },
+  {
+    serviceName: "Lasting Protection ",
+    paintCorrection: true,
+    teflonCoating: true,
+    ceramicCoating: true,
+    ppf: true,
+    coloredPpf: true,
+    wraps: true,
+    grapheneCoating: true,
+  },
+  {
+    serviceName: "Customizable ",
+    paintCorrection: false,
+    teflonCoating: false,
+    ceramicCoating: false,
+    ppf: false,
+    coloredPpf: false,
+    wraps: false,
+    grapheneCoating: false,
+  },
+  {
+    serviceName: "Enhances Appearance  ",
+    paintCorrection: false,
+    teflonCoating: false,
+    ceramicCoating: false,
+    ppf: false,
+    coloredPpf: false,
+    wraps: false,
+    grapheneCoating: false,
+  },
+  {
+    serviceName: "Self-Healing",
+    paintCorrection: false,
+    teflonCoating: false,
+    ceramicCoating: false,
+    ppf: false,
+    coloredPpf: false,
+    wraps: false,
+    grapheneCoating: false,
   },
 ];

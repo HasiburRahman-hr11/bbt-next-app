@@ -21,7 +21,7 @@ const LifeStyle = () => {
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] text-center tracking-[-0.1rem] mb-[2rem] md:text-left xl:text-[3.7rem] xl:[&>br]:hidden xl:max-w-[45rem] 1xl:text-[4.2rem] 1xl:max-w-[49rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] 2xl:max-w-[54rem] 3xl:max-w-[70rem]">
               Be a Part of The <br /> <b>BBT Fun, Work & Lifestyle</b>
             </h2>
-            <div className="md:block">
+            <div className="hidden md:block">
               <Link
                 href="#"
                 className="w-full h-[5rem] flex justify-center items-center text-[1.4rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto sm:max-w-[300px] xl:max-w-none xl:px-[8rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:max-w-none 1xl:px-[9rem] 1xl:text-[1.3rem] 2xl:h-[6rem] 3xl:h-[7.37rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:min-w-[31rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"

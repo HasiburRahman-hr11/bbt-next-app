@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const pastProjects = [
@@ -29,7 +30,7 @@ const pastProjects = [
 
 const ProjectItem = ({ project }) => {
   return (
-    <a
+    <Link
       href={project.url}
       className="block w-full rounded-[1.5rem] overflow-hidden relative"
     >
@@ -55,7 +56,7 @@ const ProjectItem = ({ project }) => {
           alt="Arrow Icon"
         />
       </span>
-    </a>
+    </Link>
   );
 };
 

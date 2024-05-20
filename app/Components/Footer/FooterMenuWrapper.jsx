@@ -238,6 +238,14 @@ const FooterMenuWrapper = () => {
                     Modifications
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="text-2xl py-1 mt-4 block text-white"
+                    href="/car-detailing"
+                  >
+                    Car Detailing
+                  </Link>
+                </li>
               </ul>
             </div>
           </AccordionBody>

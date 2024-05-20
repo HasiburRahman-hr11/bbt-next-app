@@ -15,7 +15,7 @@ const SecondaryBanner = ({data}) => {
           <img
             src={data.mobileBanner}
             alt="Background Image"
-            className="w-full object-cover h-full"
+            className="w-full object-cover h-full min-h-[650px]"
           />
         </div>
         <div className="hidden sm:block">
