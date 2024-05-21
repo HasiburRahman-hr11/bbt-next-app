@@ -22,14 +22,14 @@ const ModifyRide = () => {
       <div className="max-1920 relative">
         <div className="sm:hidden">
           <img
-            src="/images/car-detailing/explore-banner-desktop.webp"
+            src="/images/car-detailing/modify-banner-dsektop.webp"
             alt="Background Image"
             className="w-full object-cover h-full min-h-[700px]"
           />
         </div>
         <div className="hidden sm:block">
           <img
-            src="/images/car-detailing/explore-banner-desktop.webp"
+            src="/images/car-detailing/modify-banner-dsektop.webp"
             alt="Background Image"
             className="w-full object-cover h-auto min-h-[600px]"
           />
@@ -49,7 +49,7 @@ const ModifyRide = () => {
                 <h2 className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-2px] text-[2.9rem] xl:text-[3.75rem] 1xl:text-[4.2rem] 1xl:mt-[2rem] 2xl:text-[4.3rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px] capitalize [&>br]:hidden sm:[&>br]:block">
                   Modify your ride <br /> <b>to savage levels</b>
                 </h2>
-                <p className="font-light text-[1.2rem] leading-[1.5] mt-[2rem] sm:mt-[1rem] sm:mb-[1.5rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] xl:mb-[3rem] 1xl:text-[1.28rem] 2xl:mt-[2rem] 2xl:text-[1.4rem] 2xl:mb-[4.5rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>br]:hidden sm:[&>br]:block">
+                <p className="font-light text-[1.2rem] leading-[1.5] mt-[2rem] sm:mt-[1rem] sm:mb-[1.5rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] xl:mb-[3rem] 1xl:text-[1.28rem] xl:mt-[3rem] 2xl:text-[1.4rem] 2xl:mb-[4.5rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>br]:hidden sm:[&>br]:block">
                   We're not just about making your car look pretty, we're all
                   about making it <br /> perform like a champ too. From
                   turbocharging your engine to upgrading your <br /> suspension

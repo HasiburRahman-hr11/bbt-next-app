@@ -1009,6 +1009,14 @@ img {
     margin-top: 0;
     padding-top: 0;
   }
+  /* Car Detailing */
+  .cd-about-usp li:nth-child(3n){
+    border: none;
+  }
+  .cd-about-usp li:first-child,
+  .cd-about-usp li:nth-child(3n+4){
+    padding-left: 0;
+  }
 }
 
 @media only screen and (min-width: 1280px) {

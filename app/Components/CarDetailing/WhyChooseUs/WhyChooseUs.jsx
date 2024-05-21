@@ -2,26 +2,45 @@ import React from "react";
 
 const usps = [
   {
-    icon: "/images/car-detailing/wc-icon-1.webp",
-    title: "Expertise <b>& Experience</b>",
+    thumbnail: "/images/car-detailing/wc-img-1.webp",
+    title: "Expertise & Experience",
   },
   {
-    icon: "/images/car-detailing/wc-icon-2.webp",
-    title: "State-of-the-Art <b> Facilities</b>",
+    thumbnail: "/images/car-detailing/wc-img-2.webp",
+    title: "State-of-the-Art Facilities",
   },
   {
-    icon: "/images/car-detailing/wc-icon-3.webp",
-    title: "Customization  <b>Options</b>",
+    thumbnail: "/images/car-detailing/wc-img-3.webp",
+    title: "Customization Options",
   },
   {
-    icon: "/images/car-detailing/wc-icon-4.webp",
-    title: "Attention  <b>to Detail</b>",
-  },
-  {
-    icon: "/images/car-detailing/wc-icon-5.webp",
-    title: "Quality  <b>Assurance</b>",
+    thumbnail: "/images/car-detailing/wc-img-4.webp",
+    title: "Quality Assurance",
   },
 ];
+
+const FeaturedItem = ({ data }) => {
+  return (
+    <div className="relative block group common-car-item rounded-[2rem] 1xl:rounded-[2.5rem] overflow-hidden">
+      <div>
+        <img
+          src={
+            data?.thumbnail ? data.thumbnail : "/images/bbt-world-item-1.webp"
+          }
+          alt={data?.title ? data.title : "Thumbnail"}
+          width="450"
+          height="587"
+          className="block w-full h-full group-hover:scale-[1.1] transition-all duration-500 ease-in-out"
+        />
+      </div>
+      <div className="absolute bottom-0 left-0 w-full h-full px-[2rem] py-[3rem] sm:py-[3rem] sm:px-[3rem] xl:px-[3rem] 1xl:py-[4rem] 2xl:pl-[5rem] flex flex-col justify-end 3xl:pb-[6rem] 3xl:pl-[5rem] bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0.01)]">
+        <h5 className="text-white w-full text-[1.7rem] font-normal text-left xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem] 3xl:bottom-24 3xl:left-24">
+          {data.title}
+        </h5>
+      </div>
+    </div>
+  );
+};
 
 const WhyChooseUs = () => {
   return (
@@ -34,18 +53,9 @@ const WhyChooseUs = () => {
           <p className="text-[1.5rem] text-center lg:text-left xl:text-[1.9rem] 1xl:text-[2.1rem] 2xl:text-[2.3rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light">
             We're not just car enthusiasts – we're car experts.
           </p>
-          <div className="grid grid-cols-2 gap-x-[2rem] gap-y-[2rem] mt-[5rem] sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xl:gap-[3rem]">
+          <div className="grid grid-cols-2 gap-x-[2rem] gap-y-[2rem] mt-[5rem] sm:grid-cols-3 lg:grid-cols-4 xl:gap-[3rem]">
             {usps.map((item, index) => (
-              <div className="border border-[#AEAEAE] py-[3rem] px-[2rem] rounded-[2rem] xl:px-[3rem] xl:py-[4rem] xl:rounded-[2.5rem] 1xl:py-[4.5rem]" key={index}>
-                <div className="max-w-[5rem] 1xl:max-w-[6rem] 3xl:max-w-[7.5rem]">
-                  <img
-                    src={item.icon}
-                    alt="Icon"
-                    className="w-full h-auto object-contain"
-                  />
-                </div>
-                <h5 className="text-[1.8rem] 1xl:text-[2.2rem] 3xl:text-[3rem] mt-[4rem] font-light [&>b]:font-medium 1xl:mt-[5rem]" dangerouslySetInnerHTML={{__html:item.title}}></h5>
-              </div>
+              <FeaturedItem data={item} key={index} />
             ))}
           </div>
         </div>

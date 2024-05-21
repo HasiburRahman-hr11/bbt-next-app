@@ -32,13 +32,13 @@ const pastProjects = [
   {
     title: "Toyota Vellfire",
     description: "Body Kit, Interiors,  PPF",
-    image: "/images/car-detailing/sneak-img-1.webp",
+    image: "/images/car-detailing/sneak-peek-1.webp",
     url: "#",
   },
   {
     title: "Land Rover Porsche ",
     description: "Interiors, Paint, Engine Upgrade",
-    image: "/images/car-detailing/sneak-img-2.webp",
+    image: "/images/car-detailing/sneak-peek-2.webp",
     url: "#",
   },
   {
@@ -51,7 +51,7 @@ const pastProjects = [
   {
     title: "Body Kit, Interiors,  PPF",
     description: "Interiors, Music System Upgrade",
-    image: "/images/modifications/past-project-4.webp",
+    image: "/images/car-detailing/sneak-peek-2.webp",
     url: "#",
   },
 ];

@@ -13,29 +13,24 @@ const FooterMenuDesktop = () => {
           <div className="footerMenu">
             <ul>
               <li>
-                <Link href="/collection">Collection</Link>
-              </li>
-              <li>
-                <Link href="/category/suv-collection">SUV Collection</Link>
-              </li>
-              <li>
-                <Link href="/brand/bmw">BMW Collection</Link>
-              </li>
-              <li>
-                <Link href="/search-results">Search Page</Link>
-              </li>
-              <li>
-                <Link href="/filter-results">Filter Page</Link>
-              </li>
-
-              <li>
                 <Link href="/about-us">About Us</Link>
               </li>
               <li>
-                <Link href="/team">Team</Link>
+                <Link href="/team">The Team</Link>
+              </li>
+
+              <li>
+                <Link href="/career">Career</Link>
               </li>
               <li>
-                <Link href="/faq">Faq</Link>
+                <Link href="/associates">Associates</Link>
+              </li>
+              <li>
+                <Link href="/bbt-squad">BBT Squad</Link>
+              </li>
+
+              <li>
+                <Link href="/wallpapers">BBT Wallpapers</Link>
               </li>
             </ul>
           </div>
@@ -47,13 +42,7 @@ const FooterMenuDesktop = () => {
           <div className="footerMenu">
             <ul>
               <li>
-                <Link href="/showrooms">Showrooms</Link>
-              </li>
-              <li>
-                <Link href="/bbt-squad">BBT Squad</Link>
-              </li>
-              <li>
-                <Link href="/workshop">Workshop</Link>
+                <Link href="/faq">Faq</Link>
               </li>
               <li>
                 <Link href="/blogs">Blogs</Link>
@@ -65,26 +54,9 @@ const FooterMenuDesktop = () => {
                 <Link href="/car-news">Car News</Link>
               </li>
               <li>
-                <Link href="/wallpapers">BBT Wallpapers</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="footerMenuCol footerMenuColLarge">
-          <div className="footerMenuHead">
-            <h6 className="text-white">Brands</h6>
-          </div>
-          <div className="footerMenu">
-            <div className="flex flex-wrap justify-between">
-              <ul>
-              <li>
-                <Link href="/insurances/car-insurance">Car Insurance</Link>
-              </li>
-              <li>
-                <Link href="/associates">Associates</Link>
-              </li>
-              <li>
-                <Link href="/career">Career</Link>
+                <Link href="/insurances/car-insurance">
+                   Insurance
+                </Link>
               </li>
               <li>
                 <Link href="/modifications">Modifications</Link>
@@ -96,8 +68,46 @@ const FooterMenuDesktop = () => {
                 <Link href="/car-news">Car News</Link>
               </li>
               <li>
-                <Link href="/wallpapers">BBT Wallpapers</Link>
+                <Link href="/showrooms">Showrooms</Link>
               </li>
+
+              <li>
+                <Link href="/workshop">Workshop</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="footerMenuCol footerMenuColLarge">
+          <div className="footerMenuHead">
+            <h6 className="text-white">Brands</h6>
+          </div>
+          <div className="footerMenu">
+            <div className="flex flex-wrap justify-between">
+              <ul>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
+                <li>
+                  <a href="#">Menu Item</a>
+                </li>
               </ul>
 
               <ul>
