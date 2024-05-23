@@ -21,11 +21,11 @@ const BannerSection = () => {
               className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
             />
             <img
-              src="/images/guides/guide-banner-mob.webp"
+              src="/images/career/career-banner-desktop.webp"
               alt="Banner Image"
               width="391"
               height="686"
-              className="block w-full h-auto object-cover sm:hidden"
+              className="block w-full h-auto object-cover sm:hidden min-h-[600px]"
             />
           </div>
           <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">

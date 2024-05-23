@@ -17,13 +17,10 @@ const list = [
 ];
 
 const ChooseWhatsRight = () => {
-  const [activeTab, setActiveTab] = useState("tab-1");
   const [open, setOpen] = useState("");
 
   const handleOpen = (value) => setOpen(open === value ? "" : value);
-  const handleTabChange = (tab) => {
-    setActiveTab(tab);
-  };
+
   return (
     <section className="bg-[#F4F4F1] py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">

@@ -37,7 +37,7 @@ const PlatformSection = () => {
               </p>
               <div className="mt-[4rem] rounded-[2rem] overflow-hidden md:hidden">
                 <img
-                  src="/images/career/founder-img.webp"
+                  src="/images/career/platform-thumb.webp"
                   alt=""
                   className="block object-contain h-auto"
                 />
@@ -68,7 +68,7 @@ const PlatformSection = () => {
             <div className="md:w-[41%] hidden md:block xl:w-[44%]">
               <div className="mt-[4rem] rounded-[2rem] overflow-hidden md:mt-0">
                 <img
-                  src="/images/career/founder-img.webp"
+                  src="/images/career/platform-thumb.webp"
                   alt=""
                   className="block object-contain h-auto"
                 />
