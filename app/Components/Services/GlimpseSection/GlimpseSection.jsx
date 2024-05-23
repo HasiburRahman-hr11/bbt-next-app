@@ -28,7 +28,7 @@ const GlimpseSection = () => {
               A glimpse of state of the art <br /> <b>machines and experts</b>
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:max-w-[500px] sm:mx-auto md:max-w-none md:grid-cols-3 md:gap-x-[2rem] xl:gap-x-[2.5rem] 2xl:gap-x-[2rem] auto-rows-fr 3xl:gap-x-[3rem]">
+          <div className="grid grid-cols-1 sm:max-w-[500px] sm:mx-auto md:max-w-none md:grid-cols-3 md:gap-x-[2rem] xl:gap-x-[2.5rem] 2xl:gap-x-[2rem] md:auto-rows-fr 3xl:gap-x-[3rem]">
             <div>
               <div className="mt-[2rem] 2xl:mt-[2.5rem] 3xl:mt-[3.5rem]">
                 <img

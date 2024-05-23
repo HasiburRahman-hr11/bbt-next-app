@@ -58,25 +58,25 @@ const ServiceTypes = () => {
             {services.map((service, index) => (
               <li
                 key={index}
-                className="bg-white rounded-[1rem] px-[1.5rem] py-[2rem] flex items-center flex-col text-center sm:flex-row sm:text-left lg:px-[2.5rem] lg:rounded-[1.5rem] xl:px-[4rem] xl:rounded-[2rem] 1xl:py-[4rem] 1xl:rounded-[2.5rem] 3xl:px-[5rem] 3xl:rounded-[3.5rem] 3xl:py-[5rem]"
+                className="bg-white rounded-[1rem] px-[1.5rem] py-[2rem] flex items-center flex-col justify-center text-center  sm:text-left lg:px-[2.5rem] lg:rounded-[1.5rem] xl:px-[4rem] xl:rounded-[2rem] 1xl:py-[4rem] 1xl:rounded-[2.5rem] 3xl:px-[5rem] 3xl:rounded-[3.5rem] 3xl:py-[5rem]"
               >
-                <div className="w-[3rem] mb-[2rem] sm:mb-0 lg:w-[max-content]">
-                  <img
-                    src={service.icon}
-                    alt="Icon"
-                    className="object-contain h-auto w-full 1xl:max-h-[7rem] lg:max-w-[3.5rem] xl:max-w-[6rem] 1xl:max-w-[8.5rem] 3xl:max-w-[9rem] 3xl:max-h-[9rem]"
-                  />
+                <div className="flex items-center flex-col sm:flex-row">
+                  <div className="w-[3rem] mb-[2rem] sm:mb-0 lg:w-[max-content] ">
+                    <img
+                      src={service.icon}
+                      alt="Icon"
+                      className="object-contain h-auto w-full 1xl:max-h-[7rem] lg:max-w-[3.5rem] xl:max-w-[6rem] 1xl:max-w-[8.5rem] 3xl:max-w-[9rem] 3xl:max-h-[9rem]"
+                    />
+                  </div>
+                  <h6 className="flex-[1] text-[1.3rem] lg:text-[1.6rem] xl:text-[2rem] 1xl:text-[2.5rem] 2xl:text-[2.7rem] 3xl:text-[3.2rem] xl:tracking-tighter xl:leading-[1.2] xl:font-normal font-medium capitalize sm:pl-[2rem] 1xl:tracking-[-2px] 3xl:pl-[3rem]">
+                    {service.title}
+                  </h6>
                 </div>
-                <h6 className="flex-[1] text-[1.3rem] lg:text-[1.6rem] xl:text-[2rem] 1xl:text-[2.5rem] 2xl:text-[2.7rem] 3xl:text-[3.2rem] xl:tracking-tighter xl:leading-[1.2] xl:font-normal font-medium capitalize sm:pl-[2rem] 1xl:tracking-[-2px] 3xl:pl-[3rem]">
-                  {service.title}
-                </h6>
               </li>
             ))}
           </ul>
           <div className="mt-[4rem] xl:mt-[5.5rem] 3xl:mt-[8rem]">
-            <button
-              className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[4.5rem] xl:h-[5rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[7.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
-            >
+            <button className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[4.5rem] xl:h-[5rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[7.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out">
               Load More
             </button>
           </div>
