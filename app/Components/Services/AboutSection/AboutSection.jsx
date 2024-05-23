@@ -30,8 +30,8 @@ const AboutSection = () => {
               Why We Exist
             </span>
           </h3>
-          <div className="flex flex-wrap mt-[3rem]">
-            <div className="w-full">
+          <div className="flex flex-wrap mt-[3rem] md:justify-between 3xl:mt-[8rem]">
+            <div className="w-full md:w-[60%] lg:w-[57%] xl:w-[52%] 1xl:w-[50.5%] xl:pt-[3rem]">
               <h2 className="font-light leading-[1.2] tracking-tighter mt-[1rem] xl:text-[3.9rem] xl:leading-[1.2] xl:tracking-[-1.8px] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:leading-[1.2] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:leading-[1.1] capitalize mb-[3rem]">
                 Big Boy Toyz has firmly established itself as the preeminent
                 provider <b>of luxury car sales and services in India.</b>
@@ -41,30 +41,30 @@ const AboutSection = () => {
                 car selling service available. Getting a great deal on the
                 client’s vehicle can often be tricky to do by themselves, here
                 the BBT Squad comes into picture and connects us to value their
-                vehicle based on its condition and current market value. <br />
+                vehicle based on its condition and current market value. <br /> <br />
                 You can grow with us by expanding your existing freelance and
                 agency relationships by working across PAN India, furthermore to
                 improve accessibility one can firm their presence on various
                 social media platforms on behalf of us. Our target is to
                 simplify processing to succeed.
               </p>
-              <div className="hidden">
+              <div className="hidden md:block md:mt-[3rem]">
                 <Link
                   href="#"
-                  className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[6rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[6.5rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
+                  className="w-max h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[6rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[6.5rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
                 >
                   Know More
                 </Link>
               </div>
             </div>
-            <div className="w-full mt-[4rem]">
-              <ul className="flex justify-between flex-wrap">
+            <div className="w-full mt-[4rem] md:mt-0 md:w-[30%] xl:w-[32%] 1xl:w-[34%]">
+              <ul className="flex justify-between flex-wrap md:flex-col lg:w-[87%] 3xl:w-[84%]">
                 {uspList.map((usp, index) => (
                   <li
                     key={index}
-                    className="w-[50%] flex py-[0.5rem] my-[1.5rem] pl-[2rem] [&:nth-child(odd)]:pl-0"
+                    className="w-[50%] sm:w-[33%] md:w-full flex items-center py-[0.5rem] my-[1.5rem] pl-[2rem] [&:nth-child(odd)]:pl-0 sm:pl-0 md:border-b md:border-[#D9D9D9] md:last:border-none md:py-[2rem] md:my-0"
                   >
-                    <div className="w-[4rem] h-[4rem] p-[0.9rem] flex justify-center items-center rounded-full bg-[#F4F4F1]">
+                    <div className="w-[4rem] h-[4rem] p-[0.9rem] flex justify-center items-center rounded-full bg-[#F4F4F1] lg:w-[6rem] lg:h-[6rem] lg:p-[1.5rem] xl:w-[8rem] xl:h-[8rem] xl:p-[2.5rem] 3xl:w-[12.5rem] 3xl:h-[12.5rem] 1xl:w-[10rem] 1xl:h-[10rem] 1xl:p-[3rem] 3xl:p-[4rem]">
                       <img
                         src={usp.icon}
                         alt="Icon"
@@ -72,13 +72,13 @@ const AboutSection = () => {
                       />
                     </div>
                     <h6
-                      className="flex-[1] pl-[1rem] text-[1.3rem] 3xl:text-[2.2rem] font-light [&>b]:font-medium capitalize"
+                      className="flex-[1] pl-[1rem] leading-[1.2] lg:pl-[2rem] xl:pl-[3rem] text-[1.3rem] lg:text-[1.5rem] xl:text-[1.7rem] 2xl:text-[2.1rem] 3xl:text-[2.4rem] font-light [&>b]:font-medium capitalize 1xl:text-[1.9rem] 3xl:pl-[4.5rem]"
                       dangerouslySetInnerHTML={{ __html: usp.title }}
                     ></h6>
                   </li>
                 ))}
               </ul>
-              <div className="mt-[3rem]">
+              <div className="mt-[3rem] md:hidden">
                 <Link
                   href="#"
                   className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[6rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[6.5rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"

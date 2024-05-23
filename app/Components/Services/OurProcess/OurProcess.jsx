@@ -38,7 +38,7 @@ const ProcessCard = ({ data, index }) => {
       </div>
       <h4
         dangerouslySetInnerHTML={{ __html: data.title }}
-        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[3rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] 1xl:mt-[5rem] 3xl:mt-[8rem] xl:leading-[1.3]"
+        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[3rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] 1xl:mt-[5rem] xl:leading-[1.3]"
       ></h4>
       <p className="text-[1.1rem] 1xl:tracking-tight 2xl:text-[1.1rem] 3xl:text-[1.4rem] mt-[2rem] font-light">
         {data.description}
@@ -74,13 +74,23 @@ const OurProcess = () => {
               className="inline-block object-contain mt-[3rem] w-[6rem] xl:w-[8.5rem] xl:mt-[5rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem] 3xl:mt-[6rem"
             />
           </div>
-          {processData && processData.length > 0 && (
-            <div className="grid grid-cols-2 gap-x-[1.5rem] mt-[3rem] max-w-[450px] mx-auto md:max-w-none md:grid-cols-4 lg:w-[90%] xl:mt-[5rem] xl:gap-x-[2.5rem] xl:w-full 1xl:gap-x-[2.5rem] 1xl:w-[95%] 1xl:mt-[7rem] 3xl:mt-[9rem] 3xl:gap-x-[3.5rem]">
-              {processData.map((process, index) => (
-                <ProcessCard data={process} key={index} index={index} />
-              ))}
-            </div>
-          )}
+          <div className="xl:w-[86%] xl:mx-auto 1xl:w-[75%]">
+            {processData && processData.length > 0 && (
+              <div className="grid grid-cols-2 gap-x-[1.5rem] mt-[3rem] max-w-[450px] mx-auto md:max-w-none md:grid-cols-4 lg:w-[90%] xl:mt-[5rem] xl:gap-x-[2.5rem] xl:w-full 1xl:gap-x-[2.5rem] 1xl:mt-[7rem] 3xl:mt-[9rem] 3xl:gap-x-[3.5rem]">
+                {processData.map((process, index) => (
+                  <ProcessCard data={process} key={index} index={index} />
+                ))}
+              </div>
+            )}
+          </div>
+          <div className="mt-[4rem] xl:mt-[6rem]">
+            <a
+              href="#"
+              className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-[#2E2E2E] text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[4.5rem] xl:h-[5rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[7.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#222222] transition-all duration-500 ease-in-out"
+            >
+              Book Service
+            </a>
+          </div>
         </div>
       </div>
     </section>

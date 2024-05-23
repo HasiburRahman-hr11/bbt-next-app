@@ -11,6 +11,8 @@ import Partnership from '../Components/Services/Partnership/Partnership';
 import PopularBrands from '../Components/Services/PopularBrands/PopularBrands';
 import GlimpseSection from '../Components/Services/GlimpseSection/GlimpseSection';
 import ContactSection from '../Components/Services/ContactSection/ContactSection';
+import InsuredBanner from '../Components/Services/InsuredBanner/InsuredBanner';
+import BrandServices from '../Components/Services/BrandServices/BrandServices';
 
 const Services = () => {
   return (
@@ -26,6 +28,8 @@ const Services = () => {
     <PopularBrands />
     <GlimpseSection />
     <ContactSection />
+    <InsuredBanner />
+    <BrandServices />
     <Footer />
   </main>
   )

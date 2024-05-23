@@ -28,7 +28,7 @@ const BannerSection = () => {
               className="block w-full h-auto object-cover sm:hidden min-h-[650px]"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25rem] 2xl:pt-[27rem] 3xl:pt-[33rem] 3xl:pb-[6rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[25rem] 1xl:pt-[29rem] 2xl:pt-[33rem] 3xl:pt-[40rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               data-aos="fade-down"
@@ -59,7 +59,7 @@ const BannerSection = () => {
                   cars <br /> services in India.
                 </b>
               </h1>
-              <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
+              <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 1xl:mt-[2rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
                 If your heart races at the sight of a sleek chassis or the purr
                 of <br /> a finely-tuned engine, then buckle up, because you're
                 in for a <br /> wild ride!
