@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 
-const SecondaryBanner = ({data}) => {
+const SecondaryBanner = ({ data }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -34,15 +34,19 @@ const SecondaryBanner = ({data}) => {
               data-aos-duration="500"
             >
               <div className="text-center text-white sm:text-left">
-                <p className="text-[1.4rem] uppercase font-light xl:text-[1.37rem] 1xl:text-[1.6rem] 3xl:text-[2.2rem]">
-                  {data.subtitle}
-                </p>
-                <h2 className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-2px] text-[2.9rem] xl:text-[3.75rem] 1xl:text-[4.2rem] 1xl:mt-[2rem] 2xl:text-[4.3rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px] capitalize [&>br]:hidden sm:[&>br]:block" dangerouslySetInnerHTML={{__html:data.title}}>
-                  
-                </h2>
-                <p className="font-light text-[1.2rem] leading-[1.5] mt-[2rem] sm:mt-[1rem] sm:mb-[1.5rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] xl:mb-[3rem] 1xl:text-[1.28rem] 2xl:mt-[2rem] 2xl:text-[1.4rem] 2xl:mb-[4.5rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>br]:hidden sm:[&>br]:block" dangerouslySetInnerHTML={{__html:data.description}}>
-                  
-                </p>
+                {data?.subtitle && data?.subtitle !== "" && (
+                  <p className="text-[1.4rem] uppercase font-light xl:text-[1.37rem] 1xl:text-[1.6rem] 3xl:text-[2.2rem]">
+                    {data.subtitle}
+                  </p>
+                )}
+                <h2
+                  className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-2px] text-[2.9rem] xl:text-[3.75rem] 1xl:text-[4.2rem] 1xl:mt-[2rem] 2xl:text-[4.3rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px] capitalize [&>br]:hidden sm:[&>br]:block"
+                  dangerouslySetInnerHTML={{ __html: data.title }}
+                ></h2>
+                <p
+                  className="font-light text-[1.2rem] leading-[1.5] mt-[2rem] sm:mt-[1rem] sm:mb-[1.5rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] xl:mb-[3rem] 1xl:text-[1.28rem] 2xl:mt-[2rem] 2xl:text-[1.4rem] 2xl:mb-[4.5rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>br]:hidden sm:[&>br]:block"
+                  dangerouslySetInnerHTML={{ __html: data.description }}
+                ></p>
               </div>
               <div className="text-center sm:mt-[3rem] sm:text-left 3xl:mt-[5rem]">
                 <Link

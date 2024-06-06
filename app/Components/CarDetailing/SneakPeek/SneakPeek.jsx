@@ -12,8 +12,10 @@ let settings = {
   slidesToShow: 2,
   slidesToScroll: 1,
   arrows: false,
+  pauseOnHover: false,
+  pauseOnFocus: false,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2500,
   centerMode: true,
   centerPadding: "4%",
   responsive: [
@@ -32,27 +34,27 @@ const pastProjects = [
   {
     title: "Toyota Vellfire",
     description: "Body Kit, Interiors,  PPF",
-    image: "/images/car-detailing/sneak-peek-1.webp",
-    url: "#",
+    image: "/images/project-listing/project-listing-img-3.webp",
+    url: "/projects/id-1",
   },
   {
     title: "Land Rover Porsche ",
     description: "Interiors, Paint, Engine Upgrade",
-    image: "/images/car-detailing/sneak-peek-2.webp",
-    url: "#",
+    image: "/images/project-listing/project-listing-img-2.webp",
+    url: "/projects/id-2",
   },
   {
     title: "Defender X",
     description: "Black Body Kit,  Engine Upgrade, Alloys",
-    image: "/images/modifications/past-project-1.webp",
-    url: "#",
+    image: "/images/project-listing/project-listing-img-5.webp",
+    url: "/projects/id-3",
   },
 
   {
-    title: "Body Kit, Interiors,  PPF",
+    title: "Mercedes-AMG G 63",
     description: "Interiors, Music System Upgrade",
-    image: "/images/car-detailing/sneak-peek-2.webp",
-    url: "#",
+    image: "/images/project-listing/project-listing-img-8.webp",
+    url: "/projects/id-4",
   },
 ];
 
@@ -61,16 +63,16 @@ const ProjectItem = ({ project }) => {
     <div className="pr-[2rem] xl:pr-[3rem] 2xl:pr-[4.5rem] 3xl:pr-[6.5rem]">
       <Link
         href={project.url}
-        className="block w-full rounded-[1.5rem] overflow-hidden relative"
+        className="block w-full rounded-[2rem] overflow-hidden relative md:rounded-[2.5rem] lg:rounded-[3.5rem] group xl:rounded-[4rem] 3xl:rounded-[5rem]"
       >
         <div>
           <img
             src={project.image}
             alt=""
-            className="w-full block object-cover h-auto"
+            className="w-full block object-cover h-auto group-hover:scale-110 transition-all duration-500 ease-in-out"
           />
         </div>
-        <div className="absolute w-full left-0 top-0 h-full px-[2.5rem] py-[2rem] lg:pb-[3rem] lg:pl-[3rem] flex flex-col justify-end xl:pl-[4rem] xl:pb-[4rem] 1xl:pl-[4.5rem] 1xl:pb-[4.5rem]">
+        <div className="absolute w-full left-0 top-0 h-full px-[2.5rem] py-[2rem] lg:pb-[3rem] lg:pl-[3rem] flex flex-col justify-end xl:pl-[4rem] xl:pb-[4rem] 1xl:pl-[4.5rem] 1xl:pb-[4.5rem] bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0.01)] ">
           <div className="text-white">
             <h4 className="text-[1.7rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 2xl:text-[2.3rem] 3xl:text-[2.8rem]">
               {project.title}
