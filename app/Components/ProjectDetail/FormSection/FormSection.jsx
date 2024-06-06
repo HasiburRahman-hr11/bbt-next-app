@@ -11,7 +11,7 @@ const FormSection = () => {
         <div className="container">
           <div className="xl:flex xl:items-center">
             <div className="xl:w-[30%] 1xl:w-[33%] 3xl:w-[30%]">
-              <h4 className="xl:text-[2.2rem] 1xl:text-[2.4rem] 2xl:text-[2.7rem] 3xl:text-[3rem] 3xl:tracking-tight">Looking For Something Similar?</h4>
+              <h4 className="xl:text-[2.2rem] 1xl:text-[2.4rem] 2xl:text-[2.5rem] 3xl:text-[3rem] 3xl:tracking-tight">Looking For Something Similar?</h4>
               <p className="font-light mt-[1rem] xl:text-[1.3rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.65rem]">
                 Drop us your detail and our team will get back to you with the
                 info.

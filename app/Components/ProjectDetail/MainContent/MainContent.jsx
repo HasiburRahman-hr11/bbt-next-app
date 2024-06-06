@@ -50,7 +50,7 @@ const MainContent = () => {
       <div className="max-1920">
         <div className="container">
           <div className="flex flex-wrap justify-between">
-            <div className="w-full lg:w-[60%] 1xl:w-[65%] 2xl:w-[68%]">
+            <div className="w-full lg:w-[60%] 1xl:w-[65%] 3xl:w-[68%]">
               {/* Video Box */}
               <div className="relative">
                 <video
@@ -137,11 +137,11 @@ const MainContent = () => {
                 </div>
               ))}
             </div>
-            <div className="w-full lg:w-[35%] mt-[5rem] lg:mt-0 relative 1xl:w-[32%] 2xl:w-[28%]">
+            <div className="w-full lg:w-[35%] mt-[5rem] lg:mt-0 relative 1xl:w-[32%] 3xl:w-[28%]">
               <div className="md:flex md:flex-wrap md:justify-between lg:block lg:sticky lg:top-[4rem]">
                 {/* Form Wrapper */}
                 <div className="bg-black px-[3.5rem] py-[4.5rem] rounded-[2rem] text-white md:w-[48%] lg:w-full 1xl:py-[5.5rem] 2xl:px-[4.5rem] 3xl:px-[5rem] 1xl:rounded-[3rem]">
-                  <h3 className="text-[2.2rem] xl:text-[2.4rem] 1xl:text-[2.5rem] 2xl:text-[2.6rem] 3xl:text-[2.8rem] font-light [&>br]:font-medium capitalize mb-[3rem] lg:[&>br]:hidden xl:[&>br]:block 3xl:mb-[4rem]">
+                  <h3 className="text-[2.2rem] xl:text-[2.4rem] 1xl:text-[2.5rem] 3xl:text-[2.8rem] font-light [&>br]:font-medium capitalize mb-[3rem] lg:[&>br]:hidden xl:[&>br]:block 3xl:mb-[4rem]">
                     get This <b>Project’s cost</b> in <br /> your inbox
                   </h3>
                   <form action="" className="block" onSubmit={handleFormSubmit}>
@@ -182,7 +182,7 @@ const MainContent = () => {
 
                 {/* Get In Touch */}
                 <div className="bg-black px-[3.5rem] py-[4.5rem] rounded-[2rem] text-white mt-[4rem] md:w-[48%] lg:w-full md:mt-0 md:h-[inherit] lg:mt-[4rem] 1xl:py-[5.5rem] 2xl:px-[4.5rem] 3xl:px-[5rem] 1xl:rounded-[3rem] 1xl:pb-[7rem]">
-                  <h3 className="text-[2.2rem] xl:text-[2.4rem] 1xl:text-[2.5rem] 2xl:text-[2.6rem] 3xl:text-[2.8rem] font-light [&>br]:font-medium capitalize mb-[3rem] lg:[&>br]:hidden xl:[&>br]:block 3xl:mb-[4rem]">
+                  <h3 className="text-[2.2rem] xl:text-[2.4rem] 1xl:text-[2.5rem] 3xl:text-[2.8rem] font-light [&>br]:font-medium capitalize mb-[3rem] lg:[&>br]:hidden xl:[&>br]:block 3xl:mb-[4rem]">
                     Get in Touch <b>with us</b>
                   </h3>
                   <ul>
@@ -264,7 +264,7 @@ const MainContent = () => {
                     className="w-[3rem] object-contain h-auto 1xl:w-[4rem] 2xl:w-[4.6rem] 3xl:w-[5.3rem]"
                   />
                   <div className="mt-[1.5rem] 3xl:mt-[2rem]">
-                    <p className="text-[2rem] 1xl:text-[2.45rem] 2xl:text-[2.6rem] 3xl:text-[3rem] font-light 3xl:tracking-tight">
+                    <p className="text-[2rem] 1xl:text-[2.45rem] 2xl:text-[2.5rem] 3xl:text-[3rem] font-light 2xl:tracking-tight">
                       I love the sound of a car’s engine, like a symphony of
                       pistons and gears singing in harmony. I love the sound of
                       a car’s engine.

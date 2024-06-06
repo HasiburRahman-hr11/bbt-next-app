@@ -59,7 +59,7 @@ const PageHeader = () => {
                 {workList.map((work, index) => (
                   <li
                     key={index}
-                    className="text-[1.3rem] px-[15px] py-[5px] bg-[#F2F2F2] rounded-full border border-[#D2D2D2] my-[6px] mx-[5px] xl:py-[6px] xl:px-[18px] xl:text-[1.6rem] 1xl:text-[1.8rem] 2xl:text-[1.9rem] 3xl:text-[2.2rem] 3xl:px-[27px]"
+                    className="text-[1.3rem] px-[15px] py-[5px] bg-[#F2F2F2] rounded-full border border-[#D2D2D2] my-[6px] mx-[5px] xl:py-[6px] xl:px-[18px] xl:text-[1.6rem] 1xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.2rem] 2xl:px-[23px] 3xl:px-[27px]"
                   >
                     {work}
                   </li>
