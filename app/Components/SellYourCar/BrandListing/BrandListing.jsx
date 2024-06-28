@@ -1,109 +1,98 @@
-"use client";
-import React, { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+
 const brands = [
   {
     title: "BMW",
-    logo: "/images/detail-page/brand-icon-bmw.webp",
+    logo: "/images/sell-your-car/brand-icon-bmw.webp",
     url: "/brand/bmw",
   },
   {
     title: "AUDI",
-    logo: "/images/detail-page/brand-icon-audi.webp",
+    logo: "/images/sell-your-car/brand-icon-audi.webp",
     url: "/brand/audi",
   },
   {
     title: "MERCEDES",
-    logo: "/images/detail-page/brand-icon-mercedes.webp",
+    logo: "/images/sell-your-car/brand-icon-mercedes.webp",
     url: "/brand/mercedes",
   },
   {
     title: "JAGUAR",
-    logo: "/images/detail-page/brand-icon-jaguar.webp",
+    logo: "/images/sell-your-car/brand-icon-jaguar.webp",
     url: "/brand/jaguar",
   },
   {
     title: "LAND ROVER",
-    logo: "/images/detail-page/brand-icon-land-rover.webp",
+    logo: "/images/sell-your-car/brand-icon-land-rover.webp",
     url: "/brand/land-rover",
   },
   {
     title: "BENTLEY",
-    logo: "/images/detail-page/brand-icon-bentley.webp",
+    logo: "/images/sell-your-car/brand-icon-bentley.webp",
     url: "/brand/bently",
   },
   {
     title: "PORSCHE",
-    logo: "/images/detail-page/brand-icon-porsche.webp",
+    logo: "/images/sell-your-car/brand-icon-porsche.webp",
     url: "/brand/porche",
   },
   {
     title: "LAMBORGHINI",
-    logo: "/images/detail-page/brand-icon-lambo.webp",
+    logo: "/images/sell-your-car/brand-icon-lambo.webp",
     url: "/brand/lamborghini",
   },
   {
     title: "JEEP",
-    logo: "/images/detail-page/brand-icon-jeep.webp",
+    logo: "/images/sell-your-car/brand-icon-jeep.webp",
     url: "/brand/jeep",
   },
   {
     title: "FERRARI",
-    logo: "/images/detail-page/brand-icon-ferrari.webp",
+    logo: "/images/sell-your-car/brand-icon-ferrari.webp",
     url: "/brand/ferrari",
   },
   {
     title: "ROLLS ROYCE",
-    logo: "/images/detail-page/brand-icon-rolls-royace.webp",
+    logo: "/images/sell-your-car/brand-icon-rolls-royace.webp",
     url: "/brand/rolls-royce",
   },
   {
     title: "Honda",
-    logo: "/images/detail-page/brand-icon-honda.webp",
+    logo: "/images/sell-your-car/brand-icon-honda.webp",
     url: "/brand/honda",
   },
   {
     title: "SKODA",
-    logo: "/images/detail-page/brand-icon-skoda.webp",
+    logo: "/images/sell-your-car/brand-icon-skoda.webp",
     url: "/brand/skoda",
   },
   {
     title: "TOYOTA",
-    logo: "/images/detail-page/brand-icon-toyota.webp",
+    logo: "/images/sell-your-car/brand-icon-toyota.webp",
     url: "/brand/toyota",
   },
   {
     title: "VOLVO",
-    logo: "/images/detail-page/brand-icon-volvo.webp",
+    logo: "/images/sell-your-car/brand-icon-volvo.webp",
     url: "/brand/volvo",
   },
   {
     title: "HYUNDAI",
-    logo: "/images/detail-page/brand-icon-hyundai.webp",
+    logo: "/images/sell-your-car/brand-icon-hyundai.webp",
     url: "/brand/hyundai",
   },
 ];
 
-const PopularBrands = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+const BrandListing = () => {
   return (
-    <section className="pt-24 bg-white lg:pt-40 2xl:pt-52 3xl:pt-60">
+    <section className="bg-[#F4F4F1] py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="container">
-          <div
-            className="relative lg:flex lg:justify-between"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="500"
-          >
+          <div className="relative lg:flex lg:justify-between">
             <h2 className="titleWithLine flex-grow xl:tracking-tighter">
               <span className="lg:bg-white lg:pr-10 relative z-10">
-                Other Brands
+                Popular Brands
               </span>
             </h2>
             <div className="hidden lg:inline-block w-max bg-white pl-10">
@@ -112,23 +101,21 @@ const PopularBrands = () => {
               </a>
             </div>
           </div>
+
           <ul
-            className={`flex flex-wrap mt-5 pb-20 border-b border-stone-300 lg:mt-20 lg:border-none lg:pb-0 2xl:mt-24 3xl:mt-32 [&>*:nth-child(4n)]:border-r lg:[&>*:nth-child(4n)]:border-r-0 lg:[&>*:nth-child(6n)]:border-r xl:[&>*:nth-child(6n)]:border-r-0 xl:[&>*:nth-child(8n)]:border-r`}
+            className={`flex flex-wrap mt-5  lg:mt-20 lg:border-none 2xl:mt-24 3xl:mt-32 [&>*:nth-child(4n)]:border-r lg:[&>*:nth-child(4n)]:border-r-0 lg:[&>*:nth-child(6n)]:border-r xl:[&>*:nth-child(6n)]:border-r-0 xl:[&>*:nth-child(8n)]:border-r`}
           >
             {brands.map((brand, index) => (
               <li
                 key={index}
                 title={brand.title}
                 className="w-1/4 h-24 my-8 lg:w-1/6 lg:h-36 xl:w-1/8 1xl:h-40 1xl:my-10 2xl:h-40 3xl:h-60 border-l border-[#D9D9D9] last-of-type:border-r"
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="500"
               >
                 <Link
                   href={brand.url}
                   className="flex px-5 py-3 items-center justify-between w-full h-full lg:px-12 lg:py-10 xl:px-12 xl:py-8"
                 >
-                  <Image
+                  <img
                     src={brand.logo}
                     width="100"
                     height="100"
@@ -145,4 +132,4 @@ const PopularBrands = () => {
   );
 };
 
-export default PopularBrands;
+export default BrandListing;

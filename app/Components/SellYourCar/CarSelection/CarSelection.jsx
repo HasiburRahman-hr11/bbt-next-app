@@ -1,0 +1,66 @@
+import React from "react";
+
+const cars = [
+  {
+    title: `I want to sell my used <b>Audi car</b>`,
+    link: "#",
+    image: "/images/sell-your-car/car-1.webp",
+  },
+  {
+    title: `I want to sell my used  <b>Mercedes Benz car</b>`,
+    link: "#",
+    image: "/images/sell-your-car/car-2.webp",
+  },
+  {
+    title: `I want to sell my used <b>BMW car </b>`,
+    link: "#",
+    image: "/images/sell-your-car/car-3.webp",
+  },
+  {
+    title: `I want to sell my used <b>Land Rover </b>`,
+    link: "#",
+    image: "/images/sell-your-car/car-4.webp",
+  },
+  {
+    title: `I want to sell my used  <b>Porsche</b>`,
+    link: "#",
+    image: "/images/sell-your-car/car-5.webp",
+  },
+];
+
+const CarSelection = () => {
+  return (
+    <section className="bg-white py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
+      <div className="max-1920">
+        <div className="container">
+          <div className="text-center lg:text-left">
+            <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] tracking-[-0.1rem] mb-[2rem] xl:text-[3.7rem] xl:[&>br]:hidden 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] capitalize sm:[&>br]:hidden">
+              Which luxury car would you <b>like to sell</b>
+            </h2>
+            <p className="text-[1.5rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 2xl:text-[2.3rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden md:[&>br]:block">
+              Our list of Associates share a common vision for <br /> Automotive
+              Excellence.
+            </p>
+          </div>
+
+          <div className="flex justify-between flex-wrap mt-[3rem]">
+            {cars.map((car) => (
+                <div className="w-[47%] h-[inherit] flex flex-col justify-between border border-[#D6D6D6] rounded-[1.5rem] mt-[2rem] px-[2rem] py-[2rem]">
+                    <h5 dangerouslySetInnerHTML={{__html:car.title}} className="text-[1.4rem] 3xl:text-[3rem]"></h5>
+
+                    <div>
+                        <div className=" mt-[3rem] mb-[1rem]">
+                            <img src={car.image} alt="Car Image" className="w-full object-contain h-auto" />
+                        </div>
+                        <a href="#" className="border border-[#000] rounded-[4rem] text-[1.2rem] 3xl:text-[1.6rem] px-[1rem] py-[1rem] flex justify-center items-center h-[4rem] max-w-[90%] mx-auto">Click Here</a>
+                    </div>
+                </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CarSelection;
