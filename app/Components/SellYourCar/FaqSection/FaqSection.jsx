@@ -37,7 +37,7 @@ const FaqSection = () => {
     <section className="bg-white py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="container">
-          <div className="text-center mb-[5rem]">
+          <div className="text-center mb-[5rem] 1xl:mb-[6rem]">
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] tracking-[-0.1rem] mb-[2rem] xl:text-[3.7rem] xl:[&>br]:hidden 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] capitalize sm:[&>br]:hidden">
               We are among top 3 <br /> company <b>sell luxury car</b>
             </h2>
@@ -61,8 +61,8 @@ const FaqSection = () => {
                     onClick={() => handleOpen(`faq-${itemIndex + 1}`)}
                     className="border-0 [&_.ml-4]:hidden"
                   >
-                    <div className="pr-[2rem] py-[1rem] relative w-full 3xl:py-[1.7rem]">
-                      <p className="text-[1.3rem] font-normal md:text-[1.4rem] lg:font-medium lg:text-[1.5rem] xl:text-[1.4rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[2rem]">
+                    <div className="pr-[2rem] py-[1rem] relative w-full 2xl:py-[1.5rem] 3xl:py-[1.8rem]">
+                      <p className="text-[1.3rem] font-normal md:text-[1.4rem] lg:font-medium lg:text-[1.5rem] xl:text-[1.4rem] 1xl:text-[1.6rem] 2xl:text-[1.7rem] 3xl:text-[2rem]">
                         {item.question}
                       </p>
 

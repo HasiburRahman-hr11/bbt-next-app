@@ -149,7 +149,7 @@ const BenefitsSection = () => {
               </ul>
             </div>
             <div className="bg-[#F4F4F1] py-[4rem] px-[2rem] rounded-[1.5rem] mt-[5rem] sm:max-w-[556px] sm:mx-auto lg:w-[35%] lg:m-0 xl:px-[4rem] xl:rounded-[2rem]">
-              <h4 className="text-[2rem] font-normal [&>b]:font-medium 3xl:text-[2.8rem] mb-[3rem]">
+              <h4 className="text-[2rem] font-normal [&>b]:font-medium 2xl:text-[2.4rem] 3xl:text-[2.8rem] mb-[3rem]">
                 Share <b>Details</b>
               </h4>
              <form action="" className="block" onSubmit={handleSubmit}>
@@ -308,7 +308,7 @@ const BenefitsSection = () => {
               <div>
                 <button
                   type="submit"
-                  className="bg-black text-white text-center w-full border border-black cursor-pointer px-[3rem] text-[1.3rem] xl:text-[1.4rem] 3xl:text-[1.9rem] rounded-[0.5rem] md:rounded-[0.7rem] xl:rounded-[1rem] hover:bg-transparent hover:text-black transition-all duration-500 py-[1.2rem] xl:py-[1.2rem] 1xl:py-[1.4rem] 3xl:py-[2rem]"
+                  className="bg-black text-white text-center w-full border border-black cursor-pointer px-[3rem] text-[1.3rem] xl:text-[1.4rem] 3xl:text-[1.9rem] rounded-[0.5rem] md:rounded-[0.7rem] xl:rounded-[1rem] hover:bg-transparent hover:text-black transition-all duration-500 py-[1.2rem] xl:py-[1.2rem] 1xl:py-[1.4rem] 2xl:h-[5.5rem] 3xl:h-[6.5rem] 3xl:py-[2rem]"
                 >
                   Submit
                 </button>
@@ -326,7 +326,7 @@ export default BenefitsSection;
 
 const styles = {
   inputStyle:
-    "bg-white text-black w-full h-[4.5rem] border border-[#CCCCCC] px-[1.5rem] py-[1rem] rounded-[1rem] outline-none text-[1.5rem] 3xl:text-[2.2rem] 1xl:h-[5rem] 1xl:text-[1.7rem] 2xl:text-[1.9rem]",
+    "bg-white text-black w-full h-[4.5rem] border border-[#CCCCCC] px-[1.5rem] py-[1rem] rounded-[1rem] outline-none text-[1.5rem] 3xl:text-[2.2rem] 1xl:h-[5rem] 2xl:h-[5.5rem] 3xl:h-[6.5rem] 1xl:text-[1.7rem] 2xl:text-[1.95rem]",
   fileInput:
-    "w-[32%] h-[7rem] mb-[1.5rem] relative overflow-hidden flex justify-center items-center border-[#ABABA9] border border-dashed rounded-[0.5rem] sm:h-[9rem] xl:h-[7rem] 3xl:h-[10rem] xl:rounded-[1rem]",
+    "w-[32%] h-[7rem] mb-[1.5rem] relative overflow-hidden flex justify-center items-center border-[#ABABA9] border border-dashed rounded-[0.5rem] sm:h-[9rem] xl:h-[7rem] 2xl:xl:h-[8rem] 3xl:h-[10rem] xl:rounded-[1rem]",
 };

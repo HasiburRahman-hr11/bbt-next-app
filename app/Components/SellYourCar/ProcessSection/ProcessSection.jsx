@@ -73,14 +73,14 @@ const processList = [
 
 const CardWithBgImage = ({ process }) => {
   return (
-    <div className={`overflow-hidden rounded-[1rem] xl:rounded-[2rem] relative h-full w-full`}>
+    <div className={`overflow-hidden rounded-[1rem] xl:rounded-[2rem] 2xl:rounded-[2.5rem] 3xl:rounded-[3rem] min-h-[15rem] xl:min-h-[22rem] 1xl:min-h-[25rem] 2xl:min-h-[28rem] 3xl:min-h-[37rem] relative h-full w-full`}>
       <img
         src={process.bgImage}
         alt=""
         className="w-full h-full object-cover block"
       />
-      <div className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.06)] justify-end md:py-[2rem] md:px-[2rem]  xl:py-[2.5rem] xl:px-[2.5rem] 1xl:py-[3.5rem] 1xl:pl-[3.5rem]">
-        <h5 className="text-[1.3rem] md:text-[1.5rem] 1xl:text-[1.7rem] capitalize 3xl:text-[2.4rem]  leading-[1.3] font-light text-white"
+      <div className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.06)] justify-end md:py-[2rem] md:px-[2rem]  xl:py-[2.5rem] xl:px-[2.5rem] 1xl:py-[3.5rem] 2xl:py-[4rem] 1xl:pl-[3.5rem] 3xl:px-[5rem] 3xl:py-[5rem]">
+        <h5 className="text-[1.3rem] md:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.9rem] capitalize 3xl:text-[2.4rem]  leading-[1.3] font-light text-white"
         dangerouslySetInnerHTML={{__html:process.title}}
         >
           
@@ -92,17 +92,17 @@ const CardWithBgImage = ({ process }) => {
 
 const CardWithoutBgImage = ({ process }) => {
   return (
-    <div className={`overflow-hidden rounded-[1rem] xl:rounded-[2rem] relative h-full w-full`}>
+    <div className={`overflow-hidden rounded-[1rem] xl:rounded-[2rem] 2xl:rounded-[2.5rem] 3xl:rounded-[3rem] min-h-[15rem] xl:min-h-[22rem] 1xl:min-h-[25rem] 2xl:min-h-[28rem] 3xl:min-h-[37rem] relative h-full w-full`}>
       <div
-        className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] justify-between md:py-[2rem] md:px-[2rem] xl:py-[2.5rem] xl:px-[2.5rem] 1xl:py-[3.5rem] 1xl:pl-[3.5rem]"
+        className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] justify-between md:py-[2rem] md:px-[2rem] xl:py-[2.5rem] xl:px-[2.5rem] 1xl:py-[3.5rem] 2xl:py-[4rem] 1xl:pl-[3.5rem] 3xl:px-[5rem] 3xl:py-[5rem]"
         style={{ background: process?.bgColor ? process.bgColor : "#F4F4F1" }}
       >
         {process && process?.icon && (
-          <div className="w-[3rem] xl:w-[4rem] 1xl:w-[5rem]">
+          <div className="w-[3rem] xl:w-[4rem] 1xl:w-[5rem] 2xl:w-[5.5rem] 3xl:w-[6.5rem]">
             <img
               src={process.icon}
               alt="Icon"
-              className="w-full object-contain h-auto max-h-[2.5rem] xl:max-h-[3.5rem] 1xl:max-h-[4rem]"
+              className="w-full object-contain h-auto max-h-[2.5rem] xl:max-h-[3.5rem] 1xl:max-h-[4rem] 3xl:max-h-[5rem]"
             />
           </div>
         )}
@@ -110,13 +110,13 @@ const CardWithoutBgImage = ({ process }) => {
           className="flex flex-col justify-end"
           style={{ color: process?.textColor ? process.textColor : "#000" }}
         >
-          <h5 className="text-[1.3rem] md:text-[1.5rem] 1xl:text-[1.7rem] capitalize 3xl:text-[2.4rem] leading-[1.3] font-light [&>b]:font-medium"
+          <h5 className="text-[1.3rem] md:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.9rem] capitalize 3xl:text-[2.4rem] leading-[1.3] font-light [&>b]:font-medium"
           dangerouslySetInnerHTML={{__html:process.title}}
           >
             
           </h5>
           {process && process?.description && (
-            <p className="text-[0.95rem] md:text-[1.1rem] 3xl:text-1.4rem mt-[0.5rem] line-clamp-3 lg:mt-[1rem]">{process.description}</p>
+            <p className="text-[0.95rem] md:text-[1.1rem] 2xl:text-[1.2rem] 3xl:text-1.4rem mt-[0.5rem] line-clamp-3 lg:mt-[1rem]">{process.description}</p>
           )}
         </div>
       </div>
@@ -140,7 +140,7 @@ const ProcessSection = () => {
             </p>
           </div>
 
-          <ul className=" grid grid-cols-2 gap-x-[1.5rem] gap-y-[1.5rem] mt-[4rem] sm:grid-cols-3 md:max-w-[650px] md:mx-auto lg:max-w-none lg:grid-cols-4 xl:gap-y-[2rem] xl:mt-[6rem]">
+          <ul className=" grid grid-cols-2 gap-x-[1.5rem] gap-y-[1.5rem] mt-[4rem] sm:grid-cols-3 md:max-w-[650px] md:mx-auto lg:max-w-none lg:grid-cols-4 xl:gap-y-[2rem] xl:mt-[6rem] 1xl:mt-[8rem] 3xl:gap-x-[2rem] 3xl:gap-y-[2.5rem]">
             {processList.map((process, index) => (
               <li key={index}>
                 {process.bgImage && process.bgImage !== "" ? (

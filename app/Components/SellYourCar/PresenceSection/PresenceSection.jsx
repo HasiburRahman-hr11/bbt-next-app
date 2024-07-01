@@ -23,7 +23,7 @@ const PresenceSection = () => {
                 width="123"
                 height="123"
                 alt="Arrow Icon"
-                className="inline-block object-contain mt-[3rem] w-[6rem] xl:w-[8.5rem] xl:mt-[5rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem] 3xl:mt-[6rem"
+                className="inline-block object-contain mt-[3rem] w-[6rem] xl:w-[8.5rem] xl:mt-[5rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem] 3xl:mt-[7rem]"
               />
 
               <div className="lg:hidden mt-[5rem] md:max-w-[640px] md:mx-auto">
@@ -37,7 +37,7 @@ const PresenceSection = () => {
               <div className="mt-[5rem] xl:mt-[8rem] 3xl:mt-[10rem]">
                 <Link
                   href="/showrooms"
-                  className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-white text-black px-[3rem] py-[1rem] rounded-[3rem] xl:px-[3.5rem] xl:h-[5rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[7.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out lg:ml-0"
+                  className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-white text-black px-[3rem] py-[1rem] rounded-[3rem] xl:px-[3.5rem] xl:h-[5rem] xl:text-[1.2rem] xl:font-medium 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[7.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[5rem] hover:bg-[#f1f1f1] transition-all duration-500 ease-in-out lg:ml-0"
                 >
                   View Our Showrooms
                 </Link>

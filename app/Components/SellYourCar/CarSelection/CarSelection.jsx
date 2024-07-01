@@ -43,16 +43,16 @@ const CarSelection = () => {
             </p>
           </div>
 
-          <div className="flex justify-between flex-wrap mt-[3rem] sm:grid sm:grid-cols-3 sm:gap-[2rem] md:grid-cols-4 lg:max-w-[1025px] xl:max-w-none xl:grid-cols-5 xl:gap-[1.5rem]">
+          <div className="flex justify-between flex-wrap mt-[3rem] sm:grid sm:grid-cols-3 sm:gap-[2rem] md:grid-cols-4 lg:max-w-[1025px] xl:max-w-none xl:grid-cols-5 xl:gap-[1.5rem] 1xl:mt-[5rem] 2xl:gap-[2rem] 3xl:gap-[2.5rem]">
             {cars.map((car, index) => (
-                <div key={index} className="w-[47%] h-[inherit] flex flex-col justify-between border border-[#D6D6D6] rounded-[1.5rem] mt-[2rem] px-[2rem] py-[2rem] sm:w-full sm:mt-0 xl:py-[3.5rem] 1xl:px-[3rem]">
-                    <h5 dangerouslySetInnerHTML={{__html:car.title}} className="text-[1.4rem] lg:text-[1.6rem] xl:text-[1.9rem] 1xl:text-[2.3rem] 1xl:tracking-tighter 3xl:text-[3rem] font-light [&>b]:font-medium text-center"></h5>
+                <div key={index} className="w-[47%] h-[inherit] flex flex-col justify-between border border-[#D6D6D6] rounded-[1.5rem] mt-[2rem] px-[2rem] py-[2rem] sm:w-full sm:mt-0 xl:py-[3.5rem] 1xl:px-[3rem] 2xl:pt-[5rem] 2xl:pb-[4rem]">
+                    <h5 dangerouslySetInnerHTML={{__html:car.title}} className="text-[1.4rem] lg:text-[1.6rem] xl:text-[1.9rem] 1xl:text-[2.3rem] 1xl:tracking-tighter 1xl:leading-[1.2] 2xl:text-[2.5rem] 3xl:text-[3rem] font-light [&>b]:font-medium text-center"></h5>
 
                     <div>
-                        <div className=" mt-[3rem] mb-[1rem] xl:mb-[2rem]">
+                        <div className=" mt-[3rem] mb-[1rem] xl:mb-[2rem] 2xl:mb-[3rem]">
                             <img src={car.image} alt="Car Image" className="w-full object-contain h-auto" />
                         </div>
-                        <a href="#" className="border border-[#000] rounded-[4rem] text-[1.2rem] 3xl:text-[1.6rem] px-[1rem] py-[1rem] flex justify-center items-center h-[4rem] max-w-[90%] mx-auto xl:max-w-none xl:w-max xl:px-[3rem] 3xl:h-[5.3rem]">Click Here</a>
+                        <a href="#" className="border border-[#000] rounded-[4rem] text-[1.2rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem] px-[1rem] py-[1rem] flex justify-center items-center h-[4rem] max-w-[90%] mx-auto xl:max-w-none xl:w-max xl:px-[3rem] 2xl:h-[4.8rem] 3xl:h-[5.3rem] 2xl:px-[4rem] hover:bg-black hover:text-white transition-all duration-500">Click Here</a>
                     </div>
                 </div>
             ))}

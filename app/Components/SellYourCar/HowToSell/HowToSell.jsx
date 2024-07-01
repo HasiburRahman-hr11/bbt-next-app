@@ -29,7 +29,7 @@ const processData = [
 
 const ProcessCard = ({ data, index }) => {
   return (
-    <div className="bg-[#FFFFFF] h-[inherit] px-[2rem] pt-[2.5rem] pb-[5rem] overflow-hidden relative text-black rounded-[1rem] xl:pb-[6rem] xl:rounded-[2rem] 1xl:px-[3rem] 1xl:rounded-[2.5rem] 1xl:pt-[3.5rem] 3xl:pt-[5rem] 3xl:pb-[8rem] 3xl:pl-[4rem]">
+    <div className="bg-[#FFFFFF] h-[inherit] px-[2rem] pt-[2.5rem] pb-[5rem] overflow-hidden relative text-black rounded-[1rem] xl:pb-[6rem] xl:rounded-[2rem] 1xl:px-[3rem] 1xl:rounded-[2.5rem] 1xl:pt-[3.5rem] 2xl:pb-[8rem] 3xl:pt-[5rem] 3xl:pb-[9rem] 3xl:pl-[4rem]">
       <div className="xl:h-[5rem]">
         <img
           src={data.icon}
@@ -39,12 +39,12 @@ const ProcessCard = ({ data, index }) => {
       </div>
       <h4
         dangerouslySetInnerHTML={{ __html: data.title }}
-        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[2rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] xl:leading-[1.3]"
+        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[2rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] xl:leading-[1.3] 3xl:mt-[5rem]"
       ></h4>
       <p className="text-[1.1rem] 1xl:tracking-tight 2xl:text-[1.1rem] 3xl:text-[1.4rem] mt-[2rem] font-light">
         {data.description}
       </p>
-      <div className="absolute right-[-0.1rem] bottom-[-2rem] font-medium text-[#EAEAEA] text-[5rem] tracking-tight xl:text-[7rem] 1xl:text-[8rem] 3xl:text-[10rem] xl:bottom-[-3.5rem] 1xl:bottom-[-4rem] 3xl:bottom-[-5rem]">
+      <div className="absolute right-[-0.1rem] bottom-[-2rem] font-medium text-[#EAEAEA] text-[5rem] tracking-tight xl:text-[7rem] 1xl:text-[8rem] 3xl:text-[10rem] xl:bottom-[-3rem] 1xl:bottom-[-3.5rem] 3xl:bottom-[-4rem]">
         0{index + 1}
       </div>
     </div>
@@ -152,16 +152,16 @@ const HowToSell = () => {
               width="123"
               height="123"
               alt="Arrow Icon"
-              className="hidden xl:inline-block object-contain  invert xl:w-[8.5rem] xl:mt-[4rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
+              className="hidden xl:inline-block object-contain  invert xl:w-[8.5rem] xl:mt-[4rem] 3xl:mt-[6rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
             />
           </div>
         </div>
-        <div className="pl-[2rem] my-[5rem] md:pl-[5rem] lg:pl-0 lg:w-[92%] lg:mx-auto lg:max-w-[1194px] xl:w-[62%]">
+        <div className="pl-[2rem] my-[5rem] md:pl-[5rem] lg:pl-0 lg:w-[92%] lg:mx-auto lg:max-w-[1194px] xl:w-[62%] 2xl:my-[7rem] 3xl:my-[8rem]">
           <Slider {...settings} className="sell-car-slider">
             {processData.map((process, index) => (
               <div
                 key={index}
-                className="pr-[3rem] h-[inherit] lg:pr-[1rem] lg:px-[1rem]"
+                className="pr-[3rem] h-[inherit] lg:pr-[1rem] lg:px-[1rem] 2xl:px-[1.4rem] 3xl:px-[1.6rem]"
               >
                 <ProcessCard data={process} index={index} />
               </div>
@@ -190,7 +190,7 @@ const HowToSell = () => {
           </div>
 
           <div className="flex justify-center items-center mt-[6rem]">
-            <button className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer lg:max-w-none lg:px-[4rem] lg:w-max xl:text-[1.2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.4rem] capitalize">
+            <button className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer lg:max-w-none lg:px-[4rem] lg:w-max xl:text-[1.2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.4rem] 3xl:px-[5rem] capitalize hover:bg-[#333333] transition-all duration-500">
               Request a call back
             </button>
           </div>

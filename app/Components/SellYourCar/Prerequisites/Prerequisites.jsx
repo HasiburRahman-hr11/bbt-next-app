@@ -3,7 +3,7 @@ import React from "react";
 const prerequisites = [
   {
     icon: "/images/sell-your-car/prerequisites-icon-1.webp",
-    title: `No Accidental <b>History</b>`,
+    title: `No Accidental <br> <b>History</b>`,
     isChecked: false,
   },
   {
@@ -57,13 +57,13 @@ const Prerequisites = () => {
               Excellence.
             </p>
           </div>
-          <ul className="grid grid-cols-2 gap-x-[1.5rem] gap-y-[1.5rem] mt-[4rem] sm:grid-cols-3 md:max-w-[650px] md:mx-auto lg:max-w-none lg:grid-cols-4 xl:gap-[2.5rem]">
+          <ul className="grid grid-cols-2 gap-x-[1.5rem] gap-y-[1.5rem] mt-[4rem] sm:grid-cols-3 md:max-w-[650px] md:mx-auto lg:max-w-none lg:grid-cols-4 xl:gap-[2.5rem] 1xl:mt-[5rem] 2xl:mt-[6rem]">
             {prerequisites.map((item, index) => (
               <li
                 key={index}
-                className="bg-white px-[1.5rem] py-[2rem] rounded-[1.5rem] flex flex-col justify-between min-h-[16rem] lg:min-h-[20rem] lg:px-[2rem] lg:py-[2.5rem] xl:px-[3rem] xl:pr-[1.5rem] xl:py-[3.5rem] xl:min-h-[30rem] 3xl:min-h-[37rem] 1xl:pr-[2.5rem] 1xl:rounded-[2.5rem]"
+                className="bg-white px-[1.5rem] py-[2rem] rounded-[1.5rem] flex flex-col justify-between min-h-[16rem] lg:min-h-[20rem] lg:px-[2rem] lg:py-[2.5rem] xl:px-[3rem] xl:pr-[1.5rem] xl:py-[3.5rem] xl:min-h-[30rem] 2xl:min-h-[34rem] 3xl:min-h-[41rem] 1xl:pr-[2.5rem] 1xl:rounded-[2.5rem] 2xl:pl-[4rem] 2xl:py-[4rem] 3xl:py-[5rem] 3xl:pl-[5rem]"
               >
-                <div className="flex justify-between">
+                <div className="flex justify-between 2xl:pr-[1rem] items-start">
                   <img
                     src={item.icon}
                     alt="Icon"
@@ -79,7 +79,7 @@ const Prerequisites = () => {
                     className="w-[2.5rem] h-auto object-contain xl:w-[3.5rem] 1xl:w-[4rem] 3xl:w-[5rem]"
                   />
                 </div>
-                <p dangerouslySetInnerHTML={{__html:item.title}} className="text-[1.3rem] lg:text-[1.6rem] xl:text-[2rem] 1xl:text-[2.3rem] 3xl:text-[3rem] font-normal xl:font-light [&>b]:font-medium mt-[2rem] capitalize xl:tracking-tight xl:leading-[1.2]"></p>
+                <p dangerouslySetInnerHTML={{__html:item.title}} className="text-[1.3rem] lg:text-[1.6rem] xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem] font-normal xl:font-light [&>b]:font-medium mt-[2rem] capitalize xl:tracking-tight xl:leading-[1.2]"></p>
               </li>
             ))}
           </ul>
