@@ -43,7 +43,7 @@ const PresenceSection = () => {
                 </Link>
               </div>
             </div>
-            <div className="hidden lg:block lg:w-[65%]">
+            <div className="hidden lg:block lg:w-[65%] xl:w-[66%]">
               <img
                 src="/images/sell-your-car/presence-map.webp"
                 alt=""

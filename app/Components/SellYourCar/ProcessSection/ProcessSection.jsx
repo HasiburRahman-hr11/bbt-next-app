@@ -45,7 +45,7 @@ const processList = [
     icon: "/images/sell-your-car/process-icon-3.webp",
   },
   {
-    title: "Hassle free buying process",
+    title: "Hassle free buying <br> process",
     description: "",
     bgImage: "/images/sell-your-car/process-img-3.webp",
     bgColor: "",
@@ -79,9 +79,11 @@ const CardWithBgImage = ({ process }) => {
         alt=""
         className="w-full h-full object-cover block"
       />
-      <div className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.06)] justify-end md:py-[2rem] md:px-[2rem]  xl:py-[2.5rem] xl:px-[2.5rem]">
-        <h5 className="text-[1.3rem] md:text-[1.5rem] 3xl:text-2.4rem  leading-[1.3] font-light text-white">
-          {process.title}
+      <div className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.06)] justify-end md:py-[2rem] md:px-[2rem]  xl:py-[2.5rem] xl:px-[2.5rem] 1xl:py-[3.5rem] 1xl:pl-[3.5rem]">
+        <h5 className="text-[1.3rem] md:text-[1.5rem] 1xl:text-[1.7rem] capitalize 3xl:text-[2.4rem]  leading-[1.3] font-light text-white"
+        dangerouslySetInnerHTML={{__html:process.title}}
+        >
+          
         </h5>
       </div>
     </div>
@@ -92,15 +94,15 @@ const CardWithoutBgImage = ({ process }) => {
   return (
     <div className={`overflow-hidden rounded-[1rem] xl:rounded-[2rem] relative h-full w-full`}>
       <div
-        className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] justify-between md:py-[2rem] md:px-[2rem] xl:py-[2.5rem] xl:px-[2.5rem]"
+        className="absolute left-0 top-0 w-full h-full flex flex-col py-[1.5rem] pl-[1.5rem] pr-[1rem] justify-between md:py-[2rem] md:px-[2rem] xl:py-[2.5rem] xl:px-[2.5rem] 1xl:py-[3.5rem] 1xl:pl-[3.5rem]"
         style={{ background: process?.bgColor ? process.bgColor : "#F4F4F1" }}
       >
         {process && process?.icon && (
-          <div className="w-[3rem] xl:w-[4rem]">
+          <div className="w-[3rem] xl:w-[4rem] 1xl:w-[5rem]">
             <img
               src={process.icon}
               alt="Icon"
-              className="w-full object-contain h-auto max-h-[2.5rem] xl:max-h-[3.5rem]"
+              className="w-full object-contain h-auto max-h-[2.5rem] xl:max-h-[3.5rem] 1xl:max-h-[4rem]"
             />
           </div>
         )}
@@ -108,7 +110,7 @@ const CardWithoutBgImage = ({ process }) => {
           className="flex flex-col justify-end"
           style={{ color: process?.textColor ? process.textColor : "#000" }}
         >
-          <h5 className="text-[1.3rem] md:text-[1.5rem] 3xl:text-2.4rem leading-[1.3] font-light [&>b]:font-medium"
+          <h5 className="text-[1.3rem] md:text-[1.5rem] 1xl:text-[1.7rem] capitalize 3xl:text-[2.4rem] leading-[1.3] font-light [&>b]:font-medium"
           dangerouslySetInnerHTML={{__html:process.title}}
           >
             

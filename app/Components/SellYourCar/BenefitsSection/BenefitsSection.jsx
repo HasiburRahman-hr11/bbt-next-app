@@ -134,14 +134,14 @@ const BenefitsSection = () => {
                     className="flex flex-wrap justify-between items-center mt-[3rem] w-full sm:w-[47%] xl:mt-[5rem]"
                     key={index}
                   >
-                    <div className="w-[5rem] h-[5rem] xl:w-[6.5rem] xl:h-[6.5rem] 3xl:w-[9rem] 3xl:h-[9rem] flex justify-center items-center p-[1rem] border border-[#9F9F9F] rounded-full">
+                    <div className="w-[5rem] h-[5rem] xl:w-[6.5rem] xl:h-[6.5rem] 1xl:w-[7rem] 1xl:h-[7rem] 3xl:w-[9rem] 3xl:h-[9rem] flex justify-center items-center p-[1rem] border border-[#9F9F9F] rounded-full">
                       <img
                         src={benefit.icon}
                         alt="Icon"
-                        className="w-full object-contain h-auto max-h-[2.5rem]"
+                        className="w-full object-contain h-auto max-h-[2.5rem] 1xl:max-h-[3rem] 3xl:max-h-[4.2rem]"
                       />
                     </div>
-                    <p className="flex-[1] pl-[1.5rem] text-[#313131] text-[1.3rem] xl:text-[1.5rem] 3xl:text-[2.2rem]">
+                    <p className="flex-[1] pl-[1.5rem] text-[#313131] text-[1.3rem] xl:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.9rem] 3xl:text-[2.2rem] xl:tracking-tight">
                       {benefit.title}
                     </p>
                   </li>
@@ -300,7 +300,7 @@ const BenefitsSection = () => {
                   name="message"
                   id="message"
                   placeholder="Message"
-                  className={`${styles.inputStyle} min-h-[7rem]`}
+                  className={`${styles.inputStyle} min-h-[7rem] xl:min-h-[8rem] 1xl:min-h-[9rem] 3xl:min-h-[11rem]`}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
@@ -326,7 +326,7 @@ export default BenefitsSection;
 
 const styles = {
   inputStyle:
-    "bg-white text-black w-full h-[4.5rem] border border-[#CCCCCC] px-[1.5rem] py-[1rem] rounded-[1rem] outline-none text-[1.5rem] 3xl:text-[2.2rem]",
+    "bg-white text-black w-full h-[4.5rem] border border-[#CCCCCC] px-[1.5rem] py-[1rem] rounded-[1rem] outline-none text-[1.5rem] 3xl:text-[2.2rem] 1xl:h-[5rem] 1xl:text-[1.7rem] 2xl:text-[1.9rem]",
   fileInput:
     "w-[32%] h-[7rem] mb-[1.5rem] relative overflow-hidden flex justify-center items-center border-[#ABABA9] border border-dashed rounded-[0.5rem] sm:h-[9rem] xl:h-[7rem] 3xl:h-[10rem] xl:rounded-[1rem]",
 };

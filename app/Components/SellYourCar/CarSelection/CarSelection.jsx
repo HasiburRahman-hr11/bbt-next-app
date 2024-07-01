@@ -45,8 +45,8 @@ const CarSelection = () => {
 
           <div className="flex justify-between flex-wrap mt-[3rem] sm:grid sm:grid-cols-3 sm:gap-[2rem] md:grid-cols-4 lg:max-w-[1025px] xl:max-w-none xl:grid-cols-5 xl:gap-[1.5rem]">
             {cars.map((car, index) => (
-                <div key={index} className="w-[47%] h-[inherit] flex flex-col justify-between border border-[#D6D6D6] rounded-[1.5rem] mt-[2rem] px-[2rem] py-[2rem] sm:w-full sm:mt-0 xl:py-[3.5rem]">
-                    <h5 dangerouslySetInnerHTML={{__html:car.title}} className="text-[1.4rem] lg:text-[1.6rem] xl:text-[1.9rem] 3xl:text-[3rem] font-light [&>b]:font-medium text-center"></h5>
+                <div key={index} className="w-[47%] h-[inherit] flex flex-col justify-between border border-[#D6D6D6] rounded-[1.5rem] mt-[2rem] px-[2rem] py-[2rem] sm:w-full sm:mt-0 xl:py-[3.5rem] 1xl:px-[3rem]">
+                    <h5 dangerouslySetInnerHTML={{__html:car.title}} className="text-[1.4rem] lg:text-[1.6rem] xl:text-[1.9rem] 1xl:text-[2.3rem] 1xl:tracking-tighter 3xl:text-[3rem] font-light [&>b]:font-medium text-center"></h5>
 
                     <div>
                         <div className=" mt-[3rem] mb-[1rem] xl:mb-[2rem]">

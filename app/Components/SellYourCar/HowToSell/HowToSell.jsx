@@ -29,12 +29,12 @@ const processData = [
 
 const ProcessCard = ({ data, index }) => {
   return (
-    <div className="bg-[#FFFFFF] h-[inherit] px-[2rem] pt-[2.5rem] pb-[5rem] overflow-hidden relative text-black rounded-[1rem] xl:pb-[6rem] xl:rounded-[2rem] 1xl:px-[3rem] 1xl:rounded-[2.5rem] 2xl:pt-[3.5rem] 3xl:pt-[5rem] 3xl:pb-[8rem] 3xl:pl-[4rem]">
+    <div className="bg-[#FFFFFF] h-[inherit] px-[2rem] pt-[2.5rem] pb-[5rem] overflow-hidden relative text-black rounded-[1rem] xl:pb-[6rem] xl:rounded-[2rem] 1xl:px-[3rem] 1xl:rounded-[2.5rem] 1xl:pt-[3.5rem] 3xl:pt-[5rem] 3xl:pb-[8rem] 3xl:pl-[4rem]">
       <div className="xl:h-[5rem]">
         <img
           src={data.icon}
           alt=""
-          className="w-full object-contain h-auto max-w-[4rem] 1xl:max-w-[3.5rem] 3xl:max-w-[5rem] 1xl:max-h-[4rem]"
+          className="w-full object-contain h-auto max-w-[4rem] 1xl:max-w-[3.8rem] 3xl:max-w-[5rem] 1xl:max-h-[4rem]"
         />
       </div>
       <h4
@@ -190,7 +190,7 @@ const HowToSell = () => {
           </div>
 
           <div className="flex justify-center items-center mt-[6rem]">
-            <button className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer lg:max-w-none lg:px-[4rem] lg:w-max xl:text-[1.2rem] 3xl:text-[1.8rem]">
+            <button className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer lg:max-w-none lg:px-[4rem] lg:w-max xl:text-[1.2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.4rem] capitalize">
               Request a call back
             </button>
           </div>

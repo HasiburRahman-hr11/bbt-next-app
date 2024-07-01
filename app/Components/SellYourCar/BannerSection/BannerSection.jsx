@@ -66,32 +66,32 @@ const BannerSection = () => {
               <div className="flex items-center w-max sm:mt-[3rem] lg:mt-[6rem] xl:mt-[7rem]">
                 <a
                   href="#"
-                  className="hidden sm:flex items-center justify-center bg-white text-black w-max h-[5rem] px-[2rem] rounded-[0.5rem] xl:h-[4.5rem] xl:rounded-[1rem] 3xl:h-[6.5rem]"
+                  className="hidden sm:flex items-center justify-center bg-white text-black w-max h-[5rem] px-[2rem] rounded-[0.5rem] xl:h-[4.5rem] xl:rounded-[1rem] 1xl:h-[5rem] 3xl:h-[6.5rem]"
                 >
                   <img
                     src="/images/sell-your-car/banner-email-icon.webp"
                     alt="Email Icon"
                       className="w-[1.9rem] object-contain h-auto xl:w-[1.7rem] 3xl:w-[2.2rem]"
                   />
-                  <p className="flex-[1] pl-[1rem] text-[1.5rem] xl:text-[1.2rem] xl:tracking-tight 3xl:text-[1.6rem] font-medium">Request a call back</p>
+                  <p className="flex-[1] pl-[1rem] text-[1.5rem] xl:text-[1.2rem] 1xl:text-[1.3rem] xl:tracking-tight 3xl:text-[1.6rem] font-medium">Request a call back</p>
                 </a>
-                <div className="fixed w-full bottom-0 left-0 bg-white flex py-[2rem] px-[2rem] items-center justify-center z-10 sm:static sm:bg-transparent sm:py-0 sm:px-0 sm:ml-[1.5rem] sm:w-max">
+                <div className="fixed w-full bottom-0 left-0 bg-white flex py-[2rem] px-[2rem] items-center justify-center z-10 sm:static sm:bg-transparent sm:py-0 sm:px-0 sm:ml-[1.5rem] sm:w-max xl:ml-[1rem]">
                   <a
                     href="tel:+919999999915"
-                    className="flex items-center justify-center bg-white text-black w-max h-[5rem] px-[2rem] rounded-[0.5rem] mr-[1.5rem] shadow-[0_11px_60px_-10px_rgba(0,0,0,0.4)] sm:shadow-none xl:h-[4.5rem] xl:rounded-[1rem] 3xl:h-[6.5rem]"
+                    className="flex items-center justify-center bg-white text-black w-max h-[5rem] px-[2rem] rounded-[0.5rem] mr-[1.5rem] shadow-[0_11px_60px_-10px_rgba(0,0,0,0.4)] sm:shadow-none xl:mr-[1rem] xl:h-[4.5rem] xl:rounded-[1rem] 1xl:h-[5rem] 3xl:h-[6.5rem]"
                   >
                     <img
                       src="/images/sell-your-car/banner-call-iocn.webp"
                       alt="Call Icon"
                       className="w-[1.9rem] object-contain h-auto xl:w-[1.7rem] 3xl:w-[2.2rem]"
                     />
-                    <p className="flex-[1] pl-[1rem] text-[1.5rem] xl:text-[1.2rem] xl:tracking-tight 3xl:text-[1.6rem] font-medium">
+                    <p className="flex-[1] pl-[1rem] text-[1.5rem] xl:text-[1.2rem] xl:tracking-tight 1xl:text-[1.3rem] 3xl:text-[1.6rem] font-medium">
                       Call Now : 9999 9999 15 
                     </p>
                   </a>
                   <a
                     href="#"
-                    className="w-[5rem] h-[5rem] bg-[#1BD741] flex items-center justify-center rounded-[0.7rem] shadow-[0_11px_60px_-10px_rgba(0,0,0,0.4)] sm:shadow-none xl:h-[4.5rem] xl:w-[4.5rem] xl:rounded-[1rem] 3xl:h-[6.5rem] 3xl:w-[6.5rem]"
+                    className="w-[5rem] h-[5rem] bg-[#1BD741] flex items-center justify-center rounded-[0.7rem] shadow-[0_11px_60px_-10px_rgba(0,0,0,0.4)] sm:shadow-none xl:h-[4.5rem] xl:w-[4.5rem] xl:rounded-[1rem] 3xl:h-[6.5rem] 3xl:w-[6.5rem] 1xl:h-[5rem] 1xl:w-[5rem]"
                   >
                     <img
                       src="/images/sell-your-car/banner-whatsapp-icon.webp"
