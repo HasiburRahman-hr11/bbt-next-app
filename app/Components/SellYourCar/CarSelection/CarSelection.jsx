@@ -43,16 +43,16 @@ const CarSelection = () => {
             </p>
           </div>
 
-          <div className="flex justify-between flex-wrap mt-[3rem]">
-            {cars.map((car) => (
-                <div className="w-[47%] h-[inherit] flex flex-col justify-between border border-[#D6D6D6] rounded-[1.5rem] mt-[2rem] px-[2rem] py-[2rem]">
-                    <h5 dangerouslySetInnerHTML={{__html:car.title}} className="text-[1.4rem] 3xl:text-[3rem]"></h5>
+          <div className="flex justify-between flex-wrap mt-[3rem] sm:grid sm:grid-cols-3 sm:gap-[2rem] md:grid-cols-4 lg:max-w-[1025px] xl:max-w-none xl:grid-cols-5 xl:gap-[1.5rem]">
+            {cars.map((car, index) => (
+                <div key={index} className="w-[47%] h-[inherit] flex flex-col justify-between border border-[#D6D6D6] rounded-[1.5rem] mt-[2rem] px-[2rem] py-[2rem] sm:w-full sm:mt-0 xl:py-[3.5rem]">
+                    <h5 dangerouslySetInnerHTML={{__html:car.title}} className="text-[1.4rem] lg:text-[1.6rem] xl:text-[1.9rem] 3xl:text-[3rem] font-light [&>b]:font-medium text-center"></h5>
 
                     <div>
-                        <div className=" mt-[3rem] mb-[1rem]">
+                        <div className=" mt-[3rem] mb-[1rem] xl:mb-[2rem]">
                             <img src={car.image} alt="Car Image" className="w-full object-contain h-auto" />
                         </div>
-                        <a href="#" className="border border-[#000] rounded-[4rem] text-[1.2rem] 3xl:text-[1.6rem] px-[1rem] py-[1rem] flex justify-center items-center h-[4rem] max-w-[90%] mx-auto">Click Here</a>
+                        <a href="#" className="border border-[#000] rounded-[4rem] text-[1.2rem] 3xl:text-[1.6rem] px-[1rem] py-[1rem] flex justify-center items-center h-[4rem] max-w-[90%] mx-auto xl:max-w-none xl:w-max xl:px-[3rem] 3xl:h-[5.3rem]">Click Here</a>
                     </div>
                 </div>
             ))}

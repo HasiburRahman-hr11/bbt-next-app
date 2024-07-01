@@ -54,7 +54,7 @@ const InfoWithTwoCard = ({ data }) => {
             </div>
             <div className="w-full md:w-[32%] text-center order-1 md:order-2">
               <h2
-                className="font-light [&>b]:font-medium 3xl:text-[4.5rem] tracking-tighter capitalize my-[2rem]"
+                className="font-light [&>b]:font-medium 3xl:text-[4.5rem] tracking-tighter capitalize my-[2rem] xl:leading-[1.1]"
                 dangerouslySetInnerHTML={{ __html: data.title }}
               ></h2>
               <p className="font-[300] text-[1.2rem] leading-[1.5] mb-[3rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>b]:font-[500] 3xl:mb-[4rem]">

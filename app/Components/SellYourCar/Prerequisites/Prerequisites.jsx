@@ -28,12 +28,12 @@ const prerequisites = [
   },
   {
     icon: "/images/sell-your-car/prerequisites-icon-6.webp",
-    title: `Service History <b>Check</b>`,
+    title: `Service <b> History <br> Check</b>`,
     isChecked: true,
   },
   {
     icon: "/images/sell-your-car/prerequisites-icon-7.webp",
-    title: `Insurance History <b>Check</b>`,
+    title: `Insurance <b>History <br> Check</b>`,
     isChecked: true,
   },
   {
@@ -57,17 +57,17 @@ const Prerequisites = () => {
               Excellence.
             </p>
           </div>
-          <ul className="grid grid-cols-2 gap-x-[1.5rem] gap-y-[1.5rem] mt-[4rem]">
+          <ul className="grid grid-cols-2 gap-x-[1.5rem] gap-y-[1.5rem] mt-[4rem] sm:grid-cols-3 md:max-w-[650px] md:mx-auto lg:max-w-none lg:grid-cols-4 xl:gap-[2.5rem]">
             {prerequisites.map((item, index) => (
               <li
                 key={index}
-                className="bg-white px-[1.5rem] py-[2rem] rounded-[1.5rem] flex flex-col justify-between min-h-[16rem]"
+                className="bg-white px-[1.5rem] py-[2rem] rounded-[1.5rem] flex flex-col justify-between min-h-[16rem] lg:min-h-[20rem] lg:px-[2rem] lg:py-[2.5rem] xl:px-[3rem] xl:pr-[1.5rem] xl:py-[3.5rem] xl:min-h-[30rem] 3xl:min-h-[37rem]"
               >
                 <div className="flex justify-between">
                   <img
                     src={item.icon}
                     alt="Icon"
-                    className="w-full max-w-[3rem] 3xl:max-w-[8rem] 3xl:max-h-[8rem] object-contain h-auto"
+                    className="w-full max-w-[3rem] xl:max-w-[5.5rem] 3xl:max-w-[8rem] xl:max-h-[5rem] 3xl:max-h-[8rem] object-contain h-auto"
                   />
                   <img
                     src={
@@ -76,10 +76,10 @@ const Prerequisites = () => {
                         : "/images/sell-your-car/prerequisites-cross.webp"
                     }
                     alt={item.isChecked ? "Checked" : "Not Checked"}
-                    className="w-[2.5rem] h-auto object-contain"
+                    className="w-[2.5rem] h-auto object-contain xl:w-[3.5rem] 3xl:w-[5rem]"
                   />
                 </div>
-                <p dangerouslySetInnerHTML={{__html:item.title}} className="text-[1.3rem] font-normal [&>br]:font-medium mt-[2rem]"></p>
+                <p dangerouslySetInnerHTML={{__html:item.title}} className="text-[1.3rem] lg:text-[1.6rem] xl:text-[2rem] 3xl:text-[3rem] font-normal xl:font-light [&>b]:font-medium mt-[2rem] capitalize xl:tracking-tight"></p>
               </li>
             ))}
           </ul>

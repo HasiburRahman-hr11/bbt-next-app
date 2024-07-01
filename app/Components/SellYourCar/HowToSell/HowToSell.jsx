@@ -29,8 +29,8 @@ const processData = [
 
 const ProcessCard = ({ data, index }) => {
   return (
-    <div className="bg-[#FFFFFF] h-[inherit] px-[2rem] pt-[2.5rem] pb-[5rem] overflow-hidden relative text-black rounded-[1rem] xl:pb-[7rem] xl:pl-[3rem] xl:rounded-[2rem] 1xl:px-[3rem] 1xl:rounded-[2.5rem] 2xl:pt-[3.5rem] 3xl:pt-[5rem] 3xl:pb-[9rem] 3xl:pl-[4rem]">
-      <div>
+    <div className="bg-[#FFFFFF] h-[inherit] px-[2rem] pt-[2.5rem] pb-[5rem] overflow-hidden relative text-black rounded-[1rem] xl:pb-[6rem] xl:rounded-[2rem] 1xl:px-[3rem] 1xl:rounded-[2.5rem] 2xl:pt-[3.5rem] 3xl:pt-[5rem] 3xl:pb-[8rem] 3xl:pl-[4rem]">
+      <div className="xl:h-[5rem]">
         <img
           src={data.icon}
           alt=""
@@ -39,7 +39,7 @@ const ProcessCard = ({ data, index }) => {
       </div>
       <h4
         dangerouslySetInnerHTML={{ __html: data.title }}
-        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[3rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] 1xl:mt-[5rem] 3xl:mt-[8rem] xl:leading-[1.3]"
+        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[2rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] xl:leading-[1.3]"
       ></h4>
       <p className="text-[1.1rem] 1xl:tracking-tight 2xl:text-[1.1rem] 3xl:text-[1.4rem] mt-[2rem] font-light">
         {data.description}
@@ -54,10 +54,7 @@ const ProcessCard = ({ data, index }) => {
 function NextArrow(props) {
   const { onClick, className } = props;
   return (
-    <div
-      className={`cursor-pointer ${className}`}
-      onClick={onClick}
-    >
+    <div className={`cursor-pointer ${className}`} onClick={onClick}>
       <img
         src="/images/sell-your-car/hs-slider-next.webp"
         alt="Next Slide"
@@ -72,10 +69,7 @@ function NextArrow(props) {
 function PrevArrow(props) {
   const { onClick, className } = props;
   return (
-    <div
-      className={`cursor-pointer ${className}`}
-      onClick={onClick}
-    >
+    <div className={`cursor-pointer ${className}`} onClick={onClick}>
       <img
         src="/images/sell-your-car/hs-slider-prev.webp"
         alt="Previous Slide"
@@ -104,7 +98,7 @@ const HowToSell = () => {
     centerMode: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1023,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -114,7 +108,17 @@ const HowToSell = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          infinite: true,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 639,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -133,6 +137,9 @@ const HowToSell = () => {
       <div className="max-1920">
         <div className="container">
           <div className="lg:text-center">
+            <p className="text-[1rem] 1xl:text-[1.2rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem] mb-[1rem]">
+            How It Works
+            </p>
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] tracking-[-0.1rem] mb-[2rem] xl:text-[3.7rem] xl:[&>br]:hidden 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] capitalize sm:[&>br]:hidden">
               How to sell your <br /> <b>Used Cars</b>
             </h2>
@@ -140,19 +147,29 @@ const HowToSell = () => {
               At BBT, we strive to provide the quickest and most <br /> hassle
               free car selling service available.
             </p>
+            <img
+              src="/images/down-circle-arrow-white.webp"
+              width="123"
+              height="123"
+              alt="Arrow Icon"
+              className="hidden xl:inline-block object-contain  invert xl:w-[8.5rem] xl:mt-[4rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
+            />
           </div>
         </div>
-        <div className="pl-[2rem] my-[5rem]">
+        <div className="pl-[2rem] my-[5rem] md:pl-[5rem] lg:pl-0 lg:w-[92%] lg:mx-auto lg:max-w-[1194px] xl:w-[62%]">
           <Slider {...settings} className="sell-car-slider">
             {processData.map((process, index) => (
-              <div key={index} className="pr-[3rem] h-[inherit]">
+              <div
+                key={index}
+                className="pr-[3rem] h-[inherit] lg:pr-[1rem] lg:px-[1rem]"
+              >
                 <ProcessCard data={process} index={index} />
               </div>
             ))}
           </Slider>
         </div>
         <div className="container">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center lg:hidden">
             <div
               className="progress flex-[1]"
               style={{
@@ -173,9 +190,9 @@ const HowToSell = () => {
           </div>
 
           <div className="flex justify-center items-center mt-[6rem]">
-                <button className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer">
-                Request a call back
-                </button>
+            <button className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer lg:max-w-none lg:px-[4rem] lg:w-max xl:text-[1.2rem] 3xl:text-[1.8rem]">
+              Request a call back
+            </button>
           </div>
         </div>
       </div>

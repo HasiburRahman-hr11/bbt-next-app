@@ -126,29 +126,29 @@ const BenefitsSection = () => {
               Used Luxury Car to the right hands.
             </p>
           </div>
-          <div>
-            <div>
+          <div className="block lg:flex lg:flex-wrap lg:justify-between">
+            <div className="md:max-w-[556px] md:mx-auto lg:max-w-none lg:w-[60%] lg:m-0">
               <ul className="flex flex-wrap justify-between mt-[2rem]">
                 {benefits.map((benefit, index) => (
                   <li
-                    className="flex flex-wrap justify-between items-center mt-[3rem] w-full"
+                    className="flex flex-wrap justify-between items-center mt-[3rem] w-full sm:w-[47%] xl:mt-[5rem]"
                     key={index}
                   >
-                    <div className="w-[5rem] h-[5rem] 3xl:w-[9rem] 3xl:h-[9rem] flex justify-center items-center p-[1rem] border border-[#9F9F9F] rounded-full">
+                    <div className="w-[5rem] h-[5rem] xl:w-[6.5rem] xl:h-[6.5rem] 3xl:w-[9rem] 3xl:h-[9rem] flex justify-center items-center p-[1rem] border border-[#9F9F9F] rounded-full">
                       <img
                         src={benefit.icon}
                         alt="Icon"
                         className="w-full object-contain h-auto max-h-[2.5rem]"
                       />
                     </div>
-                    <p className="flex-[1] pl-[1.5rem] text-[#313131] text-[1.3rem] 3xl:text-[2.2rem]">
+                    <p className="flex-[1] pl-[1.5rem] text-[#313131] text-[1.3rem] xl:text-[1.5rem] 3xl:text-[2.2rem]">
                       {benefit.title}
                     </p>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-[#F4F4F1] py-[4rem] px-[2rem] rounded-[1.5rem] mt-[5rem]">
+            <div className="bg-[#F4F4F1] py-[4rem] px-[2rem] rounded-[1.5rem] mt-[5rem] sm:max-w-[556px] sm:mx-auto lg:w-[35%] lg:m-0 xl:px-[4rem] xl:rounded-[2rem]">
               <h4 className="text-[2rem] font-normal [&>b]:font-medium 3xl:text-[2.8rem] mb-[3rem]">
                 Share <b>Details</b>
               </h4>
@@ -236,7 +236,7 @@ const BenefitsSection = () => {
                     className={`${
                       imageOnePreview
                         ? "object-cover"
-                        : " object-contain max-w-[4.7rem]"
+                        : " object-contain max-w-[4.7rem] xl:max-w-[3.5rem] 3xl:max-w-[4.7rem]"
                     } w-full`}
                   />
                   <input
@@ -259,7 +259,7 @@ const BenefitsSection = () => {
                     className={`${
                       imageTwoPreview
                         ? "object-cover"
-                        : " object-contain max-w-[4.7rem]"
+                        : " object-contain max-w-[4.7rem] xl:max-w-[3.5rem] 3xl:max-w-[4.7rem]"
                     } w-full`}
                   />
                   <input
@@ -282,7 +282,7 @@ const BenefitsSection = () => {
                     className={`${
                       imageThreePreview
                         ? "object-cover"
-                        : " object-contain max-w-[4.7rem]"
+                        : " object-contain max-w-[4.7rem] xl:max-w-[3.5rem] 3xl:max-w-[4.7rem]"
                     } w-full`}
                   />
                   <input
@@ -328,5 +328,5 @@ const styles = {
   inputStyle:
     "bg-white text-black w-full h-[4.5rem] border border-[#CCCCCC] px-[1.5rem] py-[1rem] rounded-[1rem] outline-none text-[1.5rem] 3xl:text-[2.2rem]",
   fileInput:
-    "w-[32%] h-[7rem] mb-[1.5rem] relative overflow-hidden flex justify-center items-center border-[#ABABA9] border border-dashed rounded-[0.5rem] 3xl:h-[10rem]",
+    "w-[32%] h-[7rem] mb-[1.5rem] relative overflow-hidden flex justify-center items-center border-[#ABABA9] border border-dashed rounded-[0.5rem] sm:h-[9rem] xl:h-[7rem] 3xl:h-[10rem] xl:rounded-[1rem]",
 };

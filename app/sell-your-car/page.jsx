@@ -12,6 +12,24 @@ import Prerequisites from "../Components/SellYourCar/Prerequisites/Prerequisites
 import CarSelection from "../Components/SellYourCar/CarSelection/CarSelection";
 import BrandListing from "../Components/SellYourCar/BrandListing/BrandListing";
 import FaqSection from "../Components/SellYourCar/FaqSection/FaqSection";
+import InfoWithTwoCard from "../Components/CommonComponents/InfoWithTwoCard/InfoWithTwoCard";
+
+const InfoWithTwoCardData = {
+  leftCardData: {
+    url: "/showrooms",
+    title: "Our Showrooms",
+    thumbnail: "/images/sell-your-car/cta-img-1.webp",
+  },
+  rightCardData: {
+    url: "/team",
+    title: "Our Team",
+    thumbnail: "/images/sell-your-car/cta-img-2.webp",
+  },
+  title: "BBT Custom Car <b>Detailing and Services</b>",
+  description:
+    "Your car isn't just a machine, it's your trusty steed, your partner in crime, and your ticket to endless adventures. And guess what? We totally get it.",
+    bg:'#F4F4F1'
+};
 
 const SellYourCar = () => {
   const [showForm, setShowForm] = useState(false);
@@ -51,9 +69,10 @@ const SellYourCar = () => {
         <CarSelection />
         <BrandListing />
         <FaqSection />
+        <InfoWithTwoCard data={InfoWithTwoCardData} />
       </div>
       <Footer />
-      <div
+      {/* <div
         className={`z-100 fixed  left-0 w-full transition-all duration-500 ease-in-out ${
           showForm
             ? "bottom-[5rem] show-from-bottom opacity-[1] hidden xl:block"
@@ -61,7 +80,7 @@ const SellYourCar = () => {
         }`}
       >
         <FloatingForm />
-      </div>
+      </div> */}
     </main>
   );
 };

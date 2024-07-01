@@ -26,7 +26,7 @@ const FloatingForm = () => {
         </h3>
         <p className="text-[#9C9C9C] text-center xl:text-right text-[1.1rem] mt-[1rem] italic xl:mt-0 xl:text-[1.2rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
           Call Us For Insurance Query{" "}
-          <a href="tel:+919999999983">At: +91 9999 9999 83</a>
+          <a href="tel:+919999999983">At: +91 9999 9999 15</a>
         </p>
       </div>
       <div className="pt-[2rem] xl:flex xl:flex-row xl:justify-between xl:items-center">

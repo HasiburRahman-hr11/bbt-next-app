@@ -91,11 +91,11 @@ const BrandListing = () => {
         <div className="container">
           <div className="relative lg:flex lg:justify-between">
             <h2 className="titleWithLine flex-grow xl:tracking-tighter">
-              <span className="lg:bg-white lg:pr-10 relative z-10">
+              <span className="lg:bg-[#F4F4F1] lg:pr-10 relative z-10">
                 Popular Brands
               </span>
             </h2>
-            <div className="hidden lg:inline-block w-max bg-white pl-10">
+            <div className="hidden lg:inline-block w-max bg-[#F4F4F1] pl-10">
               <a href="#" className="btn btnBlack roundedBtn 3xl:px-[7rem]">
                 View All Brands
               </a>

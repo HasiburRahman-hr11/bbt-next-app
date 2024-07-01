@@ -47,58 +47,45 @@ const FaqSection = () => {
             </p>
           </div>
 
-          {faqList.map((item, itemIndex) => (
-            <div
-              className=" [&>*:nth-child(1)]:border-t [&>*:nth-child(1)]:border-t-[#ddd]"
-              key={itemIndex}
-            >
-              <Accordion
-                open={
-                  open ===
-                  `faq-${
-                    itemIndex + 1
-                  }`
-                }
-                className="border-b border-b-[#ddd]"
+          <div className="xl:w-[74%] xl:mx-auto">
+            {faqList.map((item, itemIndex) => (
+              <div
+                className=" [&>*:nth-child(1)]:border-t [&>*:nth-child(1)]:border-t-[#ddd]"
+                key={itemIndex}
               >
-                <AccordionHeader
-                  onClick={() =>
-                    handleOpen(
-                      `faq-${
-                        itemIndex + 1
-                      }`
-                    )
-                  }
-                  className="border-0 [&_.ml-4]:hidden"
+                <Accordion
+                  open={open === `faq-${itemIndex + 1}`}
+                  className="border-b border-b-[#ddd]"
                 >
-                  <div className="pr-[2rem] py-[1rem] relative w-full 3xl:py-[1.7rem]">
-                    <p className="text-[1.3rem] font-normal md:text-[1.4rem] lg:font-medium lg:text-[1.5rem] xl:text-[1.3rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[2rem]">
-                      {item.question}
-                    </p>
+                  <AccordionHeader
+                    onClick={() => handleOpen(`faq-${itemIndex + 1}`)}
+                    className="border-0 [&_.ml-4]:hidden"
+                  >
+                    <div className="pr-[2rem] py-[1rem] relative w-full 3xl:py-[1.7rem]">
+                      <p className="text-[1.3rem] font-normal md:text-[1.4rem] lg:font-medium lg:text-[1.5rem] xl:text-[1.4rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[2rem]">
+                        {item.question}
+                      </p>
 
-                    <div className="absolute right-0 w-[10px] h-[10px] flex justify-center items-center top-[50%] translate-y-[-50%] 1xl:w-[12px] 1xl:h-[12px] 3xl:w-[17px] 3xl:h-[17px]">
-                      <span className="w-full h-[1px] inline-block bg-black"></span>
-                      <span
-                        className={`w-[1px] h-full inline-block bg-black absolute top-0 left-[4px] 1xl:left-[5.5px] 3xl:left-[8px] opacity-[${
-                          open === 
-                            "faq-" +
-                            (itemIndex + 1)
-                            ? "0"
-                            : "1"
-                        }]`}
-                      ></span>
+                      <div className="absolute right-0 w-[10px] h-[10px] flex justify-center items-center top-[50%] translate-y-[-50%] 1xl:w-[12px] 1xl:h-[12px] 3xl:w-[17px] 3xl:h-[17px]">
+                        <span className="w-full h-[1px] inline-block bg-black"></span>
+                        <span
+                          className={`w-[1px] h-full inline-block bg-black absolute top-0 left-[4px] 1xl:left-[5.5px] 3xl:left-[8px] opacity-[${
+                            open === "faq-" + (itemIndex + 1) ? "0" : "1"
+                          }]`}
+                        ></span>
+                      </div>
                     </div>
-                  </div>
-                </AccordionHeader>
-                <AccordionBody>
-                  <div
-                    className="pr-[2rem] faq-body text-[#161616] text-[1.2rem] [&_li]:my-[0.5rem] [&_ul]:mt-[2rem] md:text-[1.3rem] lg:text-[1.4rem] xl:text-[1.3rem] 1xl:text-[1.4rem] 3xl:text-[1.6rem] xl:pb-[2rem]"
-                    dangerouslySetInnerHTML={{ __html: item.answer }}
-                  ></div>
-                </AccordionBody>
-              </Accordion>
-            </div>
-          ))}
+                  </AccordionHeader>
+                  <AccordionBody>
+                    <div
+                      className="pr-[2rem] faq-body text-[#161616] text-[1.2rem] [&_li]:my-[0.5rem] [&_ul]:mt-[2rem] md:text-[1.3rem] lg:text-[1.4rem] xl:text-[1.3rem] 1xl:text-[1.4rem] 3xl:text-[1.6rem] xl:pb-[2rem]"
+                      dangerouslySetInnerHTML={{ __html: item.answer }}
+                    ></div>
+                  </AccordionBody>
+                </Accordion>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
