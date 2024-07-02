@@ -25,17 +25,17 @@ const testimonials = [
 
 const TestimonialCard = ({ data }) => {
   return (
-    <div className="bg-[#212121] px-[3rem] py-[3rem] rounded-[2rem] lg:py-[5rem] lg:px-[4rem]">
+    <div className="bg-[#212121] px-[3rem] py-[3rem] rounded-[2rem] lg:py-[5rem] lg:px-[4rem] 1xl:pl-[5rem] 1xl:pr-[6rem]">
       <img
         src="/images/why-us/testimonial-quote-icon.webp"
         alt="Quote Icon"
-        className="object-contain h-auto w-[2.5rem] inline-block lg:w-[3rem] 3xl:w-[5rem]"
+        className="object-contain h-auto w-[2.5rem] inline-block lg:w-[3rem] xl:w-[3.4rem] 1xl:w-[4rem] 3xl:w-[5rem]"
       />
-      <p className="text-[1.3rem] lg:text-[1.5rem] 3xl:text-[2.4rem] text-[#D3D3D3] my-[3rem]">
+      <p className="text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] 1xl:text-[1.7rem] 3xl:text-[2.4rem] text-[#D3D3D3] my-[3rem] font-normal">
         {data.text}
       </p>
       <div className="flex items-center">
-        <div className="w-[4rem] h-[4rem] rounded-full overflow-hidden lg:w-[5.5rem] lg:h-[5.5rem] 3xl:w-[9rem] 3xl:h-[9rem]">
+        <div className="w-[4rem] h-[4rem] rounded-full overflow-hidden lg:w-[5.5rem] lg:h-[5.5rem] 1xl:w-[7rem] 1xl:h-[7rem] 3xl:w-[9rem] 3xl:h-[9rem]">
           <img
             src={data.profilePic}
             alt={data.name}
@@ -43,7 +43,7 @@ const TestimonialCard = ({ data }) => {
           />
         </div>
         <p
-          className="flex-[1] pl-[1rem] lg:pl-[2rem] text-[1.3rem] lg:text-[1.5rem] 3xl:text-[2.4rem] font-light [&>b]:font-medium"
+          className="flex-[1] pl-[1rem] lg:pl-[2rem] text-[1.3rem] lg:text-[1.5rem] 1xl:text-[1.7rem] 3xl:text-[2.4rem] font-light [&>b]:font-medium"
           dangerouslySetInnerHTML={{ __html: data.name }}
         ></p>
       </div>
@@ -96,7 +96,7 @@ const TestimonialSection = () => {
     // autoplay: true,
     // autoplaySpeed: 3000,
     centerMode: true,
-    centerPadding: "30%",
+    centerPadding: "31%",
     responsive: [
       {
         breakpoint: 767,
@@ -126,26 +126,26 @@ const TestimonialSection = () => {
     <section className="bg-[#161616] py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem] text-white">
       <div className="max-1920">
         <div className="container">
-          <div className="text-center text-white">
+          <div className="text-center text-white xl:text-left">
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] tracking-[-0.1rem] mb-[2rem] xl:text-[3.7rem] 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] capitalize md:[&>br]:hidden">
               what clients say <br /> <b>about us</b>
             </h2>
             <p className="text-[1.5rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 2xl:text-[2.3rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden md:[&>br]:block text-[#B5B5B5]">
-              We accept that the clients’ need and intrigue consistently starts
-              things out <br /> and ought to be given the most effective
+              We accept that the clients’ need and intrigue <br /> consistently starts
+              things out  and ought to be given the <br /> most effective
               attention.
             </p>
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative xl:mt-[3rem]">
           {/* Slider */}
-          <div className="pl-[2rem] md:pl-[5rem] lg:pl-[7%] ">
+          <div className="pl-[2rem] md:pl-[5rem] lg:pl-[7%] xl:pl-[9%]">
             <Slider {...settings} className="testimonial-slider py-[5rem] lg:py-[8rem] 3xl:py-[8rem]">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="pr-[3rem] h-[inherit] "
+                  className="pr-[3rem] h-[inherit] xl:pr-[4rem] 1xl:pr-[4.5rem]"
                 >
                   <TestimonialCard data={testimonial} />
                 </div>

@@ -28,7 +28,7 @@ const BannerSection = () => {
               className="block w-full h-auto object-cover sm:hidden min-h-[650px]"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[25rem] 1xl:pt-[29rem] 2xl:pt-[33rem] 3xl:pt-[40rem] 3xl:pb-[6rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[25rem] 1xl:pt-[27rem] 2xl:pt-[33rem] 3xl:pt-[40rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               data-aos="fade-down"
@@ -68,7 +68,7 @@ const BannerSection = () => {
                 width="123"
                 height="123"
                 alt="Arrow Icon"
-                className="hidden xl:inline-block object-contain xl:w-[8.5rem] xl:mt-[4rem] 3xl:mt-[6rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
+                className="hidden xl:inline-block object-contain xl:w-[8.5rem] xl:mt-[7rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
               />
             </div>
           </div>

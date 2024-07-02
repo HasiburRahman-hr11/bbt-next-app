@@ -5,37 +5,37 @@ import "./top-dealer.css"
 const usps = [
   {
     icon: "/images/why-us/why-usp-1.webp",
-    title: `Extensive Inventory <b>of Premium Vehicles</b>`,
+    title: `Extensive Inventory <br> <b>of Premium Vehicles</b>`,
     description:
       "We offer a wide range of luxury cars from the most prestigious brands, ensuring you have access to the finest selection available.",
   },
   {
     icon: "/images/why-us/why-usp-2.webp",
-    title: `Competitive Pricing and  <b> Financing Options </b>`,
+    title: `Competitive Pricing and <br>  <b> Financing Options </b>`,
     description:
       "We offer attractive pricing and flexible financing solutions to make luxury car ownership accessible and convenient for our clients.",
   },
   {
     icon: "/images/why-us/why-usp-3.webp",
-    title: `Uncompromising <b> Quality Assurance  </b>`,
+    title: `Uncompromising <br> <b> Quality Assurance  </b>`,
     description:
       "Each vehicle undergoes rigorous inspections and maintenance to meet the highest standards of performance, safety, and aesthetics.",
   },
   {
     icon: "/images/why-us/why-usp-4.webp",
-    title: `Industry Expertise <b>and Experience</b>`,
+    title: `Industry Expertise <br> <b>and Experience</b>`,
     description:
       "With over 30 years in the industry, our extensive knowledge and expertise allow us to understand and cater to the unique needs of luxury car buyers.",
   },
   {
     icon: "/images/why-us/why-usp-5.webp",
-    title: `Exceptional  <b>Customer Service</b>`,
+    title: `Exceptional <br> <b>Customer Service</b>`,
     description:
       "Our dedicated team provides personalized support throughout your buying journey, ensuring a seamless and satisfying experience.",
   },
   {
     icon: "/images/why-us/why-usp-6.webp",
-    title: `Transparent and Trustworthy  <b> Transactions </b>`,
+    title: `Transparent and <br> Trustworthy  <b> Transactions </b>`,
     description:
       "Our transparent processes and commitment to integrity ensure that every transaction is straightforward and trustworthy, giving you peace of mind with your purchase.",
   },
@@ -58,26 +58,26 @@ const TopDealer = () => {
           </div>
           {/* USP WRAPPER */}
           <div className="mt-[2rem] relative">
-            <div className="hidden lg:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[37%]">
+            <div className="hidden lg:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[37%] xl:w-[45%]">
               <img src="/images/why-us/bbt-big-logo.webp" alt="BBT Logo" className="w-full h-auto object-contain" />
             </div>
             <ul className="flex flex-wrap justify-between top-dealer-usp-list">
               {usps.map((usp, index) => (
-                <li key={index} className="w-full mt-[4rem] sm:w-[47%]">
-                  <div className="flex flex-wrap lg:w-[65%]">
-                  <div className="w-[4rem] pt-[1rem] icon">
+                <li key={index} className="w-full mt-[4rem] sm:w-[47%] xl:mt-[7rem]">
+                  <div className="flex flex-wrap lg:w-[65%] xl:w-[55%]">
+                  <div className="w-[4rem] pt-[1rem] icon xl:w-[5rem]">
                     <img
                       src={usp.icon}
                       alt="USP Icon"
-                      className="w-full h-auto object-contain max-h-[3rem] 3xl:max-h-[5rem]"
+                      className="w-full h-auto object-contain max-h-[3rem] xl:max-h-[3.7rem] 3xl:max-h-[5rem]"
                     />
                   </div>
                   <div className="flex-[1] pl-[2rem] text-box">
                     <h6
                       dangerouslySetInnerHTML={{ __html: usp.title }}
-                      className="text-[1.7rem] 3xl:text-[2.4rem] font-light [&>b]:font-normal capitalize"
+                      className="text-[1.7rem] xl:text-[1.6rem] 1xl:text-[1.8rem] 3xl:text-[2.4rem] font-light [&>b]:font-normal capitalize [&>br]:hidden xl:[&>br]:block xl:leading-[1.2] xl:tacking-tight"
                     ></h6>
-                    <p className="text-[1.1rem] 3xl:text-[1.6rem] font-light mt-[1rem]">
+                    <p className="text-[1.1rem] 1xl:text-[1.2rem] 3xl:text-[1.6rem] font-light mt-[1rem] xl:tacking-tighter">
                       {usp.description}
                     </p>
                   </div>
