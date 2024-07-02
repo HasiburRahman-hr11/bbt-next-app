@@ -72,7 +72,7 @@ const SellYourCar = () => {
         <InfoWithTwoCard data={InfoWithTwoCardData} />
       </div>
       <Footer />
-      {/* <div
+      <div
         className={`z-100 fixed  left-0 w-full transition-all duration-500 ease-in-out ${
           showForm
             ? "bottom-[5rem] show-from-bottom opacity-[1] hidden xl:block"
@@ -80,7 +80,7 @@ const SellYourCar = () => {
         }`}
       >
         <FloatingForm />
-      </div> */}
+      </div>
     </main>
   );
 };

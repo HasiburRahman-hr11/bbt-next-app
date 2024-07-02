@@ -90,8 +90,9 @@ const BannerSection = () => {
                     </p>
                   </a>
                   <a
-                    href="#"
+                    href="https://api.whatsapp.com/send?phone=+919999999915"
                     className="w-[5rem] h-[5rem] bg-[#1BD741] flex items-center justify-center rounded-[0.7rem] shadow-[0_11px_60px_-10px_rgba(0,0,0,0.4)] sm:shadow-none xl:h-[4.5rem] xl:w-[4.5rem] xl:rounded-[1rem] 3xl:h-[6.5rem] 3xl:w-[6.5rem] 1xl:h-[5rem] 1xl:w-[5rem] 1xl:rounded-[1.5rem] hover:bg-[#31af4a] transition-all duration-500"
+                    target="_blank"
                   >
                     <img
                       src="/images/sell-your-car/banner-whatsapp-icon.webp"

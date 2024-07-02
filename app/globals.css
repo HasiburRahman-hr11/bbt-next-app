@@ -507,6 +507,16 @@ img {
   top: 0;
 }
 
+.slick-track{
+  display: flex !important;
+}
+.slick-slide{
+  height: inherit;
+}
+.slick-slide > div{
+  height: 100%;
+}
+
 /* Homepage */
 .scroll-animation {
   animation: scrollDown 2s ease infinite;
@@ -886,45 +896,6 @@ img {
 .bant-text:hover{
   -webkit-text-fill-color: #000;
   transition: all 0.5s ease;
-}
-
-/* Sell You Car */
-.sell-car-slider .slick-list{
-  padding: 0 20% 0 0 !important;
-}
-.sell-car-slider .slick-track{
-  display: flex !important;
-}
-.sell-car-slider .slick-slide{
-  height: inherit;
-}
-.sell-car-slider .slick-slide > div{
-  height: 100%;
-}
-.sell-car-slider .slick-arrow{
-  width: 3.7rem;
-  height: 3.7rem;
-  border-radius: 50%;
-  border: 1px solid #D2D2D2;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: unset;
-  bottom: -8.5rem;
-}
-.sell-car-slider .slick-arrow::before{
-  display: none;
-}
-.sell-car-slider .slick-arrow.slick-next{
-  right: 2rem;
-}
-.sell-car-slider .slick-arrow.slick-prev{
-  right: 6.5rem;
-  left: unset;
-}
-.sell-car-page .back-to-top{
-  bottom: 10rem;
 }
 
 @media only screen and (min-width: 640px) {

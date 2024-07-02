@@ -44,7 +44,7 @@ const InfoWithTwoCard = ({ data }) => {
     <section
       className={`bg-[${
         data?.bg ? data?.bg : "#F4F4F1"
-      }] py-[5rem] sm:py-[8rem] md:pb-[12rem] lg:pb-[15rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]`}
+      }] py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]`}
     >
       <div className="max-1920">
         <div className="container">
@@ -57,15 +57,16 @@ const InfoWithTwoCard = ({ data }) => {
                 className="font-light [&>b]:font-medium 3xl:text-[4.5rem] tracking-tighter capitalize my-[2rem] xl:leading-[1.1]"
                 dangerouslySetInnerHTML={{ __html: data.title }}
               ></h2>
-              <p className="font-[300] text-[1.2rem] leading-[1.5] mb-[3rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>b]:font-[500] 3xl:mb-[4rem]">
-                {data.description}
+              <p className="font-[300] text-[1.2rem] leading-[1.5] mb-[3rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0] [&>b]:font-[500] 3xl:mb-[4rem] [&>br]:hidden lg:[&>br]:block"
+              dangerouslySetInnerHTML={{__html:data.description}}
+              >
               </p>
               <img
                 src="/images/down-circle-arrow-white.webp"
                 width="123"
                 height="123"
                 alt="Arrow Icon"
-                className="hidden xl:inline-block object-contain  invert xl:w-[8.5rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
+                className="hidden lg:inline-block object-contain  invert lg:w-[7rem] xl:w-[8.5rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 3xl:w-[12.36rem]"
               />
             </div>
             <div className="w-[48%] md:w-[28.5%] order-3">
