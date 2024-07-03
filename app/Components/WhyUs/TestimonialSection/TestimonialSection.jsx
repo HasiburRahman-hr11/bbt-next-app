@@ -25,13 +25,13 @@ const testimonials = [
 
 const TestimonialCard = ({ data }) => {
   return (
-    <div className="bg-[#212121] px-[3rem] py-[3rem] rounded-[2rem] lg:py-[5rem] lg:px-[4rem] 1xl:pl-[5rem] 1xl:pr-[6rem]">
+    <div className="bg-[#212121] px-[3rem] py-[3rem] rounded-[2rem] lg:py-[5rem] lg:px-[4rem] 1xl:pl-[5rem] 1xl:pr-[6rem] 2xl:rounded-[2.5rem]">
       <img
         src="/images/why-us/testimonial-quote-icon.webp"
         alt="Quote Icon"
-        className="object-contain h-auto w-[2.5rem] inline-block lg:w-[3rem] xl:w-[3.4rem] 1xl:w-[4rem] 3xl:w-[5rem]"
+        className="object-contain h-auto w-[2.5rem] inline-block lg:w-[3rem] xl:w-[3.4rem] 1xl:w-[4rem] 2xl:w-[4.3rem] 3xl:w-[5rem]"
       />
-      <p className="text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] 1xl:text-[1.7rem] 3xl:text-[2.4rem] text-[#D3D3D3] my-[3rem] font-normal">
+      <p className="text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] 1xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.4rem] text-[#D3D3D3] my-[3rem] font-normal 2xl:tracking-wide">
         {data.text}
       </p>
       <div className="flex items-center">
@@ -43,7 +43,7 @@ const TestimonialCard = ({ data }) => {
           />
         </div>
         <p
-          className="flex-[1] pl-[1rem] lg:pl-[2rem] text-[1.3rem] lg:text-[1.5rem] 1xl:text-[1.7rem] 3xl:text-[2.4rem] font-light [&>b]:font-medium"
+          className="flex-[1] pl-[1rem] lg:pl-[2rem] text-[1.3rem] lg:text-[1.5rem] 1xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.4rem] font-light [&>b]:font-medium"
           dangerouslySetInnerHTML={{ __html: data.name }}
         ></p>
       </div>

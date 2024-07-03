@@ -89,25 +89,25 @@ const SellYourCar = () => {
           </div>
 
           <div className="flex flex-wrap justify-between mt-[4rem] md:max-w-[640px] md:mx-auto lg:max-w-none">
-            <div className="w-full lg:w-[65%] xl:w-[69%]">
+            <div className="w-full lg:w-[65%] xl:w-[69%] 2xl:w-[70%]">
               <ul>
                 {usps.map((usp, index) => (
                   <li
                     key={index}
                     className="flex flex-wrap items-center py-[3rem] border-t border-t-[#B2B2B2] pr-[1rem] sm:items-start 1xl:pr-[2rem]"
                   >
-                    <div className="w-[3.5rem] xl:w-[4.2rem] 1xl:w-[4.7rem] 3xl:w-[6.4rem]">
+                    <div className="w-[3.5rem] xl:w-[4.2rem] 1xl:w-[4.7rem] 2xl:w-[5rem] 3xl:w-[6.4rem]">
                       <img
                         src={usp.icon}
                         alt="Icon"
                         className="w-full h-auto object-contain"
                       />
                     </div>
-                    <div className="flex-[1] flex flex-wrap flex-col pl-[2rem] sm:flex-row sm:justify-between sm:pl-[4rem] xl:pl-[7.5rem]">
-                      <h5 className="text-[1.7rem] xl:text-[2rem] 1xl:text-[2.3rem] 3xl:text-[3rem] font-medium capitalize sm:w-[40%] lg:tracking-tight" dangerouslySetInnerHTML={{ __html: usp.title }}>
+                    <div className="flex-[1] flex flex-wrap flex-col pl-[2rem] sm:flex-row sm:justify-between sm:pl-[4rem] xl:pl-[7.5rem] 2xl:pl-[8.5rem]">
+                      <h5 className="text-[1.7rem] xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem] font-medium capitalize sm:w-[40%] lg:tracking-tight" dangerouslySetInnerHTML={{ __html: usp.title }}>
                       
                       </h5>
-                      <p className="text-[1.2rem] xl:text-[1.3rem] 1xl:text-[1.5rem] 3xl:text-[2rem] font-normal mt-[1rem] sm:w-[53%] sm:mt-0 xl:w-[54%]">
+                      <p className="text-[1.2rem] xl:text-[1.3rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[2rem] font-normal mt-[1rem] sm:w-[53%] sm:mt-0 xl:w-[54%] 2xl:w-[53%] 2xl:tracking-tight">
                         {usp.description}
                       </p>
                     </div>
@@ -117,12 +117,12 @@ const SellYourCar = () => {
             </div>
 
             <div className="w-full mt-[5rem] lg:w-[30%] lg:mt-0 xl:w-[25%] relative">
-              <div className="bg-[#F4F4F1] py-[4rem] px-[3rem] rounded-[2rem] w-full mx-auto max-w-[400px] xl:sticky xl:top-0 1xl:px-[3.5rem]">
-                <h3 className="text-[2rem] xl:text-[2.2rem] 1xl:text-[2.6rem] 3xl:text-[3.5rem] font-light [&>b]:font-medium 1xl:tracking-tight 1xl:leading-[1.5]">
+              <div className="bg-[#F4F4F1] py-[4rem] px-[3rem] rounded-[2rem] w-full mx-auto max-w-[400px] xl:sticky xl:top-0 1xl:px-[3.5rem] 2xl:px-[4rem]">
+                <h3 className="text-[2rem] xl:text-[2.2rem] 1xl:text-[2.6rem] 2xl:text-[2.8rem] 3xl:text-[3.5rem] font-light [&>b]:font-medium 1xl:tracking-tight 1xl:leading-[1.5]">
                   Planning To Sell ? <br /> <b>Sell Your Car In 29 Minutes</b>
                 </h3>
 
-                <p className="text-[1.2rem] xl:text-[1.25rem] 1xl:text-[1.4rem] 3xl:text-[1.8rem] mt-[3rem] mb-[3rem] xl:mt-[5rem] xl:tracking-tight">
+                <p className="text-[1.2rem] xl:text-[1.25rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] mt-[3rem] mb-[3rem] xl:mt-[5rem] xl:tracking-tight leading-[1.3]">
                   For further enquiry, <br />
                   you can call or whatsapp
                 </p>
