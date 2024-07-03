@@ -25,11 +25,11 @@ const testimonials = [
 
 const TestimonialCard = ({ data }) => {
   return (
-    <div className="bg-[#212121] px-[3rem] py-[3rem] rounded-[2rem] lg:py-[5rem] lg:px-[4rem] 1xl:pl-[5rem] 1xl:pr-[6rem] 2xl:rounded-[2.5rem]">
+    <div className="bg-[#212121] px-[3rem] py-[3rem] rounded-[2rem] lg:py-[5rem] lg:px-[4rem] 1xl:pl-[5rem] 1xl:pr-[6rem] 2xl:rounded-[2.5rem] 3xl:pl-[6rem] 3xl:py-[7rem]">
       <img
         src="/images/why-us/testimonial-quote-icon.webp"
         alt="Quote Icon"
-        className="object-contain h-auto w-[2.5rem] inline-block lg:w-[3rem] xl:w-[3.4rem] 1xl:w-[4rem] 2xl:w-[4.3rem] 3xl:w-[5rem]"
+        className="object-contain h-auto w-[2.5rem] inline-block lg:w-[3rem] xl:w-[3.4rem] 1xl:w-[4rem] 2xl:w-[4.3rem] 3xl:w-[5.3rem]"
       />
       <p className="text-[1.3rem] lg:text-[1.5rem] xl:text-[1.6rem] 1xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.4rem] text-[#D3D3D3] my-[3rem] font-normal 2xl:tracking-wide">
         {data.text}
@@ -141,11 +141,11 @@ const TestimonialSection = () => {
         <div className="relative xl:mt-[3rem]">
           {/* Slider */}
           <div className="pl-[2rem] md:pl-[5rem] lg:pl-[7%] xl:pl-[9%]">
-            <Slider {...settings} className="testimonial-slider py-[5rem] lg:py-[8rem] 3xl:py-[8rem]">
+            <Slider {...settings} className="testimonial-slider py-[5rem] lg:py-[8rem] 3xl:py-[10rem]">
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="pr-[3rem] h-[inherit] xl:pr-[4rem] 1xl:pr-[4.5rem]"
+                  className="pr-[3rem] h-[inherit] xl:pr-[4rem] 1xl:pr-[4.5rem] 3xl:pr-[6rem]"
                 >
                   <TestimonialCard data={testimonial} />
                 </div>

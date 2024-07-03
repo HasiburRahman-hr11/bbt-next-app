@@ -58,21 +58,21 @@ const TopDealer = () => {
           </div>
           {/* USP WRAPPER */}
           <div className="mt-[2rem] relative">
-            <div className="hidden lg:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[37%] xl:w-[45%] 2xl:top-[9rem] 2xl:translate-y-0">
+            <div className="hidden lg:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[37%] xl:w-[45%] 2xl:top-[9rem] 2xl:translate-y-0 3xl:top-[12rem]">
               <img src="/images/why-us/bbt-big-logo.webp" alt="BBT Logo" className="w-full h-auto object-contain" />
             </div>
             <ul className="flex flex-wrap justify-between top-dealer-usp-list">
               {usps.map((usp, index) => (
-                <li key={index} className="w-full mt-[4rem] sm:w-[47%] xl:mt-[7rem] 2xl:mt-[8rem]">
+                <li key={index} className="w-full mt-[4rem] sm:w-[47%] xl:mt-[7rem] 2xl:mt-[8rem] 3xl:mt-[10rem]">
                   <div className="flex flex-wrap lg:w-[65%] xl:w-[55%]">
-                  <div className="w-[4rem] pt-[1rem] icon xl:w-[5rem]">
+                  <div className="w-[4rem] pt-[1rem] icon xl:w-[5rem] 3xl:w-[6.2rem]">
                     <img
                       src={usp.icon}
                       alt="USP Icon"
                       className="w-full h-auto object-contain max-h-[3rem] xl:max-h-[3.7rem] 3xl:max-h-[5rem]"
                     />
                   </div>
-                  <div className="flex-[1] pl-[2rem] text-box">
+                  <div className="flex-[1] pl-[2rem] text-box 3xl:pl-[3rem]">
                     <h6
                       dangerouslySetInnerHTML={{ __html: usp.title }}
                       className="text-[1.7rem] xl:text-[1.6rem] 1xl:text-[1.8rem] 2xl:text-[1.9rem] 3xl:text-[2.4rem] font-light [&>b]:font-normal capitalize [&>br]:hidden xl:[&>br]:block xl:leading-[1.2] xl:tacking-tight"

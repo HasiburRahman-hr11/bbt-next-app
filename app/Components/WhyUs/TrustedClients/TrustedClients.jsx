@@ -17,84 +17,89 @@ const TrustedClients = () => {
             </p>
           </div>
 
-          {/* <div className="flex flex-wrap justify-between mt-[5rem]">
+          <div className="flex flex-wrap justify-between mt-[5rem] max-w-[768px] mx-auto lg:mt-[7rem] xl:max-w-none xl:mt-[9rem] 2xl:mt-[11rem] 3xl:mt-[12rem]">
           
-            <div className="w-[47%] order-4 translate-y-[-4.5rem]">
-              <div className="rounded-[1.5rem] overflow-hidden">
+            <div className="w-[47%] order-4 translate-y-[-4.5rem] sm:translate-y-[-7.5rem] md:translate-y-[-8.5rem] xl:translate-y-0 xl:order-1 xl:w-[22%] 1xl:w-[22.3%] xl:pt-[6rem] 2xl:pt-[7rem] 3xl:pt-[8rem]">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
                 <img
                   src="/images/why-us/trust-img-1.webp"
                   alt="Client Image"
-                  className="w-100 h-auto object-cover"
+                  className="w-full h-auto object-cover"
                   width="352"
                   height="550"
                 />
               </div>
-              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
-                <p className=" [&>b]:block font-extralight [&>b]:font-medium text-white text-[1.4rem] text-center 3xl:text-[2.4rem]">
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] xl:rounded-[1.5rem] 3xl:rounded-[2.5rem] mt-[1.5rem] flex justify-center items-center xl:py-[1.7rem] 3xl:py-[2rem]">
+                <p className=" [&>b]:block font-extralight [&>b]:font-medium text-white text-[1.4rem] text-center xl:text-[1.6rem] 1xl:text-[1.8rem] 3xl:text-[2.4rem]">
                   320 Celebrities <b>Partnerships</b>
                 </p>
               </div>
             </div>
          
-            <div className="w-[47%] order-1">
-              <div className="rounded-[1.5rem] overflow-hidden">
+            <div className="w-[47%] order-1 xl:order-2 xl:w-[22%] 1xl:w-[22.3%]">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
                 <img
                   src="/images/why-us/trust-img-2.webp"
                   alt="Client Image"
-                  className="w-100 h-auto object-cover"
+                  className="w-full h-auto object-cover"
                   width="352"
                   height="420"
                 />
               </div>
-              <div className="rounded-[1.5rem] overflow-hidden mt-[2rem]">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden mt-[2rem] xl:mt-[3.5rem] 3xl:mt-[5rem]">
                 <img
                   src="/images/why-us/trust-img-3.webp"
                   alt="Client Image"
-                  className="w-100 h-auto object-cover"
+                  className="w-full h-auto object-cover"
                   width="352"
                   height="300"
                 />
               </div>
             </div>
            
-            <div className="w-[47%] order-2">
-              <div className="rounded-[1.5rem] overflow-hidden">
+            <div className="w-[47%] order-2 xl:order-3 xl:w-[22%] 1xl:w-[22.3%]">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
                 <img
                   src="/images/why-us/trust-img-4.webp"
                   alt="Client Image"
-                  className="w-100 h-auto object-cover"
+                  className="w-full h-auto object-cover"
                   width="352"
                   height="300"
                 />
               </div>
-              <div className="rounded-[1.5rem] overflow-hidden mt-[2rem]">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden mt-[2rem] xl:mt-[3.5rem] 3xl:mt-[5rem]">
                 <img
                   src="/images/why-us/trust-img-5.webp"
                   alt="Client Image"
-                  className="w-100 h-auto object-cover"
+                  className="w-full h-auto object-cover"
                   width="352"
                   height="283"
                 />
               </div>
-            </div>
-           
-            <div className="w-[47%] order-3 pt-[2rem]">
-              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mb-[1.5rem] flex justify-center items-center">
-                <p className="font-extralight [&>b]:block [&>b]:font-medium text-white text-[1.4rem] text-center 3xl:text-[2.4rem]">
-                  2 Lakh+ <b>Clients</b>
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] xl:rounded-[1.5rem] 3xl:rounded-[2.5rem] mt-[1.5rem] justify-center items-center hidden xl:flex xl:py-[1.7rem] 3xl:py-[2rem]">
+                <p className="font-extralight [&>b]:block [&>b]:font-medium text-white text-[1.4rem] text-center xl:text-[1.6rem] 1xl:text-[1.8rem] 3xl:text-[2.4rem]">
+                  5000+ <b>Supercars Sold</b>
                 </p>
               </div>
-              <div className="rounded-[1.5rem] overflow-hidden">
+            </div>
+           
+            <div className="w-[47%] order-3 pt-[2rem] flex flex-col-reverse xl:block xl:order-4 xl:w-[22%] 1xl:w-[22.3%] xl:pt-0">
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] xl:rounded-[1.5rem] 3xl:rounded-[2.5rem] mt-[1.5rem] flex justify-center items-center xl:mt-0 xl:mb-[1.5rem] xl:py-[2.5rem] 3xl:py-[4rem]">
+                <p className="font-extralight [&>b]:block xl:[&>b]:inline [&>b]:font-medium text-white text-[1.4rem] text-center xl:text-[1.6rem] 1xl:text-[1.8rem] 3xl:text-[2.4rem]">
+                  2 Lakh+ <b> Clients</b>
+                </p>
+              </div>
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
                 <img
                   src="/images/why-us/trust-img-6.webp"
                   alt="Client Image"
-                  className="w-100 h-auto object-cover"
+                  className="w-full h-auto object-cover"
                   width="352"
                   height="500"
                 />
               </div>
             </div>
-          </div> */}
+          </div>
 
         </div>
       </div>

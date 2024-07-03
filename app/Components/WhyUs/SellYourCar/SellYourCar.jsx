@@ -88,13 +88,13 @@ const SellYourCar = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-between mt-[4rem] md:max-w-[640px] md:mx-auto lg:max-w-none">
+          <div className="flex flex-wrap justify-between mt-[4rem] md:max-w-[640px] md:mx-auto lg:max-w-none 3xl:mt-[8rem]">
             <div className="w-full lg:w-[65%] xl:w-[69%] 2xl:w-[70%]">
               <ul>
                 {usps.map((usp, index) => (
                   <li
                     key={index}
-                    className="flex flex-wrap items-center py-[3rem] border-t border-t-[#B2B2B2] pr-[1rem] sm:items-start 1xl:pr-[2rem]"
+                    className="flex flex-wrap items-center py-[3rem] border-t border-t-[#B2B2B2] pr-[1rem] sm:items-start 1xl:pr-[2rem] 3xl:pr-[4rem]"
                   >
                     <div className="w-[3.5rem] xl:w-[4.2rem] 1xl:w-[4.7rem] 2xl:w-[5rem] 3xl:w-[6.4rem]">
                       <img
@@ -122,7 +122,7 @@ const SellYourCar = () => {
                   Planning To Sell ? <br /> <b>Sell Your Car In 29 Minutes</b>
                 </h3>
 
-                <p className="text-[1.2rem] xl:text-[1.25rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] mt-[3rem] mb-[3rem] xl:mt-[5rem] xl:tracking-tight leading-[1.3]">
+                <p className="text-[1.2rem] xl:text-[1.25rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] mt-[3rem] mb-[3rem] xl:mt-[5rem] xl:tracking-tight leading-[1.3] 3xl:mt-[7rem] 3xl:mb-[4rem]">
                   For further enquiry, <br />
                   you can call or whatsapp
                 </p>
@@ -131,9 +131,9 @@ const SellYourCar = () => {
                   href="https://api.whatsapp.com/send?phone=+919999999915"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center flex-wrap mb-[2.5rem] xl:mb-[2rem] 1xl:mb-[1.8rem]"
+                  className="flex items-center flex-wrap mb-[2.5rem] xl:mb-[2rem] 1xl:mb-[1.8rem] 3xl:mb-[2.5rem]"
                 >
-                  <div className="w-[4rem] h-[4rem] border border-[#111111] rounded-[0.7rem] p-[1rem] flex justify-center items-center xl:w-[3.3rem] xl:h-[3.3rem] xl:p-[0.7rem] 3xl:w-[4.4rem] 3xl:h-[4.4rem]">
+                  <div className="w-[4rem] h-[4rem] border border-[#111111] rounded-[0.7rem] p-[1rem] flex justify-center items-center xl:w-[3.3rem] xl:h-[3.3rem] xl:p-[0.7rem] 3xl:w-[4.4rem] 3xl:h-[4.4rem] 3xl:p-[1rem]">
                     <img
                       src="/images/why-us/best-car-whatsapp.webp"
                       alt=""
@@ -151,7 +151,7 @@ const SellYourCar = () => {
                   rel="noopener noreferrer"
                   className="flex items-center flex-wrap"
                 >
-                  <div className="w-[4rem] h-[4rem] border border-[#111111] rounded-[0.7rem] p-[1rem] flex justify-center items-center xl:w-[3.3rem] xl:h-[3.3rem] xl:p-[0.7rem] 3xl:w-[4.4rem] 3xl:h-[4.4rem]">
+                  <div className="w-[4rem] h-[4rem] border border-[#111111] rounded-[0.7rem] p-[1rem] flex justify-center items-center xl:w-[3.3rem] xl:h-[3.3rem] xl:p-[0.7rem] 3xl:w-[4.4rem] 3xl:h-[4.4rem] 3xl:p-[1rem]">
                     <img
                       src="/images/why-us/best-car-call.webp"
                       alt=""
