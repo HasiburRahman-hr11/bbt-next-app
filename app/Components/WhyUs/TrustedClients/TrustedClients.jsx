@@ -20,11 +20,11 @@ const TrustedClients = () => {
           <div className="flex flex-wrap justify-between mt-[5rem] max-w-[768px] mx-auto lg:mt-[7rem] xl:max-w-none xl:mt-[9rem] 2xl:mt-[11rem] 3xl:mt-[12rem]">
           
             <div className="w-[47%] order-4 translate-y-[-4.5rem] sm:translate-y-[-7.5rem] md:translate-y-[-8.5rem] xl:translate-y-0 xl:order-1 xl:w-[22%] 1xl:w-[22.3%] xl:pt-[6rem] 2xl:pt-[7rem] 3xl:pt-[8rem]">
-              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden group">
                 <img
                   src="/images/why-us/trust-img-1.webp"
                   alt="Client Image"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer"
                   width="352"
                   height="550"
                 />
@@ -37,20 +37,20 @@ const TrustedClients = () => {
             </div>
          
             <div className="w-[47%] order-1 xl:order-2 xl:w-[22%] 1xl:w-[22.3%]">
-              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden group">
                 <img
                   src="/images/why-us/trust-img-2.webp"
                   alt="Client Image"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer"
                   width="352"
                   height="420"
                 />
               </div>
-              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden mt-[2rem] xl:mt-[3.5rem] 3xl:mt-[5rem]">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden mt-[2rem] xl:mt-[3.5rem] 3xl:mt-[5rem] group">
                 <img
                   src="/images/why-us/trust-img-3.webp"
                   alt="Client Image"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer"
                   width="352"
                   height="300"
                 />
@@ -58,20 +58,20 @@ const TrustedClients = () => {
             </div>
            
             <div className="w-[47%] order-2 xl:order-3 xl:w-[22%] 1xl:w-[22.3%]">
-              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden group">
                 <img
                   src="/images/why-us/trust-img-4.webp"
                   alt="Client Image"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer"
                   width="352"
                   height="300"
                 />
               </div>
-              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden mt-[2rem] xl:mt-[3.5rem] 3xl:mt-[5rem]">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] overflow-hidden mt-[2rem] xl:mt-[3.5rem] 3xl:mt-[5rem] group">
                 <img
                   src="/images/why-us/trust-img-5.webp"
                   alt="Client Image"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer"
                   width="352"
                   height="283"
                 />
@@ -89,11 +89,11 @@ const TrustedClients = () => {
                   2 Lakh+ <b> Clients</b>
                 </p>
               </div>
-              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden">
+              <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden group">
                 <img
                   src="/images/why-us/trust-img-6.webp"
                   alt="Client Image"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 cursor-pointer"
                   width="352"
                   height="500"
                 />

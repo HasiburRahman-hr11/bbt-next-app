@@ -93,17 +93,18 @@ const TestimonialSection = () => {
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     centerMode: true,
     centerPadding: "31%",
+    pauseOnHover: false,
+    pauseOnFocus: false,
     responsive: [
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // centerMode: true,
           centerPadding: "15%",
         },
       },
@@ -112,7 +113,6 @@ const TestimonialSection = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // centerMode: true,
           centerPadding: "10%",
         },
       },

@@ -96,6 +96,8 @@ const HowToSell = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     responsive: [
       {
         breakpoint: 1023,
