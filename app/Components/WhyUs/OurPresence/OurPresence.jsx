@@ -96,7 +96,7 @@ const OurPresence = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     nextArrow: <NextArrow />,
@@ -104,7 +104,7 @@ const OurPresence = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
-    centerPadding: "20%",
+    centerPadding: "7%",
     pauseOnHover: false,
     pauseOnFocus: false,
     responsive: [
@@ -234,7 +234,7 @@ const OurPresence = () => {
                     />
                     <div className="absolute w-full h-full left-0 top-0 flex items-end overflow-hidden transition-all duration-500 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.01] p-[2.5rem]">
                       <div className="flex items-center">
-                        <div className="w-[4.6rem] h-[4.6rem] rounded-full bg-[#F4F4F1] flex justify-center items-center p-[0.5rem]">
+                        <div className="w-[4.6rem] h-[4.6rem] rounded-full bg-[#F4F4F1] flex justify-center items-center p-[0.5rem] md:w-[6rem] md:h-[6rem] md:p-[1rem]">
                           <img
                             src={showroom.icon}
                             alt="Icon"
@@ -242,8 +242,8 @@ const OurPresence = () => {
                           />
                         </div>
                         <div className="flex-[1] pl-[1rem] text-white">
-                          <h6 className="text-[1.4rem]">{showroom.title}</h6>
-                          <p className="text-[0.9rem]">{showroom.address}</p>
+                          <h6 className="text-[1.4rem] md:text-[1.6rem]">{showroom.title}</h6>
+                          <p className="text-[0.9rem] md:text-[1.1rem]">{showroom.address}</p>
                         </div>
                       </div>
                     </div>

@@ -179,8 +179,10 @@ const SellYourCar = () => {
             </div>
           </div>
         </div>
+
+        {/* For Mobile */}
         <div className="bg-black lg:hidden text-white py-[6rem]">
-          <div className="container">
+          <div className="px-[15px] max-w-[400px] mx-auto">
             <h3 className="text-[2.9rem] font-light [&>b]:font-medium tracking-tighter">
               Planning To Sell ? <br /> <b>Sell Your Car In 29 Minutes</b>
             </h3>

@@ -102,9 +102,9 @@ const TrustedClients = () => {
           </div>
 
           {/* For Mobile */}
-          <div className="xl:hidden mt-[5rem]">
-            <div className="grid grid-cols-2 gap-[1.5rem] ">
-              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+          <div className="xl:hidden mt-[5rem] md:max-w-[650px] md:mx-auto">
+            <div className="grid grid-cols-2 gap-[1.5rem] sm:grid-cols-3">
+              <div className="h-[23rem] sm:h-[30rem] overflow-auto rounded-[1rem]">
                 <img
                   src="/images/why-us/trust-img-1.webp"
                   alt="Client Image"
@@ -113,7 +113,7 @@ const TrustedClients = () => {
                   height="550"
                 />
               </div>
-              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+              <div className="h-[23rem] sm:h-[30rem] overflow-auto rounded-[1rem]">
                 <img
                   src="/images/why-us/trust-img-2.webp"
                   alt="Client Image"
@@ -122,7 +122,7 @@ const TrustedClients = () => {
                   height="550"
                 />
               </div>
-              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+              <div className="h-[23rem] sm:h-[30rem] overflow-auto rounded-[1rem]">
                 <img
                   src="/images/why-us/trust-img-3.webp"
                   alt="Client Image"
@@ -131,7 +131,7 @@ const TrustedClients = () => {
                   height="550"
                 />
               </div>
-              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+              <div className="h-[23rem] sm:h-[30rem] overflow-auto rounded-[1rem]">
                 <img
                   src="/images/why-us/trust-img-4.webp"
                   alt="Client Image"
@@ -140,7 +140,7 @@ const TrustedClients = () => {
                   height="550"
                 />
               </div>
-              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+              <div className="h-[23rem] sm:h-[30rem] overflow-auto rounded-[1rem]">
                 <img
                   src="/images/why-us/trust-img-5.webp"
                   alt="Client Image"
@@ -149,7 +149,7 @@ const TrustedClients = () => {
                   height="550"
                 />
               </div>
-              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+              <div className="h-[23rem] sm:h-[30rem] overflow-auto rounded-[1rem]">
                 <img
                   src="/images/why-us/trust-img-6.webp"
                   alt="Client Image"
@@ -159,19 +159,19 @@ const TrustedClients = () => {
                 />
               </div>
             </div>
-            <div>
-              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
-                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] text-center">
+            <div className="sm:grid sm:grid-cols-3 sm:gap-[1.5rem]">
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] sm:px-[1rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
+                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] sm:text-[1.5rem] text-center">
                   5000+ <b>Supercars Sold </b>
                 </p>
               </div>
-              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
-                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] text-center">
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] sm:px-[1rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
+                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] sm:text-[1.5rem] text-center">
                   320 Celebrities <b>Partnerships</b>
                 </p>
               </div>
-              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
-                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] text-center">
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] sm:px-[1rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
+                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] sm:text-[1.5rem] text-center">
                   2 Lakh+ <b>Clients</b>
                 </p>
               </div>
