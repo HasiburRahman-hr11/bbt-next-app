@@ -21,7 +21,7 @@ const BannerSection = () => {
               className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
             />
             <img
-              src="/images/why-us/why-us-banner-desktop.webp"
+              src="/images/why-us/why-us-banner-mob.webp"
               alt="Banner Image"
               width="391"
               height="686"
@@ -35,7 +35,7 @@ const BannerSection = () => {
               data-aos-easing="linear"
               data-aos-duration="500"
             >
-              <p className="text-center sm:block [&_img]:invert text-white sm:text-left font-light">
+              <p className="text-center hidden sm:block [&_img]:invert text-white sm:text-left font-light">
                 <Link
                   href="/"
                   className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]"
@@ -70,6 +70,20 @@ const BannerSection = () => {
                 alt="Arrow Icon"
                 className="hidden xl:inline-block object-contain xl:w-[8.5rem] xl:mt-[7rem] 1xl:w-[9rem] 2xl:w-[9.5rem] 2xl:mt-[9rem] 3xl:w-[12.36rem] 3xl:mt-[12rem]"
               />
+            </div>
+            <div
+              className={`xl:hidden text-center flex flex-col justify-center items-center scroll-animation`}
+            >
+              <img
+                src="/images/banner-scroll-icon-white.webp"
+                alt="Scroll Down"
+                width="19"
+                height="29"
+                className="inline-block object-contain w-8 xl:w-[1.5rem] 1xl:w-6 3xl:w-[1.9rem]"
+              />
+              <span className="uppercase mt-5 text-base xl:text-[0.8rem] 3xl:text-[0.9rem]">
+                Scroll Down
+              </span>
             </div>
           </div>
         </div>

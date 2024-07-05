@@ -1,5 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "./OurPresence.css";
 
 const showrooms = [
   {
@@ -7,21 +11,21 @@ const showrooms = [
     address:
       "Plot No. 134, Sector 37, Pace City 1, Gurgaon Haryana, 122001, India",
     icon: "/images/why-us/showroom-icon-1.webp",
-    thumbnail: "/images/why-us/showroom-4.webp",
+    thumbnail: "/images/why-us/showroom-1.webp",
   },
   {
     title: "Mumbai",
     address:
       "7, Hubtown Sunmist, Opposite Hubtown Solaris, Telli Galli, Andheri East, N S Phadke Marg, Mumbai - 400053",
     icon: "/images/why-us/showroom-icon-2.webp",
-    thumbnail: "/images/why-us/showroom-4.webp",
+    thumbnail: "/images/why-us/showroom-2.webp",
   },
   {
     title: "Hydrebad",
     address:
       "Road no 2, Banjara Hills, Shangrila Plaza, Opp.KBR Park, Hyderabad, Telangana - 500034",
     icon: "/images/why-us/showroom-icon-3.webp",
-    thumbnail: "/images/why-us/showroom-4.webp",
+    thumbnail: "/images/why-us/showroom-3.webp",
   },
   {
     title: "Ahmedabad Studio",
@@ -35,26 +39,95 @@ const showrooms = [
     address:
       "140, Residency Rd, Shanthala Nagar, Richmond Town, Bengaluru, Karnataka 560025",
     icon: "/images/why-us/showroom-icon-5.webp",
-    thumbnail: "/images/why-us/showroom-4.webp",
+    thumbnail: "/images/why-us/showroom-5.webp",
   },
   {
     title: "Big Boy Toyz | Ludhiana",
     address:
       "1st Floor, Lake Street, Ferozepur - Ludhiana Rd, Dakha, Punjab 141102",
     icon: "/images/why-us/showroom-icon-6.webp",
-    thumbnail: "/images/why-us/showroom-4.webp",
+    thumbnail: "/images/why-us/showroom-6.webp",
   },
 ];
+
+function NextArrow(props) {
+  const { onClick, className } = props;
+  return (
+    <div className={`cursor-pointer ${className}`} onClick={onClick}>
+      <img
+        src="/images/why-us/presence-next.webp"
+        alt="Next Slide"
+        width="5"
+        height="9"
+        className="w-[6.3px] object-contain h-auto"
+      />
+    </div>
+  );
+}
+
+function PrevArrow(props) {
+  const { onClick, className } = props;
+  return (
+    <div className={`cursor-pointer ${className}`} onClick={onClick}>
+      <img
+        src="/images/why-us/presence-prev.webp"
+        alt="Previous Slide"
+        width="5"
+        height="9"
+        className="w-[6.3px] object-contain h-auto"
+      />
+    </div>
+  );
+}
 
 const OurPresence = () => {
   const [expandedColumn, setExpandedColumn] = useState(0);
   const [showText, setShowText] = useState(0);
+  const [progressWidth, setProgressWidth] = useState(16.66);
 
   const handleColumnClick = (index) => {
     setExpandedColumn(index);
     setTimeout(() => {
       setShowText(index);
     }, 400);
+  };
+
+  let settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: "20%",
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "15%",
+        },
+      },
+      {
+        breakpoint: 639,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "7%",
+        },
+      },
+    ],
+    afterChange: (index) => {
+      setProgressWidth((100 / 6) * (index + 1));
+    },
   };
   return (
     <section className="bg-[#F4F4F1] py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
@@ -81,7 +154,7 @@ const OurPresence = () => {
             </div>
           </div>
 
-          <div className="flex w-full flex-wrap justify-between mt-[5rem] lg:mt-[7rem] lg:w-[101%] lg:mx-auto">
+          <div className="hidden lg:flex w-full flex-wrap justify-between mt-[5rem] lg:mt-[7rem] lg:w-[101%] lg:mx-auto">
             {showrooms.map((showroom, index) => (
               <div
                 key={index}
@@ -127,7 +200,9 @@ const OurPresence = () => {
                         className={`lg:flex-[1] pl-[1rem] text-white transition-all duration-500 1xl:pl-[2rem] ${
                           showText === index ? "lg:opacity-100 block " : ""
                         } ${
-                          expandedColumn !== index ? "lg:opacity-0 hidden lg:absolute lg:left-[6rem]" : ""
+                          expandedColumn !== index
+                            ? "lg:opacity-0 hidden lg:absolute lg:left-[6rem]"
+                            : ""
                         }`}
                       >
                         <h6 className="lg:text-[1.6rem] xl:text-[1.8rem] 1xl:text-[2rem] 3xl:text-[3rem]">
@@ -142,6 +217,63 @@ const OurPresence = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="relative lg:hidden">
+          {/* Slider */}
+          <div className="pl-[2rem] md:pl-[5rem]">
+            <Slider {...settings} className="presence-slider py-[5rem]">
+              {showrooms.map((showroom, index) => (
+                <div key={index} className="pr-[2rem] h-[inherit]">
+                  <div className="relative overflow-hidden h-full w-full rounded-[2.5rem]">
+                    <img
+                      src={showroom.thumbnail}
+                      alt={showroom.title}
+                      className="w-full h-full object-cover block min-h-[36rem]"
+                    />
+                    <div className="absolute w-full h-full left-0 top-0 flex items-end overflow-hidden transition-all duration-500 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.01] p-[2.5rem]">
+                      <div className="flex items-center">
+                        <div className="w-[4.6rem] h-[4.6rem] rounded-full bg-[#F4F4F1] flex justify-center items-center p-[0.5rem]">
+                          <img
+                            src={showroom.icon}
+                            alt="Icon"
+                            className="w-full h-full object-contain"
+                          />
+                        </div>
+                        <div className="flex-[1] pl-[1rem] text-white">
+                          <h6 className="text-[1.4rem]">{showroom.title}</h6>
+                          <p className="text-[0.9rem]">{showroom.address}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          {/* Slider Controller */}
+          <div className="container">
+            <div className="flex justify-between items-center">
+              <div
+                className="progress flex-[1]"
+                style={{
+                  backgroundColor: "#DFDFDF",
+                  height: "2px",
+                }}
+              >
+                <div
+                  style={{
+                    width: `${progressWidth}%`,
+                    backgroundColor: "#4C4C4C",
+                    height: "100%",
+                  }}
+                  className="progressFill"
+                ></div>
+              </div>
+              <div className="w-[9rem] 3xl:w-[12rem]"></div>
+            </div>
           </div>
         </div>
       </div>

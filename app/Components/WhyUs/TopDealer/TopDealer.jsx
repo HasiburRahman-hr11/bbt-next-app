@@ -55,6 +55,9 @@ const TopDealer = () => {
               extensive selection of <br /> premium vehicles have made us the
               top luxury car dealers in India.
             </p>
+            <div className="lg:hidden mt-[4rem] max-w-[280px] mx-auto">
+              <img src="/images/why-us/bbt-big-logo-mob.webp" alt="" className="w-full object-contain h-auto" />
+            </div>
           </div>
           {/* USP WRAPPER */}
           <div className="mt-[2rem] relative">
@@ -63,21 +66,21 @@ const TopDealer = () => {
             </div>
             <ul className="flex flex-wrap justify-between top-dealer-usp-list">
               {usps.map((usp, index) => (
-                <li key={index} className="w-full mt-[4rem] sm:w-[47%] xl:mt-[7rem] 2xl:mt-[8rem] 3xl:mt-[10rem]">
+                <li key={index} className="w-full py-[2rem] border-b border-b-[#D9D9D9] lg:border-none lg:mt-[4rem] sm:w-[47%] xl:mt-[7rem] 2xl:mt-[8rem] 3xl:mt-[10rem]">
                   <div className="flex flex-wrap lg:w-[65%] xl:w-[55%]">
-                  <div className="w-[4rem] pt-[1rem] icon xl:w-[5rem] 3xl:w-[6.2rem]">
+                  <div className="w-[8rem] h-[8rem] bg-white rounded-[0.7rem] flex justify-center items-center p-[1.6rem] lg:bg-transparent lg:w-[4rem] lg:p-0 lg:pt-[1rem] icon xl:w-[5rem] 3xl:w-[6.2rem]">
                     <img
                       src={usp.icon}
                       alt="USP Icon"
-                      className="w-full h-auto object-contain max-h-[3rem] xl:max-h-[3.7rem] 3xl:max-h-[5rem]"
+                      className="w-full h-auto object-contain max-h-[4rem] lg:max-h-[3rem] xl:max-h-[3.7rem] 3xl:max-h-[5rem]"
                     />
                   </div>
                   <div className="flex-[1] pl-[2rem] text-box 3xl:pl-[3rem]">
                     <h6
                       dangerouslySetInnerHTML={{ __html: usp.title }}
-                      className="text-[1.7rem] xl:text-[1.6rem] 1xl:text-[1.8rem] 2xl:text-[1.9rem] 3xl:text-[2.4rem] font-light [&>b]:font-normal capitalize [&>br]:hidden xl:[&>br]:block xl:leading-[1.2] xl:tacking-tight"
+                      className="text-[1.4rem] font-medium [&>b]:font-medium lg:text-[1.6rem] 1xl:text-[1.8rem] 2xl:text-[1.9rem] 3xl:text-[2.4rem] lg:font-light lg:[&>b]:font-normal capitalize [&>br]:hidden xl:[&>br]:block xl:leading-[1.2] xl:tacking-tight"
                     ></h6>
-                    <p className="text-[1.1rem] 1xl:text-[1.2rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem] font-light mt-[1rem] xl:tacking-tighter">
+                    <p className="text-[1.2rem] lg:text-[1.1rem] 1xl:text-[1.2rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem] font-light mt-[1rem] xl:tacking-tighter">
                       {usp.description}
                     </p>
                   </div>
@@ -89,7 +92,7 @@ const TopDealer = () => {
           <div className="flex justify-center items-center mt-[6rem] lg:mt-[1rem]">
             <Link
               href="/contact-us"
-              className="bg-black flex justify-center items-center text-white h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none  mx-auto cursor-pointer px-[4rem] w-max xl:text-[1.2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.4rem] 3xl:px-[5rem] capitalize hover:bg-[#333333] transition-all duration-500"
+              className="bg-black flex justify-center items-center text-white h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none  mx-auto cursor-pointer px-[4rem] w-full max-w-[344px] lg:w-max xl:text-[1.2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.4rem] 3xl:px-[5rem] capitalize hover:bg-[#333333] transition-all duration-500"
             >
               Reach Out To Us
             </Link>

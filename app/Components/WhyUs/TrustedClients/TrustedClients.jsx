@@ -9,7 +9,7 @@ const TrustedClients = () => {
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] tracking-[-0.1rem] mb-[2rem] xl:text-[3.7rem] 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] capitalize md:[&>br]:hidden">
               We have been <br /> trusted <b>by many</b>
             </h2>
-            <p className="text-[1.5rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 2xl:text-[2.3rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden md:[&>br]:block text-[#B5B5B5]">
+            <p className="hidden xl:block text-[1.5rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 2xl:text-[2.3rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden md:[&>br]:block text-[#B5B5B5]">
               BBT's showroom has become a hot destination for Bollywood stars
               and well known <br /> celebrities. Stars of the likes of Neha
               Dhupia and Yuvraj Singh have come down to catch a <br /> glimpse
@@ -17,9 +17,9 @@ const TrustedClients = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-between mt-[5rem] max-w-[768px] mx-auto lg:mt-[7rem] xl:max-w-none xl:mt-[9rem] 2xl:mt-[11rem] 3xl:mt-[12rem]">
-          
-            <div className="w-[47%] order-4 translate-y-[-4.5rem] sm:translate-y-[-7.5rem] md:translate-y-[-8.5rem] xl:translate-y-0 xl:order-1 xl:w-[22%] 1xl:w-[22.3%] xl:pt-[6rem] 2xl:pt-[7rem] 3xl:pt-[8rem]">
+          {/* For Desktop */}
+          <div className="flex-wrap justify-between hidden xl:flex xl:mt-[9rem] 2xl:mt-[11rem] 3xl:mt-[12rem]">
+            <div className="xl:w-[22%] 1xl:w-[22.3%] xl:pt-[6rem] 2xl:pt-[7rem] 3xl:pt-[8rem]">
               <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden group">
                 <img
                   src="/images/why-us/trust-img-1.webp"
@@ -35,8 +35,8 @@ const TrustedClients = () => {
                 </p>
               </div>
             </div>
-         
-            <div className="w-[47%] order-1 xl:order-2 xl:w-[22%] 1xl:w-[22.3%]">
+
+            <div className=" xl:w-[22%] 1xl:w-[22.3%]">
               <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden group">
                 <img
                   src="/images/why-us/trust-img-2.webp"
@@ -56,8 +56,8 @@ const TrustedClients = () => {
                 />
               </div>
             </div>
-           
-            <div className="w-[47%] order-2 xl:order-3 xl:w-[22%] 1xl:w-[22.3%]">
+
+            <div className="xl:w-[22%] 1xl:w-[22.3%]">
               <div className="rounded-[1.5rem] xl:rounded-[2.5rem] 3xl:rounded-[3.5rem] overflow-hidden group">
                 <img
                   src="/images/why-us/trust-img-4.webp"
@@ -82,9 +82,9 @@ const TrustedClients = () => {
                 </p>
               </div>
             </div>
-           
-            <div className="w-[47%] order-3 pt-[2rem] flex flex-col-reverse xl:block xl:order-4 xl:w-[22%] 1xl:w-[22.3%] xl:pt-0">
-              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] xl:rounded-[1.5rem] 3xl:rounded-[2.5rem] mt-[1.5rem] flex justify-center items-center xl:mt-0 xl:mb-[1.5rem] xl:py-[2.5rem] 3xl:py-[4rem]">
+
+            <div className="xl:w-[22%] 1xl:w-[22.3%]">
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] rounded-[1.5rem] 3xl:rounded-[2.5rem] flex justify-center items-center xl:mt-0 xl:mb-[1.5rem] xl:py-[2.5rem] 3xl:py-[4rem]">
                 <p className="font-extralight [&>b]:block xl:[&>b]:inline [&>b]:font-medium text-white text-[1.4rem] text-center xl:text-[1.6rem] 1xl:text-[1.8rem] 3xl:text-[2.4rem]">
                   2 Lakh+ <b> Clients</b>
                 </p>
@@ -101,6 +101,82 @@ const TrustedClients = () => {
             </div>
           </div>
 
+          {/* For Mobile */}
+          <div className="xl:hidden mt-[5rem]">
+            <div className="grid grid-cols-2 gap-[1.5rem] ">
+              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+                <img
+                  src="/images/why-us/trust-img-1.webp"
+                  alt="Client Image"
+                  className="w-full h-full object-cover"
+                  width="352"
+                  height="550"
+                />
+              </div>
+              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+                <img
+                  src="/images/why-us/trust-img-2.webp"
+                  alt="Client Image"
+                  className="w-full h-full object-cover"
+                  width="352"
+                  height="550"
+                />
+              </div>
+              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+                <img
+                  src="/images/why-us/trust-img-3.webp"
+                  alt="Client Image"
+                  className="w-full h-full object-cover"
+                  width="352"
+                  height="550"
+                />
+              </div>
+              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+                <img
+                  src="/images/why-us/trust-img-4.webp"
+                  alt="Client Image"
+                  className="w-full h-full object-cover"
+                  width="352"
+                  height="550"
+                />
+              </div>
+              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+                <img
+                  src="/images/why-us/trust-img-5.webp"
+                  alt="Client Image"
+                  className="w-full h-full object-cover"
+                  width="352"
+                  height="550"
+                />
+              </div>
+              <div className="h-[23rem] overflow-auto rounded-[1rem]">
+                <img
+                  src="/images/why-us/trust-img-6.webp"
+                  alt="Client Image"
+                  className="w-full h-full object-cover"
+                  width="352"
+                  height="550"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
+                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] text-center">
+                  5000+ <b>Supercars Sold </b>
+                </p>
+              </div>
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
+                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] text-center">
+                  320 Celebrities <b>Partnerships</b>
+                </p>
+              </div>
+              <div className="w-full bg-[#212121] border border-[#383838] px-[2rem] py-[3rem] rounded-[1rem] mt-[1.5rem] flex justify-center items-center">
+                <p className="font-extralight [&>b]:font-medium text-white text-[2rem] text-center">
+                  2 Lakh+ <b>Clients</b>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
