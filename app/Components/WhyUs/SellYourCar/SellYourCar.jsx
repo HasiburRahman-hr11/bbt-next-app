@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const usps = [
@@ -105,10 +106,26 @@ const SellYourCar = () => {
                         />
                       </div>
                       <div className="flex-[1] flex flex-wrap flex-col pl-[2rem] sm:flex-row sm:justify-between sm:pl-[4rem] xl:pl-[7.5rem] 2xl:pl-[8.5rem]">
-                        <h5
-                          className="text-[1.4rem] [&>br]:hidden xl:[&>br]:block xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem] font-medium capitalize sm:w-[40%] lg:tracking-tight"
-                          dangerouslySetInnerHTML={{ __html: usp.title }}
-                        ></h5>
+                        {!usp?.link || usp?.link === "" ? (
+                          <h5
+                            className={`text-[1.4rem] [&>br]:hidden xl:[&>br]:block xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem] font-medium capitalize sm:w-[40%] lg:tracking-tight`}
+                            dangerouslySetInnerHTML={{ __html: usp.title }}
+                          ></h5>
+                        ) : (
+                          <Link href={usp.link} className=" sm:w-[40%]">
+                            <div className="w-max flex items-center group">
+                              <h5
+                                className={`text-[1.4rem] [&>br]:hidden xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem] font-medium capitalize  lg:tracking-tight underline underline-offset-[3px] flex-[1] decoration-1`}
+                                dangerouslySetInnerHTML={{ __html: usp.title }}
+                              ></h5>
+                              <img
+                                src="/images/why-us/sell-car-usp-arrow.webp"
+                                alt="Arrow"
+                                className=" object-contain w-[1rem] h-auto inline-block ml-[5px] xl:w-[1.2rem] 2xl:w-[1.5rem] 3xl:w-[1.9rem] transition-all xl:group-hover:ml-[10px] xl:ml-[7px]"
+                              />
+                            </div>
+                          </Link>
+                        )}
                         <p className="text-[1.2rem] xl:text-[1.3rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[2rem] font-normal mt-[0.5rem] sm:w-[53%] sm:mt-0 xl:w-[54%] 2xl:w-[53%] 2xl:tracking-tight">
                           {usp.description}
                         </p>
