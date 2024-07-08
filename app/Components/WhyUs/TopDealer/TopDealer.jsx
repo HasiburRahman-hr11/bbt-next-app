@@ -60,13 +60,13 @@ const TopDealer = () => {
             </div>
           </div>
           {/* USP WRAPPER */}
-          <div className="mt-[2rem] relative">
-            <div className="hidden lg:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[37%] xl:w-[45%] 2xl:top-[9rem] 2xl:translate-y-0 3xl:top-[12rem]">
+          <div className="mt-[2rem] relative 2xl:mt-[5rem]">
+            <div className="hidden lg:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[37%] xl:w-[45%] 2xl:top-[6.5rem] 2xl:translate-y-0 3xl:top-[10rem]">
               <img src="/images/why-us/bbt-big-logo.webp" alt="BBT Logo" className="w-full h-auto object-contain" />
             </div>
             <ul className="flex flex-wrap justify-between top-dealer-usp-list">
               {usps.map((usp, index) => (
-                <li key={index} className="w-full py-[2rem] border-b border-b-[#D9D9D9] lg:border-none lg:mt-[4rem] sm:w-[47%] xl:mt-[7rem] 2xl:mt-[8rem] 3xl:mt-[10rem]">
+                <li key={index} className="w-full py-[2rem] border-b border-b-[#D9D9D9] lg:border-none lg:mt-[4rem] sm:w-[47%] xl:mt-[7rem] 2xl:mt-[4rem] 3xl:mt-[7rem]">
                   <div className="flex flex-wrap lg:w-[65%] xl:w-[55%]">
                   <div className="w-[8rem] h-[8rem] bg-white rounded-[0.7rem] flex justify-center items-center p-[1.6rem] lg:bg-transparent lg:w-[4rem] lg:p-0 lg:pt-[1rem] icon xl:w-[5rem] 3xl:w-[6.2rem]">
                     <img
