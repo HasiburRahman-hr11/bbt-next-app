@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 
-const LatestAddition = () => {
+const SellYourCar = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -13,14 +13,14 @@ const LatestAddition = () => {
       <div className="max-1920 relative">
         <div className="sm:hidden">
           <img
-            src="/images/faq/latest-addition-mob.webp"
+            src="/images/check-points/sell-car-banner-desktop.webp"
             alt="Background Image"
             className="w-full object-cover h-full min-h-[600px]"
           />
         </div>
         <div className="hidden sm:block">
           <img
-            src="/images/faq/latest-addition-desktop.webp"
+            src="/images/check-points/sell-car-banner-desktop.webp"
             alt="Background Image"
             className="w-full object-cover h-auto min-h-[500px]"
           />
@@ -34,25 +34,22 @@ const LatestAddition = () => {
               data-aos-duration="500"
             >
               <div className="text-center text-white lg:max-w-[440px] xl:max-w-[470px] 3xl:max-w-[610px] sm:text-left">
-                <p className="text-[1.4rem] uppercase font-light xl:text-[1.37rem] 1xl:text-[1.6rem] 3xl:text-[2.2rem]">
-                  latest addition
-                </p>
                 <h2 className="font-light [&>b]:font-normal leading-[1.2] mt-[1.5rem] tracking-[-2px] text-[2.9rem] xl:text-[3.75rem] 1xl:text-[4.2rem] 1xl:mt-[2rem] 2xl:text-[4.3rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px] capitalize">
-                  Explore our latest <br /> addition <b>at Big Boy Toyz</b>
+                  Sell Your Car In <br /> <b>29 Minutes</b>
                 </h2>
                 <p className="font-light text-[1.2rem] leading-[1.5] mt-[2rem] sm:mt-[1rem] sm:mb-[1.5rem] lg:text-[1.1rem] lg:tracking-tight xl:text-[1.13rem] xl:leading-[1.5] xl:mb-[3rem] 1xl:text-[1.28rem] 2xl:mt-[2rem] 2xl:text-[1.4rem] 2xl:mb-[4.5rem] 3xl:text-[1.6rem] 3xl:leading-[1.5] 3xl:tracking-[0]">
-                  A budding entrepreneur, Mrs. Ritika Jatin Ahuja spearheads the
-                  Merchandising section at Big Boy Toyz. She has been an avid
-                  collector of miniature perfumes since childhood which she
-                  cultivated as a hobby and a passion
+                  We're not just about making your car look pretty, we're all
+                  about making it perform like a champ too. From turbocharging
+                  your engine to upgrading your suspension for that buttery
+                  smooth ride!
                 </p>
               </div>
               <div className="text-center sm:mt-[3rem] sm:text-left 3xl:mt-[5rem]">
                 <Link
-                  href="/collection"
+                  href="/sell-your-car"
                   className="w-full max-w-[31rem] h-[5.5rem] flex justify-center items-center text-[1.4rem] bg-white text-black px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium sm:max-w-[27.3rem] sm:ml-0 xl:h-[4.5rem] xl:max-w-[17rem] xl:text-[1.2rem] 1xl:h-[5rem] 1xl:max-w-[20rem] 1xl:text-[1.4rem] 2xl:max-w-none 2xl:w-max 2xl:px-[6rem] 2xl:text-[1.5rem] 3xl:h-[6.5rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[7rem] hover:bg-[#f1f1f1] transition-all duration-500 ease-in-out"
                 >
-                  Browse Cars
+                  Explore
                 </Link>
               </div>
             </div>
@@ -63,4 +60,4 @@ const LatestAddition = () => {
   );
 };
 
-export default LatestAddition;
+export default SellYourCar;

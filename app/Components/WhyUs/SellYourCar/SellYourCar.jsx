@@ -14,7 +14,7 @@ const usps = [
     title: "151 check <br> points",
     description:
       "Car comes with 360° inspection report with comfort and ease in driving pleasure.",
-    link: "#",
+    link: "/151-check-points",
   },
   {
     icon: "/images/why-us/best-car-usp-3.webp",
@@ -40,7 +40,7 @@ const usps = [
     icon: "/images/why-us/best-car-usp-6.webp",
     title: "Fixed price",
     description: `Our complete stock is listed online as we don't believe in inflating the prices to waste your time.`,
-    link: "#",
+    link: "/fixed-price-policy",
   },
   {
     icon: "/images/why-us/best-car-usp-7.webp",
