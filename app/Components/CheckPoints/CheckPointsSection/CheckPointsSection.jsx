@@ -28,8 +28,8 @@ const CheckPointsSection = () => {
     <section className="bg-white py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
         <div className="container">
-          <div className="flex justify-between items-start flex-wrap">
-            <div className="w-full lg:w-[23%]">
+          <div className="flex justify-between relative items-start flex-wrap">
+            <div className="w-full lg:w-[23%] relative xl:h-full xl:sticky xl:top-[3rem] xl:left-0">
               <p className="text-black text-[3rem] font-medium leading-[1.2] text-center lg:text-left lg:text-[1.35rem] xl:tracking-[-0.2px] xl:text-[1.45rem] lg:leading-[1.3] 1xl:text-[1.6rem] 2xl:text-[1.75rem] 3xl:text-[2.2rem] 3xl:tracking-[-0.5px] [&>br]:hidden lg:[&>br]:block">
                 Thorough 151-Point Check <br /> and 360° Report for <br />{" "}
                 Optimal Driving Pleasure
