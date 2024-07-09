@@ -911,6 +911,16 @@ img {
 .generic-content span{
   font-size: 1.3rem;
 }
+.generic-content ul li b,
+.generic-content ul li strong{
+  display: block;
+}
+.generic-content a{
+  transition: all 0.5s ease;
+}
+.generic-content a:hover{
+  color: #ef3024;
+}
 
 @media only screen and (min-width: 640px) {
   .btn {

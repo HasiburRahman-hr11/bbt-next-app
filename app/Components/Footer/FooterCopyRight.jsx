@@ -7,9 +7,9 @@ const FooterCopyRight = () => {
       <div className="block lg:flex items-center">
         <p className="mb-4 text-2xl lg:text-lg lg:mb-0 3xl:text-1.6xl">Copyright ©{new Date().getFullYear()} Big Boy Toyz</p>
         <ul className="hidden lg:flex items-center ml-5 footerPrivacyMenu">
-          <li><a href="#" className="text-base relative px-2 3xl:text-xl">Privacy Policy</a></li>
-          <li><a href="#" className="text-base relative px-2 3xl:text-xl">Conditions & Refund</a></li>
-          <li><a href="#" className="text-base relative px-2 3xl:text-xl">Terms of Use</a></li>
+          <li><Link href="/privacy-policy" className="text-base relative px-2 3xl:text-xl">Privacy Policy</Link></li>
+          <li><Link href="/refund-policy" className="text-base relative px-2 3xl:text-xl">Conditions & Refund</Link></li>
+          <li><Link href="/terms-and-conditions" className="text-base relative px-2 3xl:text-xl">Terms of Use</Link></li>
           <li><a href="#" className="text-base relative px-2 3xl:text-xl">Site Map</a></li>
         </ul>
       </div>
