@@ -897,6 +897,20 @@ img {
   -webkit-text-fill-color: #000;
   transition: all 0.5s ease;
 }
+.generic-content h2 b,
+.generic-content h2 strong{
+  font-weight: 500;
+}
+.generic-content p b,
+.generic-content p strong{
+  font-weight: 400;
+}
+.generic-content,
+.generic-content p,
+.generic-content a,
+.generic-content span{
+  font-size: 1.3rem;
+}
 
 @media only screen and (min-width: 640px) {
   .btn {
@@ -1102,6 +1116,12 @@ img {
   .workshop-testimonial-slider .curve-slider-arrow.slick-arrow.slick-next {
     top: -22%;
   }
+  .generic-content,
+  .generic-content p,
+  .generic-content a,
+  .generic-content span{
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (min-width: 1536px) {
@@ -1127,6 +1147,13 @@ img {
   }
   .footerMenuCol.footerMenuColLarge {
     width: calc(100% - 66rem);
+  }
+  .generic-content,
+  .generic-content p,
+  .generic-content a,
+  .generic-content span{
+    font-size: 1.6rem;
+    letter-spacing: -0.5px;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -1224,6 +1251,12 @@ img {
   }
   .workshop-testimonial-slider .curve-slider-arrow.slick-prev {
     left: -18rem;
+  }
+  .generic-content,
+  .generic-content p,
+  .generic-content a,
+  .generic-content span{
+    font-size: 1.9rem;
   }
 }
 @media only screen and (max-width: 767px) {
