@@ -5,13 +5,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const FinanceSection = () => {
-  const [carPrice, setCarPrice] = useState(49900000);
+  const [carPrice, setCarPrice] = useState(4900000);
   const [downPaymentAmount, setDownPaymentAmount] = useState(
-    Math.round((50 / 100) * 49900000)
+    Math.round((50 / 100) * 4900000)
   );
   const [downPaymentPercent, setDownPaymentPercent] = useState(50);
   const [annualInterest, setAnnualInterest] = useState(10);
   const [termPeriod, setTermPeriod] = useState(12);
+  const [monthlyEmi, setMonthlyEmi] = useState(0);
+  const [totalAmountToPay, setTotalAmountToPay] = useState(0);
+  const [totalInterestToPay, setTotalInterestToPay] = useState(0);
 
   const downPaymentPercentChange = (e) => {
     setDownPaymentPercent(e.target.value);
@@ -23,6 +26,22 @@ const FinanceSection = () => {
   const termPeriodChange = (e) => {
     setTermPeriod(e.target.value);
   };
+
+    //   Calculate EMI
+    useEffect(() => {
+      const loanAmount = carPrice - downPaymentAmount;
+      const monthlyInterestRate = annualInterest / (12 * 100); // Convert annual interest rate to a monthly interest rate
+      const emi =
+        (loanAmount *
+          monthlyInterestRate *
+          Math.pow(1 + monthlyInterestRate, termPeriod)) /
+        (Math.pow(1 + monthlyInterestRate, termPeriod) - 1);
+      const totalAmountToPay = emi * termPeriod;
+      const totalInterestToPay = totalAmountToPay - loanAmount;
+      setMonthlyEmi(emi.toFixed(2));
+      setTotalAmountToPay(totalAmountToPay.toFixed(2));
+      setTotalInterestToPay(totalInterestToPay.toFixed(2));
+    }, [downPaymentAmount, annualInterest, termPeriod]);
 
   useEffect(() => {
     AOS.init();
@@ -52,7 +71,7 @@ const FinanceSection = () => {
                 Emi Starts @
               </p>
               <h5 className="lg:text-1xl xl:text-xl 1xl:text-2xl 3xl:text-3.5xl">
-                ₹ 45,000/- <span className="font-extralight">Per Month</span>
+                ₹ {monthlyEmi}/- <span className="font-extralight">Per Month</span>
               </h5>
             </div>
 

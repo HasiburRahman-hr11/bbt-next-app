@@ -922,6 +922,61 @@ img {
   color: #ef3024;
 }
 
+
+
+.emi-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background-color: #DDDDDD;
+  outline: none;
+  color: #DDDDDD;
+  position: relative;
+  z-index: 1;
+}
+
+
+.emi-range::-webkit-slider-runnable-track {
+  webkit-appearance: none;
+  transition: all ease 100ms;
+  background: linear-gradient(#000000 0 0) scroll no-repeat center / 100% 3px;
+  position: relative;
+}
+.emi-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 5px solid #ef3024;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  cursor: ew-resize;
+  box-shadow: rgba(190, 46, 35, 0.2) 0px 8px 24px;
+}
+.emi-range::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 5px solid #ef3024;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  cursor: ew-resize;
+   box-shadow: rgba(190, 46, 35, 0.2) 0px 8px 24px;
+}
+.emi-range::-moz-range-track {
+  background-color: #DDDDDD;
+}
+.emi-range::-moz-range-progress {
+  background-color: #000000;
+  height: 4px;
+}
+.emi-range::-ms-fill-upper {
+  background-color: #DDDDDD;
+}
+.emi-range::-ms-fill-lower {
+  background-color: #000000;
+}
 @media only screen and (min-width: 640px) {
   .btn {
     display: inline-block;
@@ -1095,6 +1150,25 @@ img {
   .black-stroke.bant-text{
     -webkit-text-stroke-width: 1.5px;
   }
+
+  .emi-range {
+    height: 5px;
+  }
+  .emi-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.9rem;
+    height: 2.9rem;
+    border: 8px solid #ef3024;
+  }
+  .emi-range::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 2.9rem;
+    height: 2.9rem;
+    border: 8px solid #ef3024;
+  }
+  .emi-range::-moz-range-progress {
+    height: 5px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   h1 {
@@ -1267,6 +1341,15 @@ img {
   .generic-content a,
   .generic-content span{
     font-size: 1.9rem;
+  }
+  .emi-range {
+    height: 8px;
+  }
+  .emi-range::-moz-range-progress {
+    height: 8px;
+  }
+  .emi-range::-webkit-slider-runnable-track {
+    background: linear-gradient(#000000 0 0) scroll no-repeat center / 100% 5px;
   }
 }
 @media only screen and (max-width: 767px) {

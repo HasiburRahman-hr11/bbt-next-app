@@ -69,12 +69,17 @@ let settings = {
   ],
 };
 
-const RecentUploads = () => {
+const RecentUploads = ({ bgColor }) => {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <section className="py-[6rem] bg-[#F3F3F3] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
+    <section
+      className={`py-[6rem] bg-[${
+        bgColor ? bgColor : "#F3F3F3"
+      }] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]`}
+      style={{ backgroundColor: bgColor ? bgColor : "#F3F3F3" }}
+    >
       <div
         className="max-1920 overflow-hidden"
         data-aos="fade-up"
@@ -83,7 +88,12 @@ const RecentUploads = () => {
       >
         <div className="container">
           <h2 className=" pl-8 lg:pl-0 titleWithLine mobileLine text-right mb-[4rem] lg:text-left lg:mb-[6rem] xl:pb-[0.5rem] 3xl:mb-[8rem]">
-            <span className="bg-[#F3F3F3] pl-5 inline-block relative z-10 tracking-[-1px] lg:pl-0 lg:pr-5 xl:text-[2.4rem] xl:pr-[4rem] 1xl:text-[2.7rem] 3xl:text-[4.5rem] 3xl:tracking-[-0.4rem]">
+            <span
+              className={`bg-[${
+                bgColor ? bgColor : "#F3F3F3"
+              }] pl-5 inline-block relative z-10 tracking-[-1px] lg:pl-0 lg:pr-5 xl:text-[2.4rem] xl:pr-[4rem] 1xl:text-[2.7rem] 3xl:text-[4.5rem] 3xl:tracking-[-0.4rem]`}
+              style={{ backgroundColor: bgColor ? bgColor : "#F3F3F3" }}
+            >
               Recent Uploads
             </span>
           </h2>
