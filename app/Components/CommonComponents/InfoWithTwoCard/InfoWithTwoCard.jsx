@@ -20,7 +20,7 @@ const FeaturedItem = ({ data }) => {
       </div>
       <div className="absolute bottom-0 left-0 w-full h-full px-[2rem] py-[2rem] sm:py-[3rem] sm:px-[3rem] xl:px-[3rem] 1xl:py-[5rem] 2xl:pl-[4rem] flex flex-col justify-end 3xl:pb-[7rem] 3xl:pl-[5rem]">
         <p className="font-light text-white text-[1.2rem] mb-[1rem] xl:text-[1.4rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[1.9rem]">
-          {data.publishedDate}
+          {data?.publishedDate}
         </p>
         <h5 className="text-white w-full font-normal xl:text-[2.2rem] 1xl:text-[2.5rem] 2xl:text-4.5xl 3xl:text-6xl 3xl:bottom-24 3xl:left-24">
           {data.title}

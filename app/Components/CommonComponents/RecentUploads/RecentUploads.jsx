@@ -91,7 +91,7 @@ const RecentUploads = ({ bgColor }) => {
             <span
               className={`bg-[${
                 bgColor ? bgColor : "#F3F3F3"
-              }] pl-5 inline-block relative z-10 tracking-[-1px] lg:pl-0 lg:pr-5 xl:text-[2.4rem] xl:pr-[4rem] 1xl:text-[2.7rem] 3xl:text-[4.5rem] 3xl:tracking-[-0.4rem]`}
+              }] pl-5 inline-block relative z-10 tracking-[-1px] lg:pl-0 lg:pr-5 xl:pr-[4rem] xl:text-[3rem] 1xl:text-[3.5rem] 2xl:text-[3.8rem] 3xl:text-[4.5rem] 3xl:tracking-[-0.4rem]`}
               style={{ backgroundColor: bgColor ? bgColor : "#F3F3F3" }}
             >
               Recent Uploads

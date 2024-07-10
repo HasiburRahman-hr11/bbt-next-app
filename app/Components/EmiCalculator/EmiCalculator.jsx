@@ -72,8 +72,8 @@ const EmiCalculator = () => {
           </h1>
           <div className="mt-[2rem] lg:mt-[4rem]">
             <div className="px-[40px]">
-              <div className="relative bg-white border border-[#CCCCCC] rounded-[0.7rem] h-[4.5rem] px-[0.5rem] mb-[1.5rem] 3xl:mb-[2.5rem] emi-select-box 1xl:h-[4.8rem] 2xl:h-[5.3rem] 3xl:h-[6.5rem] 1xl:rounded-[1rem]">
-                <span className="w-[1.5rem] 3xl:w-[1.9rem] h-full absolute top-0 right-[2rem] z-[1] inline-flex items-center justify-center">
+              <div className={styles.inputWrapper}>
+                <span className={styles.selectArrow}>
                   <img
                     src="images/dropdown-arrow-black.webp"
                     alt="Arrow"
@@ -83,7 +83,7 @@ const EmiCalculator = () => {
                 <select
                   name=""
                   id=""
-                  className="w-full bg-transparent outline-none border-none h-full appearance-none px-[1rem] text-[1.4rem] relative z-10 1xl:text-[1.5rem] 2xl:text-[1.65rem] 3xl:text-[2rem]"
+                  className={styles.selectInput}
                   value={brand}
                   onChange={(e) => setBrand(e.target.value)}
                 >
@@ -106,8 +106,8 @@ const EmiCalculator = () => {
                   <option value="Volvo">Volvo</option>
                 </select>
               </div>
-              <div className="relative bg-white border border-[#CCCCCC] rounded-[0.7rem] h-[4.5rem] px-[0.5rem] mb-[1.5rem] 3xl:mb-[2.5rem] emi-select-box 1xl:h-[4.8rem] 2xl:h-[5.3rem] 3xl:h-[6.5rem] 1xl:rounded-[1rem]">
-                <span className="w-[1.5rem] 3xl:w-[1.9rem] h-full absolute top-0 right-[2rem] z-[1] inline-flex items-center justify-center">
+              <div className={styles.inputWrapper}>
+                <span className={styles.selectArrow}>
                   <img
                     src="images/dropdown-arrow-black.webp"
                     alt="Arrow"
@@ -117,7 +117,7 @@ const EmiCalculator = () => {
                 <select
                   name=""
                   id=""
-                  className="w-full bg-transparent outline-none border-none h-full appearance-none px-[1rem] text-[1.4rem] relative z-10 1xl:text-[1.5rem] 2xl:text-[1.65rem] 3xl:text-[2rem]"
+                  className={styles.selectInput}
                   value={model}
                   onChange={(e) => setModel(e.target.value)}
                 >
@@ -226,7 +226,14 @@ const EmiCalculator = () => {
 export default EmiCalculator;
 
 const styles = {
-  sliderBox: "relative pb-[2rem] mb-[1.5rem] xl:pb-[3rem] 3xl:pb-[3.5rem] xl:pt-[1rem] 3xl:pt-[2rem]",
+  inputWrapper:
+    "relative bg-white border border-[#CCCCCC] rounded-[0.7rem] h-[4.5rem] px-[0.5rem] mb-[1.5rem] 3xl:mb-[2.5rem] emi-select-box 1xl:h-[4.8rem] 2xl:h-[5.3rem] 3xl:h-[6.5rem] 1xl:rounded-[1rem]",
+  selectInput:
+    "w-full bg-transparent outline-none border-none h-full appearance-none px-[1rem] text-[1.4rem] relative z-10 1xl:text-[1.5rem] 2xl:text-[1.65rem] 3xl:text-[2rem]",
+  selectArrow:
+    "w-[1.5rem] 3xl:w-[1.9rem] h-full absolute top-0 right-[2rem] z-[1] inline-flex items-center justify-center",
+  sliderBox:
+    "relative pb-[2rem] mb-[1.5rem] xl:pb-[3rem] 3xl:pb-[3.5rem] xl:pt-[1rem] 3xl:pt-[2rem]",
   sliderText:
     "absolute bottom-0 transform -translate-x-1/2 text-[1.05rem] whitespace-nowrap font-medium xl:text-[1.4rem] 1xl:text-[1.5rem] 2xl:text-[1.7rem] 3xl:text-[2rem]",
   sliderLabel:

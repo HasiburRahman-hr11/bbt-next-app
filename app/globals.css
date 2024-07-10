@@ -628,6 +628,16 @@ img {
 .select-box select {
   -webkit-appearance: none;
 }
+.slick-track{
+  display: flex !important;
+}
+.slick-slide{
+  height: inherit !important;
+}
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #EE3024;
+}
 
 /* Popup Scrollbar */
 
