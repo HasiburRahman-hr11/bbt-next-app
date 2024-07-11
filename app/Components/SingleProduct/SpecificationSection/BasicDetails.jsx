@@ -108,7 +108,7 @@ const BasicDetails = () => {
                           Emi Calculator
                         </span>
                       </div>
-                      <div className="border border-[#A0A0A0] rounded-[1rem] flex justify-center items-center cursor-pointer py-4 px-2 xl:py-5 2xl:py-6 3xl:py-8 mt-4 3xl:mt-6 group transition-all duration-500 ease-in-out hover:bg-black">
+                      <Link href="/compare-cars" className="border border-[#A0A0A0] rounded-[1rem] flex justify-center items-center cursor-pointer py-4 px-2 xl:py-5 2xl:py-6 3xl:py-8 mt-4 3xl:mt-6 group transition-all duration-500 ease-in-out hover:bg-black">
                         <Image
                           src="/images/compare-btn-icon.webp"
                           alt="Reserve Icon"
@@ -119,11 +119,11 @@ const BasicDetails = () => {
                         <span className="text-[1.3rem] font-[600] 1xl:text-[1.5rem] 3xl:text-[1.8rem] group-hover:text-white tracking-[-1.1px]">
                           Compare Car
                         </span>
-                      </div>
+                      </Link>
                     </div>
                     <div className="w-full md:w-[48%] lg:w-full xl:w-[40%]">
                       <Link
-                        href="#"
+                        href="/booking"
                         className="bg-black w-full flex justify-center items-center py-7 px-10 rounded-[5px] md:flex-col xl:rounded-[1rem] xl:h-full 3xl:py-12 transition-all duration-500 ease-in-out  group hover:bg-white hover:border hover:border-black"
                       >
                         <Image
