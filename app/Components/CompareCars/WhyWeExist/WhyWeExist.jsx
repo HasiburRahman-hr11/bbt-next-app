@@ -50,7 +50,7 @@ const WhyWeExist = () => {
               </p>
               <div className="hidden md:block md:mt-[3rem] xl:mt-[5rem] 3xl:mt-[6rem]">
                 <Link
-                  href="/why-us"
+                  href="/sell-your-car"
                   className="w-max h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[6rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[6.5rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
                 >
                   Explore
@@ -80,7 +80,7 @@ const WhyWeExist = () => {
               </ul>
               <div className="mt-[3rem] md:hidden">
                 <Link
-                  href="/why-us"
+                  href="/sell-your-car"
                   className="w-max mx-auto h-[4.5rem] flex justify-center items-center text-[1.2rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] xl:px-[6rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:h-[5.5rem] 3xl:h-[6.5rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[8rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
                 >
                   Explore

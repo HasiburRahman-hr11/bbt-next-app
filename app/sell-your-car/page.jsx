@@ -59,8 +59,9 @@ const SellYourCar = () => {
   return (
     <main className="sell-car-page">
       <Header />
+      <BannerSection />
       <div id="afterInsBanner">
-        <BannerSection />
+       
         <HowToSell />
         <ProcessSection />
         <PresenceSection />
