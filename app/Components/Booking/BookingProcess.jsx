@@ -177,7 +177,7 @@ const BookingProcess = () => {
                     </>
                   )}
                 </h3>
-                <p className="text-[1.5rem] font-light my-[1rem] xl:text-[1.8rem] 1xl:text-[2rem] 2xl:text-[2.3rem] 3xl:text-[3rem]">
+                <p className="text-[1.5rem] font-light my-[1rem] xl:text-[1.8rem] 1xl:tracking-tighter 1xl:text-[2rem] 2xl:text-[2.3rem] 3xl:text-[3rem]">
                   {popupContentType === "type-1" && (
                     <>We will reserve your dream car for the next 24 hours.</>
                   )}
@@ -188,7 +188,7 @@ const BookingProcess = () => {
                     <> Get ready to unbox your dream car at your doorsteps</>
                   )}
                 </p>
-                <p className="text-[1.2rem] font-light xl:text-[1.4rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[1.9rem]">
+                <p className="text-[1.2rem] font-light xl:text-[1.4rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[1.9rem] 1xl:w-[84%] 1xl:mx-auto 3xl:w-[81%]">
                   {popupContentType === "type-1" && (
                     <>
                       All you need to do is pay 2 lacs now & you can come back
