@@ -3,11 +3,21 @@ import React, { useState } from "react";
 
 const BookingProcess = () => {
   const [bookingType, setBookingType] = useState("type-1");
-  const [openPopup, setOpenPopup] = useState(false);
+  const [openInfoPopup, setOpenInfoPopup] = useState(false);
+  const [openPaymentPopup, setOpenPaymentPopup] = useState(false);
   const [popupContentType, setPopupContentType] = useState("type-1");
 
-  const handleClosePopup = () => {
-    setOpenPopup(false);
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [cardType, setCardType] = useState("visa");
+
+  const handleCloseInfoPopup = () => {
+    setOpenInfoPopup(false);
+  };
+  const handleClosePaymentPopup = () => {
+    setOpenPaymentPopup(false);
   };
   return (
     <>
@@ -43,7 +53,7 @@ const BookingProcess = () => {
               }`}
               onClick={(e) => {
                 e.stopPropagation();
-                setOpenPopup(true);
+                setOpenInfoPopup(true);
                 setPopupContentType("type-1");
               }}
             >
@@ -80,7 +90,7 @@ const BookingProcess = () => {
               }`}
               onClick={(e) => {
                 e.stopPropagation();
-                setOpenPopup(true);
+                setOpenInfoPopup(true);
                 setPopupContentType("type-2");
               }}
             >
@@ -117,7 +127,7 @@ const BookingProcess = () => {
               }`}
               onClick={(e) => {
                 e.stopPropagation();
-                setOpenPopup(true);
+                setOpenInfoPopup(true);
                 setPopupContentType("type-3");
               }}
             >
@@ -131,19 +141,24 @@ const BookingProcess = () => {
         </ul>
 
         <div className="mt-[4rem] 3xl:mt-[6rem]">
-          <button className={styles.reserveButton}>Reserve This Car</button>
+          <button
+            className={styles.reserveButton}
+            onClick={() => setOpenPaymentPopup(true)}
+          >
+            Reserve This Car
+          </button>
         </div>
       </div>
-      {openPopup && (
+      {openInfoPopup && (
         <div className="fixed z-100 overflow-y-auto top-0 w-full h-full left-0 flex flex-col justify-center items-center px-[20px]">
           <div
             className="absolute w-full h-full bg-[rgba(0,0,0,0.5)] z-[2]"
-            onClick={handleClosePopup}
+            onClick={handleCloseInfoPopup}
           ></div>
           <div className="bg-white px-[2rem] py-[4rem] w-full max-h-[90vh] relative z-10 rounded-[1rem] max-w-[900px] sm:w-[85%] lg:w-[60%] xl:w-[48%] xl:py-[5rem] xl:px-[6rem] xl:rounded-[3rem] 2xl:py-[6rem] 3xl:py-[8rem]">
             <span
               className="absolute top-[1.5rem] right-[1.5rem] w-[1.5rem] h-[1.5rem] flex justify-center items-center cursor-pointer xl:top-[2.5rem] xl:right-[2.5rem] 2xl:w-[1.8rem] 2xl:h-[1.8rem] 3xl:w-[1.9rem] 3xl:h-[1.9rem] 3xl:top-[3.5rem] 3xl:right-[3.5rem]"
-              onClick={handleClosePopup}
+              onClick={handleCloseInfoPopup}
             >
               <img
                 src="/images/booking/close-popup-icon.webp"
@@ -216,11 +231,193 @@ const BookingProcess = () => {
                     className={styles.popupButton}
                     onClick={() => {
                       setBookingType(popupContentType);
-                      handleClosePopup();
+                      handleCloseInfoPopup();
+                      setOpenPaymentPopup(true);
                     }}
                   >
                     OK Got it! Reserve Now
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {openPaymentPopup && (
+        <div className="fixed z-100 overflow-y-auto top-0 w-full h-full left-0 flex flex-col justify-center items-center px-[20px]">
+          <div
+            className="absolute w-full h-full bg-[rgba(0,0,0,0.5)] z-[2]"
+            onClick={handleClosePaymentPopup}
+          ></div>
+          <div className="bg-white px-[2rem] py-[4rem] w-full max-h-[90vh] relative z-10 rounded-[1rem] max-w-[900px] sm:w-[85%] lg:w-[60%] xl:w-[48%] xl:py-[5rem] xl:px-[6rem] xl:rounded-[3rem] 2xl:py-[6rem] 3xl:py-[8rem]">
+            <span
+              className="absolute top-[1.5rem] right-[1.5rem] w-[1.5rem] h-[1.5rem] flex justify-center items-center cursor-pointer xl:top-[2.5rem] xl:right-[2.5rem] 2xl:w-[1.8rem] 2xl:h-[1.8rem] 3xl:w-[1.9rem] 3xl:h-[1.9rem] 3xl:top-[3.5rem] 3xl:right-[3.5rem]"
+              onClick={handleClosePaymentPopup}
+            >
+              <img
+                src="/images/booking/close-popup-icon.webp"
+                alt="Close"
+                className="w-full object-contain"
+              />
+            </span>
+            <div className="w-full h-full overflow-y-auto">
+              <div>
+                <h3 className="font-light [&>b]:font-medium text-[2.5rem] xl:text-[2.9rem] xl:tracking-tighter 2xl:text-[3.5rem] 3xl:text-[4.5rem] leading-[1.2]">
+                  {popupContentType === "type-1" && (
+                    <>
+                      Pay 2 Lacs & <b> Reserve Car for 24 hrs</b>
+                    </>
+                  )}
+                  {popupContentType === "type-2" && (
+                    <>
+                      Pay 10% & <b> Get Confirmed Booking</b>
+                    </>
+                  )}
+                  {popupContentType === "type-3" && (
+                    <>
+                      Pay 100% & <b> Get Car Delivered Home</b>
+                    </>
+                  )}
+                </h3>
+                <p className="text-[1.5rem] font-light my-[1rem] xl:text-[1.8rem] 1xl:tracking-tighter 1xl:text-[2rem] 2xl:text-[2.3rem] 3xl:text-[3rem]">
+                  {popupContentType === "type-1" && (
+                    <>We will reserve your dream car for the next 24 hours.</>
+                  )}
+                  {popupContentType === "type-2" && (
+                    <>We will confirm your booking.</>
+                  )}
+                  {popupContentType === "type-3" && (
+                    <> Get ready to unbox your dream car at your doorsteps</>
+                  )}
+                </p>
+                <p className="text-[1.2rem] font-light xl:text-[1.4rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[1.9rem]">
+                  Just a few steps away from making your dream car a reality!
+                  Fill in a few details and we can begin the reservation…
+                </p>
+
+                <div>
+                  <div className="flex flex-wrap justify-between">
+                    <div className={styles.popupInputWrapper}>
+                      <input
+                        type="text"
+                        className={styles.popupInput}
+                        placeholder="Name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </div>
+                    <div className={styles.popupInputWrapper}>
+                      <input
+                        type="tel"
+                        className={styles.popupInput}
+                        placeholder="Phone Number"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap justify-between">
+                    <div className={styles.popupInputWrapper}>
+                      <input
+                        type="email"
+                        className={styles.popupInput}
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <div className={styles.popupInputWrapper}>
+                      <input
+                        type="text"
+                        className={styles.popupInput}
+                        placeholder="Address"
+                        value={address}
+                        onChange={(e) => setAddress(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap justify-between">
+                    <div
+                      className={`${styles.cardItem} ${
+                        cardType === "visa"
+                          ? "border-2 border-[#17BAED]"
+                          : "border border-[#CCCCCC]"
+                      }`}
+                      onClick={() => setCardType("visa")}
+                    >
+                      <div className={styles.cardTick}>
+                        {cardType === "visa" && (
+                          <img
+                            src="/images/booking/card-tick.webp"
+                            alt="Check"
+                            className="w-full h-full max-w-[1.5rem] object-contain"
+                          />
+                        )}
+                      </div>
+                      <img
+                        src="/images/booking/visa-icon.webp"
+                        alt="Visa"
+                        className="w-full h-full object-contain inline-block mx-auto 1xl:max-w-[90%] 1xl:ml-[2rem]"
+                      />
+                    </div>
+                    <div
+                      className={`${styles.cardItem} ${
+                        cardType === "upi"
+                          ? "border-2 border-[#17BAED]"
+                          : "border border-[#CCCCCC]"
+                      }`}
+                      onClick={() => setCardType("upi")}
+                    >
+                      <div className={styles.cardTick}>
+                        {cardType === "upi" && (
+                          <img
+                            src="/images/booking/card-tick.webp"
+                            alt="Check"
+                            className="w-full h-full max-w-[1.5rem] object-contain"
+                          />
+                        )}
+                      </div>
+                      <img
+                        src="/images/booking/upi-icon.webp"
+                        alt="Visa"
+                        className="w-full h-full object-contain inline-block mx-auto 1xl:max-w-[90%] 1xl:ml-[2rem]"
+                      />
+                    </div>
+
+                    <div
+                      className={`${styles.cardItem} ${
+                        cardType === "american-express"
+                          ? "border-2 border-[#17BAED]"
+                          : "border border-[#CCCCCC]"
+                      }`}
+                      onClick={() => setCardType("american-express")}
+                    >
+                      <div className={styles.cardTick}>
+                        {cardType === "american-express" && (
+                          <img
+                            src="/images/booking/card-tick.webp"
+                            alt="Check"
+                            className="w-full h-full max-w-[1.5rem] object-contain"
+                          />
+                        )}
+                      </div>
+                      <img
+                        src="/images/booking/american-express.webp"
+                        alt="Visa"
+                        className="w-full h-full object-contain inline-block mx-auto 1xl:max-w-[90%] 1xl:ml-[2rem]"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="mt-[3rem] 1xl:mt-[4rem]">
+                    <button
+                      className={styles.popupButton}
+                      onClick={handleClosePaymentPopup}
+                    >
+                      Reserve Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -241,8 +438,18 @@ const styles = {
   reserveButton:
     "flex justify-center items-center text-center bg-black text-white outline-none border-black px-[2rem] py-[1.5rem] h-[4.5rem] transition-all duration-500 hover:bg-[#222222] w-full font-medium text-[1.3rem] 1xl:text-[1.5rem] 2xl:text-[1.6rem] 3xl:text-[1.9rem] rounded-[0.7rem] 1xl:rounded-[1rem] cursor-pointer 1xl:h-[5.3rem] 2xl:h-[6rem] 3xl:h-[7rem]",
   popupButton:
-    "flex justify-center items-center text-center bg-black text-white outline-none border-black px-[3rem] py-[1.5rem] h-[4.3rem] transition-all duration-500 hover:bg-[#222222] w-max xl:px-[4rem] font-medium text-[1.25rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] rounded-[4rem] cursor-pointer  mx-auto 3xl:h-[5.5rem]",
-  processLabel: "text-[1.2rem] 1xl:text-[1.35rem] 3xl:text-[1.8rem] font-[700] flex-[1] pl-[1rem]",
-  processCheckbox:"w-[1.7rem] h-[1.7rem] xl:w-[2rem] xl:h-[2rem] 1xl:w-[2.4rem] 1xl:h-[2.4rem] 2xl:w-[2.7rem] 2xl:h-[2.7rem] 3xl:w-[3.2rem] 3xl:h-[3.2rem] rounded-full bg-[#F4F4F1]",
-  processTickIcon:"h-auto object-contain w-[1.7rem] xl:w-[2rem] 1xl:w-[2.4rem] 2xl:w-[2.7rem] 3xl:w-[3.2rem]"
+    "flex justify-center items-center text-center bg-black text-white outline-none border-black px-[3rem] py-[1.5rem] h-[4.3rem] transition-all duration-500 hover:bg-[#222222] w-max xl:px-[4rem] font-medium text-[1.25rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] rounded-[4rem] cursor-pointer  mx-auto 1xl:h-[4.6rem] 2xl:h-[5rem] 3xl:h-[5.5rem]",
+  processLabel:
+    "text-[1.2rem] 1xl:text-[1.35rem] 3xl:text-[1.8rem] font-[700] flex-[1] pl-[1rem]",
+  processCheckbox:
+    "w-[1.7rem] h-[1.7rem] xl:w-[2rem] xl:h-[2rem] 1xl:w-[2.4rem] 1xl:h-[2.4rem] 2xl:w-[2.7rem] 2xl:h-[2.7rem] 3xl:w-[3.2rem] 3xl:h-[3.2rem] rounded-full bg-[#F4F4F1]",
+  processTickIcon:
+    "h-auto object-contain w-[1.7rem] xl:w-[2rem] 1xl:w-[2.4rem] 2xl:w-[2.7rem] 3xl:w-[3.2rem]",
+  popupInputWrapper: "w-full sm:w-[48%] mt-[2rem]",
+  popupInput:
+    "w-full border border-[#CCCCCC] outline-none text-[1.4rem] h-[4.5rem] rounded-[0.7rem] px-[1.5rem] 1xl:h-[5.2rem] 2xl:h-[5.6rem]  1xl:text-[1.6rem] 2xl:text-[1.7rem] 3xl:text-[2rem] 3xl:h-[6.5rem] 1xl:rounded-[1rem]",
+  cardItem:
+    "relative h-[4.8rem] w-[48%] md:w-[31%] mt-[2rem] flex justify-center px-[4rem] py-[1rem] outline-none text-[1.4rem] rounded-[0.7rem] xl:py-[1.3rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.5rem] 1xl:rounded-[1rem] cursor-pointer",
+  cardTick:
+    "absolute w-[2rem] h-[2rem] 1xl:w-[2.4rem] 1xl:h-[2.4rem] 2xl:w-[2.7rem] 2xl:h-[2.7rem] 3xl:w-[3.2rem] 3xl:h-[3.2rem] p-[0.3rem] rounded-full flex justify-center items-center top-[50%] left-[1.5rem] -translate-y-[50%] bg-[#F4F4F1] 1xl:p-[0.4rem] 2xl:p-[0.5rem] 3xl:p-[0.7rem]",
 };
