@@ -51,7 +51,7 @@ const JoinUs = () => {
                     />
                   </div>
                   <p className={styles.textStyle}>
-                    Connect: Virtual Interviews & Onboarding <b>BBT Squad</b>
+                    Connect: Virtual Interviews and <b>Onboarding BBT Squad</b>
                   </p>
                 </li>
                 <li className={styles.listStyle}>
@@ -104,7 +104,7 @@ const JoinUs = () => {
                 simplify processing to succeed.
               </p>
               <Link
-                href="#"
+                href="/career"
                 className="w-full flex text-center justify-center items-center bg-black text-white rounded-[3rem] font-normal text-[1.4rem] py-[1.5rem] px-[2rem] md:max-w-[27rem] lg:max-w-none lg:w-max lg:px-[5rem] lg:py-[1.2rem] 1xl:px-[6rem] 2xl:py-[1.4rem] 2xl:xl:px-[7rem] 3xl:h-[6.5rem] 3xl:text-[1.8rem] 3xl:px-[8rem] 3xl:rounded-[3.5rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
               >
                 Join Us Now
