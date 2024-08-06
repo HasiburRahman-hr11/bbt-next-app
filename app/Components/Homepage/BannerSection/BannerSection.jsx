@@ -97,7 +97,7 @@ const BannerSection = () => {
                     </div>
                     <div>
                       <Link
-                        href="#"
+                        href="/collection"
                         className="bg-white text-black relative text-xl flex items-center font-medium h-[4.5rem] rounded-[3rem] border border-white py-[1.5rem] pr-[8rem] pl-[2rem] tracking-[-1px] transition-all duration-500 ease-in 1xl:h-[4.9rem] 2xl:py-[1.5rem] 2xl:pr-[9rem] 2xl:pl-[2.2rem] 3xl:text-2xl 3xl:py-[1.5rem] 3xl:pl-[2.4rem] 3xl:pr-[11rem] 3xl:h-[6.3rem] 3xl:rounded-[4rem] 3xl:text-[1.6rem] group hover:bg-transparent hover:text-white hover:border-[#808080] "
                       >
                         Discover Collection

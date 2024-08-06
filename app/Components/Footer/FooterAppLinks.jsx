@@ -6,7 +6,7 @@ const FooterAppLinks = () => {
     <div className="py-16 footer-app-links text-white sm:text-center lg:flex lg:flex-wrap lg:text-left lg:items-center border-b border-b-[#ebebf01a]">
       <div className="lg:mr-20">
         <h4 className="font-medium text-3xl lg:text-xl 1xl:text-1xl 3xl:text-1.9xl">
-          Download Big Boy Toyz Application!
+          Download Big Boy Toyz App!
         </h4>
         <p className="font-light mt-3 mb-8 text-zinc-400 text-2xl lg:text-lg lg:mb-0 3xl:text-1xl 3xl:mt-6">
           Application available on both platforms

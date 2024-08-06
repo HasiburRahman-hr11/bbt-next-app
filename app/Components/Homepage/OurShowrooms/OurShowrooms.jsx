@@ -13,6 +13,7 @@ const locations = [
   { city: "HYD", sector: "Hyderabad,  Banjara Hills", url: "#" },
   { city: "AMD", sector: "Gujarat, Ahmedabad", url: "#" },
   { city: "BLR", sector: "Bengaluru, Residency Road", url: "#" },
+  { city: "LUD", sector: "Ludhiana, Lake Street", url: "#" },
 ];
 
 const OurShowrooms = () => {

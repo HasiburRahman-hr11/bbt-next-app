@@ -3,6 +3,7 @@ import FooterMenuWrapper from "./FooterMenuWrapper";
 import FooterMenuDesktop from "./FooterMenuDesktop";
 import FooterAppLinks from "./FooterAppLinks";
 import FooterCopyRight from "./FooterCopyRight";
+import FooterContact from "./FooterContact";
 import BackToTop from '../CommonComponents/BackToTop/BackToTop'
 
 const Footer = () => {
@@ -18,6 +19,9 @@ const Footer = () => {
             <div className="hidden lg:block">
               <FooterMenuDesktop />
             </div>
+
+            <FooterContact />
+            
             <FooterAppLinks />
             <FooterCopyRight />
           </div>

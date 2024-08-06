@@ -10,18 +10,23 @@ const data = [
   {
     title: "BBT World",
     thumbnail: "/images/bbt-world-item-1.webp",
-    url: "#",
+    url: "/bbt-squad",
   },
   {
     title: "Wallpapers",
     thumbnail: "/images/bbt-world-item-2.webp",
-    url: "#",
+    url: "/wallpaper",
   },
   {
     title: "BBT World",
     thumbnail: "/images/bbt-world-item-1.webp",
-    url: "#",
+    url: "/bbt-squad",
   },
+  {
+    title: "Wallpapers",
+    thumbnail: "/images/bbt-world-item-2.webp",
+    url: "/wallpaper",
+  }
 ];
 
 const BbtFeatured = () => {

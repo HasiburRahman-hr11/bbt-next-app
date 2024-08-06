@@ -27,7 +27,7 @@ const ExploreSection = () => {
               <strong>to exotic cars.</strong>
             </h2>
             <div className="hidden md:block mt-10 xl:mt-14 2xl:mt-20">
-              <Link href="#" className="btn btnWhite roundedBtn">
+              <Link href="/about-us" className="btn btnWhite roundedBtn">
                 About Us
               </Link>
             </div>
@@ -44,7 +44,7 @@ const ExploreSection = () => {
             </a>
           </div>
           <div className="absolute bottom-0 w-full left-0 text-center px-10 md:hidden">
-            <Link href="#" className="btn btnWhite roundedBtn">
+            <Link href="/about-us" className="btn btnWhite roundedBtn">
               Explore More
             </Link>
           </div>

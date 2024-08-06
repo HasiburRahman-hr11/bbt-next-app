@@ -8,6 +8,29 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+const services = [
+  {
+    title:"Car Detailing",
+    url:"/car-detailing",
+    thumbnail:"/images/hp-service-item-1.webp"
+  },
+  {
+    title:"Service Centre",
+    url:"/services",
+    thumbnail:"/images/hp-service-item-2.webp"
+  },
+  {
+    title:"Car Detailing",
+    url:"/car-detailing",
+    thumbnail:"/images/hp-service-item-1.webp"
+  },
+  {
+    title:"Service Centre",
+    url:"/services",
+    thumbnail:"/images/hp-service-item-2.webp"
+  }
+]
+
 function NextArrow(props) {
   const { onClick, className } = props;
   return (
@@ -91,9 +114,11 @@ const OtherServices = () => {
           >
             <div className="pl-[2rem]">
               <Slider {...settings} className="hp-services-slider">
-                <OtherServiceCard />
-                <OtherServiceCard />
-                <OtherServiceCard />
+                {services.map((service, index)=> (
+                  <OtherServiceCard key={index} service={service} />
+                ))}
+                
+               
               </Slider>
             </div>
             <div className="container lg:w-full lg:pl-10 lg:pr-32 3xl:pr-40">

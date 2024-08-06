@@ -186,7 +186,7 @@ const SellYourCar = () => {
           data-aos-easing="linear"
           data-aos-duration="500"
         >
-          <Link href="#" className="btn btnWhite roundedBtn">
+          <Link href="/sell-your-car" className="btn btnWhite roundedBtn">
             Explore More
           </Link>
         </div>
