@@ -31,7 +31,7 @@ const ServiceCenter = () => {
               </p>
               <div className="mt-[3rem] max-w-[310px] mx-auto hidden lg:block lg:ml-0 1xl:mt-[4rem] 3xl:mt-[4.5rem]">
                 <Link
-                  href="/showrooms"
+                  href="/workshop"
                   className="bg-black text-white text-center text-[1.4rem] flex justify-center items-center rounded-[3rem] h-[5rem] xl:w-max xl:px-[4rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 1xl:px-[5rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 2xl:h-[6rem] 2xl:rounded-[4rem] 3xl:h-[7.3rem] 3xl:px-[7rem]"
                 >
                   View Our Workshops
@@ -48,7 +48,7 @@ const ServiceCenter = () => {
           </div>
           <div className="mt-[3rem] sm:max-w-[310px] sm:mx-auto lg:hidden">
             <Link
-              href=""
+              href="/workshop"
               className="bg-black text-white text-center text-[1.4rem] flex justify-center items-center rounded-[3rem] h-[5rem]"
             >
               View Our Workshops

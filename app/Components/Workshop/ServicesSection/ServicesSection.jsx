@@ -164,7 +164,9 @@ const ServicesSection = () => {
                     className={styles.tabContentIcon}
                   />
                 </div>
-                <h3 className={styles.tabContentTitle}>Car Detailing Service</h3>
+                <h3 className={styles.tabContentTitle}>
+                  Car Detailing Service
+                </h3>
               </div>
               <div className="w-max hidden md:block xl:min-w-[150px] 2xl:min-w-[170px] 3xl:min-w-[214px]">
                 <a href="#" className={styles.tabBtn}>
@@ -178,21 +180,28 @@ const ServicesSection = () => {
               </h4>
               <ul className="mt-[1.5rem] 3xl:mt-[2rem]">
                 <li className={styles.tabListItem}>
-                  Restoration services at Big Boy Toyz is an art.
+                  Get Paint Protection 3 step Compounding.
                 </li>
                 <li className={styles.tabListItem}>
-                  We make your car shine and glow along with paint restoration.
+                  Improve vehicle body life.
                 </li>
                 <li className={styles.tabListItem}>
-                  Making sure your car stands out in that car crowd.
+                  Protect from minor scratches.
                 </li>
+                <li className={styles.tabListItem}>
+                  Protect car body Paint and metal surfaces from contamination.
+                </li>
+                <li className={styles.tabListItem}>Retain vehicle value.</li>
               </ul>
               <p className="text-[1.2rem] xl:text-[1.3rem] mt-[2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.9rem] 3xl:mt-[3rem]">
-                Experience the Art of Automotive Restoration Unleashed. We don’t
-                simply paint; we craft a masterpiece that transforms your car
-                into a radiant symbol of excellence, ensuring it captivates
-                every eye. Rely on us to elevate your vehicle's allure to its
-                zenith with our meticulous paint restoration services.
+                We are dedicated to safeguarding and enriching your vehicle's
+                charm and durability. Utilizing our advanced 3-step compounding
+                process, we offer specialized paint protection that ensures your
+                vehicle's exterior withstands the trials of time. Our
+                comprehensive services defend your car against minor scratches
+                and safeguard its paint and metal surfaces from harmful
+                contaminants. Entrust us to maintain your vehicle's value and
+                ensure it maintains its impeccable appearance.
               </p>
               <div className="w-max mx-auto mt-[3rem] block md:hidden min-w-[200px]">
                 <a href="#" className={styles.tabBtn}>
@@ -234,21 +243,29 @@ const ServicesSection = () => {
               </h4>
               <ul className="mt-[1.5rem] 3xl:mt-[2rem]">
                 <li className={styles.tabListItem}>
-                  Restoration services at Big Boy Toyz is an art.
+                  Gas and AC system thorough check-up.
                 </li>
                 <li className={styles.tabListItem}>
-                  We make your car shine and glow along with paint restoration.
+                  Maintain AC cooling effect in all seasons.
                 </li>
                 <li className={styles.tabListItem}>
-                  Making sure your car stands out in that car crowd.
+                  Fresh, fatigue-less and comfortable drive.
+                </li>
+                <li className={styles.tabListItem}>
+                  Disinfection of AC system.
+                </li>
+                <li className={styles.tabListItem}>
+                  Proper AC Gas replacement.
                 </li>
               </ul>
               <p className="text-[1.2rem] xl:text-[1.3rem] mt-[2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.9rem] 3xl:mt-[3rem]">
-                Experience the Art of Automotive Restoration Unleashed. We don’t
-                simply paint; we craft a masterpiece that transforms your car
-                into a radiant symbol of excellence, ensuring it captivates
-                every eye. Rely on us to elevate your vehicle's allure to its
-                zenith with our meticulous paint restoration services.
+                We're committed to ensuring your driving experience is
+                consistently exceptional. Our extensive services encompass a
+                meticulous inspection of your gas and AC system, ensuring
+                consistent cooling throughout the year, creating a rejuvenating
+                and fatigue-free environment, disinfecting your AC system, and
+                precise AC gas replacement. Count on us to deliver a refreshing
+                and comfortable drive every time.
               </p>
               <div className="w-max mx-auto mt-[3rem] block md:hidden min-w-[200px]">
                 <a href="#" className={styles.tabBtn}>
@@ -283,26 +300,10 @@ const ServicesSection = () => {
               </div>
             </div>
             <div className="py-[2rem] xl:pl-[5.5rem] xl:pr-[3rem] 1xl:pl-[7rem] 3xl:pl-[9rem] 3xl:pr-[5rem] 3xl:py-[2rem]">
-              <h4 className="text-[1.7rem] 1xl:text-[2.6rem] 3xl:text-[3.5rem] tracking-tighter font-normal">
-                Includes
-              </h4>
-              <ul className="mt-[1.5rem] 3xl:mt-[2rem]">
-                <li className={styles.tabListItem}>
-                  Restoration services at Big Boy Toyz is an art.
-                </li>
-                <li className={styles.tabListItem}>
-                  We make your car shine and glow along with paint restoration.
-                </li>
-                <li className={styles.tabListItem}>
-                  Making sure your car stands out in that car crowd.
-                </li>
-              </ul>
               <p className="text-[1.2rem] xl:text-[1.3rem] mt-[2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.9rem] 3xl:mt-[3rem]">
-                Experience the Art of Automotive Restoration Unleashed. We don’t
-                simply paint; we craft a masterpiece that transforms your car
-                into a radiant symbol of excellence, ensuring it captivates
-                every eye. Rely on us to elevate your vehicle's allure to its
-                zenith with our meticulous paint restoration services.
+                Get hassle free repairs if your car is insured . Just pay File
+                charge and rest shall be credited in your account for all the
+                repairs and services .
               </p>
               <div className="w-max mx-auto mt-[3rem] block md:hidden min-w-[200px]">
                 <a href="#" className={styles.tabBtn}>
@@ -328,7 +329,9 @@ const ServicesSection = () => {
                     className={styles.tabContentIcon}
                   />
                 </div>
-                <h3 className={styles.tabContentTitle}>Denting and Painting Service</h3>
+                <h3 className={styles.tabContentTitle}>
+                  Denting and Painting Service
+                </h3>
               </div>
               <div className="w-max hidden md:block xl:min-w-[150px] 2xl:min-w-[170px] 3xl:min-w-[214px]">
                 <a href="#" className={styles.tabBtn}>
@@ -342,21 +345,28 @@ const ServicesSection = () => {
               </h4>
               <ul className="mt-[1.5rem] 3xl:mt-[2rem]">
                 <li className={styles.tabListItem}>
-                  Restoration services at Big Boy Toyz is an art.
+                  Computerized color matching.
                 </li>
+                <li className={styles.tabListItem}>In-Paintbooth services.</li>
                 <li className={styles.tabListItem}>
-                  We make your car shine and glow along with paint restoration.
-                </li>
-                <li className={styles.tabListItem}>
-                  Making sure your car stands out in that car crowd.
+                  2 year warranty for paint protection.
                 </li>
               </ul>
               <p className="text-[1.2rem] xl:text-[1.3rem] mt-[2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.9rem] 3xl:mt-[3rem]">
-                Experience the Art of Automotive Restoration Unleashed. We don’t
-                simply paint; we craft a masterpiece that transforms your car
-                into a radiant symbol of excellence, ensuring it captivates
-                every eye. Rely on us to elevate your vehicle's allure to its
-                zenith with our meticulous paint restoration services.
+                Welcome to your trusted destination for top-notch car servicing
+                at Big Boy Toyzs. We understand the importance of giving your
+                vehicle the best care possible, which is why we offer a range of
+                specialized services to ensure your car always looks its best.
+                Our state-of-the-art facility is equipped with cutting-edge
+                technology, including computerized color matching, to ensure
+                that your car's finish is restored to perfection. <br /> <br />
+                With our in-paint booth services, we guarantee a pristine paint
+                job every time, and we're so confident in the quality of our
+                work that we provide a generous 2-year warranty for paint
+                protection. At Big Boy Toyzs, we go the extra mile to ensure
+                your car leaves our workshop looking as good as new. <br /> <br />
+                Trust us with your vehicle, and experience excellence in denting
+                and painting services that exceed your expectations.
               </p>
               <div className="w-max mx-auto mt-[3rem] block md:hidden min-w-[200px]">
                 <a href="#" className={styles.tabBtn}>
@@ -384,7 +394,9 @@ const ServicesSection = () => {
                     className={styles.tabContentIcon}
                   />
                 </div>
-                <h3 className={styles.tabContentTitle}>Periodic Maintenance Service</h3>
+                <h3 className={styles.tabContentTitle}>
+                  Periodic Maintenance Service
+                </h3>
               </div>
               <div className="w-max hidden md:block xl:min-w-[150px] 2xl:min-w-[170px] 3xl:min-w-[214px]">
                 <a href="#" className={styles.tabBtn}>
@@ -397,22 +409,31 @@ const ServicesSection = () => {
                 Includes
               </h4>
               <ul className="mt-[1.5rem] 3xl:mt-[2rem]">
+                <li className={styles.tabListItem}>Air filter replacement.</li>
+                <li className={styles.tabListItem}>Oil filter replacement.</li>
                 <li className={styles.tabListItem}>
-                  Restoration services at Big Boy Toyz is an art.
+                  Engine Oil(Synthetic Technology-Castrol) Replacement.
                 </li>
+                <li className={styles.tabListItem}>Wheel Servicing.</li>
+                <li className={styles.tabListItem}>Brakes Servicing.</li>
+                <li className={styles.tabListItem}>Car Scanning.</li>
                 <li className={styles.tabListItem}>
-                  We make your car shine and glow along with paint restoration.
+                  Brake Fluids & Coolant Top-up.
                 </li>
-                <li className={styles.tabListItem}>
-                  Making sure your car stands out in that car crowd.
-                </li>
+                <li className={styles.tabListItem}>Deep Car Cleaning.</li>
               </ul>
               <p className="text-[1.2rem] xl:text-[1.3rem] mt-[2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.9rem] 3xl:mt-[3rem]">
-                Experience the Art of Automotive Restoration Unleashed. We don’t
-                simply paint; we craft a masterpiece that transforms your car
-                into a radiant symbol of excellence, ensuring it captivates
-                every eye. Rely on us to elevate your vehicle's allure to its
-                zenith with our meticulous paint restoration services.
+                Welcome to Big Boy Toyzs, your trusted destination for top-notch
+                car servicing and care. We understand the value of your vehicle
+                and the importance of keeping it running smoothly. That's why at
+                Big Boy Toyzs, we provide your vehicle with the utmost care and
+                attention it deserves. <br /> <br />
+                Our skilled technicians, premium products, and state-of-the-art
+                equipment ensure that your car receives the best periodic
+                maintenance services available in the industry. You can trust us
+                with your vehicle, knowing that every service is performed with
+                precision and expertise. <br /> <br />
+                Experience the difference in every drive with Big Boy Toyzs.
               </p>
               <div className="w-max mx-auto mt-[3rem] block md:hidden min-w-[200px]">
                 <a href="#" className={styles.tabBtn}>

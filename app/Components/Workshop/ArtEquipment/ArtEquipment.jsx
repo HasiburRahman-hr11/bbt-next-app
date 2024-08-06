@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ArtEquipment = () => {
@@ -53,12 +54,12 @@ const ArtEquipment = () => {
                   light adored outlandish home.
                 </p>
                 <div className="w-max min-w-[170px] xl:min-w-[200px] 3xl:min-w-[310px] mx-auto">
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact-us"
                     className="bg-black w-full text-white text-center text-[1.4rem] flex justify-center items-center rounded-[3rem] px-[3rem] h-[5rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 2xl:h-[6rem] 2xl:rounded-[4rem] 3xl:h-[7.3rem] transition-all duration-500 hover:bg-[#333]"
                   >
                     Book Visit
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

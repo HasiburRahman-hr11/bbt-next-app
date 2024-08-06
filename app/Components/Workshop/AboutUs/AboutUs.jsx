@@ -7,7 +7,7 @@ const ourShowroom = {
   thumbnail: "/images/workshop/showroom-bg.webp",
 };
 const ourTeam = {
-  url: "/showrooms",
+  url: "/team",
   title: "Our Team",
   thumbnail: "/images/workshop/team-bg.webp",
 };
