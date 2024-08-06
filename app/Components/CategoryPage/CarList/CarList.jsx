@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
 // Dummy Data
-import { cars } from "../../../../public/data/dummyData";
+import cars from "./cars";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";

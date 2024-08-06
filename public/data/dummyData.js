@@ -18,8 +18,8 @@ export const cars = [
     thumbnail: "/images/inclusion-item-1.webp",
     gallery: [
       "/images/inclusion-item-1.webp",
-      "/images/inclusion-item-2.webp",
-      "/images/inclusion-item-3.webp",
+      "/images/inclusion-item-1.webp",
+      "/images/inclusion-item-1.webp",
     ],
     isBooked: true,
     isSoldOut: false,
@@ -44,8 +44,8 @@ export const cars = [
     thumbnail: "/images/inclusion-item-2.webp",
     gallery: [
       "/images/inclusion-item-2.webp",
-      "/images/inclusion-item-3.webp",
-      "/images/inclusion-item-1.webp",
+      "/images/inclusion-item-2.webp",
+      "/images/inclusion-item-2.webp",
     ],
     isBooked: false,
     isSoldOut: false,
@@ -70,8 +70,8 @@ export const cars = [
     thumbnail: "/images/inclusion-item-3.webp",
     gallery: [
       "/images/inclusion-item-3.webp",
-      "/images/inclusion-item-2.webp",
-      "/images/inclusion-item-1.webp",
+      "/images/inclusion-item-3.webp",
+      "/images/inclusion-item-3.webp",
     ],
     isBooked: false,
     isSoldOut: true,
@@ -96,8 +96,8 @@ export const cars = [
     thumbnail: "/images/toyota-land-cruiser-LC-300.webp",
     gallery: [
       "/images/toyota-land-cruiser-LC-300.webp",
-      "/images/mercedes-benz-AMG-G-63.webp",
-      "/images/lamborghini-urus-masonry-Edition.webp",
+      "/images/toyota-land-cruiser-LC-300.webp",
+      "/images/toyota-land-cruiser-LC-300.webp",
     ],
     isBooked: false,
     isSoldOut: false,
@@ -122,7 +122,7 @@ export const cars = [
     thumbnail: "/images/mercedes-benz-AMG-G-63.webp",
     gallery: [
       "/images/mercedes-benz-AMG-G-63.webp",
-      "/images/inclusion-item-2.webp",
+      "/images/mercedes-benz-AMG-G-63.webp",
       "/images/mercedes-benz-AMG-G-63.webp",
     ],
     isBooked: false,
@@ -148,7 +148,7 @@ export const cars = [
     thumbnail: "/images/lamborghini-urus-masonry-Edition.webp",
     gallery: [
       "/images/lamborghini-urus-masonry-Edition.webp",
-      "/images/inclusion-item-2.webp",
+      "/images/lamborghini-urus-masonry-Edition.webp",
       "/images/lamborghini-urus-masonry-Edition.webp",
     ],
     isBooked: true,
@@ -174,7 +174,7 @@ export const cars = [
     thumbnail: "/images/bentley-bentayga-V8-Facelift.webp",
     gallery: [
       "/images/bentley-bentayga-V8-Facelift.webp",
-      "/images/inclusion-item-2.webp",
+      "/images/bentley-bentayga-V8-Facelift.webp",
       "/images/bentley-bentayga-V8-Facelift.webp",
     ],
     isBooked: false,
@@ -200,7 +200,7 @@ export const cars = [
     thumbnail: "/images/mercedes-benz-Gle-43-AMG Coupe.webp",
     gallery: [
       "/images/mercedes-benz-Gle-43-AMG Coupe.webp",
-      "/images/inclusion-item-2.webp",
+      "/images/mercedes-benz-Gle-43-AMG Coupe.webp",
       "/images/mercedes-benz-Gle-43-AMG Coupe.webp",
     ],
     isBooked: false,
@@ -226,7 +226,7 @@ export const cars = [
     thumbnail: "/images/lexus-LX570.webp",
     gallery: [
       "/images/lexus-LX570.webp",
-      "/images/inclusion-item-2.webp",
+      "/images/lexus-LX570.webp",
       "/images/lexus-LX570.webp",
     ],
     isBooked: false,
@@ -252,7 +252,7 @@ export const cars = [
     thumbnail: "/images/range-rover-sports-hse.webp",
     gallery: [
       "/images/range-rover-sports-hse.webp",
-      "/images/inclusion-item-2.webp",
+      "/images/range-rover-sports-hse.webp",
       "/images/range-rover-sports-hse.webp",
     ],
     isBooked: false,

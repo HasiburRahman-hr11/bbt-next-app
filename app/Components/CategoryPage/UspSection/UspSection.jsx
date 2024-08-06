@@ -12,22 +12,22 @@ const uspList = [
       "Utilizes a 4×4/ All Wheel Drive framework that transmits power to each of the four wheels for happier off road mobility.",
   },
   {
+    title: "More Space ",
+    icon: "/images/suv/suv-usp-icon-3.webp",
+    description:
+      "The greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travellers.",
+  },
+  {
     title: "More Comfort ",
     icon: "/images/suv/suv-usp-icon-2.webp",
     description:
       "The higher seating position makes the ride significantly pleasant and gives better on-street perceivability.",
   },
   {
-    title: "More Space ",
-    icon: "/images/suv/suv-usp-icon-3.webp",
-    description:
-      "Greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travelers.",
-  },
-  {
     title: "Feel Like A King ",
     icon: "/images/suv/suv-usp-icon-4.webp",
     description:
-      "Greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travelers.",
+      "Owning a SUV ensures that you feel like the King of the Road while driving around the town 3-feet over the ground.",
   },
 ];
 
@@ -107,7 +107,7 @@ const UspSection = () => {
                     <h6 className="text-1.4rem xl:text-[1.2rem] 1xl:text-[1.3rem] 2xl:text-[1.4rem] font-[600] tracking-[-0.5px] 3xl:text-[1.7rem]">
                       {usp.title}
                     </h6>
-                    <p className="text-xl mt-3 tracking-tight xl:text-[1.05rem] xl:leading-[1.2] 1xl:text-[1.15rem] 2xl:text-[1.2rem] 3xl:text-[1.4rem] 3xl:leading-[1.5] font-[300]">
+                    <p className="text-xl mt-3 tracking-tight xl:text-[1.05rem] xl:leading-[1.2] 1xl:text-[1.15rem] 2xl:text-[1.2rem] 3xl:text-[1.4rem] 3xl:leading-[1.5] font-[400]">
                       {usp.description}
                     </p>
                   </div>
