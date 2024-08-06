@@ -274,7 +274,7 @@ export const blogs = [
     _id: "002",
     title: "Make the ultimate choice when you buy a Used Porsche",
     description:
-      "The brand claims about Jaguar that:  Whether you desire adventure or prefer to relax while sipping an  aperitif by the sea: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
+      "The outlook is stylish, where you see the typical coupe-style, which gives you the liberty to choose the colors.: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
     thumbnail: "/images/blogs/blog-2.webp",
     banner: "/images/blogs/blog-banner.webp",
   },
@@ -282,7 +282,7 @@ export const blogs = [
     _id: "003",
     title: "When you buy a Used Porsche you are owning a striking performance",
     description:
-      "The brand claims about Jaguar that:  Whether you desire adventure or prefer to relax while sipping an  aperitif by the sea: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
+      "Speed and performance don’t depend on  size. The Porsche can be anything by design but a sports car by nature.: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
     thumbnail: "/images/blogs/blog-3.webp",
     banner: "/images/blogs/blog-banner.webp",
   },
@@ -290,7 +290,7 @@ export const blogs = [
     _id: "004",
     title: "This Used Porsche is going push your limit when you own it",
     description:
-      "The brand claims about Jaguar that:  Whether you desire adventure or prefer to relax while sipping an  aperitif by the sea: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
+      "It is a blessing to own a luxury car that will push you through your limits and allow you to achieve the unexpected.: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
     thumbnail: "/images/blogs/blog-4.webp",
     banner: "/images/blogs/blog-banner.webp",
   },
@@ -298,7 +298,7 @@ export const blogs = [
     _id: "005",
     title: "You drive your definition of Audi",
     description:
-      "The brand claims about Jaguar that:  Whether you desire adventure or prefer to relax while sipping an  aperitif by the sea: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
+      "When you buy premium luxury cars like Audi you invite the festival of grandeur experience of driving and passionate road miles.: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
     thumbnail: "/images/blogs/blog-5.webp",
     banner: "/images/blogs/blog-banner.webp",
   },
@@ -306,7 +306,7 @@ export const blogs = [
     _id: "006",
     title: "New v/s Used - Luxury Car Buying Advice & Tips",
     description:
-      "The brand claims about Jaguar that:  Whether you desire adventure or prefer to relax while sipping an  aperitif by the sea: with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
+      "Buying a luxury car is nothing less than celebrating a festival. If you have the money. with Jaguar fast and furious everyone can satisfy  their own personal longing for freedom, in complete safety and with the  comfort that only a real home can offer. The conviction is accurate like  the stars of the universe. Jaguar over the years has given us some  amazing cars in the world and it will continue to for the forthcoming  future. When you compete with yourself then you are raging the race.",
     thumbnail: "/images/blogs/blog-1.webp",
     banner: "/images/blogs/blog-banner.webp",
   },
