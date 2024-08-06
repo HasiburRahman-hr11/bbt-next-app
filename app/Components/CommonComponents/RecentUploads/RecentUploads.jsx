@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import CollectionItem from "./CollectionItem";
 import Image from "next/image";
+import cars from "./cars";
 
 function NextArrow(props) {
   const { onClick, className } = props;
@@ -100,10 +101,9 @@ const RecentUploads = ({ bgColor }) => {
         </div>
         <div className="pl-[2rem] lg:pl-0 lg:[&_.slick-list]:w-[85%] lg:[&_.slick-list]:mx-auto">
           <Slider {...settings} className="recent-uploads-slider">
-            <CollectionItem />
-            <CollectionItem />
-            <CollectionItem />
-            <CollectionItem />
+            {cars.map((car, index) => (
+              <CollectionItem data={car} key={index} />
+            ))}
           </Slider>
         </div>
       </div>

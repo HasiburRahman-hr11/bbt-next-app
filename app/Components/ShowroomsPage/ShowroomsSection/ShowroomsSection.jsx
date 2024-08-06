@@ -30,96 +30,115 @@ let settings = {
 
 const showrooms = [
   {
-    name: "Gurgaon Showroom",
-    location: "Plot No. 134, Sector 37, Pace City 1, Gurgaon, Haryana, 122001",
+    name: "Mumbai Showroom",
+    location:
+      "7, Hubtown Sunmist, Opposite Hubtown Solaris, Telli Galli, Andheri East, N S Phadke Marg, Mumbai - 400053",
     mapLink: "#",
     phoneNumber: "09999999983",
     meetingLink: "#",
     images: [
-      "/images/showroom-page/showroom-slide-img-1.webp",
       "/images/showroom-page/showroom-slide-img-2.webp",
-      "/images/showroom-page/showroom-slide-img-3.webp",
-      "/images/showroom-page/showroom-slide-img-4.webp",
+      "/images/showroom-page/showroom-slide-img-2.webp",
+      "/images/showroom-page/showroom-slide-img-2.webp",
+      "/images/showroom-page/showroom-slide-img-2.webp",
     ],
   },
   {
-    name: "Mumbai Showroom",
-    location:
-      "Shop No 7, Hubtown Sunmist, Solaris, Telli Galli, Opposite HubTown, Vijay Nagar, Andheri East, Mumbai, 400053",
+    name: "Gurgaon Showroom",
+    location: "Plot No. 134, Sector 37, Pace City 1, Gurgaon, Haryana - 122001, India",
     mapLink: "#",
     phoneNumber: "09999999983",
     meetingLink: "#",
     images: [
-      "/images/showroom-page/showroom-slide-img-2.webp",
-      "/images/showroom-page/showroom-slide-img-4.webp",
-      "/images/showroom-page/showroom-slide-img-5.webp",
+      "/images/showroom-page/showroom-slide-img-1.webp",
+      "/images/showroom-page/showroom-slide-img-1.webp",
+      "/images/showroom-page/showroom-slide-img-1.webp",
       "/images/showroom-page/showroom-slide-img-1.webp",
     ],
   },
+
   {
     name: "Hyderabad Showroom",
     location:
-      "Road No 2, Banjara Hills Shangrila Plaza, opp. KBR, Hyderabad, Telangana - 34",
+      "Road-2, Banjara Hills, Shangrila Plaza, Opp.KBR Park, Hyderabad, Telangana - 500034",
     mapLink: "#",
     phoneNumber: "09999999983",
     meetingLink: "#",
     images: [
       "/images/showroom-page/showroom-slide-img-3.webp",
-      "/images/showroom-page/showroom-slide-img-4.webp",
-      "/images/showroom-page/showroom-slide-img-1.webp",
-      "/images/showroom-page/showroom-slide-img-2.webp",
-    ],
-  },
-  {
-    name: "Ahmedabad Showroom",
-    location:
-      "Cama Motors, Rustom Cama Marg, Old City, Lal Darwaja, Ahmedabad, Gujarat 380001",
-    mapLink: "#",
-    phoneNumber: "09999999983",
-    meetingLink: "#",
-    images: [
-      "/images/showroom-page/showroom-slide-img-4.webp",
-      "/images/showroom-page/showroom-slide-img-1.webp",
-      "/images/showroom-page/showroom-slide-img-2.webp",
+      "/images/showroom-page/showroom-slide-img-3.webp",
+      "/images/showroom-page/showroom-slide-img-3.webp",
       "/images/showroom-page/showroom-slide-img-3.webp",
     ],
   },
   {
     name: "Bengaluru Showroom",
     location:
-      "140, Residency Rd, Shanthala Nagar, Richmond Town, Bengaluru, Karnataka 560025",
+      "140, Residency Rd, Shanthala Nagar, Richmond Town, Bengaluru, Karnataka-560025",
     mapLink: "#",
     phoneNumber: "09999999983",
     meetingLink: "#",
     images: [
       "/images/showroom-page/showroom-slide-img-5.webp",
-      "/images/showroom-page/showroom-slide-img-3.webp",
+      "/images/showroom-page/showroom-slide-img-5.webp",
+      "/images/showroom-page/showroom-slide-img-5.webp",
+      "/images/showroom-page/showroom-slide-img-5.webp",
+    ],
+  },
+  {
+    name: "Ahmedabad Showroom",
+    location:
+      "Cama Motors, Rustom Cama Marg, Old City, Lal Darwaja, Ahmedabad, Gujarat-380001",
+    mapLink: "#",
+    phoneNumber: "09999999983",
+    meetingLink: "#",
+    images: [
       "/images/showroom-page/showroom-slide-img-4.webp",
-      "/images/showroom-page/showroom-slide-img-1.webp",
+      "/images/showroom-page/showroom-slide-img-4.webp",
+      "/images/showroom-page/showroom-slide-img-4.webp",
+      "/images/showroom-page/showroom-slide-img-4.webp",
+    ],
+  },
+  {
+    name: "Ludhiana Showroom",
+    location:
+      "1st Floor, Lake Street, Ferozepur - Ludhiana Rd, Dakha, Punjab 141102",
+    mapLink: "#",
+    phoneNumber: "09999999983",
+    meetingLink: "#",
+    images: [
+      "/images/showroom-page/showroom-slide-img-6.webp",
+      "/images/showroom-page/showroom-slide-img-6.webp",
+      "/images/showroom-page/showroom-slide-img-6.webp",
+      "/images/showroom-page/showroom-slide-img-6.webp",
     ],
   },
 ];
 
 const showroomTabs = [
   {
-    title: "Gurgaon",
-    icon: "images/showroom-page/showroom-tab-icon-1.webp",
-  },
-  {
     title: "Mumbai",
     icon: "images/showroom-page/showroom-tab-icon-2.webp",
+  },
+  {
+    title: "Gurgaon",
+    icon: "images/showroom-page/showroom-tab-icon-1.webp",
   },
   {
     title: "Hyderabad",
     icon: "images/showroom-page/showroom-tab-icon-3.webp",
   },
   {
+    title: "Bengaluru",
+    icon: "images/showroom-page/showroom-tab-icon-5.webp",
+  },
+  {
     title: "Ahmedabad",
     icon: "images/showroom-page/showroom-tab-icon-4.webp",
   },
   {
-    title: "Bengaluru",
-    icon: "images/showroom-page/showroom-tab-icon-5.webp",
+    title: "Ludhiana",
+    icon: "images/showroom-page/showroom-tab-icon-3.webp",
   },
 ];
 
@@ -150,7 +169,7 @@ const ShowroomsSection = () => {
               >
                 <a
                   href={`#showroomList${index + 1}`}
-                  className={`flex justify-center items-center leading-[1] text-[1.2rem] px-[2.5rem] py-[0.8rem] rounded-[3rem] mr-[1rem] mb-[1rem] lg:h-[4rem] xl:h-[5.5rem] xl:text-[1.4rem] xl:w-full xl:py-[1.2rem] xl:mr-0  xl:border xl-border-[#D9D9D9] hover:shadow-showroom-tab transition-all duration-500 ease-in-out 1xl:font-[600] 1xl:text-[1.7rem] 1xl:h-[6.3rem] 1xl:rounded-[4rem] 2xl:h-[6.7rem] 3xl:h-[8.5rem] 3xl:text-[2.2rem] ${
+                  className={`flex justify-center items-center leading-[1] text-[1.2rem] px-[2.5rem] py-[0.8rem] rounded-[3rem] mr-[1rem] mb-[1.5rem] lg:h-[4rem] xl:h-[5.5rem] xl:text-[1.4rem] xl:w-full xl:py-[1.2rem] xl:mr-0  xl:border xl-border-[#D9D9D9] hover:shadow-showroom-tab transition-all duration-500 ease-in-out 1xl:font-[600] 1xl:text-[1.7rem] 1xl:h-[6.3rem] 1xl:rounded-[4rem] 2xl:h-[6.7rem] 3xl:h-[8.5rem] 3xl:text-[2.2rem] ${
                     activeTab === `tab-${index + 1}`
                       ? "bg-black text-white [&>img]:invert xl:bg-white xl:text-black xl:[&>img]:invert-0 xl:shadow-showroom-tab xl:border-0"
                       : "bg-[#F3F3F3] text-black xl:bg-white"

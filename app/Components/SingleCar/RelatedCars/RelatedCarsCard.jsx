@@ -6,7 +6,7 @@ import CommonInfoUsp from "../../CommonComponents/CommonInfoUsp/CommonInfoUsp";
 const RelatedCarsCard = () => {
   return (
     <Link
-      href="/products/114325"
+      href="/cars/114325"
       className="mr-9 bg-white lg:mx-4 block transition-all duration-500 ease-in-out common-car-item xl:mx-7 1xl:mx-6 2xl:mx-8"
     >
       <div

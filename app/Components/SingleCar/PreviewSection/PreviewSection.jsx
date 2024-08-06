@@ -101,7 +101,7 @@ const PreviewSection = () => {
                 <div className="w-70% sm:flex-grow pl-10 lg:w-full lg:pl-0">
                   <h2 className="text-25px tracking-tight lg:font-normal xl:text-5xl xl:leading-relaxed 1xl:text-5.5xl 3xl:text-7xl 3xl:leading-1.4">
                     <span className="lg:font-light lg:block">
-                      Hurray! This Car Is
+                      Hurray! This Car is
                     </span>{" "}
                     BBT Certified.
                   </h2>

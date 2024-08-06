@@ -11,25 +11,25 @@ import "aos/dist/aos.css";
 
 const uspList = [
   {
-    title: "Asia's Biggest Studio",
-    description:
-      "At BBT, we offer you comparisons across various parameters thereby helping you choose the ideal one.",
-    thumbnail: "/images/about-us/about-usp-img-2.webp",
-  },
-  {
     title: "7600+ Happy Customers",
     description:
       "At BBT, we offer you comparisons across various parameters thereby helping you choose the ideal one.",
     thumbnail: "/images/about-us/about-usp-img-1.webp",
   },
   {
-    title: "151 Quality Checkpoints",
+    title: "Asia's Biggest Studio",
+    description:
+      "At BBT, we offer you comparisons across various parameters thereby helping you choose the ideal one.",
+    thumbnail: "/images/about-us/about-usp-img-2.webp",
+  },
+  {
+    title: "30 Luxury Car Brands",
     description:
       "At BBT, we offer you comparisons across various parameters thereby helping you choose the ideal one.",
     thumbnail: "/images/about-us/about-usp-img-3.webp",
   },
   {
-    title: "30 Luxury Car Brands",
+    title: "151 Quality Checkpoints",
     description:
       "At BBT, we offer you comparisons across various parameters thereby helping you choose the ideal one.",
     thumbnail: "/images/about-us/about-usp-img-4.webp",
@@ -56,7 +56,7 @@ const UspSection = () => {
           >
             <div className="text-center xl:text-left xl:w-[39%]">
               <h2 className="font-normal xl:text-[4.2rem] 3xl:text-[5.8rem]">
-                Our Usps{" "}
+                Our Usp
               </h2>
               <p className="font-light text-[1.2rem] leading-[1.5] mt-[1rem] md:text-[1.4rem] lg:mt-[2rem] xl:text-[1.13rem] 1xl:text-[1.23rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
                 Since then our mission has been to provide quality exotic cars

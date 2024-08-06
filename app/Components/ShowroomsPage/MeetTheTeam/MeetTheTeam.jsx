@@ -51,7 +51,7 @@ const MeetTheTeam = () => {
               </div>
               <div className="text-center sm:text-left sm:mt-[3rem] 3xl:mt-[5rem]">
                 <Link
-                  href="/bbt-squad"
+                  href="/team"
                   className="w-full max-w-[31rem] h-[5.5rem] flex justify-center items-center text-[1.4rem] bg-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium sm:ml-0 sm:max-w-[27.3rem] xl:h-[4.5rem] xl:max-w-[17rem] xl:text-[1.2rem] 1xl:h-[5rem] 1xl:max-w-[20rem] 1xl:text-[1.4rem] 3xl:h-[6.57rem] 3xl:max-w-[27rem] 3xl:text-[1.8rem] hover:bg-[#f1f1f1] transition-all duration-500 ease-in-out"
                 >
                   Meet The Team

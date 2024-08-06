@@ -103,7 +103,7 @@ const PopularBrands = () => {
           >
             <h2 className="titleWithLine flex-grow xl:tracking-tighter">
               <span className="lg:bg-white lg:pr-10 relative z-10">
-                Other Brands
+              Our Portfolio
               </span>
             </h2>
             <div className="hidden lg:inline-block w-max bg-white pl-10">

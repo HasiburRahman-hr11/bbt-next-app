@@ -33,7 +33,7 @@ const CollectionItem = ({ data, popupToggler }) => {
       <div className=" pb-16 md:bg-[#fff] md:mt-[4rem] common-car-item transition-all duration-500 ease-in-out">
         <div className="item-divider max-w-[90%] mx-auto h-[1px] border-t border-[#D9D9D9] md:hidden"></div>
         <Link
-          href={`/products/${data._id}`}
+          href={`/cars/${data._id}`}
           className="block px-14 pt-16 md:px-10 1xl:pl-[3rem] 3xl:pl-[4rem]"
         >
           <p
@@ -66,7 +66,7 @@ const CollectionItem = ({ data, popupToggler }) => {
               />
             </div>
           )}
-          <Link href={`/products/${data._id}`} className="block">
+          <Link href={`/cars/${data._id}`} className="block">
             <Slider {...settings} className="collection-gallery-slider">
               {data.gallery.map((galleryImage, index) => (
                 <div key={index} className="relative pt-2">
@@ -102,7 +102,7 @@ const CollectionItem = ({ data, popupToggler }) => {
         </div>
 
         <div className="px-16 pt-8 md:px-10 xl:px-[3rem] 1xl:px-[4rem] 3xl:px-[5rem] 1xl:pt-[2.5rem] 3xl:pt-[3rem] ">
-          <Link href={`/products/${data._id}`} className="block">
+          <Link href={`/cars/${data._id}`} className="block">
             <CommonInfoUsp data={data} />
           </Link>
 

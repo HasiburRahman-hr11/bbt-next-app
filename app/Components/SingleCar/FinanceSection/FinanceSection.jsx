@@ -68,7 +68,7 @@ const FinanceSection = () => {
             </div>
             <div className="relative text-white text-center mx-auto px-5 py-8 mt-16 border border-[#ffffff80] rounded-[1rem] max-w-[24rem] lg:w-max lg:rounded-[0.6rem] lg:mt-10 lg:py-5 lg:px-8 xl:mt-12 3xl:mt-20 3xl:px-16 3xl:py-9 3xl:max-w-[40rem]">
               <p className="absolute w-max px-[1.5rem] left-[50%] top-[-1rem] translate-x-[-50%] text-xl bg-black lg:top-[-0.8rem] lg:text-base 3xl:text-1xl before:absolute before:content-[''] before:w-[5px] before:h-[5px] before:rounded-[50%] before:bg-[#ffffff80] before:top-[50%] before:translate-y-[-50%] before:left-0 after:absolute after:content-[''] after:w-[5px] after:h-[5px] after:rounded-[50%] after:bg-[#ffffff80] after:top-[50%] after:translate-y-[-50%] after:right-0">
-                Emi Starts @
+                EMI Starts @
               </p>
               <h5 className="lg:text-1xl xl:text-xl 1xl:text-2xl 3xl:text-3.5xl">
                 ₹ {monthlyEmi}/- <span className="font-extralight">Per Month</span>

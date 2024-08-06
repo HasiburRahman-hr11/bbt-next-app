@@ -6,27 +6,27 @@ import "aos/dist/aos.css";
 
 const faqList = [
   {
-    question: "Why Buy The Used Aston Martin DBX Is A Good Choice?",
+    question: "Where Can I Buy The Used BMW 3 Series In Bangalore?",
+    answer:
+      "You can buy the best used BMW 3 series cars in Bangalore, which excels in quality and performance at only the hub, Big Boy Toyz. which offers the best deal in Bangalore.",
+  },
+  {
+    question: "Where To Buy BMW Used Cars In India?",
     answer:
       "Greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travelers.",
   },
   {
-    question: "How Many Aston Martin Models Available In India?",
+    question: "How Is The Used BMW X7?",
     answer:
       "Greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travelers.",
   },
   {
-    question: "How Aston Martin Rapide Makes A Good Choice",
+    question: "Where To Find The Best Deal For BMW Pre-Owned India?",
     answer:
       "Greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travelers.",
   },
   {
-    question: "What Are The Updates Of Aston Martin Vantage 2017?",
-    answer:
-      "Greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travelers.",
-  },
-  {
-    question: "Which Are Models Of Used Aston Martin Are On Sale In India?",
+    question: "What Is The BMW Second-Hand Price In India?",
     answer:
       "Greater the better! An exceptional extravagant SUV provides room that permits more space for payload and leg space for the travelers.",
   },

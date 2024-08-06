@@ -12,7 +12,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2009",
@@ -20,7 +20,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2010-2011",
@@ -28,7 +28,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2012",
@@ -36,7 +36,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2013",
@@ -44,7 +44,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2015",
@@ -52,7 +52,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2016",
@@ -60,7 +60,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2017",
@@ -68,7 +68,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2018",
@@ -76,7 +76,7 @@ const missionList = [
   {
     title: "Down of the incredible rising",
     subtitle:
-      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk Gurgaon.",
+      "Opened a grand 36000sq feet showroom <br /> at Hero Honda Chowk, Gurgaon.",
     description:
       "Sponsored MTV Roadies and Splitsvilla 19th JK Tyre FMSCI National Racing Championship 2016 held at Buddh International Circuit",
     year: "2019",
@@ -114,8 +114,8 @@ const MissionSection = () => {
               </span>
             </h3>
             <h2 className="font-normal tracking-[-2px] leading-[1.1] mt-[3rem] mb-[2rem] [&>br]:hidden lg:[&>br]:block xl:text-[3.9rem] xl:leading-[1.3] xl:mb-[3rem] 1xl:text-[4.3rem] 2xl:text-[4.6rem] 3xl:text-[5.8rem] 3xl:tracking-[-3px] 3xl:mt-[4.5rem]">
-              The journey began in 2009 when BBT <br /> was founded in new
-              delhi, India.
+              The journey began in 2009 when BBT <br /> was founded in New
+              Delhi, India.
             </h2>
             <p className="font-light text-[1.2rem] leading-[1.3] text-justify md:text-[1.4rem] xl:text-[1.13rem] xl:tracking-tighter xl:font-normal 1xl:text-[1.35rem] 2xl:text-[1.4rem]  3xl:text-[1.7rem] 3xl:tracking-tight">
               Since then our mission has been to provide quality exotic cars

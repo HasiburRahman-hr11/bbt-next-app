@@ -105,7 +105,7 @@ const BannerSection = () => {
             data-aos-duration="500"
           >
             <h2 className="font-light [&>b]:font-normal tracking-[-2px] leading-[1.1] pb-[2.5rem] mb-[2.5rem] border-b border-b-black [&>br]:hidden lg:[&>br]:block xl:text-[4rem] xl:tracking-[-2.5px] xl:pb-[4rem] xl:mb-[4rem] 1xl:text-[4.5rem] 1xl:tracking-[-3px] 1xl:pb-[6rem] 2xl:text-[4.8rem] 3xl:text-[5.8rem] 3xl:mb-[5rem] 3xl:pb-[7rem]">
-              Big boy toyz, a{" "}
+              Big Boy Toyz, a{" "}
               <b>
                 pre-owned luxury car <br /> dealer deals with 24 brands.
               </b>

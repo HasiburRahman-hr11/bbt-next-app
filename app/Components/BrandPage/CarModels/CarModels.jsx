@@ -12,22 +12,22 @@ import "aos/dist/aos.css";
 const carModels = [
   {
     title: "BMW 2 Series",
-    link: "#",
+    link: "/cars/001",
     image: "/images/brand-page/bmw-model-1.webp",
   },
   {
     title: "BMW 3 Series",
-    link: "#",
+    link: "/cars/001",
     image: "/images/brand-page/bmw-model-2.webp",
   },
   {
     title: "BMW 2 Series",
-    link: "#",
+    link: "/cars/001",
     image: "/images/brand-page/bmw-model-1.webp",
   },
   {
     title: "BMW 3 Series",
-    link: "#",
+    link: "/cars/001",
     image: "/images/brand-page/bmw-model-2.webp",
   },
 ];

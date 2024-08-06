@@ -6,7 +6,7 @@ import CommonInfoUsp from "../../CommonComponents/CommonInfoUsp/CommonInfoUsp";
 const SliderItem = ({data}) => {
   return (
     <Link
-      href={`/products/${data._id}`}
+      href={`/cars/${data._id}`}
       className="sm:mx-3 sm:bg-white lg:mx-8 block transition-all ease-in-out common-car-item duration-500"
     >
       <div

@@ -203,6 +203,150 @@ const specifications = [
       },
     ],
   },
+  {
+    title: "Entertainment Rear",
+    icon: "/images/detail-page/detail-tab-icon-8.webp",
+    detailList: [
+      {
+        title: "Engine Displacement",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Power Figure", description: "197PS / 194BHP @ 3600 RPM" },
+      {
+        title: "Torque Figure+",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Drivetrain", description: "RWD" },
+      {
+        title: "Transmission",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      {
+        title: "Engine Displacement",
+        description: "9G-TRONIC Automatic Transmission",
+      },
+    ],
+  },
+  {
+    title: "Safety Equipment",
+    icon: "/images/detail-page/detail-tab-icon-10.webp",
+    detailList: [
+      {
+        title: "Engine Displacement",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Power Figure", description: "197PS / 194BHP @ 3600 RPM" },
+      {
+        title: "Torque Figure+",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Drivetrain", description: "RWD" },
+      {
+        title: "Transmission",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      {
+        title: "Engine Displacement",
+        description: "9G-TRONIC Automatic Transmission",
+      },
+    ],
+  },
+  {
+    title: "Suspension, Brakes, Wheels & Tyres",
+    icon: "/images/detail-page/detail-tab-icon-11.webp",
+    detailList: [
+      {
+        title: "Engine Displacement",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Power Figure", description: "197PS / 194BHP @ 3600 RPM" },
+      {
+        title: "Torque Figure+",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Drivetrain", description: "RWD" },
+      {
+        title: "Transmission",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      {
+        title: "Engine Displacement",
+        description: "9G-TRONIC Automatic Transmission",
+      },
+    ],
+  },
+  {
+    title: "Dimensions, Weight, Storage, Capacity",
+    icon: "/images/detail-page/detail-tab-icon-12.webp",
+    detailList: [
+      {
+        title: "Engine Displacement",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Power Figure", description: "197PS / 194BHP @ 3600 RPM" },
+      {
+        title: "Torque Figure+",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Drivetrain", description: "RWD" },
+      {
+        title: "Transmission",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      {
+        title: "Engine Displacement",
+        description: "9G-TRONIC Automatic Transmission",
+      },
+    ],
+  },
+  {
+    title: "Warranty & Service Package",
+    icon: "/images/detail-page/detail-tab-icon-13.webp",
+    detailList: [
+      {
+        title: "Engine Displacement",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Power Figure", description: "197PS / 194BHP @ 3600 RPM" },
+      {
+        title: "Torque Figure+",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Drivetrain", description: "RWD" },
+      {
+        title: "Transmission",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      {
+        title: "Engine Displacement",
+        description: "9G-TRONIC Automatic Transmission",
+      },
+    ],
+  },
+  {
+    title: "Exterior Colors",
+    icon: "/images/detail-page/detail-tab-icon-14.webp",
+    detailList: [
+      {
+        title: "Engine Displacement",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Power Figure", description: "197PS / 194BHP @ 3600 RPM" },
+      {
+        title: "Torque Figure+",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      { title: "Drivetrain", description: "RWD" },
+      {
+        title: "Transmission",
+        description: "1993cc, Turbocharged, In-Line 4 Cyl, DOHC",
+      },
+      {
+        title: "Engine Displacement",
+        description: "9G-TRONIC Automatic Transmission",
+      },
+    ],
+  },
 ];
 
 const SpecificationSection = () => {
