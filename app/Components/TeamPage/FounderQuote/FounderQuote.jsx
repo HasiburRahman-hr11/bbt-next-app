@@ -26,7 +26,7 @@ const FounderQuote = () => {
                 className="w-full object-contain h-auto"
               />
             </div>
-            <p className="text-[1.9rem] mt-[2rem] mb-[3rem] leading-[1.3] xl:text-[2.8rem] xl:leading-[1.45] xl:mt-[3rem] xl:mb-[4rem] 1xl:text-[3.3rem] 1xl:my-[5rem] 2xl:text-[3.5rem] 3xl:text-[4.5rem] 3xl:tracking-[-3px]">
+            <p className="text-[1.9rem] mt-[2rem] mb-[3rem] leading-[1.3] xl:text-[2.8rem] xl:leading-[1.45] xl:mt-[3rem] xl:mb-[4rem] 1xl:text-[3.3rem] 1xl:my-[5rem] 2xl:text-[3.5rem] 3xl:text-[4.5rem] 3xl:tracking-[-3px] italic">
               Driving dreams, one luxury car at a time. Experience excellence in
               every journey with our handpicked selection of top-tier used
               luxury cars. Welcome to the ultimate destination for automotive
@@ -42,7 +42,7 @@ const FounderQuote = () => {
               </div>
               <div className="text-left flex-1 ml-[1.5rem]">
                 <h6 className="text-[1.4rem] xl:text-[1.6rem] 1xl:text-[1.9rem] 2xl:text-[2.4rem] 3xl:text-[2.9rem]">
-                  Jatin Ahuja.
+                  Jatin Ahuja
                 </h6>
                 <p className="text-[1.2rem] xl:text-[1.25rem] 1xl:text-[1.28rem] 2xl:text-[1.4rem] 3xl:text-[1.6rem]">
                   Founder & Managing Director

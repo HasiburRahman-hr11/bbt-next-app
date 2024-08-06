@@ -63,7 +63,7 @@ const BannerSection = () => {
                 </span>
               </p>
               <h1 className="font-extralight [&>b]:font-normal text-[3.6rem] tracking-[-2px] leading-[1.15] lg:text-[4rem] xl:text-[5rem] 1xl:text-[5.45rem] 1xl:leading-[1.25] 2xl:text-[5.8rem] 3xl:text-[7.5rem] 3xl:leading-[1.15]">
-                Discover <b>our team</b> <br /> at Big boy toyz
+                Discover <b>our team</b> <br /> at Big Boy Toyz
               </h1>
             </div>
           </div>
@@ -105,7 +105,7 @@ const BannerSection = () => {
                   className={styles.uspIcon}
                 />
                 <p className={styles.uspTitle}>
-                  More than <b>50+ Car Enthusiasts</b>
+                  More than <b>100+ Car Enthusiasts</b>
                 </p>
               </li>
             </ul>

@@ -50,7 +50,7 @@ const WhyUs = () => {
               </div>
               <div className="text-center sm:mt-[3rem] sm:text-left 3xl:mt-[5rem]">
                 <Link
-                  href="/showrooms"
+                  href="/why-us"
                   className="w-full max-w-[31rem] h-[5.5rem] flex justify-center items-center text-[1.4rem] bg-black text-white px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium sm:max-w-[27.3rem] sm:ml-0 xl:h-[4.5rem] xl:max-w-[17rem] xl:text-[1.2rem] 1xl:h-[5rem] 1xl:max-w-[20rem] 1xl:text-[1.4rem] 2xl:max-w-none 2xl:w-max 2xl:px-[6rem] 2xl:text-[1.5rem] 3xl:h-[6.5rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[7rem] hover:bg-[#333333] transition-all duration-500 ease-in-out"
                 >
                   Why Us?
