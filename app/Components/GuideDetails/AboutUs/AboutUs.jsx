@@ -4,12 +4,12 @@ import React from "react";
 const ourShowroom = {
   url: "/showrooms",
   title: "Car Detailing",
-  thumbnail: "/images/guide-detail/gd-showroom-2.webp",
+  thumbnail: "/images/guide-detail/gd-showroom-1.webp",
 };
 const ourTeam = {
-  url: "/team",
+  url: "/modifications",
   title: "Modification & Upgrade",
-  thumbnail: "/images/guide-detail/gd-showroom-1.webp",
+  thumbnail: "/images/guide-detail/gd-showroom-2.webp",
 };
 
 const FeaturedItem = ({ data }) => {

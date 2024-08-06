@@ -9,7 +9,7 @@ const BannerSection = () => {
           Do You Know What <b> Torque <br /> Vectoring Is?</b>
           </h1>
           <div className="rounded-[1.5rem] overflow-hidden mt-[4rem] xl:mt-[6rem] lg:rounded-[3rem] 3xl:rounded-[5rem]">
-            <img src="/images/blogs/blog-banner.webp" alt="" className="w-100 object-cover h-auto" />
+            <img src="/images/guide-detail/guide-detail-banner.webp" alt="" className="w-100 object-cover h-auto" />
           </div>
         </div>
       </div>

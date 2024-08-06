@@ -802,6 +802,282 @@ export const wallpapers = [
       },
     ],
   },
+  {
+    _id: "010",
+    title: "Luxury Is In Each Detail",
+    instagramName: "Siddhant Rajadhyaksha",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-10.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
+    totalDownloads: 15071,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "011",
+    title: "Great Things Take Time",
+    instagramName: "Drivewithkr88888",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-11.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
+    totalDownloads: 15071,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "012",
+    title: "0% Luck 100% Hustlet",
+    instagramName: "Akash Gada",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-12.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
+    totalDownloads: 15071,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "013",
+    title: "life is a one time offer use it well",
+    instagramName: "Clinton Pereira",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-13.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
+    totalDownloads: 15071,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "014",
+    title: "live a life that makes you happy",
+    instagramName: "Clinton Pereira",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-14.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
+    totalDownloads: 15071,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
+  {
+    _id: "015",
+    title: "change the plan but never the goal",
+    instagramName: "Prince Suchak",
+    instagramLink: "#",
+    thumbnail: "/images/wallpapers/wallpaper-15.webp",
+    popupThumbnail: "/images/wallpapers/popup-thumbnail.webp",
+    totalDownloads: 15071,
+    downloadOptions: [
+      {
+        title: "Normal Screen",
+        dimension: "1366  X  768",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Medium Screen",
+        dimension: "1600 X 900",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "Wide Screen",
+        dimension: "1920 X 1080",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+      {
+        title: "IPhone",
+        dimension: "414 X 736",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "IPhone X",
+        dimension: "375 X 812",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Android",
+        dimension: "360 X 740",
+        url: "/images/wallpapers/wallpaper-option-2.webp",
+      },
+      {
+        title: "Other",
+        dimension: "2560 X 2560",
+        url: "/images/wallpapers/wallpaper-option-1.webp",
+      },
+    ],
+  },
 ];
 
 export const faqs = [
