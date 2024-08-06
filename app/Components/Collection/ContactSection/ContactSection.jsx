@@ -33,7 +33,7 @@ const ContactSection = () => {
 
               <a
                 href="#"
-                class="bg-[#1BD741] w-[4.5rem] h-[4.5rem] flex justify-center items-center rounded-[5px] 3xl:w-[5.8rem] 3xl:h-[5.8rem]"
+                className="bg-[#1BD741] w-[4.5rem] h-[4.5rem] flex justify-center items-center rounded-[5px] 3xl:w-[5.8rem] 3xl:h-[5.8rem]"
               >
                 <img
                   src="/images/whatsapp-btn-icon.webp"

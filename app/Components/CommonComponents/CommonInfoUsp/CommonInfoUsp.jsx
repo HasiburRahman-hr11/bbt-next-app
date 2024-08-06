@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./CommonInfoUsp.module.css";
 
 const CommonInfoUsp = ({ data, isDetailPage }) => {
@@ -10,7 +9,7 @@ const CommonInfoUsp = ({ data, isDetailPage }) => {
       } [&>*:first-child]:pl-0 [&>*:first-child]:border-0`}
     >
       <li className="w-2/6 pl-[1.7rem] border-l border-[#cfcfcf] sm:pl-[1.2rem]">
-        <Image
+        <img
           src="/images/km-icon-black.webp"
           alt="Icon"
           width="24"
@@ -34,7 +33,7 @@ const CommonInfoUsp = ({ data, isDetailPage }) => {
         </h6>
       </li>
       <li className="w-2/6 pl-[1.7rem] border-l border-[#cfcfcf] sm:pl-[1.2rem]">
-        <Image
+        <img
           src="/images/gas-icon-black.webp"
           alt="Icon"
           width="24"
@@ -57,7 +56,7 @@ const CommonInfoUsp = ({ data, isDetailPage }) => {
         </h6>
       </li>
       <li className="w-2/6 pl-[1.7rem] border-l border-[#cfcfcf] sm:pl-[1.2rem]">
-        <Image
+        <img
           src="/images/register-icon-black.webp"
           alt="Icon"
           width="24"

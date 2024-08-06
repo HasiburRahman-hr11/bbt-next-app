@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import CommonInfoUsp from "../CommonInfoUsp/CommonInfoUsp";
 import Link from "next/link";
-import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -58,7 +57,7 @@ const CollectionItem = ({ data, popupToggler }) => {
               className="absolute top-[3rem] left-[3rem] z-10 w-[4.8rem] h-[4.8rem] xl:w-[5.7rem] xl:h-[4.2rem] cursor-pointer"
               onClick={togglePopup}
             >
-              <Image
+              <img
                 src="/images/bbt-certified-icon.webp"
                 alt="Product Image"
                 className="w-full object-contain "
@@ -71,7 +70,7 @@ const CollectionItem = ({ data, popupToggler }) => {
             <Slider {...settings} className="collection-gallery-slider">
               {data.gallery.map((galleryImage, index) => (
                 <div key={index} className="relative pt-2">
-                  <Image
+                  <img
                     src={galleryImage}
                     alt="Product Image"
                     className="w-full object-cover block"
@@ -79,7 +78,7 @@ const CollectionItem = ({ data, popupToggler }) => {
                     height="310"
                   />
                   {data.isBooked && (
-                    <Image
+                    <img
                       src="/images/collection-booked.webp"
                       alt="Booked"
                       width="33"
@@ -88,7 +87,7 @@ const CollectionItem = ({ data, popupToggler }) => {
                     />
                   )}
                   {data.isSoldOut && (
-                    <Image
+                    <img
                       src="/images/collection-sold.webp"
                       alt="Sold"
                       width="33"
@@ -114,7 +113,7 @@ const CollectionItem = ({ data, popupToggler }) => {
                   className="bg-black text-white text-[1.2rem] font-medium xl:font-normal flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem] cursor-pointer"
                   onClick={popupToggler}
                 >
-                  <Image
+                  <img
                     src="/images/square-btn-call-icon.webp"
                     width="20"
                     height="20"
@@ -130,7 +129,7 @@ const CollectionItem = ({ data, popupToggler }) => {
                   href="tel:+919999999983"
                   className="bg-black text-white text-[1.2rem] font-medium xl:font-normal flex justify-center items-center h-[4.5rem] rounded-[0.5rem] 3xl:h-[5.8rem] 3xl:text-[1.7rem] cursor-pointer"
                 >
-                  <Image
+                  <img
                     src="/images/square-btn-call-icon.webp"
                     width="20"
                     height="20"
@@ -147,7 +146,7 @@ const CollectionItem = ({ data, popupToggler }) => {
                 href="#"
                 className="whatsAppBtn w-[4.5rem] h-[4.5rem] flex justify-center items-center rounded-[5px] 3xl:w-[5.8rem] 3xl:h-[5.8rem]  "
               >
-                <Image
+                <img
                   src="/images/whatsapp-btn-icon.webp"
                   width="18"
                   height="18"

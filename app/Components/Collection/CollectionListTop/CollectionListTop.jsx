@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Dummy Data
-import { cars } from "../../../../public/data/dummyData";
+import cars from "./collection-list";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
 import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 

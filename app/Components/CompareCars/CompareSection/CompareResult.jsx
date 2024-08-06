@@ -212,16 +212,16 @@ const CompareResult = () => {
           Result
         </h4>
         <div className="flex items-center">
-          <label for="hideCommon" class="flex items-center cursor-pointer">
-            <div class="mr-[8px] lg:mr-[10px] text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] font-medium xl:tracking-tight 2xl:mr-[12px]">
+          <label for="hideCommon" className="flex items-center cursor-pointer">
+            <div className="mr-[8px] lg:mr-[10px] text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] font-medium xl:tracking-tight 2xl:mr-[12px]">
               Hide Common Features
             </div>
-            <div class="relative">
-              <input id="hideCommon" type="checkbox" class="sr-only" />
+            <div className="relative">
+              <input id="hideCommon" type="checkbox" className="sr-only" />
 
-              <div class="w-[20px] h-[6px] bg-[#C7C7C7] rounded-full shadow-inner xl:w-[23px] xl:h-[7px] 1xl:w-[27px] 2xl:w-[30px] 2xl:h-[8px] 3xl:w-[35px] 3xl:h-[9px]"></div>
+              <div className="w-[20px] h-[6px] bg-[#C7C7C7] rounded-full shadow-inner xl:w-[23px] xl:h-[7px] 1xl:w-[27px] 2xl:w-[30px] 2xl:h-[8px] 3xl:w-[35px] 3xl:h-[9px]"></div>
 
-              <div class="dot absolute w-[12px] h-[12px] bg-black rounded-full shadow -left-1 -top-[3.5px] transition xl:w-[15px] xl:h-[15px] xl:-top-[4px] 2xl:w-[17px] 2xl:h-[17px] 3xl:w-[21px] 3xl:h-[21px] 3xl:-top-[6px]"></div>
+              <div className="dot absolute w-[12px] h-[12px] bg-black rounded-full shadow -left-1 -top-[3.5px] transition xl:w-[15px] xl:h-[15px] xl:-top-[4px] 2xl:w-[17px] 2xl:h-[17px] 3xl:w-[21px] 3xl:h-[21px] 3xl:-top-[6px]"></div>
             </div>
           </label>
         </div>

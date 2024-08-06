@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Dummy Data
-import { cars } from "../../../../public/data/dummyData";
+import cars  from "./collection-list";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
 import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 
@@ -13,8 +13,6 @@ const CollectionListBottom = () => {
   const togglePopup = () => {
     setPopupOpen(!popupOpen);
   };
-
-  const newCars = cars.slice(0, 3);
 
   useEffect(() => {
     AOS.init();
@@ -27,7 +25,7 @@ const CollectionListBottom = () => {
       )}
       <div className="max-1920">
         <div className="block md:flex md:flex-wrap md:justify-between md:w-[91%] md:pb-20 mx-auto lg:w-[83%] lg:mb-20 3xl:mb-[7rem]">
-          {newCars.map((item) => (
+          {cars.map((item) => (
             <div
               key={item._id}
               className="w-full md:w-[49%] xl:w-[31%]"
