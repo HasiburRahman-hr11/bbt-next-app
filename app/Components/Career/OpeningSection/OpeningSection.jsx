@@ -9,7 +9,7 @@ import {
 
 const openings = [
   {
-    title: "Sales Managers/ Supercar Enthusiasts",
+    title: "IT manager",
     description: "Gurugram | 2+ years Experience",
     type: "Full Time",
     requiredSkills: [
@@ -150,48 +150,7 @@ const openings = [
       "Hardware Knowledge",
       "Knowledge of NVR and DVR",
     ],
-  },
-  {
-    title: "Senior Graphic Designer",
-    description:
-      "Gurgaon, Mumbai, Ahmedabad, Bengaluru, Hyderabad | 3-5 years of experience",
-    type: "Full Time",
-    requiredSkills: [
-      "Installing, troubleshooting, and maintenance of all devices",
-      "Asset and Vendor Management",
-      "Procurement of Devices",
-      "Remote Support onsite support for 10 locations PAN INDIA",
-      "Window Server",
-      "Knowledge of Firewall",
-      "Knowledge of DNS and DHCP server (active directory)",
-      "Knowledge of PRI- VOIP",
-      "Switch and Router configuration",
-      "Proficient in Google Workspace and MS Office",
-      "OS installation",
-      "Hardware Knowledge",
-      "Knowledge of NVR and DVR",
-    ],
-  },
-  {
-    title: "Automobile Technician",
-    description: "Gurgaon | 0-3 years of Experience",
-    type: "Full Time",
-    requiredSkills: [
-      "Installing, troubleshooting, and maintenance of all devices",
-      "Asset and Vendor Management",
-      "Procurement of Devices",
-      "Remote Support onsite support for 10 locations PAN INDIA",
-      "Window Server",
-      "Knowledge of Firewall",
-      "Knowledge of DNS and DHCP server (active directory)",
-      "Knowledge of PRI- VOIP",
-      "Switch and Router configuration",
-      "Proficient in Google Workspace and MS Office",
-      "OS installation",
-      "Hardware Knowledge",
-      "Knowledge of NVR and DVR",
-    ],
-  },
+  }
 ];
 
 const styles = {

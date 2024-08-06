@@ -1170,7 +1170,7 @@ export const faqs = [
         answer: `<p>BBT owns every car we sell as we don't work on park and sell facility. Complete stock which is listed on the website are 100% procured and will be physically available at our showrooms located Pan India.</p>`,
       },
       {
-        question: `<p>We Have Seen BBT Selling Brand New /Unregistered Cars, Why Do Customers Buy Brand New Cars From BBT And Not From The Showroom, Do You Provide More Discount On Such Vehicles?</p>`,
+        question: `We Have Seen BBT Selling Brand New /Unregistered Cars, Why Do Customers Buy Brand New Cars From BBT And Not From The Showroom, Do You Provide More Discount On Such Vehicles?`,
         answer: `
         <p>We believe in customer service and our aim is to provide the best cars in the easiest way possible. And if we have the capability to do so, then why not? We are more than happy to fulfil our customer's requirements mainly as they are more comfortable buying cars from us. Our customers are looking for one stop solution therefore we buy inventories from manufactures and dealers in bulk so that our customers can take the benefit of huge discount. We have bought vehicles from many brands and sold them from our showroom for e.g. Mercedes SLK, GLS, BMW Z4, X5, I8 VOVLO xc90 and excellence lounge, Range Rover Vogues, Sports and Discovery etc.</p>`,
       },

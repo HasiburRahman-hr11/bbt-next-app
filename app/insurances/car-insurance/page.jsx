@@ -6,8 +6,8 @@ import Footer from "../../Components/Footer/Footer";
 import BannerSection from "../../Components/Insurances/BannerSection/BannerSection";
 import AboutSection from "../../Components/Insurances/AboutSection/AboutSection";
 import InsuranceDetails from "../../Components/Insurances/InsuranceDetails/InsuranceDetails";
-import PopularBrands from "../../Components/SingleProduct/PopularBrands/PopularBrands";
-import ShopByCategory from "../../Components/SingleProduct/ShopByCategory/ShopByCategory";
+import PopularBrands from "../../Components/SingleCar/PopularBrands/PopularBrands";
+import ShopByCategory from "../../Components/SingleCar/ShopByCategory/ShopByCategory";
 import FloatingForm from "../../Components/Insurances/FloatingForm/FloatingForm";
 
 const bannerData = {
