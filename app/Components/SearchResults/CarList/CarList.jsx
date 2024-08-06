@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Dummy Data
-import { cars } from "../../../..//public/data/dummyData";
+import cars from "./cars";
 import CollectionItem from "../../CommonComponents/CollectionItem/CollectionItem";
 import Image from "next/image";
 

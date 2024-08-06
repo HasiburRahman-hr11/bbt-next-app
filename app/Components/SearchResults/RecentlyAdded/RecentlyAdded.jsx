@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import CollectionItem from "./CollectionItem";
 
 // Dummy Data
-import { cars } from "../../../../public/data/dummyData";
+import cars from "./cars";
 
 let settings = {
   dots: false,
@@ -19,8 +19,8 @@ let settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: false,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 1024,
