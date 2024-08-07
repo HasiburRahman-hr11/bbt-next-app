@@ -85,13 +85,13 @@ const SneakPeak = () => {
           <div className="masonry sm:masonry-sm md:masonry-md 3xl:masonry-3xl mt-[5rem] 3xl:mt-[8rem]">
             {data.map((item, index) => (
               <div
-                className="rounded-[1rem] break-inside mb-[2rem] overflow-hidden 1xl:mb-[4rem] 3xl:rounded-[1.5rem]"
+                className="rounded-[1rem] break-inside mb-[2rem] group 1xl:mb-[4rem] 3xl:rounded-[1.5rem] overflow-hidden"
                 key={index}
               >
                 <img
                   src={item.image}
                   alt=""
-                  className="w-full object-cover h-auto"
+                  className="w-full object-cover h-auto transition-all duration-500 group-hover:scale-110"
                 />
               </div>
             ))}

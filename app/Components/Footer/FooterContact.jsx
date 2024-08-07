@@ -73,12 +73,12 @@ const FooterContact = () => {
       <div className="footerPhoneNumbers flex flex-wrap py-16 mt-16 3xl:py-28 lg:border-t lg:border-t-[#ebebf01a] lg:border-b lg:border-b-[#ebebf01a]">
         {phoneNumbers.map((phone, index) => (
           <div className="footerPhoneCol mb-[3rem] lg:mb-0" key={index}>
-            <h6 className="text-white text-lg 3xl:text-2xl 3xl:tracking-wider">
+            <h6 className="text-white text-[1.4rem] lg:text-lg 3xl:text-2xl 3xl:tracking-wider">
               {phone.title}
             </h6>
             <a
               href={phone.numberLink}
-              className="text-lg mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center"
+              className="text-[1.2rem] mt-5 xl:text-xl 3xl:text-1.6xl 3xl:mt-10 flex items-center"
             >
               <img
                 src="/images/footer-phone-icon.webp"
@@ -93,17 +93,17 @@ const FooterContact = () => {
         ))}
       </div>
       <div className="footerShowrooms flex flex-wrap py-16 relative 3xl:py-28">
-        <h5 className="text-white text-[1.5rem] lg:text-lg absolute left-0 w-max bg-black 2xl:text-1xl 2xl:tracking-normal 3xl:text-3xl">
+        <h5 className="text-white text-[1.7rem] lg:text-lg absolute left-0 w-max bg-black 2xl:text-1xl 2xl:tracking-normal 3xl:text-3xl">
           Our Showrooms
         </h5>
 
         {showrooms.map((showroom, index) => (
           <div className="footerShowroomCol mb-[3rem] lg:mb-0" key={index}>
             <a href={showroom.link} className="block group">
-              <h6 className="text-white text-base 3xl:text-1xl 3xl:tracking-wider">
+              <h6 className="text-white text-[1.4rem] lg:text-lg 3xl:text-1xl 3xl:tracking-wider">
                 {showroom.title}
               </h6>
-              <p className="text-base mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
+              <p className="text-[1.2rem] mt-4 lg:leading-8 2xl:text-lg 2xl:leading-9 3xl:text-2xl 3xl:leading-10 3xl:mt-6">
                 {showroom.address}
               </p>
               <img

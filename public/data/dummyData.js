@@ -1391,6 +1391,58 @@ export const esteems = [
     category: "Sport",
     thumbnail: "/images/associates/esteem-10.webp",
   },
+
+
+  {
+    title: "MTV Music Television",
+    category: "Cable Channel",
+    thumbnail: "/images/associates/esteem-11.webp",
+  },
+  {
+    title: "Car Dekho",
+    category: "Car Search Venture",
+    thumbnail: "/images/associates/esteem-12.webp",
+  },
+  {
+    title: "Bespoke Lifestyle",
+    category: "Lifestyle Management Company",
+    thumbnail: "/images/associates/esteem-13.webp",
+  },
+  {
+    title: "National Geographic",
+    category: "Magazine",
+    thumbnail: "/images/associates/esteem-14.webp",
+  },
+  {
+    title: "Car",
+    category: "Magazine",
+    thumbnail: "/images/associates/esteem-15.webp",
+  },
+  {
+    title: "NDTV",
+    category: "News Media",
+    thumbnail: "/images/associates/esteem-16.webp",
+  },
+  {
+    title: "OverDrive",
+    category: "Magazine",
+    thumbnail: "/images/associates/esteem-17.webp",
+  },
+  {
+    title: "T-Series",
+    category: "Channel",
+    thumbnail: "/images/associates/esteem-18.webp",
+  },
+  {
+    title: "Sony Music",
+    category: "Channel",
+    thumbnail: "/images/associates/esteem-19.webp",
+  },
+  {
+    title: "Ceo Lifestyle",
+    category: "Magazine",
+    thumbnail: "/images/associates/esteem-20.webp",
+  },
 ];
 
 export const modificationServices = [
