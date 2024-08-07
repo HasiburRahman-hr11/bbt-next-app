@@ -9,9 +9,9 @@ const secondaryBanner = {
   mobileBanner: "/images/project-listing/pl-inner-banner.webp",
   desktopBanner: "/images/project-listing/pl-inner-banner.webp",
   subtitle: "",
-  title:`Get your Car Service at one </br> of the premium <b>super car center</b> in delhi NCR.`,
+  title:`Get your Car Service at one </br> of the premium <b>super car </br>  center</b> in delhi NCR.`,
   description: `We're not just about making your car look pretty, we're all about </br>  making it perform like a champ too. From turbocharging your engine </br>  to upgrading your suspension for that buttery smooth ride!`,
-  ctaLink: "/modifications",
+  ctaLink: "/services",
   ctaText: "Know More",
 };
 

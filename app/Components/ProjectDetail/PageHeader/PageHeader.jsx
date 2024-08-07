@@ -32,7 +32,7 @@ const PageHeader = () => {
                     alt="Arrow Icon"
                   />
                   <Link
-                    href="/modifications"
+                    href="/projects"
                     className="text-[1.2rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]"
                   >
                     Projects

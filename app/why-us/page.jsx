@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import BannerSection from "../Components/WhyUs/BannerSection/BannerSection";
 import TopDealer from "../Components/WhyUs/TopDealer/TopDealer";
 import TrustedClients from "../Components/WhyUs/TrustedClients/TrustedClients";
 import SellYourCar from "../Components/WhyUs/SellYourCar/SellYourCar";
@@ -10,6 +9,15 @@ import MeetTheTeam from "../Components/WhyUs/MeetTheTeam/MeetTheTeam";
 import TestimonialSection from "../Components/WhyUs/TestimonialSection/TestimonialSection";
 
 import InfoWithTwoCard from "../Components/CommonComponents/InfoWithTwoCard/InfoWithTwoCard";
+import PageBanner from "../Components/CommonComponents/PageBanner/PageBanner";
+
+const bannerData = {
+  title:`Why We're the <br /> <b>Best Choice</b>`,
+  description: `From the finest German engineering to standout Italian designs, our <br /> collection of 24 exotic brands with 75 to 100 cars under one roof will <br /> ignite your passion and get your adrenaline pumping.`,
+  breadcrumb: "Why Us",
+  bannerImage:"/images/why-us/why-us-banner-desktop.webp",
+  bannerImageMobile:"/images/why-us/why-us-banner-mob.webp"
+}
 
 const InfoWithTwoCardData = {
   leftCardData: {
@@ -32,7 +40,7 @@ const Services = () => {
   return (
     <main>
       <Header />
-      <BannerSection />
+      <PageBanner data={bannerData} />
       <TopDealer />
       <TrustedClients />
       <SellYourCar />

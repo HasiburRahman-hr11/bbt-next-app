@@ -79,7 +79,7 @@ const Prerequisites = () => {
                     className="w-[2.5rem] h-auto object-contain xl:w-[3.5rem] 1xl:w-[4rem] 3xl:w-[5rem]"
                   />
                 </div>
-                <p dangerouslySetInnerHTML={{__html:item.title}} className="text-[1.3rem] lg:text-[1.6rem] xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.5rem] 3xl:text-[3rem] font-normal xl:font-light [&>b]:font-medium mt-[2rem] capitalize xl:tracking-tight xl:leading-[1.2]"></p>
+                <p dangerouslySetInnerHTML={{__html:item.title}} className="text-[1.3rem] lg:text-[1.6rem] xl:text-[2rem] 1xl:text-[2.3rem] 2xl:text-[2.3rem] 3xl:text-[3rem] font-normal xl:font-light [&>b]:font-medium mt-[2rem] capitalize xl:tracking-tight xl:leading-[1.2]"></p>
               </li>
             ))}
           </ul>

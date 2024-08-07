@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 
-const BannerSection = () => {
+const PageBanner = ({ data }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -14,28 +14,32 @@ const BannerSection = () => {
         <div className="relative">
           <div>
             <img
-              src="/images/services/banner-desktop.webp"
+              src={data.bannerImage}
               alt="Banner Image"
               width="1920"
               height="1100"
               className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
             />
             <img
-              src="/images/services/banner-desktop.webp"
+              src={
+                data?.bannerImageMobile
+                  ? data.bannerImageMobile
+                  : data.bannerImage
+              }
               alt="Banner Image"
               width="391"
               height="686"
-              className="block w-full h-auto object-cover sm:hidden min-h-[650px]"
+              className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[12rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[25rem] 1xl:pt-[29rem] 2xl:pt-[33rem] 3xl:pt-[40rem] 3xl:pb-[6rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="500"
             >
-              <p className="text-center sm:block [&_img]:invert text-white sm:text-left font-light">
+              <p className="hidden sm:block [&_img]:invert text-white text-left font-light">
                 <Link
                   href="/"
                   className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]"
@@ -50,20 +54,21 @@ const BannerSection = () => {
                   alt="Arrow Icon"
                 />
                 <span className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]">
-                  Car Services
+                  {data.breadcrumb}
                 </span>
               </p>
-              <h1 className="font-extralight [&>br]:hidden sm:[&>br]:block text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem] capitalize">
-                Top Luxury{" "}
-                <b>
-                  cars <br /> services in India.
-                </b>
+              <h1 className="font-extralight text-[4.5rem] tracking-tighter leading-[1.2] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem] [&>br]:hidden sm:[&>br]:block"
+              dangerouslySetInnerHTML={{__html:data.title}}
+              >
+                
               </h1>
-              <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 1xl:mt-[2rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]">
-                If your heart races at the sight of a sleek chassis or the purr
-                of <br /> a finely-tuned engine, then buckle up, because you're
-                in for a <br /> wild ride!
-              </p>
+              {data?.description && (
+                <p className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]"
+                dangerouslySetInnerHTML={{__html:data.description}}
+                >
+                 
+                </p>
+              )}
             </div>
             <div
               className={`text-center flex flex-col justify-center items-center scroll-animation`}
@@ -86,4 +91,4 @@ const BannerSection = () => {
   );
 };
 
-export default BannerSection;
+export default PageBanner;

@@ -74,7 +74,7 @@ const SellYourCar = () => {
       </div>
       <Footer />
       <div
-        className={`z-100 fixed  left-0 w-full transition-all duration-500 ease-in-out ${
+        className={`z-[20] fixed  left-0 w-full transition-all duration-500 ease-in-out ${
           showForm
             ? "bottom-[5rem] show-from-bottom opacity-[1] hidden xl:block"
             : "opacity-[0] bottom-[100rem]"

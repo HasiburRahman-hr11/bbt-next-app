@@ -1,16 +1,24 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 
 const BannerSection = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setPopupOpen(!popupOpen);
+  };
   useEffect(() => {
     AOS.init();
   }, []);
   return (
     <section className="text-white bg-black">
       <div className="max-1920">
+      {popupOpen && (
+          <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
+        )}
         <div className="relative">
           <div>
             <img
@@ -64,8 +72,8 @@ const BannerSection = () => {
 
               {/* Banner  Buttons */}
               <div className="flex items-center w-max sm:mt-[3rem] lg:mt-[6rem] xl:mt-[7rem] 2xl:mt-[8.5rem]">
-                <a
-                  href="#"
+                <button
+                   onClick={togglePopup}
                   className="hidden sm:flex items-center justify-center bg-white text-black w-max h-[5rem] px-[2rem] rounded-[0.5rem] xl:h-[4.5rem] xl:rounded-[1rem] 1xl:h-[5rem] 3xl:h-[6.5rem] transition-all duration-500 hover:bg-[#f0f0f0]"
                 >
                   <img
@@ -74,7 +82,7 @@ const BannerSection = () => {
                       className="w-[1.9rem] object-contain h-auto xl:w-[1.7rem] 3xl:w-[2.2rem]"
                   />
                   <p className="flex-[1] pl-[1rem] text-[1.5rem] xl:text-[1.2rem] 1xl:text-[1.3rem] 2xl:text-[1.4rem] xl:tracking-tight 2xl:tracking-tighter capitalize 3xl:text-[1.6rem] font-medium">Request a call back</p>
-                </a>
+                </button>
                 <div className="fixed w-full bottom-0 left-0 bg-white flex py-[2rem] px-[2rem] items-center justify-center z-10 sm:static sm:bg-transparent sm:py-0 sm:px-0 sm:ml-[1.5rem] sm:w-max xl:ml-[1rem]">
                   <a
                     href="tel:+919999999915"

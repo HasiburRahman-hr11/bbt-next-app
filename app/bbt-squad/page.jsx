@@ -1,19 +1,27 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
-import BannerSection from "../Components/SquadPage/BannerSection/BannerSection";
 import JoinUs from "../Components/SquadPage/JoinUs/JoinUs";
 import BenefitsSection from "../Components/SquadPage/BenefitsSection/BenefitsSection";
 import Requirements from "../Components/SquadPage/Requirements/Requirements";
 import FormSection from "../Components/SquadPage/FormSection/FormSection";
 import LifeStyle from "../Components/SquadPage/Lifestyle/LifeStyle";
 import CarrierBanner from "../Components/SquadPage/CarrierBanner/CarrierBanner";
+import PageBanner from "../Components/CommonComponents/PageBanner/PageBanner";
+
+const bannerData = {
+  title:`The <b>BBT Squad</b> <br /> - Join Us`,
+  description: ` BBT Squad is a new platform inviting car enthusiasts to pursue their passion <br /> for automobiles without compromising on their existing work areas.`,
+  breadcrumb: "BBT Squad",
+  bannerImage:"/images/bbt-squad/squad-banner-desktop.webp",
+  bannerImageMobile:"/images/bbt-squad/squad-banner-mobile.webp"
+}
 
 const BbtSquad = () => {
   return (
     <main>
       <Header />
-      <BannerSection />
+      <PageBanner data={bannerData} />
       <JoinUs />
       <BenefitsSection />
       <Requirements />

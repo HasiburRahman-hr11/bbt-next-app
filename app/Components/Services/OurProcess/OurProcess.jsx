@@ -38,7 +38,7 @@ const ProcessCard = ({ data, index }) => {
       </div>
       <h4
         dangerouslySetInnerHTML={{ __html: data.title }}
-        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[3rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] 1xl:mt-[5rem] xl:leading-[1.3]"
+        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[3rem] 1xl:text-[1.8rem] 2xl:text-[1.6rem] 3xl:text-[2.4rem] 1xl:mt-[5rem] xl:leading-[1.3]"
       ></h4>
       <p className="text-[1.1rem] 1xl:tracking-tight 2xl:text-[1.1rem] 3xl:text-[1.4rem] mt-[2rem] font-light">
         {data.description}

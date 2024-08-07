@@ -91,11 +91,11 @@ const PopularBrands = () => {
         <div className="container">
           <div className="text-center">
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] text-center tracking-[-0.1rem] mb-[2rem] xl:text-[3.7rem] xl:[&>br]:hidden 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] capitalize">
-              with Over 50+ services <b>available at Big Boy Toyz</b>
+              We are one stop shop for <b>many luxury</b>
             </h2>
             <p className="text-[1.5rem] xl:text-[1.9rem] 1xl:text-[2.1rem] 2xl:text-[2.3rem] 3xl:text-[2.8rem] mt-[2.5rem] font-light [&>br]:hidden md:[&>br]:block">
-              Our list of Associates share a common vision for Automotive
-              Excellence <br /> and a deep passion for Exotic cars.
+              Our list of Associates share a common vision for Automotive <br />{" "}
+              Excellence and a deep passion for Exotic cars.
             </p>
           </div>
 

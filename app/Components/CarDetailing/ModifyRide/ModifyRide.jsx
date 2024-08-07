@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const uspList = [
   { icon: "/images/car-detailing/mod-icon-1.webp", title: "ceramic coating" },
-  { icon: "/images/car-detailing/mod-icon-2.webp", title: "ceramic coating" },
-  { icon: "/images/car-detailing/mod-icon-3.webp", title: "ceramic coating" },
-  { icon: "/images/car-detailing/mod-icon-4.webp", title: "ceramic coating" },
-  { icon: "/images/car-detailing/mod-icon-5.webp", title: "ceramic coating" },
-  { icon: "/images/car-detailing/mod-icon-6.webp", title: "ceramic coating" },
+  { icon: "/images/car-detailing/mod-icon-2.webp", title: "exhaust system" },
+  { icon: "/images/car-detailing/mod-icon-3.webp", title: "alloy wheels" },
+  { icon: "/images/car-detailing/mod-icon-4.webp", title: "interior upgrade" },
+  { icon: "/images/car-detailing/mod-icon-5.webp", title: "car facelift kit" },
+  { icon: "/images/car-detailing/mod-icon-6.webp", title: "engine upgrade" },
 ];
 
 const ModifyRide = () => {
@@ -85,7 +85,7 @@ const ModifyRide = () => {
               </div>
               <div className="text-center sm:mt-[5rem] sm:text-left 3xl:mt-[5rem]">
                 <Link
-                  href="#"
+                  href="/modifications"
                   className="w-full max-w-[31rem] h-[5.5rem] flex justify-center items-center text-[1.4rem] bg-white text-black px-[3rem] py-[1rem] rounded-[3rem] mx-auto tracking-[-1px] font-medium sm:max-w-[20rem] sm:ml-0 xl:h-[4.5rem] xl:max-w-[17rem] xl:text-[1.2rem] 1xl:h-[5rem] 1xl:max-w-[20rem] 1xl:text-[1.4rem] 2xl:max-w-none 2xl:w-max 2xl:px-[6rem] 2xl:text-[1.5rem] 3xl:h-[6.5rem] 3xl:text-[1.8rem] 3xl:rounded-[4rem] 3xl:px-[7rem] hover:bg-[#f1f1f1] transition-all duration-500 ease-in-out"
                 >
                   Explore

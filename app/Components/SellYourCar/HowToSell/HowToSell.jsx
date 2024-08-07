@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import "./how-to-cell.css"
+import "./how-to-cell.css";
+import RequestCallPopup from "../../RequestCallPopup/RequestCallPopup";
 const processData = [
   {
     title: "Get Your </br> <b> Car Evaluated </b>",
@@ -39,7 +40,7 @@ const ProcessCard = ({ data, index }) => {
       </div>
       <h4
         dangerouslySetInnerHTML={{ __html: data.title }}
-        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[2rem] 1xl:text-[1.8rem] 2xl:text-[2rem] 3xl:text-[2.4rem] xl:leading-[1.3] 3xl:mt-[5rem]"
+        className="text-[1.5rem] mt-[3rem] font-light [&>b]:font-medium xl:text-[1.7rem] xl:mt-[2rem] 1xl:text-[1.8rem] 2xl:text-[1.8rem] 3xl:text-[2.4rem] xl:leading-[1.3] 3xl:mt-[5rem]"
       ></h4>
       <p className="text-[1.1rem] 1xl:tracking-tight 2xl:text-[1.1rem] 3xl:text-[1.4rem] mt-[2rem] font-light">
         {data.description}
@@ -83,6 +84,10 @@ function PrevArrow(props) {
 
 const HowToSell = () => {
   const [progressWidth, setProgressWidth] = useState(25);
+  const [popupOpen, setPopupOpen] = useState(false);
+  const togglePopup = () => {
+    setPopupOpen(!popupOpen);
+  };
 
   let settings = {
     dots: false,
@@ -137,10 +142,13 @@ const HowToSell = () => {
   return (
     <section className="bg-[#F4F4F1] py-[6rem] lg:py-[8rem] xl:py-[12rem] 1xl:py-[14rem] 3xl:py-[18rem]">
       <div className="max-1920">
+        {popupOpen && (
+          <RequestCallPopup active={popupOpen} togglePopup={togglePopup} />
+        )}
         <div className="container">
           <div className="lg:text-center">
             <p className="text-[1rem] 1xl:text-[1.2rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem] mb-[1rem]">
-            How It Works
+              How It Works
             </p>
             <h2 className="text-[2.9rem] font-light [&>b]:font-normal leading-[1.1] tracking-[-0.1rem] mb-[2rem] xl:text-[3.7rem] 1xl:text-[4.2rem] 2xl:text-[4.4rem] 3xl:text-[5.8rem] capitalize sm:[&>br]:hidden">
               How to sell your <br /> <b>Used Cars</b>
@@ -192,7 +200,10 @@ const HowToSell = () => {
           </div>
 
           <div className="flex justify-center items-center mt-[6rem]">
-            <button className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer lg:max-w-none lg:px-[4rem] lg:w-max xl:text-[1.2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.4rem] 3xl:px-[5rem] capitalize hover:bg-[#333333] transition-all duration-500">
+            <button
+              className="bg-black text-white w-full h-[5rem] rounded-[4rem] text-[1.4rem] border-none outline-none max-w-[344px] mx-auto cursor-pointer lg:max-w-none lg:px-[4rem] lg:w-max xl:text-[1.2rem] 1xl:text-[1.4rem] 2xl:text-[1.5rem] 3xl:text-[1.8rem] 1xl:h-[5.5rem] 2xl:h-[6rem] 3xl:h-[7.4rem] 3xl:px-[5rem] capitalize hover:bg-[#333333] transition-all duration-500"
+              onClick={togglePopup}
+            >
               Request a call back
             </button>
           </div>
