@@ -3,17 +3,18 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import BannerSection from "../../Components/Insurances/BannerSection/BannerSection";
 import AboutSection from "../../Components/Insurances/AboutSection/AboutSection";
 import InsuranceDetails from "../../Components/Insurances/InsuranceDetails/InsuranceDetails";
 import PopularBrands from "../../Components/SingleCar/PopularBrands/PopularBrands";
 import ShopByCategory from "../../Components/SingleCar/ShopByCategory/ShopByCategory";
 import FloatingForm from "../../Components/Insurances/FloatingForm/FloatingForm";
 
+import PageBannerSmall from "../../Components/CommonComponents/PageBannerSmall/PageBannerSmall";
+
 const bannerData = {
-  desktopBanner: "/images/insurance/life-ins-banner.webp",
-  mobileBanner: "/images/insurance/life-ins-banner-mob.webp",
-  pageTitle: "Life Insurance",
+  bannerImage: "/images/insurance/life-ins-banner.webp",
+  bannerImageMobile: "/images/insurance/life-ins-banner-mob.webp",
+  breadcrumb: "Life Insurance",
   title: "With us,<br/> <b>you’re safe</b>",
   description: "A brighter future for the one’s you love",
 };
@@ -96,7 +97,7 @@ const LifeInsurance = () => {
   return (
     <main>
       <Header />
-      <BannerSection bannerData={bannerData} />
+      <PageBannerSmall data={bannerData} />
 
       <div id="afterInsBanner">
         <InsuranceDetails data={insuranceDetail} />

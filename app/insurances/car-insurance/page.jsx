@@ -3,17 +3,17 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
-import BannerSection from "../../Components/Insurances/BannerSection/BannerSection";
 import AboutSection from "../../Components/Insurances/AboutSection/AboutSection";
 import InsuranceDetails from "../../Components/Insurances/InsuranceDetails/InsuranceDetails";
 import PopularBrands from "../../Components/SingleCar/PopularBrands/PopularBrands";
 import ShopByCategory from "../../Components/SingleCar/ShopByCategory/ShopByCategory";
 import FloatingForm from "../../Components/Insurances/FloatingForm/FloatingForm";
+import PageBannerSmall from "../../Components/CommonComponents/PageBannerSmall/PageBannerSmall";
 
 const bannerData = {
-  desktopBanner: "/images/insurance/car-ins-banner.webp",
-  mobileBanner: "/images/insurance/car-ins-banner-mob.webp",
-  pageTitle: "Car Insurance",
+  bannerImage: "/images/insurance/car-ins-banner.webp",
+  bannerImageMobile: "/images/insurance/car-ins-banner-mob.webp",
+  breadcrumb: "Car Insurance",
   title: "More Than <br/> <b>Just A Car Insurance</b>",
   description: "Solutions for everything that you car needs",
 };
@@ -96,7 +96,7 @@ const CarInsurance = () => {
   return (
     <main>
       <Header />
-      <BannerSection bannerData={bannerData} />
+      <PageBannerSmall data={bannerData} />
 
       <div id="afterInsBanner">
         <InsuranceDetails data={insuranceDetail} />

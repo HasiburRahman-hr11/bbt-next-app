@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 
-const PageBanner = ({ data }) => {
+const PageBannerSmall = ({ data }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -17,8 +17,8 @@ const PageBanner = ({ data }) => {
               src={data.bannerImage}
               alt="Banner Image"
               width="1920"
-              height="1100"
-              className="hidden w-full h-auto sm:block sm:min-h-[600px] object-cover"
+              height="650"
+              className="hidden w-full h-auto sm:block sm:min-h-[400px] object-cover"
             />
             <img
               src={
@@ -32,7 +32,7 @@ const PageBanner = ({ data }) => {
               className="block w-full h-auto object-cover sm:hidden"
             />
           </div>
-          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-between pt-[9rem] pb-16 sm:text-left sm:pt-[15rem] md:pt-[18rem] lg:pt-[20rem] xl:pt-[22rem] 1xl:pt-[25.5rem] 2xl:pt-[26.5rem] 3xl:pt-[34rem] 3xl:pb-[6rem]">
+          <div className=" text-center absolute w-full h-full left-0 top-0 flex flex-col justify-start pt-[12rem] pb-[5rem] sm:justify-center">
             <div
               className="px-14 md:text-left md:px-[8rem] lg:px-0 lg:w-[82%] lg:mx-auto"
               data-aos="fade-down"
@@ -40,7 +40,7 @@ const PageBanner = ({ data }) => {
               data-aos-duration="500"
             >
               {data.breadcrumb && (
-                <p className="hidden sm:block [&_img]:invert text-white text-left font-light">
+                <p className="text-center md:text-left [&_img]:invert text-white font-light">
                   <Link
                     href="/"
                     className="text-[1rem] 2xl:text-[1.3rem] 3xl:text-[1.5rem]"
@@ -61,29 +61,16 @@ const PageBanner = ({ data }) => {
               )}
 
               <h1
-                className="font-extralight text-[4.5rem] tracking-tighter leading-[1.2] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem] [&>br]:hidden sm:[&>br]:block"
+                className="font-extralight capitalize text-[4.5rem] tracking-tighter leading-[1] mt-6 [&>b]:font-normal lg:mt-10 lg:text-[4.5rem] xl:text-[5rem] xl:leading-[1.2] xl:mt-[1rem] 1xl:text-[5.5rem] 2xl:text-[6rem] 3xl:text-[7.5rem] 3xl:mt-[2rem]"
                 dangerouslySetInnerHTML={{ __html: data.title }}
               ></h1>
               {data?.description && (
                 <p
                   className="text-[1.2rem] mt-[2rem] [&>br]:hidden sm:[&>br]:block xl:mt-[1.2rem] xl:text-[1.1rem] 1xl:text-[1.22rem] 2xl:text-[1.3rem] 3xl:text-[1.6rem]"
                   dangerouslySetInnerHTML={{ __html: data.description }}
-                ></p>
+                >
+                </p>
               )}
-            </div>
-            <div
-              className={`text-center flex flex-col justify-center items-center scroll-animation`}
-            >
-              <img
-                src="/images/banner-scroll-icon-white.webp"
-                alt="Scroll Down"
-                width="19"
-                height="29"
-                className="inline-block object-contain w-8 xl:w-[1.5rem] 1xl:w-6 3xl:w-[1.9rem]"
-              />
-              <span className="uppercase mt-5 text-base xl:text-[0.8rem] 3xl:text-[0.9rem]">
-                Scroll Down
-              </span>
             </div>
           </div>
         </div>
@@ -92,4 +79,4 @@ const PageBanner = ({ data }) => {
   );
 };
 
-export default PageBanner;
+export default PageBannerSmall;
