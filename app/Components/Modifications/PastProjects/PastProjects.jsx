@@ -6,25 +6,25 @@ const pastProjects = [
     title: "Defender X",
     description: "Black Body Kit,  Engine Upgrade, Alloys",
     image: "/images/modifications/past-project-1.webp",
-    url: "#",
+    url: "/projects/001",
   },
   {
     title: "Land Rover Porsche ",
     description: "Interiors, Paint, Engine Upgrade",
     image: "/images/modifications/past-project-2.webp",
-    url: "#",
+    url: "/projects/002",
   },
   {
     title: "Toyota Vellfire",
     description: "Body Kit, Interiors,  PPF",
     image: "/images/modifications/past-project-3.webp",
-    url: "#",
+    url: "/projects/003",
   },
   {
     title: "Body Kit, Interiors,  PPF",
     description: "Interiors, Music System Upgrade",
     image: "/images/modifications/past-project-4.webp",
-    url: "#",
+    url: "/projects/004",
   },
 ];
 
@@ -82,9 +82,9 @@ const PastProjects = () => {
             ))}
           </div>
           <div className="w-max mx-auto mt-[5rem] xl:mt-[7rem] 1xl:mt-[8rem] xl:min-w-[170px] 2xl:min-w-[190px] 3xl:min-w-[240px] 3xl:mt-[6rem]">
-            <button className="bg-black w-full text-white text-center text-[1.4rem] flex justify-center items-center rounded-[3rem] px-[3rem] h-[5rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 2xl:h-[6rem] 2xl:rounded-[4rem] 3xl:h-[7.3rem] transition-all duration-500 hover:bg-[#333]">
+            <Link href="/projects" className="bg-black w-full text-white text-center text-[1.4rem] flex justify-center items-center rounded-[3rem] px-[3rem] h-[5rem] xl:text-[1.2rem] 1xl:h-[5.5rem] 1xl:text-[1.3rem] 2xl:text-[1.4rem] 3xl:text-[1.8rem] 2xl:h-[6rem] 2xl:rounded-[4rem] 3xl:h-[7.3rem] transition-all duration-500 hover:bg-[#333]">
               View All Projects
-            </button>
+            </Link>
           </div>
         </div>
       </div>

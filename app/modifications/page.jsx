@@ -20,7 +20,7 @@ const secondaryBanner = {
     "Looking For Something Subtle <br/> <b>Explore Our Car Detailing <br/> Service</b>",
   description:
     "A budding entrepreneur, Mrs. Ritika Jatin Ahuja spearheads the Merchandising <br/> section at Big Boy Toyz. She has been an avid collector of miniature perfumes <br/> since childhood which she cultivated as a hobby and a passion",
-  ctaLink: "#",
+  ctaLink: "/services",
   ctaText: "Explore",
 };
 const InfoWithTwoCardData = {
@@ -30,7 +30,7 @@ const InfoWithTwoCardData = {
     thumbnail: "/images/modifications/bbt-world-1.webp",
   },
   rightCardData: {
-    url: "/bbt-squad",
+    url: "/about-us",
     title: "About Big BoyToyz",
     thumbnail: "/images/modifications/bbt-world-2.webp",
   },
