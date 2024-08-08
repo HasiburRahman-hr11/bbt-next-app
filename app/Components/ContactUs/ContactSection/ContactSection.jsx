@@ -123,7 +123,7 @@ const ContactSection = () => {
                   </div>
                   <div className="flex-[1] pl-[1.5rem] xl:pl-[1rem]">
                     <p className="text-[1.2rem] font-normal mb-[0.2rem] sm:text-[1.3rem] xl:tracking-tight 1xl:text-[1.4rem] 3xl:text-[1.8rem]">{usp.subtitle}</p>
-                    <h6 className="text-[1.4rem] font-medium sm:text-[1.6rem] 1xl:text-[1.9rem] 2xl:text-[2.1rem] 3xl:text-[2.6rem]">{usp.title}</h6>
+                    <h6 className="text-[1.4rem] font-medium sm:text-[1.6rem] 1xl:text-[1.9rem] 2xl:text-[2.1rem] 2xl:tracking-tight 3xl:text-[2.6rem]">{usp.title}</h6>
                   </div>
                 </a>
               </li>
