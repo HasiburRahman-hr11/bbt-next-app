@@ -8,8 +8,8 @@ import InfoWithTwoCard from "../Components/CommonComponents/InfoWithTwoCard/Info
 import PageBannerSmall from "../Components/CommonComponents/PageBannerSmall/PageBannerSmall";
 
 const bannerData = {
-  bannerImage: "/images/insurance/home-ins-banner.webp",
-  bannerImageMobile: "/images/insurance/home-ins-banner-mob.webp",
+  bannerImage: "/images/contact-us/contact-banner-desktop.webp",
+  bannerImageMobile: "/images/contact-us/contact-banner-desktop.webp",
   breadcrumb: "Contact Us",
   title: "Get in <b>Touch</b>",
   description: "This may be beginning of our journey",
@@ -42,7 +42,7 @@ const ContactUs = () => {
       <FormSection />
       <ShowroomSection />
       <InfoWithTwoCard data={InfoWithTwoCardData} />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

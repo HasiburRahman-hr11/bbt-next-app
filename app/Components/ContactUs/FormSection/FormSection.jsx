@@ -128,5 +128,5 @@ const styles = {
   label:
     "text-[1.6rem] w-max inline-block pr-[1rem] pb-[0.4rem] xl:text-[2.8rem] 1xl:text-[3rem] 2xl:text-[3.3rem] 3xl:text-[4rem] 1xl:pr-[2rem] 3xl:pr-[3rem]",
   input:
-    "border-b border-b-[#626262] bg-transparent outline-none pr-[1rem] text-[1.4rem] flex-[1] pb-[0.5rem] placeholder:text-[1.4rem] xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.3rem] xl:placeholder:text-[1.7rem] 2xl:placeholder:text-[2rem] 3xl:placeholder:text-[2.3rem] xl:pb-[1rem] 1xl:pb-[1.3rem]",
+    "border-b border-b-[#626262] bg-transparent outline-none pr-[1rem] text-[1.4rem] flex-[1] pb-[0.5rem] placeholder:text-[1.4rem] xl:text-[1.7rem] 2xl:text-[1.8rem] 3xl:text-[2.3rem] xl:placeholder:text-[1.7rem] 2xl:placeholder:text-[2rem] 3xl:placeholder:text-[2.3rem] xl:pb-[1rem] 1xl:pb-[1.3rem] xl:border-b-2",
 };
